@@ -21,6 +21,7 @@
 </head>
 <body>
     <div id="app">
+    
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -41,13 +42,21 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('HIMPUNAN') }}</a>
                             </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('UKM') }}</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('KEGIATAN MAHASISWA') }}</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('ABOUT US') }}</a>
+                            </li>
+                            
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -71,6 +80,89 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+<!-- Footer Links -->
+<div class="container-fluid text-center text-md-left">
+
+  <!-- Grid row -->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-md-6 mt-md-0 mt-3">
+
+      <!-- Content -->
+      <h5 class="text-uppercase">Footer Content</h5>
+      <p>Here you can use rows and columns to organize your footer content.</p>
+
+    </div>
+    <!-- Grid column -->
+
+    <hr class="clearfix w-100 d-md-none pb-3">
+
+    <!-- Grid column -->
+    <div class="col-md-3 mb-md-0 mb-3">
+
+      <!-- Links -->
+      <h5 class="text-uppercase">Links</h5>
+
+      <ul class="list-unstyled">
+        <li>
+          <a href="#!">Link 1</a>
+        </li>
+        <li>
+          <a href="#!">Link 2</a>
+        </li>
+        <li>
+          <a href="#!">Link 3</a>
+        </li>
+        <li>
+          <a href="#!">Link 4</a>
+        </li>
+      </ul>
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-3 mb-md-0 mb-3">
+
+      <!-- Links -->
+      <h5 class="text-uppercase">Links</h5>
+
+      <ul class="list-unstyled">
+        <li>
+          <a href="#!">Link 1</a>
+        </li>
+        <li>
+          <a href="#!">Link 2</a>
+        </li>
+        <li>
+          <a href="#!">Link 3</a>
+        </li>
+        <li>
+          <a href="#!">Link 4</a>
+        </li>
+      </ul>
+
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+</div>
+<!-- Footer Links -->
+
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3">© 2020 Copyright:
+  <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+</div>
+<!-- Copyright -->
+
+</footer>
 
         <main class="py-4">
             @yield('content')
