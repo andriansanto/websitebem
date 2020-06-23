@@ -6430,6 +6430,25 @@ exports.push([module.i, "/* Slider */\n.slick-slider\n{\n    position: relative;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/css/reacthome.css":
+/*!*********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/css/reacthome.css ***!
+  \*********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "-.App {\r\n    text-align: center;\r\n  }\r\n   \r\n  .App-logo {\r\n    height: 40vmin;\r\n  }\r\n   \r\n  .App-header {\r\n    background-color: #282c34;\r\n    min-height: 100vh;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n    font-size: calc(10px + 2vmin);\r\n    color: white;\r\n  }\r\n   \r\n  .App-link {\r\n    color: #09d3ac;\r\n  }\r\n   \r\n  body{\r\n    background: #09d3ac;\r\n  }\r\n   \r\n  .slides .slick-prev,\r\n  .slides .slick-next {\r\n    position: absolute;\r\n    top: 50%;\r\n    z-index: 1;\r\n  }\r\n  \r\n  \r\n  .slides {\r\n    position: relative;\r\n  }\r\n  \r\n  .slides .slick-prev,\r\n  .slides .slick-next {\r\n    position: absolute;\r\n    top: 50%;\r\n    z-index:1;\r\n  }\r\n  \r\n  .slides .slick-prev {\r\n    left: 5%;\r\n  }\r\n  \r\n  .slides .slick-next {\r\n    right: 5%;\r\n  }", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/lib/css-base.js":
 /*!*************************************************!*\
   !*** ./node_modules/css-loader/lib/css-base.js ***!
@@ -71169,6 +71188,36 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/css/reacthome.css":
+/*!*************************************!*\
+  !*** ./resources/css/reacthome.css ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader??ref--6-1!../../node_modules/postcss-loader/src??ref--6-2!./reacthome.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/css/reacthome.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -71257,7 +71306,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
 /* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_4__);
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../../css/reacthome.css'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _css_reacthome_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../css/reacthome.css */ "./resources/css/reacthome.css");
+/* harmony import */ var _css_reacthome_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_css_reacthome_css__WEBPACK_IMPORTED_MODULE_5__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
