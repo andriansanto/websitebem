@@ -1,12 +1,12 @@
 <!-- Footer Area Start -->
-<footer class="footer-area bg-img bg-overlay-2 section-padding-80-0 fixed-bottom">
+<footer class="footer-area bg-img bg-overlay-2 section-padding-80-0 fixed-bottom" style="background-color: #000033;">
     <!-- Main Footer Area -->
     <div class="main-footer-area">
         <div class="container">
             <div class="row">
                 <!-- Single Footer Widget Area -->
                 <div class="col-12 col-md-4">
-                    <div class="single-footer-widget mb-60 wow bounceInLeft">
+                    <div class="single-footer-widget mb-60 wow bounceInLeft" style="color: rgba(255, 255, 255, 0.62);">
                         <!-- Footer Logo -->
                         <h2 class="widget-title">CONTACT US</h2>
                         <p class="text-left">Multimedia Nusantara University</p>
@@ -20,9 +20,9 @@
                       
                         <!-- Contact Area -->
                         <div class="footer-contact-info" style="cursor:pointer;">
-                            <p><a style="text-decoration: none; color:#9293BC;" href="http://www.instagram.com/bemumn><i class="zmdi zmdi-instagram"></i>@bemumn</a></p>
-                            <p><a style="text-decoration: none; color:#9293BC;" href="http://line.me/ti/p/~@dmn8577"><i class="fab fa-line"></i>@dmn8577</a></p>
-                            <p><a style="text-decoration: none; color:#9293BC;" href="mailto:bem@umn.ac.id?subject='Hallo BEM'"><i class="zmdi zmdi-email"></i>bem@umn.ac.id</a></p>
+                            <p><a style="text-decoration: none; color:#9293BC;" href="http://www.instagram.com/bemumn"><i class="lni lni-instagram-original"></i> bemumn</a></p>
+                            <p><a style="text-decoration: none; color:#9293BC;" href="http://line.me/ti/p/~@dmn8577"><i class="lni lni-line"></i> @dmn8577</a></p>
+                            <p><a style="text-decoration: none; color:#9293BC;" href="mailto:bem@umn.ac.id?subject='Hallo BEM'"><i class="lni lni-envelope"></i> bem@umn.ac.id</a></p>
                         </div>
                     </div>
                 </div>
@@ -30,13 +30,13 @@
                     <div class="single-footer-widget mb-60 wow bounceInUp">
                         <!-- Contact Area -->
                         <div class="footer-contact-info" style="cursor:pointer;">
-                            <p style="text-decoration: none; color:#9293BC" class="zmdi zmdi-local-phone">Leoni Angela Widiana
+                            <p style="text-decoration: none; color:#9293BC" class="lni lni-phone"> Leoni Angela Widiana
                                 08999838085
                             </p>
-                            <p style="text-decoration: none; color:#9293BC" class="zmdi zmdi-local-phone">Aveline Suryanto
+                            <p style="text-decoration: none; color:#9293BC" class="lni lni-phone"> Aveline Suryanto
                                 087738792445
                             </p>
-                            <p style="text-decoration: none; color:#9293BC" class="zmdi zmdi-local-phone">Helwen Liony
+                            <p style="text-decoration: none; color:#9293BC" class="lni lni-phone"> Helwen Liony
                                 081258851200
                             </p>
                         </div>
@@ -50,8 +50,8 @@
 
                         <!-- Footer Gallery -->
                         <div class="footer-gallery">
-                            <div class="row justify-content-center">
-                                <a href="#" class="footer-logo img-hover-zoom"><img class="mx-auto d-block" src="/assets/bem.jpg" alt="BEM Logo" width="75px"></a>
+                            <div class="row justify-content-center" style="padding-top: 10px;">
+                                <a href="#" class="footer-logo img-hover-zoom"><img class="mx-auto d-block" src="/assets/logobemwhite.png" alt="BEM Logo" width="100px"></a>
                                 <div class="col-4" style="max-width:50px;">
                                     <a href="#"><img src="" alt=""></a>
                                 </div>
@@ -64,14 +64,14 @@
         </div>
     </div>
     <!-- Copywrite Area -->
-    <div style="background-color: black;">
+    <div style="background-color: #000033;">
         <div class="container">
             <div class="copywrite-content">
                 <div class="row">
                     <!-- Copywrite Text -->
                     <div class="col-12">
-                        <div class="copywrite-text text-center">
-                            <p> Copyright &copy; TEAM WEBSITE BEM UMN GEN X <span id="current_year"></span>. All rights reserved</p>
+                        <div class="copywrite-text text-center" style="color: white;">
+                            <a href="#"> Copyright &copy; TEAM WEBSITE BEM UMN GEN X <span id="current_year"></span>. All rights reserved</a>
                         </div>
                     </div>
                 </div>
