@@ -36,23 +36,23 @@ class Home extends Component{
         }
 
     return (
-       <div className="Home">
-           <Slider {...settings}>
-               {photos.map((photo) => {
-                   return(
-                       <div>
-                           <img width="100%" src={photo.url} ></img>
-                       </div>
-                   )
-               })}
-           </Slider>
-       </div>
+        <div className="container">
+            <div className="row justify-content-center">
+                <div className="col-md-8">
+                    <div className="card">
+                        <div className="card-header">Example Component</div>
+
+                        <div className="card-body">I'm an example component!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 }
 }
 
-export default Home;
+export default Example;
 
 if (document.getElementById('root')) {
-    ReactDOM.render(<Home />, document.getElementById('root'));
+    ReactDOM.render(<Example />, document.getElementById('root'));
 }
