@@ -31,4 +31,5 @@
         </div>
     </body>
     <script type="text/javascript" src="../js/app.js"></script>
+    @extends('layouts.footer')
 </html>
