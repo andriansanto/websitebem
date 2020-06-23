@@ -65836,13 +65836,8 @@ function Example() {
 
 /* harmony default export */ __webpack_exports__["default"] = (Example);
 
-<<<<<<< HEAD
-if (document.getElementById('example')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Example, null), document.getElementById('example'));
-=======
 if (document.getElementById('root')) {
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Example, null), document.getElementById('root'));
->>>>>>> alvin
 }
 
 /***/ }),
