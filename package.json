@@ -23,10 +23,5 @@
         "resolve-url-loader": "^3.1.0",
         "sass": "^1.15.2",
         "sass-loader": "^8.0.0"
-    },
-    "dependencies": {
-        "chokidar": "^3.4.0",
-        "react-slick": "^0.26.1",
-        "slick-carousel": "^1.8.1"
     }
 }

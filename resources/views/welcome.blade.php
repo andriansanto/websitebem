@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>BEM UMN</title>
+        <title>Laravel</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -81,9 +81,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    BEM UMN
+                    Laravel
                 </div>
-                <div id="example"></div>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
@@ -97,6 +96,5 @@
                 </div>
             </div>
         </div>
-        <script src="js/app.js"></script>
     </body>
 </html>
