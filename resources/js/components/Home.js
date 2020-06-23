@@ -48,8 +48,11 @@ class Home extends Component{
            </Slider>
        </div>
     );
-}
-}
+               
+}//render
+ 
+
+}//function
 
 export default Home;
 
