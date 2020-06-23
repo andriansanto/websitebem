@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row">
                 <!-- Single Footer Widget Area -->
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4" style="padding-top: 20px;">
                     <div class="single-footer-widget mb-60 wow bounceInLeft" style="color: rgba(255, 255, 255, 0.62);">
                         <!-- Footer Logo -->
                         <h2 class="widget-title">CONTACT US</h2>
