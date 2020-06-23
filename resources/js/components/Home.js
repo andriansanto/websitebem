@@ -1,30 +1,29 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import "~slick-carousel/slick/slick.css"; 
-import "~slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { render } from 'sass';
-import '../css/reacthome.css';
+import '../../css/reacthome.css';
 
 const photos = [
     {
         name: 'Photo 1',
-        url: '../../public/assets/img/img1.jpg'
+        url: 'assets/img/img1.jpg'
     },
     {
         name: 'Photo 2',
-        url: '../../public/assets/img/img2.jpg'
+        url: 'assets/img/img2.jpg'
     },
     {
         name: 'Photo 3',
-        url: '../../public/assets/img/img3.jpg'
+        url: 'assets/img/img3.jpg'
     }
 ]
 
 
 
-function Home() {
-    render();{
+class Home extends Component{
+    render(){
         const settings ={
             dots: true,
             fade: true,
@@ -35,7 +34,7 @@ function Home() {
             slideToSroll: 1,
             className: "slides"
         }
-    }
+
     return (
        <div className="Home">
            <Slider {...settings}>
@@ -49,6 +48,7 @@ function Home() {
            </Slider>
        </div>
     );
+}
 }
 
 export default Home;
