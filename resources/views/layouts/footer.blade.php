@@ -20,7 +20,7 @@
                       
                         <!-- Contact Area -->
                         <div class="footer-contact-info" style="cursor:pointer;">
-                            <p><a style="text-decoration: none; color:#9293BC;" href="http://www.instagram.com/bemumn><i class="zmdi zmdi-instagram"></i>@bemumn</a></p>
+                            <p><a style="text-decoration: none; color:#9293BC;" href="http://www.instagram.com/bemumn"><i class="zmdi zmdi-instagram"></i>@bemumn</a></p>
                             <p><a style="text-decoration: none; color:#9293BC;" href="http://line.me/ti/p/~@dmn8577"><i class="fab fa-line"></i>@dmn8577</a></p>
                             <p><a style="text-decoration: none; color:#9293BC;" href="mailto:bem@umn.ac.id?subject='Hallo BEM'"><i class="zmdi zmdi-email"></i>bem@umn.ac.id</a></p>
                         </div>
