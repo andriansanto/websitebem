@@ -36,11 +36,7 @@ class Home extends Component{
         }
 
     return (
-     <div>
-           <div>
-               <h1 >Commit. Solid. Integrated.</h1>
-           </div>
-       <div className="Home">
+        <div>
            <Slider {...settings}>
                {photos.map((photo) => {
                    return(
@@ -50,14 +46,29 @@ class Home extends Component{
                    )
                })}
            </Slider>
+
+       <div className="container">
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
        </div>
        </div>
     );
-               
-}//render
- 
-
-}//function
+}
+}
 
 export default Home;
 

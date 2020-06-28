@@ -25,7 +25,7 @@
         "sass-loader": "^8.0.0"
     },
     "dependencies": {
-        "chokidar": "^3.4.0",
+        "@fortawesome/fontawesome-free": "^5.13.1",
         "react-slick": "^0.26.1",
         "slick-carousel": "^1.8.1"
     }
