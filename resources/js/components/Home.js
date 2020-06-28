@@ -41,7 +41,7 @@ class Home extends Component{
                {photos.map((photo) => {
                    return(
                        <div>
-                           <img width="10%" src={photo.url} ></img>
+                           <img width="100%" src={photo.url} ></img>
                        </div>
                    )
                })}
