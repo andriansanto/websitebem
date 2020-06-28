@@ -26,3 +26,4 @@
     <script type="text/javascript" src="../js/app.js"></script>
     @include('layouts.footer')
 @endsection
+
