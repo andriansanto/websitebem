@@ -71379,7 +71379,6 @@ var Home = /*#__PURE__*/function (_Component) {
           src: photo.url
         }));
       })));
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Commit. Solid. Integrated."));
     } //render
 
   }]);
