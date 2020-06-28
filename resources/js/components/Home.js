@@ -36,7 +36,7 @@ class Home extends Component{
         }
 
     return (
-       <div className="Home">
+        <div>
            <Slider {...settings}>
                {photos.map((photo) => {
                    return(
@@ -46,6 +46,25 @@ class Home extends Component{
                    )
                })}
            </Slider>
+
+       <div className="container">
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+           <p>TESTER</p>
+       </div>
        </div>
     );
 }

@@ -1,5 +1,5 @@
 <!-- Footer Area Start -->
-<footer class="footer-area bg-img bg-overlay-2 section-padding-80-0 fixed-bottom" style="background-color: #000033;">
+<footer class="footer-area bg-img bg-overlay-2 section-padding-80-0 fixed-bottom" style="background-color: #000033;>
     <!-- Main Footer Area -->
     <div class="main-footer-area">
         <div class="container">
