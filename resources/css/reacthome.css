@@ -51,3 +51,19 @@
   .slides .slick-next {
     right: 5%;
   }
+
+  .container container-csi{
+    text-align: center;
+  }
+
+  .container container-2{
+    text-align: right;
+  }
+
+  .container container-dedicate{
+    background-color: yellowgreen;
+  }
+
+  .container container-about{
+    background-color: lightblue;
+  }

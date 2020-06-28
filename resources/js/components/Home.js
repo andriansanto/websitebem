@@ -46,25 +46,50 @@ class Home extends Component{
                    )
                })}
            </Slider>
-
-       <div className="container">
-           <p>TESTER</p>
-           <p>TESTER</p>
-           <p>TESTER</p>
-           <p>TESTER</p>
-           <p>TESTER</p>
-           <p>TESTER</p>
-           <p>TESTER</p>
-           <p>TESTER</p>
-           <p>TESTER</p>
-           <p>TESTER</p>
-           <p>TESTER</p>
-           <p>TESTER</p>
-           <p>TESTER</p>
-           <p>TESTER</p>
-           <p>TESTER</p>
-           <p>TESTER</p>
+    <br></br>
+       <div className="container container-csi">
+           <h1>Commit. Solid. Integrated.</h1>
+           <br></br>
+           <p>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+           <br></br>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+           <br></br>aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+           <br></br>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+           <br></br>qui officia deserunt mollit anim id est laborum.
+           </p>          
        </div>
+
+        <div className="container container-2">
+    
+        <h1>Lorem Ipsum Dolor Sit Amet</h1>
+           <br></br>
+           <p>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+           <br></br>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+           <br></br>aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+           <br></br>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+           <br></br>qui officia deserunt mollit anim id est laborum.
+           <br></br>
+           <button>Learn More</button>
+           </p>          
+        </div>
+
+        <div className="container container-dedicate">
+               <img src="#"></img>
+        </div>
+
+        <div className="container container-about">
+        <p>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+           <br></br>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+           <br></br>aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+           <br></br>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+           <br></br>qui officia deserunt mollit anim id est laborum.
+           <br></br>
+           <button>About Us</button>
+        </p>  
+        </div>
+
        </div>
     );
 }
