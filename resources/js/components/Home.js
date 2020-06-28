@@ -36,16 +36,21 @@ class Home extends Component{
         }
 
     return (
+     <div>
+           <div>
+               <h1 >Commit. Solid. Integrated.</h1>
+           </div>
        <div className="Home">
            <Slider {...settings}>
                {photos.map((photo) => {
                    return(
                        <div>
-                           <img width="100%" src={photo.url} ></img>
+                           <img width="10%" src={photo.url} ></img>
                        </div>
                    )
                })}
            </Slider>
+       </div>
        </div>
     );
                
