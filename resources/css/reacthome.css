@@ -22,12 +22,12 @@
 }
  
 body{
-  background: #09d3ac;
+  background: #ffffff;
 }
 
 .slides {
   position: relative;
-  height: 800px; /*The slider height*/
+  height: 579px; /*The slider height*/
 }
 
 .slick-dots {
@@ -78,10 +78,16 @@ body{
 }
 
 .container container-dedicate{
-  background-color: yellowgreen;
+  background-color: #ffffff;
 }
 
 .container container-about{
   background-color: lightblue;
 }
 
+/*csi*/
+.CSI-color{
+  background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(122,148,186,1)48%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

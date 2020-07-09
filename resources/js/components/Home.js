@@ -53,7 +53,7 @@ class Home extends Component{
            </Slider>
     <br></br>
        <div className="container container-csi">
-           <h1>Commit. Solid. Integrated.</h1>
+           <h1 className="CSI-color">Commit. Solid. Integrated.</h1>
            <br></br>
            <p>
            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
