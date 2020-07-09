@@ -30,18 +30,23 @@ class Home extends Component{
             infinite: true,
             speed: 500,
             slideToShow: 1,
-            arrows: true,
+            dotsClass: "slick-dots",
             slideToSroll: 1,
-            className: "slides"
-        }
+            className: "slides",
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            pauseOnHover: false
+        };
 
     return (
         <div>
            <Slider {...settings}>
                {photos.map((photo) => {
                    return(
-                       <div>
-                           <img width="100%" src={photo.url} ></img>
+                       <div className="slides">
+                           <img className="slides-img" src={photo.url}>
+                            </img>
                        </div>
                    )
                })}

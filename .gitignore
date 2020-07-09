@@ -20,3 +20,5 @@ package-lock.json
 *.json
 package-lock.json
 package-lock.json
+.env.example
+package-lock.json

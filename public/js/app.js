@@ -6442,7 +6442,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".App {\r\n    text-align: center;\r\n  }\r\n   \r\n  .App-logo {\r\n    height: 40vmin;\r\n  }\r\n   \r\n  .App-header {\r\n    background-color: #282c34;\r\n    min-height: 100vh;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n    font-size: calc(10px + 2vmin);\r\n    color: white;\r\n  }\r\n   \r\n  .App-link {\r\n    color: #09d3ac;\r\n  }\r\n   \r\n  body{\r\n    background: #09d3ac;\r\n  }\r\n   \r\n  .slides .slick-prev,\r\n  .slides .slick-next {\r\n    position: absolute;\r\n    top: 50%;\r\n    z-index: 1;\r\n  }\r\n  \r\n  \r\n  .slides {\r\n    position: relative;\r\n  }\r\n  \r\n  .slides .slick-prev,\r\n  .slides .slick-next {\r\n    position: absolute;\r\n    top: 50%;\r\n    z-index:1;\r\n  }\r\n  \r\n  .slides .slick-prev {\r\n    left: 5%;\r\n  }\r\n  \r\n  .slides .slick-next {\r\n    right: 5%;\r\n  }\r\n\r\n  .container container-csi{\r\n    text-align: center;\r\n  }\r\n\r\n  .container container-2{\r\n    text-align: right;\r\n  }\r\n\r\n  .container container-dedicate{\r\n    background-color: yellowgreen;\r\n  }\r\n\r\n  .container container-about{\r\n    background-color: lightblue;\r\n  }", ""]);
+exports.push([module.i, ".App {\r\n  text-align: center;\r\n}\r\n \r\n.App-logo {\r\n  height: 40vmin;\r\n}\r\n \r\n.App-header {\r\n  background-color: #282c34;\r\n  min-height: 100vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: calc(10px + 2vmin);\r\n  color: white;\r\n}\r\n \r\n.App-link {\r\n  color: #09d3ac;\r\n}\r\n \r\nbody{\r\n  background: #09d3ac;\r\n}\r\n\r\n.slides {\r\n  position: relative;\r\n  height: 800px; /*The slider height*/\r\n}\r\n\r\n.slick-dots {\r\n  position: absolute;\r\n  bottom: 20px;\r\n  display: block;\r\n  width: 100%;\r\n  padding: 10;\r\n  margin: 0;\r\n  list-style: none;\r\n  text-align: center;\r\n}\r\n\r\n.slick-dots li.slick-active button:before {\r\n  font-size: 25px;\r\n  color: #ffb035;\r\n  opacity: 1;\r\n}\r\n/*slider button setting - START*/\r\n.slides .slick-prev,\r\n.slides .slick-next {\r\n  position: absolute;\r\n  top: 50%;\r\n  z-index:1;\r\n}\r\n\r\n.slides .slick-prev {\r\n  left: 5%;\r\n}\r\n\r\n.slides .slick-next {\r\n  right: 5%;\r\n}\r\n/*slider button setting - FINISH*/\r\n\r\n.slides-img {\r\n  width: 100%;\r\n  height: 800px; /*image height*/\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n}\r\n\r\n.container container-csi{\r\n  text-align: center;\r\n}\r\n\r\n.container container-2{\r\n  text-align: right;\r\n}\r\n\r\n.container container-dedicate{\r\n  background-color: yellowgreen;\r\n}\r\n\r\n.container container-about{\r\n  background-color: lightblue;\r\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -71367,13 +71367,19 @@ var Home = /*#__PURE__*/function (_Component) {
         infinite: true,
         speed: 500,
         slideToShow: 1,
-        arrows: true,
+        dotsClass: "slick-dots",
         slideToSroll: 1,
-        className: "slides"
+        className: "slides",
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: false
       };
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_slick__WEBPACK_IMPORTED_MODULE_4___default.a, settings, photos.map(function (photo) {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-          width: "100%",
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "slides"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          className: "slides-img",
           src: photo.url
         }));
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
