@@ -77,13 +77,20 @@ body{
 }
 
 .container-2{
-  text-align: right;
-  background-color: #ffb159;
+  background-image: url(../../public/assets/homeumnorange.png); /*nanti ganti sama asset yg resolusinya lbh besar*/
+  width: 100%;
+  height: 610px;
+  background-repeat: no-repeat;
+  background-size: 100%
 }
 
 .container-dedicate{
   background-color: #ffffff;
-  background-image: url(../../public/assets/Dedicate.png);
+  background-image: url(../../public/assets/homepagededicatetocreate.png); /*nanti ganti sama asset yg resolusinya lbh besar*/
+  width: 100%;
+  height: 1081px;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 /*Text di Dedicate*/
 .dtc-1{
@@ -100,9 +107,9 @@ body{
   -webkit-text-fill-color: transparent;
 }
 /*text di dedicate*/    
-.container-about{
+/* .container-about{
   background-color: lightblue;
-}
+} */
 
 /*csi*/
 .CSI-color{
