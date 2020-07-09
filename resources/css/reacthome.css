@@ -1,69 +1,112 @@
 .App {
-    text-align: center;
-  }
-   
-  .App-logo {
-    height: 40vmin;
-  }
-   
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-   
-  .App-link {
-    color: #09d3ac;
-  }
-   
-  body{
-    background: #09d3ac;
-  }
-   
-  .slides .slick-prev,
-  .slides .slick-next {
-    position: absolute;
-    top: 50%;
-    z-index: 1;
-  }
-  
-  
-  .slides {
-    position: relative;
-  }
-  
-  .slides .slick-prev,
-  .slides .slick-next {
-    position: absolute;
-    top: 50%;
-    z-index:1;
-  }
-  
-  .slides .slick-prev {
-    left: 5%;
-  }
-  
-  .slides .slick-next {
-    right: 5%;
-  }
+  text-align: center;
+}
+ 
+.App-logo {
+  height: 40vmin;
+}
+ 
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+ 
+.App-link {
+  color: #09d3ac;
+}
+ 
+body{
+  background: #ffffff;
+}
 
-  .container container-csi{
-    text-align: center;
-  }
+.slides {
+  position: relative;
+  height: 579px; /*The slider height*/
+}
 
-  .container container-2{
-    text-align: right;
-  }
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  display: block;
+  width: 100%;
+  padding: 10;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  font-size: white;
+}
 
-  .container container-dedicate{
-    background-color: yellowgreen;
-  }
+.slick-dots li.slick-active button:before {
+  font-size: 25px;
+  color: #ffb035;
+  opacity: 1;
+}
 
-  .container container-about{
-    background-color: lightblue;
-  }
+/*slider button setting - START*/
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index:1;
+}
+
+.slides .slick-prev::before {
+  left: 5%;
+
+}
+
+.slides .slick-next {
+  right: 5%;
+}
+/*slider button setting - FINISH*/
+
+.slides-img {
+  width: 100%;
+  height: 579px; /*image height*/
+  object-fit: cover;
+}
+
+.container-csi{
+  text-align: center;
+}
+
+.container-2{
+  text-align: right;
+  background-color: #ffb159;
+}
+
+.container-dedicate{
+  background-color: #ffffff;
+  background-image: url(../../public/assets/Dedicate.png);
+}
+/*Text di Dedicate*/
+.dtc-1{
+  text-align: center;
+  background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.genx-1{
+  text-align: center;
+  background: -webkit-linear-gradient(90deg, rgba(255,207,0,0.7243350596910112) 0%, rgba(255,144,12,0.8086047226123596) 48%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*text di dedicate*/    
+.container-about{
+  background-color: lightblue;
+}
+
+/*csi*/
+.CSI-color{
+  background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(122,148,186,1)48%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -30,10 +30,14 @@ class Home extends Component{
             infinite: true,
             speed: 500,
             slideToShow: 1,
-            arrows: true,
+            dotsClass: "slick-dots",
             slideToSroll: 1,
-            className: "slides"
-        }
+            className: "slides",
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            pauseOnHover: false
+        };
 
     return (
         <div>
@@ -41,16 +45,17 @@ class Home extends Component{
            <Slider {...settings}>
                {photos.map((photo) => {
                    return(
-                       <div>
-                           <img width="100%" src={photo.url} ></img>
+                       <div className="slides">
+                           <img className="slides-img" src={photo.url}>
+                            </img>
                        </div>
                    )
                })}
            </Slider>
            </div>
     <br></br>
-       <div className="container container-csi">
-           <h1>Commit. Solid. Integrated.</h1>
+       <div className="container-csi">
+           <h1 className="CSI-color">Commit. Solid. Integrated.</h1>
            <br></br>
            <p>
            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
@@ -61,7 +66,7 @@ class Home extends Component{
            </p>          
        </div>
 
-        <div className="container container-2">
+        <div className="container-2">
     
         <h1>Lorem Ipsum Dolor Sit Amet</h1>
            <br></br>
@@ -76,11 +81,13 @@ class Home extends Component{
            </p>          
         </div>
 
-        <div className="container container-dedicate">
-               <img src="#"></img>
+        <div className="container-dedicate">
+            <img src="assets/Dedicate.png"></img>
+               <h1 className="dtc-1">#DedicateToCreate</h1>
+               <h2 className="genx-1">GEN X</h2>
         </div>
 
-        <div className="container container-about">
+        <div className="container-about">
         <p>
            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
            <br></br>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
