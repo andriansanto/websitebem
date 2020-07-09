@@ -1,0 +1,15 @@
+.body{
+    background-color: #ffffff;
+}
+
+
+.container-himp{
+    text-align: center;
+    background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.himp-maha{
+    text-align: center;
+}
