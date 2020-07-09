@@ -37,6 +37,7 @@ class Home extends Component{
 
     return (
         <div>
+            <div className="App">
            <Slider {...settings}>
                {photos.map((photo) => {
                    return(
@@ -46,6 +47,7 @@ class Home extends Component{
                    )
                })}
            </Slider>
+           </div>
     <br></br>
        <div className="container container-csi">
            <h1>Commit. Solid. Integrated.</h1>
