@@ -5,7 +5,6 @@ class Himpunan extends Component{
     render(){
 
 return(
-
     <div className="container-himp">
     <h1 className="himp-maha">HIMPUNAN <br>MAHASISWA</br></h1>
     <br></br>
@@ -17,9 +16,6 @@ return(
     <br></br>qui officia deserunt mollit anim id est laborum.
     </p>          
     </div>
-
-
-
     );
  };
 }
