@@ -67,7 +67,6 @@ class Home extends Component{
        </div>
 
         <div className="container-2">
-    
         <h1>Lorem Ipsum Dolor Sit Amet</h1>
            <br></br>
            <p>
@@ -82,12 +81,8 @@ class Home extends Component{
         </div>
 
         <div className="container-dedicate">
-            <img src="assets/Dedicate.png"></img>
                <h1 className="dtc-1">#DedicateToCreate</h1>
                <h2 className="genx-1">GEN X</h2>
-        </div>
-
-        <div className="container-about">
         <p>
            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
            <br></br>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
@@ -98,6 +93,9 @@ class Home extends Component{
            <button>About Us</button>
         </p>  
         </div>
+
+        {/* <div className="container-about">
+        </div> */}
 
        </div>
     );
