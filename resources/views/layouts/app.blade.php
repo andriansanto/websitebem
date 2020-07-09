@@ -24,7 +24,7 @@
 <body>
     <div id="app">
     
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm fixed-top" style="opacity: 1;">
             <div class="container">
             <a class="navbar-brand d-flex" href="{{ url('/') }}">
                     <div><img src="/assets/bem.jpg" style="height: 25px; border-right: 1px solid #333333;" class="pr-3"></div>
