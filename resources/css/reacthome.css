@@ -72,19 +72,35 @@ body{
   object-fit: cover;
 }
 
-.container container-csi{
+.container-csi{
   text-align: center;
 }
 
-.container container-2{
+.container-2{
   text-align: right;
+  background-color: #ffb159;
 }
 
-.container container-dedicate{
+.container-dedicate{
   background-color: #ffffff;
+  background-image: url(../../public/assets/Dedicate.png);
+}
+/*Text di Dedicate*/
+.dtc-1{
+  text-align: center;
+  background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.container container-about{
+.genx-1{
+  text-align: center;
+  background: -webkit-linear-gradient(90deg, rgba(255,207,0,0.7243350596910112) 0%, rgba(255,144,12,0.8086047226123596) 48%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*text di dedicate*/    
+.container-about{
   background-color: lightblue;
 }
 

@@ -6437,12 +6437,13 @@ exports.push([module.i, "/* Slider */\n.slick-slider\n{\n    position: relative;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+var escape = __webpack_require__(/*! ../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, ".App {\r\n  text-align: center;\r\n}\r\n \r\n.App-logo {\r\n  height: 40vmin;\r\n}\r\n \r\n.App-header {\r\n  background-color: #282c34;\r\n  min-height: 100vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: calc(10px + 2vmin);\r\n  color: white;\r\n}\r\n \r\n.App-link {\r\n  color: #09d3ac;\r\n}\r\n \r\nbody{\r\n  background: #ffffff;\r\n}\r\n\r\n.slides {\r\n  position: relative;\r\n  height: 579px; /*The slider height*/\r\n}\r\n\r\n.slick-dots {\r\n  position: absolute;\r\n  bottom: 20px;\r\n  display: block;\r\n  width: 100%;\r\n  padding: 10;\r\n  margin: 0;\r\n  list-style: none;\r\n  text-align: center;\r\n}\r\n\r\n.slick-dots li.slick-active button:before {\r\n  font-size: 25px;\r\n  color: #ffb035;\r\n  opacity: 1;\r\n}\r\n/*slider button setting - START*/\r\n.slides .slick-prev,\r\n.slides .slick-next {\r\n  position: absolute;\r\n  top: 50%;\r\n  z-index:1;\r\n}\r\n\r\n.slides .slick-prev {\r\n  left: 5%;\r\n}\r\n\r\n.slides .slick-next {\r\n  right: 5%;\r\n}\r\n/*slider button setting - FINISH*/\r\n\r\n.slides-img {\r\n  width: 100%;\r\n  height: 800px; /*image height*/\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n}\r\n\r\n.container container-csi{\r\n  text-align: center;\r\n}\r\n\r\n.container container-2{\r\n  text-align: right;\r\n}\r\n\r\n.container container-dedicate{\r\n  background-color: #ffffff;\r\n}\r\n\r\n.container container-about{\r\n  background-color: lightblue;\r\n}\r\n\r\n/*csi*/\r\n.CSI-color{\r\n  background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(122,148,186,1)48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n}", ""]);
+exports.push([module.i, ".App {\r\n  text-align: center;\r\n}\r\n \r\n.App-logo {\r\n  height: 40vmin;\r\n}\r\n \r\n.App-header {\r\n  background-color: #282c34;\r\n  min-height: 100vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: calc(10px + 2vmin);\r\n  color: white;\r\n}\r\n \r\n.App-link {\r\n  color: #09d3ac;\r\n}\r\n \r\nbody{\r\n  background: #ffffff;\r\n}\r\n\r\n.slides {\r\n  position: relative;\r\n  height: 579px; /*The slider height*/\r\n}\r\n\r\n.slick-dots {\r\n  position: absolute;\r\n  bottom: 20px;\r\n  display: block;\r\n  width: 100%;\r\n  padding: 10;\r\n  margin: 0;\r\n  list-style: none;\r\n  text-align: center;\r\n  font-size: white;\r\n}\r\n\r\n.slick-dots li.slick-active button:before {\r\n  font-size: 25px;\r\n  color: #ffb035;\r\n  opacity: 1;\r\n}\r\n\r\n/*slider button setting - START*/\r\n.slides .slick-prev,\r\n.slides .slick-next {\r\n  position: absolute;\r\n  top: 50%;\r\n  z-index:1;\r\n}\r\n\r\n.slides .slick-prev::before {\r\n  left: 5%;\r\n\r\n}\r\n\r\n.slides .slick-next {\r\n  right: 5%;\r\n}\r\n/*slider button setting - FINISH*/\r\n\r\n.slides-img {\r\n  width: 100%;\r\n  height: 579px; /*image height*/\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n}\r\n\r\n.container-csi{\r\n  text-align: center;\r\n}\r\n\r\n.container-2{\r\n  text-align: right;\r\n  background-color: #ffb159;\r\n}\r\n\r\n.container-dedicate{\r\n  background-color: #ffffff;\r\n  background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/Dedicate.png */ "./public/assets/Dedicate.png")) + ");\r\n}\r\n/*Text di Dedicate*/\r\n.dtc-1{\r\n  text-align: center;\r\n  background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.genx-1{\r\n  text-align: center;\r\n  background: -webkit-linear-gradient(90deg, rgba(255,207,0,0.7243350596910112) 0%, rgba(255,144,12,0.8086047226123596) 48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n}\r\n/*text di dedicate*/    \r\n.container-about{\r\n  background-color: lightblue;\r\n}\r\n\r\n/*csi*/\r\n.CSI-color{\r\n  background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(122,148,186,1)48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n}", ""]);
 
 // exports
 
@@ -71188,6 +71189,17 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./public/assets/Dedicate.png":
+/*!************************************!*\
+  !*** ./public/assets/Dedicate.png ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/Dedicate.png?e53018d785e9ad962d002d353c856fd7";
+
+/***/ }),
+
 /***/ "./resources/css/reacthome.css":
 /*!*************************************!*\
   !*** ./resources/css/reacthome.css ***!
@@ -71383,17 +71395,21 @@ var Home = /*#__PURE__*/function (_Component) {
           src: photo.url
         }));
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container container-csi"
+        className: "container-csi"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "CSI-color"
       }, "Commit. Solid. Integrated."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "qui officia deserunt mollit anim id est laborum.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container container-2"
+        className: "container-2"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Lorem Ipsum Dolor Sit Amet"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "qui officia deserunt mollit anim id est laborum.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Learn More"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container container-dedicate"
+        className: "container-dedicate"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "#"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container container-about"
+        src: "assets/Dedicate.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "dtc-1"
+      }, "#DedicateToCreate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+        className: "genx-1"
+      }, "GEN X")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container-about"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "qui officia deserunt mollit anim id est laborum.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "About Us"))));
     }
   }]);

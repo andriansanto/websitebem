@@ -52,7 +52,7 @@ class Home extends Component{
                })}
            </Slider>
     <br></br>
-       <div className="container container-csi">
+       <div className="container-csi">
            <h1 className="CSI-color">Commit. Solid. Integrated.</h1>
            <br></br>
            <p>
@@ -64,7 +64,7 @@ class Home extends Component{
            </p>          
        </div>
 
-        <div className="container container-2">
+        <div className="container-2">
     
         <h1>Lorem Ipsum Dolor Sit Amet</h1>
            <br></br>
@@ -79,11 +79,13 @@ class Home extends Component{
            </p>          
         </div>
 
-        <div className="container container-dedicate">
-               <img src="#"></img>
+        <div className="container-dedicate">
+            <img src="assets/Dedicate.png"></img>
+               <h1 className="dtc-1">#DedicateToCreate</h1>
+               <h2 className="genx-1">GEN X</h2>
         </div>
 
-        <div className="container container-about">
+        <div className="container-about">
         <p>
            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
            <br></br>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
