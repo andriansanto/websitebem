@@ -26,7 +26,7 @@ class Home extends Component{
     render(){
         const settings ={
             dots: true,
-            fade: true,
+            fade: false,
             infinite: true,
             speed: 500,
             slideToShow: 1,
