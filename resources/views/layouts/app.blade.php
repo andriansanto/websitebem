@@ -24,7 +24,7 @@
 <body>
     <div id="app">
     
-        <nav class="navbar navbar-expand-md navbar-light bg-white-custom shadow-sm fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light navbar-bg shadow-sm fixed-top">
             <div class="container">
             <a class="navbar-brand d-flex" href="{{ url('/') }}">
                     <div><img src="/assets/bem.jpg" style="height: 25px; border-right: 1px solid #333333;" class="pr-3"></div>
@@ -100,20 +100,41 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4" style="padding-top: 0 !important;">
             @yield('content')
         </main>
     </div>
 </body>
 
 <style>
-    .bg-white-custom {
-
-    }
-
     .text-transition {
         color: white;
-    };
+    }
+
+    .navbar-bg {
+        box-shadow: 0 0rem 0.25rem rgba(255, 255, 255, 1) !important;
+    }
+
+    .navbar-bg.scrolled {
+        background-color: white !important;
+        transition: 150ms ease;
+        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.067) !important;
+    }
+
+    .text-transition.scrolledd {
+        color: black;
+    }
+
 </style>
+
+<script>
+    $(window).scroll(function() {
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 500);
+    })
+
+    $(window).scroll(function() {
+        $('div').toggleClass('scrolledd', $(this).scrollTop() > 500);
+    })
+</script>
 
 </html>
