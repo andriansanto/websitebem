@@ -24,11 +24,11 @@
 <body>
     <div id="app">
     
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm fixed-top" style="opacity: 1;">
+        <nav class="navbar navbar-expand-md navbar-light bg-white-custom shadow-sm fixed-top">
             <div class="container">
             <a class="navbar-brand d-flex" href="{{ url('/') }}">
                     <div><img src="/assets/bem.jpg" style="height: 25px; border-right: 1px solid #333333;" class="pr-3"></div>
-                    <div class="pl-3">BEM UMN</div>
+                    <div class="pl-3 text-transition">BEM UMN</div>
             </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -45,19 +45,35 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('HIMPUNAN') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">
+                                    <div class="text-transition">
+                                        HIMPUNAN
+                                    </div>
+                                </a>
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('UKM') }}</a>
+                                <a class="nav-link" href="{{ route('register') }}">
+                                    <div class="text-transition">
+                                        UKM
+                                    </div>
+                                </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('KEGIATAN MAHASISWA') }}</a>
+                                <a class="nav-link" href="{{ route('register') }}">
+                                    <div class="text-transition">
+                                        KEGIATAN MAHASISWA
+                                    </div>
+                                </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('ABOUT US') }}</a>
+                                <a class="nav-link" href="{{ route('register') }}">
+                                    <div class="text-transition">
+                                        ABOUT US
+                                    </div>
+                                </a>
                             </li>
                             
                         @else
@@ -89,4 +105,15 @@
         </main>
     </div>
 </body>
+
+<style>
+    .bg-white-custom {
+
+    }
+
+    .text-transition {
+        color: white;
+    };
+</style>
+
 </html>

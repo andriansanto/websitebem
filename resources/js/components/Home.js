@@ -45,8 +45,8 @@ class Home extends Component{
            <Slider {...settings}>
                {photos.map((photo) => {
                    return(
-                       <div className="slides">
-                           <img className="slides-img" src={photo.url}>
+                       <div className="slides filter">
+                            <img className="slides-img" src={photo.url}>
                             </img>
                        </div>
                    )
