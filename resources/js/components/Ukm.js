@@ -1,26 +1,28 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import '../../css/reacthimp.css';
+import '../../css/reactukm.css';
 
-class Himpunan extends Component{
+class Ukm extends Component{
 render(){
 return(
-    <div className="container-himp">
-    <h1 className="himp-maha">HIMPUNAN <br></br> MAHASISWA</h1>
+    <div className="container-ukm">
+    <h1 className="ukm">UNIT KEGIATAN<br></br> MAHASISWA</h1>
     <br></br>
-    <p>
-    Universitas Multimedia Nusantara terbagi menjadi 4 fakultas besar.<br></br>
-    Keempat fakultas terbagi menjadi beberapa jurusan dengan dinaungi oleh <br></br>
-    himpunan jurusan tersebut. Berikut merupakan ke 11 himpunan yang terdapat <br></br>
-    pada Universitas Multimedia Nusantara
+    <p className="textatasukm">
+    Universitas Multimedia Nusantara memiliki berbagai Unit Kegiatan Mahasiswa.<br></br>
+    (UKM) yang beragam. Yang dibagi menjadi 3 kategori yaitu, Seni dan Budaya, <br></br>
+    Sains dan Sosial, dan Olahraga. <br></br>
     </p>          
     </div>
-    );
+   
+   
+   
+   );
 }
 }
 
-export default Himpunan;
+export default Ukm;
 
-if (document.getElementById('himp')) {
-    ReactDOM.render(<Himpunan />, document.getElementById('himp'));
+if (document.getElementById('ukm')) {
+    ReactDOM.render(<Ukm />, document.getElementById('ukm'));
 }
