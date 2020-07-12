@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import '../../css/reacthome.css';
 import { Container, Row, Col } from 'reactstrap';
+import { Button } from 'reactstrap';
 
 const photos = [
     {
@@ -82,7 +83,7 @@ class Home extends Component{
            <br></br>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
            <br></br>qui officia deserunt mollit anim id est laborum.
            <br></br>
-           <button>Learn More</button>
+           <Button color="primary">Learn More</Button>{' '}
            </p>              
         </div>
         </div>
@@ -100,7 +101,7 @@ class Home extends Component{
              </Col>  
             </Row>
         <Row>
-        <Col xs="6" sm="4">
+        <Col xs="6">
         <div className="container-dedicate-text">
         <p>
            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
@@ -109,7 +110,7 @@ class Home extends Component{
            <br></br>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
            <br></br>qui officia deserunt mollit anim id est laborum.
            <br></br>
-           <button>About Us</button>
+           <Button color="primary">About Us</Button>{' '}
         </p>  
         </div>
         </Col>
