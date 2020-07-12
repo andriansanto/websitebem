@@ -18,3 +18,8 @@ Auth::Routes();
 Route::get('/', function () {
     return view('base');
 });
+
+Route::get('/himpunan','HomeController@himpunan');
+
+Route::post('/himpunan','HomeController@himpunan');
+

@@ -16,11 +16,8 @@
                 </div>
             @endif-->
 
-            <div id="himpunan" class="content">
+            <div id="himp" class="content">
 
-
-
-            
             </div>
         </div>
     <script type="text/javascript" src="../js/app.js"></script>

@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 import '../../css/reacthimp.css';
 
 class Himpunan extends Component{
-    render(){
-
+render(){
 return(
     <div className="container-himp">
     <h1 className="himp-maha">HIMPUNAN <br>MAHASISWA</br></h1>
@@ -16,11 +16,11 @@ return(
     </p>          
     </div>
     );
- };
+}
 }
 
 export default Himpunan;
 
-if (document.getElementById('himpunan')) {
-    ReactDOM.render(<Himpunan />, document.getElementById('himpunan'));
+if (document.getElementById('himp')) {
+    ReactDOM.render(<Himpunan />, document.getElementById('himp'));
 }

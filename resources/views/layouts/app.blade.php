@@ -45,11 +45,15 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">
-                                    <div class="text-transition">
-                                        HIMPUNAN
-                                    </div>
+
+                                <a class="dropdown-item" onclick="event.preventDefault();document.getElementById('himp-nav').submit();">
+                                {{ __('Himpunan') }}
                                 </a>
+
+                                <form id="himp-nav" action="/himpunan" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+
                             </li>
                             
                             <li class="nav-item">
