@@ -45,19 +45,15 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-
-                                <a class="dropdown-item" onclick="event.preventDefault();document.getElementById('himp-nav').submit();">
-                                {{ __('Himpunan') }}
+                                <a class="nav-link" href="{{ route('himpunan') }}">
+                                    <div class="text-transition">
+                                        HIMPUNAN
+                                    </div>
                                 </a>
-
-                                <form id="himp-nav" action="/himpunan" method="POST" style="display: none;">
-                                    @csrf
-                                </form>
-
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">
+                                <a class="nav-link" href="{{ route('ukm') }}">
                                     <div class="text-transition">
                                         UKM
                                     </div>
@@ -65,7 +61,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">
+                                <a class="nav-link" href="{{ route('kegiatan-mahasiswa') }}">
                                     <div class="text-transition">
                                         KEGIATAN MAHASISWA
                                     </div>
@@ -73,7 +69,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">
+                                <a class="nav-link" href="{{ route('about-us') }}">
                                     <div class="text-transition">
                                         ABOUT US
                                     </div>

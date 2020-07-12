@@ -19,7 +19,14 @@ Route::get('/', function () {
     return view('base');
 });
 
-Route::get('/himpunan','HomeController@himpunan');
+Route::get('/himpunan','HomeController@himpunan')->name('himpunan');
+Route::post('/himpunan','HomeController@himpunan')->name('himpunan');
 
-Route::post('/himpunan','HomeController@himpunan');
+Route::get('/ukm','HomeController@ukm')->name('ukm');
+Route::post('/ukm','HomeController@ukm')->name('ukm');
 
+Route::get('/kegiatan-mahasiswa','HomeController@kegiatanMahasiswa')->name('kegiatan-mahasiswa');
+Route::post('/kegiatan-mahasiswa','HomeController@kegiatanMahasiswa')->name('kegiatan-mahasiswa');
+
+Route::get('/about-us','HomeController@aboutus')->name('about-us');
+Route::post('/about-us','HomeController@aboutus')->name('about-us');

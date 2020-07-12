@@ -30,4 +30,19 @@ class HomeController extends Controller
     {
         return view('himp');
     }
+
+    public function ukm()
+    {
+        return view('ukm');
+    }
+
+    public function kegiatanMahasiswa()
+    {
+        return view('kegiatanMahasiswa');
+    }
+
+    public function aboutus()
+    {
+        return view('aboutus');
+    }
 }
