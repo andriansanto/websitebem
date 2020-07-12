@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import '../../css/reacthome.css';
+import { Container, Row, Col } from 'reactstrap';
+import { Button } from 'reactstrap';
 
 const photos = [
     {
@@ -55,6 +57,7 @@ class Home extends Component{
            </div>
     <br></br>
        <div className="container-csi">
+           <div className="container-csi-text">
            <h1 className="CSI-color">Commit. Solid. Integrated.</h1>
            <br></br>
            <p>
@@ -64,9 +67,13 @@ class Home extends Component{
            <br></br>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
            <br></br>qui officia deserunt mollit anim id est laborum.
            </p>          
+           </div>
        </div>
 
+       <Container className="themed-container" fluid={true}>
         <div className="container-2">
+    
+        <div className="container-2-text">
         <h1>Lorem Ipsum Dolor Sit Amet</h1>
            <br></br>
            <p>
@@ -76,15 +83,26 @@ class Home extends Component{
            <br></br>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
            <br></br>qui officia deserunt mollit anim id est laborum.
            <br></br>
-           <button>Learn More</button>
-           </p>          
+           <Button color="primary">Learn More</Button>{' '}
+           </p>              
         </div>
+        </div>
+        </Container>
+
+        <Container className="themed-container" fluid={true}>
 
         <div className="container-dedicate">
-               <h1 className="dtc-1">#DedicateToCreate</h1>
+            <Row>
+             <Col>
+            <div className="container-dedicate-judul">
+               <h1 className="dtc-1">#DedicateToCreate</h1>    
                <h2 className="genx-1">GEN X</h2>
-        
-        <div className="container-aboutus">
+            </div>
+             </Col>  
+            </Row>
+        <Row>
+        <Col xs="6">
+        <div className="container-dedicate-text container-aboutus">
         <p>
            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
            <br></br>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
@@ -92,10 +110,13 @@ class Home extends Component{
            <br></br>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
            <br></br>qui officia deserunt mollit anim id est laborum.
            <br></br>
-           <button>About Us</button>
-        </p> 
+           <Button color="primary">About Us</Button>{' '}
+        </p>  
         </div>
+        </Col>
+        </Row>
         </div>
+        </Container>
 
         {/* <div className="container-about">
         </div> */}
