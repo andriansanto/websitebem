@@ -6,7 +6,7 @@ class Himpunan extends Component{
 render(){
 return(
     <div className="container-himp">
-    <h1 className="himp-maha">HIMPUNAN <br>MAHASISWA</br></h1>
+    <h1 className="himp-maha">HIMPUNAN <br></br> MAHASISWA</h1>
     <br></br>
     <p>
     Universitas Multimedia Nusantara terbagi menjadi 4 fakultas besar.<br></br>

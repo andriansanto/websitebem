@@ -71416,25 +71416,11 @@ var Himpunan = /*#__PURE__*/function (_Component) {
   _createClass(Himpunan, [{
     key: "render",
     value: function render() {
-      var settings = {
-        dots: true,
-        fade: false,
-        infinite: true,
-        speed: 500,
-        slideToShow: 1,
-        dotsClass: "slick-dots",
-        slideToSroll: 1,
-        className: "slides",
-        adaptiveHeight: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        pauseOnHover: false
-      };
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container-himp"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "himp-maha"
-      }, "HIMPUNAN ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null, "MAHASISWA")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Universitas Multimedia Nusantara terbagi menjadi 4 fakultas besar.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Keempat fakultas terbagi menjadi beberapa jurusan dengan dinaungi oleh ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "himpunan jurusan tersebut. Berikut merupakan ke 11 himpunan yang terdapat ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "pada Universitas Multimedia Nusantara"));
+      }, "HIMPUNAN ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " MAHASISWA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Universitas Multimedia Nusantara terbagi menjadi 4 fakultas besar.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Keempat fakultas terbagi menjadi beberapa jurusan dengan dinaungi oleh ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "himpunan jurusan tersebut. Berikut merupakan ke 11 himpunan yang terdapat ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "pada Universitas Multimedia Nusantara"));
     }
   }]);
 
