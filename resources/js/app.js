@@ -14,3 +14,6 @@ require('./bootstrap');
 
 require('./components/Home');
 require('./components/Himpunan');
+require('./components/Ukm');
+require('./components/KegiatanMahasiswa');
+require('./components/AboutUs');
