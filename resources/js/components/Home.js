@@ -83,6 +83,8 @@ class Home extends Component{
         <div className="container-dedicate">
                <h1 className="dtc-1">#DedicateToCreate</h1>
                <h2 className="genx-1">GEN X</h2>
+        
+        <div className="container-aboutus">
         <p>
            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
            <br></br>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
@@ -91,7 +93,8 @@ class Home extends Component{
            <br></br>qui officia deserunt mollit anim id est laborum.
            <br></br>
            <button>About Us</button>
-        </p>  
+        </p> 
+        </div>
         </div>
 
         {/* <div className="container-about">
