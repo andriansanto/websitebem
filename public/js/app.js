@@ -7095,7 +7095,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".container-keg{\r\n    padding-top: 55px;\r\n    text-align: center;\r\n    width: 100%;\r\n    height: 500px;\r\n}\r\n\r\n.text-tab-pane{\r\n  display: inline-flex;\r\n  font-family: 'Montserrat', sans-serif;\r\n  font-weight: bold;\r\n  font-size: xxx-large;\r\n  color: #bcbcbc;\r\n  justify-content: center;\r\n  align-items: center;\r\n  width: 50%;\r\n  height: 300px;\r\n  background-image: linear-gradient(#ffb359,#ffffff);\r\n}\r\n\r\n.react-tabs__tab--selected {\r\n    /* border-color: #aaa; */\r\n    color: white;\r\n    border-radius: 5px 5px 0 0;\r\n  }", ""]);
+exports.push([module.i, ".container-keg{\r\n    padding-top: 55px;\r\n    text-align: center;\r\n    width: 100%;\r\n    height: 500px;\r\n}\r\n\r\n.text-tab-pane{\r\n  display: inline-flex;\r\n  font-family: 'Montserrat', sans-serif;\r\n  font-weight: bold;\r\n  font-size: xxx-large;\r\n  color: #bcbcbc;\r\n  justify-content: center;\r\n  align-items: center;\r\n  width: 50%;\r\n  height: 300px;\r\n  background-image: linear-gradient(#ffb359,#ffffff);\r\n}\r\n\r\n.react-tabs__tab--selected {\r\n    /* border-color: #aaa; */\r\n    color: white;\r\n    border-radius: 5px 5px 0 0;\r\n  }\r\n\r\n\r\n  /* Line Slider*/\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.a{\r\n    text-decoration: none;\r\n}\r\n\r\n.container-slider{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: cornflowerblue;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.box{\r\n    width: 350px;\r\n    height: 500px;\r\n    background-color: #81175a;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.box:hover{\r\n    background-color: #a82578;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.box:hover .senbud{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n.penjelasan{\r\n    text-align: center;\r\n    color: white;\r\n}\r\n\r\n.model{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details p{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 20px;\r\n}\r\n\r\n.senbud{\r\n    color: #500033;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}", ""]);
 
 // exports
 
@@ -87006,10 +87006,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_tabs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-tabs */ "./node_modules/react-tabs/esm/index.js");
-/* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-tabs/style/react-tabs.css */ "./node_modules/react-tabs/style/react-tabs.css");
-/* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _css_reactkeg_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../css/reactkeg.css */ "./resources/css/reactkeg.css");
-/* harmony import */ var _css_reactkeg_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_css_reactkeg_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../css/lightslider.css */ "./resources/css/lightslider.css");
+/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_lightslider_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../slidersukm/Jquery31 */ "./resources/js/slidersukm/Jquery31.js");
+/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../slidersukm/lightslider */ "./resources/js/slidersukm/lightslider.js");
+/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../slidersukm/sliderquery */ "./resources/js/slidersukm/sliderquery.js");
+/* harmony import */ var _slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-tabs/style/react-tabs.css */ "./node_modules/react-tabs/style/react-tabs.css");
+/* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _css_reactkeg_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../css/reactkeg.css */ "./resources/css/reactkeg.css");
+/* harmony import */ var _css_reactkeg_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_css_reactkeg_css__WEBPACK_IMPORTED_MODULE_8__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -87031,6 +87039,10 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
 
 
 
@@ -87061,7 +87073,29 @@ var KegiatanMahasiswa = /*#__PURE__*/function (_Component) {
         className: "text-tab-pane"
       }, "Kegiatan", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tab"], {
         className: "text-tab-pane"
-      }, "Lembaga", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Semi Otonom")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Any content 1")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Any content 2")));
+      }, "Lembaga", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Semi Otonom")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container-awal"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container-slider"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        id: "autoWidth",
+        "class": "cs-hidden"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        "class": "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "senbud"
+      }, "Ultima Sonora"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "assets/ukmnobg/senbud/ulsonbg.png",
+        className: "model"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "penjelasan"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang paduan suara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/bemumn"
+      }, "@ultimasonora")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora ")))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Any content 2")));
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container-keg"
       }, displayTabs);
@@ -96503,8 +96537,8 @@ if (document.getElementById('ukm')) {
     verticalHeight: 500,
     vThumbWidth: 100,
     thumbItem: 10,
-    pager: true,
-    gallery: false,
+    pager: false,
+    gallery: true,
     galleryMargin: 5,
     thumbMargin: 5,
     currentPagerPosition: 'middle',
