@@ -102,7 +102,7 @@
             </div>
         </nav>
 
-        <main class="py-4" style="padding-top: 0 !important;">
+        <main  style="padding-top: 0 !important;">
             @yield('content')
         </main>
     </div>
@@ -123,7 +123,9 @@
         color: #233e57;
         font-weight: bold;
         font-family: 'Montserrat', sans-serif;
+
     }
+}
 
 </style>
 
