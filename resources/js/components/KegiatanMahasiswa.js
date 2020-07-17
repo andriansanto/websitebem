@@ -10,8 +10,8 @@ render(){
     const displayTabs = (
         <Tabs defaultIndex={0} onSelect={index => console.log(index)}>
             <TabList>
-            <Tab>Kegiatan Mahasiswa</Tab>
-            <Tab>Lembaga Semi Otonom</Tab>
+            <Tab className="text-tab-pane">Kegiatan<br></br>Mahasiswa</Tab>
+            <Tab className="text-tab-pane">Lembaga<br></br>Semi Otonom</Tab>
             </TabList>
 
             <TabPanel>
@@ -24,7 +24,7 @@ render(){
     );
 
 return(
-    <div>
+    <div className="container-keg">
         {displayTabs}
     </div>
     );

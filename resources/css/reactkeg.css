@@ -1,5 +1,25 @@
-.grad{
-    background-image: linear-gradient(#ffb359,#ffffff);
+.container-keg{
+    padding-top: 55px;
+    text-align: center;
     width: 100%;
     height: 500px;
 }
+
+.text-tab-pane{
+  display: inline-flex;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: xxx-large;
+  color: #bcbcbc;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 300px;
+  background-image: linear-gradient(#ffb359,#ffffff);
+}
+
+.react-tabs__tab--selected {
+    /* border-color: #aaa; */
+    color: white;
+    border-radius: 5px 5px 0 0;
+  }

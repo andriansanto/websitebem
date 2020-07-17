@@ -15,20 +15,22 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/cms/fontawesome-5.12.1/css/fontawesome.min.css') }}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="../../css/default.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
     
 </head>
 <body>
     <div id="app">
     
-        <nav class="navbar navbar-expand-md navbar-light navbar-bg shadow-sm fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm fixed-top">
             <div class="container">
             <a class="navbar-brand d-flex" href="{{ url('/') }}">
                     <div><img src="/assets/bem2.png" style="height: 25px; border-right: 1px solid #333333;" class="pr-3"></div>
-                    <div class="pl-3 text-transition">BEM UMN</div>
+                    <div class="pl-3 text-umn">BEM UMN</div>
             </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -46,7 +48,7 @@
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('himpunan') }}">
-                                    <div class="text-transition">
+                                    <div class="text-umn">
                                         HIMPUNAN
                                     </div>
                                 </a>
@@ -54,7 +56,7 @@
                             
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('ukm') }}">
-                                    <div class="text-transition">
+                                    <div class="text-umn">
                                         UKM
                                     </div>
                                 </a>
@@ -62,7 +64,7 @@
 
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('kegiatan-mahasiswa') }}">
-                                    <div class="text-transition">
+                                    <div class="text-umn">
                                         KEGIATAN MAHASISWA
                                     </div>
                                 </a>
@@ -70,7 +72,7 @@
 
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('about-us') }}">
-                                    <div class="text-transition">
+                                    <div class="text-umn">
                                         ABOUT US
                                     </div>
                                 </a>
@@ -107,10 +109,6 @@
 </body>
 
 <style>
-    .text-transition {
-        color: white;
-    }
-
     .navbar-bg {
         box-shadow: 0 0rem 0.25rem rgba(255, 255, 255, 1) !important;
     }
@@ -121,8 +119,10 @@
         box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.067) !important;
     }
 
-    .text-transition.scrolledd {
-        color: black;
+    .text-umn {
+        color: #233e57;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
     }
 
 </style>
