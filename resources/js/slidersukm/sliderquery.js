@@ -3,7 +3,27 @@ $(document).ready(function() {
         autoWidth:true,
         loop:true,
         onSliderLoad: function() {
-            $('#autoWidth').removeClass('cS-hidden');
+            $('#autoWidth').removeClass('cs-hidden');
+        } 
+    });  
+  });
+
+  $('#tab-keg').click(function() {
+    $('#autoWidth').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cs-hidden');
+        } 
+    });  
+  });
+
+  $('#tab-lso').click(function() {
+    $('#autoWidth').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cs-hidden');
         } 
     });  
   });

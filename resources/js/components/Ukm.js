@@ -29,10 +29,10 @@ render(){
                 <div className="container-slider">
                     {/*Slider*/}
                     
-                <ul id="autoWidth" class="cs-hidden">
+                <ul id="autoWidth" className="cs-hidden">
 
                     {/*1*/}
-                    <li class="item-a">
+                    <li className="item-a">
                         
                             {/*Slider Box*/}
                         <div className="box">
@@ -302,7 +302,7 @@ render(){
                     </li>{/*utoys*/}
 
                     {/*10*/}
-                    <li class="item-a">
+                    <li className="item-a">
                         
                             {/*Slider Box*/}
                         <div className="box">
@@ -408,7 +408,7 @@ render(){
                     </li>{/*uesc*/}
 
                     {/*3*/}
-                    <li class="item-a">
+                    <li className="item-a">
                         
                             {/*Slider Box*/}
                         <div className="boxsos">

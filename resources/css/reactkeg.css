@@ -16,6 +16,7 @@
   width: 50%;
   height: 300px;
   background-image: linear-gradient(#ffb359,#ffffff);
+  cursor: pointer;
 }
 
 .react-tabs__tab--selected {

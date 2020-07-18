@@ -14,8 +14,8 @@ render(){
     const displayTabs = (
         <Tabs defaultIndex={0} onSelect={index => console.log(index)}>
             <TabList>
-            <Tab className="text-tab-pane" >Kegiatan<br></br>Mahasiswa</Tab>
-            <Tab className="text-tab-pane">Lembaga<br></br>Semi Otonom</Tab>
+            <Tab className="text-tab-pane" id="tab-keg">Kegiatan<br></br>Mahasiswa</Tab>
+            <Tab className="text-tab-pane" id="tab-lso">Lembaga<br></br>Semi Otonom</Tab>
             </TabList>
 
             <TabPanel>
@@ -24,10 +24,10 @@ render(){
         <div className="container-slider">
             {/*Slider*/}
             
-        <ul id="autoWidth" class="cs-hidden">
+        <ul id="autoWidth" className="cs-hidden">
 
             {/*1*/}
-            <li class="item-a">
+            <li className="item-a">
                 
                     {/*Slider Box*/}
                 <div className="box">
@@ -57,7 +57,7 @@ render(){
             </li>{/*Ulson*/}
 
             {/*1*/}
-            <li class="item-a">
+            <li className="item-a">
                 
                     {/*Slider Box*/}
                 <div className="box">
@@ -87,7 +87,7 @@ render(){
             </li>{/*Ulson*/}
 
             {/*1*/}
-            <li class="item-a">
+            <li className="item-a">
                 
                     {/*Slider Box*/}
                 <div className="box">
@@ -131,10 +131,10 @@ render(){
 <div className="container-slider">
     {/*Slider*/}
     
-<ul id="autoWidth" class="cs-hidden">
+<ul id="autoWidth" className="cs-hidden">
 
     {/*1*/}
-    <li class="item-a">
+    <li className="item-a">
         
             {/*Slider Box*/}
         <div className="box">
@@ -164,7 +164,7 @@ render(){
     </li>{/*Ulson*/}
 
     {/*1*/}
-    <li class="item-a">
+    <li className="item-a">
         
             {/*Slider Box*/}
         <div className="box">
@@ -194,7 +194,7 @@ render(){
     </li>{/*Ulson*/}
 
     {/*1*/}
-    <li class="item-a">
+    <li className="item-a">
         
             {/*Slider Box*/}
         <div className="box">
