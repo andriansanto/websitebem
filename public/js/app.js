@@ -87060,10 +87060,7 @@ function slider() {
       }
     });
   });
-} // function state(){
-//     tabIndex => this.setState({ tabIndex })
-// }
-
+}
 
 var KegiatanMahasiswa = /*#__PURE__*/function (_Component) {
   _inherits(KegiatanMahasiswa, _Component);
