@@ -11,14 +11,14 @@ import '../../css/reactukm.css';
 
 
 class Ukm extends Component{
-    
+
+  
 
 render(){
-
     const displayTabs = (
         <Tabs defaultIndex={0} onSelect={index => console.log(index)}>
             <TabList>
-            <Tab className="ukm1-tab-pane" >Seni dan Budaya</Tab>
+            <Tab className="ukm1-tab-pane">Seni dan Budaya</Tab>
             <Tab className="ukm2-tab-pane">Sains dan Sosial</Tab>
             <Tab className="ukm3-tab-pane">Olahraga</Tab>
             </TabList>

@@ -87304,8 +87304,14 @@ var Ukm = /*#__PURE__*/function (_Component) {
     value: function render() {
       var displayTabs = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tabs"], {
         defaultIndex: 0,
-        onSelect: function onSelect(index) {
-          return console.log(index);
+        onClick: function onClick() {
+          return $('#autoWidth').lightSlider({
+            autoWidth: true,
+            loop: true,
+            onSliderLoad: function onSliderLoad() {
+              $('#autoWidth').removeClass('cs-hidden');
+            }
+          });
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabList"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tab"], {
         className: "ukm1-tab-pane"
