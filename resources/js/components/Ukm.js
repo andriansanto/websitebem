@@ -9,14 +9,32 @@ import '../slidersukm/sliderquery';
 import 'react-tabs/style/react-tabs.css';
 import '../../css/reactukm.css';
 
+function slider(){
+    $(document).ready(function() {
+        $('#autoWidth').lightSlider({
+            autoWidth:true,
+            controls: true,
+            prevHtml: '',
+            nextHtml: '',
+            enableTouch:true,
+            enableDrag:true,
+            freeMove:true,
+            loop:true,
+            onSliderLoad: function() {
+                $('#autoWidth').removeClass('cs-hidden');
+            } 
+        });  
+        });
+    }
 
 class Ukm extends Component{
-
-  
-
+    constructor() {
+        super();
+        this.state = { tabIndex: 0 };
+    }
 render(){
     const displayTabs = (
-        <Tabs defaultIndex={0} onSelect={index => console.log(index)}>
+        <Tabs selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({ tabIndex })} onClick={slider()}>
             <TabList>
             <Tab className="ukm1-tab-pane">Seni dan Budaya</Tab>
             <Tab className="ukm2-tab-pane">Sains dan Sosial</Tab>
