@@ -18,15 +18,15 @@ render(){
     const displayTabs = (
         <Tabs defaultIndex={0} onSelect={index => console.log(index)}>
             <TabList>
-            <Tab className="ukm-tab-pane" >Seni dan Budaya</Tab>
-            <Tab className="ukm-tab-pane">Sains dan Sosial</Tab>
-            <Tab className="ukm-tab-pane">Olahraga</Tab>
+            <Tab className="ukm1-tab-pane" >Seni dan Budaya</Tab>
+            <Tab className="ukm2-tab-pane">Sains dan Sosial</Tab>
+            <Tab className="ukm3-tab-pane">Olahraga</Tab>
             </TabList>
 
             <TabPanel>
             <div className="container-awal">
 
-                <div className="container-slider">
+                <div className="container-slider-senbud">
                     {/*Slider*/}
                     
                 <ul id="autoWidth" class="cs-hidden">
@@ -35,7 +35,7 @@ render(){
                     <li class="item-a">
                         
                             {/*Slider Box*/}
-                        <div className="box">
+                        <div className="box-senbud">
                             <p className="senbud">Ultima Sonora</p>
                             {/*model*/}
                             <img src="assets/ukmnobg/senbud/ulsonbg.png" className="model"></img>
@@ -65,7 +65,7 @@ render(){
                     <li class="item-a">
                         
                             {/*Slider Box*/}
-                        <div className="box">
+                        <div className="box-senbud">
                             <p className="senbud">Teater KataK</p>
                             {/*model*/}
                             <img src="assets/ukmnobg/senbud/katakbg.png" className="model"></img>
@@ -95,7 +95,7 @@ render(){
                     <li class="item-a">
                         
                             {/*Slider Box*/}
-                        <div className="box">
+                        <div className="box-senbud">
                             <p className="senbud">UMN Symphony Orchestra</p>
                             {/*model*/}
                             <img src="assets/ukmnobg/senbud/usobg.png" className="model"></img>
@@ -125,7 +125,7 @@ render(){
                     <li class="item-a">
                         
                             {/*Slider Box*/}
-                        <div className="box">
+                        <div className="box-senbud">
                             <p className="senbud">Qorie</p>
                             {/*model*/}
                             <img src="assets/ukmnobg/senbud/qoriebg.png" className="model"></img>
@@ -155,7 +155,7 @@ render(){
                     <li class="item-a">
                         
                             {/*Slider Box*/}
-                        <div className="box">
+                        <div className="box-senbud">
                             <p className="senbud">J-Cafe</p>
                             {/*model*/}
                             <img src="assets/ukmnobg/senbud/jcafebg.png" className="model"></img>
@@ -185,7 +185,7 @@ render(){
                     <li class="item-a">
                         
                             {/*Slider Box*/}
-                        <div className="box">
+                        <div className="box-senbud">
                             <p className="senbud">Mufomic</p>
                             {/*model*/}
                             <img src="assets/ukmnobg/senbud/mufomicbg.png" className="model"></img>
@@ -215,7 +215,7 @@ render(){
                     <li class="item-a">
                         
                             {/*Slider Box*/}
-                        <div className="box">
+                        <div className="box-senbud">
                             <p className="senbud">Obscura</p>
                             {/*model*/}
                             <img src="assets/ukmnobg/senbud/obscurabg.png" className="model"></img>
@@ -245,7 +245,7 @@ render(){
                     <li class="item-a">
                         
                             {/*Slider Box*/}
-                        <div className="box">
+                        <div className="box-senbud">
                             <p className="senbud">Tracce</p>
                             {/*model*/}
                             <img src="assets/ukmnobg/senbud/traccebg.png" className="model"></img>
@@ -275,7 +275,7 @@ render(){
                     <li class="item-a">
                         
                             {/*Slider Box*/}
-                        <div className="box">
+                        <div className="box-senbud">
                             <p className="senbud">Ultima Toys</p>
                             {/*model*/}
                             <img src="assets/ukmnobg/senbud/utoysbg.png" className="model"></img>
@@ -305,7 +305,7 @@ render(){
                     <li class="item-a">
                         
                             {/*Slider Box*/}
-                        <div className="box">
+                        <div className="box-senbud">
                             <p className="senbud">Street Dance</p>
                             {/*model*/}
                             <img src="assets/ukmnobg/senbud/sdbg.png" className="model"></img>
@@ -342,7 +342,7 @@ render(){
             <TabPanel>
             <div className="container-awal">
 
-                <div className="container-slider">
+                <div className="container-slider-sensos">
                     {/*Slider*/}
                     
                 <ul id="autoWidth" class="cs-hidden">
@@ -538,7 +538,7 @@ render(){
             <TabPanel>
             <div className="container-awal">
 
-                <div className="container-slider">
+                <div className="container-slider-olr">
                     {/*Slider*/}
                     
                 <ul id="autoWidth" class="cs-hidden">
