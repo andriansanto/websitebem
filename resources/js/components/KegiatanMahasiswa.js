@@ -8,14 +8,30 @@ import '../slidersukm/sliderquery';
 import 'react-tabs/style/react-tabs.css';
 import '../../css/reactkeg.css';
 
-class KegiatanMahasiswa extends Component{
 
-render(){
-    const displayTabs = (
-        <Tabs defaultIndex={0} onSelect={index => console.log(index)}>
+function slider(){
+$(document).ready(function() {
+    $('#autoWidth').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cs-hidden');
+        } 
+    });  
+    });
+}
+
+class KegiatanMahasiswa extends Component{
+    constructor() {
+        super();
+        this.state = { tabIndex: 0 };
+    }
+    render(){
+        const displayTabs = (
+            <Tabs selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({ tabIndex })} onClick={slider()}>
             <TabList>
-            <Tab className="text-tab-pane" id="tab-keg">Kegiatan<br></br>Mahasiswa</Tab>
-            <Tab className="text-tab-pane" id="tab-lso">Lembaga<br></br>Semi Otonom</Tab>
+            <Tab className="text-tab-pane">Kegiatan<br></br>Mahasiswa</Tab>
+            <Tab className="text-tab-pane">Lembaga<br></br>Semi Otonom</Tab>
             </TabList>
 
             <TabPanel>
@@ -242,6 +258,18 @@ return(
     );
 }
 }
+
+function tabkegiatan(){
+    $("#react-tabs-0").click(function(){
+        $('#autoWidth').lightSlider({
+            autoWidth:true,
+            loop:true,
+            onSliderLoad: function() {
+              $('#autoWidth').removeClass('cs-hidden');
+          } 
+       });
+    });
+  }
 
 export default KegiatanMahasiswa;
 

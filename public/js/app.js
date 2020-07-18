@@ -6979,11 +6979,7 @@ exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base
 
 
 // module
-<<<<<<< HEAD
 exports.push([module.i, ".react-tabs {\n  -webkit-tap-highlight-color: transparent;\n}\n\n.react-tabs__tab-list {\n  border-bottom: 0px solid #aaa;\n  margin: 0 0 10px;\n  padding: 0;\n}\n\n.react-tabs__tab {\n  border: 1px solid transparent;\n  border-bottom: none;\n  bottom: -1px;\n  position: relative;\n  list-style: none;\n  padding: 6px 12px;\n  cursor: pointer;\n}\n\n.react-tabs__tab--selected {\n  /* border-color: #aaa; */\n  color: white;\n  border-radius: 5px 5px 0 0;\n}\n\n.react-tabs__tab--disabled {\n  color: GrayText;\n  cursor: default;\n}\n\n.react-tabs__tab:focus {\n  box-shadow: 0 0 5px hsl(208, 99%, 50%);\n  border-color: hsl(208, 99%, 50%);\n  outline: none;\n}\n\n.react-tabs__tab:focus:after {\n  content: \"\";\n  position: absolute;\n  height: 5px;\n  left: -4px;\n  right: -4px;\n  bottom: -5px;\n  background: #fff;\n}\n\n.react-tabs__tab-panel {\n  display: none;\n}\n\n.react-tabs__tab-panel--selected {\n  display: block;\n}\n", ""]);
-=======
-exports.push([module.i, ".react-tabs {\n  -webkit-tap-highlight-color: transparent;\n}\n\n.react-tabs__tab-list {\n  margin: 0 0 10px;\n  padding: 0;\n}\n\n.react-tabs__tab {\n  display: inline-block;\n  border: 1px solid transparent;\n  border-bottom: none;\n  position: relative;\n  list-style: none;\n  padding: 6px 12px;\n  cursor: pointer;\n}\n\n.react-tabs__tab--selected {\n  background: #fff;\n  border-color: #aaa;\n  color: black;\n  border-radius: 5px 5px 0 0;\n}\n\n.react-tabs__tab--disabled {\n  color: GrayText;\n  cursor: default;\n}\n\n.react-tabs__tab:focus {\n  box-shadow: 0 0 5px hsl(208, 99%, 50%);\n  border-color: hsl(208, 99%, 50%);\n  outline: none;\n}\n\n.react-tabs__tab:focus:after {\n  content: \"\";\n  position: absolute;\n  height: 5px;\n  left: -4px;\n  right: -4px;\n  background: #fff;\n}\n\n.react-tabs__tab-panel {\n  display: none;\n}\n\n.react-tabs__tab-panel--selected {\n  display: block;\n}\n", ""]);
->>>>>>> 851318182885aaf3477d1527f0835811de2a4909
 
 // exports
 
@@ -87054,31 +87050,55 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+function slider() {
+  $(document).ready(function () {
+    $('#autoWidth').lightSlider({
+      autoWidth: true,
+      loop: true,
+      onSliderLoad: function onSliderLoad() {
+        $('#autoWidth').removeClass('cs-hidden');
+      }
+    });
+  });
+} // function state(){
+//     tabIndex => this.setState({ tabIndex })
+// }
+
+
 var KegiatanMahasiswa = /*#__PURE__*/function (_Component) {
   _inherits(KegiatanMahasiswa, _Component);
 
   var _super = _createSuper(KegiatanMahasiswa);
 
   function KegiatanMahasiswa() {
+    var _this;
+
     _classCallCheck(this, KegiatanMahasiswa);
 
-    return _super.apply(this, arguments);
+    _this = _super.call(this);
+    _this.state = {
+      tabIndex: 0
+    };
+    return _this;
   }
 
   _createClass(KegiatanMahasiswa, [{
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       var displayTabs = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tabs"], {
-        defaultIndex: 0,
-        onSelect: function onSelect(index) {
-          return console.log(index);
-        }
+        selectedIndex: this.state.tabIndex,
+        onSelect: function onSelect(tabIndex) {
+          return _this2.setState({
+            tabIndex: tabIndex
+          });
+        },
+        onClick: slider()
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabList"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tab"], {
-        className: "text-tab-pane",
-        id: "tab-keg"
+        className: "text-tab-pane"
       }, "Kegiatan", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tab"], {
-        className: "text-tab-pane",
-        id: "tab-lso"
+        className: "text-tab-pane"
       }, "Lembaga", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Semi Otonom")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container-awal"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -87192,6 +87212,18 @@ var KegiatanMahasiswa = /*#__PURE__*/function (_Component) {
 
   return KegiatanMahasiswa;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+function tabkegiatan() {
+  $("#react-tabs-0").click(function () {
+    $('#autoWidth').lightSlider({
+      autoWidth: true,
+      loop: true,
+      onSliderLoad: function onSliderLoad() {
+        $('#autoWidth').removeClass('cs-hidden');
+      }
+    });
+  });
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (KegiatanMahasiswa);
 
@@ -98208,33 +98240,45 @@ if (document.getElementById('ukm')) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-$(document).ready(function () {
-  $('#autoWidth').lightSlider({
-    autoWidth: true,
-    loop: true,
-    onSliderLoad: function onSliderLoad() {
-      $('#autoWidth').removeClass('cs-hidden');
-    }
-  });
-});
-$('#tab-keg').click(function () {
-  $('#autoWidth').lightSlider({
-    autoWidth: true,
-    loop: true,
-    onSliderLoad: function onSliderLoad() {
-      $('#autoWidth').removeClass('cs-hidden');
-    }
-  });
-});
-$('#tab-lso').click(function () {
-  $('#autoWidth').lightSlider({
-    autoWidth: true,
-    loop: true,
-    onSliderLoad: function onSliderLoad() {
-      $('#autoWidth').removeClass('cs-hidden');
-    }
-  });
-});
+// $(document).ready(function() {
+//     $('#autoWidth').lightSlider({
+//         autoWidth:true,
+//         loop:true,
+//         onSliderLoad: function() {
+//             $('#autoWidth').removeClass('cs-hidden');
+//         } 
+//     });  
+//     // $('#react-tabs-0').trigger('click'); 
+//         // $("#react-tabs-0").click(function(){
+//         //     $('#autoWidth').lightSlider({
+//         //         autoWidth:true,
+//         //         loop:true,
+//         //         onSliderLoad: function() {
+//         //           $('#autoWidth').removeClass('cs-hidden');
+//         //       } 
+//         //    });
+//         // });
+//     });
+//     function tabkegiatan(){
+//       // $("#react-tabs-0").click(function(){
+//           $('#autoWidth').lightSlider({
+//               autoWidth:true,
+//               loop:true,
+//               onSliderLoad: function() {
+//                 $('#autoWidth').removeClass('cs-hidden');
+//             } 
+//          });
+//       // });
+//     }
+//   $( "#react-tabs-2" ).trigger( "click", function() {
+//     $('#autoWidth').lightSlider({
+//         autoWidth:true,
+//         loop:true,
+//         onSliderLoad: function() {
+//             $('#autoWidth').removeClass('cs-hidden');
+//         } 
+//     });  
+//   });
 
 /***/ }),
 
