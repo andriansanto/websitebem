@@ -214,7 +214,7 @@ class KegiatanMahasiswa extends Component{
         
             {/*Slider Box*/}
         <div className="box">
-            <p className="senbud">Ultima Sonora</p>
+            <p className="senbud">Ultima Sonoraaaaaa</p>
             {/*model*/}
             <img src="assets/ukmnobg/senbud/ulsonbg.png" className="model"></img>
 

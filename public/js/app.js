@@ -87191,7 +87191,7 @@ var KegiatanMahasiswa = /*#__PURE__*/function (_Component) {
         className: "box"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "senbud"
-      }, "Ultima Sonora"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, "Ultima Sonoraaaaaa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "assets/ukmnobg/senbud/ulsonbg.png",
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -87304,14 +87304,8 @@ var Ukm = /*#__PURE__*/function (_Component) {
     value: function render() {
       var displayTabs = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tabs"], {
         defaultIndex: 0,
-        onClick: function onClick() {
-          return $('#autoWidth').lightSlider({
-            autoWidth: true,
-            loop: true,
-            onSliderLoad: function onSliderLoad() {
-              $('#autoWidth').removeClass('cs-hidden');
-            }
-          });
+        onSelect: function onSelect(index) {
+          return console.log(index);
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabList"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tab"], {
         className: "ukm1-tab-pane"
@@ -98243,26 +98237,24 @@ if (document.getElementById('ukm')) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// $(document).ready(function() {
-//     $('#autoWidth').lightSlider({
-//         autoWidth:true,
-//         loop:true,
-//         onSliderLoad: function() {
-//             $('#autoWidth').removeClass('cs-hidden');
-//         } 
-//     });  
-//     // $('#react-tabs-0').trigger('click'); 
-//         // $("#react-tabs-0").click(function(){
-//         //     $('#autoWidth').lightSlider({
-//         //         autoWidth:true,
-//         //         loop:true,
-//         //         onSliderLoad: function() {
-//         //           $('#autoWidth').removeClass('cs-hidden');
-//         //       } 
-//         //    });
-//         // });
-//     });
-//     function tabkegiatan(){
+$(document).ready(function () {
+  $('#autoWidth').lightSlider({
+    autoWidth: true,
+    loop: true,
+    onSliderLoad: function onSliderLoad() {
+      $('#autoWidth').removeClass('cs-hidden');
+    }
+  }); //     $('#react-tabs-0').trigger('click'); 
+  //         $("#react-tabs-0").click(function(){
+  //             $('#autoWidth').lightSlider({
+  //                 autoWidth:true,
+  //                 loop:true,
+  //                 onSliderLoad: function() {
+  //                   $('#autoWidth').removeClass('cs-hidden');
+  //               } 
+  //            });
+  //         });
+}); //     function tabkegiatan(){
 //       // $("#react-tabs-0").click(function(){
 //           $('#autoWidth').lightSlider({
 //               autoWidth:true,
