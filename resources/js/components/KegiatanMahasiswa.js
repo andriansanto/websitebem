@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { Container, Row, Col } from 'reactstrap';
 import '../../css/lightslider.css';
 import '../slidersukm/Jquery31';
 import '../slidersukm/lightslider';
@@ -47,9 +48,9 @@ class KegiatanMahasiswa extends Component{
                 
                     {/*Slider Box*/}
                 <div className="box">
-                    <p className="senbud">Ultima Sonora</p>
                     {/*model*/}
-                    <img src="assets/ukmnobg/senbud/ulsonbg.png" className="model"></img>
+                    <img src="assets/kegiatan/logoufestbig.png" className="model"></img>
+                    <Container><p className="title">U-FEST</p></Container>
 
                     {/*Penjelasan*/}
                     <div className="penjelasan">
@@ -77,9 +78,9 @@ class KegiatanMahasiswa extends Component{
                 
                     {/*Slider Box*/}
                 <div className="box">
-                    <p className="senbud">Ultima Sonora</p>
                     {/*model*/}
-                    <img src="assets/ukmnobg/senbud/ulsonbg.png" className="model"></img>
+                    <img src="assets/kegiatan/logomaximabig.png" className="model"></img>
+                    <p className="title">MAXIMA</p>
 
                     {/*Penjelasan*/}
                     <div className="penjelasan">
@@ -107,9 +108,9 @@ class KegiatanMahasiswa extends Component{
                 
                     {/*Slider Box*/}
                 <div className="box">
-                    <p className="senbud">Ultima Sonora</p>
                     {/*model*/}
-                    <img src="assets/ukmnobg/senbud/ulsonbg.png" className="model"></img>
+                    <img src="assets/kegiatan/logomrmsbig.png" className="model-mrms"></img>
+                    <p className="title">MR. & MS. UMN</p>
 
                     {/*Penjelasan*/}
                     <div className="penjelasan">
