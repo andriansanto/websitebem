@@ -154,6 +154,28 @@
     color: white;
 }
 
+.lSNext{
+    background-image: url(../../public/assets/arrowkanan.png);
+    width: 40px;
+    height: 35px;
+}
+
+.lSAction > .lSNext{
+    width: 40px;
+    height: 35px;
+}
+
+.lSPrev{
+    background-image: url(../../public/assets/arrowkiri.png);
+    width: 35px;
+    height: 35px;
+}
+
+.lSAction > .lSPrev{
+    width: 35px;
+    height: 35px;
+}
+
 .model{
     margin-top: -20px;
     height: 200px;
