@@ -155,11 +155,25 @@
 }
 
 .lSNext{
-    background-image: url(../../public/assets/arrowkanan.jpg);
+    background-image: url(../../public/assets/arrowkanan.png);
+    width: 40px;
+    height: 35px;
 }
 
-.lSNext{
-    background-image: url(../../public/assets/arrowkanan.jpg);
+.lSAction > .lSNext{
+    width: 40px;
+    height: 35px;
+}
+
+.lSPrev{
+    background-image: url(../../public/assets/arrowkiri.png);
+    width: 35px;
+    height: 35px;
+}
+
+.lSAction > .lSPrev{
+    width: 35px;
+    height: 35px;
 }
 
 .model{
