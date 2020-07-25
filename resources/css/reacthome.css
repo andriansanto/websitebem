@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding-top: 55px;
 }
  
 .App-logo {
@@ -89,9 +90,9 @@ body{
   text-align: center;
 }
 .container-2{
-  background-image: url(../../public/assets/homeumnorange.png); /*nanti ganti sama asset yg resolusinya lbh besar*/
+  background-image: url(../../public/assets/homepagefotoumnorange.png); /*nanti ganti sama asset yg resolusinya lbh besar*/
   width: 100%;
-  height: 610px;
+  height: 2029px;
   background-repeat: no-repeat;
   background-size: 100%
 }
@@ -104,7 +105,7 @@ body{
   background-color: #ffffff;
   background-image: url(../../public/assets/homepagededicatetocreate.png); /*nanti ganti sama asset yg resolusinya lbh besar*/
   width: 100%;
-  height: 1081px;
+  height: 2039px;
   background-repeat: no-repeat;
   background-size: 100%;
 }
