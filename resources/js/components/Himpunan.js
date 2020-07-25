@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import { Container, Row, Col} from 'reactstrap';
 import '../../css/reacthimp.css';
 
 class Himpunan extends Component{
