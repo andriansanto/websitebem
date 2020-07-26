@@ -6979,7 +6979,7 @@ exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base
 
 
 // module
-exports.push([module.i, ".react-tabs {\n  -webkit-tap-highlight-color: transparent;\n}\n\n.react-tabs__tab-list {\n  margin: 0 0 10px;\n  padding: 0;\n}\n\n.react-tabs__tab {\n  display: inline-block;\n  border: 1px solid transparent;\n  border-bottom: none;\n  position: relative;\n  list-style: none;\n  padding: 6px 12px;\n  cursor: pointer;\n}\n\n.react-tabs__tab--selected {\n  background: #fff;\n  border-color: #aaa;\n  color: black;\n  border-radius: 5px 5px 0 0;\n}\n\n.react-tabs__tab--disabled {\n  color: GrayText;\n  cursor: default;\n}\n\n.react-tabs__tab:focus {\n  box-shadow: 0 0 5px hsl(208, 99%, 50%);\n  border-color: hsl(208, 99%, 50%);\n  outline: none;\n}\n\n.react-tabs__tab:focus:after {\n  content: \"\";\n  position: absolute;\n  height: 5px;\n  left: -4px;\n  right: -4px;\n  background: #fff;\n}\n\n.react-tabs__tab-panel {\n  display: none;\n}\n\n.react-tabs__tab-panel--selected {\n  display: block;\n}\n", ""]);
+exports.push([module.i, ".react-tabs {\n  -webkit-tap-highlight-color: transparent;\n}\n\n.react-tabs__tab-list {\n  border-bottom: 0px solid #aaa;\n  margin: 0 0 0px;\n  padding: 0;\n}\n\n.react-tabs__tab {\n  border: 1px solid transparent;\n  border-bottom: none;\n  bottom: -1px;\n  position: relative;\n  list-style: none;\n  padding: 6px 12px;\n  cursor: pointer;\n}\n\n.react-tabs__tab--selected {\n  /* border-color: #aaa; */\n  color: white;\n  border-radius: 5px 5px 0 0;\n}\n\n.react-tabs__tab--disabled {\n  color: GrayText;\n  cursor: default;\n}\n\n.react-tabs__tab:focus {\n  box-shadow: 0 0 5px hsl(208, 99%, 50%);\n  border-color: hsl(208, 99%, 50%);\n  outline: none;\n}\n\n.react-tabs__tab:focus:after {\n  content: \"\";\n  position: absolute;\n  height: 5px;\n  left: -4px;\n  right: -4px;\n  bottom: -5px;\n  background: #fff;\n}\n\n.react-tabs__tab-panel {\n  display: none;\n}\n\n.react-tabs__tab-panel--selected {\n  display: block;\n}\n", ""]);
 
 // exports
 
@@ -7018,7 +7018,7 @@ exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base
 
 
 // module
-exports.push([module.i, "/* Slider */\n.slick-slider\n{\n    position: relative;\n\n    display: block;\n    box-sizing: border-box;\n\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    -webkit-touch-callout: none;\n    -khtml-user-select: none;\n    touch-action: pan-y;\n    -webkit-tap-highlight-color: transparent;\n}\n\n.slick-list\n{\n    position: relative;\n\n    display: block;\n    overflow: hidden;\n\n    margin: 0;\n    padding: 0;\n}\n.slick-list:focus\n{\n    outline: none;\n}\n.slick-list.dragging\n{\n    cursor: pointer;\n    cursor: hand;\n}\n\n.slick-slider .slick-track,\n.slick-slider .slick-list\n{\n    transform: translate3d(0, 0, 0);\n}\n\n.slick-track\n{\n    position: relative;\n    top: 0;\n    left: 0;\n\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n.slick-track:before,\n.slick-track:after\n{\n    display: table;\n\n    content: '';\n}\n.slick-track:after\n{\n    clear: both;\n}\n.slick-loading .slick-track\n{\n    visibility: hidden;\n}\n\n.slick-slide\n{\n    display: none;\n    float: left;\n\n    height: 100%;\n    min-height: 1px;\n}\n[dir='rtl'] .slick-slide\n{\n    float: right;\n}\n.slick-slide img\n{\n    display: block;\n}\n.slick-slide.slick-loading img\n{\n    display: none;\n}\n.slick-slide.dragging img\n{\n    pointer-events: none;\n}\n.slick-initialized .slick-slide\n{\n    display: block;\n}\n.slick-loading .slick-slide\n{\n    visibility: hidden;\n}\n.slick-vertical .slick-slide\n{\n    display: block;\n\n    height: auto;\n\n    border: 1px solid transparent;\n}\n.slick-arrow.slick-hidden {\n    display: none;\n}\n", ""]);
+exports.push([module.i, "/* Slider */\n.slick-slider\n{\n    position: relative;\n\n    display: block;\n    box-sizing: border-box;\n    width: 100%;\n    height: 400px;\n\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    -webkit-touch-callout: none;\n    -khtml-user-select: none;\n    touch-action: pan-y;\n    -webkit-tap-highlight-color: transparent;\n}\n\n.slick-list\n{\n    position: relative;\n\n    display: block;\n    overflow: hidden;\n\n    margin: 0;\n    padding: 0;\n}\n.slick-list:focus\n{\n    outline: none;\n}\n.slick-list.dragging\n{\n    cursor: pointer;\n    cursor: hand;\n}\n\n.slick-slider .slick-track,\n.slick-slider .slick-list\n{\n    transform: translate3d(0, 0, 0);\n}\n\n.slick-track\n{\n    position: relative;\n    top: 0;\n    left: 0;\n\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n.slick-track:before,\n.slick-track:after\n{\n    display: table;\n\n    content: '';\n}\n.slick-track:after\n{\n    clear: both;\n}\n.slick-loading .slick-track\n{\n    visibility: hidden;\n}\n\n.slick-slide\n{\n    display: none;\n    float: left;\n\n    height: 100%;\n    min-height: 1px;\n}\n[dir='rtl'] .slick-slide\n{\n    float: right;\n}\n.slick-slide img\n{\n    display: block;\n}\n.slick-slide.slick-loading img\n{\n    display: none;\n}\n.slick-slide.dragging img\n{\n    pointer-events: none;\n}\n.slick-initialized .slick-slide\n{\n    display: block;\n}\n.slick-loading .slick-slide\n{\n    visibility: hidden;\n}\n.slick-vertical .slick-slide\n{\n    display: block;\n\n    height: auto;\n\n    border: 1px solid transparent;\n}\n.slick-arrow.slick-hidden {\n    display: none;\n}\n", ""]);
 
 // exports
 
@@ -7095,7 +7095,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".container-keg{\r\n    padding-top: 55px;\r\n    text-align: center;\r\n    width: 100%;\r\n    height: 72vw;\r\n}\r\n\r\n.text-tab-pane{\r\n  display: inline-flex;\r\n  font-family: 'Montserrat', sans-serif;\r\n  font-weight: bold;\r\n  font-size: xxx-large;\r\n  color: #bcbcbc;\r\n  justify-content: center;\r\n  align-items: center;\r\n  width: 50%;\r\n  height: 300px;\r\n  background-image: linear-gradient(#ffb359,#ffffff);\r\n  cursor: pointer;\r\n}\r\n\r\n.react-tabs__tab--selected {\r\n    /* border-color: #aaa; */\r\n    color: white;\r\n    border-radius: 5px 5px 0 0;\r\n  }\r\n\r\n\r\n  /* Line Slider*/\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.a{\r\n    text-decoration: none;\r\n}\r\n\r\n.container-slider{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: white;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.box{\r\n    width: 1500px;\r\n    height: 500px;\r\n    border-radius: 10px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n/* .box:hover{\r\n    background-color: #a82578;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n} */\r\n\r\n.box:hover .senbud{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n.penjelasan{\r\n    text-align: center;\r\n    color: black;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 25px;\r\n\r\n}\r\n\r\n.model{\r\n    margin-top: -20px;\r\n    height: 400px;\r\n    width: 400px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.model-mrms{\r\n    margin-top: -20px;\r\n    height: 300px;\r\n    width: 100px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details p{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 20px;\r\n}\r\n\r\n.title{\r\n    color: #ffb359;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 50px;\r\n}", ""]);
+exports.push([module.i, ".container-keg{\r\n    padding-top: 55px;\r\n    text-align: center;\r\n    width: 100%;\r\n    \r\n}\r\n\r\n.text-tab-pane{\r\n  display: inline-flex;\r\n  font-family: 'Montserrat', sans-serif;\r\n  font-weight: bold;\r\n  font-size: xxx-large;\r\n  color: #bcbcbc;\r\n  justify-content: center;\r\n  align-items: center;\r\n  width: 50%;\r\n  height: 300px;\r\n  background-image: linear-gradient(#ffb359,#ffffff);\r\n  cursor: pointer;\r\n}\r\n\r\n.react-tabs__tab--selected {\r\n    /* border-color: #aaa; */\r\n    color: white;\r\n    border-radius: 5px 5px 0 0;\r\n  }\r\n\r\n\r\n  /* Line Slider*/\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.a{\r\n    text-decoration: none;\r\n}\r\n\r\n.container-slider{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: white;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.box{\r\n    width: 1500px;\r\n    height: 500px;\r\n    border-radius: 10px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n\r\n.info{\r\n    text-align: center;\r\n    color: black;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 25px;\r\n\r\n}\r\n\r\n.model-keg{\r\n    margin-top: -20px;\r\n    height: 400px;\r\n    width: 400px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.model-mrms{\r\n    margin-top: -20px;\r\n    height: 300px;\r\n    width: 100px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details p{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 20px;\r\n}\r\n\r\n.title{\r\n    color: #ffb359;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 50px;\r\n}\r\n\r\n@media (max-width:768px){\r\n    .box{\r\n        width: auto;\r\n        height: auto;\r\n        border-radius: 10px;\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        justify-content: space-between;\r\n        box-sizing: border-box;\r\n        margin: 20px 10px;\r\n    }\r\n    \r\n    \r\n    .info{\r\n        text-align: center;\r\n        color: black;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 25px;\r\n    \r\n    }\r\n    \r\n    .model-keg{\r\n        margin-top: -20px;\r\n        height: 160px;\r\n        width: 160px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n    }\r\n    \r\n    .model-mrms{\r\n        margin-top: -20px;\r\n        height: 120px;\r\n        width: 40px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n    }\r\n    \r\n    .details{\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        width: 300px;\r\n    }\r\n    \r\n    .details p{\r\n        font-family: Arial, Helvetica, sans-serif;\r\n        font-weight: bold;\r\n        color: #ffffff;\r\n        text-align: center;\r\n        margin-top: 20px;\r\n    }\r\n    \r\n    .title{\r\n        color: #ffb359;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 20px;\r\n    }\r\n}\r\n\r\n@media (max-width:480px){\r\n    .box{\r\n        width: 1500px;\r\n        height: 500px;\r\n        border-radius: 10px;\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        justify-content: space-between;\r\n        box-sizing: border-box;\r\n        margin: 20px 10px;\r\n    }\r\n    \r\n    \r\n    .info{\r\n        text-align: center;\r\n        color: black;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 25px;\r\n    \r\n    }\r\n    \r\n    .model-keg{\r\n        margin-top: -20px;\r\n        height: 400px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n    }\r\n    \r\n    .model-mrms{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 100px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n    }\r\n    \r\n    .details{\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        width: 300px;\r\n    }\r\n    \r\n    .details p{\r\n        font-family: Arial, Helvetica, sans-serif;\r\n        font-weight: bold;\r\n        color: #ffffff;\r\n        text-align: center;\r\n        margin-top: 20px;\r\n    }\r\n    \r\n    .title{\r\n        color: #ffb359;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 50px;\r\n    }\r\n    \r\n    .text-tab-pane{\r\n        display: inline-grid;\r\n        font-size: 19px;\r\n    }\r\n}", ""]);
 
 // exports
 
@@ -87133,11 +87133,11 @@ var KegiatanMahasiswa = /*#__PURE__*/function (_Component) {
         className: "box"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "assets/kegiatan/logoufestbig.png",
-        className: "model"
+        className: "model-keg"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "title"
       }, "U-FEST")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
+        className: "info"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang paduan suara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "instagram.com/bemumn"
       }, "@ultimasonora")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -87148,11 +87148,11 @@ var KegiatanMahasiswa = /*#__PURE__*/function (_Component) {
         className: "box"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "assets/kegiatan/logomaximabig.png",
-        className: "model"
+        className: "model-keg"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "title"
       }, "MAXIMA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
+        className: "info"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang paduan suara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "instagram.com/bemumn"
       }, "@ultimasonora")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -87167,7 +87167,7 @@ var KegiatanMahasiswa = /*#__PURE__*/function (_Component) {
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "title"
       }, "MR. & MS. UMN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
+        className: "info"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang paduan suara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "instagram.com/bemumn"
       }, "@ultimasonora")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -87189,7 +87189,7 @@ var KegiatanMahasiswa = /*#__PURE__*/function (_Component) {
         src: "assets/ukmnobg/senbud/ulsonbg.png",
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
+        className: "info"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang paduan suara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "instagram.com/bemumn"
       }, "@ultimasonora")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -87204,7 +87204,7 @@ var KegiatanMahasiswa = /*#__PURE__*/function (_Component) {
         src: "assets/ukmnobg/senbud/ulsonbg.png",
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
+        className: "info"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang paduan suara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "instagram.com/bemumn"
       }, "@ultimasonora")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -87219,7 +87219,7 @@ var KegiatanMahasiswa = /*#__PURE__*/function (_Component) {
         src: "assets/ukmnobg/senbud/ulsonbg.png",
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
+        className: "info"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang paduan suara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "instagram.com/bemumn"
       }, "@ultimasonora")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -87353,12 +87353,6 @@ var Ukm = /*#__PURE__*/function (_Component) {
       var _this2 = this;
 
       var displayTabs = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tabs"], {
-<<<<<<< HEAD
-        defaultIndex: 0,
-        onSelect: function onSelect(index) {
-          return console.log(index);
-        }
-=======
         selectedIndex: this.state.tabIndex,
         onSelect: function onSelect(tabIndex) {
           return _this2.setState({
@@ -87366,7 +87360,6 @@ var Ukm = /*#__PURE__*/function (_Component) {
           });
         },
         onClick: slider()
->>>>>>> 26d9b626c7c5cfbb4d6790a0f46e5f47a7939724
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabList"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tab"], {
         className: "ukm1-tab-pane"
       }, "Seni dan Budaya"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tab"], {
@@ -98357,8 +98350,8 @@ if (document.getElementById('ukm')) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\xampp\htdocs\websitebem\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\xampp\htdocs\websitebem\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\websitebem\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\websitebem\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

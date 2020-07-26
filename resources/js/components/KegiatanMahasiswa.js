@@ -49,11 +49,11 @@ class KegiatanMahasiswa extends Component{
                     {/*Slider Box*/}
                 <div className="box">
                     {/*model*/}
-                    <img src="assets/kegiatan/logoufestbig.png" className="model"></img>
+                    <img src="assets/kegiatan/logoufestbig.png" className="model-keg"></img>
                     <Container><p className="title">U-FEST</p></Container>
 
                     {/*Penjelasan*/}
-                    <div className="penjelasan">
+                    <div className="info">
                     <p>Ultima Sonora adalah unit kegiatan mahasiswa</p>
                     <p>yang bergerak dalam bidang paduan suara</p>
 
@@ -79,11 +79,11 @@ class KegiatanMahasiswa extends Component{
                     {/*Slider Box*/}
                 <div className="box">
                     {/*model*/}
-                    <img src="assets/kegiatan/logomaximabig.png" className="model"></img>
+                    <img src="assets/kegiatan/logomaximabig.png" className="model-keg"></img>
                     <p className="title">MAXIMA</p>
 
                     {/*Penjelasan*/}
-                    <div className="penjelasan">
+                    <div className="info">
                     <p>Ultima Sonora adalah unit kegiatan mahasiswa</p>
                     <p>yang bergerak dalam bidang paduan suara</p>
 
@@ -113,7 +113,7 @@ class KegiatanMahasiswa extends Component{
                     <p className="title">MR. & MS. UMN</p>
 
                     {/*Penjelasan*/}
-                    <div className="penjelasan">
+                    <div className="info">
                     <p>Ultima Sonora adalah unit kegiatan mahasiswa</p>
                     <p>yang bergerak dalam bidang paduan suara</p>
 
@@ -160,7 +160,7 @@ class KegiatanMahasiswa extends Component{
             <img src="assets/ukmnobg/senbud/ulsonbg.png" className="model"></img>
 
             {/*Penjelasan*/}
-            <div className="penjelasan">
+            <div className="info">
             <p>Ultima Sonora adalah unit kegiatan mahasiswa</p>
             <p>yang bergerak dalam bidang paduan suara</p>
 
@@ -190,7 +190,7 @@ class KegiatanMahasiswa extends Component{
             <img src="assets/ukmnobg/senbud/ulsonbg.png" className="model"></img>
 
             {/*Penjelasan*/}
-            <div className="penjelasan">
+            <div className="info">
             <p>Ultima Sonora adalah unit kegiatan mahasiswa</p>
             <p>yang bergerak dalam bidang paduan suara</p>
 
@@ -220,7 +220,7 @@ class KegiatanMahasiswa extends Component{
             <img src="assets/ukmnobg/senbud/ulsonbg.png" className="model"></img>
 
             {/*Penjelasan*/}
-            <div className="penjelasan">
+            <div className="info">
             <p>Ultima Sonora adalah unit kegiatan mahasiswa</p>
             <p>yang bergerak dalam bidang paduan suara</p>
 
