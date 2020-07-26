@@ -66,11 +66,13 @@
 }
 
 .model-keg{
-    margin-top: -20px;
+    /* margin-top: -20px; */
     height: 400px;
     width: 400px;
     max-height: 100%;
     max-width: 100%;
+    display: block;
+    margin: auto;
 }
 
 .model-mrms{
@@ -127,11 +129,13 @@
     }
     
     .model-keg{
-        margin-top: -20px;
+        /* margin-top: -20px; */
         height: 160px;
         width: 160px;
         max-height: 100%;
         max-width: 100%;
+        display: block;
+        margin: auto;
     }
     
     .model-mrms{
@@ -189,11 +193,13 @@
     }
     
     .model-keg{
-        margin-top: -20px;
-        height: 400px;
-        width: 400px;
+        /* margin-top: -20px; */
+        height: 180px;
+        width: 180px;
         max-height: 100%;
         max-width: 100%;
+        display: block;
+        margin: auto;
     }
     
     .model-mrms{
