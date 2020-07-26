@@ -84,6 +84,9 @@ body{
 
 .container-csi{
   background-image: url(../../public/assets/CSI.png); /*nanti ganti sama asset yg resolusinya lbh besar*/
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 220px;
 }
 
 .container-csi-text{
