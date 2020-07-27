@@ -83,7 +83,7 @@ class Home extends Component{
            <br></br>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
            <br></br>qui officia deserunt mollit anim id est laborum.
            <br></br>
-           <Button color="primary">Learn More</Button>{' '}
+           <Button color="primary" className="buttonsmua">Learn More</Button>{' '}
            </p>              
         </div>
         </div>
@@ -110,7 +110,7 @@ class Home extends Component{
            <br></br>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
            <br></br>qui officia deserunt mollit anim id est laborum.
            <br></br>
-           <Button color="primary">About Us</Button>{' '}
+           <Button color="primary" className="buttonsmua">About Us</Button>{' '}
         </p>  
         </div>
         </Col>

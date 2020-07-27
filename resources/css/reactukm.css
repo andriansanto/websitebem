@@ -1,3 +1,7 @@
+.react-tabs__tab-list{
+    margin: 0;
+}
+
 .allukm{
     margin-top: 50px;
 }
@@ -11,8 +15,10 @@
 }
 
 .container-ukm{
-    padding-top: 120px;
+    padding-top: 50px;
     background-image: url(../../public/assets/CSI.png); /*nanti ganti sama asset yg resolusinya lbh besar*/
+    background-repeat: no-repeat;
+    height: 300px;
 }
 
 .ukm{
@@ -232,7 +238,7 @@
     color: #bcbcbc;
     justify-content: center;
     align-items: center;
-    width: 33%;
+    width: 33.3%;
     height: 50px;
     background-image: linear-gradient(#81175a,#a71d74);
     cursor: pointer;
@@ -247,7 +253,7 @@
     color: #bcbcbc;
     justify-content: center;
     align-items: center;
-    width: 33%;
+    width: 33.3%;
     height: 50px;
     background-image: linear-gradient(#98b14e,#a8c455);
     cursor: pointer;
@@ -261,7 +267,7 @@
     color: #bcbcbc;
     justify-content: center;
     align-items: center;
-    width: 33%;
+    width: 33.4%;
     height: 50px;
     background-image: linear-gradient(#fea24d,#fc9a3e);
     cursor: pointer;
@@ -380,4 +386,11 @@
         display: inline-grid;
     }
 
+}
+
+
+@media(min-width:1550px){
+    .container-ukm{
+        background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/
+    }
 }
