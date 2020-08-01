@@ -6,6 +6,20 @@
 }
 
 .text-tab-pane-keg{
+    display: inline-flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: xxx-large;
+    color: #bcbcbc;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 300px;
+    background-image: linear-gradient(#ade2b2,#ffffff);
+    cursor: pointer;
+  }
+
+.text-tab-pane-keg:focus{
   display: inline-flex;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -30,6 +44,20 @@
     width: 50%;
     height: 300px;
     background-image: linear-gradient(#ffb359,#ffffff);
+    cursor: pointer;
+  }
+
+  .text-tab-pane-lso:focus{
+    display: inline-flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: xxx-large;
+    color: #bcbcbc;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 300px;
+    background-image: linear-gradient(#ade2b2,#ffffff);
     cursor: pointer;
   }
 
