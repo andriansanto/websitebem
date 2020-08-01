@@ -1,0 +1,122 @@
+.fotoatas{
+   
+    top: -50%; 
+    left: -50%; 
+    width: 100%; 
+    height: 1000px;
+}
+
+.fotoabout{
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto; 
+    min-width: 50%;
+    min-height: 50%;
+}
+
+.ul{
+    list-style: none;
+}
+
+.container-slider{
+    width: 100%;
+    height: 2000px; /*Tinggi Box luar Logo nya*/
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box{
+    width: 2000px;
+    height: 1150px;
+    background-color: blue;
+    border-radius: 10px;
+    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+
+.box:hover{
+    background-color: #a82578;
+    transform-style: preserve-3d;
+    transform: scale(1);
+    transition: all ease 0.3s;
+}
+
+.box:hover .senbud{
+    color: #ffffff;
+    transition: all ease 0.5s;
+}
+
+.penjelasan{
+    text-align: center;
+    color: white;
+}
+
+.model{
+    margin-top: -20px;
+    height: 200px;
+    width: 200px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.details img{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.senbud{
+    color: #500033;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+
+
+.lSNext{
+    background-image: url(../../public/assets/arrowkanan.png);
+    width: 40px;
+    height: 35px;
+}
+
+.lSAction > .lSNext{
+    width: 40px;
+    height: 35px;
+}
+
+.lSPrev{
+    background-image: url(../../public/assets/arrowkiri.png);
+    width: 35px;
+    height: 35px;
+}
+
+.lSAction > .lSPrev{
+    width: 35px;
+    height: 35px;
+}
