@@ -5,7 +5,7 @@
     
 }
 
-.text-tab-pane{
+.text-tab-pane-keg{
   display: inline-flex;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -18,6 +18,30 @@
   background-image: linear-gradient(#ffb359,#ffffff);
   cursor: pointer;
 }
+
+.text-tab-pane-lso{
+    display: inline-flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: xxx-large;
+    color: #bcbcbc;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 300px;
+    background-image: linear-gradient(#ffb359,#ffffff);
+    cursor: pointer;
+  }
+
+input[type=radio] {
+	position: fixed;
+    transform: scale(60);
+    visibility: hidden;
+}
+
+/* .input:checked ~ .text-tab-pane {
+	background-image:linear-gradient( #ade2b2, #ffffff);
+} */
 
 .react-tabs__tab--selected {
     /* border-color: #aaa; */
@@ -58,21 +82,71 @@
 
 
 .info{
-    text-align: center;
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
+    text-align: left;
 
 }
 
 .model-keg{
-    /* margin-top: -20px; */
+    margin-top: -20px;
     height: 400px;
     width: 400px;
     max-height: 100%;
     max-width: 100%;
     display: block;
-    margin: auto;
+    /* margin: auto; */
+}
+
+.model-lso-box{
+    margin-top: 30px;
+    height: 200px;
+    width: 200px;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    /* margin: auto; */
+}
+
+.model-lso-dunar{
+    margin-top: -20px;
+    height: 300px;
+    width: 400px;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    /* margin: auto; */
+}
+
+.model-lso-medic{
+    margin-top: 50px;
+    height: 140px;
+    width: 400px;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    /* margin: auto; */
+}
+
+.model-lso-ustore{
+    margin-top: -20px;
+    height: 200px;
+    width: 350px;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    /* margin: auto; */
+}
+
+.model-lso-komcor{
+    margin-top: -20px;
+    height: 300px;
+    width: 300px;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    /* margin: auto; */
 }
 
 .model-mrms{
@@ -104,6 +178,7 @@
     letter-spacing: 2px;
     font-family: 'Montserrat', sans-serif;
     font-size: 50px;
+    text-align: left;
 }
 
 @media (max-width:768px){
@@ -121,21 +196,72 @@
     
     
     .info{
-        text-align: center;
         color: black;
         font-family: 'Montserrat', sans-serif;
         font-size: 25px;
+        text-align: left;
     
     }
     
     .model-keg{
-        /* margin-top: -20px; */
+        margin-top: -20px;
         height: 160px;
         width: 160px;
         max-height: 100%;
         max-width: 100%;
         display: block;
-        margin: auto;
+        /* margin: auto; */
+
+    }
+
+    .model-lso-box{
+        margin-top: 30px;
+        height: 200px;
+        width: 200px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
+    }
+
+    .model-lso-dunar{
+        margin-top: -20px;
+        height: 300px;
+        width: 400px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
+    }
+
+    .model-lso-medic{
+        margin-top: -20px;
+        height: 150px;
+        width: 400px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
+    }
+
+    .model-lso-ustore{
+        margin-top: -20px;
+        height: 200px;
+        width: 350px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
+    }
+
+    .model-lso-komcor{
+        margin-top: -20px;
+        height: 300px;
+        width: 300px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
     }
     
     .model-mrms{
@@ -167,6 +293,7 @@
         letter-spacing: 2px;
         font-family: 'Montserrat', sans-serif;
         font-size: 20px;
+        text-align: left;
     }
 }
 
@@ -185,21 +312,71 @@
     
     
     .info{
-        text-align: center;
         color: black;
         font-family: 'Montserrat', sans-serif;
         font-size: 25px;
+        text-align: left;
     
     }
     
     .model-keg{
-        /* margin-top: -20px; */
+        margin-top: -20px;
         height: 180px;
         width: 180px;
         max-height: 100%;
         max-width: 100%;
         display: block;
-        margin: auto;
+        /* margin: auto; */
+    }
+
+    .model-lso-box{
+        margin-top: 30px;
+        height: 200px;
+        width: 200px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
+    }
+
+    .model-lso-dunar{
+        margin-top: -20px;
+        height: 250px;
+        width: 400px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
+    }
+
+    .model-lso-medic{
+        margin-top: -20px;
+        height: 150px;
+        width: 400px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
+    }
+
+    .model-lso-ustore{
+        margin-top: -20px;
+        height: 200px;
+        width: 350px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
+    }
+
+    .model-lso-komcor{
+        margin-top: -20px;
+        height: 300px;
+        width: 300px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
     }
     
     .model-mrms{
@@ -231,6 +408,7 @@
         letter-spacing: 2px;
         font-family: 'Montserrat', sans-serif;
         font-size: 50px;
+        text-align: left;
     }
     
     .text-tab-pane{
