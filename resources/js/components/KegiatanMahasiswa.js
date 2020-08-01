@@ -26,11 +26,11 @@ function changeTab(){
     var radio = document.getElementsByClassName("radio");
     console.log(radio.length);
     console.log("test");
-        if(document.getElementsByClassName("radio").value == 'keg'){
+        if(document.querySelector(".keg").value == 'keg'){
             document.getElementsByClassName("text-tab-pane").style.cssText = "background-image: linear-gradient(#ffb359,#ffffff);"
             console.log("pertama");
         }
-        else if(document.getElementsByClassName("radio").value == 'lso'){
+        else if(document.querySelector(".lso").value == 'lso'){
             document.getElementsByClassName("text-tab-pane").style.cssText = "background-image: linear-gradient(#ade2b2,#ffffff);"
             console.log("kedua");
         }
@@ -55,8 +55,8 @@ class KegiatanMahasiswa extends Component{
             <Tabs selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({ tabIndex })} onClick={slider()}>
             <TabList>
             <div id="wrap">
-            <Tab className="text-tab-pane"><input type="radio" className="radio" value="keg" onClick={changeTab()}></input>Kegiatan<br></br>Mahasiswa</Tab>
-            <Tab className="text-tab-pane"><input type="radio" className="radio" value="lso" onClick={changeTab()}></input>Lembaga<br></br>Semi Otonom</Tab>
+            <Tab className="text-tab-pane"><input type="radio" className="radio" id="keg" onClick={changeTab()}></input>Kegiatan<br></br>Mahasiswa</Tab>
+            <Tab className="text-tab-pane"><input type="radio" className="radio" id="lso" onClick={changeTab()}></input>Lembaga<br></br>Semi Otonom</Tab>
             </div>
             </TabList>
 
