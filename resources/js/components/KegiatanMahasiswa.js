@@ -65,7 +65,7 @@ class KegiatanMahasiswa extends Component{
             <TabPanel>
             <div className="container-awal">
 
-        <div className="container-slider">
+        <div className="container-slider-keg">
             {/*Slider*/}
             
         <ul id="autoWidth" className="cs-hidden">
@@ -74,7 +74,7 @@ class KegiatanMahasiswa extends Component{
             <li className="item-a">
                 
                     {/*Slider Box*/}
-                <div className="box">
+                <div className="box-keg">
                     {/*model*/}
                     <Row>
                     <div className="col-md-5">
@@ -110,7 +110,7 @@ class KegiatanMahasiswa extends Component{
             <li className="item-a">
                 
                     {/*Slider Box*/}
-                <div className="box">
+                <div className="box-keg">
                     {/*model*/}
                     <Row>
                     <div className="col-md-5">
@@ -146,7 +146,7 @@ class KegiatanMahasiswa extends Component{
             <li className="item-a">
                 
                     {/*Slider Box*/}
-                <div className="box">
+                <div className="box-keg">
                     {/*model*/}
                     <Row>
                     <div className="col-md-4">
@@ -182,7 +182,7 @@ class KegiatanMahasiswa extends Component{
             <li className="item-a">
                 
                     {/*Slider Box*/}
-                <div className="box">
+                <div className="box-keg">
                     {/*model*/}
                     <Row>
                     <div className="col-md-5">
@@ -218,7 +218,7 @@ class KegiatanMahasiswa extends Component{
             <li className="item-a">
                 
                     {/*Slider Box*/}
-                <div className="box">
+                <div className="box-keg">
                     {/*model*/}
                     <Row>
                     <div className="col-md-5">
@@ -254,7 +254,7 @@ class KegiatanMahasiswa extends Component{
             <li className="item-a">
                 
                     {/*Slider Box*/}
-                <div className="box">
+                <div className="box-keg">
                     {/*model*/}
                     <Row>
                     <div className="col-md-5">
@@ -298,7 +298,7 @@ class KegiatanMahasiswa extends Component{
 <TabPanel>
 <div className="container-awal">
 
-<div className="container-slider">
+<div className="container-slider-keg">
     {/*Slider*/}
     
 <ul id="autoWidth" className="cs-hidden">
@@ -307,7 +307,7 @@ class KegiatanMahasiswa extends Component{
     <li className="item-a">
         
             {/*Slider Box*/}
-        <div className="box">
+        <div className="box-keg">
             {/*model*/}
             <Row>
                     <div className="col-md-5">
@@ -343,7 +343,7 @@ class KegiatanMahasiswa extends Component{
     <li className="item-a">
         
             {/*Slider Box*/}
-        <div className="box">
+        <div className="box-keg">
             {/*model*/}
             <Row>
                     <div className="col-md-5">
@@ -379,7 +379,7 @@ class KegiatanMahasiswa extends Component{
     <li className="item-a">
         
             {/*Slider Box*/}
-        <div className="box">
+        <div className="box-keg">
             {/*model*/}
             <Row>
                     <div className="col-md-4">
@@ -416,7 +416,7 @@ class KegiatanMahasiswa extends Component{
     <li className="item-a">
         
             {/*Slider Box*/}
-        <div className="box">
+        <div className="box-keg">
             {/*model*/}
             <Row>
                     <div className="col-md-5">
@@ -452,7 +452,7 @@ class KegiatanMahasiswa extends Component{
     <li className="item-a">
         
             {/*Slider Box*/}
-        <div className="box">
+        <div className="box-keg">
             {/*model*/}
             <Row>
                     <div className="col-md-5">
@@ -488,7 +488,7 @@ class KegiatanMahasiswa extends Component{
     <li className="item-a">
         
             {/*Slider Box*/}
-        <div className="box">
+        <div className="box-keg">
             {/*model*/}
             <Row>
                     <div className="col-md-5">
