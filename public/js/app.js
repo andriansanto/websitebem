@@ -6979,7 +6979,7 @@ exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base
 
 
 // module
-exports.push([module.i, ".react-tabs {\n  -webkit-tap-highlight-color: transparent;\n}\n\n.react-tabs__tab-list {\n  border-bottom: 1px solid #aaa;\n  margin: 0 0 10px;\n  padding: 0;\n}\n\n.react-tabs__tab {\n  display: inline-block;\n  border: 1px solid transparent;\n  border-bottom: none;\n  bottom: -1px;\n  position: relative;\n  list-style: none;\n  padding: 6px 12px;\n  cursor: pointer;\n}\n\n.react-tabs__tab--selected {\n  background: #fff;\n  border-color: #aaa;\n  color: black;\n  border-radius: 5px 5px 0 0;\n}\n\n.react-tabs__tab--disabled {\n  color: GrayText;\n  cursor: default;\n}\n\n.react-tabs__tab:focus {\n  box-shadow: 0 0 5px hsl(208, 99%, 50%);\n  border-color: hsl(208, 99%, 50%);\n  outline: none;\n}\n\n.react-tabs__tab:focus:after {\n  content: \"\";\n  position: absolute;\n  height: 5px;\n  left: -4px;\n  right: -4px;\n  bottom: -5px;\n  background: #fff;\n}\n\n.react-tabs__tab-panel {\n  display: none;\n}\n\n.react-tabs__tab-panel--selected {\n  display: block;\n}\n", ""]);
+exports.push([module.i, ".react-tabs {\n  -webkit-tap-highlight-color: transparent;\n}\n\n.react-tabs__tab-list {\n  margin: 0 0 10px;\n  padding: 0;\n}\n\n.react-tabs__tab {\n  display: inline-block;\n  border: 1px solid transparent;\n  border-bottom: none;\n  position: relative;\n  list-style: none;\n  padding: 6px 12px;\n  cursor: pointer;\n}\n\n.react-tabs__tab--selected {\n  background: #fff;\n  border-color: #aaa;\n  color: black;\n  border-radius: 5px 5px 0 0;\n}\n\n.react-tabs__tab--disabled {\n  color: GrayText;\n  cursor: default;\n}\n\n.react-tabs__tab:focus {\n  box-shadow: 0 0 5px hsl(208, 99%, 50%);\n  border-color: hsl(208, 99%, 50%);\n  outline: none;\n}\n\n.react-tabs__tab:focus:after {\n  content: \"\";\n  position: absolute;\n  height: 5px;\n  left: -4px;\n  right: -4px;\n  background: #fff;\n}\n\n.react-tabs__tab-panel {\n  display: none;\n}\n\n.react-tabs__tab-panel--selected {\n  display: block;\n}\n", ""]);
 
 // exports
 
@@ -7038,6 +7038,26 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 // module
 exports.push([module.i, "/*! lightslider - v1.1.3 - 2015-04-14\r\n* https://github.com/sachinchoolur/lightslider\r\n* Copyright (c) 2015 Sachin N; Licensed MIT */\r\n/** /!!! core css Should not edit !!!/**/ \r\n\r\n.lSSlideOuter {\r\n    overflow: hidden;\r\n    -webkit-touch-callout: none;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none\r\n}\r\n.lightSlider:before, .lightSlider:after {\r\n    content: \" \";\r\n    display: table;\r\n}\r\n.lightSlider {\r\n    overflow: hidden;\r\n    margin: 0;\r\n}\r\n.lSSlideWrapper {\r\n    max-width: 100%;\r\n    overflow: hidden;\r\n    position: relative;\r\n}\r\n.lSSlideWrapper > .lightSlider:after {\r\n    clear: both;\r\n}\r\n.lSSlideWrapper .lSSlide {\r\n    transform: translate(0px, 0px);\r\n    -webkit-transition: all 1s;\r\n    transition-property: transform,height;\r\n    transition-duration: inherit !important;\r\n    transition-timing-function: inherit !important;\r\n}\r\n.lSSlideWrapper .lSFade {\r\n    position: relative;\r\n}\r\n.lSSlideWrapper .lSFade > * {\r\n    position: absolute !important;\r\n    top: 0;\r\n    left: 0;\r\n    z-index: 9;\r\n    margin-right: 0;\r\n    width: 100%;\r\n}\r\n.lSSlideWrapper.usingCss .lSFade > * {\r\n    opacity: 0;\r\n    transition-delay: 0s;\r\n    transition-duration: inherit !important;\r\n    transition-property: opacity;\r\n    transition-timing-function: inherit !important;\r\n}\r\n.lSSlideWrapper .lSFade > *.active {\r\n    z-index: 10;\r\n}\r\n.lSSlideWrapper.usingCss .lSFade > *.active {\r\n    opacity: 1;\r\n}\r\n/** /!!! End of core css Should not edit !!!/**/\r\n\r\n/* Pager */\r\n.lSSlideOuter .lSPager.lSpg {\r\n    margin: 10px 0 0;\r\n    padding: 0;\r\n    text-align: center;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li {\r\n    cursor: pointer;\r\n    display: inline-block;\r\n    padding: 0 5px;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li a {\r\n    background-color: #222222;\r\n    border-radius: 30px;\r\n    display: inline-block;\r\n    height: 8px;\r\n    overflow: hidden;\r\n    text-indent: -999em;\r\n    width: 8px;\r\n    position: relative;\r\n    z-index: 99;\r\n    transition: all 0.5s linear 0s;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {\r\n    background-color: #428bca;\r\n}\r\n.lSSlideOuter .media {\r\n    opacity: 0.8;\r\n}\r\n.lSSlideOuter .media.active {\r\n    opacity: 1;\r\n}\r\n/* End of pager */\r\n\r\n/** Gallery */\r\n.lSSlideOuter .lSPager.lSGallery {\r\n    list-style: none outside none;\r\n    padding-left: 0;\r\n    margin: 0;\r\n    overflow: hidden;\r\n    transform: translate3d(0px, 0px, 0px);\r\n    -moz-transform: translate3d(0px, 0px, 0px);\r\n    -ms-transform: translate3d(0px, 0px, 0px);\r\n    -webkit-transform: translate3d(0px, 0px, 0px);\r\n    -o-transform: translate3d(0px, 0px, 0px);\r\n    -webkit-transition-property: -webkit-transform;\r\n    -moz-transition-property: -moz-transform;\r\n    -webkit-touch-callout: none;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery li {\r\n    overflow: hidden;\r\n    transition: border-radius 0.12s linear 0s 0.35s linear 0s;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {\r\n    border-radius: 5px;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery img {\r\n    display: block;\r\n    height: auto;\r\n    max-width: 100%;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery:before, .lSSlideOuter .lSPager.lSGallery:after {\r\n    content: \" \";\r\n    display: table;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery:after {\r\n    clear: both;\r\n}\r\n/* End of Gallery*/\r\n\r\n/* slider actions */\r\n.lSAction > a {\r\n    width: 32px;\r\n    display: block;\r\n    top: 50%;\r\n    height: 32px;\r\n    cursor: pointer;\r\n    position: absolute;\r\n    z-index: 99;\r\n    margin-top: -16px;\r\n    opacity: 0.5;\r\n    transition: opacity 0.35s linear 0s;\r\n}\r\n.lSAction > a:hover {\r\n    opacity: 1;\r\n}\r\n.lSAction > .lSPrev {\r\n    background-position: 0 0;\r\n    left: 10px;\r\n}\r\n.lSAction > .lSNext {\r\n    background-position: -32px 0;\r\n    right: 10px;\r\n}\r\n.lSAction > a.disabled {\r\n    pointer-events: none;\r\n}\r\n.cS-hidden {\r\n    height: 1px;\r\n    opacity: 0;\r\n    filter: alpha(opacity=0);\r\n    overflow: hidden;\r\n}\r\n\r\n\r\n/* vertical */\r\n.lSSlideOuter.vertical {\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical.noPager {\r\n    padding-right: 0px !important;\r\n}\r\n.lSSlideOuter.vertical .lSGallery {\r\n    position: absolute !important;\r\n    right: 0;\r\n    top: 0;\r\n}\r\n.lSSlideOuter.vertical .lightSlider > * {\r\n    width: 100% !important;\r\n    max-width: none !important;\r\n}\r\n\r\n/* vertical controlls */\r\n.lSSlideOuter.vertical .lSAction > a {\r\n    left: 50%;\r\n    margin-left: -14px;\r\n    margin-top: 0;\r\n}\r\n.lSSlideOuter.vertical .lSAction > .lSNext {\r\n    background-position: 31px -31px;\r\n    bottom: 10px;\r\n    top: auto;\r\n}\r\n.lSSlideOuter.vertical .lSAction > .lSPrev {\r\n    background-position: 0 -31px;\r\n    bottom: auto;\r\n    top: 10px;\r\n}\r\n/* vertical */\r\n\r\n\r\n/* Rtl */\r\n.lSSlideOuter.lSrtl {\r\n    direction: rtl;\r\n}\r\n.lSSlideOuter .lightSlider, .lSSlideOuter .lSPager {\r\n    padding-left: 0;\r\n    list-style: none outside none;\r\n}\r\n.lSSlideOuter.lSrtl .lightSlider, .lSSlideOuter.lSrtl .lSPager {\r\n    padding-right: 0;\r\n}\r\n.lSSlideOuter .lightSlider > *,  .lSSlideOuter .lSGallery li {\r\n    float: left;\r\n}\r\n.lSSlideOuter.lSrtl .lightSlider > *,  .lSSlideOuter.lSrtl .lSGallery li {\r\n    float: right !important;\r\n}\r\n/* Rtl */\r\n\r\n@-webkit-keyframes rightEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: -15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@keyframes rightEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: -15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@-webkit-keyframes topEnd {\r\n    0% {\r\n        top: 0;\r\n    }\r\n\r\n    50% {\r\n        top: -15px;\r\n    }\r\n\r\n    100% {\r\n        top: 0;\r\n    }\r\n}\r\n@keyframes topEnd {\r\n    0% {\r\n        top: 0;\r\n    }\r\n\r\n    50% {\r\n        top: -15px;\r\n    }\r\n\r\n    100% {\r\n        top: 0;\r\n    }\r\n}\r\n@-webkit-keyframes leftEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: 15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@keyframes leftEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: 15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@-webkit-keyframes bottomEnd {\r\n    0% {\r\n        bottom: 0;\r\n    }\r\n\r\n    50% {\r\n        bottom: -15px;\r\n    }\r\n\r\n    100% {\r\n        bottom: 0;\r\n    }\r\n}\r\n@keyframes bottomEnd {\r\n    0% {\r\n        bottom: 0;\r\n    }\r\n\r\n    50% {\r\n        bottom: -15px;\r\n    }\r\n\r\n    100% {\r\n        bottom: 0;\r\n    }\r\n}\r\n.lSSlideOuter .rightEnd {\r\n    -webkit-animation: rightEnd 0.3s;\r\n    animation: rightEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter .leftEnd {\r\n    -webkit-animation: leftEnd 0.3s;\r\n    animation: leftEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical .rightEnd {\r\n    -webkit-animation: topEnd 0.3s;\r\n    animation: topEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical .leftEnd {\r\n    -webkit-animation: bottomEnd 0.3s;\r\n    animation: bottomEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.lSrtl .rightEnd {\r\n    -webkit-animation: leftEnd 0.3s;\r\n    animation: leftEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.lSrtl .leftEnd {\r\n    -webkit-animation: rightEnd 0.3s;\r\n    animation: rightEnd 0.3s;\r\n    position: relative;\r\n}\r\n/*/  GRab cursor */\r\n.lightSlider.lsGrab > * {\r\n  cursor: -webkit-grab;\r\n  cursor: -o-grab;\r\n  cursor: -ms-grab;\r\n  cursor: grab;\r\n}\r\n.lightSlider.lsGrabbing > * {\r\n  cursor: move;\r\n  cursor: -webkit-grabbing;\r\n  cursor: -o-grabbing;\r\n  cursor: -ms-grabbing;\r\n  cursor: grabbing;\r\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/css/reactabout.css":
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/css/reactabout.css ***!
+  \**********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var escape = __webpack_require__(/*! ../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".fotoatas{\r\n   \r\n    top: -50%; \r\n    left: -50%; \r\n    width: 100%; \r\n    height: 1000px;\r\n}\r\n\r\n.fotoabout{\r\n    position: absolute;\r\n    top: 0; \r\n    left: 0; \r\n    right: 0; \r\n    bottom: 0; \r\n    margin-top: 50px;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    margin-bottom: auto; \r\n    min-width: 50%;\r\n    min-height: 50%;\r\n}\r\n\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.container-slider{\r\n    width: 100%;\r\n    height: 2000px; /*Tinggi Box luar Logo nya*/\r\n    background-color: #ffffff;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n\r\n.box{\r\n    width: 2000px;\r\n    height: 1150px;\r\n    background-color: blue;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n}\r\n\r\n\r\n.box:hover{\r\n    background-color: #a82578;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.box:hover .senbud{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n.penjelasan{\r\n    text-align: center;\r\n    color: white;\r\n}\r\n\r\n.model{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details img{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 10px;\r\n}\r\n\r\n.senbud{\r\n    color: #500033;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n\r\n\r\n.lSNext{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/arrowkanan.png */ "./public/assets/arrowkanan.png")) + ");\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSNext{\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/arrowkiri.png */ "./public/assets/arrowkiri.png")) + ");\r\n    width: 35px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSPrev{\r\n    width: 35px;\r\n    height: 35px;\r\n}\r\n", ""]);
 
 // exports
 
@@ -86585,6 +86605,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./resources/css/reactabout.css":
+/*!**************************************!*\
+  !*** ./resources/css/reactabout.css ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader??ref--6-1!../../node_modules/postcss-loader/src??ref--6-2!./reactabout.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/css/reactabout.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./resources/css/reacthimp.css":
 /*!*************************************!*\
   !*** ./resources/css/reacthimp.css ***!
@@ -86786,10 +86836,107 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*!********************************************!*\
   !*** ./resources/js/components/AboutUs.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../css/lightslider.css */ "./resources/css/lightslider.css");
+/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_lightslider_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../slidersukm/Jquery31 */ "./resources/js/slidersukm/Jquery31.js");
+/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../slidersukm/lightslider */ "./resources/js/slidersukm/lightslider.js");
+/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _slidersukm_sliderqueryabout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../slidersukm/sliderqueryabout */ "./resources/js/slidersukm/sliderqueryabout.js");
+/* harmony import */ var _slidersukm_sliderqueryabout__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_sliderqueryabout__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _css_reactabout_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../css/reactabout.css */ "./resources/css/reactabout.css");
+/* harmony import */ var _css_reactabout_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_css_reactabout_css__WEBPACK_IMPORTED_MODULE_6__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 
+
+
+
+
+
+
+
+var AboutUs = /*#__PURE__*/function (_Component) {
+  _inherits(AboutUs, _Component);
+
+  var _super = _createSuper(AboutUs);
+
+  function AboutUs() {
+    _classCallCheck(this, AboutUs);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(AboutUs, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "fotoatas"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "fotoabout",
+        src: "assets/aboutus/auBEM.png"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container-awal"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container-slider"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        id: "autoWidth",
+        className: "cs-hidden"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "senbud"
+      }, "Gen 10"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "penjelasan"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "assets/aboutus/au10.png"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      })))))));
+    }
+  }]);
+
+  return AboutUs;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (AboutUs);
+
+if (document.getElementById('AboutUs')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(AboutUs, null), document.getElementById('AboutUs'));
+}
 
 /***/ }),
 
@@ -98403,6 +98550,24 @@ if (document.getElementById('ukm')) {
 
 /***/ }),
 
+/***/ "./resources/js/slidersukm/sliderqueryabout.js":
+/*!*****************************************************!*\
+  !*** ./resources/js/slidersukm/sliderqueryabout.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $('#adaptive').lightSlider({
+    adaptiveHeight: true,
+    item: 1,
+    slideMargin: 0,
+    loop: true
+  });
+});
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -98421,8 +98586,8 @@ if (document.getElementById('ukm')) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! c:\laragon\www\websitebem\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! c:\laragon\www\websitebem\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\xampp\htdocs\websitebem\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\xampp\htdocs\websitebem\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
