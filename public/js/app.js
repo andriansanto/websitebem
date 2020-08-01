@@ -6979,11 +6979,7 @@ exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base
 
 
 // module
-<<<<<<< HEAD
-exports.push([module.i, ".react-tabs {\n  -webkit-tap-highlight-color: transparent;\n}\n\n.react-tabs__tab-list {\n  border-bottom: 1px solid #aaa;\n  margin: 0 0 10px;\n  padding: 0;\n}\n\n.react-tabs__tab {\n  display: inline-block;\n  border: 1px solid transparent;\n  border-bottom: none;\n  bottom: -1px;\n  position: relative;\n  list-style: none;\n  padding: 6px 12px;\n  cursor: pointer;\n}\n\n.react-tabs__tab--selected {\n  background: #fff;\n  border-color: #aaa;\n  color: black;\n  border-radius: 5px 5px 0 0;\n}\n\n.react-tabs__tab--disabled {\n  color: GrayText;\n  cursor: default;\n}\n\n.react-tabs__tab:focus {\n  box-shadow: 0 0 5px hsl(208, 99%, 50%);\n  border-color: hsl(208, 99%, 50%);\n  outline: none;\n}\n\n.react-tabs__tab:focus:after {\n  content: \"\";\n  position: absolute;\n  height: 5px;\n  left: -4px;\n  right: -4px;\n  bottom: -5px;\n  background: #fff;\n}\n\n.react-tabs__tab-panel {\n  display: none;\n}\n\n.react-tabs__tab-panel--selected {\n  display: block;\n}\n", ""]);
-=======
 exports.push([module.i, ".react-tabs {\n  -webkit-tap-highlight-color: transparent;\n}\n\n.react-tabs__tab-list {\n  margin: 0 0 10px;\n  padding: 0;\n}\n\n.react-tabs__tab {\n  display: inline-block;\n  border: 1px solid transparent;\n  border-bottom: none;\n  position: relative;\n  list-style: none;\n  padding: 6px 12px;\n  cursor: pointer;\n}\n\n.react-tabs__tab--selected {\n  background: #fff;\n  border-color: #aaa;\n  color: black;\n  border-radius: 5px 5px 0 0;\n}\n\n.react-tabs__tab--disabled {\n  color: GrayText;\n  cursor: default;\n}\n\n.react-tabs__tab:focus {\n  box-shadow: 0 0 5px hsl(208, 99%, 50%);\n  border-color: hsl(208, 99%, 50%);\n  outline: none;\n}\n\n.react-tabs__tab:focus:after {\n  content: \"\";\n  position: absolute;\n  height: 5px;\n  left: -4px;\n  right: -4px;\n  background: #fff;\n}\n\n.react-tabs__tab-panel {\n  display: none;\n}\n\n.react-tabs__tab-panel--selected {\n  display: block;\n}\n", ""]);
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
 
 // exports
 
@@ -7060,11 +7056,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-<<<<<<< HEAD
 exports.push([module.i, ".body {\r\n    background-color: #ffffff;\r\n}\r\n\r\n.container-himp {\r\n    text-align: center;\r\n    padding-top: 120px;\r\n    padding-bottom: 100px;\r\n    background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n    -webkit-background-clip: text;\r\n    -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.himp-maha{\r\n    text-align: center;\r\n}\r\n\r\n.card {\r\n    height: 450px;\r\n    /* background-color: gold; */\r\n    border-radius: 0;\r\n}\r\n\r\n.heads {\r\n    /* background-color: red; */\r\n    -webkit-text-orientation: upright;\r\n            text-orientation: upright;\r\n    -ms-writing-mode: tb-rl;\r\n        writing-mode: vertical-rl;\r\n}\r\n", ""]);
-=======
-exports.push([module.i, ".body{\r\n    background-color: #ffffff;\r\n}\r\n\r\n\r\n.container-himp{\r\n    text-align: center;\r\n    padding-top: 120px;\r\n    background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n    -webkit-background-clip: text;\r\n    -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.himp-maha{\r\n    text-align: center;\r\n}", ""]);
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
 
 // exports
 
@@ -7084,11 +7076,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-<<<<<<< HEAD
-exports.push([module.i, ".App {\r\n  text-align: center;\r\n  padding-top: 55px;\r\n}\r\n \r\n.App-logo {\r\n  height: 40vmin;\r\n}\r\n \r\n.App-header {\r\n  background-color: #282c34;\r\n  min-height: 100vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: calc(10px + 2vmin);\r\n  color: white;\r\n}\r\n \r\n.App-link {\r\n  color: #09d3ac;\r\n}\r\n \r\nbody{\r\n  background: #ffffff;\r\n}\r\n\r\n.slides {\r\n  position: relative;\r\n  height: 579px; /*The slider height*/\r\n}\r\n\r\n.filter:after {\r\n  position: absolute;\r\n  content:\"\";\r\n  height:100%;\r\n  width:100%;\r\n  top:0;\r\n  left:0;\r\n  background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%,rgba(255,255,255,0) 100%);\r\n}\r\n\r\n.slick-dots {\r\n  position: absolute;\r\n  bottom: 20px;\r\n  display: block;\r\n  width: 100%;\r\n  padding: 10;\r\n  margin: 0;\r\n  list-style: none;\r\n  text-align: center;\r\n  font-size: white;\r\n}\r\n\r\n.slick-dots li.slick-active button:before {\r\n  font-size: 25px;\r\n  color: #ffb035;\r\n  opacity: 1;\r\n}\r\n\r\n/*slider button setting - START*/\r\n.slides .slick-prev,\r\n.slides .slick-next {\r\n  position: absolute;\r\n  top: 50%;\r\n  z-index:1;\r\n}\r\n\r\n.slides .slick-prev::before {\r\n  left: 5%;\r\n}\r\n\r\n.slides .slick-next {\r\n  right: 5%;\r\n}\r\n/*slider button setting - FINISH*/\r\n\r\n.slides-img {\r\n  width: 100%;\r\n  height: 579px; /*image height*/\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n}\r\n\r\n.container-csi{\r\n  background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/CSI.png */ "./public/assets/CSI.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n}\r\n\r\n.container-csi-text{\r\n  text-align: center;\r\n}\r\n.container-2{\r\n  background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/homepagefotoumnorange.png */ "./public/assets/homepagefotoumnorange.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n  width: 100%;\r\n  height: 2029px;\r\n  background-repeat: no-repeat;\r\n  background-size: 100%\r\n}\r\n\r\n.container-2-text{\r\n  text-align: right;\r\n}\r\n\r\n.container-dedicate{\r\n  background-color: #ffffff;\r\n  background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/homepagededicatetocreate.png */ "./public/assets/homepagededicatetocreate.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n  width: 100%;\r\n  height: 2039px;\r\n  background-repeat: no-repeat;\r\n  background-size: 100%;\r\n}\r\n\r\n.container-dedicate-judul{\r\n  top: 35%;\r\n  width: 100%;\r\n  font-size: auto;\r\n}\r\n\r\n.container-dedicate-text{\r\n  text-align: left;\r\n  top: 65%;\r\n  width: 100%;\r\n}\r\n\r\n\r\n/*Text di Dedicate*/\r\n.dtc-1{\r\n  text-align: center;\r\n  background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n  position: relative;\r\n  top: 15vw;\r\n  font-size: 3vw;\r\n}\r\n\r\n.genx-1{\r\n  text-align: center;\r\n  background: -webkit-linear-gradient(90deg, rgba(255,207,0,0.7243350596910112) 0%, rgba(255,144,12,0.8086047226123596) 48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n  position: relative;\r\n  top: 15vw;\r\n  font-size: 1.5vw;\r\n}\r\n/*text di dedicate*/    \r\n\r\n/* .container-about{\r\n  background-color: lightblue;\r\n} */\r\n\r\n/*csi*/\r\n.CSI-color{\r\n  background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(122,148,186,1)48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.container-aboutus{\r\n  text-align: justify;\r\n  color: white;\r\n  position: relative;\r\n  top: 38vw;\r\n  left: 5vw;\r\n  font-size: 1.2vw;\r\n}\r\n", ""]);
-=======
 exports.push([module.i, ".App {\r\n  text-align: center;\r\n  padding-top: 55px;\r\n}\r\n \r\n.App-logo {\r\n  height: 40vmin;\r\n}\r\n \r\n.App-header {\r\n  background-color: #282c34;\r\n  min-height: 100vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: calc(10px + 2vmin);\r\n  color: white;\r\n}\r\n \r\n.App-link {\r\n  color: #09d3ac;\r\n}\r\n \r\nbody{\r\n  background: #ffffff;\r\n}\r\n\r\n.slides {\r\n  position: relative;\r\n  height: 579px; /*The slider height*/\r\n}\r\n\r\n.filter:after {\r\n  position: absolute;\r\n  content:\"\";\r\n  height:100%;\r\n  width:100%;\r\n  top:0;\r\n  left:0;\r\n  background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%,rgba(255,255,255,0) 100%);\r\n}\r\n\r\n.slick-dots {\r\n  position: absolute;\r\n  bottom: 20px;\r\n  display: block;\r\n  width: 100%;\r\n  padding: 10;\r\n  margin: 0;\r\n  list-style: none;\r\n  text-align: center;\r\n  font-size: white;\r\n}\r\n\r\n.slick-dots li.slick-active button:before {\r\n  font-size: 25px;\r\n  color: #ffb035;\r\n  opacity: 1;\r\n}\r\n\r\n/*slider button setting - START*/\r\n.slides .slick-prev,\r\n.slides .slick-next {\r\n  position: absolute;\r\n  top: 50%;\r\n  z-index:1;\r\n}\r\n\r\n.slides .slick-prev::before {\r\n  left: 5%;\r\n}\r\n\r\n.slides .slick-next {\r\n  right: 5%;\r\n}\r\n/*slider button setting - FINISH*/\r\n\r\n.slides-img {\r\n  width: 100%;\r\n  height: 579px; /*image height*/\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n}\r\n\r\n.container-csi{\r\n  background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/CSI.png */ "./public/assets/CSI.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n  background-repeat: no-repeat;\r\n  background-size: auto;\r\n  height: 220px;\r\n}\r\n\r\n.container-csi-text{\r\n  text-align: center;\r\n}\r\n.container-2{\r\n  background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/homepagefotoumnorange.png */ "./public/assets/homepagefotoumnorange.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n  width: 100%;\r\n  height: 275px;\r\n  background-repeat: no-repeat;\r\n  background-size: 100%\r\n}\r\n\r\n.container-fluid{\r\n  width: 100%;\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.container-2-text{\r\n  padding-top: 25px;\r\n  padding-right: 15px;\r\n  text-align: right;\r\n}\r\n\r\n.container-dedicate{\r\n  background-color: #ffffff;\r\n  background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/homepagededicatetocreate.png */ "./public/assets/homepagededicatetocreate.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n  width: 100%;\r\n  height: 850px;\r\n  background-repeat: no-repeat;\r\n  background-size: 100%;\r\n}\r\n\r\n.container-dedicate-judul{\r\n  top: 35%;\r\n  width: 100%;\r\n  font-size: auto;\r\n}\r\n\r\n.container-dedicate-text{\r\n  text-align: left;\r\n  top: 65%;\r\n  width: 100%;\r\n}\r\n\r\n\r\n/*Text di Dedicate*/\r\n.dtc-1{\r\n  text-align: center;\r\n  background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n  position: relative;\r\n  top: 15vw;\r\n  font-size: 3vw;\r\n}\r\n\r\n.genx-1{\r\n  text-align: center;\r\n  background: -webkit-linear-gradient(90deg, rgba(255,207,0,0.7243350596910112) 0%, rgba(255,144,12,0.8086047226123596) 48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n  position: relative;\r\n  top: 15vw;\r\n  font-size: 1.5vw;\r\n}\r\n/*text di dedicate*/    \r\n\r\n/* .container-about{\r\n  background-color: lightblue;\r\n} */\r\n\r\n/*csi*/\r\n.CSI-color{\r\n  background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(122,148,186,1)48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.container-aboutus{\r\n  text-align: justify;\r\n  color: white;\r\n  position: relative;\r\n  top: 37vw;\r\n  left: 5vw;\r\n  font-size: 1.2vw;\r\n}\r\n\r\n.buttonsmua{\r\n  font-size: 16px;\r\n}\r\n\r\n@media(max-width:465px){\r\n\r\n  .container-csi{\r\n    background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n   \r\n  }\r\n  \r\n.container-csi-text{\r\n  text-align: center;\r\n  font-size: 8px;\r\n}\r\n.container-2{\r\n  background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n}\r\n\r\n\r\n.container-dedicate-judul{\r\n  top: 35%;\r\n  width: 100%;\r\n  font-size: 9px;\r\n}\r\n  .container-dedicate{\r\n    height: 280px;\r\n  }\r\n\r\n  .container-2-text{\r\n    font-size: 9px;\r\n  }\r\n\r\n  .dtc-1{\r\n    font-size: 15px;\r\n  }\r\n  \r\n  .genx-1{\r\n    \r\n    font-size: 12px;\r\n  }\r\n\r\n  .buttonsmua{\r\n    font-size: 5px;\r\n  }\r\n\r\n}\r\n\r\n@media(min-width:720px){\r\n  .container-dedicate{\r\n    height: 900px;\r\n  }\r\n}\r\n\r\n@media(min-width:1080px){\r\n  .container-dedicate{\r\n    height: 1000px;\r\n  }\r\n}\r\n\r\n\r\n@media(min-width:1380px){\r\n  .container-dedicate{\r\n    height: 1150px;\r\n  }\r\n}\r\n\r\n\r\n@media(min-width:1580px){\r\n  .container-dedicate{\r\n    height: 1350px;\r\n  }\r\n  .container-csi{\r\n    background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n   \r\n  }\r\n}\r\n\r\n@media(min-width:1780px){\r\n  .container-dedicate{\r\n    height: 1550px;\r\n  }\r\n  .container-csi{\r\n    background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n   \r\n  }\r\n}", ""]);
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
 
 // exports
 
@@ -7127,11 +7115,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-<<<<<<< HEAD
-exports.push([module.i, ".allukm{\r\n    margin-top: 50px;\r\n}\r\n\r\n.body{\r\n    background: rgb(224,235,194);\r\n    background: linear-gradient(180deg, rgba(224,235,194,1) 0%, rgba(255,253,71,1) 48%, rgba(255,255,255,1) 89%);\r\n    /*slider*/\r\n\r\n    /*slider*/\r\n}\r\n\r\n.container-ukm{\r\n    padding-top: 120px;\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/CSI.png */ "./public/assets/CSI.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n}\r\n\r\n.ukm{\r\n    text-align: center;\r\n    font-family: 'Montserrat', sans-serif;\r\n    background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n    -webkit-background-clip: text;\r\n    -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.textatasukm{\r\n    text-align: center;\r\n}\r\n\r\n/* Line Slider*/\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.a{\r\n    text-decoration: none;\r\n}\r\n\r\n.container-slider-senbud{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #81175a;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.container-slider-sensos{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #98b14e;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.container-slider-olr{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #fea24d;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n/*Senbud*/\r\n.box-senbud{\r\n    width: 350px;\r\n    height: 500px;\r\n    background-color: #a80a79;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.box-senbud:hover{\r\n    background-color: #b43c88;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.box-senbud:hover .senbud{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Sains Sos*/\r\n.boxsos{\r\n    width: 350px;\r\n    height: 500px;\r\n    background-color: #88a52f;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.boxsos:hover{\r\n    background-color: #83f157;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.boxsos:hover .sensos{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Olahraga*/\r\n\r\n.boxor{\r\n    width: 350px;\r\n    height: 500px;\r\n    background-color: #f88c26;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.boxor:hover{\r\n    background-color: #fecf4d;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.boxor:hover .olr{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Details*/\r\n.penjelasan{\r\n    text-align: center;\r\n    color: white;\r\n}\r\n\r\n.lSNext{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/arrowkanan.png */ "./public/assets/arrowkanan.png")) + ");\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSNext{\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/arrowkiri.png */ "./public/assets/arrowkiri.png")) + ");\r\n    width: 35px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSPrev{\r\n    width: 35px;\r\n    height: 35px;\r\n}\r\n\r\n.model{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details p{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 20px;\r\n}\r\n\r\n.senbud{\r\n    color: #500033;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n.sensos{\r\n    color: #005038;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n.olr{\r\n    color: #7e4b00;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n/* tabs */\r\n.ukm1-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#81175a,#a71d74);\r\n    cursor: pointer;\r\n  }\r\n  \r\n\r\n  .ukm2-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#98b14e,#a8c455);\r\n    cursor: pointer;\r\n  }\r\n\r\n  .ukm3-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#fea24d,#fc9a3e);\r\n    cursor: pointer;\r\n  }\r\n\r\n  .react-tabs__tab--selected {\r\n      /* border-color: #aaa; */\r\n      color: white;\r\n      border-radius: 5px 5px 0 0;\r\n    }\r\n\r\n\r\n/*responsive Mobile*/\r\n\r\n@media(max-width:720px){\r\n     .box{\r\n         width: 94%;\r\n         height: 400px;\r\n     }\r\n\r\n     .boxor{\r\n        width: 94%;\r\n        height: 400px;\r\n    }\r\n\r\n    .boxsos{\r\n        width: 94%;\r\n        height: 400px;\r\n    }\r\n    \r\n     .penjelasan{\r\n        text-align: center;\r\n        font-size: 15px;\r\n        width: 200px;\r\n    }\r\n\r\n     .model{\r\n         height: 100px; /*Logo*/\r\n         width: 100px;\r\n         margin-top: -10px;\r\n     }\r\n\r\n     .details p{\r\n         font-size: 15px;\r\n         width: 200px;\r\n     }\r\n\r\n     .ukm1-tab-pane{\r\n         font-size: 14px;\r\n         height: 25px;\r\n         display: inline-grid;\r\n     }\r\n\r\n     .ukm2-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n    .ukm3-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n}\r\n\r\n@media(max-width:410px){\r\n    .box{\r\n        width: 94%;\r\n        height: 300px;\r\n    }\r\n\r\n    .boxor{\r\n        width: 94%;\r\n        height: 300px;\r\n    }\r\n\r\n    .boxsos{\r\n        width: 94%;\r\n        height: 300px;\r\n    }\r\n\r\n    .penjelasan{\r\n        text-align: center;\r\n        font-size: 15px;\r\n        width: 200px;\r\n    }\r\n\r\n     .model{\r\n         height: 100px; /*Logo*/\r\n         width: 100px;\r\n         margin-top: -10px;\r\n     }\r\n\r\n     .details p{\r\n         font-size: 15px;\r\n         width: 200px;\r\n     }\r\n\r\n     .ukm1-tab-pane{\r\n         font-size: 14px;\r\n         height: 25px;\r\n         display: inline-grid;\r\n     }\r\n\r\n     .ukm2-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n    .ukm3-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n}", ""]);
-=======
-exports.push([module.i, ".react-tabs__tab-list{\r\n    margin: 0;\r\n}\r\n\r\n.allukm{\r\n    margin-top: 50px;\r\n}\r\n\r\n.body{\r\n    background: rgb(224,235,194);\r\n    background: linear-gradient(180deg, rgba(224,235,194,1) 0%, rgba(255,253,71,1) 48%, rgba(255,255,255,1) 89%);\r\n    /*slider*/\r\n\r\n    /*slider*/\r\n}\r\n\r\n.container-ukm{\r\n    padding-top: 50px;\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/CSI.png */ "./public/assets/CSI.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    background-repeat: no-repeat;\r\n    height: 300px;\r\n}\r\n\r\n.ukm{\r\n    text-align: center;\r\n    font-family: 'Montserrat', sans-serif;\r\n    background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n    -webkit-background-clip: text;\r\n    -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.textatasukm{\r\n    text-align: center;\r\n}\r\n\r\n/* Line Slider*/\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.a{\r\n    text-decoration: none;\r\n}\r\n\r\n.container-slider-senbud{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #81175a;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.container-slider-sensos{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #98b14e;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.container-slider-olr{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #fea24d;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n/*Senbud*/\r\n.box-senbud{\r\n    width: 350px;\r\n    height: 500px;\r\n    background-color: #a80a79;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.box-senbud:hover{\r\n    background-color: #b43c88;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.box-senbud:hover .senbud{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Sains Sos*/\r\n.boxsos{\r\n    width: 350px;\r\n    height: 500px;\r\n    background-color: #88a52f;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.boxsos:hover{\r\n    background-color: #83f157;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.boxsos:hover .sensos{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Olahraga*/\r\n\r\n.boxor{\r\n    width: 350px;\r\n    height: 500px;\r\n    background-color: #f88c26;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.boxor:hover{\r\n    background-color: #fecf4d;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.boxor:hover .olr{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Details*/\r\n.penjelasan{\r\n    text-align: center;\r\n    color: white;\r\n}\r\n\r\n.lSNext{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/arrowkanan.png */ "./public/assets/arrowkanan.png")) + ");\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSNext{\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/arrowkiri.png */ "./public/assets/arrowkiri.png")) + ");\r\n    width: 35px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSPrev{\r\n    width: 35px;\r\n    height: 35px;\r\n}\r\n\r\n.model{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details p{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 20px;\r\n}\r\n\r\n.senbud{\r\n    color: #500033;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n.sensos{\r\n    color: #005038;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n.olr{\r\n    color: #7e4b00;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n/* tabs */\r\n.ukm1-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.3%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#81175a,#a71d74);\r\n    cursor: pointer;\r\n  }\r\n  \r\n\r\n  .ukm2-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.3%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#98b14e,#a8c455);\r\n    cursor: pointer;\r\n  }\r\n\r\n  .ukm3-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.4%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#fea24d,#fc9a3e);\r\n    cursor: pointer;\r\n  }\r\n\r\n  .react-tabs__tab--selected {\r\n      /* border-color: #aaa; */\r\n      color: white;\r\n      border-radius: 5px 5px 0 0;\r\n    }\r\n\r\n\r\n/*responsive Mobile*/\r\n\r\n@media(max-width:720px){\r\n     .box{\r\n         width: 94%;\r\n         height: 400px;\r\n     }\r\n\r\n     .boxor{\r\n        width: 94%;\r\n        height: 400px;\r\n    }\r\n\r\n    .boxsos{\r\n        width: 94%;\r\n        height: 400px;\r\n    }\r\n    \r\n     .penjelasan{\r\n        text-align: center;\r\n        font-size: 15px;\r\n        width: 200px;\r\n    }\r\n\r\n     .model{\r\n         height: 100px; /*Logo*/\r\n         width: 100px;\r\n         margin-top: -10px;\r\n     }\r\n\r\n     .details p{\r\n         font-size: 15px;\r\n         width: 200px;\r\n     }\r\n\r\n     .ukm1-tab-pane{\r\n         font-size: 14px;\r\n         height: 25px;\r\n         display: inline-grid;\r\n     }\r\n\r\n     .ukm2-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n    .ukm3-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n}\r\n\r\n@media(max-width:410px){\r\n    .box{\r\n        width: 94%;\r\n        height: 300px;\r\n    }\r\n\r\n    .boxor{\r\n        width: 94%;\r\n        height: 300px;\r\n    }\r\n\r\n    .boxsos{\r\n        width: 94%;\r\n        height: 300px;\r\n    }\r\n\r\n    .penjelasan{\r\n        text-align: center;\r\n        font-size: 15px;\r\n        width: 200px;\r\n    }\r\n\r\n     .model{\r\n         height: 100px; /*Logo*/\r\n         width: 100px;\r\n         margin-top: -10px;\r\n     }\r\n\r\n     .details p{\r\n         font-size: 15px;\r\n         width: 200px;\r\n     }\r\n\r\n     .ukm1-tab-pane{\r\n         font-size: 14px;\r\n         height: 25px;\r\n         display: inline-grid;\r\n     }\r\n\r\n     .ukm2-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n    .ukm3-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n}", ""]);
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
+exports.push([module.i, ".react-tabs__tab-list{\r\n    margin: 0;\r\n}\r\n\r\n.allukm{\r\n    margin-top: 50px;\r\n}\r\n\r\n.body{\r\n    background: rgb(224,235,194);\r\n    background: linear-gradient(180deg, rgba(224,235,194,1) 0%, rgba(255,253,71,1) 48%, rgba(255,255,255,1) 89%);\r\n    /*slider*/\r\n\r\n    /*slider*/\r\n}\r\n\r\n.container-ukm{\r\n    padding-top: 50px;\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/CSI.png */ "./public/assets/CSI.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    background-repeat: no-repeat;\r\n    height: 300px;\r\n}\r\n\r\n.ukm{\r\n    text-align: center;\r\n    font-family: 'Montserrat', sans-serif;\r\n    background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n    -webkit-background-clip: text;\r\n    -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.textatasukm{\r\n    text-align: center;\r\n}\r\n\r\n/* Line Slider*/\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.a{\r\n    text-decoration: none;\r\n}\r\n\r\n.container-slider-senbud{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #81175a;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.container-slider-sensos{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #98b14e;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.container-slider-olr{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #fea24d;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n/*Senbud*/\r\n.box-senbud{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #a80a79;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.box-senbud:hover{\r\n    background-color: #b43c88;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.box-senbud:hover .senbud{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Sains Sos*/\r\n.boxsos{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #88a52f;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.boxsos:hover{\r\n    background-color: #83f157;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.boxsos:hover .sensos{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Olahraga*/\r\n\r\n.boxor{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #f88c26;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.boxor:hover{\r\n    background-color: #fecf4d;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.boxor:hover .olr{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Details*/\r\n.penjelasan{\r\n    text-align: center;\r\n    color: white;\r\n    font-size: 1.7vh;\r\n}\r\n\r\n.lSNext{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/arrowkanan.png */ "./public/assets/arrowkanan.png")) + ");\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSNext{\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/arrowkiri.png */ "./public/assets/arrowkiri.png")) + ");\r\n    width: 35px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSPrev{\r\n    width: 35px;\r\n    height: 35px;\r\n}\r\n\r\n.model{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details p{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 20px;\r\n    font-size: 2vh;\r\n}\r\n\r\n.senbud{\r\n    color: #500033;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n.sensos{\r\n    color: #005038;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n.olr{\r\n    color: #7e4b00;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n/* tabs */\r\n.ukm1-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.3%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#81175a,#a71d74);\r\n    cursor: pointer;\r\n  }\r\n  \r\n\r\n  .ukm2-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.3%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#98b14e,#a8c455);\r\n    cursor: pointer;\r\n  }\r\n\r\n  .ukm3-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.4%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#fea24d,#fc9a3e);\r\n    cursor: pointer;\r\n  }\r\n\r\n  .react-tabs__tab--selected {\r\n      /* border-color: #aaa; */\r\n      color: white;\r\n      border-radius: 5px 5px 0 0;\r\n    }\r\n\r\n\r\n/*responsive Mobile*/\r\n\r\n@media(max-width:720px){\r\n     .box{\r\n         width: 94%;\r\n         height: 450px;\r\n     }\r\n\r\n     .boxor{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxsos{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n    \r\n     .penjelasan{\r\n        text-align: center;\r\n        font-size: 12px;\r\n        width: 200px;\r\n    }\r\n\r\n     .model{\r\n         height: 100px; /*Logo*/\r\n         width: 100px;\r\n         margin-top: -10px;\r\n     }\r\n\r\n     .details p{\r\n         font-size: 10px;\r\n         width: 200px;\r\n     }\r\n\r\n     .ukm1-tab-pane{\r\n         font-size: 14px;\r\n         height: 25px;\r\n         display: inline-grid;\r\n     }\r\n\r\n     .ukm2-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n    .ukm3-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n}\r\n\r\n@media(max-width:410px){\r\n    .box{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxor{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxsos{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .penjelasan{\r\n        text-align: center;\r\n        font-size: 12px;\r\n        width: 200px;\r\n    }\r\n\r\n     .model{\r\n         height: 100px; /*Logo*/\r\n         width: 100px;\r\n         margin-top: -10px;\r\n     }\r\n\r\n     .details p{\r\n         font-size: 10px;\r\n         width: 200px;\r\n     }\r\n\r\n     .ukm1-tab-pane{\r\n         font-size: 14px;\r\n         height: 25px;\r\n         display: inline-grid;\r\n     }\r\n\r\n     .ukm2-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n    .ukm3-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n}\r\n\r\n\r\n@media(min-width:1550px){\r\n    .container-ukm{\r\n        background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    }\r\n}\r\n", ""]);
 
 // exports
 
@@ -86523,11 +86507,7 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-module.exports = "/images/CSI.png?ae248ae5d8927fb6fa33bcda33f95afb";
-=======
 module.exports = "/images/CSI.png?e1c9e614fd1012c2e48c57465ebab9f6";
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
 
 /***/ }),
 
@@ -86560,11 +86540,7 @@ module.exports = "/images/arrowkiri.png?d37b045df9cb2f15d81ce7b089ccebe7";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-module.exports = "/images/homepagededicatetocreate.png?806383ca06714b9ad8cc82bc8ebae6c6";
-=======
 module.exports = "/images/homepagededicatetocreate.png?63cfab47f621b3e70056d03a6f3feebd";
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
 
 /***/ }),
 
@@ -86575,11 +86551,7 @@ module.exports = "/images/homepagededicatetocreate.png?63cfab47f621b3e70056d03a6
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-module.exports = "/images/homepagefotoumnorange.png?0947f81123ebece19c8eda956215481b";
-=======
 module.exports = "/images/homepagefotoumnorange.png?bf648dfbf6858924466a25f8ac83d631";
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
 
 /***/ }),
 
@@ -86834,14 +86806,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-<<<<<<< HEAD
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
-/* harmony import */ var _css_reacthimp_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../css/reacthimp.css */ "./resources/css/reacthimp.css");
-/* harmony import */ var _css_reacthimp_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_reacthimp_css__WEBPACK_IMPORTED_MODULE_3__);
-=======
 /* harmony import */ var _css_reacthimp_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../css/reacthimp.css */ "./resources/css/reacthimp.css");
 /* harmony import */ var _css_reacthimp_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_reacthimp_css__WEBPACK_IMPORTED_MODULE_2__);
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -86868,10 +86834,6 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
 var Himpunan = /*#__PURE__*/function (_Component) {
   _inherits(Himpunan, _Component);
 
@@ -86886,39 +86848,31 @@ var Himpunan = /*#__PURE__*/function (_Component) {
   _createClass(Himpunan, [{
     key: "render",
     value: function render() {
-<<<<<<< HEAD
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container-himp"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "himp-maha"
-      }, "HIMPUNAN ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " MAHASISWA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Universitas Multimedia Nusantara terbagi menjadi 4 fakultas besar.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Keempat fakultas terbagi menjadi beberapa jurusan dengan dinaungi oleh ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "himpunan jurusan tersebut. Berikut merupakan ke 11 himpunan yang terdapat ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "pada Universitas Multimedia Nusantara")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+      }, "HIMPUNAN ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " MAHASISWA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Universitas Multimedia Nusantara terbagi menjadi 4 fakultas besar.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Keempat fakultas terbagi menjadi beberapa jurusan dengan dinaungi oleh ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "himpunan jurusan tersebut. Berikut merupakan ke 11 himpunan yang terdapat ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "pada Universitas Multimedia Nusantara")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Row, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Col, {
         className: "card heads"
-      }, "FAKULTAS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+      }, "FAKULTAS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Col, {
         className: "card"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "fakultas-title"
       }, "ILMU KOMUNITAS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "../../public/assets/himp/ilkom.jpg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Col, {
         className: "card"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "fakultas-title"
-      }, "SENI DAN DESAIN")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+      }, "SENI DAN DESAIN")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Col, {
         className: "card"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "fakultas-title"
-      }, "TEKNIK INFORMATIKA")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+      }, "TEKNIK INFORMATIKA")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Col, {
         className: "card"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "fakultas-title"
       }, "BISNIS")))));
-=======
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container-himp"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        className: "himp-maha"
-      }, "HIMPUNAN ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " MAHASISWA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Universitas Multimedia Nusantara terbagi menjadi 4 fakultas besar.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Keempat fakultas terbagi menjadi beberapa jurusan dengan dinaungi oleh ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "himpunan jurusan tersebut. Berikut merupakan ke 11 himpunan yang terdapat ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "pada Universitas Multimedia Nusantara"));
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
     }
   }]);
 
@@ -87047,12 +87001,8 @@ var Home = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container-2-text"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Lorem Ipsum Dolor Sit Amet"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "qui officia deserunt mollit anim id est laborum.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_6__["Button"], {
-<<<<<<< HEAD
-        color: "primary"
-=======
         color: "primary",
         className: "buttonsmua"
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
       }, "Learn More"), ' ')))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_6__["Container"], {
         className: "themed-container",
         fluid: true
@@ -87069,12 +87019,8 @@ var Home = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container-dedicate-text container-aboutus"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "qui officia deserunt mollit anim id est laborum.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_6__["Button"], {
-<<<<<<< HEAD
-        color: "primary"
-=======
         color: "primary",
         className: "buttonsmua"
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
       }, "About Us"), ' ')))))));
     }
   }]);
@@ -87458,11 +87404,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang paduan suara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@ultimasonora")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora merupakan Paduan Suara Mahasiswa Universitas Multimedia Nusantara sejak tahun 2007. Dalam menjaga eksistensinya, Ultima Sonora aktif dalam mengadakan berbagai konser, seperti konser Inagurasi yang diadakan rutin setiap tahunnya"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/UltimaSonora"
+      }, "@UltimaSonora")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora ")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Selasa & Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-20.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "#SingWithUS"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         "class": "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "box-senbud"
@@ -87473,11 +87421,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Teater KataK adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang teater"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Komunitas Anak Teater Kampus (KataK) didirikan sebagai wadah berseni peran di UMN. KataK berkembang menjadi fasilitator bagi mereka yang ingin belajar ilmu teater.Puluhan produksi sudah diselenggarakan baik di dalam maupun di luar universitas."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/teaterkatak"
       }, "@teaterkatak")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Teater KataK")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Selasa, Rabu,& Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "\u201CBerani Melompat Lebih Tinggi ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Melewati Batasan Yang Ada\u201D"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         "class": "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "box-senbud"
@@ -87488,11 +87438,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "UMN Symphony Orchestra adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang alat musik klasik"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@usoumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "UMN Symphony Orchestra berdiri sejak 2015 dan resmi menjadi ukm pada tahun 2016. Melalui tagline \u2018Viva La Musica\u2019  kami tidak hanya sekedar bermain musik, tetapi juga menghidupkan rasa dalam setiap individu, sehingga seluruh permainan musik yang kami hasilkan dapat tersampaikan dengan baik dan dirasakan"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/umnsymphonyorchestra"
+      }, "@umnsymphonyorchestra")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "UMN Symphony Orchestra")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Selasa & Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-20.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Viva La Musica!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         "class": "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "box-senbud"
@@ -87503,26 +87455,30 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Qorie adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang budaya korea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@qorieumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Qorie merupakan sebuah UKM seni dan budaya yang berfokus pada kebudayaan Korea Selatan. Qorie juga menjadi sarana untuk mempelajari tata bahasa korea serta menjadi tempat bagi mahasiswa/i untuk menunjukan bakat dan minat mereka dalam seni tari dan musik korea."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/qorie_umn"
+      }, "@qorie_umn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Qorie")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Senin s/d Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-20.00 WIB *(disesuaikan perdivisi)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Qorie, Saranghaja!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         "class": "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "box-senbud"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "senbud"
-      }, "J-Cafe"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, "Jcafe"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "assets/ukmnobg/senbud/jcafebg.png",
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "J-Cafe adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang budaya Jepang"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@jcafeumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Jcafe adalah Unit Kegiatan Mahasiswa (UKM) yang beranggotakan para penggemar budaya Jepang di UMN. Jcafe memberikan wadah kepada para mahasiswa untuk mengembangkan minat & bakat serta passion mereka terhadap seni dan budaya berbasis jepang."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/jcafe_umn"
+      }, "@jcafe_umn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "J-Cafe")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Senin s/d Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-19.00 WIB *(disesuaikan perdivisi)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Jcafe, Express Your Japanese Passion!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         "class": "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "box-senbud"
@@ -87533,11 +87489,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Mufomic adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang vokal dan alat musik"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Multimedia Face of Music (MUFOMIC) merupakan salah satu Unit Kegiatan Mahasiswa (UKM) di Universitas Multimedia Nusantara yang bergerak di bidang seni dan budaya, yaitu musik dalam format band."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/mufomic"
       }, "@mufomic")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Mufomic")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Selasa", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-22.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Mufomic - ORKES"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         "class": "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "box-senbud"
@@ -87548,11 +87506,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Obscura adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang fotografi"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@obscura")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Obscura merupakan Unit Kegiatan Mahasiswa (UKM) yang bergerak di bidang fotografi dibawah naungan UMN.Obscura bertujuan untuk mempertemukan para pecinta fotografi di kalangan mahasiswa UMN. Obscura memegang erat motto \u201CTogether We Learn\u201D karena mengedepankan kebersamaan dalam belajar. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/obscuratwl"
+      }, "@obscuratwl")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Obscura")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Rabu", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-22.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Together We Learn!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         "class": "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "box-senbud"
@@ -87563,11 +87523,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Tracce adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang tarian traditional"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Traditional dance atau yang akrab disebut dengan TRACCE merupakan Unit Kegiatan Mahasiswa di Universitas Multimedia Nusantara yang memberi wadah bagi mahasiswa yang ingin menyalurkan bakat dan minatnya dalam seni tradisional yang berasal dari Indonesia."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/tracceumn"
       }, "@tracceumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Tracce")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Selasa, Rabu,& Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.30-20.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "\"Nari terus, nari terus, nari terus!\""))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         "class": "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "box-senbud"
@@ -87578,11 +87540,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Toys adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang fotografi miniatur"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@utoysumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Toys adalah Unit Kegiatan Mahasiswa sebagai tempat belajar juga sarana untuk berbagi ide dan kreativitas yang berkaitan dengan fotografi mainan"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/ultimatoys"
+      }, "@ultimatoys")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Toys")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-19.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Where Toys Come to Life"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "box-senbud"
@@ -87593,11 +87557,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Street Dance adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang tari modern"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Let\u2019s Dance (LDNC) adalah Unit Kegiatan Mahasiswa (UKM) yang berfokus di bidang tari. LDNC sendiri biasa dikenal dengan UKM street dance. Tujuan dibentuknya LDNC adalah menjadi tempat atau wadah untuk mahasiswa UMN yang tertarik dengan dunia tari, ada berbagai macam style yang akan dipelajari seperti: b-boy, locking, hip-hop, ladies, popping, dll"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/streetdanceumn"
       }, "@streetdanceumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Street Dance")))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "19.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Dance to Your Own Beat"))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container-awal"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container-slider-sensos"
@@ -87615,11 +87581,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Umn Programming Club adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang programming"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@umnpc")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "UMN PC (UMN Programming Club) adalah UKM yang melatih kemampuan CP (Competitive Programming) dengan tujuan mengasah logika dan daya pikir delchipier. Delchipier melakukan CP bersama-sama setiap minggunya dengan materi yang disusun untuk mengembangkan skill CP secara mendalam. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/umnprogrammingclub"
+      }, "@umnprogrammingclub")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "UMN PC")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Senin & Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "We Code The Future, Future Starts With Us"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         "class": "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "boxsos"
@@ -87630,11 +87598,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "UESC adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang inggris"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@uesc")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "UESC (UMN English Student Council) sebagai salah satu UKM UMN berbahasa Inggris, ingin mengembangkan kemampuan berbahasa Inggris anggotanya. Dengan keempat divisi UESC yaitu Scrabble, Speech, Spelling Bee, dan Debate, banyak variasi keterampilan yang dapat kita semua asah."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/uesc_umn"
+      }, "@uesc_umn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "UESC")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "So, You Think We ain't Fun?"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "boxsos"
@@ -87645,11 +87615,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Rencang adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang sosial"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@rencang")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Rencang merupakan komunitas sosial yang menjadi wadah bagi mahasiswa/i UMN untuk dapat berdampak bagi masyarakat yang membutuhkan. Banyak program-program yang dilakukan untuk mencapai tujuan tersebut, seperti donor darah, kampanye sosial, berbagi kebahagiaan dengan orang yang membutuhkan, dan berbagai kegiatan yang mengakrabkan sesama anggota."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/rencangaye"
+      }, "@rencangaye")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Rencang")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Selasa", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Unite as a Family to Manifest Love and Sincerity"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         "class": "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "boxsos"
@@ -87660,11 +87632,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Mapala adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang alam"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Mapala UMN merupakan organisasi yang berasaskan kekeluargaan, persaudaraan, persamaan, kemerdekaan, dan gotong royong, yang didasari oleh semangat kemanusiaan yang adil dan beradab. Mapala UMN bertujuan untuk memberikan wadah kepada Mahasiswa UMN yang berminat terhadap kegiatan alam yang keanggotaannya diatur dalam Anggaran Rumah Tangga. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "instagram.com/bemumn"
       }, "@mapalaumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Mapala")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Salam Lestari!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         "class": "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "boxsos"
@@ -87675,26 +87649,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Game Development Club adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang pembuatan game"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Game Development Club adalah UKM yang merangkul mahasiswa yang berminat terhadap game development. Disini, mahasiswa dapat mengisi waktu mereka untuk mempelajari lebih dalam mengenai proses pembuatan game"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/gdcumn"
       }, "@gdcumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GDC")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxsos"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "sensos"
-      }, "AIESEC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/sainsos/aiesecbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "AIESEC adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang SDG"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@aiesec")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "AIESEC")))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "logo"
+      }, "Rabu", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-19.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "We Make Great Games! "))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container-awal"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container-slider-olr"
@@ -87712,26 +87673,30 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lions Basket adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang bola basket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@lions_basket")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "UMN Lions Basketball merupakan salah satu UKM yang berada di UMN, yang bergerak di bidang olahraga khususnya olahraga bola basket. Lions basketball ini sudah berdiri sejak 2010. Lions basketball ini memiliki tujuan sebagai wadah bagi para mahasiswa dan mahasiswi untuk dapat menunjukan potensi dan bakat mereka dalam bidang olahraga basket."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/umn_lions"
+      }, "@umn_lions")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Basket")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Senin, Rabu,& Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "UMN Lions Jaya Jaya Luar Biasa"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         "class": "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "boxor"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "olr"
-      }, "Badminton"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, "Lions Badminton"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "assets/ukmnobg/olahraga/badminbg.png",
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Badminton adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang bulutangkis"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@badmintonumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lions badminton merupakan UKM di kampus UMN yang bergerak di bidang olahraga. Lions Badminton juga menjadi wadah bagi setiap mahasiswa/i untuk mengembangkan minat dan bakat mereka khususnya di bidang bulutangkis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/lionsbadmintonumn"
+      }, "@lionsbadmintonumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Badminton")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Rabu & Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "18.00-22.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Lions Badminton!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         "class": "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "boxor"
@@ -87742,11 +87707,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Capoeira adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang olahraga capoeira"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Di Capoeira UMN kami belajar bersama dan bermain bersama dengan santai.Capoeira UMN menerapkan Mix Method dimana kami belajar capoeira dicampur dengan tricking, yoga, akrobatik dan sebagainya."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/capoeiraumn"
       }, "@capoeiraumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Capoeira")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.30-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "\xC9 vou jogar!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         "class": "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "boxor"
@@ -87757,11 +87724,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fortius e-Sports adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "game online")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@fortiusumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fortius E-Sport merupakan Unit Kegiatan Mahasiswa (UKM) yang ada di UMN yang ditujukan untuk mahasiswa/i dengan cabang olahraga E-Sport. Fortius berasal dari kata latin, dengan memiliki arti Sangat kuat."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/fortiusesports"
+      }, "@fortiusesports")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fortius")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Senin, Rabu, & Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "19.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Fight.Dominate.Win"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         "class": "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "boxor"
@@ -87772,11 +87741,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lions Futsal adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang sepak bola"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@lionsfutsalumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lions Futsal adalah UKM olahraga futsal di UMN yang mewadahi mahasiswa ataupun mahasiswi untuk menyalurkan bakat atau hobi yang dimiliki.  Lions futsal juga aktif mengikuti kompetisi tingkat universitas. Lions Futsal pernah menjuarai beberapa kejuaraan baik internal maupun eksternal."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/lionsfutsal_umn"
+      }, "@lionsfutsal_umn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Futsal")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Senin & Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Lions Futsal UMN, Victory"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         "class": "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "boxor"
@@ -87787,11 +87758,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Tenis Meja adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang tenis meja"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@tenismejaumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "UKM Tenis Meja adalah UKM yang ditujukan untuk mahasiswa/i yang tertarik untuk mempelajari tenis meja dan mengembangkan kemampuan untuk mengikuti kompetisi."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/ukmtenismeja.umn"
+      }, "@ukmtenismeja.umn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Tenis Meja")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Selasan & Rabu", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-19.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Tenis Meja UMN!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         "class": "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "boxor"
@@ -87806,7 +87779,9 @@ var Ukm = /*#__PURE__*/function (_Component) {
         href: "instagram.com/bemumn"
       }, "@softballumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Softball")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Selasan & Rabu", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.30-20.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Softball UMN!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         "class": "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "boxor"
@@ -87817,26 +87792,30 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Spectre adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "stuntman")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@spectreumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Spectre adalah UKM yang berfokus di bidang stunt action untuk dunia perfilman. Tujuan dari UKM ini adalah mengasah ilmu yang dibutuhkan oleh para anggota untuk berperforma di dunia perfilman dengan tingkat standar profesional. Ilmu tersebut terdiri dari teknik gerakan menyerang, jatuhan, aksi reaksi dan gun handling yang dicakup dari berbagai macam beladiri."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/usfxspectre"
+      }, "@usfxspectre")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Spectre")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Rabu & Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "USF ACTION!!!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         "class": "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "boxor"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "olr"
-      }, "Voli"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, "Lions Voli"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "assets/ukmnobg/olahraga/volibg.png",
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Voli adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang bola voli"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@voliumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lions Volleyball merupakan salah satu UKM yang diselenggarakan oleh Universitas Multimedia Nusantara dalam cabang olahraga bola voli.Lions Volleyball sendiri mempunyai tagline 'Hustle Hit, Never Quit', dapat bisa diartikan dalam permainan ini, setiap pukulan yang didapat harus tetap bersikap rendah tetapi tidak menyerah."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang bola voli"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/umnlionsvolleyball"
+      }, "@umnlionsvolleyball")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Voli")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Senin & Rabu", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Hustle Hit, Never Quit"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         "class": "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "boxor"
@@ -87847,11 +87826,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
         className: "model"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Taekwondo UMN adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang bela diri taekwondo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@taekwondoumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Taekwondo UMN merupakan Unit Kegiatan Mahasiswa yang mendukung mahasiswa UMN dalam melakukan bela diri Taekwondo. Taekwondo UMN juga  menghasilkan juara juara bertarung di berbagai tingkatan"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/taekwondo_umn "
+      }, "@taekwondo_umn ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Taekwondo")))))))));
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "logo"
+      }, "Selasa & Kamiss", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "18.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "If You Worry About How , You Will Never Start"))))))))));
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "allukm"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -93727,7 +93708,6 @@ if (document.getElementById('ukm')) {
 
           return map;
         }
-<<<<<<< HEAD
 
         return value !== undefined ? jQuery.style(elem, name, value) : jQuery.css(elem, name);
       }, name, value, arguments.length > 1);
@@ -93814,94 +93794,6 @@ if (document.getElementById('ukm')) {
   }; // Support: IE <=9 only
   // Panic based approach to setting things on disconnected nodes
 
-=======
-
-        return value !== undefined ? jQuery.style(elem, name, value) : jQuery.css(elem, name);
-      }, name, value, arguments.length > 1);
-    }
-  });
-
-  function Tween(elem, options, prop, end, easing) {
-    return new Tween.prototype.init(elem, options, prop, end, easing);
-  }
-
-  jQuery.Tween = Tween;
-  Tween.prototype = {
-    constructor: Tween,
-    init: function init(elem, options, prop, end, easing, unit) {
-      this.elem = elem;
-      this.prop = prop;
-      this.easing = easing || jQuery.easing._default;
-      this.options = options;
-      this.start = this.now = this.cur();
-      this.end = end;
-      this.unit = unit || (jQuery.cssNumber[prop] ? "" : "px");
-    },
-    cur: function cur() {
-      var hooks = Tween.propHooks[this.prop];
-      return hooks && hooks.get ? hooks.get(this) : Tween.propHooks._default.get(this);
-    },
-    run: function run(percent) {
-      var eased,
-          hooks = Tween.propHooks[this.prop];
-
-      if (this.options.duration) {
-        this.pos = eased = jQuery.easing[this.easing](percent, this.options.duration * percent, 0, 1, this.options.duration);
-      } else {
-        this.pos = eased = percent;
-      }
-
-      this.now = (this.end - this.start) * eased + this.start;
-
-      if (this.options.step) {
-        this.options.step.call(this.elem, this.now, this);
-      }
-
-      if (hooks && hooks.set) {
-        hooks.set(this);
-      } else {
-        Tween.propHooks._default.set(this);
-      }
-
-      return this;
-    }
-  };
-  Tween.prototype.init.prototype = Tween.prototype;
-  Tween.propHooks = {
-    _default: {
-      get: function get(tween) {
-        var result; // Use a property on the element directly when it is not a DOM element,
-        // or when there is no matching style property that exists.
-
-        if (tween.elem.nodeType !== 1 || tween.elem[tween.prop] != null && tween.elem.style[tween.prop] == null) {
-          return tween.elem[tween.prop];
-        } // Passing an empty string as a 3rd parameter to .css will automatically
-        // attempt a parseFloat and fallback to a string if the parse fails.
-        // Simple values such as "10px" are parsed to Float;
-        // complex values such as "rotate(1rad)" are returned as-is.
-
-
-        result = jQuery.css(tween.elem, tween.prop, ""); // Empty strings, null, undefined and "auto" are converted to 0.
-
-        return !result || result === "auto" ? 0 : result;
-      },
-      set: function set(tween) {
-        // Use step hook for back compat.
-        // Use cssHook if its there.
-        // Use .style if available and use plain properties where available.
-        if (jQuery.fx.step[tween.prop]) {
-          jQuery.fx.step[tween.prop](tween);
-        } else if (tween.elem.nodeType === 1 && (tween.elem.style[jQuery.cssProps[tween.prop]] != null || jQuery.cssHooks[tween.prop])) {
-          jQuery.style(tween.elem, tween.prop, tween.now + tween.unit);
-        } else {
-          tween.elem[tween.prop] = tween.now;
-        }
-      }
-    }
-  }; // Support: IE <=9 only
-  // Panic based approach to setting things on disconnected nodes
-
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
   Tween.propHooks.scrollTop = Tween.propHooks.scrollLeft = {
     set: function set(tween) {
       if (tween.elem.nodeType && tween.elem.parentNode) {
@@ -94716,7 +94608,6 @@ if (document.getElementById('ukm')) {
         jQuery.removeAttr(elem, name);
       } else {
         elem.setAttribute(name, name);
-<<<<<<< HEAD
       }
 
       return name;
@@ -94809,100 +94700,6 @@ if (document.getElementById('ukm')) {
       "for": "htmlFor",
       "class": "className"
     }
-=======
-      }
-
-      return name;
-    }
-  };
-  jQuery.each(jQuery.expr.match.bool.source.match(/\w+/g), function (i, name) {
-    var getter = attrHandle[name] || jQuery.find.attr;
-
-    attrHandle[name] = function (elem, name, isXML) {
-      var ret,
-          handle,
-          lowercaseName = name.toLowerCase();
-
-      if (!isXML) {
-        // Avoid an infinite loop by temporarily removing this function from the getter
-        handle = attrHandle[lowercaseName];
-        attrHandle[lowercaseName] = ret;
-        ret = getter(elem, name, isXML) != null ? lowercaseName : null;
-        attrHandle[lowercaseName] = handle;
-      }
-
-      return ret;
-    };
-  });
-  var rfocusable = /^(?:input|select|textarea|button)$/i,
-      rclickable = /^(?:a|area)$/i;
-  jQuery.fn.extend({
-    prop: function prop(name, value) {
-      return access(this, jQuery.prop, name, value, arguments.length > 1);
-    },
-    removeProp: function removeProp(name) {
-      return this.each(function () {
-        delete this[jQuery.propFix[name] || name];
-      });
-    }
-  });
-  jQuery.extend({
-    prop: function prop(elem, name, value) {
-      var ret,
-          hooks,
-          nType = elem.nodeType; // Don't get/set properties on text, comment and attribute nodes
-
-      if (nType === 3 || nType === 8 || nType === 2) {
-        return;
-      }
-
-      if (nType !== 1 || !jQuery.isXMLDoc(elem)) {
-        // Fix name and attach hooks
-        name = jQuery.propFix[name] || name;
-        hooks = jQuery.propHooks[name];
-      }
-
-      if (value !== undefined) {
-        if (hooks && "set" in hooks && (ret = hooks.set(elem, value, name)) !== undefined) {
-          return ret;
-        }
-
-        return elem[name] = value;
-      }
-
-      if (hooks && "get" in hooks && (ret = hooks.get(elem, name)) !== null) {
-        return ret;
-      }
-
-      return elem[name];
-    },
-    propHooks: {
-      tabIndex: {
-        get: function get(elem) {
-          // Support: IE <=9 - 11 only
-          // elem.tabIndex doesn't always return the
-          // correct value when it hasn't been explicitly set
-          // https://web.archive.org/web/20141116233347/http://fluidproject.org/blog/2008/01/09/getting-setting-and-removing-tabindex-values-with-javascript/
-          // Use proper attribute retrieval(#12072)
-          var tabindex = jQuery.find.attr(elem, "tabindex");
-
-          if (tabindex) {
-            return parseInt(tabindex, 10);
-          }
-
-          if (rfocusable.test(elem.nodeName) || rclickable.test(elem.nodeName) && elem.href) {
-            return 0;
-          }
-
-          return -1;
-        }
-      }
-    },
-    propFix: {
-      "for": "htmlFor",
-      "class": "className"
-    }
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
   }); // Support: IE <=11 only
   // Accessing the selectedIndex property
   // forces the browser to respect setting selected
@@ -94911,7 +94708,6 @@ if (document.getElementById('ukm')) {
   // when in an optgroup
   // eslint rule "no-unused-expressions" is disabled for this code
   // since it considers such accessions noop
-<<<<<<< HEAD
 
   if (!support.optSelected) {
     jQuery.propHooks.selected = {
@@ -95009,574 +94805,6 @@ if (document.getElementById('ukm')) {
         }
       }
 
-      return this;
-    },
-    removeClass: function removeClass(value) {
-      var classes,
-          elem,
-          cur,
-          curValue,
-          clazz,
-          j,
-          finalValue,
-          i = 0;
-
-      if (isFunction(value)) {
-        return this.each(function (j) {
-          jQuery(this).removeClass(value.call(this, j, getClass(this)));
-        });
-      }
-
-      if (!arguments.length) {
-        return this.attr("class", "");
-      }
-
-      classes = classesToArray(value);
-
-      if (classes.length) {
-        while (elem = this[i++]) {
-          curValue = getClass(elem); // This expression is here for better compressibility (see addClass)
-
-          cur = elem.nodeType === 1 && " " + stripAndCollapse(curValue) + " ";
-
-          if (cur) {
-            j = 0;
-
-            while (clazz = classes[j++]) {
-              // Remove *all* instances
-              while (cur.indexOf(" " + clazz + " ") > -1) {
-                cur = cur.replace(" " + clazz + " ", " ");
-              }
-            } // Only assign if different to avoid unneeded rendering.
-=======
-
-  if (!support.optSelected) {
-    jQuery.propHooks.selected = {
-      get: function get(elem) {
-        /* eslint no-unused-expressions: "off" */
-        var parent = elem.parentNode;
-
-        if (parent && parent.parentNode) {
-          parent.parentNode.selectedIndex;
-        }
-
-        return null;
-      },
-      set: function set(elem) {
-        /* eslint no-unused-expressions: "off" */
-        var parent = elem.parentNode;
-
-        if (parent) {
-          parent.selectedIndex;
-
-          if (parent.parentNode) {
-            parent.parentNode.selectedIndex;
-          }
-        }
-      }
-    };
-  }
-
-  jQuery.each(["tabIndex", "readOnly", "maxLength", "cellSpacing", "cellPadding", "rowSpan", "colSpan", "useMap", "frameBorder", "contentEditable"], function () {
-    jQuery.propFix[this.toLowerCase()] = this;
-  }); // Strip and collapse whitespace according to HTML spec
-  // https://infra.spec.whatwg.org/#strip-and-collapse-ascii-whitespace
-
-  function stripAndCollapse(value) {
-    var tokens = value.match(rnothtmlwhite) || [];
-    return tokens.join(" ");
-  }
-
-  function getClass(elem) {
-    return elem.getAttribute && elem.getAttribute("class") || "";
-  }
-
-  function classesToArray(value) {
-    if (Array.isArray(value)) {
-      return value;
-    }
-
-    if (typeof value === "string") {
-      return value.match(rnothtmlwhite) || [];
-    }
-
-    return [];
-  }
-
-  jQuery.fn.extend({
-    addClass: function addClass(value) {
-      var classes,
-          elem,
-          cur,
-          curValue,
-          clazz,
-          j,
-          finalValue,
-          i = 0;
-
-      if (isFunction(value)) {
-        return this.each(function (j) {
-          jQuery(this).addClass(value.call(this, j, getClass(this)));
-        });
-      }
-
-      classes = classesToArray(value);
-
-      if (classes.length) {
-        while (elem = this[i++]) {
-          curValue = getClass(elem);
-          cur = elem.nodeType === 1 && " " + stripAndCollapse(curValue) + " ";
-
-          if (cur) {
-            j = 0;
-
-            while (clazz = classes[j++]) {
-              if (cur.indexOf(" " + clazz + " ") < 0) {
-                cur += clazz + " ";
-              }
-            } // Only assign if different to avoid unneeded rendering.
-
-
-            finalValue = stripAndCollapse(cur);
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
-
-            if (curValue !== finalValue) {
-              elem.setAttribute("class", finalValue);
-            }
-          }
-        }
-      }
-
-<<<<<<< HEAD
-            finalValue = stripAndCollapse(cur);
-
-            if (curValue !== finalValue) {
-              elem.setAttribute("class", finalValue);
-            }
-          }
-        }
-      }
-
-      return this;
-    },
-    toggleClass: function toggleClass(value, stateVal) {
-      var type = _typeof(value),
-          isValidValue = type === "string" || Array.isArray(value);
-
-      if (typeof stateVal === "boolean" && isValidValue) {
-        return stateVal ? this.addClass(value) : this.removeClass(value);
-      }
-
-      if (isFunction(value)) {
-        return this.each(function (i) {
-          jQuery(this).toggleClass(value.call(this, i, getClass(this), stateVal), stateVal);
-        });
-      }
-
-      return this.each(function () {
-        var className, i, self, classNames;
-
-        if (isValidValue) {
-          // Toggle individual class names
-          i = 0;
-          self = jQuery(this);
-          classNames = classesToArray(value);
-
-          while (className = classNames[i++]) {
-            // Check each className given, space separated list
-            if (self.hasClass(className)) {
-              self.removeClass(className);
-            } else {
-              self.addClass(className);
-            }
-          } // Toggle whole class name
-
-        } else if (value === undefined || type === "boolean") {
-          className = getClass(this);
-
-          if (className) {
-            // Store className if set
-            dataPriv.set(this, "__className__", className);
-          } // If the element has a class name or if we're passed `false`,
-          // then remove the whole classname (if there was one, the above saved it).
-          // Otherwise bring back whatever was previously saved (if anything),
-          // falling back to the empty string if nothing was stored.
-
-
-          if (this.setAttribute) {
-            this.setAttribute("class", className || value === false ? "" : dataPriv.get(this, "__className__") || "");
-          }
-        }
-      });
-    },
-    hasClass: function hasClass(selector) {
-      var className,
-          elem,
-          i = 0;
-      className = " " + selector + " ";
-
-      while (elem = this[i++]) {
-        if (elem.nodeType === 1 && (" " + stripAndCollapse(getClass(elem)) + " ").indexOf(className) > -1) {
-          return true;
-        }
-      }
-
-      return false;
-    }
-  });
-  var rreturn = /\r/g;
-  jQuery.fn.extend({
-    val: function val(value) {
-      var hooks,
-          ret,
-          valueIsFunction,
-          elem = this[0];
-
-      if (!arguments.length) {
-        if (elem) {
-          hooks = jQuery.valHooks[elem.type] || jQuery.valHooks[elem.nodeName.toLowerCase()];
-
-          if (hooks && "get" in hooks && (ret = hooks.get(elem, "value")) !== undefined) {
-            return ret;
-          }
-
-          ret = elem.value; // Handle most common string cases
-
-          if (typeof ret === "string") {
-            return ret.replace(rreturn, "");
-          } // Handle cases where value is null/undef or number
-
-
-          return ret == null ? "" : ret;
-        }
-
-        return;
-      }
-
-      valueIsFunction = isFunction(value);
-      return this.each(function (i) {
-        var val;
-
-        if (this.nodeType !== 1) {
-          return;
-        }
-
-        if (valueIsFunction) {
-          val = value.call(this, i, jQuery(this).val());
-        } else {
-          val = value;
-        } // Treat null/undefined as ""; convert numbers to string
-
-
-        if (val == null) {
-          val = "";
-        } else if (typeof val === "number") {
-          val += "";
-        } else if (Array.isArray(val)) {
-          val = jQuery.map(val, function (value) {
-            return value == null ? "" : value + "";
-          });
-        }
-
-        hooks = jQuery.valHooks[this.type] || jQuery.valHooks[this.nodeName.toLowerCase()]; // If set returns undefined, fall back to normal setting
-
-        if (!hooks || !("set" in hooks) || hooks.set(this, val, "value") === undefined) {
-          this.value = val;
-        }
-      });
-    }
-  });
-  jQuery.extend({
-    valHooks: {
-      option: {
-        get: function get(elem) {
-          var val = jQuery.find.attr(elem, "value");
-          return val != null ? val : // Support: IE <=10 - 11 only
-          // option.text throws exceptions (#14686, #14858)
-          // Strip and collapse whitespace
-          // https://html.spec.whatwg.org/#strip-and-collapse-whitespace
-          stripAndCollapse(jQuery.text(elem));
-        }
-      },
-      select: {
-        get: function get(elem) {
-          var value,
-              option,
-              i,
-              options = elem.options,
-              index = elem.selectedIndex,
-              one = elem.type === "select-one",
-              values = one ? null : [],
-              max = one ? index + 1 : options.length;
-
-          if (index < 0) {
-            i = max;
-          } else {
-            i = one ? index : 0;
-          } // Loop through all the selected options
-
-
-          for (; i < max; i++) {
-            option = options[i]; // Support: IE <=9 only
-            // IE8-9 doesn't update selected after form reset (#2551)
-
-            if ((option.selected || i === index) && // Don't return options that are disabled or in a disabled optgroup
-            !option.disabled && (!option.parentNode.disabled || !nodeName(option.parentNode, "optgroup"))) {
-              // Get the specific value for the option
-              value = jQuery(option).val(); // We don't need an array for one selects
-
-              if (one) {
-                return value;
-              } // Multi-Selects return an array
-
-
-              values.push(value);
-            }
-          }
-
-          return values;
-        },
-        set: function set(elem, value) {
-          var optionSet,
-              option,
-              options = elem.options,
-              values = jQuery.makeArray(value),
-              i = options.length;
-
-          while (i--) {
-            option = options[i];
-            /* eslint-disable no-cond-assign */
-
-            if (option.selected = jQuery.inArray(jQuery.valHooks.option.get(option), values) > -1) {
-              optionSet = true;
-            }
-            /* eslint-enable no-cond-assign */
-
-          } // Force browsers to behave consistently when non-matching value is set
-
-
-          if (!optionSet) {
-            elem.selectedIndex = -1;
-          }
-
-          return values;
-        }
-      }
-    }
-  }); // Radios and checkboxes getter/setter
-
-  jQuery.each(["radio", "checkbox"], function () {
-    jQuery.valHooks[this] = {
-      set: function set(elem, value) {
-        if (Array.isArray(value)) {
-          return elem.checked = jQuery.inArray(jQuery(elem).val(), value) > -1;
-        }
-      }
-    };
-
-    if (!support.checkOn) {
-      jQuery.valHooks[this].get = function (elem) {
-        return elem.getAttribute("value") === null ? "on" : elem.value;
-      };
-    }
-  }); // Return jQuery for attributes-only inclusion
-
-  support.focusin = "onfocusin" in window;
-
-  var rfocusMorph = /^(?:focusinfocus|focusoutblur)$/,
-      stopPropagationCallback = function stopPropagationCallback(e) {
-    e.stopPropagation();
-  };
-
-  jQuery.extend(jQuery.event, {
-    trigger: function trigger(event, data, elem, onlyHandlers) {
-      var i,
-          cur,
-          tmp,
-          bubbleType,
-          ontype,
-          handle,
-          special,
-          lastElement,
-          eventPath = [elem || document],
-          type = hasOwn.call(event, "type") ? event.type : event,
-          namespaces = hasOwn.call(event, "namespace") ? event.namespace.split(".") : [];
-      cur = lastElement = tmp = elem = elem || document; // Don't do events on text and comment nodes
-
-      if (elem.nodeType === 3 || elem.nodeType === 8) {
-        return;
-      } // focus/blur morphs to focusin/out; ensure we're not firing them right now
-
-
-      if (rfocusMorph.test(type + jQuery.event.triggered)) {
-        return;
-      }
-
-      if (type.indexOf(".") > -1) {
-        // Namespaced trigger; create a regexp to match event type in handle()
-        namespaces = type.split(".");
-        type = namespaces.shift();
-        namespaces.sort();
-      }
-
-      ontype = type.indexOf(":") < 0 && "on" + type; // Caller can pass in a jQuery.Event object, Object, or just an event type string
-
-      event = event[jQuery.expando] ? event : new jQuery.Event(type, _typeof(event) === "object" && event); // Trigger bitmask: & 1 for native handlers; & 2 for jQuery (always true)
-
-      event.isTrigger = onlyHandlers ? 2 : 3;
-      event.namespace = namespaces.join(".");
-      event.rnamespace = event.namespace ? new RegExp("(^|\\.)" + namespaces.join("\\.(?:.*\\.|)") + "(\\.|$)") : null; // Clean up the event in case it is being reused
-
-      event.result = undefined;
-
-      if (!event.target) {
-        event.target = elem;
-      } // Clone any incoming data and prepend the event, creating the handler arg list
-
-
-      data = data == null ? [event] : jQuery.makeArray(data, [event]); // Allow special events to draw outside the lines
-
-      special = jQuery.event.special[type] || {};
-
-      if (!onlyHandlers && special.trigger && special.trigger.apply(elem, data) === false) {
-        return;
-      } // Determine event propagation path in advance, per W3C events spec (#9951)
-      // Bubble up to document, then to window; watch for a global ownerDocument var (#9724)
-
-
-      if (!onlyHandlers && !special.noBubble && !isWindow(elem)) {
-        bubbleType = special.delegateType || type;
-
-        if (!rfocusMorph.test(bubbleType + type)) {
-          cur = cur.parentNode;
-        }
-
-        for (; cur; cur = cur.parentNode) {
-          eventPath.push(cur);
-          tmp = cur;
-        } // Only add window if we got to document (e.g., not plain obj or detached DOM)
-
-
-        if (tmp === (elem.ownerDocument || document)) {
-          eventPath.push(tmp.defaultView || tmp.parentWindow || window);
-        }
-      } // Fire handlers on the event path
-
-
-      i = 0;
-
-      while ((cur = eventPath[i++]) && !event.isPropagationStopped()) {
-        lastElement = cur;
-        event.type = i > 1 ? bubbleType : special.bindType || type; // jQuery handler
-
-        handle = (dataPriv.get(cur, "events") || {})[event.type] && dataPriv.get(cur, "handle");
-
-        if (handle) {
-          handle.apply(cur, data);
-        } // Native handler
-
-
-        handle = ontype && cur[ontype];
-
-        if (handle && handle.apply && acceptData(cur)) {
-          event.result = handle.apply(cur, data);
-
-          if (event.result === false) {
-            event.preventDefault();
-          }
-        }
-      }
-
-      event.type = type; // If nobody prevented the default action, do it now
-
-      if (!onlyHandlers && !event.isDefaultPrevented()) {
-        if ((!special._default || special._default.apply(eventPath.pop(), data) === false) && acceptData(elem)) {
-          // Call a native DOM method on the target with the same name as the event.
-          // Don't do default actions on window, that's where global variables be (#6170)
-          if (ontype && isFunction(elem[type]) && !isWindow(elem)) {
-            // Don't re-trigger an onFOO event when we call its FOO() method
-            tmp = elem[ontype];
-
-            if (tmp) {
-              elem[ontype] = null;
-            } // Prevent re-triggering of the same event, since we already bubbled it above
-
-
-            jQuery.event.triggered = type;
-
-            if (event.isPropagationStopped()) {
-              lastElement.addEventListener(type, stopPropagationCallback);
-            }
-
-            elem[type]();
-
-            if (event.isPropagationStopped()) {
-              lastElement.removeEventListener(type, stopPropagationCallback);
-            }
-
-            jQuery.event.triggered = undefined;
-
-            if (tmp) {
-              elem[ontype] = tmp;
-            }
-          }
-        }
-      }
-
-      return event.result;
-    },
-    // Piggyback on a donor event to simulate a different one
-    // Used only for `focus(in | out)` events
-    simulate: function simulate(type, elem, event) {
-      var e = jQuery.extend(new jQuery.Event(), event, {
-        type: type,
-        isSimulated: true
-      });
-      jQuery.event.trigger(e, null, elem);
-    }
-  });
-  jQuery.fn.extend({
-    trigger: function trigger(type, data) {
-      return this.each(function () {
-        jQuery.event.trigger(type, data, this);
-      });
-    },
-    triggerHandler: function triggerHandler(type, data) {
-      var elem = this[0];
-
-      if (elem) {
-        return jQuery.event.trigger(type, data, elem, true);
-      }
-    }
-  }); // Support: Firefox <=44
-  // Firefox doesn't have focus(in | out) events
-  // Related ticket - https://bugzilla.mozilla.org/show_bug.cgi?id=687787
-  //
-  // Support: Chrome <=48 - 49, Safari <=9.0 - 9.1
-  // focus(in | out) events fire after focus & blur events,
-  // which is spec violation - http://www.w3.org/TR/DOM-Level-3-Events/#events-focusevent-event-order
-  // Related ticket - https://bugs.chromium.org/p/chromium/issues/detail?id=449857
-
-  if (!support.focusin) {
-    jQuery.each({
-      focus: "focusin",
-      blur: "focusout"
-    }, function (orig, fix) {
-      // Attach a single capturing handler on the document while someone wants focusin/focusout
-      var handler = function handler(event) {
-        jQuery.event.simulate(fix, event.target, jQuery.event.fix(event));
-      };
-
-      jQuery.event.special[fix] = {
-        setup: function setup() {
-          var doc = this.ownerDocument || this,
-              attaches = dataPriv.access(doc, fix);
-
-          if (!attaches) {
-            doc.addEventListener(orig, handler, true);
-          }
-
-=======
       return this;
     },
     removeClass: function removeClass(value) {
@@ -96046,79 +95274,11 @@ if (document.getElementById('ukm')) {
             doc.addEventListener(orig, handler, true);
           }
 
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
           dataPriv.access(doc, fix, (attaches || 0) + 1);
         },
         teardown: function teardown() {
           var doc = this.ownerDocument || this,
               attaches = dataPriv.access(doc, fix) - 1;
-<<<<<<< HEAD
-
-          if (!attaches) {
-            doc.removeEventListener(orig, handler, true);
-            dataPriv.remove(doc, fix);
-          } else {
-            dataPriv.access(doc, fix, attaches);
-          }
-        }
-      };
-    });
-  }
-
-  var location = window.location;
-  var nonce = Date.now();
-  var rquery = /\?/; // Cross-browser xml parsing
-
-  jQuery.parseXML = function (data) {
-    var xml;
-
-    if (!data || typeof data !== "string") {
-      return null;
-    } // Support: IE 9 - 11 only
-    // IE throws on parseFromString with invalid input.
-
-
-    try {
-      xml = new window.DOMParser().parseFromString(data, "text/xml");
-    } catch (e) {
-      xml = undefined;
-    }
-
-    if (!xml || xml.getElementsByTagName("parsererror").length) {
-      jQuery.error("Invalid XML: " + data);
-    }
-
-    return xml;
-  };
-
-  var rbracket = /\[\]$/,
-      rCRLF = /\r?\n/g,
-      rsubmitterTypes = /^(?:submit|button|image|reset|file)$/i,
-      rsubmittable = /^(?:input|select|textarea|keygen)/i;
-
-  function buildParams(prefix, obj, traditional, add) {
-    var name;
-
-    if (Array.isArray(obj)) {
-      // Serialize array item.
-      jQuery.each(obj, function (i, v) {
-        if (traditional || rbracket.test(prefix)) {
-          // Treat each array item as a scalar.
-          add(prefix, v);
-        } else {
-          // Item is non-scalar (array or object), encode its numeric index.
-          buildParams(prefix + "[" + (_typeof(v) === "object" && v != null ? i : "") + "]", v, traditional, add);
-        }
-      });
-    } else if (!traditional && toType(obj) === "object") {
-      // Serialize object item.
-      for (name in obj) {
-        buildParams(prefix + "[" + name + "]", obj[name], traditional, add);
-      }
-    } else {
-      // Serialize scalar item.
-      add(prefix, obj);
-=======
 
           if (!attaches) {
             doc.removeEventListener(orig, handler, true);
@@ -96331,177 +95491,8 @@ if (document.getElementById('ukm')) {
         }
       });
       return selected;
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
-    }
-  } // Serialize an array of form elements or a set of
-  // key/values into a query string
-
-<<<<<<< HEAD
-
-  jQuery.param = function (a, traditional) {
-    var prefix,
-        s = [],
-        add = function add(key, valueOrFunction) {
-      // If value is a function, invoke it and use its return value
-      var value = isFunction(valueOrFunction) ? valueOrFunction() : valueOrFunction;
-      s[s.length] = encodeURIComponent(key) + "=" + encodeURIComponent(value == null ? "" : value);
-    }; // If an array was passed in, assume that it is an array of form elements.
-
-
-    if (Array.isArray(a) || a.jquery && !jQuery.isPlainObject(a)) {
-      // Serialize the form elements
-      jQuery.each(a, function () {
-        add(this.name, this.value);
-      });
-    } else {
-      // If traditional, encode the "old" way (the way 1.3.2 or older
-      // did it), otherwise encode params recursively.
-      for (prefix in a) {
-        buildParams(prefix, a[prefix], traditional, add);
-      }
-    } // Return the resulting serialization
-
-
-    return s.join("&");
-  };
-
-  jQuery.fn.extend({
-    serialize: function serialize() {
-      return jQuery.param(this.serializeArray());
-    },
-    serializeArray: function serializeArray() {
-      return this.map(function () {
-        // Can add propHook for "elements" to filter or add form elements
-        var elements = jQuery.prop(this, "elements");
-        return elements ? jQuery.makeArray(elements) : this;
-      }).filter(function () {
-        var type = this.type; // Use .is( ":disabled" ) so that fieldset[disabled] works
-
-        return this.name && !jQuery(this).is(":disabled") && rsubmittable.test(this.nodeName) && !rsubmitterTypes.test(type) && (this.checked || !rcheckableType.test(type));
-      }).map(function (i, elem) {
-        var val = jQuery(this).val();
-
-        if (val == null) {
-          return null;
-        }
-
-        if (Array.isArray(val)) {
-          return jQuery.map(val, function (val) {
-            return {
-              name: elem.name,
-              value: val.replace(rCRLF, "\r\n")
-            };
-          });
-        }
-
-        return {
-          name: elem.name,
-          value: val.replace(rCRLF, "\r\n")
-        };
-      }).get();
-    }
-  });
-  var r20 = /%20/g,
-      rhash = /#.*$/,
-      rantiCache = /([?&])_=[^&]*/,
-      rheaders = /^(.*?):[ \t]*([^\r\n]*)$/mg,
-      // #7653, #8125, #8152: local protocol detection
-  rlocalProtocol = /^(?:about|app|app-storage|.+-extension|file|res|widget):$/,
-      rnoContent = /^(?:GET|HEAD)$/,
-      rprotocol = /^\/\//,
-
-  /* Prefilters
-   * 1) They are useful to introduce custom dataTypes (see ajax/jsonp.js for an example)
-   * 2) These are called:
-   *    - BEFORE asking for a transport
-   *    - AFTER param serialization (s.data is a string if s.processData is true)
-   * 3) key is the dataType
-   * 4) the catchall symbol "*" can be used
-   * 5) execution will start with transport dataType and THEN continue down to "*" if needed
-   */
-  prefilters = {},
-
-  /* Transports bindings
-   * 1) key is the dataType
-   * 2) the catchall symbol "*" can be used
-   * 3) selection will start with transport dataType and THEN go to "*" if needed
-   */
-  transports = {},
-      // Avoid comment-prolog char sequence (#10098); must appease lint and evade compression
-  allTypes = "*/".concat("*"),
-      // Anchor tag for parsing the document origin
-  originAnchor = document.createElement("a");
-  originAnchor.href = location.href; // Base "constructor" for jQuery.ajaxPrefilter and jQuery.ajaxTransport
-
-  function addToPrefiltersOrTransports(structure) {
-    // dataTypeExpression is optional and defaults to "*"
-    return function (dataTypeExpression, func) {
-      if (typeof dataTypeExpression !== "string") {
-        func = dataTypeExpression;
-        dataTypeExpression = "*";
-      }
-
-      var dataType,
-          i = 0,
-          dataTypes = dataTypeExpression.toLowerCase().match(rnothtmlwhite) || [];
-
-      if (isFunction(func)) {
-        // For each dataType in the dataTypeExpression
-        while (dataType = dataTypes[i++]) {
-          // Prepend if requested
-          if (dataType[0] === "+") {
-            dataType = dataType.slice(1) || "*";
-            (structure[dataType] = structure[dataType] || []).unshift(func); // Otherwise append
-          } else {
-            (structure[dataType] = structure[dataType] || []).push(func);
-          }
-        }
-      }
-    };
-  } // Base inspection function for prefilters and transports
-
-
-  function inspectPrefiltersOrTransports(structure, options, originalOptions, jqXHR) {
-    var inspected = {},
-        seekingTransport = structure === transports;
-
-    function inspect(dataType) {
-      var selected;
-      inspected[dataType] = true;
-      jQuery.each(structure[dataType] || [], function (_, prefilterOrFactory) {
-        var dataTypeOrTransport = prefilterOrFactory(options, originalOptions, jqXHR);
-
-        if (typeof dataTypeOrTransport === "string" && !seekingTransport && !inspected[dataTypeOrTransport]) {
-          options.dataTypes.unshift(dataTypeOrTransport);
-          inspect(dataTypeOrTransport);
-          return false;
-        } else if (seekingTransport) {
-          return !(selected = dataTypeOrTransport);
-        }
-      });
-      return selected;
     }
 
-    return inspect(options.dataTypes[0]) || !inspected["*"] && inspect("*");
-  } // A special extend for ajax options
-  // that takes "flat" options (not to be deep extended)
-  // Fixes #9887
-
-
-  function ajaxExtend(target, src) {
-    var key,
-        deep,
-        flatOptions = jQuery.ajaxSettings.flatOptions || {};
-
-    for (key in src) {
-      if (src[key] !== undefined) {
-        (flatOptions[key] ? target : deep || (deep = {}))[key] = src[key];
-      }
-    }
-
-    if (deep) {
-      jQuery.extend(true, target, deep);
-=======
     return inspect(options.dataTypes[0]) || !inspected["*"] && inspect("*");
   } // A special extend for ajax options
   // that takes "flat" options (not to be deep extended)
@@ -96574,124 +95565,6 @@ if (document.getElementById('ukm')) {
       } // Or just use first one
 
 
-      finalDataType = finalDataType || firstDataType;
-    } // If we found a dataType
-    // We add the dataType to the list if needed
-    // and return the corresponding response
-
-
-    if (finalDataType) {
-      if (finalDataType !== dataTypes[0]) {
-        dataTypes.unshift(finalDataType);
-      }
-
-      return responses[finalDataType];
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
-    }
-
-    return target;
-  }
-<<<<<<< HEAD
-  /* Handles responses to an ajax request:
-   * - finds the right dataType (mediates between content-type and expected dataType)
-   * - returns the corresponding response
-   */
-
-
-  function ajaxHandleResponses(s, jqXHR, responses) {
-    var ct,
-        type,
-        finalDataType,
-        firstDataType,
-        contents = s.contents,
-        dataTypes = s.dataTypes; // Remove auto dataType and get content-type in the process
-
-    while (dataTypes[0] === "*") {
-      dataTypes.shift();
-
-      if (ct === undefined) {
-        ct = s.mimeType || jqXHR.getResponseHeader("Content-Type");
-      }
-    } // Check if we're dealing with a known content-type
-
-
-    if (ct) {
-      for (type in contents) {
-        if (contents[type] && contents[type].test(ct)) {
-          dataTypes.unshift(type);
-          break;
-        }
-=======
-  /* Chain conversions given the request and the original response
-   * Also sets the responseXXX fields on the jqXHR instance
-   */
-
-
-  function ajaxConvert(s, response, jqXHR, isSuccess) {
-    var conv2,
-        current,
-        conv,
-        tmp,
-        prev,
-        converters = {},
-        // Work with a copy of dataTypes in case we need to modify it for conversion
-    dataTypes = s.dataTypes.slice(); // Create converters map with lowercased keys
-
-    if (dataTypes[1]) {
-      for (conv in s.converters) {
-        converters[conv.toLowerCase()] = s.converters[conv];
-      }
-    }
-
-    current = dataTypes.shift(); // Convert to each sequential dataType
-
-    while (current) {
-      if (s.responseFields[current]) {
-        jqXHR[s.responseFields[current]] = response;
-      } // Apply the dataFilter if provided
-
-
-      if (!prev && isSuccess && s.dataFilter) {
-        response = s.dataFilter(response, s.dataType);
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
-      }
-    } // Check to see if we have a response for the expected dataType
-
-<<<<<<< HEAD
-
-    if (dataTypes[0] in responses) {
-      finalDataType = dataTypes[0];
-    } else {
-      // Try convertible dataTypes
-      for (type in responses) {
-        if (!dataTypes[0] || s.converters[type + " " + dataTypes[0]]) {
-          finalDataType = type;
-          break;
-        }
-
-        if (!firstDataType) {
-          firstDataType = type;
-        }
-      } // Or just use first one
-=======
-      prev = current;
-      current = dataTypes.shift();
-
-      if (current) {
-        // There's only work to do if current dataType is non-auto
-        if (current === "*") {
-          current = prev; // Convert response if prev dataType is non-auto and differs from current
-        } else if (prev !== "*" && prev !== current) {
-          // Seek a direct converter
-          conv = converters[prev + " " + current] || converters["* " + current]; // If none found, seek a pair
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
-
-          if (!conv) {
-            for (conv2 in converters) {
-              // If conv2 outputs current
-              tmp = conv2.split(" ");
-
-<<<<<<< HEAD
       finalDataType = finalDataType || firstDataType;
     } // If we found a dataType
     // We add the dataType to the list if needed
@@ -97026,278 +95899,6 @@ if (document.getElementById('ukm')) {
         s.data = jQuery.param(s.data, s.traditional);
       } // Apply prefilters
 
-=======
-              if (tmp[1] === current) {
-                // If prev can be converted to accepted input
-                conv = converters[prev + " " + tmp[0]] || converters["* " + tmp[0]];
-
-                if (conv) {
-                  // Condense equivalence converters
-                  if (conv === true) {
-                    conv = converters[conv2]; // Otherwise, insert the intermediate dataType
-                  } else if (converters[conv2] !== true) {
-                    current = tmp[0];
-                    dataTypes.unshift(tmp[1]);
-                  }
-
-                  break;
-                }
-              }
-            }
-          } // Apply converter (if not an equivalence)
-
-
-          if (conv !== true) {
-            // Unless errors are allowed to bubble, catch and return them
-            if (conv && s["throws"]) {
-              response = conv(response);
-            } else {
-              try {
-                response = conv(response);
-              } catch (e) {
-                return {
-                  state: "parsererror",
-                  error: conv ? e : "No conversion from " + prev + " to " + current
-                };
-              }
-            }
-          }
-        }
-      }
-    }
-
-    return {
-      state: "success",
-      data: response
-    };
-  }
-
-  jQuery.extend({
-    // Counter for holding the number of active queries
-    active: 0,
-    // Last-Modified header cache for next request
-    lastModified: {},
-    etag: {},
-    ajaxSettings: {
-      url: location.href,
-      type: "GET",
-      isLocal: rlocalProtocol.test(location.protocol),
-      global: true,
-      processData: true,
-      async: true,
-      contentType: "application/x-www-form-urlencoded; charset=UTF-8",
-
-      /*
-      timeout: 0,
-      data: null,
-      dataType: null,
-      username: null,
-      password: null,
-      cache: null,
-      throws: false,
-      traditional: false,
-      headers: {},
-      */
-      accepts: {
-        "*": allTypes,
-        text: "text/plain",
-        html: "text/html",
-        xml: "application/xml, text/xml",
-        json: "application/json, text/javascript"
-      },
-      contents: {
-        xml: /\bxml\b/,
-        html: /\bhtml/,
-        json: /\bjson\b/
-      },
-      responseFields: {
-        xml: "responseXML",
-        text: "responseText",
-        json: "responseJSON"
-      },
-      // Data converters
-      // Keys separate source (or catchall "*") and destination types with a single space
-      converters: {
-        // Convert anything to text
-        "* text": String,
-        // Text to html (true = no transformation)
-        "text html": true,
-        // Evaluate text as a json expression
-        "text json": JSON.parse,
-        // Parse text as xml
-        "text xml": jQuery.parseXML
-      },
-      // For options that shouldn't be deep extended:
-      // you can add your own custom options here if
-      // and when you create one that shouldn't be
-      // deep extended (see ajaxExtend)
-      flatOptions: {
-        url: true,
-        context: true
-      }
-    },
-    // Creates a full fledged settings object into target
-    // with both ajaxSettings and settings fields.
-    // If target is omitted, writes into ajaxSettings.
-    ajaxSetup: function ajaxSetup(target, settings) {
-      return settings ? // Building a settings object
-      ajaxExtend(ajaxExtend(target, jQuery.ajaxSettings), settings) : // Extending ajaxSettings
-      ajaxExtend(jQuery.ajaxSettings, target);
-    },
-    ajaxPrefilter: addToPrefiltersOrTransports(prefilters),
-    ajaxTransport: addToPrefiltersOrTransports(transports),
-    // Main method
-    ajax: function ajax(url, options) {
-      // If url is an object, simulate pre-1.5 signature
-      if (_typeof(url) === "object") {
-        options = url;
-        url = undefined;
-      } // Force options to be an object
-
-
-      options = options || {};
-
-      var transport,
-          // URL without anti-cache param
-      cacheURL,
-          // Response headers
-      responseHeadersString,
-          responseHeaders,
-          // timeout handle
-      timeoutTimer,
-          // Url cleanup var
-      urlAnchor,
-          // Request state (becomes false upon send and true upon completion)
-      completed,
-          // To know if global events are to be dispatched
-      fireGlobals,
-          // Loop variable
-      i,
-          // uncached part of the url
-      uncached,
-          // Create the final options object
-      s = jQuery.ajaxSetup({}, options),
-          // Callbacks context
-      callbackContext = s.context || s,
-          // Context for global events is callbackContext if it is a DOM node or jQuery collection
-      globalEventContext = s.context && (callbackContext.nodeType || callbackContext.jquery) ? jQuery(callbackContext) : jQuery.event,
-          // Deferreds
-      deferred = jQuery.Deferred(),
-          completeDeferred = jQuery.Callbacks("once memory"),
-          // Status-dependent callbacks
-      _statusCode = s.statusCode || {},
-          // Headers (they are sent all at once)
-      requestHeaders = {},
-          requestHeadersNames = {},
-          // Default abort message
-      strAbort = "canceled",
-          // Fake xhr
-      jqXHR = {
-        readyState: 0,
-        // Builds headers hashtable if needed
-        getResponseHeader: function getResponseHeader(key) {
-          var match;
-
-          if (completed) {
-            if (!responseHeaders) {
-              responseHeaders = {};
-
-              while (match = rheaders.exec(responseHeadersString)) {
-                responseHeaders[match[1].toLowerCase()] = match[2];
-              }
-            }
-
-            match = responseHeaders[key.toLowerCase()];
-          }
-
-          return match == null ? null : match;
-        },
-        // Raw string
-        getAllResponseHeaders: function getAllResponseHeaders() {
-          return completed ? responseHeadersString : null;
-        },
-        // Caches the header
-        setRequestHeader: function setRequestHeader(name, value) {
-          if (completed == null) {
-            name = requestHeadersNames[name.toLowerCase()] = requestHeadersNames[name.toLowerCase()] || name;
-            requestHeaders[name] = value;
-          }
-
-          return this;
-        },
-        // Overrides response content-type header
-        overrideMimeType: function overrideMimeType(type) {
-          if (completed == null) {
-            s.mimeType = type;
-          }
-
-          return this;
-        },
-        // Status-dependent callbacks
-        statusCode: function statusCode(map) {
-          var code;
-
-          if (map) {
-            if (completed) {
-              // Execute the appropriate callbacks
-              jqXHR.always(map[jqXHR.status]);
-            } else {
-              // Lazy-add the new callbacks in a way that preserves old ones
-              for (code in map) {
-                _statusCode[code] = [_statusCode[code], map[code]];
-              }
-            }
-          }
-
-          return this;
-        },
-        // Cancel the request
-        abort: function abort(statusText) {
-          var finalText = statusText || strAbort;
-
-          if (transport) {
-            transport.abort(finalText);
-          }
-
-          done(0, finalText);
-          return this;
-        }
-      }; // Attach deferreds
-
-
-      deferred.promise(jqXHR); // Add protocol if not provided (prefilters might expect it)
-      // Handle falsy url in the settings object (#10093: consistency with old signature)
-      // We also use the url parameter if available
-
-      s.url = ((url || s.url || location.href) + "").replace(rprotocol, location.protocol + "//"); // Alias method option to type as per ticket #12004
-
-      s.type = options.method || options.type || s.method || s.type; // Extract dataTypes list
-
-      s.dataTypes = (s.dataType || "*").toLowerCase().match(rnothtmlwhite) || [""]; // A cross-domain request is in order when the origin doesn't match the current origin.
-
-      if (s.crossDomain == null) {
-        urlAnchor = document.createElement("a"); // Support: IE <=8 - 11, Edge 12 - 15
-        // IE throws exception on accessing the href property if url is malformed,
-        // e.g. http://example.com:80x/
-
-        try {
-          urlAnchor.href = s.url; // Support: IE <=8 - 11 only
-          // Anchor's host property isn't correctly set when s.url is relative
-
-          urlAnchor.href = urlAnchor.href;
-          s.crossDomain = originAnchor.protocol + "//" + originAnchor.host !== urlAnchor.protocol + "//" + urlAnchor.host;
-        } catch (e) {
-          // If there is an error parsing the URL, assume it is crossDomain,
-          // it can be rejected by the transport if it is invalid
-          s.crossDomain = true;
-        }
-      } // Convert data if not already a string
-
-
-      if (s.data && s.processData && typeof s.data !== "string") {
-        s.data = jQuery.param(s.data, s.traditional);
-      } // Apply prefilters
-
 
       inspectPrefiltersOrTransports(prefilters, s, options, jqXHR); // If request was aborted inside a prefilter, stop there
 
@@ -97333,122 +95934,6 @@ if (document.getElementById('ukm')) {
         } // Add or update anti-cache param if needed
 
 
-        if (s.cache === false) {
-          cacheURL = cacheURL.replace(rantiCache, "$1");
-          uncached = (rquery.test(cacheURL) ? "&" : "?") + "_=" + nonce++ + uncached;
-        } // Put hash and anti-cache on the URL that will be requested (gh-1732)
-
-
-        s.url = cacheURL + uncached; // Change '%20' to '+' if this is encoded form body content (gh-2658)
-      } else if (s.data && s.processData && (s.contentType || "").indexOf("application/x-www-form-urlencoded") === 0) {
-        s.data = s.data.replace(r20, "+");
-      } // Set the If-Modified-Since and/or If-None-Match header, if in ifModified mode.
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
-
-      inspectPrefiltersOrTransports(prefilters, s, options, jqXHR); // If request was aborted inside a prefilter, stop there
-
-<<<<<<< HEAD
-      if (completed) {
-        return jqXHR;
-      } // We can fire global events as of now if asked to
-      // Don't fire events if jQuery.event is undefined in an AMD-usage scenario (#15118)
-
-
-      fireGlobals = jQuery.event && s.global; // Watch for a new set of requests
-
-      if (fireGlobals && jQuery.active++ === 0) {
-        jQuery.event.trigger("ajaxStart");
-      } // Uppercase the type
-
-
-      s.type = s.type.toUpperCase(); // Determine if request has content
-
-      s.hasContent = !rnoContent.test(s.type); // Save the URL in case we're toying with the If-Modified-Since
-      // and/or If-None-Match header later on
-      // Remove hash to simplify url manipulation
-
-      cacheURL = s.url.replace(rhash, ""); // More options handling for requests with no content
-
-      if (!s.hasContent) {
-        // Remember the hash so we can put it back
-        uncached = s.url.slice(cacheURL.length); // If data is available and should be processed, append data to url
-=======
-      if (s.ifModified) {
-        if (jQuery.lastModified[cacheURL]) {
-          jqXHR.setRequestHeader("If-Modified-Since", jQuery.lastModified[cacheURL]);
-        }
-
-        if (jQuery.etag[cacheURL]) {
-          jqXHR.setRequestHeader("If-None-Match", jQuery.etag[cacheURL]);
-        }
-      } // Set the correct header, if data is being sent
-
-
-      if (s.data && s.hasContent && s.contentType !== false || options.contentType) {
-        jqXHR.setRequestHeader("Content-Type", s.contentType);
-      } // Set the Accepts header for the server, depending on the dataType
-
-
-      jqXHR.setRequestHeader("Accept", s.dataTypes[0] && s.accepts[s.dataTypes[0]] ? s.accepts[s.dataTypes[0]] + (s.dataTypes[0] !== "*" ? ", " + allTypes + "; q=0.01" : "") : s.accepts["*"]); // Check for headers option
-
-      for (i in s.headers) {
-        jqXHR.setRequestHeader(i, s.headers[i]);
-      } // Allow custom headers/mimetypes and early abort
-
-
-      if (s.beforeSend && (s.beforeSend.call(callbackContext, jqXHR, s) === false || completed)) {
-        // Abort if not done already and return
-        return jqXHR.abort();
-      } // Aborting is no longer a cancellation
-
-
-      strAbort = "abort"; // Install callbacks on deferreds
-
-      completeDeferred.add(s.complete);
-      jqXHR.done(s.success);
-      jqXHR.fail(s.error); // Get transport
-
-      transport = inspectPrefiltersOrTransports(transports, s, options, jqXHR); // If no transport, we auto-abort
-
-      if (!transport) {
-        done(-1, "No Transport");
-      } else {
-        jqXHR.readyState = 1; // Send global event
-
-        if (fireGlobals) {
-          globalEventContext.trigger("ajaxSend", [jqXHR, s]);
-        } // If request was aborted inside ajaxSend, stop there
-
-
-        if (completed) {
-          return jqXHR;
-        } // Timeout
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
-
-        if (s.data && (s.processData || typeof s.data === "string")) {
-          cacheURL += (rquery.test(cacheURL) ? "&" : "?") + s.data; // #9682: remove data so that it's not used in an eventual retry
-
-<<<<<<< HEAD
-          delete s.data;
-        } // Add or update anti-cache param if needed
-=======
-        if (s.async && s.timeout > 0) {
-          timeoutTimer = window.setTimeout(function () {
-            jqXHR.abort("timeout");
-          }, s.timeout);
-        }
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
-
-        try {
-          completed = false;
-          transport.send(requestHeaders, done);
-        } catch (e) {
-          // Rethrow post-completion exceptions
-          if (completed) {
-            throw e;
-          } // Propagate others as results
-
-<<<<<<< HEAD
         if (s.cache === false) {
           cacheURL = cacheURL.replace(rantiCache, "$1");
           uncached = (rquery.test(cacheURL) ? "&" : "?") + "_=" + nonce++ + uncached;
@@ -97553,32 +96038,6 @@ if (document.getElementById('ukm')) {
         } // Dereference transport for early garbage collection
         // (no matter how long the jqXHR object will be used)
 
-=======
-
-          done(-1, e);
-        }
-      } // Callback for when everything is done
-
-
-      function done(status, nativeStatusText, responses, headers) {
-        var isSuccess,
-            success,
-            error,
-            response,
-            modified,
-            statusText = nativeStatusText; // Ignore repeat invocations
-
-        if (completed) {
-          return;
-        }
-
-        completed = true; // Clear timeout if it exists
-
-        if (timeoutTimer) {
-          window.clearTimeout(timeoutTimer);
-        } // Dereference transport for early garbage collection
-        // (no matter how long the jqXHR object will be used)
-
 
         transport = undefined; // Cache response headers
 
@@ -97634,81 +96093,6 @@ if (document.getElementById('ukm')) {
             }
           }
         } // Set data for the fake xhr object
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
-
-        transport = undefined; // Cache response headers
-
-<<<<<<< HEAD
-        responseHeadersString = headers || ""; // Set readyState
-
-        jqXHR.readyState = status > 0 ? 4 : 0; // Determine if successful
-
-        isSuccess = status >= 200 && status < 300 || status === 304; // Get response data
-
-        if (responses) {
-          response = ajaxHandleResponses(s, jqXHR, responses);
-        } // Convert no matter what (that way responseXXX fields are always set)
-=======
-        jqXHR.status = status;
-        jqXHR.statusText = (nativeStatusText || statusText) + ""; // Success/Error
-
-        if (isSuccess) {
-          deferred.resolveWith(callbackContext, [success, statusText, jqXHR]);
-        } else {
-          deferred.rejectWith(callbackContext, [jqXHR, statusText, error]);
-        } // Status-dependent callbacks
-
-
-        jqXHR.statusCode(_statusCode);
-        _statusCode = undefined;
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
-
-        if (fireGlobals) {
-          globalEventContext.trigger(isSuccess ? "ajaxSuccess" : "ajaxError", [jqXHR, s, isSuccess ? success : error]);
-        } // Complete
-
-<<<<<<< HEAD
-        response = ajaxConvert(s, response, jqXHR, isSuccess); // If successful, handle type chaining
-
-        if (isSuccess) {
-          // Set the If-Modified-Since and/or If-None-Match header, if in ifModified mode.
-          if (s.ifModified) {
-            modified = jqXHR.getResponseHeader("Last-Modified");
-
-            if (modified) {
-              jQuery.lastModified[cacheURL] = modified;
-            }
-
-            modified = jqXHR.getResponseHeader("etag");
-
-            if (modified) {
-              jQuery.etag[cacheURL] = modified;
-            }
-          } // if no content
-
-
-          if (status === 204 || s.type === "HEAD") {
-            statusText = "nocontent"; // if not modified
-          } else if (status === 304) {
-            statusText = "notmodified"; // If we have data, let's convert it
-          } else {
-            statusText = response.state;
-            success = response.data;
-            error = response.error;
-            isSuccess = !error;
-          }
-        } else {
-          // Extract error from statusText and normalize for non-aborts
-          error = statusText;
-
-          if (status || !statusText) {
-            statusText = "error";
-
-            if (status < 0) {
-              status = 0;
-            }
-          }
-        } // Set data for the fake xhr object
 
 
         jqXHR.status = status;
@@ -97719,86 +96103,8 @@ if (document.getElementById('ukm')) {
         } else {
           deferred.rejectWith(callbackContext, [jqXHR, statusText, error]);
         } // Status-dependent callbacks
-=======
-
-        completeDeferred.fireWith(callbackContext, [jqXHR, statusText]);
-
-        if (fireGlobals) {
-          globalEventContext.trigger("ajaxComplete", [jqXHR, s]); // Handle the global AJAX counter
-
-          if (! --jQuery.active) {
-            jQuery.event.trigger("ajaxStop");
-          }
-        }
-      }
-
-      return jqXHR;
-    },
-    getJSON: function getJSON(url, data, callback) {
-      return jQuery.get(url, data, callback, "json");
-    },
-    getScript: function getScript(url, callback) {
-      return jQuery.get(url, undefined, callback, "script");
-    }
-  });
-  jQuery.each(["get", "post"], function (i, method) {
-    jQuery[method] = function (url, data, callback, type) {
-      // Shift arguments if data argument was omitted
-      if (isFunction(data)) {
-        type = type || callback;
-        callback = data;
-        data = undefined;
-      } // The url can be an options object (which then must have .url)
 
 
-      return jQuery.ajax(jQuery.extend({
-        url: url,
-        type: method,
-        dataType: type,
-        data: data,
-        success: callback
-      }, jQuery.isPlainObject(url) && url));
-    };
-  });
-
-  jQuery._evalUrl = function (url) {
-    return jQuery.ajax({
-      url: url,
-      // Make this explicit, since user can override this through ajaxSetup (#11264)
-      type: "GET",
-      dataType: "script",
-      cache: true,
-      async: false,
-      global: false,
-      "throws": true
-    });
-  };
-
-  jQuery.fn.extend({
-    wrapAll: function wrapAll(html) {
-      var wrap;
-
-      if (this[0]) {
-        if (isFunction(html)) {
-          html = html.call(this[0]);
-        } // The elements to wrap the target around
-
-
-        wrap = jQuery(html, this[0].ownerDocument).eq(0).clone(true);
-
-        if (this[0].parentNode) {
-          wrap.insertBefore(this[0]);
-        }
-
-        wrap.map(function () {
-          var elem = this;
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
-
-          while (elem.firstElementChild) {
-            elem = elem.firstElementChild;
-          }
-
-<<<<<<< HEAD
         jqXHR.statusCode(_statusCode);
         _statusCode = undefined;
 
@@ -98608,732 +96914,6 @@ if (document.getElementById('ukm')) {
     proxy = function proxy() {
       return fn.apply(context || this, args.concat(_slice.call(arguments)));
     }; // Set the guid of unique handler to the same of original handler, so it can be removed
-=======
-          return elem;
-        }).append(this);
-      }
-
-      return this;
-    },
-    wrapInner: function wrapInner(html) {
-      if (isFunction(html)) {
-        return this.each(function (i) {
-          jQuery(this).wrapInner(html.call(this, i));
-        });
-      }
-
-      return this.each(function () {
-        var self = jQuery(this),
-            contents = self.contents();
-
-        if (contents.length) {
-          contents.wrapAll(html);
-        } else {
-          self.append(html);
-        }
-      });
-    },
-    wrap: function wrap(html) {
-      var htmlIsFunction = isFunction(html);
-      return this.each(function (i) {
-        jQuery(this).wrapAll(htmlIsFunction ? html.call(this, i) : html);
-      });
-    },
-    unwrap: function unwrap(selector) {
-      this.parent(selector).not("body").each(function () {
-        jQuery(this).replaceWith(this.childNodes);
-      });
-      return this;
-    }
-  });
-
-  jQuery.expr.pseudos.hidden = function (elem) {
-    return !jQuery.expr.pseudos.visible(elem);
-  };
-
-  jQuery.expr.pseudos.visible = function (elem) {
-    return !!(elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length);
-  };
-
-  jQuery.ajaxSettings.xhr = function () {
-    try {
-      return new window.XMLHttpRequest();
-    } catch (e) {}
-  };
-
-  var xhrSuccessStatus = {
-    // File protocol always yields status code 0, assume 200
-    0: 200,
-    // Support: IE <=9 only
-    // #1450: sometimes IE returns 1223 when it should be 204
-    1223: 204
-  },
-      xhrSupported = jQuery.ajaxSettings.xhr();
-  support.cors = !!xhrSupported && "withCredentials" in xhrSupported;
-  support.ajax = xhrSupported = !!xhrSupported;
-  jQuery.ajaxTransport(function (options) {
-    var _callback, errorCallback; // Cross domain only allowed if supported through XMLHttpRequest
-
-
-    if (support.cors || xhrSupported && !options.crossDomain) {
-      return {
-        send: function send(headers, complete) {
-          var i,
-              xhr = options.xhr();
-          xhr.open(options.type, options.url, options.async, options.username, options.password); // Apply custom fields if provided
-
-          if (options.xhrFields) {
-            for (i in options.xhrFields) {
-              xhr[i] = options.xhrFields[i];
-            }
-          } // Override mime type if needed
-
-
-          if (options.mimeType && xhr.overrideMimeType) {
-            xhr.overrideMimeType(options.mimeType);
-          } // X-Requested-With header
-          // For cross-domain requests, seeing as conditions for a preflight are
-          // akin to a jigsaw puzzle, we simply never set it to be sure.
-          // (it can always be set on a per-request basis or even using ajaxSetup)
-          // For same-domain requests, won't change header if already provided.
-
-
-          if (!options.crossDomain && !headers["X-Requested-With"]) {
-            headers["X-Requested-With"] = "XMLHttpRequest";
-          } // Set headers
-
-
-          for (i in headers) {
-            xhr.setRequestHeader(i, headers[i]);
-          } // Callback
-
-
-          _callback = function callback(type) {
-            return function () {
-              if (_callback) {
-                _callback = errorCallback = xhr.onload = xhr.onerror = xhr.onabort = xhr.ontimeout = xhr.onreadystatechange = null;
-
-                if (type === "abort") {
-                  xhr.abort();
-                } else if (type === "error") {
-                  // Support: IE <=9 only
-                  // On a manual native abort, IE9 throws
-                  // errors on any property access that is not readyState
-                  if (typeof xhr.status !== "number") {
-                    complete(0, "error");
-                  } else {
-                    complete( // File: protocol always yields status 0; see #8605, #14207
-                    xhr.status, xhr.statusText);
-                  }
-                } else {
-                  complete(xhrSuccessStatus[xhr.status] || xhr.status, xhr.statusText, // Support: IE <=9 only
-                  // IE9 has no XHR2 but throws on binary (trac-11426)
-                  // For XHR2 non-text, let the caller handle it (gh-2498)
-                  (xhr.responseType || "text") !== "text" || typeof xhr.responseText !== "string" ? {
-                    binary: xhr.response
-                  } : {
-                    text: xhr.responseText
-                  }, xhr.getAllResponseHeaders());
-                }
-              }
-            };
-          }; // Listen to events
-
-
-          xhr.onload = _callback();
-          errorCallback = xhr.onerror = xhr.ontimeout = _callback("error"); // Support: IE 9 only
-          // Use onreadystatechange to replace onabort
-          // to handle uncaught aborts
-
-          if (xhr.onabort !== undefined) {
-            xhr.onabort = errorCallback;
-          } else {
-            xhr.onreadystatechange = function () {
-              // Check readyState before timeout as it changes
-              if (xhr.readyState === 4) {
-                // Allow onerror to be called first,
-                // but that will not handle a native abort
-                // Also, save errorCallback to a variable
-                // as xhr.onerror cannot be accessed
-                window.setTimeout(function () {
-                  if (_callback) {
-                    errorCallback();
-                  }
-                });
-              }
-            };
-          } // Create the abort callback
-
-
-          _callback = _callback("abort");
-
-          try {
-            // Do send the request (this may raise an exception)
-            xhr.send(options.hasContent && options.data || null);
-          } catch (e) {
-            // #14683: Only rethrow if this hasn't been notified as an error yet
-            if (_callback) {
-              throw e;
-            }
-          }
-        },
-        abort: function abort() {
-          if (_callback) {
-            _callback();
-          }
-        }
-      };
-    }
-  }); // Prevent auto-execution of scripts when no explicit dataType was provided (See gh-2432)
-
-  jQuery.ajaxPrefilter(function (s) {
-    if (s.crossDomain) {
-      s.contents.script = false;
-    }
-  }); // Install script dataType
-
-  jQuery.ajaxSetup({
-    accepts: {
-      script: "text/javascript, application/javascript, " + "application/ecmascript, application/x-ecmascript"
-    },
-    contents: {
-      script: /\b(?:java|ecma)script\b/
-    },
-    converters: {
-      "text script": function textScript(text) {
-        jQuery.globalEval(text);
-        return text;
-      }
-    }
-  }); // Handle cache's special case and crossDomain
-
-  jQuery.ajaxPrefilter("script", function (s) {
-    if (s.cache === undefined) {
-      s.cache = false;
-    }
-
-    if (s.crossDomain) {
-      s.type = "GET";
-    }
-  }); // Bind script tag hack transport
-
-  jQuery.ajaxTransport("script", function (s) {
-    // This transport only deals with cross domain requests
-    if (s.crossDomain) {
-      var script, _callback2;
-
-      return {
-        send: function send(_, complete) {
-          script = jQuery("<script>").prop({
-            charset: s.scriptCharset,
-            src: s.url
-          }).on("load error", _callback2 = function callback(evt) {
-            script.remove();
-            _callback2 = null;
-
-            if (evt) {
-              complete(evt.type === "error" ? 404 : 200, evt.type);
-            }
-          }); // Use native DOM manipulation to avoid our domManip AJAX trickery
-
-          document.head.appendChild(script[0]);
-        },
-        abort: function abort() {
-          if (_callback2) {
-            _callback2();
-          }
-        }
-      };
-    }
-  });
-  var oldCallbacks = [],
-      rjsonp = /(=)\?(?=&|$)|\?\?/; // Default jsonp settings
-
-  jQuery.ajaxSetup({
-    jsonp: "callback",
-    jsonpCallback: function jsonpCallback() {
-      var callback = oldCallbacks.pop() || jQuery.expando + "_" + nonce++;
-      this[callback] = true;
-      return callback;
-    }
-  }); // Detect, normalize options and install callbacks for jsonp requests
-
-  jQuery.ajaxPrefilter("json jsonp", function (s, originalSettings, jqXHR) {
-    var callbackName,
-        overwritten,
-        responseContainer,
-        jsonProp = s.jsonp !== false && (rjsonp.test(s.url) ? "url" : typeof s.data === "string" && (s.contentType || "").indexOf("application/x-www-form-urlencoded") === 0 && rjsonp.test(s.data) && "data"); // Handle iff the expected data type is "jsonp" or we have a parameter to set
-
-    if (jsonProp || s.dataTypes[0] === "jsonp") {
-      // Get callback name, remembering preexisting value associated with it
-      callbackName = s.jsonpCallback = isFunction(s.jsonpCallback) ? s.jsonpCallback() : s.jsonpCallback; // Insert callback into url or form data
-
-      if (jsonProp) {
-        s[jsonProp] = s[jsonProp].replace(rjsonp, "$1" + callbackName);
-      } else if (s.jsonp !== false) {
-        s.url += (rquery.test(s.url) ? "&" : "?") + s.jsonp + "=" + callbackName;
-      } // Use data converter to retrieve json after script execution
-
-
-      s.converters["script json"] = function () {
-        if (!responseContainer) {
-          jQuery.error(callbackName + " was not called");
-        }
-
-        return responseContainer[0];
-      }; // Force json dataType
-
-
-      s.dataTypes[0] = "json"; // Install callback
-
-      overwritten = window[callbackName];
-
-      window[callbackName] = function () {
-        responseContainer = arguments;
-      }; // Clean-up function (fires after converters)
-
-
-      jqXHR.always(function () {
-        // If previous value didn't exist - remove it
-        if (overwritten === undefined) {
-          jQuery(window).removeProp(callbackName); // Otherwise restore preexisting value
-        } else {
-          window[callbackName] = overwritten;
-        } // Save back as free
-
-
-        if (s[callbackName]) {
-          // Make sure that re-using the options doesn't screw things around
-          s.jsonpCallback = originalSettings.jsonpCallback; // Save the callback name for future use
-
-          oldCallbacks.push(callbackName);
-        } // Call if it was a function and we have a response
-
-
-        if (responseContainer && isFunction(overwritten)) {
-          overwritten(responseContainer[0]);
-        }
-
-        responseContainer = overwritten = undefined;
-      }); // Delegate to script
-
-      return "script";
-    }
-  }); // Support: Safari 8 only
-  // In Safari 8 documents created via document.implementation.createHTMLDocument
-  // collapse sibling forms: the second one becomes a child of the first one.
-  // Because of that, this security measure has to be disabled in Safari 8.
-  // https://bugs.webkit.org/show_bug.cgi?id=137337
-
-  support.createHTMLDocument = function () {
-    var body = document.implementation.createHTMLDocument("").body;
-    body.innerHTML = "<form></form><form></form>";
-    return body.childNodes.length === 2;
-  }(); // Argument "data" should be string of html
-  // context (optional): If specified, the fragment will be created in this context,
-  // defaults to document
-  // keepScripts (optional): If true, will include scripts passed in the html string
-
-
-  jQuery.parseHTML = function (data, context, keepScripts) {
-    if (typeof data !== "string") {
-      return [];
-    }
-
-    if (typeof context === "boolean") {
-      keepScripts = context;
-      context = false;
-    }
-
-    var base, parsed, scripts;
-
-    if (!context) {
-      // Stop scripts or inline event handlers from being executed immediately
-      // by using document.implementation
-      if (support.createHTMLDocument) {
-        context = document.implementation.createHTMLDocument(""); // Set the base href for the created document
-        // so any parsed elements with URLs
-        // are based on the document's URL (gh-2965)
-
-        base = context.createElement("base");
-        base.href = document.location.href;
-        context.head.appendChild(base);
-      } else {
-        context = document;
-      }
-    }
-
-    parsed = rsingleTag.exec(data);
-    scripts = !keepScripts && []; // Single tag
-
-    if (parsed) {
-      return [context.createElement(parsed[1])];
-    }
-
-    parsed = buildFragment([data], context, scripts);
-
-    if (scripts && scripts.length) {
-      jQuery(scripts).remove();
-    }
-
-    return jQuery.merge([], parsed.childNodes);
-  };
-  /**
-   * Load a url into a page
-   */
-
-
-  jQuery.fn.load = function (url, params, callback) {
-    var selector,
-        type,
-        response,
-        self = this,
-        off = url.indexOf(" ");
-
-    if (off > -1) {
-      selector = stripAndCollapse(url.slice(off));
-      url = url.slice(0, off);
-    } // If it's a function
-
-
-    if (isFunction(params)) {
-      // We assume that it's the callback
-      callback = params;
-      params = undefined; // Otherwise, build a param string
-    } else if (params && _typeof(params) === "object") {
-      type = "POST";
-    } // If we have elements to modify, make the request
-
-
-    if (self.length > 0) {
-      jQuery.ajax({
-        url: url,
-        // If "type" variable is undefined, then "GET" method will be used.
-        // Make value of this field explicit since
-        // user can override it through ajaxSetup method
-        type: type || "GET",
-        dataType: "html",
-        data: params
-      }).done(function (responseText) {
-        // Save response for use in complete callback
-        response = arguments;
-        self.html(selector ? // If a selector was specified, locate the right elements in a dummy div
-        // Exclude scripts to avoid IE 'Permission Denied' errors
-        jQuery("<div>").append(jQuery.parseHTML(responseText)).find(selector) : // Otherwise use the full result
-        responseText); // If the request succeeds, this function gets "data", "status", "jqXHR"
-        // but they are ignored because response was set above.
-        // If it fails, this function gets "jqXHR", "status", "error"
-      }).always(callback && function (jqXHR, status) {
-        self.each(function () {
-          callback.apply(this, response || [jqXHR.responseText, status, jqXHR]);
-        });
-      });
-    }
-
-    return this;
-  }; // Attach a bunch of functions for handling common AJAX events
-
-
-  jQuery.each(["ajaxStart", "ajaxStop", "ajaxComplete", "ajaxError", "ajaxSuccess", "ajaxSend"], function (i, type) {
-    jQuery.fn[type] = function (fn) {
-      return this.on(type, fn);
-    };
-  });
-
-  jQuery.expr.pseudos.animated = function (elem) {
-    return jQuery.grep(jQuery.timers, function (fn) {
-      return elem === fn.elem;
-    }).length;
-  };
-
-  jQuery.offset = {
-    setOffset: function setOffset(elem, options, i) {
-      var curPosition,
-          curLeft,
-          curCSSTop,
-          curTop,
-          curOffset,
-          curCSSLeft,
-          calculatePosition,
-          position = jQuery.css(elem, "position"),
-          curElem = jQuery(elem),
-          props = {}; // Set position first, in-case top/left are set even on static elem
-
-      if (position === "static") {
-        elem.style.position = "relative";
-      }
-
-      curOffset = curElem.offset();
-      curCSSTop = jQuery.css(elem, "top");
-      curCSSLeft = jQuery.css(elem, "left");
-      calculatePosition = (position === "absolute" || position === "fixed") && (curCSSTop + curCSSLeft).indexOf("auto") > -1; // Need to be able to calculate position if either
-      // top or left is auto and position is either absolute or fixed
-
-      if (calculatePosition) {
-        curPosition = curElem.position();
-        curTop = curPosition.top;
-        curLeft = curPosition.left;
-      } else {
-        curTop = parseFloat(curCSSTop) || 0;
-        curLeft = parseFloat(curCSSLeft) || 0;
-      }
-
-      if (isFunction(options)) {
-        // Use jQuery.extend here to allow modification of coordinates argument (gh-1848)
-        options = options.call(elem, i, jQuery.extend({}, curOffset));
-      }
-
-      if (options.top != null) {
-        props.top = options.top - curOffset.top + curTop;
-      }
-
-      if (options.left != null) {
-        props.left = options.left - curOffset.left + curLeft;
-      }
-
-      if ("using" in options) {
-        options.using.call(elem, props);
-      } else {
-        curElem.css(props);
-      }
-    }
-  };
-  jQuery.fn.extend({
-    // offset() relates an element's border box to the document origin
-    offset: function offset(options) {
-      // Preserve chaining for setter
-      if (arguments.length) {
-        return options === undefined ? this : this.each(function (i) {
-          jQuery.offset.setOffset(this, options, i);
-        });
-      }
-
-      var rect,
-          win,
-          elem = this[0];
-
-      if (!elem) {
-        return;
-      } // Return zeros for disconnected and hidden (display: none) elements (gh-2310)
-      // Support: IE <=11 only
-      // Running getBoundingClientRect on a
-      // disconnected node in IE throws an error
-
-
-      if (!elem.getClientRects().length) {
-        return {
-          top: 0,
-          left: 0
-        };
-      } // Get document-relative position by adding viewport scroll to viewport-relative gBCR
-
-
-      rect = elem.getBoundingClientRect();
-      win = elem.ownerDocument.defaultView;
-      return {
-        top: rect.top + win.pageYOffset,
-        left: rect.left + win.pageXOffset
-      };
-    },
-    // position() relates an element's margin box to its offset parent's padding box
-    // This corresponds to the behavior of CSS absolute positioning
-    position: function position() {
-      if (!this[0]) {
-        return;
-      }
-
-      var offsetParent,
-          offset,
-          doc,
-          elem = this[0],
-          parentOffset = {
-        top: 0,
-        left: 0
-      }; // position:fixed elements are offset from the viewport, which itself always has zero offset
-
-      if (jQuery.css(elem, "position") === "fixed") {
-        // Assume position:fixed implies availability of getBoundingClientRect
-        offset = elem.getBoundingClientRect();
-      } else {
-        offset = this.offset(); // Account for the *real* offset parent, which can be the document or its root element
-        // when a statically positioned element is identified
-
-        doc = elem.ownerDocument;
-        offsetParent = elem.offsetParent || doc.documentElement;
-
-        while (offsetParent && (offsetParent === doc.body || offsetParent === doc.documentElement) && jQuery.css(offsetParent, "position") === "static") {
-          offsetParent = offsetParent.parentNode;
-        }
-
-        if (offsetParent && offsetParent !== elem && offsetParent.nodeType === 1) {
-          // Incorporate borders into its offset, since they are outside its content origin
-          parentOffset = jQuery(offsetParent).offset();
-          parentOffset.top += jQuery.css(offsetParent, "borderTopWidth", true);
-          parentOffset.left += jQuery.css(offsetParent, "borderLeftWidth", true);
-        }
-      } // Subtract parent offsets and element margins
-
-
-      return {
-        top: offset.top - parentOffset.top - jQuery.css(elem, "marginTop", true),
-        left: offset.left - parentOffset.left - jQuery.css(elem, "marginLeft", true)
-      };
-    },
-    // This method will return documentElement in the following cases:
-    // 1) For the element inside the iframe without offsetParent, this method will return
-    //    documentElement of the parent window
-    // 2) For the hidden or detached element
-    // 3) For body or html element, i.e. in case of the html node - it will return itself
-    //
-    // but those exceptions were never presented as a real life use-cases
-    // and might be considered as more preferable results.
-    //
-    // This logic, however, is not guaranteed and can change at any point in the future
-    offsetParent: function offsetParent() {
-      return this.map(function () {
-        var offsetParent = this.offsetParent;
-
-        while (offsetParent && jQuery.css(offsetParent, "position") === "static") {
-          offsetParent = offsetParent.offsetParent;
-        }
-
-        return offsetParent || documentElement;
-      });
-    }
-  }); // Create scrollLeft and scrollTop methods
-
-  jQuery.each({
-    scrollLeft: "pageXOffset",
-    scrollTop: "pageYOffset"
-  }, function (method, prop) {
-    var top = "pageYOffset" === prop;
-
-    jQuery.fn[method] = function (val) {
-      return access(this, function (elem, method, val) {
-        // Coalesce documents and windows
-        var win;
-
-        if (isWindow(elem)) {
-          win = elem;
-        } else if (elem.nodeType === 9) {
-          win = elem.defaultView;
-        }
-
-        if (val === undefined) {
-          return win ? win[prop] : elem[method];
-        }
-
-        if (win) {
-          win.scrollTo(!top ? val : win.pageXOffset, top ? val : win.pageYOffset);
-        } else {
-          elem[method] = val;
-        }
-      }, method, val, arguments.length);
-    };
-  }); // Support: Safari <=7 - 9.1, Chrome <=37 - 49
-  // Add the top/left cssHooks using jQuery.fn.position
-  // Webkit bug: https://bugs.webkit.org/show_bug.cgi?id=29084
-  // Blink bug: https://bugs.chromium.org/p/chromium/issues/detail?id=589347
-  // getComputedStyle returns percent when specified for top/left/bottom/right;
-  // rather than make the css module depend on the offset module, just check for it here
-
-  jQuery.each(["top", "left"], function (i, prop) {
-    jQuery.cssHooks[prop] = addGetHookIf(support.pixelPosition, function (elem, computed) {
-      if (computed) {
-        computed = curCSS(elem, prop); // If curCSS returns percentage, fallback to offset
-
-        return rnumnonpx.test(computed) ? jQuery(elem).position()[prop] + "px" : computed;
-      }
-    });
-  }); // Create innerHeight, innerWidth, height, width, outerHeight and outerWidth methods
-
-  jQuery.each({
-    Height: "height",
-    Width: "width"
-  }, function (name, type) {
-    jQuery.each({
-      padding: "inner" + name,
-      content: type,
-      "": "outer" + name
-    }, function (defaultExtra, funcName) {
-      // Margin is only for outerHeight, outerWidth
-      jQuery.fn[funcName] = function (margin, value) {
-        var chainable = arguments.length && (defaultExtra || typeof margin !== "boolean"),
-            extra = defaultExtra || (margin === true || value === true ? "margin" : "border");
-        return access(this, function (elem, type, value) {
-          var doc;
-
-          if (isWindow(elem)) {
-            // $( window ).outerWidth/Height return w/h including scrollbars (gh-1729)
-            return funcName.indexOf("outer") === 0 ? elem["inner" + name] : elem.document.documentElement["client" + name];
-          } // Get document width or height
-
-
-          if (elem.nodeType === 9) {
-            doc = elem.documentElement; // Either scroll[Width/Height] or offset[Width/Height] or client[Width/Height],
-            // whichever is greatest
-
-            return Math.max(elem.body["scroll" + name], doc["scroll" + name], elem.body["offset" + name], doc["offset" + name], doc["client" + name]);
-          }
-
-          return value === undefined ? // Get width or height on the element, requesting but not forcing parseFloat
-          jQuery.css(elem, type, extra) : // Set width or height on the element
-          jQuery.style(elem, type, value, extra);
-        }, type, chainable ? margin : undefined, chainable);
-      };
-    });
-  });
-  jQuery.each(("blur focus focusin focusout resize scroll click dblclick " + "mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave " + "change select submit keydown keypress keyup contextmenu").split(" "), function (i, name) {
-    // Handle event binding
-    jQuery.fn[name] = function (data, fn) {
-      return arguments.length > 0 ? this.on(name, null, data, fn) : this.trigger(name);
-    };
-  });
-  jQuery.fn.extend({
-    hover: function hover(fnOver, fnOut) {
-      return this.mouseenter(fnOver).mouseleave(fnOut || fnOver);
-    }
-  });
-  jQuery.fn.extend({
-    bind: function bind(types, data, fn) {
-      return this.on(types, null, data, fn);
-    },
-    unbind: function unbind(types, fn) {
-      return this.off(types, null, fn);
-    },
-    delegate: function delegate(selector, types, data, fn) {
-      return this.on(types, selector, data, fn);
-    },
-    undelegate: function undelegate(selector, types, fn) {
-      // ( namespace ) or ( selector, types [, fn] )
-      return arguments.length === 1 ? this.off(selector, "**") : this.off(types, selector || "**", fn);
-    }
-  }); // Bind a function to a context, optionally partially applying any
-  // arguments.
-  // jQuery.proxy is deprecated to promote standards (specifically Function#bind)
-  // However, it is not slated for removal any time soon
-
-  jQuery.proxy = function (fn, context) {
-    var tmp, args, proxy;
-
-    if (typeof context === "string") {
-      tmp = fn[context];
-      context = fn;
-      fn = tmp;
-    } // Quick check to determine if target is callable, in the spec
-    // this throws a TypeError, but we will just return undefined.
-
-
-    if (!isFunction(fn)) {
-      return undefined;
-    } // Simulated bind
-
-
-    args = _slice.call(arguments, 2);
-
-    proxy = function proxy() {
-      return fn.apply(context || this, args.concat(_slice.call(arguments)));
-    }; // Set the guid of unique handler to the same of original handler, so it can be removed
 
 
     proxy.guid = fn.guid = fn.guid || jQuery.guid++;
@@ -99405,224 +96985,7 @@ if (document.getElementById('ukm')) {
   // (#7102#comment:10, https://github.com/jquery/jquery/pull/557)
   // and CommonJS for browser emulators (#13566)
 
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
 
-  if (!noGlobal) {
-    window.jQuery = window.$ = jQuery;
-  }
-
-<<<<<<< HEAD
-    proxy.guid = fn.guid = fn.guid || jQuery.guid++;
-    return proxy;
-  };
-
-  jQuery.holdReady = function (hold) {
-    if (hold) {
-      jQuery.readyWait++;
-    } else {
-      jQuery.ready(true);
-    }
-  };
-
-  jQuery.isArray = Array.isArray;
-  jQuery.parseJSON = JSON.parse;
-  jQuery.nodeName = nodeName;
-  jQuery.isFunction = isFunction;
-  jQuery.isWindow = isWindow;
-  jQuery.camelCase = camelCase;
-  jQuery.type = toType;
-  jQuery.now = Date.now;
-
-  jQuery.isNumeric = function (obj) {
-    // As of jQuery 3.0, isNumeric is limited to
-    // strings and numbers (primitives or objects)
-    // that can be coerced to finite numbers (gh-2662)
-    var type = jQuery.type(obj);
-    return (type === "number" || type === "string") && // parseFloat NaNs numeric-cast false positives ("")
-    // ...but misinterprets leading-number strings, particularly hex literals ("0x...")
-    // subtraction forces infinities to NaN
-    !isNaN(obj - parseFloat(obj));
-  }; // Register as a named AMD module, since jQuery can be concatenated with other
-  // files that may use define, but not via a proper concatenation script that
-  // understands anonymous AMD modules. A named AMD is safest and most robust
-  // way to register. Lowercase jquery is used because AMD module names are
-  // derived from file names, and jQuery is normally delivered in a lowercase
-  // file name. Do this after creating the global so that if an AMD module wants
-  // to call noConflict to hide this version of jQuery, it will work.
-  // Note that for maximum portability, libraries that are not jQuery should
-  // declare themselves as anonymous modules, and avoid setting a global if an
-  // AMD loader is present. jQuery is a special case. For more information, see
-  // https://github.com/jrburke/requirejs/wiki/Updating-existing-libraries#wiki-anon
-
-
-  if (true) {
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
-      return jQuery;
-    }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-  }
-
-  var // Map over jQuery in case of overwrite
-  _jQuery = window.jQuery,
-      // Map over the $ in case of overwrite
-  _$ = window.$;
-
-  jQuery.noConflict = function (deep) {
-    if (window.$ === jQuery) {
-      window.$ = _$;
-    }
-
-    if (deep && window.jQuery === jQuery) {
-      window.jQuery = _jQuery;
-    }
-
-    return jQuery;
-  }; // Expose jQuery and $ identifiers, even in AMD
-  // (#7102#comment:10, https://github.com/jquery/jquery/pull/557)
-  // and CommonJS for browser emulators (#13566)
-=======
-  return jQuery;
-});
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module)))
-
-/***/ }),
-
-/***/ "./resources/js/slidersukm/lightslider.js":
-/*!************************************************!*\
-  !*** ./resources/js/slidersukm/lightslider.js ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-(function ($, undefined) {
-  'use strict';
-
-  var defaults = {
-    item: 3,
-    autoWidth: false,
-    slideMove: 1,
-    slideMargin: 10,
-    addClass: '',
-    mode: 'slide',
-    useCSS: true,
-    cssEasing: 'ease',
-    //'cubic-bezier(0.25, 0, 0.25, 1)',
-    easing: 'linear',
-    //'for jquery animation',//
-    speed: 400,
-    //ms'
-    auto: false,
-    pauseOnHover: false,
-    loop: false,
-    slideEndAnimation: true,
-    pause: 2000,
-    keyPress: false,
-    controls: true,
-    prevHtml: '',
-    nextHtml: '',
-    rtl: false,
-    adaptiveHeight: false,
-    vertical: false,
-    verticalHeight: 500,
-    vThumbWidth: 100,
-    thumbItem: 10,
-    pager: false,
-    gallery: true,
-    galleryMargin: 5,
-    thumbMargin: 5,
-    currentPagerPosition: 'middle',
-    enableTouch: true,
-    enableDrag: true,
-    freeMove: true,
-    swipeThreshold: 40,
-    responsive: [],
-
-    /* jshint ignore:start */
-    onBeforeStart: function onBeforeStart($el) {},
-    onSliderLoad: function onSliderLoad($el) {},
-    onBeforeSlide: function onBeforeSlide($el, scene) {},
-    onAfterSlide: function onAfterSlide($el, scene) {},
-    onBeforeNextSlide: function onBeforeNextSlide($el, scene) {},
-    onBeforePrevSlide: function onBeforePrevSlide($el, scene) {}
-    /* jshint ignore:end */
-
-  };
-
-  $.fn.lightSlider = function (options) {
-    if (this.length === 0) {
-      return this;
-    }
-
-    if (this.length > 1) {
-      this.each(function () {
-        $(this).lightSlider(options);
-      });
-      return this;
-    }
-
-    var plugin = {},
-        settings = $.extend(true, {}, defaults, options),
-        settingsTemp = {},
-        $el = this;
-    plugin.$el = this;
-
-    if (settings.mode === 'fade') {
-      settings.vertical = false;
-    }
-
-    var $children = $el.children(),
-        windowW = $(window).width(),
-        breakpoint = null,
-        resposiveObj = null,
-        length = 0,
-        w = 0,
-        on = false,
-        elSize = 0,
-        $slide = '',
-        scene = 0,
-        property = settings.vertical === true ? 'height' : 'width',
-        gutter = settings.vertical === true ? 'margin-bottom' : 'margin-right',
-        slideValue = 0,
-        pagerWidth = 0,
-        slideWidth = 0,
-        thumbWidth = 0,
-        interval = null,
-        isTouch = ('ontouchstart' in document.documentElement);
-    var refresh = {};
-
-    refresh.chbreakpoint = function () {
-      windowW = $(window).width();
-
-      if (settings.responsive.length) {
-        var item;
-
-        if (settings.autoWidth === false) {
-          item = settings.item;
-        }
-
-        if (windowW < settings.responsive[0].breakpoint) {
-          for (var i = 0; i < settings.responsive.length; i++) {
-            if (windowW < settings.responsive[i].breakpoint) {
-              breakpoint = settings.responsive[i].breakpoint;
-              resposiveObj = settings.responsive[i];
-            }
-          }
-        }
-
-        if (typeof resposiveObj !== 'undefined' && resposiveObj !== null) {
-          for (var j in resposiveObj.settings) {
-            if (resposiveObj.settings.hasOwnProperty(j)) {
-              if (typeof settingsTemp[j] === 'undefined' || settingsTemp[j] === null) {
-                settingsTemp[j] = settings[j];
-              }
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
-
-              settings[j] = resposiveObj.settings[j];
-            }
-          }
-        }
-
-<<<<<<< HEAD
   if (!noGlobal) {
     window.jQuery = window.$ = jQuery;
   }
@@ -99951,238 +97314,8 @@ if (document.getElementById('ukm')) {
                 }
               }
               /**/
-=======
-        if (!$.isEmptyObject(settingsTemp) && windowW > settings.responsive[0].breakpoint) {
-          for (var k in settingsTemp) {
-            if (settingsTemp.hasOwnProperty(k)) {
-              settings[k] = settingsTemp[k];
-            }
-          }
-        }
-
-        if (settings.autoWidth === false) {
-          if (slideValue > 0 && slideWidth > 0) {
-            if (item !== settings.item) {
-              scene = Math.round(slideValue / ((slideWidth + settings.slideMargin) * settings.slideMove));
-            }
-          }
-        }
-      }
-    };
-
-    refresh.calSW = function () {
-      if (settings.autoWidth === false) {
-        slideWidth = (elSize - (settings.item * settings.slideMargin - settings.slideMargin)) / settings.item;
-      }
-    };
-
-    refresh.calWidth = function (cln) {
-      var ln = cln === true ? $slide.find('.lslide').length : $children.length;
-
-      if (settings.autoWidth === false) {
-        w = ln * (slideWidth + settings.slideMargin);
-      } else {
-        w = 0;
-
-        for (var i = 0; i < ln; i++) {
-          w += parseInt($children.eq(i).width()) + settings.slideMargin;
-        }
-      }
-
-      return w;
-    };
-
-    plugin = {
-      doCss: function doCss() {
-        var support = function support() {
-          var transition = ['transition', 'MozTransition', 'WebkitTransition', 'OTransition', 'msTransition', 'KhtmlTransition'];
-          var root = document.documentElement;
-
-          for (var i = 0; i < transition.length; i++) {
-            if (transition[i] in root.style) {
-              return true;
-            }
-          }
-        };
-
-        if (settings.useCSS && support()) {
-          return true;
-        }
-
-        return false;
-      },
-      keyPress: function keyPress() {
-        if (settings.keyPress) {
-          $(document).on('keyup.lightslider', function (e) {
-            if (!$(':focus').is('input, textarea')) {
-              if (e.preventDefault) {
-                e.preventDefault();
-              } else {
-                e.returnValue = false;
-              }
-
-              if (e.keyCode === 37) {
-                $el.goToPrevSlide();
-              } else if (e.keyCode === 39) {
-                $el.goToNextSlide();
-              }
-            }
-          });
-        }
-      },
-      controls: function controls() {
-        if (settings.controls) {
-          $el.after('<div class="lSAction"><a class="lSPrev">' + settings.prevHtml + '</a><a class="lSNext">' + settings.nextHtml + '</a></div>');
-
-          if (!settings.autoWidth) {
-            if (length <= settings.item) {
-              $slide.find('.lSAction').hide();
-            }
-          } else {
-            if (refresh.calWidth(false) < elSize) {
-              $slide.find('.lSAction').hide();
-            }
-          }
-
-          $slide.find('.lSAction a').on('click', function (e) {
-            if (e.preventDefault) {
-              e.preventDefault();
-            } else {
-              e.returnValue = false;
-            }
-
-            if ($(this).attr('class') === 'lSPrev') {
-              $el.goToPrevSlide();
-            } else {
-              $el.goToNextSlide();
-            }
-
-            return false;
-          });
-        }
-      },
-      initialStyle: function initialStyle() {
-        var $this = this;
-
-        if (settings.mode === 'fade') {
-          settings.autoWidth = false;
-          settings.slideEndAnimation = false;
-        }
-
-        if (settings.auto) {
-          settings.slideEndAnimation = false;
-        }
-
-        if (settings.autoWidth) {
-          settings.slideMove = 1;
-          settings.item = 1;
-        }
-
-        if (settings.loop) {
-          settings.slideMove = 1;
-          settings.freeMove = false;
-        }
-
-        settings.onBeforeStart.call(this, $el);
-        refresh.chbreakpoint();
-        $el.addClass('lightSlider').wrap('<div class="lSSlideOuter ' + settings.addClass + '"><div class="lSSlideWrapper"></div></div>');
-        $slide = $el.parent('.lSSlideWrapper');
-
-        if (settings.rtl === true) {
-          $slide.parent().addClass('lSrtl');
-        }
-
-        if (settings.vertical) {
-          $slide.parent().addClass('vertical');
-          elSize = settings.verticalHeight;
-          $slide.css('height', elSize + 'px');
-        } else {
-          elSize = $el.outerWidth();
-        }
-
-        $children.addClass('lslide');
-
-        if (settings.loop === true && settings.mode === 'slide') {
-          refresh.calSW();
-
-          refresh.clone = function () {
-            if (refresh.calWidth(true) > elSize) {
-              /**/
-              var tWr = 0,
-                  tI = 0;
-
-              for (var k = 0; k < $children.length; k++) {
-                tWr += parseInt($el.find('.lslide').eq(k).width()) + settings.slideMargin;
-                tI++;
-
-                if (tWr >= elSize + settings.slideMargin) {
-                  break;
-                }
-              }
-
-              var tItem = settings.autoWidth === true ? tI : settings.item;
-              /**/
-
-              if (tItem < $el.find('.clone.left').length) {
-                for (var i = 0; i < $el.find('.clone.left').length - tItem; i++) {
-                  $children.eq(i).remove();
-                }
-              }
-
-              if (tItem < $el.find('.clone.right').length) {
-                for (var j = $children.length - 1; j > $children.length - 1 - $el.find('.clone.right').length; j--) {
-                  scene--;
-                  $children.eq(j).remove();
-                }
-              }
-              /**/
 
 
-              for (var n = $el.find('.clone.right').length; n < tItem; n++) {
-                $el.find('.lslide').eq(n).clone().removeClass('lslide').addClass('clone right').appendTo($el);
-                scene++;
-              }
-
-              for (var m = $el.find('.lslide').length - $el.find('.clone.left').length; m > $el.find('.lslide').length - tItem; m--) {
-                $el.find('.lslide').eq(m - 1).clone().removeClass('lslide').addClass('clone left').prependTo($el);
-              }
-
-              $children = $el.children();
-            } else {
-              if ($children.hasClass('clone')) {
-                $el.find('.clone').remove();
-                $this.move($el, 0);
-              }
-            }
-          };
-
-          refresh.clone();
-        }
-
-        refresh.sSW = function () {
-          length = $children.length;
-
-          if (settings.rtl === true && settings.vertical === false) {
-            gutter = 'margin-left';
-          }
-
-          if (settings.autoWidth === false) {
-            $children.css(property, slideWidth + 'px');
-          }
-
-          $children.css(gutter, settings.slideMargin + 'px');
-          w = refresh.calWidth(false);
-          $el.css(property, w + 'px');
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
-
-          if (settings.loop === true && settings.mode === 'slide') {
-            if (on === false) {
-              scene = $el.find('.clone.left').length;
-            }
-          }
-        };
-
-<<<<<<< HEAD
               for (var n = $el.find('.clone.right').length; n < tItem; n++) {
                 $el.find('.lslide').eq(n).clone().removeClass('lslide').addClass('clone right').appendTo($el);
                 scene++;
@@ -100414,196 +97547,6 @@ if (document.getElementById('ukm')) {
               setTimeout(function () {
                 setCss();
 
-=======
-        refresh.calL = function () {
-          $children = $el.children();
-          length = $children.length;
-        };
-
-        if (this.doCss()) {
-          $slide.addClass('usingCss');
-        }
-
-        refresh.calL();
-
-        if (settings.mode === 'slide') {
-          refresh.calSW();
-          refresh.sSW();
-
-          if (settings.loop === true) {
-            slideValue = $this.slideValue();
-            this.move($el, slideValue);
-          }
-
-          if (settings.vertical === false) {
-            this.setHeight($el, false);
-          }
-        } else {
-          this.setHeight($el, true);
-          $el.addClass('lSFade');
-
-          if (!this.doCss()) {
-            $children.fadeOut(0);
-            $children.eq(scene).fadeIn(0);
-          }
-        }
-
-        if (settings.loop === true && settings.mode === 'slide') {
-          $children.eq(scene).addClass('active');
-        } else {
-          $children.first().addClass('active');
-        }
-      },
-      pager: function pager() {
-        var $this = this;
-
-        refresh.createPager = function () {
-          thumbWidth = (elSize - (settings.thumbItem * settings.thumbMargin - settings.thumbMargin)) / settings.thumbItem;
-          var $children = $slide.find('.lslide');
-          var length = $slide.find('.lslide').length;
-          var i = 0,
-              pagers = '',
-              v = 0;
-
-          for (i = 0; i < length; i++) {
-            if (settings.mode === 'slide') {
-              // calculate scene * slide value
-              if (!settings.autoWidth) {
-                v = i * ((slideWidth + settings.slideMargin) * settings.slideMove);
-              } else {
-                v += (parseInt($children.eq(i).width()) + settings.slideMargin) * settings.slideMove;
-              }
-            }
-
-            var thumb = $children.eq(i * settings.slideMove).attr('data-thumb');
-
-            if (settings.gallery === true) {
-              pagers += '<li style="width:100%;' + property + ':' + thumbWidth + 'px;' + gutter + ':' + settings.thumbMargin + 'px"><a href="#"><img src="' + thumb + '" /></a></li>';
-            } else {
-              pagers += '<li><a href="#">' + (i + 1) + '</a></li>';
-            }
-
-            if (settings.mode === 'slide') {
-              if (v >= w - elSize - settings.slideMargin) {
-                i = i + 1;
-                var minPgr = 2;
-
-                if (settings.autoWidth) {
-                  pagers += '<li><a href="#">' + (i + 1) + '</a></li>';
-                  minPgr = 1;
-                }
-
-                if (i < minPgr) {
-                  pagers = null;
-                  $slide.parent().addClass('noPager');
-                } else {
-                  $slide.parent().removeClass('noPager');
-                }
-
-                break;
-              }
-            }
-          }
-
-          var $cSouter = $slide.parent();
-          $cSouter.find('.lSPager').html(pagers);
-
-          if (settings.gallery === true) {
-            if (settings.vertical === true) {
-              // set Gallery thumbnail width
-              $cSouter.find('.lSPager').css('width', settings.vThumbWidth + 'px');
-            }
-
-            pagerWidth = i * (settings.thumbMargin + thumbWidth) + 0.5;
-            $cSouter.find('.lSPager').css({
-              property: pagerWidth + 'px',
-              'transition-duration': settings.speed + 'ms'
-            });
-
-            if (settings.vertical === true) {
-              $slide.parent().css('padding-right', settings.vThumbWidth + settings.galleryMargin + 'px');
-            }
-
-            $cSouter.find('.lSPager').css(property, pagerWidth + 'px');
-          }
-
-          var $pager = $cSouter.find('.lSPager').find('li');
-          $pager.first().addClass('active');
-          $pager.on('click', function () {
-            if (settings.loop === true && settings.mode === 'slide') {
-              scene = scene + ($pager.index(this) - $cSouter.find('.lSPager').find('li.active').index());
-            } else {
-              scene = $pager.index(this);
-            }
-
-            $el.mode(false);
-
-            if (settings.gallery === true) {
-              $this.slideThumb();
-            }
-
-            return false;
-          });
-        };
-
-        if (settings.pager) {
-          var cl = 'lSpg';
-
-          if (settings.gallery) {
-            cl = 'lSGallery';
-          }
-
-          $slide.after('<ul class="lSPager ' + cl + '"></ul>');
-          var gMargin = settings.vertical ? 'margin-left' : 'margin-top';
-          $slide.parent().find('.lSPager').css(gMargin, settings.galleryMargin + 'px');
-          refresh.createPager();
-        }
-
-        setTimeout(function () {
-          refresh.init();
-        }, 0);
-      },
-      setHeight: function setHeight(ob, fade) {
-        var obj = null,
-            $this = this;
-
-        if (settings.loop) {
-          obj = ob.children('.lslide ').first();
-        } else {
-          obj = ob.children().first();
-        }
-
-        var setCss = function setCss() {
-          var tH = obj.outerHeight(),
-              tP = 0,
-              tHT = tH;
-
-          if (fade) {
-            tH = 0;
-            tP = tHT * 100 / elSize;
-          }
-
-          ob.css({
-            'height': tH + 'px',
-            'padding-bottom': tP + '%'
-          });
-        };
-
-        setCss();
-
-        if (obj.find('img').length) {
-          if (obj.find('img')[0].complete) {
-            setCss();
-
-            if (!interval) {
-              $this.auto();
-            }
-          } else {
-            obj.find('img').on('load', function () {
-              setTimeout(function () {
-                setCss();
-
->>>>>>> 761e02a7935fbfe73f339344222ddb6311c35089
                 if (!interval) {
                   $this.auto();
                 }
