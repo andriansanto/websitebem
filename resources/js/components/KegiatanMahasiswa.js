@@ -23,17 +23,17 @@ $(document).ready(function() {
 }
 
 function changeTab(){
-    var radio = document.getElementsByClassName("radio");
-    console.log(radio.length);
-    console.log("test");
-        if(document.querySelector(".keg").value == 'keg'){
-            document.getElementsByClassName("text-tab-pane").style.cssText = "background-image: linear-gradient(#ffb359,#ffffff);"
-            console.log("pertama");
-        }
-        else if(document.querySelector(".lso").value == 'lso'){
-            document.getElementsByClassName("text-tab-pane").style.cssText = "background-image: linear-gradient(#ade2b2,#ffffff);"
-            console.log("kedua");
-        }
+    // var radio = document.getElementsByClassName("radio");
+    // console.log(radio.length);
+    // console.log("test");
+    //     if(document.querySelector(".keg").value == 'keg'){
+    //         document.getElementsByClassName("text-tab-pane").style.cssText = "background-image: linear-gradient(#ffb359,#ffffff);"
+    //         console.log("pertama");
+    //     }
+    //     else if(document.querySelector(".lso").value == 'lso'){
+    //         document.getElementsByClassName("text-tab-pane").style.cssText = "background-image: linear-gradient(#ade2b2,#ffffff);"
+    //         console.log("kedua");
+    //     }
 
 }
 
