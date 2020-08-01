@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import '../../css/reacthimp.css';
+import {Container, Row, Col} from 'reactstrap';
 
 class Himpunan extends Component{
 render(){
@@ -14,23 +15,29 @@ return(
             Keempat fakultas terbagi menjadi beberapa jurusan dengan dinaungi oleh <br></br>
             himpunan jurusan tersebut. Berikut merupakan ke 11 himpunan yang terdapat <br></br>
             pada Universitas Multimedia Nusantara
-            </p>          
+            </p>      
         </div>
         <Container>
             <Row>
-                <Col className="card heads">FAKULTAS</Col>
                 <Col className="card">
-                    <div className="fakultas-title">ILMU KOMUNITAS</div>
-                    <img src="../../public/assets/himp/ilkom.jpg"></img>
+                    <h2 className="heads-title">FAKULTAS</h2>
+                    <img className="set bg"></img>
                 </Col>
                 <Col className="card">
-                    <div className="fakultas-title">SENI DAN DESAIN</div>
+                    <h5 className="fakultas-title">ILMU KOMUNIKASI</h5>
+                    <img className="set" src="assets/himp/ilkom.jpg"></img>
                 </Col>
                 <Col className="card">
-                    <div className="fakultas-title">TEKNIK INFORMATIKA</div>
+                    <h5 className="fakultas-title">SENI DAN DESAIN</h5>
+                    <img className="set" src="assets/himp/fsd.jpg"></img>
                 </Col>
                 <Col className="card">
-                    <div className="fakultas-title">BISNIS</div>
+                    <h5 className="fakultas-title">TEKNIK INFORMATIKA</h5>
+                    <img className="set" src="assets/himp/fti.jpg"></img>
+                </Col>
+                <Col className="card">
+                    <h5 className="fakultas-title">BISNIS</h5>
+                    <img className="set" src="assets/himp/bisnis.jpg"></img>
                 </Col>
             </Row>
         </Container>
