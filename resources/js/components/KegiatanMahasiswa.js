@@ -22,42 +22,39 @@ $(document).ready(function() {
     });
 }
 
-function changeTab(){
-    // var radio = document.getElementsByClassName("radio");
-    // console.log(radio.length);
-    // console.log("test");
-    //     if(document.querySelector(".keg").value == 'keg'){
-    //         document.getElementsByClassName("text-tab-pane").style.cssText = "background-image: linear-gradient(#ffb359,#ffffff);"
-    //         console.log("pertama");
-    //     }
-    //     else if(document.querySelector(".lso").value == 'lso'){
-    //         document.getElementsByClassName("text-tab-pane").style.cssText = "background-image: linear-gradient(#ade2b2,#ffffff);"
-    //         console.log("kedua");
-    //     }
-
-}
-
 class KegiatanMahasiswa extends Component{
     constructor() {
         super();
-        this.state = { tabIndex: 0 };
+        this.state = { tabIndex: 0 , radio: "kegiatan", backgroundcolor: "" };
+
+        this.onCheckRadio = this.onCheckRadio.bind(this)
     }
 
-    // onCheckRadio(e){
-    //     console.log(e.target.value);
+    onCheckRadio(e){
+        console.log(e.target.value);
 
-    //     this.setState({
-    //         [e.target.name]: e.target.checked
-    //     })
-    // }
+        if(e.target.value == "kegiatan"){
+            this.setState({
+                [e.target.name]: e.target.value,
+                backgroundcolor: 'linear-gradient(#ffb359,#ffffff)'
+            })
+        }
+        else if(e.target.value == "lso"){
+            this.setState({
+                [e.target.name]: e.target.value,
+                backgroundcolor: 'linear-gradient(#ade2b2,#ffffff)'
+            })
+        }
+    }
+
+
     render(){
+        const { backgroundcolor } = this.state
         const displayTabs = (
             <Tabs selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({ tabIndex })} onClick={slider()}>
             <TabList>
-            <div id="wrap">
-            <Tab className="text-tab-pane"><input type="radio" className="radio" id="keg" onClick={changeTab()}></input>Kegiatan<br></br>Mahasiswa</Tab>
-            <Tab className="text-tab-pane"><input type="radio" className="radio" id="lso" onClick={changeTab()}></input>Lembaga<br></br>Semi Otonom</Tab>
-            </div>
+            <Tab className="text-tab-pane" style={{backgroundImage: backgroundcolor}}><input type="radio" name="radio" id="keg" value="kegiatan" checked={this.state.radio === "kegiatan"} onChange={this.onCheckRadio}></input>Kegiatan<br></br>Mahasiswa</Tab>
+            <Tab className="text-tab-pane" style={{backgroundImage: backgroundcolor}}><input type="radio" name="radio" id="lso" value="lso" checked={this.state.radio === "lso"} onChange={this.onCheckRadio}></input>Lembaga<br></br>Semi Otonom</Tab>
             </TabList>
 
             {/*TAB PAN KEGIATAN*/}
@@ -314,7 +311,7 @@ class KegiatanMahasiswa extends Component{
                     <img src="assets/lso/logorumpinbig.png" className="model-lso-box"></img>
                     </div>
                     <div className="col">
-                    <p className="title">RUMPIN</p>
+                    <p className="title-lso">RUMPIN</p>
 
                     {/*Penjelasan*/}
                     <div className="info">
@@ -350,7 +347,7 @@ class KegiatanMahasiswa extends Component{
                     <img src="assets/lso/logoubizbig.png" className="model-lso-box"></img>
                     </div>
                     <div className="col">
-                    <p className="title">U-BIZ</p>
+                    <p className="title-lso">U-BIZ</p>
 
                     {/*Penjelasan*/}
                     <div className="info">
@@ -386,7 +383,7 @@ class KegiatanMahasiswa extends Component{
                     <img src="assets/lso/logodunarbig.png" className="model-lso-dunar"></img>
                     </div>
                     <div className="col">
-                    <p className="title">DUTA ANTI NARKOBA</p>
+                    <p className="title-lso">DUTA ANTI NARKOBA</p>
 
                     {/*Penjelasan*/}
                     <div className="info">
@@ -423,7 +420,7 @@ class KegiatanMahasiswa extends Component{
                     <img src="assets/lso/logomedicbig.png" className="model-lso-medic"></img>
                     </div>
                     <div className="col">
-                    <p className="title">UMN MEDIC</p>
+                    <p className="title-lso">UMN MEDIC</p>
 
                     {/*Penjelasan*/}
                     <div className="info">
@@ -459,7 +456,7 @@ class KegiatanMahasiswa extends Component{
                     <img src="assets/lso/logokomcorbig.png" className="model-lso-komcor"></img>
                     </div>
                     <div className="col">
-                    <p className="title">KOMPAS CORNER</p>
+                    <p className="title-lso">KOMPAS CORNER</p>
 
                     {/*Penjelasan*/}
                     <div className="info">
@@ -495,7 +492,7 @@ class KegiatanMahasiswa extends Component{
                     <img src="assets/lso/logoustorebig.png" className="model-lso-ustore"></img>
                     </div>
                     <div className="col">
-                    <p className="title">U-STORE</p>
+                    <p className="title-lso">U-STORE</p>
 
                     {/*Penjelasan*/}
                     <div className="info">
@@ -539,19 +536,6 @@ return(
     );
 }
 }
-
-// $( document ).ready(function() {
-// var wrapper = document.getElementById("wrap");
-// var tabs = wrapper.getElementsByClassName("page");
-// console.log(tabs.length);
-// for (var i = 0; i < tabs.length; i++) {
-//   tabs[i].addEventListener("click", function() {
-//   var current = document.getElementsByClassName("active");
-//   current[0].className = current[0].className.replace(" active", "");
-//   this.className += " active";
-//   });
-// }
-// });
 
 
 export default KegiatanMahasiswa;

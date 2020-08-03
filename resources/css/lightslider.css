@@ -170,7 +170,7 @@
     left: 10px;
 }
 .lSAction > .lSNext {
-    background-position: -32px 0;
+    background-position: 0 0;
     right: 10px;
 }
 .lSAction > a.disabled {

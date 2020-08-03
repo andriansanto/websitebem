@@ -20,14 +20,11 @@
   }
 
 input[type=radio] {
-	position: fixed;
-    transform: scale(60);
-    visibility: hidden;
+	position: absolute;
+    transform: scale(58);
+    opacity: 0;
 }
 
-/* .input:checked ~ .text-tab-pane {
-	background-image:linear-gradient( #ade2b2, #ffffff);
-} */
 
 .react-tabs__tab--selected {
     /* border-color: #aaa; */
@@ -44,6 +41,28 @@ input[type=radio] {
 .a{
     text-decoration: none;
 }
+/* 
+.lSNext{
+    background-image: url(../../public/assets/arrowgreykanan.png);
+    width: 40px;
+    height: 35px;
+}
+
+.lSAction > .lSNext{
+    width: 40px;
+    height: 35px;
+}
+
+.lSPrev{
+    background-image: url(../../public/assets/arrowgreykiri.png);
+    width: 35px;
+    height: 35px;
+}
+
+.lSAction > .lSPrev{
+    width: 35px;
+    height: 35px;
+} */
 
 .container-slider-keg{
     width: 100%;
@@ -166,6 +185,15 @@ input[type=radio] {
     text-align: left;
 }
 
+.title-lso{
+    color: #ade2b2;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    text-align: left;
+}
+
 @media (max-width:768px){
     .box{
         width: auto;
@@ -177,6 +205,14 @@ input[type=radio] {
         justify-content: space-between;
         box-sizing: border-box;
         margin: 20px 10px;
+    }
+
+    input[type=radio] {
+        position: absolute;
+        transform: scale(29);
+        margin-left: -8px;
+        margin-top: 35px;
+        opacity: 0;
     }
     
     
@@ -280,6 +316,15 @@ input[type=radio] {
         font-size: 20px;
         text-align: left;
     }
+
+    .title-lso{
+        color: #ade2b2;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        text-align: left;
+    }
 }
 
 @media (max-width:480px){
@@ -293,6 +338,14 @@ input[type=radio] {
         justify-content: space-between;
         box-sizing: border-box;
         margin: 20px 10px;
+    }
+
+    input[type=radio] {
+        position: absolute;
+        transform: scale(17);
+        margin-left: 85px;
+        margin-top: 100px;
+        opacity: 0;
     }
     
     
@@ -389,6 +442,15 @@ input[type=radio] {
     
     .title{
         color: #ffb359;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        text-align: left;
+    }
+
+    .title-lso{
+        color: #ade2b2;
         font-weight: bold;
         letter-spacing: 2px;
         font-family: 'Montserrat', sans-serif;
