@@ -64,6 +64,58 @@ class AboutUs extends Component{
 
 </li>{/*Ulson*/}
 
+{/*1*/}
+<li className="item-a">
+        
+        {/*Slider Box*/}
+    <div className="box-aboutus">
+        {/*model*/}
+
+        {/*Penjelasan*/}
+        {/* <div className="penjelasan"> */}
+        <img className="penjelasan-aboutus" src="assets/aboutus/au10.png"></img>
+        {/* </div> */}
+
+        {/*details*/}
+        
+        <div className="details"> 
+        {/*logo char*/}
+        {/*<img src="#" className="logo" width="100px" style="hieght: auto;"></img>*/}
+        {/*char details*/}
+        </div>{/*details*/}
+
+    </div>{/*Box*/}
+
+    
+
+</li>{/*Ulson*/}
+
+{/*1*/}
+<li className="item-a">
+        
+        {/*Slider Box*/}
+    <div className="box-aboutus">
+        {/*model*/}
+
+        {/*Penjelasan*/}
+        {/* <div className="penjelasan"> */}
+        <img className="penjelasan-aboutus" src="assets/aboutus/au10.png"></img>
+        {/* </div> */}
+
+        {/*details*/}
+        
+        <div className="details"> 
+        {/*logo char*/}
+        {/*<img src="#" className="logo" width="100px" style="hieght: auto;"></img>*/}
+        {/*char details*/}
+        </div>{/*details*/}
+
+    </div>{/*Box*/}
+
+    
+
+</li>{/*Ulson*/}
+
 
             </ul>
 
