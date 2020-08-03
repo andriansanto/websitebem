@@ -8,11 +8,21 @@ import '../slidersukm/sliderqueryabout';
 import '../../css/reactabout.css';
 
 
+    $(document).ready(function() {
+        $('#autoWidth').lightSlider({
+            autoWidth:true,
+            loop:true,
+            onSliderLoad: function() {
+                $('#autoWidth').removeClass('cs-hidden');
+            } 
+        });  
+        });
+
 class AboutUs extends Component{
     render(){
 
     return(
-            <div className="container">
+            <div>
 
             {/*Foto about bem*/}  
             <div className="fotoatas">
@@ -21,9 +31,9 @@ class AboutUs extends Component{
 
 
         {/*Foto per Gen*/}  
-        <div className="container-awal">
+        {/* <div className="container-awal"> */}
 
-        <div className="container-slider">
+        <div className="container-slider-aboutus">
             {/*Slider*/}
             
         <ul id="autoWidth" className="cs-hidden">
@@ -32,14 +42,13 @@ class AboutUs extends Component{
     <li className="item-a">
         
         {/*Slider Box*/}
-    <div className="box">
-        <p className="senbud">Gen 10</p>
+    <div className="box-aboutus">
         {/*model*/}
 
         {/*Penjelasan*/}
-        <div className="penjelasan">
-        <img src="assets/aboutus/au10.png"></img>
-        </div>
+        {/* <div className="penjelasan"> */}
+        <img className="penjelasan-aboutus" src="assets/aboutus/au10.png"></img>
+        {/* </div> */}
 
         {/*details*/}
         
@@ -51,6 +60,8 @@ class AboutUs extends Component{
 
     </div>{/*Box*/}
 
+    
+
 </li>{/*Ulson*/}
 
 
@@ -58,7 +69,7 @@ class AboutUs extends Component{
 
             </div>{/*container slider*/}
 
-            </div>{/*Containerawal*/}
+           {/* </div>Containerawal */}
 
         </div>
         );
