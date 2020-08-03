@@ -6979,7 +6979,7 @@ exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base
 
 
 // module
-exports.push([module.i, ".react-tabs {\n  -webkit-tap-highlight-color: transparent;\n}\n\n.react-tabs__tab-list {\n  border-bottom: 1px solid #aaa;\n  margin: 0 0 10px;\n  padding: 0;\n}\n\n.react-tabs__tab {\n  display: inline-block;\n  border: 1px solid transparent;\n  border-bottom: none;\n  bottom: -1px;\n  position: relative;\n  list-style: none;\n  padding: 6px 12px;\n  cursor: pointer;\n}\n\n.react-tabs__tab--selected {\n  background: #fff;\n  border-color: #aaa;\n  color: black;\n  border-radius: 5px 5px 0 0;\n}\n\n.react-tabs__tab--disabled {\n  color: GrayText;\n  cursor: default;\n}\n\n.react-tabs__tab:focus {\n  box-shadow: 0 0 5px hsl(208, 99%, 50%);\n  border-color: hsl(208, 99%, 50%);\n  outline: none;\n}\n\n.react-tabs__tab:focus:after {\n  content: \"\";\n  position: absolute;\n  height: 5px;\n  left: -4px;\n  right: -4px;\n  bottom: -5px;\n  background: #fff;\n}\n\n.react-tabs__tab-panel {\n  display: none;\n}\n\n.react-tabs__tab-panel--selected {\n  display: block;\n}\n", ""]);
+exports.push([module.i, ".react-tabs {\n  -webkit-tap-highlight-color: transparent;\n}\n\n.react-tabs__tab-list {\n  border-bottom: 0px solid #aaa;\n  margin: 0 0 0px;\n  padding: 0;\n}\n\n.react-tabs__tab {\n  border: 1px solid transparent;\n  border-bottom: none;\n  bottom: -1px;\n  position: relative;\n  list-style: none;\n  padding: 6px 12px;\n  cursor: pointer;\n}\n\n.react-tabs__tab--selected {\n  /* border-color: #aaa; */\n  color: white;\n  border-radius: 5px 5px 0 0;\n}\n\n.react-tabs__tab--disabled {\n  color: GrayText;\n  cursor: default;\n}\n\n.react-tabs__tab:focus {\n  box-shadow: 0 0 5px hsl(208, 99%, 50%);\n  border-color: hsl(208, 99%, 50%);\n  outline: none;\n}\n\n.react-tabs__tab:focus:after {\n  content: \"\";\n  position: absolute;\n  height: 5px;\n  left: -4px;\n  right: -4px;\n  bottom: -5px;\n  background: #fff;\n}\n\n.react-tabs__tab-panel {\n  display: none;\n}\n\n.react-tabs__tab-panel--selected {\n  display: block;\n}\n", ""]);
 
 // exports
 
@@ -7018,7 +7018,7 @@ exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base
 
 
 // module
-exports.push([module.i, "/* Slider */\n.slick-slider\n{\n    position: relative;\n\n    display: block;\n    box-sizing: border-box;\n\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    -webkit-touch-callout: none;\n    -khtml-user-select: none;\n    touch-action: pan-y;\n    -webkit-tap-highlight-color: transparent;\n}\n\n.slick-list\n{\n    position: relative;\n\n    display: block;\n    overflow: hidden;\n\n    margin: 0;\n    padding: 0;\n}\n.slick-list:focus\n{\n    outline: none;\n}\n.slick-list.dragging\n{\n    cursor: pointer;\n    cursor: hand;\n}\n\n.slick-slider .slick-track,\n.slick-slider .slick-list\n{\n    transform: translate3d(0, 0, 0);\n}\n\n.slick-track\n{\n    position: relative;\n    top: 0;\n    left: 0;\n\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n.slick-track:before,\n.slick-track:after\n{\n    display: table;\n\n    content: '';\n}\n.slick-track:after\n{\n    clear: both;\n}\n.slick-loading .slick-track\n{\n    visibility: hidden;\n}\n\n.slick-slide\n{\n    display: none;\n    float: left;\n\n    height: 100%;\n    min-height: 1px;\n}\n[dir='rtl'] .slick-slide\n{\n    float: right;\n}\n.slick-slide img\n{\n    display: block;\n}\n.slick-slide.slick-loading img\n{\n    display: none;\n}\n.slick-slide.dragging img\n{\n    pointer-events: none;\n}\n.slick-initialized .slick-slide\n{\n    display: block;\n}\n.slick-loading .slick-slide\n{\n    visibility: hidden;\n}\n.slick-vertical .slick-slide\n{\n    display: block;\n\n    height: auto;\n\n    border: 1px solid transparent;\n}\n.slick-arrow.slick-hidden {\n    display: none;\n}\n", ""]);
+exports.push([module.i, "/* Slider */\n.slick-slider\n{\n    position: relative;\n\n    display: block;\n    box-sizing: border-box;\n    width: 100%;\n    height: 400px;\n\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    -webkit-touch-callout: none;\n    -khtml-user-select: none;\n    touch-action: pan-y;\n    -webkit-tap-highlight-color: transparent;\n}\n\n.slick-list\n{\n    position: relative;\n\n    display: block;\n    overflow: hidden;\n\n    margin: 0;\n    padding: 0;\n}\n.slick-list:focus\n{\n    outline: none;\n}\n.slick-list.dragging\n{\n    cursor: pointer;\n    cursor: hand;\n}\n\n.slick-slider .slick-track,\n.slick-slider .slick-list\n{\n    transform: translate3d(0, 0, 0);\n}\n\n.slick-track\n{\n    position: relative;\n    top: 0;\n    left: 0;\n\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n.slick-track:before,\n.slick-track:after\n{\n    display: table;\n\n    content: '';\n}\n.slick-track:after\n{\n    clear: both;\n}\n.slick-loading .slick-track\n{\n    visibility: hidden;\n}\n\n.slick-slide\n{\n    display: none;\n    float: left;\n\n    height: 100%;\n    min-height: 1px;\n}\n[dir='rtl'] .slick-slide\n{\n    float: right;\n}\n.slick-slide img\n{\n    display: block;\n}\n.slick-slide.slick-loading img\n{\n    display: none;\n}\n.slick-slide.dragging img\n{\n    pointer-events: none;\n}\n.slick-initialized .slick-slide\n{\n    display: block;\n}\n.slick-loading .slick-slide\n{\n    visibility: hidden;\n}\n.slick-vertical .slick-slide\n{\n    display: block;\n\n    height: auto;\n\n    border: 1px solid transparent;\n}\n.slick-arrow.slick-hidden {\n    display: none;\n}\n", ""]);
 
 // exports
 
@@ -7037,7 +7037,26 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "/*! lightslider - v1.1.3 - 2015-04-14\r\n* https://github.com/sachinchoolur/lightslider\r\n* Copyright (c) 2015 Sachin N; Licensed MIT */\r\n/** /!!! core css Should not edit !!!/**/ \r\n\r\n.lSSlideOuter {\r\n    overflow: hidden;\r\n    -webkit-touch-callout: none;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none\r\n}\r\n.lightSlider:before, .lightSlider:after {\r\n    content: \" \";\r\n    display: table;\r\n}\r\n.lightSlider {\r\n    overflow: hidden;\r\n    margin: 0;\r\n}\r\n.lSSlideWrapper {\r\n    max-width: 100%;\r\n    overflow: hidden;\r\n    position: relative;\r\n}\r\n.lSSlideWrapper > .lightSlider:after {\r\n    clear: both;\r\n}\r\n.lSSlideWrapper .lSSlide {\r\n    transform: translate(0px, 0px);\r\n    -webkit-transition: all 1s;\r\n    transition-property: transform,height;\r\n    transition-duration: inherit !important;\r\n    transition-timing-function: inherit !important;\r\n}\r\n.lSSlideWrapper .lSFade {\r\n    position: relative;\r\n}\r\n.lSSlideWrapper .lSFade > * {\r\n    position: absolute !important;\r\n    top: 0;\r\n    left: 0;\r\n    z-index: 9;\r\n    margin-right: 0;\r\n    width: 100%;\r\n}\r\n.lSSlideWrapper.usingCss .lSFade > * {\r\n    opacity: 0;\r\n    transition-delay: 0s;\r\n    transition-duration: inherit !important;\r\n    transition-property: opacity;\r\n    transition-timing-function: inherit !important;\r\n}\r\n.lSSlideWrapper .lSFade > *.active {\r\n    z-index: 10;\r\n}\r\n.lSSlideWrapper.usingCss .lSFade > *.active {\r\n    opacity: 1;\r\n}\r\n/** /!!! End of core css Should not edit !!!/**/\r\n\r\n/* Pager */\r\n.lSSlideOuter .lSPager.lSpg {\r\n    margin: 10px 0 0;\r\n    padding: 0;\r\n    text-align: center;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li {\r\n    cursor: pointer;\r\n    display: inline-block;\r\n    padding: 0 5px;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li a {\r\n    background-color: #222222;\r\n    border-radius: 30px;\r\n    display: inline-block;\r\n    height: 8px;\r\n    overflow: hidden;\r\n    text-indent: -999em;\r\n    width: 8px;\r\n    position: relative;\r\n    z-index: 99;\r\n    transition: all 0.5s linear 0s;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {\r\n    background-color: #428bca;\r\n}\r\n.lSSlideOuter .media {\r\n    opacity: 0.8;\r\n}\r\n.lSSlideOuter .media.active {\r\n    opacity: 1;\r\n}\r\n/* End of pager */\r\n\r\n/** Gallery */\r\n.lSSlideOuter .lSPager.lSGallery {\r\n    list-style: none outside none;\r\n    padding-left: 0;\r\n    margin: 0;\r\n    overflow: hidden;\r\n    transform: translate3d(0px, 0px, 0px);\r\n    -moz-transform: translate3d(0px, 0px, 0px);\r\n    -ms-transform: translate3d(0px, 0px, 0px);\r\n    -webkit-transform: translate3d(0px, 0px, 0px);\r\n    -o-transform: translate3d(0px, 0px, 0px);\r\n    -webkit-transition-property: -webkit-transform;\r\n    -moz-transition-property: -moz-transform;\r\n    -webkit-touch-callout: none;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery li {\r\n    overflow: hidden;\r\n    transition: border-radius 0.12s linear 0s 0.35s linear 0s;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {\r\n    border-radius: 5px;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery img {\r\n    display: block;\r\n    height: auto;\r\n    max-width: 100%;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery:before, .lSSlideOuter .lSPager.lSGallery:after {\r\n    content: \" \";\r\n    display: table;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery:after {\r\n    clear: both;\r\n}\r\n/* End of Gallery*/\r\n\r\n/* slider actions */\r\n.lSAction > a {\r\n    width: 32px;\r\n    display: block;\r\n    top: 50%;\r\n    height: 32px;\r\n    cursor: pointer;\r\n    position: absolute;\r\n    z-index: 99;\r\n    margin-top: -16px;\r\n    opacity: 0.5;\r\n    transition: opacity 0.35s linear 0s;\r\n}\r\n.lSAction > a:hover {\r\n    opacity: 1;\r\n}\r\n.lSAction > .lSPrev {\r\n    background-position: 0 0;\r\n    left: 10px;\r\n}\r\n.lSAction > .lSNext {\r\n    background-position: -32px 0;\r\n    right: 10px;\r\n}\r\n.lSAction > a.disabled {\r\n    pointer-events: none;\r\n}\r\n.cS-hidden {\r\n    height: 1px;\r\n    opacity: 0;\r\n    filter: alpha(opacity=0);\r\n    overflow: hidden;\r\n}\r\n\r\n\r\n/* vertical */\r\n.lSSlideOuter.vertical {\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical.noPager {\r\n    padding-right: 0px !important;\r\n}\r\n.lSSlideOuter.vertical .lSGallery {\r\n    position: absolute !important;\r\n    right: 0;\r\n    top: 0;\r\n}\r\n.lSSlideOuter.vertical .lightSlider > * {\r\n    width: 100% !important;\r\n    max-width: none !important;\r\n}\r\n\r\n/* vertical controlls */\r\n.lSSlideOuter.vertical .lSAction > a {\r\n    left: 50%;\r\n    margin-left: -14px;\r\n    margin-top: 0;\r\n}\r\n.lSSlideOuter.vertical .lSAction > .lSNext {\r\n    background-position: 31px -31px;\r\n    bottom: 10px;\r\n    top: auto;\r\n}\r\n.lSSlideOuter.vertical .lSAction > .lSPrev {\r\n    background-position: 0 -31px;\r\n    bottom: auto;\r\n    top: 10px;\r\n}\r\n/* vertical */\r\n\r\n\r\n/* Rtl */\r\n.lSSlideOuter.lSrtl {\r\n    direction: rtl;\r\n}\r\n.lSSlideOuter .lightSlider, .lSSlideOuter .lSPager {\r\n    padding-left: 0;\r\n    list-style: none outside none;\r\n}\r\n.lSSlideOuter.lSrtl .lightSlider, .lSSlideOuter.lSrtl .lSPager {\r\n    padding-right: 0;\r\n}\r\n.lSSlideOuter .lightSlider > *,  .lSSlideOuter .lSGallery li {\r\n    float: left;\r\n}\r\n.lSSlideOuter.lSrtl .lightSlider > *,  .lSSlideOuter.lSrtl .lSGallery li {\r\n    float: right !important;\r\n}\r\n/* Rtl */\r\n\r\n@-webkit-keyframes rightEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: -15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@keyframes rightEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: -15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@-webkit-keyframes topEnd {\r\n    0% {\r\n        top: 0;\r\n    }\r\n\r\n    50% {\r\n        top: -15px;\r\n    }\r\n\r\n    100% {\r\n        top: 0;\r\n    }\r\n}\r\n@keyframes topEnd {\r\n    0% {\r\n        top: 0;\r\n    }\r\n\r\n    50% {\r\n        top: -15px;\r\n    }\r\n\r\n    100% {\r\n        top: 0;\r\n    }\r\n}\r\n@-webkit-keyframes leftEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: 15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@keyframes leftEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: 15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@-webkit-keyframes bottomEnd {\r\n    0% {\r\n        bottom: 0;\r\n    }\r\n\r\n    50% {\r\n        bottom: -15px;\r\n    }\r\n\r\n    100% {\r\n        bottom: 0;\r\n    }\r\n}\r\n@keyframes bottomEnd {\r\n    0% {\r\n        bottom: 0;\r\n    }\r\n\r\n    50% {\r\n        bottom: -15px;\r\n    }\r\n\r\n    100% {\r\n        bottom: 0;\r\n    }\r\n}\r\n.lSSlideOuter .rightEnd {\r\n    -webkit-animation: rightEnd 0.3s;\r\n    animation: rightEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter .leftEnd {\r\n    -webkit-animation: leftEnd 0.3s;\r\n    animation: leftEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical .rightEnd {\r\n    -webkit-animation: topEnd 0.3s;\r\n    animation: topEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical .leftEnd {\r\n    -webkit-animation: bottomEnd 0.3s;\r\n    animation: bottomEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.lSrtl .rightEnd {\r\n    -webkit-animation: leftEnd 0.3s;\r\n    animation: leftEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.lSrtl .leftEnd {\r\n    -webkit-animation: rightEnd 0.3s;\r\n    animation: rightEnd 0.3s;\r\n    position: relative;\r\n}\r\n/*/  GRab cursor */\r\n.lightSlider.lsGrab > * {\r\n  cursor: -webkit-grab;\r\n  cursor: -o-grab;\r\n  cursor: -ms-grab;\r\n  cursor: grab;\r\n}\r\n.lightSlider.lsGrabbing > * {\r\n  cursor: move;\r\n  cursor: -webkit-grabbing;\r\n  cursor: -o-grabbing;\r\n  cursor: -ms-grabbing;\r\n  cursor: grabbing;\r\n}\r\n", ""]);
+exports.push([module.i, "/*! lightslider - v1.1.3 - 2015-04-14\r\n* https://github.com/sachinchoolur/lightslider\r\n* Copyright (c) 2015 Sachin N; Licensed MIT */\r\n/** /!!! core css Should not edit !!!/**/ \r\n\r\n.lSSlideOuter {\r\n    overflow: hidden;\r\n    -webkit-touch-callout: none;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none\r\n}\r\n.lightSlider:before, .lightSlider:after {\r\n    content: \" \";\r\n    display: table;\r\n}\r\n.lightSlider {\r\n    overflow: hidden;\r\n    margin: 0;\r\n}\r\n.lSSlideWrapper {\r\n    max-width: 100%;\r\n    overflow: hidden;\r\n    position: relative;\r\n}\r\n.lSSlideWrapper > .lightSlider:after {\r\n    clear: both;\r\n}\r\n.lSSlideWrapper .lSSlide {\r\n    transform: translate(0px, 0px);\r\n    -webkit-transition: all 1s;\r\n    transition-property: transform,height;\r\n    transition-duration: inherit !important;\r\n    transition-timing-function: inherit !important;\r\n}\r\n.lSSlideWrapper .lSFade {\r\n    position: relative;\r\n}\r\n.lSSlideWrapper .lSFade > * {\r\n    position: absolute !important;\r\n    top: 0;\r\n    left: 0;\r\n    z-index: 9;\r\n    margin-right: 0;\r\n    width: 100%;\r\n}\r\n.lSSlideWrapper.usingCss .lSFade > * {\r\n    opacity: 0;\r\n    transition-delay: 0s;\r\n    transition-duration: inherit !important;\r\n    transition-property: opacity;\r\n    transition-timing-function: inherit !important;\r\n}\r\n.lSSlideWrapper .lSFade > *.active {\r\n    z-index: 10;\r\n}\r\n.lSSlideWrapper.usingCss .lSFade > *.active {\r\n    opacity: 1;\r\n}\r\n/** /!!! End of core css Should not edit !!!/**/\r\n\r\n/* Pager */\r\n.lSSlideOuter .lSPager.lSpg {\r\n    margin: 10px 0 0;\r\n    padding: 0;\r\n    text-align: center;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li {\r\n    cursor: pointer;\r\n    display: inline-block;\r\n    padding: 0 5px;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li a {\r\n    background-color: #222222;\r\n    border-radius: 30px;\r\n    display: inline-block;\r\n    height: 8px;\r\n    overflow: hidden;\r\n    text-indent: -999em;\r\n    width: 8px;\r\n    position: relative;\r\n    z-index: 99;\r\n    transition: all 0.5s linear 0s;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {\r\n    background-color: #428bca;\r\n}\r\n.lSSlideOuter .media {\r\n    opacity: 0.8;\r\n}\r\n.lSSlideOuter .media.active {\r\n    opacity: 1;\r\n}\r\n/* End of pager */\r\n\r\n/** Gallery */\r\n.lSSlideOuter .lSPager.lSGallery {\r\n    list-style: none outside none;\r\n    padding-left: 0;\r\n    margin: 0;\r\n    overflow: hidden;\r\n    transform: translate3d(0px, 0px, 0px);\r\n    -moz-transform: translate3d(0px, 0px, 0px);\r\n    -ms-transform: translate3d(0px, 0px, 0px);\r\n    -webkit-transform: translate3d(0px, 0px, 0px);\r\n    -o-transform: translate3d(0px, 0px, 0px);\r\n    -webkit-transition-property: -webkit-transform;\r\n    -moz-transition-property: -moz-transform;\r\n    -webkit-touch-callout: none;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery li {\r\n    overflow: hidden;\r\n    transition: border-radius 0.12s linear 0s 0.35s linear 0s;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {\r\n    border-radius: 5px;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery img {\r\n    display: block;\r\n    height: auto;\r\n    max-width: 100%;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery:before, .lSSlideOuter .lSPager.lSGallery:after {\r\n    content: \" \";\r\n    display: table;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery:after {\r\n    clear: both;\r\n}\r\n/* End of Gallery*/\r\n\r\n/* slider actions */\r\n.lSAction > a {\r\n    width: 32px;\r\n    display: block;\r\n    top: 50%;\r\n    height: 32px;\r\n    cursor: pointer;\r\n    position: absolute;\r\n    z-index: 99;\r\n    margin-top: -16px;\r\n    opacity: 0.5;\r\n    transition: opacity 0.35s linear 0s;\r\n}\r\n.lSAction > a:hover {\r\n    opacity: 1;\r\n}\r\n.lSAction > .lSPrev {\r\n    background-position: 0 0;\r\n    left: 10px;\r\n}\r\n.lSAction > .lSNext {\r\n    background-position: 0 0;\r\n    right: 10px;\r\n}\r\n.lSAction > a.disabled {\r\n    pointer-events: none;\r\n}\r\n.cS-hidden {\r\n    height: 1px;\r\n    opacity: 0;\r\n    filter: alpha(opacity=0);\r\n    overflow: hidden;\r\n}\r\n\r\n\r\n/* vertical */\r\n.lSSlideOuter.vertical {\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical.noPager {\r\n    padding-right: 0px !important;\r\n}\r\n.lSSlideOuter.vertical .lSGallery {\r\n    position: absolute !important;\r\n    right: 0;\r\n    top: 0;\r\n}\r\n.lSSlideOuter.vertical .lightSlider > * {\r\n    width: 100% !important;\r\n    max-width: none !important;\r\n}\r\n\r\n/* vertical controlls */\r\n.lSSlideOuter.vertical .lSAction > a {\r\n    left: 50%;\r\n    margin-left: -14px;\r\n    margin-top: 0;\r\n}\r\n.lSSlideOuter.vertical .lSAction > .lSNext {\r\n    background-position: 31px -31px;\r\n    bottom: 10px;\r\n    top: auto;\r\n}\r\n.lSSlideOuter.vertical .lSAction > .lSPrev {\r\n    background-position: 0 -31px;\r\n    bottom: auto;\r\n    top: 10px;\r\n}\r\n/* vertical */\r\n\r\n\r\n/* Rtl */\r\n.lSSlideOuter.lSrtl {\r\n    direction: rtl;\r\n}\r\n.lSSlideOuter .lightSlider, .lSSlideOuter .lSPager {\r\n    padding-left: 0;\r\n    list-style: none outside none;\r\n}\r\n.lSSlideOuter.lSrtl .lightSlider, .lSSlideOuter.lSrtl .lSPager {\r\n    padding-right: 0;\r\n}\r\n.lSSlideOuter .lightSlider > *,  .lSSlideOuter .lSGallery li {\r\n    float: left;\r\n}\r\n.lSSlideOuter.lSrtl .lightSlider > *,  .lSSlideOuter.lSrtl .lSGallery li {\r\n    float: right !important;\r\n}\r\n/* Rtl */\r\n\r\n@-webkit-keyframes rightEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: -15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@keyframes rightEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: -15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@-webkit-keyframes topEnd {\r\n    0% {\r\n        top: 0;\r\n    }\r\n\r\n    50% {\r\n        top: -15px;\r\n    }\r\n\r\n    100% {\r\n        top: 0;\r\n    }\r\n}\r\n@keyframes topEnd {\r\n    0% {\r\n        top: 0;\r\n    }\r\n\r\n    50% {\r\n        top: -15px;\r\n    }\r\n\r\n    100% {\r\n        top: 0;\r\n    }\r\n}\r\n@-webkit-keyframes leftEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: 15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@keyframes leftEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: 15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@-webkit-keyframes bottomEnd {\r\n    0% {\r\n        bottom: 0;\r\n    }\r\n\r\n    50% {\r\n        bottom: -15px;\r\n    }\r\n\r\n    100% {\r\n        bottom: 0;\r\n    }\r\n}\r\n@keyframes bottomEnd {\r\n    0% {\r\n        bottom: 0;\r\n    }\r\n\r\n    50% {\r\n        bottom: -15px;\r\n    }\r\n\r\n    100% {\r\n        bottom: 0;\r\n    }\r\n}\r\n.lSSlideOuter .rightEnd {\r\n    -webkit-animation: rightEnd 0.3s;\r\n    animation: rightEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter .leftEnd {\r\n    -webkit-animation: leftEnd 0.3s;\r\n    animation: leftEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical .rightEnd {\r\n    -webkit-animation: topEnd 0.3s;\r\n    animation: topEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical .leftEnd {\r\n    -webkit-animation: bottomEnd 0.3s;\r\n    animation: bottomEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.lSrtl .rightEnd {\r\n    -webkit-animation: leftEnd 0.3s;\r\n    animation: leftEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.lSrtl .leftEnd {\r\n    -webkit-animation: rightEnd 0.3s;\r\n    animation: rightEnd 0.3s;\r\n    position: relative;\r\n}\r\n/*/  GRab cursor */\r\n.lightSlider.lsGrab > * {\r\n  cursor: -webkit-grab;\r\n  cursor: -o-grab;\r\n  cursor: -ms-grab;\r\n  cursor: grab;\r\n}\r\n.lightSlider.lsGrabbing > * {\r\n  cursor: move;\r\n  cursor: -webkit-grabbing;\r\n  cursor: -o-grabbing;\r\n  cursor: -ms-grabbing;\r\n  cursor: grabbing;\r\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/css/reactabout.css":
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/css/reactabout.css ***!
+  \**********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".fotoatas{\r\n   \r\n    top: -50%; \r\n    left: -50%; \r\n    width: 100%; \r\n    height: 1000px;\r\n}\r\n\r\n.fotoabout{\r\n    position: absolute;\r\n    top: 0; \r\n    left: 0; \r\n    right: 0; \r\n    bottom: 0; \r\n    margin-top: 50px;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    margin-bottom: auto; \r\n    min-width: 50%;\r\n    min-height: 50%;\r\n}\r\n\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.container-slider{\r\n    width: 100%;\r\n    height: 2000px; /*Tinggi Box luar Logo nya*/\r\n    background-color: #ffffff;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n\r\n.box{\r\n    width: 2000px;\r\n    height: 1150px;\r\n    background-color: blue;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n}\r\n\r\n\r\n.box:hover{\r\n    background-color: #a82578;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.box:hover .senbud{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n.penjelasan{\r\n    text-align: center;\r\n    color: white;\r\n}\r\n\r\n.model{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details img{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 10px;\r\n}\r\n\r\n.senbud{\r\n    color: #500033;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n\r\n\r\n/* .lSNext{\r\n    background-image: url(../../public/assets/arrowkanan.png);\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSNext{\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(../../public/assets/arrowkiri.png);\r\n    width: 35px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSPrev{\r\n    width: 35px;\r\n    height: 35px;\r\n} */\r\n", ""]);
 
 // exports
 
@@ -7095,7 +7114,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".container-keg{\r\n    padding-top: 55px;\r\n    text-align: center;\r\n    width: 100%;\r\n    height: 72vw;\r\n}\r\n\r\n.text-tab-pane{\r\n  display: inline-flex;\r\n  font-family: 'Montserrat', sans-serif;\r\n  font-weight: bold;\r\n  font-size: xxx-large;\r\n  color: #bcbcbc;\r\n  justify-content: center;\r\n  align-items: center;\r\n  width: 50%;\r\n  height: 300px;\r\n  background-image: linear-gradient(#ffb359,#ffffff);\r\n  cursor: pointer;\r\n}\r\n\r\n.react-tabs__tab--selected {\r\n    /* border-color: #aaa; */\r\n    color: white;\r\n    border-radius: 5px 5px 0 0;\r\n  }\r\n\r\n\r\n  /* Line Slider*/\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.a{\r\n    text-decoration: none;\r\n}\r\n\r\n.container-slider{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: white;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.box{\r\n    width: 350px;\r\n    height: 500px;\r\n    background-color: #81175a;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.box:hover{\r\n    background-color: #a82578;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.box:hover .senbud{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n.penjelasan{\r\n    text-align: center;\r\n    color: white;\r\n}\r\n\r\n.model{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details p{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 20px;\r\n}\r\n\r\n.senbud{\r\n    color: #500033;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}", ""]);
+exports.push([module.i, ".container-keg{\r\n    padding-top: 55px;\r\n    text-align: center;\r\n    width: 100%;\r\n    \r\n}\r\n\r\n.text-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: xxx-large;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 50%;\r\n    height: 300px;\r\n    background-image: linear-gradient(#ffb359,#ffffff);\r\n    cursor: pointer;\r\n  }\r\n\r\ninput[type=radio] {\r\n\tposition: absolute;\r\n    transform: scale(58);\r\n    opacity: 0;\r\n}\r\n\r\n\r\n.react-tabs__tab--selected {\r\n    /* border-color: #aaa; */\r\n    color: white;\r\n    border-radius: 5px 5px 0 0;\r\n  }\r\n\r\n\r\n  /* Line Slider*/\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.a{\r\n    text-decoration: none;\r\n}\r\n/* \r\n.lSNext{\r\n    background-image: url(../../public/assets/arrowgreykanan.png);\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSNext{\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(../../public/assets/arrowgreykiri.png);\r\n    width: 35px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSPrev{\r\n    width: 35px;\r\n    height: 35px;\r\n} */\r\n\r\n.container-slider-keg{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: white;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.box-keg{\r\n    width: 1500px;\r\n    height: 500px;\r\n    border-radius: 10px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.info{\r\n    color: black;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 25px;\r\n    text-align: left;\r\n\r\n}\r\n\r\n.model-keg{\r\n    margin-top: -20px;\r\n    height: 400px;\r\n    width: 400px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    /* margin: auto; */\r\n}\r\n\r\n.model-lso-box{\r\n    margin-top: 30px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    /* margin: auto; */\r\n}\r\n\r\n.model-lso-dunar{\r\n    margin-top: -20px;\r\n    height: 300px;\r\n    width: 400px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    /* margin: auto; */\r\n}\r\n\r\n.model-lso-medic{\r\n    margin-top: 50px;\r\n    height: 140px;\r\n    width: 400px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    /* margin: auto; */\r\n}\r\n\r\n.model-lso-ustore{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 350px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    /* margin: auto; */\r\n}\r\n\r\n.model-lso-komcor{\r\n    margin-top: -20px;\r\n    height: 300px;\r\n    width: 300px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    /* margin: auto; */\r\n}\r\n\r\n.model-mrms{\r\n    margin-top: -20px;\r\n    height: 300px;\r\n    width: 100px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details p{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 20px;\r\n}\r\n\r\n.title{\r\n    color: #ffb359;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 50px;\r\n    text-align: left;\r\n}\r\n\r\n.title-lso{\r\n    color: #ade2b2;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 50px;\r\n    text-align: left;\r\n}\r\n\r\n@media (max-width:768px){\r\n    .box{\r\n        width: auto;\r\n        height: auto;\r\n        border-radius: 10px;\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        justify-content: space-between;\r\n        box-sizing: border-box;\r\n        margin: 20px 10px;\r\n    }\r\n\r\n    input[type=radio] {\r\n        position: absolute;\r\n        transform: scale(29);\r\n        margin-left: -8px;\r\n        margin-top: 35px;\r\n        opacity: 0;\r\n    }\r\n    \r\n    \r\n    .info{\r\n        color: black;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 25px;\r\n        text-align: left;\r\n    \r\n    }\r\n    \r\n    .model-keg{\r\n        margin-top: -20px;\r\n        height: 160px;\r\n        width: 160px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        /* margin: auto; */\r\n\r\n    }\r\n\r\n    .model-lso-box{\r\n        margin-top: 30px;\r\n        height: 200px;\r\n        width: 200px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        /* margin: auto; */\r\n    }\r\n\r\n    .model-lso-dunar{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        /* margin: auto; */\r\n    }\r\n\r\n    .model-lso-medic{\r\n        margin-top: -20px;\r\n        height: 150px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        /* margin: auto; */\r\n    }\r\n\r\n    .model-lso-ustore{\r\n        margin-top: -20px;\r\n        height: 200px;\r\n        width: 350px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        /* margin: auto; */\r\n    }\r\n\r\n    .model-lso-komcor{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 300px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        /* margin: auto; */\r\n    }\r\n    \r\n    .model-mrms{\r\n        margin-top: -20px;\r\n        height: 120px;\r\n        width: 40px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n    }\r\n    \r\n    .details{\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        width: 300px;\r\n    }\r\n    \r\n    .details p{\r\n        font-family: Arial, Helvetica, sans-serif;\r\n        font-weight: bold;\r\n        color: #ffffff;\r\n        text-align: center;\r\n        margin-top: 20px;\r\n    }\r\n    \r\n    .title{\r\n        color: #ffb359;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 20px;\r\n        text-align: left;\r\n    }\r\n\r\n    .title-lso{\r\n        color: #ade2b2;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 20px;\r\n        text-align: left;\r\n    }\r\n}\r\n\r\n@media (max-width:480px){\r\n    .box{\r\n        width: 1500px;\r\n        height: 500px;\r\n        border-radius: 10px;\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        justify-content: space-between;\r\n        box-sizing: border-box;\r\n        margin: 20px 10px;\r\n    }\r\n\r\n    input[type=radio] {\r\n        position: absolute;\r\n        transform: scale(17);\r\n        margin-left: 85px;\r\n        margin-top: 100px;\r\n        opacity: 0;\r\n    }\r\n    \r\n    \r\n    .info{\r\n        color: black;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 25px;\r\n        text-align: left;\r\n    \r\n    }\r\n    \r\n    .model-keg{\r\n        margin-top: -20px;\r\n        height: 180px;\r\n        width: 180px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        /* margin: auto; */\r\n    }\r\n\r\n    .model-lso-box{\r\n        margin-top: 30px;\r\n        height: 200px;\r\n        width: 200px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        /* margin: auto; */\r\n    }\r\n\r\n    .model-lso-dunar{\r\n        margin-top: -20px;\r\n        height: 250px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        /* margin: auto; */\r\n    }\r\n\r\n    .model-lso-medic{\r\n        margin-top: -20px;\r\n        height: 150px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        /* margin: auto; */\r\n    }\r\n\r\n    .model-lso-ustore{\r\n        margin-top: -20px;\r\n        height: 200px;\r\n        width: 350px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        /* margin: auto; */\r\n    }\r\n\r\n    .model-lso-komcor{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 300px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        /* margin: auto; */\r\n    }\r\n    \r\n    .model-mrms{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 100px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n    }\r\n    \r\n    .details{\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        width: 300px;\r\n    }\r\n    \r\n    .details p{\r\n        font-family: Arial, Helvetica, sans-serif;\r\n        font-weight: bold;\r\n        color: #ffffff;\r\n        text-align: center;\r\n        margin-top: 20px;\r\n    }\r\n    \r\n    .title{\r\n        color: #ffb359;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 50px;\r\n        text-align: left;\r\n    }\r\n\r\n    .title-lso{\r\n        color: #ade2b2;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 50px;\r\n        text-align: left;\r\n    }\r\n    \r\n    .text-tab-pane{\r\n        display: inline-grid;\r\n        font-size: 19px;\r\n    }\r\n}", ""]);
 
 // exports
 
@@ -7115,7 +7134,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".react-tabs__tab-list{\r\n    margin: 0;\r\n}\r\n\r\n.allukm{\r\n    margin-top: 50px;\r\n}\r\n\r\n.body{\r\n    background: rgb(224,235,194);\r\n    background: linear-gradient(180deg, rgba(224,235,194,1) 0%, rgba(255,253,71,1) 48%, rgba(255,255,255,1) 89%);\r\n    /*slider*/\r\n\r\n    /*slider*/\r\n}\r\n\r\n.container-ukm{\r\n    padding-top: 50px;\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/CSI.png */ "./public/assets/CSI.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    background-repeat: no-repeat;\r\n    height: 300px;\r\n}\r\n\r\n.ukm{\r\n    text-align: center;\r\n    font-family: 'Montserrat', sans-serif;\r\n    background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n    -webkit-background-clip: text;\r\n    -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.textatasukm{\r\n    text-align: center;\r\n}\r\n\r\n/* Line Slider*/\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.a{\r\n    text-decoration: none;\r\n}\r\n\r\n.container-slider-senbud{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #81175a;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.container-slider-sensos{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #98b14e;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.container-slider-olr{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #fea24d;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n/*Senbud*/\r\n.box-senbud{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #a80a79;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.box-senbud:hover{\r\n    background-color: #b43c88;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.box-senbud:hover .senbud{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Sains Sos*/\r\n.boxsos{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #88a52f;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.boxsos:hover{\r\n    background-color: #83f157;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.boxsos:hover .sensos{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Olahraga*/\r\n\r\n.boxor{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #f88c26;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.boxor:hover{\r\n    background-color: #fecf4d;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.boxor:hover .olr{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Details*/\r\n.penjelasan{\r\n    text-align: center;\r\n    color: white;\r\n    font-size: 1.7vh;\r\n}\r\n\r\n.lSNext{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/arrowkanan.png */ "./public/assets/arrowkanan.png")) + ");\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSNext{\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/arrowkiri.png */ "./public/assets/arrowkiri.png")) + ");\r\n    width: 35px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSPrev{\r\n    width: 35px;\r\n    height: 35px;\r\n}\r\n\r\n.model{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details p{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 20px;\r\n    font-size: 2vh;\r\n}\r\n\r\n.senbud{\r\n    color: #500033;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n.sensos{\r\n    color: #005038;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n.olr{\r\n    color: #7e4b00;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n/* tabs */\r\n.ukm1-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.3%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#81175a,#a71d74);\r\n    cursor: pointer;\r\n  }\r\n  \r\n\r\n  .ukm2-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.3%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#98b14e,#a8c455);\r\n    cursor: pointer;\r\n  }\r\n\r\n  .ukm3-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.4%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#fea24d,#fc9a3e);\r\n    cursor: pointer;\r\n  }\r\n\r\n  .react-tabs__tab--selected {\r\n      /* border-color: #aaa; */\r\n      color: white;\r\n      border-radius: 5px 5px 0 0;\r\n    }\r\n\r\n\r\n/*responsive Mobile*/\r\n\r\n@media(max-width:720px){\r\n     .box{\r\n         width: 94%;\r\n         height: 450px;\r\n     }\r\n\r\n     .boxor{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxsos{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n    \r\n     .penjelasan{\r\n        text-align: center;\r\n        font-size: 12px;\r\n        width: 200px;\r\n    }\r\n\r\n     .model{\r\n         height: 100px; /*Logo*/\r\n         width: 100px;\r\n         margin-top: -10px;\r\n     }\r\n\r\n     .details p{\r\n         font-size: 10px;\r\n         width: 200px;\r\n     }\r\n\r\n     .ukm1-tab-pane{\r\n         font-size: 14px;\r\n         height: 25px;\r\n         display: inline-grid;\r\n     }\r\n\r\n     .ukm2-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n    .ukm3-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n}\r\n\r\n@media(max-width:410px){\r\n    .box{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxor{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxsos{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .penjelasan{\r\n        text-align: center;\r\n        font-size: 12px;\r\n        width: 200px;\r\n    }\r\n\r\n     .model{\r\n         height: 100px; /*Logo*/\r\n         width: 100px;\r\n         margin-top: -10px;\r\n     }\r\n\r\n     .details p{\r\n         font-size: 10px;\r\n         width: 200px;\r\n     }\r\n\r\n     .ukm1-tab-pane{\r\n         font-size: 14px;\r\n         height: 25px;\r\n         display: inline-grid;\r\n     }\r\n\r\n     .ukm2-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n    .ukm3-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n}\r\n\r\n\r\n@media(min-width:1550px){\r\n    .container-ukm{\r\n        background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    }\r\n}\r\n", ""]);
+exports.push([module.i, ".react-tabs__tab-list{\r\n    margin: 0;\r\n}\r\n\r\n.allukm{\r\n    margin-top: 50px;\r\n}\r\n\r\n.body{\r\n    background: rgb(224,235,194);\r\n    background: linear-gradient(180deg, rgba(224,235,194,1) 0%, rgba(255,253,71,1) 48%, rgba(255,255,255,1) 89%);\r\n    /*slider*/\r\n\r\n    /*slider*/\r\n}\r\n\r\n.container-ukm{\r\n    padding-top: 50px;\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/CSI.png */ "./public/assets/CSI.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    background-repeat: no-repeat;\r\n    height: 300px;\r\n}\r\n\r\n.ukm{\r\n    text-align: center;\r\n    font-family: 'Montserrat', sans-serif;\r\n    background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n    -webkit-background-clip: text;\r\n    -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.textatasukm{\r\n    text-align: center;\r\n}\r\n\r\n/* Line Slider*/\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.a{\r\n    text-decoration: none;\r\n}\r\n\r\n.container-slider-senbud{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #81175a;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.container-slider-sensos{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #98b14e;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.container-slider-olr{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #fea24d;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n/*Senbud*/\r\n.box-senbud{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #a80a79;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.box-senbud:hover{\r\n    background-color: #b43c88;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.box-senbud:hover .senbud{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Sains Sos*/\r\n.boxsos{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #88a52f;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.boxsos:hover{\r\n    background-color: #83f157;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.boxsos:hover .sensos{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Olahraga*/\r\n\r\n.boxor{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #f88c26;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.boxor:hover{\r\n    background-color: #fecf4d;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.boxor:hover .olr{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Details*/\r\n.penjelasan{\r\n    text-align: center;\r\n    color: white;\r\n    font-size: 1.7vh;\r\n}\r\n\r\n.lSNext{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/arrowgreykanan.png */ "./public/assets/arrowgreykanan.png")) + ");\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n.lSAction > .lSNext{\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/arrowgreykiri.png */ "./public/assets/arrowgreykiri.png")) + ");\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n.lSAction > .lSPrev{\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n.model{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details p{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 20px;\r\n    font-size: 2vh;\r\n}\r\n\r\n.senbud{\r\n    color: #500033;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n.sensos{\r\n    color: #005038;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n.olr{\r\n    color: #7e4b00;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n/* tabs */\r\n.ukm1-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.3%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#81175a,#a71d74);\r\n    cursor: pointer;\r\n  }\r\n  \r\n\r\n  .ukm2-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.3%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#98b14e,#a8c455);\r\n    cursor: pointer;\r\n  }\r\n\r\n  .ukm3-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.4%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#fea24d,#fc9a3e);\r\n    cursor: pointer;\r\n  }\r\n\r\n  .react-tabs__tab--selected {\r\n      /* border-color: #aaa; */\r\n      color: white;\r\n      border-radius: 5px 5px 0 0;\r\n    }\r\n\r\n\r\n/*responsive Mobile*/\r\n\r\n@media(max-width:720px){\r\n     .box{\r\n         width: 94%;\r\n         height: 450px;\r\n     }\r\n\r\n     .boxor{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxsos{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n    \r\n     .penjelasan{\r\n        text-align: center;\r\n        font-size: 12px;\r\n        width: 200px;\r\n    }\r\n\r\n     .model{\r\n         height: 100px; /*Logo*/\r\n         width: 100px;\r\n         margin-top: -10px;\r\n     }\r\n\r\n     .details p{\r\n         font-size: 10px;\r\n         width: 200px;\r\n     }\r\n\r\n     .ukm1-tab-pane{\r\n         font-size: 14px;\r\n         height: 25px;\r\n         display: inline-grid;\r\n     }\r\n\r\n     .ukm2-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n    .ukm3-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n}\r\n\r\n@media(max-width:410px){\r\n    .box{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxor{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxsos{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .penjelasan{\r\n        text-align: center;\r\n        font-size: 12px;\r\n        width: 200px;\r\n    }\r\n\r\n     .model{\r\n         height: 100px; /*Logo*/\r\n         width: 100px;\r\n         margin-top: -10px;\r\n     }\r\n\r\n     .details p{\r\n         font-size: 10px;\r\n         width: 200px;\r\n     }\r\n\r\n     .ukm1-tab-pane{\r\n         font-size: 14px;\r\n         height: 25px;\r\n         display: inline-grid;\r\n     }\r\n\r\n     .ukm2-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n    .ukm3-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n}\r\n\r\n\r\n@media(min-width:1550px){\r\n    .container-ukm{\r\n        background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    }\r\n}\r\n", ""]);
 
 // exports
 
@@ -86511,25 +86530,25 @@ module.exports = "/images/CSI.png?e1c9e614fd1012c2e48c57465ebab9f6";
 
 /***/ }),
 
-/***/ "./public/assets/arrowkanan.png":
-/*!**************************************!*\
-  !*** ./public/assets/arrowkanan.png ***!
-  \**************************************/
+/***/ "./public/assets/arrowgreykanan.png":
+/*!******************************************!*\
+  !*** ./public/assets/arrowgreykanan.png ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/arrowkanan.png?e0647a08631280f600196c9a3fb6dff8";
+module.exports = "/images/arrowgreykanan.png?e0bfe028f4582bf28f09dd98f43a3885";
 
 /***/ }),
 
-/***/ "./public/assets/arrowkiri.png":
-/*!*************************************!*\
-  !*** ./public/assets/arrowkiri.png ***!
-  \*************************************/
+/***/ "./public/assets/arrowgreykiri.png":
+/*!*****************************************!*\
+  !*** ./public/assets/arrowgreykiri.png ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/arrowkiri.png?d37b045df9cb2f15d81ce7b089ccebe7";
+module.exports = "/images/arrowgreykiri.png?7be76149d57975a54251e79fbc9fda32";
 
 /***/ }),
 
@@ -86564,6 +86583,36 @@ module.exports = "/images/homepagefotoumnorange.png?bf648dfbf6858924466a25f8ac83
 
 
 var content = __webpack_require__(/*! !../../node_modules/css-loader??ref--6-1!../../node_modules/postcss-loader/src??ref--6-2!./lightslider.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/css/lightslider.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./resources/css/reactabout.css":
+/*!**************************************!*\
+  !*** ./resources/css/reactabout.css ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader??ref--6-1!../../node_modules/postcss-loader/src??ref--6-2!./reactabout.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/css/reactabout.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -86786,10 +86835,107 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*!********************************************!*\
   !*** ./resources/js/components/AboutUs.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../css/lightslider.css */ "./resources/css/lightslider.css");
+/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_lightslider_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../slidersukm/Jquery31 */ "./resources/js/slidersukm/Jquery31.js");
+/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../slidersukm/lightslider */ "./resources/js/slidersukm/lightslider.js");
+/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _slidersukm_sliderqueryabout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../slidersukm/sliderqueryabout */ "./resources/js/slidersukm/sliderqueryabout.js");
+/* harmony import */ var _slidersukm_sliderqueryabout__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_sliderqueryabout__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _css_reactabout_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../css/reactabout.css */ "./resources/css/reactabout.css");
+/* harmony import */ var _css_reactabout_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_css_reactabout_css__WEBPACK_IMPORTED_MODULE_6__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 
+
+
+
+
+
+
+
+var AboutUs = /*#__PURE__*/function (_Component) {
+  _inherits(AboutUs, _Component);
+
+  var _super = _createSuper(AboutUs);
+
+  function AboutUs() {
+    _classCallCheck(this, AboutUs);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(AboutUs, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "fotoatas"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "fotoabout",
+        src: "assets/aboutus/auBEM.png"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container-awal"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container-slider"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        id: "autoWidth",
+        className: "cs-hidden"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "senbud"
+      }, "Gen 10"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "penjelasan"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "assets/aboutus/au10.png"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      })))))));
+    }
+  }]);
+
+  return AboutUs;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (AboutUs);
+
+if (document.getElementById('AboutUs')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(AboutUs, null), document.getElementById('AboutUs'));
+}
 
 /***/ }),
 
@@ -87105,19 +87251,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_tabs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-tabs */ "./node_modules/react-tabs/esm/index.js");
-/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../css/lightslider.css */ "./resources/css/lightslider.css");
-/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_lightslider_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../slidersukm/Jquery31 */ "./resources/js/slidersukm/Jquery31.js");
-/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../slidersukm/lightslider */ "./resources/js/slidersukm/lightslider.js");
-/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../slidersukm/sliderquery */ "./resources/js/slidersukm/sliderquery.js");
-/* harmony import */ var _slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-tabs/style/react-tabs.css */ "./node_modules/react-tabs/style/react-tabs.css");
-/* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _css_reactkeg_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../css/reactkeg.css */ "./resources/css/reactkeg.css");
-/* harmony import */ var _css_reactkeg_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_css_reactkeg_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
+/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../css/lightslider.css */ "./resources/css/lightslider.css");
+/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_css_lightslider_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../slidersukm/Jquery31 */ "./resources/js/slidersukm/Jquery31.js");
+/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../slidersukm/lightslider */ "./resources/js/slidersukm/lightslider.js");
+/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../slidersukm/sliderquery */ "./resources/js/slidersukm/sliderquery.js");
+/* harmony import */ var _slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-tabs/style/react-tabs.css */ "./node_modules/react-tabs/style/react-tabs.css");
+/* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _css_reactkeg_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../css/reactkeg.css */ "./resources/css/reactkeg.css");
+/* harmony import */ var _css_reactkeg_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_css_reactkeg_css__WEBPACK_IMPORTED_MODULE_9__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -87138,6 +87287,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
 
 
 
@@ -87173,16 +87323,35 @@ var KegiatanMahasiswa = /*#__PURE__*/function (_Component) {
 
     _this = _super.call(this);
     _this.state = {
-      tabIndex: 0
+      tabIndex: 0,
+      radio: "kegiatan",
+      backgroundcolor: ""
     };
+    _this.onCheckRadio = _this.onCheckRadio.bind(_assertThisInitialized(_this));
     return _this;
   }
 
   _createClass(KegiatanMahasiswa, [{
+    key: "onCheckRadio",
+    value: function onCheckRadio(e) {
+      console.log(e.target.value);
+
+      if (e.target.value == "kegiatan") {
+        var _this$setState;
+
+        this.setState((_this$setState = {}, _defineProperty(_this$setState, e.target.name, e.target.value), _defineProperty(_this$setState, "backgroundcolor", 'linear-gradient(#ffb359,#ffffff)'), _this$setState));
+      } else if (e.target.value == "lso") {
+        var _this$setState2;
+
+        this.setState((_this$setState2 = {}, _defineProperty(_this$setState2, e.target.name, e.target.value), _defineProperty(_this$setState2, "backgroundcolor", 'linear-gradient(#ade2b2,#ffffff)'), _this$setState2));
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this2 = this;
 
+      var backgroundcolor = this.state.backgroundcolor;
       var displayTabs = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tabs"], {
         selectedIndex: this.state.tabIndex,
         onSelect: function onSelect(tabIndex) {
@@ -87192,112 +87361,270 @@ var KegiatanMahasiswa = /*#__PURE__*/function (_Component) {
         },
         onClick: slider()
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabList"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tab"], {
-        className: "text-tab-pane"
-      }, "Kegiatan", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tab"], {
-        className: "text-tab-pane"
-      }, "Lembaga", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Semi Otonom")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-tab-pane",
+        style: {
+          backgroundImage: backgroundcolor
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "radio",
+        name: "radio",
+        id: "keg",
+        value: "kegiatan",
+        checked: this.state.radio === "kegiatan",
+        onChange: this.onCheckRadio
+      }), "Kegiatan", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tab"], {
+        className: "text-tab-pane",
+        style: {
+          backgroundImage: backgroundcolor
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "radio",
+        name: "radio",
+        id: "lso",
+        value: "lso",
+        checked: this.state.radio === "lso",
+        onChange: this.onCheckRadio
+      }), "Lembaga", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Semi Otonom")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container-awal"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container-slider"
+        className: "container-slider-keg"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         id: "autoWidth",
         className: "cs-hidden"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box"
+        className: "box-keg"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-5"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "assets/kegiatan/logoufestbig.png",
+        className: "model-keg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Ultima Sonora"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/ulsonbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
+        className: "title"
+      }, "U-FEST"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "info"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang paduan suara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "instagram.com/bemumn"
-      }, "@ultimasonora")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "@ultimasonora")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora ")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box"
+        className: "box-keg"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-5"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "assets/kegiatan/logomaximabig.png",
+        className: "model-keg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Ultima Sonora"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/ulsonbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
+        className: "title"
+      }, "MAXIMA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "info"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang paduan suara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "instagram.com/bemumn"
-      }, "@ultimasonora")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "@ultimasonora")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora ")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box"
+        className: "box-keg"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-4"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "assets/kegiatan/logomrmsbig.png",
+        className: "model-mrms"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Ultima Sonora"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/ulsonbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
+        className: "title"
+      }, "MR. & MS. UMN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "info"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang paduan suara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "instagram.com/bemumn"
-      }, "@ultimasonora")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "@ultimasonora")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora ")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-keg"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-5"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "assets/kegiatan/logostarlightbig.png",
+        className: "model-keg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title"
+      }, "STARLIGHT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "info"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang paduan suara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/bemumn"
+      }, "@ultimasonora")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora ")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-keg"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-5"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "assets/kegiatan/logobanksampahbig.png",
+        className: "model-keg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title"
+      }, "BANK SAMPAH"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "info"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang paduan suara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/bemumn"
+      }, "@ultimasonora")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora ")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-keg"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-5"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "assets/kegiatan/logoombbig.png",
+        className: "model-keg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title"
+      }, "OMB UMN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "info"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang paduan suara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/bemumn"
+      }, "@ultimasonora")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora ")))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container-awal"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container-slider"
+        className: "container-slider-keg"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         id: "autoWidth",
         className: "cs-hidden"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box"
+        className: "box-keg"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-5"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "assets/lso/logorumpinbig.png",
+        className: "model-lso-box"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Ultima Sonora"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/ulsonbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
+        className: "title-lso"
+      }, "RUMPIN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "info"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang paduan suara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "instagram.com/bemumn"
-      }, "@ultimasonora")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "@ultimasonora")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora ")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box"
+        className: "box-keg"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-5"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "assets/lso/logoubizbig.png",
+        className: "model-lso-box"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Ultima Sonora"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/ulsonbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
+        className: "title-lso"
+      }, "U-BIZ"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "info"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang paduan suara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "instagram.com/bemumn"
-      }, "@ultimasonora")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "@ultimasonora")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora ")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "item-a"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box"
+        className: "box-keg"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-4"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "assets/lso/logodunarbig.png",
+        className: "model-lso-dunar"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Ultima Sonora"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/ulsonbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
+        className: "title-lso"
+      }, "DUTA ANTI NARKOBA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "info"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang paduan suara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "instagram.com/bemumn"
-      }, "@ultimasonora")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "@ultimasonora")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora ")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-keg"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-5"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "assets/lso/logomedicbig.png",
+        className: "model-lso-medic"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title-lso"
+      }, "UMN MEDIC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "info"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang paduan suara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/bemumn"
+      }, "@ultimasonora")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora ")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-keg"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-5"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "assets/lso/logokomcorbig.png",
+        className: "model-lso-komcor"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title-lso"
+      }, "KOMPAS CORNER"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "info"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang paduan suara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/bemumn"
+      }, "@ultimasonora")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora ")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-keg"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-5"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "assets/lso/logoustorebig.png",
+        className: "model-lso-ustore"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title-lso"
+      }, "U-STORE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "info"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang paduan suara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "instagram.com/bemumn"
+      }, "@ultimasonora")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora ")))))))));
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -87308,18 +87635,6 @@ var KegiatanMahasiswa = /*#__PURE__*/function (_Component) {
 
   return KegiatanMahasiswa;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-
-function tabkegiatan() {
-  $("#react-tabs-0").click(function () {
-    $('#autoWidth').lightSlider({
-      autoWidth: true,
-      loop: true,
-      onSliderLoad: function onSliderLoad() {
-        $('#autoWidth').removeClass('cs-hidden');
-      }
-    });
-  });
-}
 
 /* harmony default export */ __webpack_exports__["default"] = (KegiatanMahasiswa);
 
@@ -98408,37 +98723,55 @@ if (document.getElementById('ukm')) {
 //             $('#autoWidth').removeClass('cs-hidden');
 //         } 
 //     });  
-//     // $('#react-tabs-0').trigger('click'); 
-//         // $("#react-tabs-0").click(function(){
-//         //     $('#autoWidth').lightSlider({
-//         //         autoWidth:true,
-//         //         loop:true,
-//         //         onSliderLoad: function() {
-//         //           $('#autoWidth').removeClass('cs-hidden');
-//         //       } 
-//         //    });
-//         // });
+// //     $('#react-tabs-0').trigger('click'); 
+// //         $("#react-tabs-0").click(function(){
+// //             $('#autoWidth').lightSlider({
+// //                 autoWidth:true,
+// //                 loop:true,
+// //                 onSliderLoad: function() {
+// //                   $('#autoWidth').removeClass('cs-hidden');
+// //               } 
+// //            });
+// //         });
 //     });
-//     function tabkegiatan(){
-//       // $("#react-tabs-0").click(function(){
-//           $('#autoWidth').lightSlider({
-//               autoWidth:true,
-//               loop:true,
-//               onSliderLoad: function() {
-//                 $('#autoWidth').removeClass('cs-hidden');
-//             } 
-//          });
-//       // });
-//     }
-//   $( "#react-tabs-2" ).trigger( "click", function() {
-//     $('#autoWidth').lightSlider({
-//         autoWidth:true,
-//         loop:true,
-//         onSliderLoad: function() {
-//             $('#autoWidth').removeClass('cs-hidden');
-//         } 
-//     });  
-//   });
+// //     function tabkegiatan(){
+// //       // $("#react-tabs-0").click(function(){
+// //           $('#autoWidth').lightSlider({
+// //               autoWidth:true,
+// //               loop:true,
+// //               onSliderLoad: function() {
+// //                 $('#autoWidth').removeClass('cs-hidden');
+// //             } 
+// //          });
+// //       // });
+// //     }
+// //   $( "#react-tabs-2" ).trigger( "click", function() {
+// //     $('#autoWidth').lightSlider({
+// //         autoWidth:true,
+// //         loop:true,
+// //         onSliderLoad: function() {
+// //             $('#autoWidth').removeClass('cs-hidden');
+// //         } 
+// //     });  
+// //   });
+
+/***/ }),
+
+/***/ "./resources/js/slidersukm/sliderqueryabout.js":
+/*!*****************************************************!*\
+  !*** ./resources/js/slidersukm/sliderqueryabout.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $('#adaptive').lightSlider({
+    adaptiveHeight: true,
+    item: 1,
+    slideMargin: 0,
+    loop: true
+  });
+});
 
 /***/ }),
 
@@ -98460,8 +98793,8 @@ if (document.getElementById('ukm')) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! c:\laragon\www\websitebem\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! c:\laragon\www\websitebem\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\websitebem\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\websitebem\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

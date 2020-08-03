@@ -2,22 +2,29 @@
     padding-top: 55px;
     text-align: center;
     width: 100%;
-    height: 72vw;
+    
 }
 
 .text-tab-pane{
-  display: inline-flex;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: xxx-large;
-  color: #bcbcbc;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 300px;
-  background-image: linear-gradient(#ffb359,#ffffff);
-  cursor: pointer;
+    display: inline-flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: xxx-large;
+    color: #bcbcbc;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 300px;
+    background-image: linear-gradient(#ffb359,#ffffff);
+    cursor: pointer;
+  }
+
+input[type=radio] {
+	position: absolute;
+    transform: scale(58);
+    opacity: 0;
 }
+
 
 .react-tabs__tab--selected {
     /* border-color: #aaa; */
@@ -34,8 +41,30 @@
 .a{
     text-decoration: none;
 }
+/* 
+.lSNext{
+    background-image: url(../../public/assets/arrowgreykanan.png);
+    width: 40px;
+    height: 35px;
+}
 
-.container-slider{
+.lSAction > .lSNext{
+    width: 40px;
+    height: 35px;
+}
+
+.lSPrev{
+    background-image: url(../../public/assets/arrowgreykiri.png);
+    width: 35px;
+    height: 35px;
+}
+
+.lSAction > .lSPrev{
+    width: 35px;
+    height: 35px;
+} */
+
+.container-slider-keg{
     width: 100%;
     height: 100vh; /*Tinggi Box luar Logo nya*/
     background-color: white;
@@ -44,13 +73,10 @@
     align-items: center;
 }
 
-.box{
-    width: 350px;
+.box-keg{
+    width: 1500px;
     height: 500px;
-    background-color: #81175a;
     border-radius: 10px;
-    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,27 +85,78 @@
     margin: 20px 10px;
 }
 
-.box:hover{
-    background-color: #a82578;
-    transform-style: preserve-3d;
-    transform: scale(1.02);
-    transition: all ease 0.3s;
+.info{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    text-align: left;
+
 }
 
-.box:hover .senbud{
-    color: #ffffff;
-    transition: all ease 0.5s;
-}
-
-.penjelasan{
-    text-align: center;
-    color: white;
-}
-
-.model{
+.model-keg{
     margin-top: -20px;
+    height: 400px;
+    width: 400px;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    /* margin: auto; */
+}
+
+.model-lso-box{
+    margin-top: 30px;
     height: 200px;
     width: 200px;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    /* margin: auto; */
+}
+
+.model-lso-dunar{
+    margin-top: -20px;
+    height: 300px;
+    width: 400px;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    /* margin: auto; */
+}
+
+.model-lso-medic{
+    margin-top: 50px;
+    height: 140px;
+    width: 400px;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    /* margin: auto; */
+}
+
+.model-lso-ustore{
+    margin-top: -20px;
+    height: 200px;
+    width: 350px;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    /* margin: auto; */
+}
+
+.model-lso-komcor{
+    margin-top: -20px;
+    height: 300px;
+    width: 300px;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    /* margin: auto; */
+}
+
+.model-mrms{
+    margin-top: -20px;
+    height: 300px;
+    width: 100px;
     max-height: 100%;
     max-width: 100%;
 }
@@ -99,10 +176,290 @@
     margin-top: 20px;
 }
 
-.senbud{
-    color: #500033;
+.title{
+    color: #ffb359;
     font-weight: bold;
     letter-spacing: 2px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    text-align: left;
+}
+
+.title-lso{
+    color: #ade2b2;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    text-align: left;
+}
+
+@media (max-width:768px){
+    .box{
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin: 20px 10px;
+    }
+
+    input[type=radio] {
+        position: absolute;
+        transform: scale(29);
+        margin-left: -8px;
+        margin-top: 35px;
+        opacity: 0;
+    }
+    
+    
+    .info{
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        text-align: left;
+    
+    }
+    
+    .model-keg{
+        margin-top: -20px;
+        height: 160px;
+        width: 160px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
+
+    }
+
+    .model-lso-box{
+        margin-top: 30px;
+        height: 200px;
+        width: 200px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
+    }
+
+    .model-lso-dunar{
+        margin-top: -20px;
+        height: 300px;
+        width: 400px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
+    }
+
+    .model-lso-medic{
+        margin-top: -20px;
+        height: 150px;
+        width: 400px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
+    }
+
+    .model-lso-ustore{
+        margin-top: -20px;
+        height: 200px;
+        width: 350px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
+    }
+
+    .model-lso-komcor{
+        margin-top: -20px;
+        height: 300px;
+        width: 300px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
+    }
+    
+    .model-mrms{
+        margin-top: -20px;
+        height: 120px;
+        width: 40px;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+    .details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
+    
+    .details p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .title{
+        color: #ffb359;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .title-lso{
+        color: #ade2b2;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        text-align: left;
+    }
+}
+
+@media (max-width:480px){
+    .box{
+        width: 1500px;
+        height: 500px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin: 20px 10px;
+    }
+
+    input[type=radio] {
+        position: absolute;
+        transform: scale(17);
+        margin-left: 85px;
+        margin-top: 100px;
+        opacity: 0;
+    }
+    
+    
+    .info{
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        text-align: left;
+    
+    }
+    
+    .model-keg{
+        margin-top: -20px;
+        height: 180px;
+        width: 180px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
+    }
+
+    .model-lso-box{
+        margin-top: 30px;
+        height: 200px;
+        width: 200px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
+    }
+
+    .model-lso-dunar{
+        margin-top: -20px;
+        height: 250px;
+        width: 400px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
+    }
+
+    .model-lso-medic{
+        margin-top: -20px;
+        height: 150px;
+        width: 400px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
+    }
+
+    .model-lso-ustore{
+        margin-top: -20px;
+        height: 200px;
+        width: 350px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
+    }
+
+    .model-lso-komcor{
+        margin-top: -20px;
+        height: 300px;
+        width: 300px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        /* margin: auto; */
+    }
+    
+    .model-mrms{
+        margin-top: -20px;
+        height: 300px;
+        width: 100px;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+    .details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
+    
+    .details p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .title{
+        color: #ffb359;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        text-align: left;
+    }
+
+    .title-lso{
+        color: #ade2b2;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        text-align: left;
+    }
+    
+    .text-tab-pane{
+        display: inline-grid;
+        font-size: 19px;
+    }
 }
