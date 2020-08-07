@@ -9,7 +9,7 @@ function WarningBanner(props) {
     }
   
     return (
-      fdssfd
+        <h1 className="himp-maha">ILMU <br></br> KOMUNIKASI</h1>
     );
   }
 

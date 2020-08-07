@@ -86987,7 +86987,9 @@ function WarningBanner(props) {
     return null;
   }
 
-  return fdssfd;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "himp-maha"
+  }, "ILMU ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " KOMUNIKASI");
 }
 
 var Himpunan = /*#__PURE__*/function (_Component) {
