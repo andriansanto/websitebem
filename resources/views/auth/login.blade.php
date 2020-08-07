@@ -70,5 +70,5 @@
         </div>
     </div>
 </div>
-@extends('layouts.footer')  
+@include('layouts.footer')
 @endsection
