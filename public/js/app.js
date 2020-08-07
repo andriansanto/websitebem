@@ -7095,7 +7095,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".App {\r\n  text-align: center;\r\n  padding-top: 55px;\r\n}\r\n \r\n.App-logo {\r\n  height: 40vmin;\r\n}\r\n \r\n.App-header {\r\n  background-color: #282c34;\r\n  min-height: 100vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: calc(10px + 2vmin);\r\n  color: white;\r\n}\r\n \r\n.App-link {\r\n  color: #09d3ac;\r\n}\r\n \r\nbody{\r\n  background: #ffffff;\r\n}\r\n\r\n.slides {\r\n  position: relative;\r\n  height: 579px; /*The slider height*/\r\n}\r\n\r\n.filter:after {\r\n  position: absolute;\r\n  content:\"\";\r\n  height:100%;\r\n  width:100%;\r\n  top:0;\r\n  left:0;\r\n  background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%,rgba(255,255,255,0) 100%);\r\n}\r\n\r\n.slick-dots {\r\n  position: absolute;\r\n  bottom: 20px;\r\n  display: block;\r\n  width: 100%;\r\n  padding: 10;\r\n  margin: 0;\r\n  list-style: none;\r\n  text-align: center;\r\n  font-size: white;\r\n}\r\n\r\n.slick-dots li.slick-active button:before {\r\n  font-size: 25px;\r\n  color: #ffb035;\r\n  opacity: 1;\r\n}\r\n\r\n/*slider button setting - START*/\r\n.slides .slick-prev,\r\n.slides .slick-next {\r\n  position: absolute;\r\n  top: 50%;\r\n  z-index:1;\r\n}\r\n\r\n.slides .slick-prev::before {\r\n  left: 5%;\r\n}\r\n\r\n.slides .slick-next {\r\n  right: 5%;\r\n}\r\n/*slider button setting - FINISH*/\r\n\r\n.slides-img {\r\n  width: 100%;\r\n  height: 579px; /*image height*/\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n}\r\n\r\n.container-csi{\r\n  background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/CSI.png */ "./public/assets/CSI.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n  background-repeat: no-repeat;\r\n  background-size: auto;\r\n  height: 220px;\r\n}\r\n\r\n.container-csi-text{\r\n  text-align: center;\r\n}\r\n.container-2{\r\n  background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/homepagefotoumnorange.png */ "./public/assets/homepagefotoumnorange.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n  width: 100%;\r\n  height: 275px;\r\n  background-repeat: no-repeat;\r\n  background-size: 100%\r\n}\r\n\r\n.container-fluid{\r\n  width: 100%;\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.container-2-text{\r\n  padding-top: 25px;\r\n  padding-right: 15px;\r\n  text-align: right;\r\n}\r\n\r\n.container-dedicate{\r\n  background-color: #ffffff;\r\n  background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/homepagededicatetocreate.png */ "./public/assets/homepagededicatetocreate.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n  width: 100%;\r\n  height: 850px;\r\n  background-repeat: no-repeat;\r\n  background-size: 100%;\r\n}\r\n\r\n.container-dedicate-judul{\r\n  top: 35%;\r\n  width: 100%;\r\n  font-size: auto;\r\n}\r\n\r\n.container-dedicate-text{\r\n  text-align: left;\r\n  top: 65%;\r\n  width: 100%;\r\n}\r\n\r\n\r\n/*Text di Dedicate*/\r\n.dtc-1{\r\n  text-align: center;\r\n  background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n  position: relative;\r\n  top: 15vw;\r\n  font-size: 3vw;\r\n}\r\n\r\n.genx-1{\r\n  text-align: center;\r\n  background: -webkit-linear-gradient(90deg, rgba(255,207,0,0.7243350596910112) 0%, rgba(255,144,12,0.8086047226123596) 48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n  position: relative;\r\n  top: 15vw;\r\n  font-size: 1.5vw;\r\n}\r\n/*text di dedicate*/    \r\n\r\n/* .container-about{\r\n  background-color: lightblue;\r\n} */\r\n\r\n/*csi*/\r\n.CSI-color{\r\n  background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(122,148,186,1)48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.container-aboutus{\r\n  text-align: justify;\r\n  color: white;\r\n  position: relative;\r\n  top: 37vw;\r\n  left: 5vw;\r\n  font-size: 1.2vw;\r\n}\r\n\r\n.buttonsmua{\r\n  font-size: 16px;\r\n}\r\n\r\n@media(max-width:465px){\r\n\r\n  .container-csi{\r\n    background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n   \r\n  }\r\n  \r\n.container-csi-text{\r\n  text-align: center;\r\n  font-size: 8px;\r\n}\r\n.container-2{\r\n  background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n}\r\n\r\n\r\n.container-dedicate-judul{\r\n  top: 35%;\r\n  width: 100%;\r\n  font-size: 9px;\r\n}\r\n  .container-dedicate{\r\n    height: 280px;\r\n  }\r\n\r\n  .container-2-text{\r\n    font-size: 9px;\r\n  }\r\n\r\n  .dtc-1{\r\n    font-size: 15px;\r\n  }\r\n  \r\n  .genx-1{\r\n    \r\n    font-size: 12px;\r\n  }\r\n\r\n  .buttonsmua{\r\n    font-size: 5px;\r\n  }\r\n\r\n}\r\n\r\n@media(min-width:720px){\r\n  .container-dedicate{\r\n    height: 900px;\r\n  }\r\n}\r\n\r\n@media(min-width:1080px){\r\n  .container-dedicate{\r\n    height: 1000px;\r\n  }\r\n}\r\n\r\n\r\n@media(min-width:1380px){\r\n  .container-dedicate{\r\n    height: 1150px;\r\n  }\r\n}\r\n\r\n\r\n@media(min-width:1580px){\r\n  .container-dedicate{\r\n    height: 1350px;\r\n  }\r\n  .container-csi{\r\n    background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n   \r\n  }\r\n}\r\n\r\n@media(min-width:1780px){\r\n  .container-dedicate{\r\n    height: 1550px;\r\n  }\r\n  .container-csi{\r\n    background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n   \r\n  }\r\n}", ""]);
+exports.push([module.i, ".App {\r\n  text-align: center;\r\n  padding-top: 55px;\r\n}\r\n \r\n.App-logo {\r\n  height: 40vmin;\r\n}\r\n \r\n.App-header {\r\n  background-color: #282c34;\r\n  min-height: 100vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: calc(10px + 2vmin);\r\n  color: white;\r\n}\r\n \r\n.App-link {\r\n  color: #09d3ac;\r\n}\r\n \r\nbody{\r\n  background: #ffffff;\r\n}\r\n\r\n.slides {\r\n  position: relative;\r\n  height: 579px; /*The slider height*/\r\n}\r\n\r\n.filter:after {\r\n  position: absolute;\r\n  content:\"\";\r\n  height:100%;\r\n  width:100%;\r\n  top:0;\r\n  left:0;\r\n  background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%,rgba(255,255,255,0) 100%);\r\n}\r\n\r\n.slick-dots {\r\n  position: absolute;\r\n  bottom: 20px;\r\n  display: block;\r\n  width: 100%;\r\n  padding: 10;\r\n  margin: 0;\r\n  list-style: none;\r\n  text-align: center;\r\n  font-size: white;\r\n}\r\n\r\n.slick-dots li.slick-active button:before {\r\n  font-size: 25px;\r\n  color: #ffb035;\r\n  opacity: 1;\r\n}\r\n\r\n/*slider button setting - START*/\r\n.slides .slick-prev,\r\n.slides .slick-next {\r\n  position: absolute;\r\n  top: 50%;\r\n  z-index:1;\r\n}\r\n\r\n.slides .slick-prev::before {\r\n  left: 5%;\r\n}\r\n\r\n.slides .slick-next {\r\n  right: 5%;\r\n}\r\n/*slider button setting - FINISH*/\r\n\r\n.slides-img {\r\n  width: 100%;\r\n  height: 579px; /*image height*/\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n}\r\n\r\n.container-csi{\r\n  background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/CSI.png */ "./public/assets/CSI.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n  background-repeat: no-repeat;\r\n  background-size: auto;\r\n  height: 220px;\r\n}\r\n\r\n.container-csi-text{\r\n  text-align: center;\r\n}\r\n\r\n\r\n.container-2{\r\n  background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/homepagefotoumnorange.png */ "./public/assets/homepagefotoumnorange.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n  width: 100%;\r\n  height: 500px;\r\n  background-repeat: no-repeat;\r\n  background-size: 100%\r\n}\r\n\r\n.container-fluid{\r\n  width: 100%;\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.container-2-text{\r\n  padding-top: 25px;\r\n  padding-right: 15px;\r\n  text-align: right;\r\n}\r\n\r\n.container-dedicate{\r\n  background-color: #ffffff;\r\n  background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/homepagededicatetocreate.png */ "./public/assets/homepagededicatetocreate.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n  width: 100%;\r\n  height: 850px;\r\n  background-repeat: no-repeat;\r\n  background-size: 100%;\r\n}\r\n\r\n.container-dedicate-judul{\r\n  top: 35%;\r\n  width: 100%;\r\n  font-size: auto;\r\n}\r\n\r\n.container-dedicate-text{\r\n  text-align: left;\r\n  top: 65%;\r\n  width: 100%;\r\n}\r\n\r\n\r\n/*Text di Dedicate*/\r\n.dtc-1{\r\n  text-align: center;\r\n  background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n  position: relative;\r\n  top: 15vw;\r\n  font-size: 3vw;\r\n}\r\n\r\n.genx-1{\r\n  text-align: center;\r\n  background: -webkit-linear-gradient(90deg, rgba(255,207,0,0.7243350596910112) 0%, rgba(255,144,12,0.8086047226123596) 48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n  position: relative;\r\n  top: 15vw;\r\n  font-size: 1.5vw;\r\n}\r\n/*text di dedicate*/    \r\n\r\n/* .container-about{\r\n  background-color: lightblue;\r\n} */\r\n\r\n/*csi*/\r\n.CSI-color{\r\n  background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(122,148,186,1)48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.container-aboutus{\r\n  text-align: justify;\r\n  color: white;\r\n  position: relative;\r\n  top: 37vw;\r\n  left: 5vw;\r\n  font-size: 1.2vw;\r\n}\r\n\r\n.buttonsmua{\r\n  font-size: 16px;\r\n}\r\n\r\n@media(max-width:465px){\r\n\r\n  .container-csi{\r\n    background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n   \r\n  }\r\n  \r\n.container-csi-text{\r\n  text-align: center;\r\n  font-size: 8px;\r\n}\r\n.container-2{\r\n  background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n}\r\n\r\n\r\n.container-dedicate-judul{\r\n  top: 35%;\r\n  width: 100%;\r\n  font-size: 9px;\r\n}\r\n  .container-dedicate{\r\n    height: 280px;\r\n  }\r\n\r\n  .container-2-text{\r\n    font-size: 9px;\r\n  }\r\n\r\n  .dtc-1{\r\n    font-size: 15px;\r\n  }\r\n  \r\n  .genx-1{\r\n    \r\n    font-size: 12px;\r\n  }\r\n\r\n  .buttonsmua{\r\n    font-size: 5px;\r\n  }\r\n\r\n}\r\n\r\n@media(min-width:720px){\r\n  .container-dedicate{\r\n    height: 900px;\r\n  }\r\n}\r\n\r\n@media(min-width:1080px){\r\n  .container-dedicate{\r\n    height: 1000px;\r\n  }\r\n}\r\n\r\n\r\n@media(min-width:1380px){\r\n  .container-dedicate{\r\n    height: 1150px;\r\n  }\r\n}\r\n\r\n\r\n@media(min-width:1580px){\r\n  .container-dedicate{\r\n    height: 1350px;\r\n  }\r\n  .container-csi{\r\n    background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n   \r\n  }\r\n}\r\n\r\n@media(min-width:1780px){\r\n  .container-dedicate{\r\n    height: 1550px;\r\n  }\r\n  .container-csi{\r\n    background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n   \r\n  }\r\n}", ""]);
 
 // exports
 
@@ -86932,7 +86932,7 @@ var AboutUs = /*#__PURE__*/function (_Component) {
         className: "box-aboutus"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "penjelasan-aboutus",
-        src: "assets/aboutus/au10.png"
+        src: "assets/aboutus/au9.png"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
@@ -86941,7 +86941,70 @@ var AboutUs = /*#__PURE__*/function (_Component) {
         className: "box-aboutus"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "penjelasan-aboutus",
-        src: "assets/aboutus/au10.png"
+        src: "assets/aboutus/au8.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-aboutus"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "penjelasan-aboutus",
+        src: "assets/aboutus/au7.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-aboutus"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "penjelasan-aboutus",
+        src: "assets/aboutus/au6.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-aboutus"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "penjelasan-aboutus",
+        src: "assets/aboutus/au5.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-aboutus"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "penjelasan-aboutus",
+        src: "assets/aboutus/au4.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-aboutus"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "penjelasan-aboutus",
+        src: "assets/aboutus/au3.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-aboutus"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "penjelasan-aboutus",
+        src: "assets/aboutus/au2.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-aboutus"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "penjelasan-aboutus",
+        src: "assets/aboutus/au1.png"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "details"
       }))))));
