@@ -27,7 +27,7 @@
 
 .container-slider-aboutus{
     width: 100%;
-    height: 250vh; /*Tinggi Box luar Logo nya*/
+    height: 1500px; /*Tinggi Box luar Logo nya*/
     background-color: #ffffff;
     display: flex;
     justify-content: center;
