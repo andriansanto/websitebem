@@ -53,23 +53,21 @@ class KegiatanMahasiswa extends Component{
         const displayTabs = (
             <Tabs selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({ tabIndex })} onClick={slider()}>
             <TabList>
-            <Tab className="text-tab-pane" style={{backgroundImage: backgroundcolor}}><input type="radio" name="radio" id="keg" value="kegiatan" checked={this.state.radio === "kegiatan"} onChange={this.onCheckRadio}></input>Kegiatan<br></br>Mahasiswa</Tab>
-            <Tab className="text-tab-pane" style={{backgroundImage: backgroundcolor}}><input type="radio" name="radio" id="lso" value="lso" checked={this.state.radio === "lso"} onChange={this.onCheckRadio}></input>Lembaga<br></br>Semi Otonom</Tab>
+                <Tab className="text-tab-pane" style={{backgroundImage: backgroundcolor}}><input type="radio" name="radio" id="keg" value="kegiatan" checked={this.state.radio === "kegiatan"} onChange={this.onCheckRadio}></input>Kegiatan<br></br>Mahasiswa</Tab>
+                <Tab className="text-tab-pane" style={{backgroundImage: backgroundcolor}}><input type="radio" name="radio" id="lso" value="lso" checked={this.state.radio === "lso"} onChange={this.onCheckRadio}></input>Lembaga<br></br>Semi Otonom</Tab>
             </TabList>
 
             {/*TAB PAN KEGIATAN*/}
 
             <TabPanel>
+            <img className="keg-kiri" src="assets/kegiatan/kegkiri.png"></img>
             <div className="container-awal">
-
         <div className="container-slider-keg">
             {/*Slider*/}
             
         <ul id="autoWidth" className="cs-hidden">
-
             {/*1*/}
             <li className="item-a">
-                
                     {/*Slider Box*/}
                 <div className="box-keg">
                     {/*model*/}

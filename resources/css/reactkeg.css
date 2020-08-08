@@ -202,6 +202,12 @@ input[type=radio] {
     text-align: left;
 }
 
+.keg-kiri{
+    position: relative;
+    float: left;
+    top: 800px;
+}
+
 @media (max-width:768px){
     .box{
         width: auto;
