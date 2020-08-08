@@ -16,5 +16,20 @@ class DatabaseSeeder extends Seeder
         $user->email = "bem@umn.ac.id";
         $user->password = Hash::make("@dedicatetocreategen10");
         $user->save();
+
+        $slideshow = new App\SlideShow;
+        $slideshow->name = "photo1";
+        $slideshow->photo = "/assets/img/img1.jpg";
+        $slideshow->save();
+
+        $slideshow = new App\SlideShow;
+        $slideshow->name = "photo2";
+        $slideshow->photo = "/assets/img/img2.jpg";
+        $slideshow->save();
+
+        $slideshow = new App\SlideShow;
+        $slideshow->name = "photo3";
+        $slideshow->photo = "/assets/img/img3.jpg";
+        $slideshow->save();
     }
 }

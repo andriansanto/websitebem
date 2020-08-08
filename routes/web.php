@@ -15,13 +15,21 @@ use Illuminate\Support\Facades\Route;
 
 Auth::Routes();
 
-Route::get('/', function () {
-    return view('base');
-});
+Route::get('/','HomeController@index'); 
 
 
 Route::get('/admin','AdminController@dashboard');
 Route::post('/admin','AdminController@dashboard');
+
+Route::get('/admin/slideshow','AdminController@slideshow');
+Route::post('/admin/slideshow','AdminController@slideshow');
+
+Route::delete('/admin/slideshow/{slideshow}','AdminController@destroy_slideshow');
+Route::get('/admin/slideshow/{slideshow}/edit','AdminController@edit_slideshow');
+Route::patch('/admin/slideshow/{slideshow}','AdminController@update_slideshow');
+
+Route::get('/admin/add_slideshow','AdminController@create');
+Route::post('/admin/add_slideshow','AdminController@store')->name('add.slideshow');
 
 Route::get('/himpunan','HomeController@himpunan')->name('himpunan');
 Route::post('/himpunan','HomeController@himpunan')->name('himpunan');
