@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('base');
 });
 
+
+Route::get('/admin','AdminController@dashboard');
+Route::post('/admin','AdminController@dashboard');
+
 Route::get('/himpunan','HomeController@himpunan')->name('himpunan');
 Route::post('/himpunan','HomeController@himpunan')->name('himpunan');
 
