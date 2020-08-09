@@ -68,6 +68,22 @@
                     Lembaga Semi Otonom
                 </a>
             </li>
+            <li class="nav-item px-3 pt-4">
+                <h6>About Us</h6>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/add_gen">
+                    <i class="fas fa-chart-bar mr-2"></i>
+                    Tambah Generasi
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/aboutus">
+                    <i class="fas fa-chart-bar mr-2"></i>
+                    Edit Generasi
+                </a>
+            </li>
         </ul>
     </nav>
     @yield('item')

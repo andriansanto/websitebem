@@ -31,5 +31,10 @@ class DatabaseSeeder extends Seeder
         $slideshow->name = "photo3";
         $slideshow->photo = "/assets/img/img3.jpg";
         $slideshow->save();
+
+        $generasi = new App\Generasi;
+        $generasi->name = "photo3";
+        $generasi->photo = "/assets/img/img3.jpg";
+        $generasi->save();
     }
 }

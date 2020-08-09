@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\SlideShow;
+use App\Generasi;
 
 class AdminController extends Controller
 {
@@ -42,8 +43,6 @@ class AdminController extends Controller
         ->update([
             'name' => $request->name,
         ]);
-
-        $slideshowFilename = strtolower(str_replace(" ","-",$request->name));
         
         if($request->hasFile('photo')) {
             $file = $request->file('photo');
@@ -93,6 +92,87 @@ class AdminController extends Controller
             $slideshow->photo = '';
         }
         $slideshow->save();
+
+        return redirect('/admin')->with('status', 'Slide show berhasil ditambahkan !');
+    }
+
+    /**ABOUT US GENERASI */
+
+    public function aboutus(){
+        return view('admin.gen')->with(['gens' => Generasi::all()]);
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\hotel  $hotel
+     * @return \Illuminate\Http\Response
+     */
+    public function edit_gen(Generasi $generasi)
+    {
+        return view('admin.edit-gen', compact('generasi'));
+    }
+
+    public function update_gen(Request $request, Generasi $generasi)
+    {
+        $request->validate([
+            'name' => 'required|max:255',
+            'photo' => 'image|max:1000'
+        ]);
+
+        Generasi::where('id', $generasi->id)
+        ->update([
+            'name' => $request->name,
+        ]);
+        
+        if($request->hasFile('photo')) {
+            $file = $request->file('photo');
+            $filename = '/assets/img/'.time() . '.' . $_FILES['photo']['name'];
+            $target = 'assets/img';
+            $file->move($target,$filename);
+            $generasi->photo = $filename;
+        } else {
+            return redirect('/admin/aboutus')->with('unstatus', 'Generasi berhasil diubah dengan gambar yang sama !');
+            $generasi->photo = '';
+        }
+        $generasi->save();
+
+        return redirect('/admin/aboutus')->with('status', 'Generasi berhasil diubah !');
+    }
+
+    public function destroy_gen(Generasi $generasi)
+    {
+
+        SlideShow::destroy($generasi->id);
+        return redirect('/admin/aboutus')->with('status', 'Generasi berhasil dihapus !');
+    }
+
+    public function create_gen()
+    {
+        return view('/admin/add-gen');
+    }
+
+    public function store_gen(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|max:255',
+            'photo' => 'required|image|max:1000'
+        ]);
+
+        $generasi = new Generasi();
+        $generasi->name = $request->name;
+
+        if($request->hasFile('photo')) {
+            $file = $request->file('photo');
+            $filename = '/assets/img/'.time() . '.' . $_FILES['photo']['name'];
+            $target = 'assets/img';
+            $file->move($target,$filename);
+            $generasi->photo = $filename;
+        } else {
+            return redirect('/admin')->with('unstatus', 'Slide show tidak berhasil ditambahkan !');
+            $generasi->photo = '';
+        }
+        $generasi->save();
 
         return redirect('/admin')->with('status', 'Slide show berhasil ditambahkan !');
     }
