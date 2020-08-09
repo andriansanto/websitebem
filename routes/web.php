@@ -15,9 +15,36 @@ use Illuminate\Support\Facades\Route;
 
 Auth::Routes();
 
-Route::get('/', function () {
-    return view('base');
-});
+Route::get('/','HomeController@index'); 
+
+/**SLIDE SHOW HOME PAGE */
+
+Route::get('/admin','AdminController@dashboard');
+Route::post('/admin','AdminController@dashboard');
+
+Route::get('/admin/slideshow','AdminController@slideshow');
+Route::post('/admin/slideshow','AdminController@slideshow');
+
+Route::delete('/admin/slideshow/{slideshow}','AdminController@destroy_slideshow');
+Route::get('/admin/slideshow/{slideshow}/edit','AdminController@edit_slideshow');
+Route::patch('/admin/slideshow/{slideshow}','AdminController@update_slideshow');
+
+Route::get('/admin/add_slideshow','AdminController@create');
+Route::post('/admin/add_slideshow','AdminController@store')->name('add.slideshow');
+
+/**ABOUT US GENERASI */
+
+Route::get('/admin/aboutus','AdminController@aboutus');
+Route::post('/admin/aboutus','AdminController@aboutus');
+
+Route::delete('/admin/aboutus/{generasi}','AdminController@destroy_gen');
+Route::get('/admin/aboutus/{generasi}/edit','AdminController@edit_gen');
+Route::patch('/admin/aboutus/{generasi}','AdminController@update_gen');
+
+Route::get('/admin/add_gen','AdminController@create_gen');
+Route::post('/admin/add_gen','AdminController@store_gen')->name('add.gen');
+
+/**PAGES */
 
 Route::get('/himpunan','HomeController@himpunan')->name('himpunan');
 Route::post('/himpunan','HomeController@himpunan')->name('himpunan');

@@ -53,23 +53,21 @@ class KegiatanMahasiswa extends Component{
         const displayTabs = (
             <Tabs selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({ tabIndex })} onClick={slider()}>
             <TabList>
-            <Tab className="text-tab-pane" style={{backgroundImage: backgroundcolor}}><input type="radio" name="radio" id="keg" value="kegiatan" checked={this.state.radio === "kegiatan"} onChange={this.onCheckRadio}></input>Kegiatan<br></br>Mahasiswa</Tab>
-            <Tab className="text-tab-pane" style={{backgroundImage: backgroundcolor}}><input type="radio" name="radio" id="lso" value="lso" checked={this.state.radio === "lso"} onChange={this.onCheckRadio}></input>Lembaga<br></br>Semi Otonom</Tab>
+                <Tab className="text-tab-pane" style={{backgroundImage: backgroundcolor}}><input type="radio" name="radio" id="keg" value="kegiatan" checked={this.state.radio === "kegiatan"} onChange={this.onCheckRadio}></input>Kegiatan<br></br>Mahasiswa</Tab>
+                <Tab className="text-tab-pane" style={{backgroundImage: backgroundcolor}}><input type="radio" name="radio" id="lso" value="lso" checked={this.state.radio === "lso"} onChange={this.onCheckRadio}></input>Lembaga<br></br>Semi Otonom</Tab>
             </TabList>
 
             {/*TAB PAN KEGIATAN*/}
 
             <TabPanel>
+            <img className="keg-kiri" src="assets/kegiatan/kegkiri.png"></img>
             <div className="container-awal">
-
         <div className="container-slider-keg">
             {/*Slider*/}
             
         <ul id="autoWidth" className="cs-hidden">
-
             {/*1*/}
             <li className="item-a">
-                
                     {/*Slider Box*/}
                 <div className="box-keg">
                     {/*model*/}
@@ -82,10 +80,9 @@ class KegiatanMahasiswa extends Component{
 
                     {/*Penjelasan*/}
                     <div className="info">
-                    <p>Ultima Sonora adalah unit kegiatan mahasiswa</p>
-                    <p>yang bergerak dalam bidang paduan suara</p>
+                    <p>UMN Festival atau U-Fest adalah kegiatan mahasiswa di bawah naungan BEM UMN yang bertujuan untuk meningkatkan ikatan antar seluruh mahasiswa dari setiap jurusan dan angkatan lewat bidang olahraga, sosial, dan seni.</p>
 
-                    <a href="instagram.com/bemumn">@ultimasonora</a>
+                    <a href="http://www.instagram.com/umnfestival"><i class="lni lni-instagram-original"></i> umnfestival</a>
                     </div>
                     </div>
                     </Row>
@@ -118,10 +115,9 @@ class KegiatanMahasiswa extends Component{
 
                     {/*Penjelasan*/}
                     <div className="info">
-                    <p>Ultima Sonora adalah unit kegiatan mahasiswa</p>
-                    <p>yang bergerak dalam bidang paduan suara</p>
+                    <p>MAXIMA atau Malam Ekspresi Mahasiswa adalah kegiatan dibawah naungan BEM UMN yang ditujukan untuk meningkatkan kesadaran dan partisipasi aktif mahasiswa serta menjalin hubungan, dikemas dalam wujud pementasan, pameran, uji coba UKM, dan pentas seni.</p>
 
-                    <a href="instagram.com/bemumn">@ultimasonora</a>
+                    <a href="http://www.instagram.com/maximaumn"><i class="lni lni-instagram-original"></i> maximaumn</a>
                     </div>
                     </div>
                     </Row>
@@ -154,10 +150,9 @@ class KegiatanMahasiswa extends Component{
 
                     {/*Penjelasan*/}
                     <div className="info">
-                    <p>Ultima Sonora adalah unit kegiatan mahasiswa</p>
-                    <p>yang bergerak dalam bidang paduan suara</p>
+                    <p>Mr. & Ms. UMN merupakan kegiatan mahasiswa yang berada dibawah naungan BEM UMN dengan tujuan untuk mencari duta bagi Universitas Multimedia Nusantara.</p>
 
-                    <a href="instagram.com/bemumn">@ultimasonora</a>
+                    <a href="http://www.instagram.com/mrmsumn"><i class="lni lni-instagram-original"></i> mrmsumn</a>
                     </div>
                     </div>
                     </Row>
@@ -190,10 +185,9 @@ class KegiatanMahasiswa extends Component{
 
                     {/*Penjelasan*/}
                     <div className="info">
-                    <p>Ultima Sonora adalah unit kegiatan mahasiswa</p>
-                    <p>yang bergerak dalam bidang paduan suara</p>
+                    <p>Starlight merupakan salah satu program kerja dari BEM UMN dimana para pelajar baik internal maupun eksternal UMN dapat berkompetisi dengan menunjukkan kebolehannya untuk menampilkan bakat mereka di kegiatan ini.</p>
 
-                    <a href="instagram.com/bemumn">@ultimasonora</a>
+                    <a href="http://www.instagram.com/starlightumn"><i class="lni lni-instagram-original"></i> starlightumn</a>
                     </div>
                     </div>
                     </Row>
@@ -226,10 +220,9 @@ class KegiatanMahasiswa extends Component{
 
                     {/*Penjelasan*/}
                     <div className="info">
-                    <p>Ultima Sonora adalah unit kegiatan mahasiswa</p>
-                    <p>yang bergerak dalam bidang paduan suara</p>
+                    <p>Bank Sampah adalah kegiatan mahasiswa di bawah naungan BEM UMN yang bertujuan untuk membangun kesadaran mahasiswa akan pentingnya lingkungan yang sehat dan bebas dari sampah.</p>
 
-                    <a href="instagram.com/bemumn">@ultimasonora</a>
+                    <a href="http://www.instagram.com/banksampah_umn"><i class="lni lni-instagram-original"></i> banksampah_umn</a>
                     </div>
                     </div>
                     </Row>
@@ -262,10 +255,9 @@ class KegiatanMahasiswa extends Component{
 
                     {/*Penjelasan*/}
                     <div className="info">
-                    <p>Ultima Sonora adalah unit kegiatan mahasiswa</p>
-                    <p>yang bergerak dalam bidang paduan suara</p>
+                    <p>Orientasi Mahasiswa Baru Universitas Multimedia Nusantara atau OMB UMN adalah kegiatan mahasiswa dibawah naungan BEM UMN yang bertujuan memberi bekal untuk masa pendidikan mahasiswa baru Universitas Multimedia Nusantara.</p>
 
-                    <a href="instagram.com/bemumn">@ultimasonora</a>
+                    <a href="http://www.instagram.com/ombumn"><i class="lni lni-instagram-original"></i> ombumn</a>
                     </div>
                     </div>
                     </Row>
@@ -307,18 +299,18 @@ class KegiatanMahasiswa extends Component{
         <div className="box-keg">
             {/*model*/}
             <Row>
-                    <div className="col-md-5">
+                    <div className="col-md-4">
                     <img src="assets/lso/logorumpinbig.png" className="model-lso-box"></img>
                     </div>
                     <div className="col">
                     <p className="title-lso">RUMPIN</p>
 
                     {/*Penjelasan*/}
-                    <div className="info">
-                    <p>Ultima Sonora adalah unit kegiatan mahasiswa</p>
-                    <p>yang bergerak dalam bidang paduan suara</p>
+                    <div className="info-lso">
+                    <p>Rumpin merupakan sebuah LSO yang bergerak pada bidang sosial dan berfokus pada pendidikan. Dengan tagline “Together, Inspire for the Future”, kami percaya bahwa pendidikan dapat membantu mengubah masa depan. Tujuan utama Rumpin saat ini adalah memberikan bantuan untuk anak-anak yang masih belum mendapatkan pengetahuan dan edukasi yang layak. Kami juga mau menjadi wadah bagi mahasiswa Universitas Multimedia Nusantara untuk menyalurkan jiwa social mereka kepada anak-anak yang membutuhkan.</p>
+                    <p>Rumpin juga telah melaksanakan beberapa kegiatan sosial yang melibatkan mahasiswa Universitas Multimedia Nusantara sendiri dan menyalurkan bantuan ke beberapa lembaga, panti asuhan dan sekolah yang membutuhkan.</p>
 
-                    <a href="instagram.com/bemumn">@ultimasonora</a>
+                    <a href="http://www.instagram.com/rumpin_umn"><i class="lni lni-instagram-original"></i> rumpin_umn</a>
                     </div>
                     </div>
                     </Row>
@@ -343,18 +335,19 @@ class KegiatanMahasiswa extends Component{
         <div className="box-keg">
             {/*model*/}
             <Row>
-                    <div className="col-md-5">
+                    <div className="col-md-4">
                     <img src="assets/lso/logoubizbig.png" className="model-lso-box"></img>
                     </div>
                     <div className="col">
                     <p className="title-lso">U-BIZ</p>
 
                     {/*Penjelasan*/}
-                    <div className="info">
-                    <p>Ultima Sonora adalah unit kegiatan mahasiswa</p>
-                    <p>yang bergerak dalam bidang paduan suara</p>
+                    <div className="info-lso">
+                    <p>U-BIZ adalah organisasi bisnis dari mahasiswa untuk mahasiswa yang bertujuan meningkatkan jiwa kewirausahaan mahasiswa. Adapun U-BIZ UMN memiliki dua departemen.</p>
+                    <p>Pertama, Departemen U-BIZ Walkneat sebagai salah satu unit bisnis yang dimiliki oleh organisasi Ubiz. Memberikan mahasiswa kesempatan untuk mencoba terjun ke dunia bisnis secara langsung dengan menjalankan bisnis dalam bidang pelayanan cuci sepatu.</p>
+                    <p>Kedua, Departemen Komunitas sebagai wadah mahasiswa untuk mengembangkan potensi diri dalam dunia bisnis dengan bantuan pengetahuan, sharing dan konsultasi dari Organisasi Ubiz. Membantu mahasiswa dalam merencanakan dan berproses membangun bisnis baik untuk mahasiswa yang telah menjalankan bisnis maupun yang baru ingin menjalankan.</p>
 
-                    <a href="instagram.com/bemumn">@ultimasonora</a>
+                    <a href="http://www.instagram.com/ubizumn"><i class="lni lni-instagram-original"></i> ubizumn</a>
                     </div>
                     </div>
                     </Row>
@@ -386,11 +379,11 @@ class KegiatanMahasiswa extends Component{
                     <p className="title-lso">DUTA ANTI NARKOBA</p>
 
                     {/*Penjelasan*/}
-                    <div className="info">
-                    <p>Ultima Sonora adalah unit kegiatan mahasiswa</p>
-                    <p>yang bergerak dalam bidang paduan suara</p>
+                    <div className="info-lso">
+                    <p>Duta Anti Narkoba atau Dunar merupakan Lembaga Semi Otonom yang berada dibawah naungan Badan Eksekutif Mahasiswa. Dunar dibentuk tahun 2016 dan  berhasil mempertahankan eksistensinya sampai saat ini dengan mewujudkan peraturan kampus yang menentang segala bentuk penyalahgunaan narkoba di lingkungan kampus UMN. Kegiatan internal Dunar berupa Seminar, Anti Narkoba Week, HANI, Awarding Night serta beberapa kegiatan kecil lainnya. </p>
+                    <p>Selain itu, kegiatan eksternal Dunar berupa kerjasama dengan berbagai organisasi luar seperti Fornasmapan dan Artipena. Dunar bertujuan untuk memberikan edukasi, membuat program - program menarik sepanjang tahun serta membagikan pengalaman berkesan bagi mahasiswa/i UMN. </p>
 
-                    <a href="instagram.com/bemumn">@ultimasonora</a>
+                    <a href="http://www.instagram.com/dutaantinarkoba.umn"><i class="lni lni-instagram-original"></i> dutaantinarkoba.umn</a>
                     </div>
                     </div>
                     </Row>
@@ -416,18 +409,18 @@ class KegiatanMahasiswa extends Component{
         <div className="box-keg">
             {/*model*/}
             <Row>
-                    <div className="col-md-5">
+                    <div className="col-md-4">
                     <img src="assets/lso/logomedicbig.png" className="model-lso-medic"></img>
                     </div>
                     <div className="col">
                     <p className="title-lso">UMN MEDIC</p>
 
                     {/*Penjelasan*/}
-                    <div className="info">
-                    <p>Ultima Sonora adalah unit kegiatan mahasiswa</p>
-                    <p>yang bergerak dalam bidang paduan suara</p>
+                    <div className="info-lso">
+                    <p>UMN Medical Center merupakan suatu lembaga semi otonom yang berdiri di bawah pengawasan BEM dan bergerak di bidang kesehatan. Saat ini UMN medical Center sudah memiliki VI generasi yang sekarang dijalankan oleh generasi ke VI. </p>
+                    <p>Dengan tagline “Spread Health through Happiness”, UMN Medical Center mengajak seluruh Civitas akademika UMN untuk menjaga kesehatan dengan memberikan pertolongan pertama dan edukasi kepada civitas akademika UMN mengenai pentingnya menjaga kesehatan dan peduli kepada sesama melalui kampanye - kampanye interaktif serta seminar mengenai kesehatan. Selain itu, UMN Medical Center juga belajar mengenai kekeluargaan melalui berbagai kegiatan yang menyenangkan.</p>
 
-                    <a href="instagram.com/bemumn">@ultimasonora</a>
+                    <a href="http://www.instagram.com/umnmedicalcenter"><i class="lni lni-instagram-original"></i> umnmedicalcenter</a>
                     </div>
                     </div>
                     </Row>
@@ -452,18 +445,18 @@ class KegiatanMahasiswa extends Component{
         <div className="box-keg">
             {/*model*/}
             <Row>
-                    <div className="col-md-5">
+                    <div className="col-md-4">
                     <img src="assets/lso/logokomcorbig.png" className="model-lso-komcor"></img>
                     </div>
                     <div className="col">
                     <p className="title-lso">KOMPAS CORNER</p>
 
                     {/*Penjelasan*/}
-                    <div className="info">
-                    <p>Ultima Sonora adalah unit kegiatan mahasiswa</p>
-                    <p>yang bergerak dalam bidang paduan suara</p>
+                    <div className="info-lso">
+                    <p>Kompas Corner merupakan Lembaga Semi Otonom (LSO) yang telah berdiri selama 7 tahun sejak Mei 2013 dan berada di bawah direct supervision dari Harian Kompas. Kegiatan yang dijalankan oleh Kompas Corner antara lain, melakukan media visit, membuat podcast dan webseries, menyelenggarakan event di bawah naungan Harian Kompas serta menjadi media partner.</p>
+                    <p>Kompas Corner juga memiliki ruangan yang dapat diakses setiap hari Senin - Kamis pukul 09.00 - 17.00 dan 09.00 - 15.00 di hari Jumat oleh seluruh mahasiswa Universitas Multimedia Nusantara dan dapat dijadikan wadah untuk berdiskusi, bermain, membaca buku, hingga mengakses Kompas Data.</p>
 
-                    <a href="instagram.com/bemumn">@ultimasonora</a>
+                    <a href="http://www.instagram.com/kompascorner"><i class="lni lni-instagram-original"></i> kompascorner</a>
                     </div>
                     </div>
                     </Row>
@@ -488,18 +481,18 @@ class KegiatanMahasiswa extends Component{
         <div className="box-keg">
             {/*model*/}
             <Row>
-                    <div className="col-md-5">
+                    <div className="col-md-4">
                     <img src="assets/lso/logoustorebig.png" className="model-lso-ustore"></img>
                     </div>
                     <div className="col">
                     <p className="title-lso">U-STORE</p>
 
                     {/*Penjelasan*/}
-                    <div className="info">
-                    <p>Ultima Sonora adalah unit kegiatan mahasiswa</p>
-                    <p>yang bergerak dalam bidang paduan suara</p>
+                    <div className="info-lso">
+                    <p>U-Store merupakan koperasi mahasiswa berbadan hukum, beroperasi sejak tahun 2015 dan terletak di Gedung C lantai 1 Universitas Multimedia Nusantara. U-Store menyediakan berbagai kebutuhan untuk menunjang kegiatan perkuliahan dan gaya hidup sehari-hari.</p>
+                    <p>U-Store menjual produk otentik yang berciri khas Universitas Multimedia Nusantara seperti kaos, hoodie, lanyard, pin, dll. U-Store juga menyediakan jasa vendor bagi organisasi ataupun mahasiswa yang membutuhkan. Jasa ini dapat digunakan untuk memproduksi barang-barang keperluan organisasi. Selain itu, U-Store juga menyediakan jasa penyewaan Handie Talkie (HT) bagi organisasi maupun mahasiswa. U-Store selalu membuka kepengurusan baru setiap tahunnya untuk menghadirkan berbagai inovasi di masa yang akan datang.</p>
 
-                    <a href="instagram.com/bemumn">@ultimasonora</a>
+                    <a href="http://www.instagram.com/kopmaustore"><i class="lni lni-instagram-original"></i> kopmaustore</a>
                     </div>
                     </div>
                     </Row>
