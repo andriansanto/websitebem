@@ -27,27 +27,68 @@ const photos = [
 
 
 class Home extends Component{
+    
     constructor(props){
         super(props);
         this.state = {
             items: [],
             isLoaded: false,
         }
+        this._isMounted = false
     }
 
-    componentDidMount(){
-        fetch('http://localhost:4545/api/slideshow')
-        .then(res => res.json())
-        .then(json => {
-            this.setState({
-            isLoaded: true,
-            items: json,
-            })
-        });
+    
+
+    async componentDidMount(){
+        try{
+            const res = await fetch('http://127.0.0.1:4545/api/slideshow',{
+                header:{
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                        'Access-Control-Allow-Credentials':'true',
+                        'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
+                }
+            });
+            const data_api = await res.json();  
+            // // console.log(json);
+            // // console.log(res);
+            // console.log(data_api);
+            if(this._isMounted){
+                this.setState({
+                    isLoading:false,
+                    isLoaded:true,
+                    items: data_api
+                })
+            }
+        }catch(e){
+            console.log("error");
+        }
     }
+    //     this._isMounted = true;
+    //     const urlFetch = fetch('http://127.0.0.1:4545/api/slideshow', {
+    //         mode: "no-cors"
+    //     })
+        
+    //     urlFetch.then( res => {
+    //        if(res.status === 200)
+    //           return res.json()   
+    //     }).then( resJson => {
+    //         if (this._isMounted) {
+    //             this.setState({isLoading: false})
+    //           }
+    //        this.setState({
+    //            isLoaded: true,
+    //            items: resJson,
+    //        })
+    //     })
+    //  }
+
+     componentWillUnmount() {
+        this._isMounted = false;
+      }
 
     render(){
-        var { isLoaded, items } = this.state;
+        // var { isLoaded, items } = this.state;
         const settings ={
             dots: true,
             fade: false,
@@ -67,7 +108,7 @@ class Home extends Component{
         <div>
             <div className="App">
            <Slider {...settings}>
-               {items.map((item) => {
+           {this.state.items.map(item => {
                    return(
                        <div className="slides filter">
                             <img className="slides-img" src={item.photo}>

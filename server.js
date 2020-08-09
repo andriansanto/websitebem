@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 var con = mysql.createConnection({
     
-    host:'localhost',
+    host:'127.0.0.1',
     user:'root',
     password:'',
     database:'websitebem'
@@ -27,6 +27,7 @@ con.connect(function(error){
 });
 
 app.get('/api/slideshow', function(req,res){
+    res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:8000');
     con.query('select * from slideshow', function(error, rows, fields){
         if(error) console.log(error);
 
