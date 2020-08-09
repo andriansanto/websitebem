@@ -57,3 +57,6 @@ Route::post('/kegiatan-mahasiswa','HomeController@kegiatanMahasiswa')->name('keg
 
 Route::get('/about-us','HomeController@aboutus')->name('about-us');
 Route::post('/about-us','HomeController@aboutus')->name('about-us');
+
+Route::get('/web-team','HomeController@webteam')->name('web-team');
+Route::post('/web-team','HomeController@webteam')->name('web-team');

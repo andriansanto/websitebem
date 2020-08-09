@@ -143,7 +143,7 @@ class AdminController extends Controller
     public function destroy_gen(Generasi $generasi)
     {
 
-        SlideShow::destroy($generasi->id);
+        Generasi::destroy($generasi->id);
         return redirect('/admin/aboutus')->with('status', 'Generasi berhasil dihapus !');
     }
 

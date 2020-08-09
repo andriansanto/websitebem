@@ -46,4 +46,9 @@ class HomeController extends Controller
     {
         return view('aboutus');
     }
+
+    public function webteam()
+    {
+        return view('webteam');
+    }
 }
