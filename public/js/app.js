@@ -87239,15 +87239,39 @@ var Home = /*#__PURE__*/function (_Component) {
 
   var _super = _createSuper(Home);
 
-  function Home() {
+  function Home(props) {
+    var _this;
+
     _classCallCheck(this, Home);
 
-    return _super.apply(this, arguments);
+    _this = _super.call(this, props);
+    _this.state = {
+      items: [],
+      isLoaded: false
+    };
+    return _this;
   }
 
   _createClass(Home, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      fetch('http://localhost:4545/api/slideshow').then(function (res) {
+        return res.json();
+      }).then(function (json) {
+        _this2.setState({
+          isLoaded: true,
+          items: json
+        });
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
+      var _this$state = this.state,
+          isLoaded = _this$state.isLoaded,
+          items = _this$state.items;
       var settings = {
         dots: true,
         fade: false,
@@ -87264,12 +87288,12 @@ var Home = /*#__PURE__*/function (_Component) {
       };
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "App"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_slick__WEBPACK_IMPORTED_MODULE_4___default.a, settings, photos.map(function (photo) {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_slick__WEBPACK_IMPORTED_MODULE_4___default.a, settings, items.map(function (item) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "slides filter"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
           className: "slides-img",
-          src: photo.url
+          src: item.photo
         }));
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container-csi"

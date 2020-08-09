@@ -26,8 +26,19 @@ con.connect(function(error){
     else console.log("connected");
 });
 
-app.get('/slideshow', function(req,res){
+app.get('/api/slideshow', function(req,res){
     con.query('select * from slideshow', function(error, rows, fields){
+        if(error) console.log(error);
+
+        else{
+            console.log(rows);
+            res.send(rows);
+        }
+    });
+});
+
+app.get('/api/generasi', function(req,res){
+    con.query('select * from generasi', function(error, rows, fields){
         if(error) console.log(error);
 
         else{

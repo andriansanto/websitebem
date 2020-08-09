@@ -7,6 +7,8 @@ import '../../css/reacthome.css';
 import { Container, Row, Col } from 'reactstrap';
 import { Button } from 'reactstrap';
 
+
+
 const photos = [
     {
         name: 'Photo 1',
@@ -25,7 +27,27 @@ const photos = [
 
 
 class Home extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            items: [],
+            isLoaded: false,
+        }
+    }
+
+    componentDidMount(){
+        fetch('http://localhost:4545/api/slideshow')
+        .then(res => res.json())
+        .then(json => {
+            this.setState({
+            isLoaded: true,
+            items: json,
+            })
+        });
+    }
+
     render(){
+        var { isLoaded, items } = this.state;
         const settings ={
             dots: true,
             fade: false,
@@ -45,10 +67,10 @@ class Home extends Component{
         <div>
             <div className="App">
            <Slider {...settings}>
-               {photos.map((photo) => {
+               {items.map((item) => {
                    return(
                        <div className="slides filter">
-                            <img className="slides-img" src={photo.url}>
+                            <img className="slides-img" src={item.photo}>
                             </img>
                        </div>
                    )
