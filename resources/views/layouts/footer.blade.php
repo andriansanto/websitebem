@@ -71,7 +71,7 @@
                     <!-- Copywrite Text -->
                     <div class="col-12">
                         <div class="copywrite-text text-center" style="color: white;">
-                            <a href="#"> Copyright &copy; TEAM WEBSITE BEM UMN GEN X <span id="current_year"></span>. All rights reserved</a>
+                            <a href="{{ route('web-team') }}"> Copyright &copy; TEAM WEBSITE BEM UMN GEN X <span id="current_year"></span>. All rights reserved</a>
                         </div>
                     </div>
                 </div>
