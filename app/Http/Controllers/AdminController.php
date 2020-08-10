@@ -46,7 +46,7 @@ class AdminController extends Controller
         
         if($request->hasFile('photo')) {
             $file = $request->file('photo');
-            $filename = '/assets/img/'.time() . '.' . $_FILES['photo']['name'];
+            $filename = 'assets/img/'.time() . '.' . $_FILES['photo']['name'];
             $target = 'assets/img';
             $file->move($target,$filename);
             $slideshow->photo = $filename;
@@ -61,9 +61,16 @@ class AdminController extends Controller
 
     public function destroy_slideshow(SlideShow $slideshow)
     {
-
-        SlideShow::destroy($slideshow->id);
-        return redirect('/admin/slideshow')->with('status', 'Slide show berhasil dihapus !');
+        
+        $path = SlideShow::find($slideshow->id)->photo;
+        
+        if(unlink($path)){
+            SlideShow::destroy($slideshow->id);
+            return redirect('/admin/slideshow')->with('status', 'Slide show berhasil dihapus !');
+        }
+        else{
+            return redirect('/admin/slideshow')->with('status', 'Slide show gagal dihapus !');
+        }
     }
 
     public function create()
@@ -83,7 +90,7 @@ class AdminController extends Controller
 
         if($request->hasFile('photo')) {
             $file = $request->file('photo');
-            $filename = '/assets/img/'.time() . '.' . $_FILES['photo']['name'];
+            $filename = 'assets/img/'.time() . '.' . $_FILES['photo']['name'];
             $target = 'assets/img';
             $file->move($target,$filename);
             $slideshow->photo = $filename;
@@ -127,7 +134,7 @@ class AdminController extends Controller
         
         if($request->hasFile('photo')) {
             $file = $request->file('photo');
-            $filename = '/assets/img/'.time() . '.' . $_FILES['photo']['name'];
+            $filename = 'assets/img/'.time() . '.' . $_FILES['photo']['name'];
             $target = 'assets/img';
             $file->move($target,$filename);
             $generasi->photo = $filename;
@@ -164,7 +171,7 @@ class AdminController extends Controller
 
         if($request->hasFile('photo')) {
             $file = $request->file('photo');
-            $filename = '/assets/img/'.time() . '.' . $_FILES['photo']['name'];
+            $filename = 'assets/img/'.time() . '.' . $_FILES['photo']['name'];
             $target = 'assets/img';
             $file->move($target,$filename);
             $generasi->photo = $filename;

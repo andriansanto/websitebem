@@ -87983,16 +87983,6 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
-var photos = [{
-  name: 'Photo 1',
-  url: 'assets/img/img1.jpg'
-}, {
-  name: 'Photo 2',
-  url: 'assets/img/img2.jpg'
-}, {
-  name: 'Photo 3',
-  url: 'assets/img/img3.jpg'
-}];
 
 var Home = /*#__PURE__*/function (_Component) {
   _inherits(Home, _Component);
@@ -88007,9 +87997,10 @@ var Home = /*#__PURE__*/function (_Component) {
     _this = _super.call(this, props);
     _this.state = {
       items: [],
-      isLoaded: false
+      isLoaded: false,
+      isLoading: true
     };
-    _this._isMounted = false;
+    _this._isMounted = true;
     return _this;
   }
 
@@ -88017,7 +88008,9 @@ var Home = /*#__PURE__*/function (_Component) {
     key: "componentDidMount",
     value: function () {
       var _componentDidMount = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var res, data_api;
+        var _this2 = this;
+
+        var res;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -88031,41 +88024,35 @@ var Home = /*#__PURE__*/function (_Component) {
                     'Access-Control-Allow-Credentials': 'true',
                     'Access-Control-Allow-Origin': 'http://127.0.0.1:4545'
                   }
+                }).then(function (Response) {
+                  return Response.json();
+                }).then(function (findresponse) {
+                  if (_this2._isMounted) {
+                    // console.log(findresponse);
+                    _this2.setState({
+                      items: findresponse,
+                      isLoading: false,
+                      isLoaded: true
+                    });
+                  }
                 });
 
               case 3:
                 res = _context.sent;
-                _context.next = 6;
-                return res.json();
-
-              case 6:
-                data_api = _context.sent;
-
-                // // console.log(json);
-                // // console.log(res);
-                // console.log(data_api);
-                if (this._isMounted) {
-                  this.setState({
-                    isLoading: false,
-                    isLoaded: true,
-                    items: data_api
-                  });
-                }
-
-                _context.next = 13;
+                _context.next = 9;
                 break;
 
-              case 10:
-                _context.prev = 10;
+              case 6:
+                _context.prev = 6;
                 _context.t0 = _context["catch"](0);
                 console.log("error");
 
-              case 13:
+              case 9:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, this, [[0, 10]]);
+        }, _callee, null, [[0, 6]]);
       }));
 
       function componentDidMount() {
@@ -88073,24 +88060,7 @@ var Home = /*#__PURE__*/function (_Component) {
       }
 
       return componentDidMount;
-    }() //     this._isMounted = true;
-    //     const urlFetch = fetch('http://127.0.0.1:4545/api/slideshow', {
-    //         mode: "no-cors"
-    //     })
-    //     urlFetch.then( res => {
-    //        if(res.status === 200)
-    //           return res.json()   
-    //     }).then( resJson => {
-    //         if (this._isMounted) {
-    //             this.setState({isLoading: false})
-    //           }
-    //        this.setState({
-    //            isLoaded: true,
-    //            items: resJson,
-    //        })
-    //     })
-    //  }
-
+    }()
   }, {
     key: "componentWillUnmount",
     value: function componentWillUnmount() {
@@ -88099,7 +88069,6 @@ var Home = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      // var { isLoaded, items } = this.state;
       var settings = {
         dots: true,
         fade: false,
@@ -88116,9 +88085,10 @@ var Home = /*#__PURE__*/function (_Component) {
       };
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "App"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_slick__WEBPACK_IMPORTED_MODULE_5___default.a, settings, this.state.items.map(function (item) {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_slick__WEBPACK_IMPORTED_MODULE_5___default.a, settings, this.state.items.map(function (item, index) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-          className: "slides filter"
+          className: "slides filter",
+          key: index
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
           className: "slides-img",
           src: item.photo

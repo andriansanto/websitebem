@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('base')->with(['slideshows' => SlideShow::all()]);
+        return view('base');
     }
 
     public function himpunan()

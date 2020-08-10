@@ -19,22 +19,22 @@ class DatabaseSeeder extends Seeder
 
         $slideshow = new App\SlideShow;
         $slideshow->name = "photo1";
-        $slideshow->photo = "/assets/img/img1.jpg";
+        $slideshow->photo = "assets/img/img1.jpg";
         $slideshow->save();
 
         $slideshow = new App\SlideShow;
         $slideshow->name = "photo2";
-        $slideshow->photo = "/assets/img/img2.jpg";
+        $slideshow->photo = "assets/img/img2.jpg";
         $slideshow->save();
 
         $slideshow = new App\SlideShow;
         $slideshow->name = "photo3";
-        $slideshow->photo = "/assets/img/img3.jpg";
+        $slideshow->photo = "assets/img/img3.jpg";
         $slideshow->save();
 
         $generasi = new App\Generasi;
         $generasi->name = "photo3";
-        $generasi->photo = "/assets/img/img3.jpg";
+        $generasi->photo = "assets/img/img3.jpg";
         $generasi->save();
     }
 }
