@@ -39,6 +39,7 @@ app.get('/api/slideshow', function(req,res){
 });
 
 app.get('/api/generasi', function(req,res){
+    res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:8000');
     con.query('select * from generasi', function(error, rows, fields){
         if(error) console.log(error);
 

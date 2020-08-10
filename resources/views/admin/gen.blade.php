@@ -10,7 +10,7 @@
             <div class="card mb-3">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="{{ $gen->photo }}" class="card-img-top" alt="{{ $gen->photo }}" style="height:100%; object-fit: cover;">
+                        <img src="/{{ $gen->photo }}" class="card-img-top" alt="{{ $gen->photo }}" style="height:100%; object-fit: cover;">
                     </div>
                     <div class="col-md-8">
                     <div class="card-body">

@@ -149,9 +149,16 @@ class AdminController extends Controller
 
     public function destroy_gen(Generasi $generasi)
     {
+        $path = Generasi::find($generasi->id)->photo;
+        
+        if(unlink($path)){
+            Generasi::destroy($generasi->id);
+            return redirect('/admin/aboutus')->with('status', 'Generasi berhasil dihapus !');
+        }
+        else{
+            return redirect('/admin/aboutus')->with('status', 'Generasi gagal dihapus !');
+        }
 
-        Generasi::destroy($generasi->id);
-        return redirect('/admin/aboutus')->with('status', 'Generasi berhasil dihapus !');
     }
 
     public function create_gen()

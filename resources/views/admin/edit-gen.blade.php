@@ -29,7 +29,7 @@
                                 @method('patch')
                                 @csrf
                             <div class="form-group row d-flex justify-content-center px-4 pt-3">
-                                <img src="{{ $generasi->photo }}" class="img-thumbnail" style="width:70%; object-fit: cover;" onclick="triggerClick()" id="display_photo"></img>
+                                <img src="/{{ $generasi->photo }}" class="img-thumbnail" style="width:70%; object-fit: cover;" onclick="triggerClick()" id="display_photo"></img>
                             <div class="form-group row d-flex justify-content-center px-4">
                                 <label for="photo">{{ __('Foto Generasi') }}</label>
                                 <div class="input-group mb-3">
@@ -47,7 +47,7 @@
                         <div class="col pl-4 pr-5 pt-2">
                             <div class="form-group row">
                                 <label for="name">{{ __('Nama Generasi') }}</label>
-                                <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Masukkan nama slide show" value="{{ $generasi->name }}" />
+                                <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Masukkan nama generasi" value="{{ $generasi->name }}" />
                                 @error('name')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror

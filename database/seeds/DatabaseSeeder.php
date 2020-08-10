@@ -32,9 +32,56 @@ class DatabaseSeeder extends Seeder
         $slideshow->photo = "assets/img/img3.jpg";
         $slideshow->save();
 
+        /**ABOUT US GENERASI */
+
         $generasi = new App\Generasi;
-        $generasi->name = "photo3";
-        $generasi->photo = "assets/img/img3.jpg";
+        $generasi->name = "gen x";
+        $generasi->photo = "assets/aboutus/au10.png";
+        $generasi->save();
+
+        $generasi = new App\Generasi;
+        $generasi->name = "gen ix";
+        $generasi->photo = "assets/aboutus/au9.png";
+        $generasi->save();
+
+        $generasi = new App\Generasi;
+        $generasi->name = "gen viii";
+        $generasi->photo = "assets/aboutus/au8.png";
+        $generasi->save();
+
+        $generasi = new App\Generasi;
+        $generasi->name = "gen vii";
+        $generasi->photo = "assets/aboutus/au7.png";
+        $generasi->save();
+
+        $generasi = new App\Generasi;
+        $generasi->name = "gen vi";
+        $generasi->photo = "assets/aboutus/au6.png";
+        $generasi->save();
+
+        $generasi = new App\Generasi;
+        $generasi->name = "gen v";
+        $generasi->photo = "assets/aboutus/au5.png";
+        $generasi->save();
+
+        $generasi = new App\Generasi;
+        $generasi->name = "gen iv";
+        $generasi->photo = "assets/aboutus/au4.png";
+        $generasi->save();
+
+        $generasi = new App\Generasi;
+        $generasi->name = "gen iii";
+        $generasi->photo = "assets/aboutus/au3.png";
+        $generasi->save();
+
+        $generasi = new App\Generasi;
+        $generasi->name = "gen ii";
+        $generasi->photo = "assets/aboutus/au2.png";
+        $generasi->save();
+
+        $generasi = new App\Generasi;
+        $generasi->name = "gen i";
+        $generasi->photo = "assets/aboutus/au1.png";
         $generasi->save();
     }
 }
