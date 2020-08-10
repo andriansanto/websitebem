@@ -95,10 +95,10 @@ class Home extends Component{
            <br></br>
            <p>
            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-           <br></br>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-           <br></br>aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-           <br></br>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-           <br></br>qui officia deserunt mollit anim id est laborum.
+           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+           aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+           qui officia deserunt mollit anim id est laborum.
            </p>          
            </div>
        </div>
@@ -111,12 +111,11 @@ class Home extends Component{
            <br></br>
            <p>
            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-           <br></br>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-           <br></br>aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-           <br></br>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-           <br></br>qui officia deserunt mollit anim id est laborum.
-           <br></br>
-           <Button color="primary" className="buttonsmua">Learn More</Button>{' '}
+           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+           aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+           qui officia deserunt mollit anim id est laborum.
+           <br></br><Button color="primary" className="buttonsmua">Learn More</Button>{' '}
            </p>              
         </div>
         </div>
@@ -134,16 +133,15 @@ class Home extends Component{
              </Col>  
             </Row>
         <Row>
-        <Col xs="6">
+        <Col md="6">
         <div className="container-dedicate-text container-aboutus">
         <p>
            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-           <br></br>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-           <br></br>aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-           <br></br>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-           <br></br>qui officia deserunt mollit anim id est laborum.
-           <br></br>
-           <Button color="primary" className="buttonsmua">About Us</Button>{' '}
+           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+           aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+           qui officia deserunt mollit anim id est laborum.
+           <br></br><Button color="primary" className="buttonsmua">About Us</Button>{' '}
         </p>  
         </div>
         </Col>

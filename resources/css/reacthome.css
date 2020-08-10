@@ -24,6 +24,7 @@
  
 body{
   background: #ffffff;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .slides {
@@ -83,7 +84,7 @@ body{
 }
 
 .container-csi{
-  background-image: url(../../public/assets/CSI.png); /*nanti ganti sama asset yg resolusinya lbh besar*/
+  /*background-image: url(../../public/assets/CSI.png); *//*nanti ganti sama asset yg resolusinya lbh besar*/
   background-repeat: no-repeat;
   background-size: auto;
   height: 220px;
@@ -91,6 +92,8 @@ body{
 
 .container-csi-text{
   text-align: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 
@@ -99,7 +102,7 @@ body{
   width: 100%;
   height: 500px;
   background-repeat: no-repeat;
-  background-size: 100%
+  background-size: cover;
 }
 
 .container-fluid{
@@ -111,6 +114,8 @@ body{
 .container-2-text{
   padding-top: 25px;
   padding-right: 15px;
+  padding-left: 30rem;
+  line-height: 20px;
   text-align: right;
 }
 
@@ -169,6 +174,10 @@ body{
   -webkit-text-fill-color: transparent;
 }
 
+h1{
+  font-size: 34px;
+}
+
 .container-aboutus{
   text-align: justify;
   color: white;
@@ -176,6 +185,7 @@ body{
   top: 37vw;
   left: 5vw;
   font-size: 1.2vw;
+  padding-right: 2rem;
 }
 
 .buttonsmua{
@@ -192,11 +202,8 @@ body{
 .container-csi-text{
   text-align: center;
   font-size: 8px;
+  line-height: 12px;
 }
-.container-2{
-  background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/
-}
-
 
 .container-dedicate-judul{
   top: 35%;
@@ -208,7 +215,10 @@ body{
   }
 
   .container-2-text{
-    font-size: 9px;
+    padding-left: 2rem;
+    line-height: 10px;
+    text-align: center;
+    font-size: 10px;
   }
 
   .dtc-1{
@@ -224,17 +234,94 @@ body{
     font-size: 5px;
   }
 
+  h1{
+    font-size: 15px;
+  }
+
+  .container-aboutus{
+    font-size: 7px;
+  }
+}
+@media(min-width:466px){
+  .container-csi-text{
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .container-2-text{
+    padding-left: 5rem;
+    line-height: 10px;
+    text-align: right;
+    font-size: 13px;
+  }
+  h1{
+    font-size: 18px;
+  }
+  .container-2-text{
+    padding-top: 25px;
+    padding-right: 15px;
+    padding-left: 20rem;
+    line-height: 16px;
+    text-align: right;
+  }
+
+  .container-aboutus{
+    font-size: 13px;
+  }
 }
 
-@media(min-width:720px){
+@media(min-width:680px){
   .container-dedicate{
     height: 900px;
   }
+  
+  .container-csi-text{
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+h1{
+  font-size: 32px;
+}
+
+.container-2-text{
+  padding-top: 25px;
+  padding-right: 15px;
+  padding-left: 30rem;
+  line-height: 20px;
+  text-align: right;
+}
+
+.container-aboutus{
+  font-size: 1.2vw;
+}
+
+
 }
 
 @media(min-width:1080px){
   .container-dedicate{
     height: 1000px;
+  }
+  .container-csi-text{
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .container-2-text{
+    padding-top: 25px;
+    padding-right: 15px;
+    padding-left: 30rem;
+    line-height: 20px;
+    text-align: right;
   }
 }
 
@@ -242,6 +329,21 @@ body{
 @media(min-width:1380px){
   .container-dedicate{
     height: 1150px;
+  }
+  .container-csi-text{
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .container-2-text{
+    padding-top: 25px;
+    padding-right: 15px;
+    padding-left: 30rem;
+    line-height: 20px;
+    text-align: right;
   }
 }
 
@@ -254,6 +356,21 @@ body{
     background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/
    
   }
+  .container-csi-text{
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .container-2-text{
+    padding-top: 25px;
+    padding-right: 15px;
+    padding-left: 30rem;
+    line-height: 20px;
+    text-align: right;
+  }
 }
 
 @media(min-width:1780px){
@@ -263,5 +380,21 @@ body{
   .container-csi{
     background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/
    
+  }
+
+  .container-csi-text{
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .container-2-text{
+    padding-top: 25px;
+    padding-right: 15px;
+    padding-left: 30rem;
+    line-height: 20px;
+    text-align: right;
   }
 }

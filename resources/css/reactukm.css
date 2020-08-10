@@ -284,7 +284,7 @@
 
 /*responsive Mobile*/
 
-@media(max-width:720px){
+@media(max-width:680px){
      .box{
          width: 94%;
          height: 450px;
@@ -334,7 +334,11 @@
         height: 25px;
         display: inline-grid;
     }
-
+    .container-ukm{
+  
+        background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/
+    
+    }
 }
 
 @media(max-width:410px){
@@ -387,7 +391,9 @@
         height: 25px;
         display: inline-grid;
     }
-
+    .container-ukm{
+        background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/
+    }
 }
 
 
