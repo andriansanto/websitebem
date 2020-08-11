@@ -24,7 +24,7 @@
     
     
 </head>
-<body>
+<body >
     <div id="app">
     
         <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm fixed-top">

@@ -8,13 +8,15 @@ import '../slidersukm/sliderqueryabout';
 import '../../css/reactabout.css';
 
 
+
     $(document).ready(function() {
         $('#autoWidth').lightSlider({
             autoWidth:true,
             loop:true,
             onSliderLoad: function() {
                 $('#autoWidth').removeClass('cs-hidden');
-            } 
+            }
+             
         });  
         });
     
@@ -64,7 +66,7 @@ class AboutUs extends Component{
     render(){
 
     return(
-            <div>
+            <div >
 
             {/*Foto about bem*/}  
             <div className="fotoatas">
@@ -75,7 +77,7 @@ class AboutUs extends Component{
         {/*Foto per Gen*/}  
         {/* <div className="container-awal"> */}
 
-        <div className="container-slider-aboutus">
+        <div className="container-slider-aboutus" >
             {/*Slider*/}
             
         <ul id="autoWidth" className="cs-hidden">

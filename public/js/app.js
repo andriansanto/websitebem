@@ -7068,7 +7068,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".fotoatas{\r\n   \r\n    top: -50%; \r\n    left: -50%; \r\n    width: 100%; \r\n    height: 180vh;\r\n}\r\n\r\n.fotoabout{\r\n    position: absolute;\r\n    top: 0; \r\n    left: 0; \r\n    right: 0; \r\n    bottom: 0; \r\n    margin-top: 50px;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    margin-bottom: auto; \r\n    min-width: 50%;\r\n    min-height: 50%;\r\n    width: 100%;\r\n}\r\n\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.container-slider-aboutus{\r\n    width: 100%;\r\n    height: 1500px; /*Tinggi Box luar Logo nya*/\r\n    background-color: #ffffff;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.box-aboutus{\r\n    width: 1520px;\r\n    height: 130vh;\r\n    /* background-color: blue; */\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n}\r\n\r\n\r\n\r\n.box-aboutus:hover{\r\n    /* background-color: #a82578; */\r\n    transform-style: preserve-3d;\r\n    transform: scale(1);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.box-aboutus:hover .senbud{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n.penjelasan-aboutus{\r\n    text-align: center;\r\n    color: white;\r\n    width: 100%;\r\n    height: 130vh;\r\n}\r\n\r\n.model-aboutus{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details img{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 10px;\r\n}\r\n\r\n.senbud{\r\n    color: #500033;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n\r\n\r\n/* .lSNext{\r\n    background-image: url(../../public/assets/arrowkanan.png);\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSNext{\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(../../public/assets/arrowkiri.png);\r\n    width: 35px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSPrev{\r\n    width: 35px;\r\n    height: 35px;\r\n} */\r\n", ""]);
+exports.push([module.i, ".fotoatas{\r\n   \r\n    top: -50%; \r\n    left: -50%; \r\n    width: 100%; \r\n    height: 180vh;\r\n}\r\n\r\n.fotoabout{\r\n    position: absolute;\r\n    top: 0; \r\n    left: 0; \r\n    right: 0; \r\n    bottom: 0; \r\n    margin-top: 50px;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    margin-bottom: auto; \r\n    min-width: 50%;\r\n    min-height: 50%;\r\n    width: 100%;\r\n}\r\n\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.container-slider-aboutus{\r\n    width: 100%;\r\n    height: 1500px; /*Tinggi Box luar Logo nya*/\r\n    background-color: #ffffff;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.testzoom{\r\n    zoom: 100%;\r\n}\r\n\r\n.box-aboutus{\r\n    width: 1520px;\r\n    height: 130vh;\r\n    /* background-color: blue; */\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n}\r\n\r\n\r\n\r\n.box-aboutus:hover{\r\n    /* background-color: #a82578; */\r\n    transform-style: preserve-3d;\r\n    transform: scale(1);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.box-aboutus:hover .senbud{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n.penjelasan-aboutus{\r\n    text-align: center;\r\n    color: white;\r\n    width: 100%;\r\n    height: 130vh;\r\n}\r\n\r\n.model-aboutus{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details img{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 10px;\r\n}\r\n\r\n.senbud{\r\n    color: #500033;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n\r\n\r\n/* .lSNext{\r\n    background-image: url(../../public/assets/arrowkanan.png);\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSNext{\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(../../public/assets/arrowkiri.png);\r\n    width: 35px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSPrev{\r\n    width: 35px;\r\n    height: 35px;\r\n} */\r\n", ""]);
 
 // exports
 
@@ -87658,6 +87658,16 @@ var AboutUs = /*#__PURE__*/function (_Component) {
 
   var _super = _createSuper(AboutUs);
 
+  _createClass(AboutUs, [{
+    key: "zoomOut",
+    value: function zoomOut() {
+      var Page = document.getElementById('Body');
+      var zoom = parseInt(Page.style.zoom) - 10 + '%';
+      Page.style.zoom = zoom;
+      return false;
+    }
+  }]);
+
   function AboutUs(props) {
     var _this;
 
@@ -87700,6 +87710,8 @@ var AboutUs = /*#__PURE__*/function (_Component) {
                     _this2.setState({
                       items: findresponse
                     });
+
+                    _this2.zoomOut();
                   }
                 });
 
@@ -87735,7 +87747,10 @@ var AboutUs = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "testzoom",
+        id: "Body"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "fotoatas"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
         className: "fotoabout",
