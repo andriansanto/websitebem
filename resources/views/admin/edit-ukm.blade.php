@@ -44,6 +44,7 @@
                             </div>
                             </div>
                         </div>
+
                         <div class="col pl-4 pr-5 pt-2">
                             <div class="form-group row">
                                 <label for="name">{{ __('Nama UKM') }}</label>
@@ -100,4 +101,12 @@
         </div>
     </div>
 </div>
+
+<style>
+input[type=radio] {
+	position: relative;
+    transform: scale(1);
+    opacity: 100%;
+}
+</style>
 @endsection

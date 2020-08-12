@@ -213,25 +213,55 @@ class AdminController extends Controller
     {
         $request->validate([
             'name' => 'required|max:255',
-            'photo' => 'image|max:1000'
+            'photo' => 'image|max:1000',
+            'info' => 'required',
+            'hari' => 'required|max:255',
+            'waktu' => 'required|max:255',
+            'instagram' => 'required|max:255',
+            'tagline' => 'required|max:255'
         ]);
 
         Ukm::where('id', $ukm->id)
         ->update([
             'name' => $request->name,
+            'info' => $request->info,
+            'hari' => $request->hari,
+            'jam' => $request->waktu,
+            'ig' => $request->instagram,
+            'link' => "http://www.instagram.com/" . $request->instagram,
+            'tagline' => $request->tagline
         ]);
         
         if($request->hasFile('photo')) {
-            $file = $request->file('photo');
-            $filename = 'assets/img/'.time() . '.' . $_FILES['photo']['name'];
-            $target = 'assets/img';
-            $file->move($target,$filename);
-            $generasi->photo = $filename;
+                $file = $request->file('photo');
+
+                $path = Ukm::find($ukm->id)->photo;
+        
+                unlink($path);
+
+            if($ukm->bidang == "olahraga"){
+                $filename = 'assets/ukmnobg/olahraga/'.time() . '.' . $_FILES['photo']['name'];
+                $target = 'assets/ukmnobg/olahraga';
+                $file->move($target,$filename);
+                $ukm->photo = $filename;
+            }
+            else if($ukm->bidang == "sainsos"){
+                $filename = 'assets/ukmnobg/sainsos/'.time() . '.' . $_FILES['photo']['name'];
+                $target = 'assets/ukmnobg/sainsos';
+                $file->move($target,$filename);
+                $ukm->photo = $filename;
+            }
+            else if($ukm->bidang == "senbud"){
+                $filename = 'assets/ukmnobg/senbud/'.time() . '.' . $_FILES['photo']['name'];
+                $target = 'assets/ukmnobg/senbud';
+                $file->move($target,$filename);
+                $ukm->photo = $filename;
+            }
         } else {
             return redirect('/admin/ukm')->with('unstatus', 'UKM berhasil diubah dengan gambar yang sama !');
-            $generasi->photo = '';
+            $ukm->photo = '';
         }
-        $generasi->save();
+        $ukm->save();
 
         return redirect('/admin/ukm')->with('status', 'UKM berhasil diubah !');
     }
@@ -259,19 +289,47 @@ class AdminController extends Controller
     {
         $request->validate([
             'name' => 'required|max:255',
-            'photo' => 'required|image|max:1000'
+            'photo' => 'image|max:1000',
+            'info' => 'required',
+            'hari' => 'required|max:255',
+            'waktu' => 'required|max:255',
+            'instagram' => 'required|max:255',
+            'tagline' => 'required|max:255',
+            'bidang' => 'required',
         ]);
 
         $ukm = new Ukm();
         $ukm->name = $request->name;
+        $ukm->info = $request->info;
+        $ukm->hari = $request->hari;
+        $ukm->jam = $request->waktu;
+        $ukm->ig = $request->instagram;
+        $ukm->link = "http://www.instagram.com/" . $request->instagram;
+        $ukm->tagline = $request->tagline;
+        $ukm->bidang = $request->bidang;
 
         if($request->hasFile('photo')) {
             $file = $request->file('photo');
-            $filename = 'assets/img/'.time() . '.' . $_FILES['photo']['name'];
-            $target = 'assets/img';
+
+        if($ukm->bidang == "olahraga"){
+            $filename = 'assets/ukmnobg/olahraga/'.time() . '.' . $_FILES['photo']['name'];
+            $target = 'assets/ukmnobg/olahraga';
             $file->move($target,$filename);
             $ukm->photo = $filename;
-        } else {
+        }
+        else if($ukm->bidang == "sainsos"){
+            $filename = 'assets/ukmnobg/sainsos/'.time() . '.' . $_FILES['photo']['name'];
+            $target = 'assets/ukmnobg/sainsos';
+            $file->move($target,$filename);
+            $ukm->photo = $filename;
+        }
+        else if($ukm->bidang == "senbud"){
+            $filename = 'assets/ukmnobg/senbud/'.time() . '.' . $_FILES['photo']['name'];
+            $target = 'assets/ukmnobg/senbud';
+            $file->move($target,$filename);
+            $ukm->photo = $filename;
+        }
+     } else {
             return redirect('/admin')->with('unstatus', 'Slide show tidak berhasil ditambahkan !');
             $ukm->photo = '';
         }
