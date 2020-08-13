@@ -7,25 +7,56 @@ import '../../css/reacthome.css';
 import { Container, Row, Col } from 'reactstrap';
 import { Button } from 'reactstrap';
 
-const photos = [
-    {
-        name: 'Photo 1',
-        url: 'assets/img/img1.jpg'
-    },
-    {
-        name: 'Photo 2',
-        url: 'assets/img/img2.jpg'
-    },
-    {
-        name: 'Photo 3',
-        url: 'assets/img/img3.jpg'
-    }
-]
 
 
 
 class Home extends Component{
+    
+    constructor(props){
+        super(props);
+        this.state = {
+            items: [],
+            isLoaded: false,
+            isLoading: true
+        }
+        this._isMounted = true;
+    }
+
+    
+
+    async componentDidMount(){
+        try{
+            const res = await fetch('http://127.0.0.1:4545/api/slideshow',{
+                header:{
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                        'Access-Control-Allow-Credentials':'true',
+                        'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
+                }
+            }).then((Response) => Response.json()).
+            then((findresponse) => 
+                {   
+                    if(this._isMounted){
+                    // console.log(findresponse);
+                    this.setState({
+                        items: findresponse,
+                        isLoading:false,
+                        isLoaded:true
+                    })
+                }
+                })
+        }catch(e){
+            // console.log("error");
+        }
+
+    }
+
+     componentWillUnmount() {
+        this._isMounted = false;
+      }
+
     render(){
+
         const settings ={
             dots: true,
             fade: false,
@@ -45,27 +76,29 @@ class Home extends Component{
         <div>
             <div className="App">
            <Slider {...settings}>
-               {photos.map((photo) => {
+           {this.state.items.map((item,index)  => {
                    return(
-                       <div className="slides filter">
-                            <img className="slides-img" src={photo.url}>
+                       <div className="slides filter" key={index}>
+                            <img className="slides-img" src={item.photo}>
                             </img>
                        </div>
                    )
+                   
                })}
            </Slider>
            </div>
     <br></br>
        <div className="container-csi">
            <div className="container-csi-text">
+
            <h1 className="CSI-color">Commit. Solid. Integrated.</h1>
            <br></br>
            <p>
            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-           <br></br>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-           <br></br>aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-           <br></br>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-           <br></br>qui officia deserunt mollit anim id est laborum.
+           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+           aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+           qui officia deserunt mollit anim id est laborum.
            </p>          
            </div>
        </div>
@@ -78,12 +111,11 @@ class Home extends Component{
            <br></br>
            <p>
            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-           <br></br>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-           <br></br>aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-           <br></br>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-           <br></br>qui officia deserunt mollit anim id est laborum.
-           <br></br>
-           <Button color="primary" className="buttonsmua">Learn More</Button>{' '}
+           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+           aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+           qui officia deserunt mollit anim id est laborum.
+           <br></br><Button color="primary" className="buttonsmua">Learn More</Button>{' '}
            </p>              
         </div>
         </div>
@@ -101,16 +133,15 @@ class Home extends Component{
              </Col>  
             </Row>
         <Row>
-        <Col xs="6">
+        <Col md="6">
         <div className="container-dedicate-text container-aboutus">
         <p>
            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-           <br></br>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-           <br></br>aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-           <br></br>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-           <br></br>qui officia deserunt mollit anim id est laborum.
-           <br></br>
-           <Button color="primary" className="buttonsmua">About Us</Button>{' '}
+           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+           aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+           qui officia deserunt mollit anim id est laborum.
+           <br></br><Button color="primary" className="buttonsmua">About Us</Button>{' '}
         </p>  
         </div>
         </Col>

@@ -11,7 +11,7 @@
     },
     "devDependencies": {
         "@babel/preset-react": "^7.0.0",
-        "axios": "^0.19",
+        "axios": "^0.19.2",
         "bootstrap": "^4.0.0",
         "cross-env": "^7.0",
         "jquery": "^3.2",
@@ -26,8 +26,12 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.13.1",
+        "body-parser": "^1.19.0",
         "emotion": "^10.0.27",
+        "express": "^4.17.1",
         "lightslider": "^1.1.6",
+        "mysql": "^2.18.1",
+        "nodemon": "^2.0.4",
         "react-slick": "^0.26.1",
         "react-tabs": "^3.1.1",
         "reactstrap": "^8.5.1",

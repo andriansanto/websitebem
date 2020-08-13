@@ -48,9 +48,15 @@
                 <h6>SUKM</h6>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/admin/rooms">
+                <a class="nav-link" href="/admin/ukm">
                     <i class="fas fa-th-list mr-2"></i>
                     Lihat semua UKM
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/add_ukm">
+                    <i class="fas fa-th-list mr-2"></i>
+                    Tambah UKM
                 </a>
             </li>
             <li class="nav-item px-3 pt-4">

@@ -183,6 +183,18 @@
     overflow: hidden;
 }
 
+.lSNext{
+    background-image: url(../../public/assets/arrowgreykanan.png);
+    width: 35px;
+    height: 52px;
+}
+
+.lSPrev{
+    background-image: url(../../public/assets/arrowgreykiri.png);
+    width: 35px;
+    height: 52px;
+}
+
 
 /* vertical */
 .lSSlideOuter.vertical {

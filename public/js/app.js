@@ -375,6 +375,18 @@ module.exports = _objectWithoutPropertiesLoose;
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime/regenerator/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/regenerator-runtime/runtime.js");
+
+
+/***/ }),
+
 /***/ "./node_modules/axios/index.js":
 /*!*************************************!*\
   !*** ./node_modules/axios/index.js ***!
@@ -7032,12 +7044,13 @@ exports.push([module.i, "/* Slider */\n.slick-slider\n{\n    position: relative;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+var escape = __webpack_require__(/*! ../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, "/*! lightslider - v1.1.3 - 2015-04-14\r\n* https://github.com/sachinchoolur/lightslider\r\n* Copyright (c) 2015 Sachin N; Licensed MIT */\r\n/** /!!! core css Should not edit !!!/**/ \r\n\r\n.lSSlideOuter {\r\n    overflow: hidden;\r\n    -webkit-touch-callout: none;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none\r\n}\r\n.lightSlider:before, .lightSlider:after {\r\n    content: \" \";\r\n    display: table;\r\n}\r\n.lightSlider {\r\n    overflow: hidden;\r\n    margin: 0;\r\n}\r\n.lSSlideWrapper {\r\n    max-width: 100%;\r\n    overflow: hidden;\r\n    position: relative;\r\n}\r\n.lSSlideWrapper > .lightSlider:after {\r\n    clear: both;\r\n}\r\n.lSSlideWrapper .lSSlide {\r\n    transform: translate(0px, 0px);\r\n    -webkit-transition: all 1s;\r\n    transition-property: transform,height;\r\n    transition-duration: inherit !important;\r\n    transition-timing-function: inherit !important;\r\n}\r\n.lSSlideWrapper .lSFade {\r\n    position: relative;\r\n}\r\n.lSSlideWrapper .lSFade > * {\r\n    position: absolute !important;\r\n    top: 0;\r\n    left: 0;\r\n    z-index: 9;\r\n    margin-right: 0;\r\n    width: 100%;\r\n}\r\n.lSSlideWrapper.usingCss .lSFade > * {\r\n    opacity: 0;\r\n    transition-delay: 0s;\r\n    transition-duration: inherit !important;\r\n    transition-property: opacity;\r\n    transition-timing-function: inherit !important;\r\n}\r\n.lSSlideWrapper .lSFade > *.active {\r\n    z-index: 10;\r\n}\r\n.lSSlideWrapper.usingCss .lSFade > *.active {\r\n    opacity: 1;\r\n}\r\n/** /!!! End of core css Should not edit !!!/**/\r\n\r\n/* Pager */\r\n.lSSlideOuter .lSPager.lSpg {\r\n    margin: 10px 0 0;\r\n    padding: 0;\r\n    text-align: center;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li {\r\n    cursor: pointer;\r\n    display: inline-block;\r\n    padding: 0 5px;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li a {\r\n    background-color: #222222;\r\n    border-radius: 30px;\r\n    display: inline-block;\r\n    height: 8px;\r\n    overflow: hidden;\r\n    text-indent: -999em;\r\n    width: 8px;\r\n    position: relative;\r\n    z-index: 99;\r\n    transition: all 0.5s linear 0s;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {\r\n    background-color: #428bca;\r\n}\r\n.lSSlideOuter .media {\r\n    opacity: 0.8;\r\n}\r\n.lSSlideOuter .media.active {\r\n    opacity: 1;\r\n}\r\n/* End of pager */\r\n\r\n/** Gallery */\r\n.lSSlideOuter .lSPager.lSGallery {\r\n    list-style: none outside none;\r\n    padding-left: 0;\r\n    margin: 0;\r\n    overflow: hidden;\r\n    transform: translate3d(0px, 0px, 0px);\r\n    -moz-transform: translate3d(0px, 0px, 0px);\r\n    -ms-transform: translate3d(0px, 0px, 0px);\r\n    -webkit-transform: translate3d(0px, 0px, 0px);\r\n    -o-transform: translate3d(0px, 0px, 0px);\r\n    -webkit-transition-property: -webkit-transform;\r\n    -moz-transition-property: -moz-transform;\r\n    -webkit-touch-callout: none;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery li {\r\n    overflow: hidden;\r\n    transition: border-radius 0.12s linear 0s 0.35s linear 0s;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {\r\n    border-radius: 5px;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery img {\r\n    display: block;\r\n    height: auto;\r\n    max-width: 100%;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery:before, .lSSlideOuter .lSPager.lSGallery:after {\r\n    content: \" \";\r\n    display: table;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery:after {\r\n    clear: both;\r\n}\r\n/* End of Gallery*/\r\n\r\n/* slider actions */\r\n.lSAction > a {\r\n    width: 32px;\r\n    display: block;\r\n    top: 50%;\r\n    height: 32px;\r\n    cursor: pointer;\r\n    position: absolute;\r\n    z-index: 99;\r\n    margin-top: -16px;\r\n    opacity: 0.5;\r\n    transition: opacity 0.35s linear 0s;\r\n}\r\n.lSAction > a:hover {\r\n    opacity: 1;\r\n}\r\n.lSAction > .lSPrev {\r\n    background-position: 0 0;\r\n    left: 10px;\r\n}\r\n.lSAction > .lSNext {\r\n    background-position: 0 0;\r\n    right: 10px;\r\n}\r\n.lSAction > a.disabled {\r\n    pointer-events: none;\r\n}\r\n.cS-hidden {\r\n    height: 1px;\r\n    opacity: 0;\r\n    filter: alpha(opacity=0);\r\n    overflow: hidden;\r\n}\r\n\r\n\r\n/* vertical */\r\n.lSSlideOuter.vertical {\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical.noPager {\r\n    padding-right: 0px !important;\r\n}\r\n.lSSlideOuter.vertical .lSGallery {\r\n    position: absolute !important;\r\n    right: 0;\r\n    top: 0;\r\n}\r\n.lSSlideOuter.vertical .lightSlider > * {\r\n    width: 100% !important;\r\n    max-width: none !important;\r\n}\r\n\r\n/* vertical controlls */\r\n.lSSlideOuter.vertical .lSAction > a {\r\n    left: 50%;\r\n    margin-left: -14px;\r\n    margin-top: 0;\r\n}\r\n.lSSlideOuter.vertical .lSAction > .lSNext {\r\n    background-position: 31px -31px;\r\n    bottom: 10px;\r\n    top: auto;\r\n}\r\n.lSSlideOuter.vertical .lSAction > .lSPrev {\r\n    background-position: 0 -31px;\r\n    bottom: auto;\r\n    top: 10px;\r\n}\r\n/* vertical */\r\n\r\n\r\n/* Rtl */\r\n.lSSlideOuter.lSrtl {\r\n    direction: rtl;\r\n}\r\n.lSSlideOuter .lightSlider, .lSSlideOuter .lSPager {\r\n    padding-left: 0;\r\n    list-style: none outside none;\r\n}\r\n.lSSlideOuter.lSrtl .lightSlider, .lSSlideOuter.lSrtl .lSPager {\r\n    padding-right: 0;\r\n}\r\n.lSSlideOuter .lightSlider > *,  .lSSlideOuter .lSGallery li {\r\n    float: left;\r\n}\r\n.lSSlideOuter.lSrtl .lightSlider > *,  .lSSlideOuter.lSrtl .lSGallery li {\r\n    float: right !important;\r\n}\r\n/* Rtl */\r\n\r\n@-webkit-keyframes rightEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: -15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@keyframes rightEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: -15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@-webkit-keyframes topEnd {\r\n    0% {\r\n        top: 0;\r\n    }\r\n\r\n    50% {\r\n        top: -15px;\r\n    }\r\n\r\n    100% {\r\n        top: 0;\r\n    }\r\n}\r\n@keyframes topEnd {\r\n    0% {\r\n        top: 0;\r\n    }\r\n\r\n    50% {\r\n        top: -15px;\r\n    }\r\n\r\n    100% {\r\n        top: 0;\r\n    }\r\n}\r\n@-webkit-keyframes leftEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: 15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@keyframes leftEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: 15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@-webkit-keyframes bottomEnd {\r\n    0% {\r\n        bottom: 0;\r\n    }\r\n\r\n    50% {\r\n        bottom: -15px;\r\n    }\r\n\r\n    100% {\r\n        bottom: 0;\r\n    }\r\n}\r\n@keyframes bottomEnd {\r\n    0% {\r\n        bottom: 0;\r\n    }\r\n\r\n    50% {\r\n        bottom: -15px;\r\n    }\r\n\r\n    100% {\r\n        bottom: 0;\r\n    }\r\n}\r\n.lSSlideOuter .rightEnd {\r\n    -webkit-animation: rightEnd 0.3s;\r\n    animation: rightEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter .leftEnd {\r\n    -webkit-animation: leftEnd 0.3s;\r\n    animation: leftEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical .rightEnd {\r\n    -webkit-animation: topEnd 0.3s;\r\n    animation: topEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical .leftEnd {\r\n    -webkit-animation: bottomEnd 0.3s;\r\n    animation: bottomEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.lSrtl .rightEnd {\r\n    -webkit-animation: leftEnd 0.3s;\r\n    animation: leftEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.lSrtl .leftEnd {\r\n    -webkit-animation: rightEnd 0.3s;\r\n    animation: rightEnd 0.3s;\r\n    position: relative;\r\n}\r\n/*/  GRab cursor */\r\n.lightSlider.lsGrab > * {\r\n  cursor: -webkit-grab;\r\n  cursor: -o-grab;\r\n  cursor: -ms-grab;\r\n  cursor: grab;\r\n}\r\n.lightSlider.lsGrabbing > * {\r\n  cursor: move;\r\n  cursor: -webkit-grabbing;\r\n  cursor: -o-grabbing;\r\n  cursor: -ms-grabbing;\r\n  cursor: grabbing;\r\n}\r\n", ""]);
+exports.push([module.i, "/*! lightslider - v1.1.3 - 2015-04-14\r\n* https://github.com/sachinchoolur/lightslider\r\n* Copyright (c) 2015 Sachin N; Licensed MIT */\r\n/** /!!! core css Should not edit !!!/**/ \r\n\r\n.lSSlideOuter {\r\n    overflow: hidden;\r\n    -webkit-touch-callout: none;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none\r\n}\r\n.lightSlider:before, .lightSlider:after {\r\n    content: \" \";\r\n    display: table;\r\n}\r\n.lightSlider {\r\n    overflow: hidden;\r\n    margin: 0;\r\n}\r\n.lSSlideWrapper {\r\n    max-width: 100%;\r\n    overflow: hidden;\r\n    position: relative;\r\n}\r\n.lSSlideWrapper > .lightSlider:after {\r\n    clear: both;\r\n}\r\n.lSSlideWrapper .lSSlide {\r\n    transform: translate(0px, 0px);\r\n    -webkit-transition: all 1s;\r\n    transition-property: transform,height;\r\n    transition-duration: inherit !important;\r\n    transition-timing-function: inherit !important;\r\n}\r\n.lSSlideWrapper .lSFade {\r\n    position: relative;\r\n}\r\n.lSSlideWrapper .lSFade > * {\r\n    position: absolute !important;\r\n    top: 0;\r\n    left: 0;\r\n    z-index: 9;\r\n    margin-right: 0;\r\n    width: 100%;\r\n}\r\n.lSSlideWrapper.usingCss .lSFade > * {\r\n    opacity: 0;\r\n    transition-delay: 0s;\r\n    transition-duration: inherit !important;\r\n    transition-property: opacity;\r\n    transition-timing-function: inherit !important;\r\n}\r\n.lSSlideWrapper .lSFade > *.active {\r\n    z-index: 10;\r\n}\r\n.lSSlideWrapper.usingCss .lSFade > *.active {\r\n    opacity: 1;\r\n}\r\n/** /!!! End of core css Should not edit !!!/**/\r\n\r\n/* Pager */\r\n.lSSlideOuter .lSPager.lSpg {\r\n    margin: 10px 0 0;\r\n    padding: 0;\r\n    text-align: center;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li {\r\n    cursor: pointer;\r\n    display: inline-block;\r\n    padding: 0 5px;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li a {\r\n    background-color: #222222;\r\n    border-radius: 30px;\r\n    display: inline-block;\r\n    height: 8px;\r\n    overflow: hidden;\r\n    text-indent: -999em;\r\n    width: 8px;\r\n    position: relative;\r\n    z-index: 99;\r\n    transition: all 0.5s linear 0s;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {\r\n    background-color: #428bca;\r\n}\r\n.lSSlideOuter .media {\r\n    opacity: 0.8;\r\n}\r\n.lSSlideOuter .media.active {\r\n    opacity: 1;\r\n}\r\n/* End of pager */\r\n\r\n/** Gallery */\r\n.lSSlideOuter .lSPager.lSGallery {\r\n    list-style: none outside none;\r\n    padding-left: 0;\r\n    margin: 0;\r\n    overflow: hidden;\r\n    transform: translate3d(0px, 0px, 0px);\r\n    -moz-transform: translate3d(0px, 0px, 0px);\r\n    -ms-transform: translate3d(0px, 0px, 0px);\r\n    -webkit-transform: translate3d(0px, 0px, 0px);\r\n    -o-transform: translate3d(0px, 0px, 0px);\r\n    -webkit-transition-property: -webkit-transform;\r\n    -moz-transition-property: -moz-transform;\r\n    -webkit-touch-callout: none;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery li {\r\n    overflow: hidden;\r\n    transition: border-radius 0.12s linear 0s 0.35s linear 0s;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {\r\n    border-radius: 5px;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery img {\r\n    display: block;\r\n    height: auto;\r\n    max-width: 100%;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery:before, .lSSlideOuter .lSPager.lSGallery:after {\r\n    content: \" \";\r\n    display: table;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery:after {\r\n    clear: both;\r\n}\r\n/* End of Gallery*/\r\n\r\n/* slider actions */\r\n.lSAction > a {\r\n    width: 32px;\r\n    display: block;\r\n    top: 50%;\r\n    height: 32px;\r\n    cursor: pointer;\r\n    position: absolute;\r\n    z-index: 99;\r\n    margin-top: -16px;\r\n    opacity: 0.5;\r\n    transition: opacity 0.35s linear 0s;\r\n}\r\n.lSAction > a:hover {\r\n    opacity: 1;\r\n}\r\n.lSAction > .lSPrev {\r\n    background-position: 0 0;\r\n    left: 10px;\r\n}\r\n.lSAction > .lSNext {\r\n    background-position: 0 0;\r\n    right: 10px;\r\n}\r\n.lSAction > a.disabled {\r\n    pointer-events: none;\r\n}\r\n.cS-hidden {\r\n    height: 1px;\r\n    opacity: 0;\r\n    filter: alpha(opacity=0);\r\n    overflow: hidden;\r\n}\r\n\r\n.lSNext{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/arrowgreykanan.png */ "./public/assets/arrowgreykanan.png")) + ");\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/arrowgreykiri.png */ "./public/assets/arrowgreykiri.png")) + ");\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n\r\n/* vertical */\r\n.lSSlideOuter.vertical {\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical.noPager {\r\n    padding-right: 0px !important;\r\n}\r\n.lSSlideOuter.vertical .lSGallery {\r\n    position: absolute !important;\r\n    right: 0;\r\n    top: 0;\r\n}\r\n.lSSlideOuter.vertical .lightSlider > * {\r\n    width: 100% !important;\r\n    max-width: none !important;\r\n}\r\n\r\n/* vertical controlls */\r\n.lSSlideOuter.vertical .lSAction > a {\r\n    left: 50%;\r\n    margin-left: -14px;\r\n    margin-top: 0;\r\n}\r\n.lSSlideOuter.vertical .lSAction > .lSNext {\r\n    background-position: 31px -31px;\r\n    bottom: 10px;\r\n    top: auto;\r\n}\r\n.lSSlideOuter.vertical .lSAction > .lSPrev {\r\n    background-position: 0 -31px;\r\n    bottom: auto;\r\n    top: 10px;\r\n}\r\n/* vertical */\r\n\r\n\r\n/* Rtl */\r\n.lSSlideOuter.lSrtl {\r\n    direction: rtl;\r\n}\r\n.lSSlideOuter .lightSlider, .lSSlideOuter .lSPager {\r\n    padding-left: 0;\r\n    list-style: none outside none;\r\n}\r\n.lSSlideOuter.lSrtl .lightSlider, .lSSlideOuter.lSrtl .lSPager {\r\n    padding-right: 0;\r\n}\r\n.lSSlideOuter .lightSlider > *,  .lSSlideOuter .lSGallery li {\r\n    float: left;\r\n}\r\n.lSSlideOuter.lSrtl .lightSlider > *,  .lSSlideOuter.lSrtl .lSGallery li {\r\n    float: right !important;\r\n}\r\n/* Rtl */\r\n\r\n@-webkit-keyframes rightEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: -15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@keyframes rightEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: -15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@-webkit-keyframes topEnd {\r\n    0% {\r\n        top: 0;\r\n    }\r\n\r\n    50% {\r\n        top: -15px;\r\n    }\r\n\r\n    100% {\r\n        top: 0;\r\n    }\r\n}\r\n@keyframes topEnd {\r\n    0% {\r\n        top: 0;\r\n    }\r\n\r\n    50% {\r\n        top: -15px;\r\n    }\r\n\r\n    100% {\r\n        top: 0;\r\n    }\r\n}\r\n@-webkit-keyframes leftEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: 15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@keyframes leftEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: 15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@-webkit-keyframes bottomEnd {\r\n    0% {\r\n        bottom: 0;\r\n    }\r\n\r\n    50% {\r\n        bottom: -15px;\r\n    }\r\n\r\n    100% {\r\n        bottom: 0;\r\n    }\r\n}\r\n@keyframes bottomEnd {\r\n    0% {\r\n        bottom: 0;\r\n    }\r\n\r\n    50% {\r\n        bottom: -15px;\r\n    }\r\n\r\n    100% {\r\n        bottom: 0;\r\n    }\r\n}\r\n.lSSlideOuter .rightEnd {\r\n    -webkit-animation: rightEnd 0.3s;\r\n    animation: rightEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter .leftEnd {\r\n    -webkit-animation: leftEnd 0.3s;\r\n    animation: leftEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical .rightEnd {\r\n    -webkit-animation: topEnd 0.3s;\r\n    animation: topEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical .leftEnd {\r\n    -webkit-animation: bottomEnd 0.3s;\r\n    animation: bottomEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.lSrtl .rightEnd {\r\n    -webkit-animation: leftEnd 0.3s;\r\n    animation: leftEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.lSrtl .leftEnd {\r\n    -webkit-animation: rightEnd 0.3s;\r\n    animation: rightEnd 0.3s;\r\n    position: relative;\r\n}\r\n/*/  GRab cursor */\r\n.lightSlider.lsGrab > * {\r\n  cursor: -webkit-grab;\r\n  cursor: -o-grab;\r\n  cursor: -ms-grab;\r\n  cursor: grab;\r\n}\r\n.lightSlider.lsGrabbing > * {\r\n  cursor: move;\r\n  cursor: -webkit-grabbing;\r\n  cursor: -o-grabbing;\r\n  cursor: -ms-grabbing;\r\n  cursor: grabbing;\r\n}\r\n", ""]);
 
 // exports
 
@@ -7056,7 +7069,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".fotoatas{\r\n   \r\n    top: -50%; \r\n    left: -50%; \r\n    width: 100%; \r\n    height: 180vh;\r\n}\r\n\r\n.fotoabout{\r\n    position: absolute;\r\n    top: 0; \r\n    left: 0; \r\n    right: 0; \r\n    bottom: 0; \r\n    margin-top: 50px;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    margin-bottom: auto; \r\n    min-width: 50%;\r\n    min-height: 50%;\r\n    width: 100%;\r\n}\r\n\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.container-slider-aboutus{\r\n    width: 100%;\r\n    height: 1500px; /*Tinggi Box luar Logo nya*/\r\n    background-color: #ffffff;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.box-aboutus{\r\n    width: 1520px;\r\n    height: 130vh;\r\n    /* background-color: blue; */\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n}\r\n\r\n\r\n\r\n.box-aboutus:hover{\r\n    /* background-color: #a82578; */\r\n    transform-style: preserve-3d;\r\n    transform: scale(1);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.box-aboutus:hover .senbud{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n.penjelasan-aboutus{\r\n    text-align: center;\r\n    color: white;\r\n    width: 100%;\r\n    height: 130vh;\r\n}\r\n\r\n.model-aboutus{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details img{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 10px;\r\n}\r\n\r\n.senbud{\r\n    color: #500033;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n\r\n\r\n/* .lSNext{\r\n    background-image: url(../../public/assets/arrowkanan.png);\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSNext{\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(../../public/assets/arrowkiri.png);\r\n    width: 35px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSPrev{\r\n    width: 35px;\r\n    height: 35px;\r\n} */\r\n", ""]);
+exports.push([module.i, ".fotoatas{\r\n   \r\n    top: -50%; \r\n    left: -50%; \r\n    width: 100%; \r\n    height: 180vh;\r\n}\r\n\r\n.fotoabout{\r\n    position: absolute;\r\n    top: 0; \r\n    left: 0; \r\n    right: 0; \r\n    bottom: 0; \r\n    margin-top: 50px;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    margin-bottom: auto; \r\n    min-width: 50%;\r\n    min-height: 50%;\r\n    width: 100%;\r\n}\r\n\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.container-slider-aboutus{\r\n    width: 100%;\r\n    height: 1500px; /*Tinggi Box luar Logo nya*/\r\n    background-color: #ffffff;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n\r\n.box-aboutus{\r\n    width: 1520px;\r\n    height: 130vh;\r\n    /* background-color: blue; */\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n}\r\n\r\n\r\n\r\n.box-aboutus:hover{\r\n    /* background-color: #a82578; */\r\n    transform-style: preserve-3d;\r\n    transform: scale(1);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.box-aboutus:hover .senbud{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n.penjelasan-aboutus{\r\n    text-align: center;\r\n    color: white;\r\n    width: 100%;\r\n    height: 130vh;\r\n}\r\n\r\n.model-aboutus{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details img{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 10px;\r\n}\r\n\r\n.senbud{\r\n    color: #500033;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n\r\n\r\n/* .lSNext{\r\n    background-image: url(../../public/assets/arrowkanan.png);\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSNext{\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(../../public/assets/arrowkiri.png);\r\n    width: 35px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSPrev{\r\n    width: 35px;\r\n    height: 35px;\r\n} */\r\n", ""]);
 
 // exports
 
@@ -7095,7 +7108,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".App {\r\n  text-align: center;\r\n  padding-top: 55px;\r\n}\r\n \r\n.App-logo {\r\n  height: 40vmin;\r\n}\r\n \r\n.App-header {\r\n  background-color: #282c34;\r\n  min-height: 100vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: calc(10px + 2vmin);\r\n  color: white;\r\n}\r\n \r\n.App-link {\r\n  color: #09d3ac;\r\n}\r\n \r\nbody{\r\n  background: #ffffff;\r\n}\r\n\r\n.slides {\r\n  position: relative;\r\n  height: 579px; /*The slider height*/\r\n}\r\n\r\n.filter:after {\r\n  position: absolute;\r\n  content:\"\";\r\n  height:100%;\r\n  width:100%;\r\n  top:0;\r\n  left:0;\r\n  background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%,rgba(255,255,255,0) 100%);\r\n}\r\n\r\n.slick-dots {\r\n  position: absolute;\r\n  bottom: 20px;\r\n  display: block;\r\n  width: 100%;\r\n  padding: 10;\r\n  margin: 0;\r\n  list-style: none;\r\n  text-align: center;\r\n  font-size: white;\r\n}\r\n\r\n.slick-dots li.slick-active button:before {\r\n  font-size: 25px;\r\n  color: #ffb035;\r\n  opacity: 1;\r\n}\r\n\r\n/*slider button setting - START*/\r\n.slides .slick-prev,\r\n.slides .slick-next {\r\n  position: absolute;\r\n  top: 50%;\r\n  z-index:1;\r\n}\r\n\r\n.slides .slick-prev::before {\r\n  left: 5%;\r\n}\r\n\r\n.slides .slick-next {\r\n  right: 5%;\r\n}\r\n/*slider button setting - FINISH*/\r\n\r\n.slides-img {\r\n  width: 100%;\r\n  height: 579px; /*image height*/\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n}\r\n\r\n.container-csi{\r\n  background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/CSI.png */ "./public/assets/CSI.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n  background-repeat: no-repeat;\r\n  background-size: auto;\r\n  height: 220px;\r\n}\r\n\r\n.container-csi-text{\r\n  text-align: center;\r\n}\r\n\r\n\r\n.container-2{\r\n  background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/homepagefotoumnorange.png */ "./public/assets/homepagefotoumnorange.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n  width: 100%;\r\n  height: 500px;\r\n  background-repeat: no-repeat;\r\n  background-size: 100%\r\n}\r\n\r\n.container-fluid{\r\n  width: 100%;\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.container-2-text{\r\n  padding-top: 25px;\r\n  padding-right: 15px;\r\n  text-align: right;\r\n}\r\n\r\n.container-dedicate{\r\n  background-color: #ffffff;\r\n  background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/homepagededicatetocreate.png */ "./public/assets/homepagededicatetocreate.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n  width: 100%;\r\n  height: 850px;\r\n  background-repeat: no-repeat;\r\n  background-size: 100%;\r\n}\r\n\r\n.container-dedicate-judul{\r\n  top: 35%;\r\n  width: 100%;\r\n  font-size: auto;\r\n}\r\n\r\n.container-dedicate-text{\r\n  text-align: left;\r\n  top: 65%;\r\n  width: 100%;\r\n}\r\n\r\n\r\n/*Text di Dedicate*/\r\n.dtc-1{\r\n  text-align: center;\r\n  background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n  position: relative;\r\n  top: 15vw;\r\n  font-size: 3vw;\r\n}\r\n\r\n.genx-1{\r\n  text-align: center;\r\n  background: -webkit-linear-gradient(90deg, rgba(255,207,0,0.7243350596910112) 0%, rgba(255,144,12,0.8086047226123596) 48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n  position: relative;\r\n  top: 15vw;\r\n  font-size: 1.5vw;\r\n}\r\n/*text di dedicate*/    \r\n\r\n/* .container-about{\r\n  background-color: lightblue;\r\n} */\r\n\r\n/*csi*/\r\n.CSI-color{\r\n  background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(122,148,186,1)48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.container-aboutus{\r\n  text-align: justify;\r\n  color: white;\r\n  position: relative;\r\n  top: 37vw;\r\n  left: 5vw;\r\n  font-size: 1.2vw;\r\n}\r\n\r\n.buttonsmua{\r\n  font-size: 16px;\r\n}\r\n\r\n@media(max-width:465px){\r\n\r\n  .container-csi{\r\n    background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n   \r\n  }\r\n  \r\n.container-csi-text{\r\n  text-align: center;\r\n  font-size: 8px;\r\n}\r\n.container-2{\r\n  background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n}\r\n\r\n\r\n.container-dedicate-judul{\r\n  top: 35%;\r\n  width: 100%;\r\n  font-size: 9px;\r\n}\r\n  .container-dedicate{\r\n    height: 280px;\r\n  }\r\n\r\n  .container-2-text{\r\n    font-size: 9px;\r\n  }\r\n\r\n  .dtc-1{\r\n    font-size: 15px;\r\n  }\r\n  \r\n  .genx-1{\r\n    \r\n    font-size: 12px;\r\n  }\r\n\r\n  .buttonsmua{\r\n    font-size: 5px;\r\n  }\r\n\r\n}\r\n\r\n@media(min-width:720px){\r\n  .container-dedicate{\r\n    height: 900px;\r\n  }\r\n}\r\n\r\n@media(min-width:1080px){\r\n  .container-dedicate{\r\n    height: 1000px;\r\n  }\r\n}\r\n\r\n\r\n@media(min-width:1380px){\r\n  .container-dedicate{\r\n    height: 1150px;\r\n  }\r\n}\r\n\r\n\r\n@media(min-width:1580px){\r\n  .container-dedicate{\r\n    height: 1350px;\r\n  }\r\n  .container-csi{\r\n    background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n   \r\n  }\r\n}\r\n\r\n@media(min-width:1780px){\r\n  .container-dedicate{\r\n    height: 1550px;\r\n  }\r\n  .container-csi{\r\n    background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n   \r\n  }\r\n}", ""]);
+exports.push([module.i, ".App {\r\n  text-align: center;\r\n  padding-top: 55px;\r\n}\r\n \r\n.App-logo {\r\n  height: 40vmin;\r\n}\r\n \r\n.App-header {\r\n  background-color: #282c34;\r\n  min-height: 100vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: calc(10px + 2vmin);\r\n  color: white;\r\n}\r\n \r\n.App-link {\r\n  color: #09d3ac;\r\n}\r\n \r\nbody{\r\n  background: #ffffff;\r\n  font-family: 'Montserrat', sans-serif;\r\n}\r\n\r\n.slides {\r\n  position: relative;\r\n  height: 579px; /*The slider height*/\r\n}\r\n\r\n.filter:after {\r\n  position: absolute;\r\n  content:\"\";\r\n  height:100%;\r\n  width:100%;\r\n  top:0;\r\n  left:0;\r\n  background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%,rgba(255,255,255,0) 100%);\r\n}\r\n\r\n.slick-dots {\r\n  position: absolute;\r\n  bottom: 20px;\r\n  display: block;\r\n  width: 100%;\r\n  padding: 10;\r\n  margin: 0;\r\n  list-style: none;\r\n  text-align: center;\r\n  font-size: white;\r\n}\r\n\r\n.slick-dots li.slick-active button:before {\r\n  font-size: 25px;\r\n  color: #ffb035;\r\n  opacity: 1;\r\n}\r\n\r\n/*slider button setting - START*/\r\n.slides .slick-prev,\r\n.slides .slick-next {\r\n  position: absolute;\r\n  top: 50%;\r\n  z-index:1;\r\n}\r\n\r\n.slides .slick-prev::before {\r\n  left: 5%;\r\n}\r\n\r\n.slides .slick-next {\r\n  right: 5%;\r\n}\r\n/*slider button setting - FINISH*/\r\n\r\n.slides-img {\r\n  width: 100%;\r\n  height: 579px; /*image height*/\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n}\r\n\r\n.container-csi{\r\n  /*background-image: url(../../public/assets/CSI.png); *//*nanti ganti sama asset yg resolusinya lbh besar*/\r\n  background-repeat: no-repeat;\r\n  background-size: auto;\r\n  height: 220px;\r\n}\r\n\r\n.container-csi-text{\r\n  text-align: center;\r\n  padding-left: 5rem;\r\n  padding-right: 5rem;\r\n}\r\n\r\n\r\n.container-2{\r\n  background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/homepagefotoumnorange.png */ "./public/assets/homepagefotoumnorange.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n  width: 100%;\r\n  height: 500px;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n}\r\n\r\n.container-fluid{\r\n  width: 100%;\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.container-2-text{\r\n  padding-top: 25px;\r\n  padding-right: 15px;\r\n  padding-left: 30rem;\r\n  line-height: 20px;\r\n  text-align: right;\r\n}\r\n\r\n.container-dedicate{\r\n  background-color: #ffffff;\r\n  background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/homepagededicatetocreate.png */ "./public/assets/homepagededicatetocreate.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n  width: 100%;\r\n  height: 850px;\r\n  background-repeat: no-repeat;\r\n  background-size: 100%;\r\n}\r\n\r\n.container-dedicate-judul{\r\n  top: 35%;\r\n  width: 100%;\r\n  font-size: auto;\r\n}\r\n\r\n.container-dedicate-text{\r\n  text-align: left;\r\n  top: 65%;\r\n  width: 100%;\r\n}\r\n\r\n\r\n/*Text di Dedicate*/\r\n.dtc-1{\r\n  text-align: center;\r\n  background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n  position: relative;\r\n  top: 15vw;\r\n  font-size: 3vw;\r\n}\r\n\r\n.genx-1{\r\n  text-align: center;\r\n  background: -webkit-linear-gradient(90deg, rgba(255,207,0,0.7243350596910112) 0%, rgba(255,144,12,0.8086047226123596) 48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n  position: relative;\r\n  top: 15vw;\r\n  font-size: 1.5vw;\r\n}\r\n/*text di dedicate*/    \r\n\r\n/* .container-about{\r\n  background-color: lightblue;\r\n} */\r\n\r\n/*csi*/\r\n.CSI-color{\r\n  background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(122,148,186,1)48%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n}\r\n\r\nh1{\r\n  font-size: 34px;\r\n}\r\n\r\n.container-aboutus{\r\n  text-align: justify;\r\n  color: white;\r\n  position: relative;\r\n  top: 37vw;\r\n  left: 5vw;\r\n  font-size: 1.2vw;\r\n  padding-right: 2rem;\r\n}\r\n\r\n.buttonsmua{\r\n  font-size: 16px;\r\n}\r\n\r\n@media(max-width:465px){\r\n\r\n  .container-csi{\r\n    background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n   \r\n  }\r\n  \r\n.container-csi-text{\r\n  text-align: center;\r\n  font-size: 8px;\r\n  line-height: 12px;\r\n}\r\n\r\n.container-dedicate-judul{\r\n  top: 35%;\r\n  width: 100%;\r\n  font-size: 9px;\r\n}\r\n  .container-dedicate{\r\n    height: 280px;\r\n  }\r\n\r\n  .container-2-text{\r\n    padding-left: 2rem;\r\n    line-height: 10px;\r\n    text-align: center;\r\n    font-size: 10px;\r\n  }\r\n\r\n  .dtc-1{\r\n    font-size: 15px;\r\n  }\r\n  \r\n  .genx-1{\r\n    \r\n    font-size: 12px;\r\n  }\r\n\r\n  .buttonsmua{\r\n    font-size: 5px;\r\n  }\r\n\r\n  h1{\r\n    font-size: 15px;\r\n  }\r\n\r\n  .container-aboutus{\r\n    font-size: 7px;\r\n  }\r\n}\r\n@media(min-width:466px){\r\n  .container-csi-text{\r\n    text-align: center;\r\n    font-size: 14px;\r\n    line-height: 20px;\r\n    padding-left: 8rem;\r\n    padding-right: 8rem;\r\n  }\r\n\r\n  .container-2-text{\r\n    padding-left: 5rem;\r\n    line-height: 10px;\r\n    text-align: right;\r\n    font-size: 13px;\r\n  }\r\n  h1{\r\n    font-size: 18px;\r\n  }\r\n  .container-2-text{\r\n    padding-top: 25px;\r\n    padding-right: 15px;\r\n    padding-left: 20rem;\r\n    line-height: 16px;\r\n    text-align: right;\r\n  }\r\n\r\n  .container-aboutus{\r\n    font-size: 13px;\r\n  }\r\n}\r\n\r\n@media(min-width:680px){\r\n  .container-dedicate{\r\n    height: 900px;\r\n  }\r\n  \r\n  .container-csi-text{\r\n  text-align: center;\r\n  font-size: 14px;\r\n  line-height: 20px;\r\n  padding-left: 10rem;\r\n  padding-right: 10rem;\r\n}\r\nh1{\r\n  font-size: 32px;\r\n}\r\n\r\n.container-2-text{\r\n  padding-top: 25px;\r\n  padding-right: 15px;\r\n  padding-left: 30rem;\r\n  line-height: 20px;\r\n  text-align: right;\r\n}\r\n\r\n.container-aboutus{\r\n  font-size: 1.2vw;\r\n}\r\n\r\n\r\n}\r\n\r\n@media(min-width:1080px){\r\n  .container-dedicate{\r\n    height: 1000px;\r\n  }\r\n  .container-csi-text{\r\n    text-align: center;\r\n    font-size: 15px;\r\n    line-height: 20px;\r\n    padding-left: 10rem;\r\n    padding-right: 10rem;\r\n  }\r\n\r\n  .container-2-text{\r\n    padding-top: 25px;\r\n    padding-right: 15px;\r\n    padding-left: 30rem;\r\n    line-height: 20px;\r\n    text-align: right;\r\n  }\r\n}\r\n\r\n\r\n@media(min-width:1380px){\r\n  .container-dedicate{\r\n    height: 1150px;\r\n  }\r\n  .container-csi-text{\r\n    text-align: center;\r\n    font-size: 15px;\r\n    line-height: 20px;\r\n    padding-left: 10rem;\r\n    padding-right: 10rem;\r\n  }\r\n\r\n  .container-2-text{\r\n    padding-top: 25px;\r\n    padding-right: 15px;\r\n    padding-left: 30rem;\r\n    line-height: 20px;\r\n    text-align: right;\r\n  }\r\n}\r\n\r\n\r\n@media(min-width:1580px){\r\n  .container-dedicate{\r\n    height: 1350px;\r\n  }\r\n  .container-csi{\r\n    background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n   \r\n  }\r\n  .container-csi-text{\r\n    text-align: center;\r\n    font-size: 15px;\r\n    line-height: 20px;\r\n    padding-left: 10rem;\r\n    padding-right: 10rem;\r\n  }\r\n\r\n  .container-2-text{\r\n    padding-top: 25px;\r\n    padding-right: 15px;\r\n    padding-left: 30rem;\r\n    line-height: 20px;\r\n    text-align: right;\r\n  }\r\n}\r\n\r\n@media(min-width:1780px){\r\n  .container-dedicate{\r\n    height: 1550px;\r\n  }\r\n  .container-csi{\r\n    background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n   \r\n  }\r\n\r\n  .container-csi-text{\r\n    text-align: center;\r\n    font-size: 15px;\r\n    line-height: 20px;\r\n    padding-left: 10rem;\r\n    padding-right: 10rem;\r\n  }\r\n\r\n  .container-2-text{\r\n    padding-top: 25px;\r\n    padding-right: 15px;\r\n    padding-left: 30rem;\r\n    line-height: 20px;\r\n    text-align: right;\r\n  }\r\n}", ""]);
 
 // exports
 
@@ -7114,7 +7127,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".container-keg{\r\n    padding-top: 55px;\r\n    text-align: center;\r\n    width: 100%;\r\n    \r\n}\r\n\r\n.text-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: xxx-large;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 50%;\r\n    height: 300px;\r\n    background-image: linear-gradient(#ffb359,#ffffff);\r\n    cursor: pointer;\r\n  }\r\n\r\ninput[type=radio] {\r\n\tposition: absolute;\r\n    transform: scale(58);\r\n    opacity: 0;\r\n}\r\n\r\n\r\n.react-tabs__tab--selected {\r\n    /* border-color: #aaa; */\r\n    color: white;\r\n    border-radius: 5px 5px 0 0;\r\n  }\r\n\r\n\r\n  /* Line Slider*/\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.a{\r\n    text-decoration: none;\r\n}\r\n/* \r\n.lSNext{\r\n    background-image: url(../../public/assets/arrowgreykanan.png);\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSNext{\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(../../public/assets/arrowgreykiri.png);\r\n    width: 35px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSPrev{\r\n    width: 35px;\r\n    height: 35px;\r\n} */\r\n\r\n.container-slider-keg{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: white;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.box-keg{\r\n    width: 1500px;\r\n    height: 500px;\r\n    border-radius: 10px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.info{\r\n    color: black;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 25px;\r\n    text-align: left;\r\n\r\n}\r\n\r\n.info-lso{\r\n    color: black;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 17px;\r\n    text-align: left;\r\n\r\n}\r\n\r\n.model-keg{\r\n    margin-top: -20px;\r\n    height: 400px;\r\n    width: 400px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-lso-box{\r\n    margin-top: 30px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-lso-dunar{\r\n    margin-top: -20px;\r\n    height: 300px;\r\n    width: 400px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-lso-medic{\r\n    margin-top: 50px;\r\n    height: 140px;\r\n    width: 400px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-lso-ustore{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 350px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-lso-komcor{\r\n    margin-top: -20px;\r\n    height: 300px;\r\n    width: 300px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-mrms{\r\n    margin-top: -20px;\r\n    height: 300px;\r\n    width: 100px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details p{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 20px;\r\n}\r\n\r\n.title{\r\n    color: #ffb359;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 50px;\r\n    text-align: left;\r\n}\r\n\r\n.title-lso{\r\n    color: #ade2b2;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 50px;\r\n    text-align: left;\r\n}\r\n\r\n.keg-kiri{\r\n    position: relative;\r\n    float: left;\r\n    top: 800px;\r\n}\r\n\r\n@media (max-width:768px){\r\n    .box{\r\n        width: auto;\r\n        height: auto;\r\n        border-radius: 10px;\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        justify-content: space-between;\r\n        box-sizing: border-box;\r\n        margin: 20px 10px;\r\n    }\r\n\r\n    input[type=radio] {\r\n        position: absolute;\r\n        transform: scale(29);\r\n        margin-left: -8px;\r\n        margin-top: 35px;\r\n        opacity: 0;\r\n    }\r\n    \r\n    \r\n    .info{\r\n        color: black;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 25px;\r\n        text-align: left;\r\n    \r\n    }\r\n    \r\n    .model-keg{\r\n        margin-top: -20px;\r\n        height: 160px;\r\n        width: 160px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n\r\n    }\r\n\r\n    .model-lso-box{\r\n        margin-top: 30px;\r\n        height: 200px;\r\n        width: 200px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-dunar{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-medic{\r\n        margin-top: -20px;\r\n        height: 150px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-ustore{\r\n        margin-top: -20px;\r\n        height: 200px;\r\n        width: 350px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-komcor{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 300px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n    \r\n    .model-mrms{\r\n        margin-top: -20px;\r\n        height: 120px;\r\n        width: 40px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n    }\r\n    \r\n    .details{\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        width: 300px;\r\n    }\r\n    \r\n    .details p{\r\n        font-family: Arial, Helvetica, sans-serif;\r\n        font-weight: bold;\r\n        color: #ffffff;\r\n        text-align: center;\r\n        margin-top: 20px;\r\n    }\r\n    \r\n    .title{\r\n        color: #ffb359;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 20px;\r\n        text-align: left;\r\n    }\r\n\r\n    .title-lso{\r\n        color: #ade2b2;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 20px;\r\n        text-align: left;\r\n    }\r\n}\r\n\r\n@media (max-width:480px){\r\n    .box{\r\n        width: 1500px;\r\n        height: 500px;\r\n        border-radius: 10px;\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        justify-content: space-between;\r\n        box-sizing: border-box;\r\n        margin: 20px 10px;\r\n    }\r\n\r\n    input[type=radio] {\r\n        position: absolute;\r\n        transform: scale(17);\r\n        margin-left: 85px;\r\n        margin-top: 100px;\r\n        opacity: 0;\r\n    }\r\n    \r\n    \r\n    .info{\r\n        color: black;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 25px;\r\n        text-align: left;\r\n    \r\n    }\r\n    \r\n    .model-keg{\r\n        margin-top: -20px;\r\n        height: 180px;\r\n        width: 180px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-box{\r\n        margin-top: 30px;\r\n        height: 200px;\r\n        width: 200px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-dunar{\r\n        margin-top: -20px;\r\n        height: 250px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-medic{\r\n        margin-top: -20px;\r\n        height: 150px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-ustore{\r\n        margin-top: -20px;\r\n        height: 200px;\r\n        width: 350px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-komcor{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 300px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n    \r\n    .model-mrms{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 100px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n    }\r\n    \r\n    .details{\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        width: 300px;\r\n    }\r\n    \r\n    .details p{\r\n        font-family: Arial, Helvetica, sans-serif;\r\n        font-weight: bold;\r\n        color: #ffffff;\r\n        text-align: center;\r\n        margin-top: 20px;\r\n    }\r\n    \r\n    .title{\r\n        color: #ffb359;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 50px;\r\n        text-align: left;\r\n    }\r\n\r\n    .title-lso{\r\n        color: #ade2b2;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 50px;\r\n        text-align: left;\r\n    }\r\n    \r\n    .text-tab-pane{\r\n        display: inline-grid;\r\n        font-size: 19px;\r\n    }\r\n}", ""]);
+exports.push([module.i, ".container-keg{\r\n    padding-top: 55px;\r\n    text-align: center;\r\n    width: 100%;\r\n    \r\n}\r\n\r\n.text-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: xxx-large;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 50%;\r\n    height: 300px;\r\n    background-image: linear-gradient(#ffb359,#ffffff);\r\n    cursor: pointer;\r\n  }\r\n\r\ninput[type=radio] {\r\n\tposition: absolute;\r\n    transform: scale(58);\r\n    opacity: 0;\r\n}\r\n\r\n\r\n.react-tabs__tab--selected {\r\n    /* border-color: #aaa; */\r\n    color: white;\r\n    border-radius: 5px 5px 0 0;\r\n  }\r\n\r\n\r\n  /* Line Slider*/\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.a{\r\n    text-decoration: none;\r\n}\r\n\r\n/* .lSNext{\r\n    background-image: url(../../public/assets/arrowgreykanan.png);\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n.lSAction > .lSNext{\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(../../public/assets/arrowgreykiri.png);\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n.lSAction > .lSPrev{\r\n    width: 35px;\r\n    height: 52px;\r\n} */\r\n\r\n\r\n.container-slider-keg{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: white;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.box-keg{\r\n    width: 1500px;\r\n    height: 500px;\r\n    border-radius: 10px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.info{\r\n    color: black;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 25px;\r\n    text-align: left;\r\n\r\n}\r\n\r\n.info-lso{\r\n    color: black;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 17px;\r\n    text-align: left;\r\n\r\n}\r\n\r\n.model-keg{\r\n    margin-top: -20px;\r\n    height: 400px;\r\n    width: 400px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-lso-box{\r\n    margin-top: 30px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-lso-dunar{\r\n    margin-top: -20px;\r\n    height: 300px;\r\n    width: 400px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-lso-medic{\r\n    margin-top: 50px;\r\n    height: 140px;\r\n    width: 400px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-lso-ustore{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 350px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-lso-komcor{\r\n    margin-top: -20px;\r\n    height: 300px;\r\n    width: 300px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-mrms{\r\n    margin-top: -20px;\r\n    height: 300px;\r\n    width: 100px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details p{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 20px;\r\n}\r\n\r\n.title{\r\n    color: #ffb359;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 50px;\r\n    text-align: left;\r\n}\r\n\r\n.title-lso{\r\n    color: #ade2b2;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 50px;\r\n    text-align: left;\r\n}\r\n\r\n.keg-kiri{\r\n    position: relative;\r\n    float: left;\r\n    top: 800px;\r\n}\r\n\r\n@media (max-width:768px){\r\n    .box{\r\n        width: auto;\r\n        height: auto;\r\n        border-radius: 10px;\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        justify-content: space-between;\r\n        box-sizing: border-box;\r\n        margin: 20px 10px;\r\n    }\r\n\r\n    input[type=radio] {\r\n        position: absolute;\r\n        transform: scale(29);\r\n        margin-left: -8px;\r\n        margin-top: 35px;\r\n        opacity: 0;\r\n    }\r\n    \r\n    \r\n    .info{\r\n        color: black;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 25px;\r\n        text-align: left;\r\n    \r\n    }\r\n    \r\n    .model-keg{\r\n        margin-top: -20px;\r\n        height: 160px;\r\n        width: 160px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n\r\n    }\r\n\r\n    .model-lso-box{\r\n        margin-top: 30px;\r\n        height: 200px;\r\n        width: 200px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-dunar{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-medic{\r\n        margin-top: -20px;\r\n        height: 150px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-ustore{\r\n        margin-top: -20px;\r\n        height: 200px;\r\n        width: 350px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-komcor{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 300px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n    \r\n    .model-mrms{\r\n        margin-top: -20px;\r\n        height: 120px;\r\n        width: 40px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n    }\r\n    \r\n    .details{\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        width: 300px;\r\n    }\r\n    \r\n    .details p{\r\n        font-family: Arial, Helvetica, sans-serif;\r\n        font-weight: bold;\r\n        color: #ffffff;\r\n        text-align: center;\r\n        margin-top: 20px;\r\n    }\r\n    \r\n    .title{\r\n        color: #ffb359;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 20px;\r\n        text-align: left;\r\n    }\r\n\r\n    .title-lso{\r\n        color: #ade2b2;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 20px;\r\n        text-align: left;\r\n    }\r\n}\r\n\r\n@media (max-width:480px){\r\n    .box{\r\n        width: 1500px;\r\n        height: 500px;\r\n        border-radius: 10px;\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        justify-content: space-between;\r\n        box-sizing: border-box;\r\n        margin: 20px 10px;\r\n    }\r\n\r\n    input[type=radio] {\r\n        position: absolute;\r\n        transform: scale(17);\r\n        margin-left: 85px;\r\n        margin-top: 100px;\r\n        opacity: 0;\r\n    }\r\n    \r\n    \r\n    .info{\r\n        color: black;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 25px;\r\n        text-align: left;\r\n    \r\n    }\r\n    \r\n    .model-keg{\r\n        margin-top: -20px;\r\n        height: 180px;\r\n        width: 180px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-box{\r\n        margin-top: 30px;\r\n        height: 200px;\r\n        width: 200px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-dunar{\r\n        margin-top: -20px;\r\n        height: 250px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-medic{\r\n        margin-top: -20px;\r\n        height: 150px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-ustore{\r\n        margin-top: -20px;\r\n        height: 200px;\r\n        width: 350px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-komcor{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 300px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n    \r\n    .model-mrms{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 100px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n    }\r\n    \r\n    .details{\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        width: 300px;\r\n    }\r\n    \r\n    .details p{\r\n        font-family: Arial, Helvetica, sans-serif;\r\n        font-weight: bold;\r\n        color: #ffffff;\r\n        text-align: center;\r\n        margin-top: 20px;\r\n    }\r\n    \r\n    .title{\r\n        color: #ffb359;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 50px;\r\n        text-align: left;\r\n    }\r\n\r\n    .title-lso{\r\n        color: #ade2b2;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 50px;\r\n        text-align: left;\r\n    }\r\n    \r\n    .text-tab-pane{\r\n        display: inline-grid;\r\n        font-size: 19px;\r\n    }\r\n}", ""]);
 
 // exports
 
@@ -7134,7 +7147,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".react-tabs__tab-list{\r\n    margin: 0;\r\n}\r\n\r\n.allukm{\r\n    margin-top: 50px;\r\n}\r\n\r\n.body{\r\n    background: rgb(224,235,194);\r\n    background: linear-gradient(180deg, rgba(224,235,194,1) 0%, rgba(255,253,71,1) 48%, rgba(255,255,255,1) 89%);\r\n    /*slider*/\r\n\r\n    /*slider*/\r\n}\r\n\r\n.container-ukm{\r\n    padding-top: 50px;\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/CSI.png */ "./public/assets/CSI.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    background-repeat: no-repeat;\r\n    height: 300px;\r\n}\r\n\r\n.ukm{\r\n    text-align: center;\r\n    font-family: 'Montserrat', sans-serif;\r\n    background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n    -webkit-background-clip: text;\r\n    -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.textatasukm{\r\n    text-align: center;\r\n}\r\n\r\n/* Line Slider*/\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.a{\r\n    text-decoration: none;\r\n}\r\n\r\n.container-slider-senbud{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #81175a;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.container-slider-sensos{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #98b14e;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.container-slider-olr{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #fea24d;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n/*Senbud*/\r\n.box-senbud{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #a80a79;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.box-senbud:hover{\r\n    background-color: #b43c88;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.box-senbud:hover .senbud{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Sains Sos*/\r\n.boxsos{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #88a52f;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.boxsos:hover{\r\n    background-color: #83f157;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.boxsos:hover .sensos{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Olahraga*/\r\n\r\n.boxor{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #f88c26;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.boxor:hover{\r\n    background-color: #fecf4d;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.boxor:hover .olr{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Details*/\r\n.penjelasan{\r\n    text-align: center;\r\n    color: white;\r\n    font-size: 1.7vh;\r\n}\r\n\r\n.lSNext{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/arrowgreykanan.png */ "./public/assets/arrowgreykanan.png")) + ");\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n.lSAction > .lSNext{\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/arrowgreykiri.png */ "./public/assets/arrowgreykiri.png")) + ");\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n.lSAction > .lSPrev{\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n.model{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details p{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 20px;\r\n    font-size: 2vh;\r\n}\r\n\r\n.senbud{\r\n    color: #500033;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n.sensos{\r\n    color: #005038;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n.olr{\r\n    color: #7e4b00;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n/* tabs */\r\n.ukm1-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.3%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#81175a,#a71d74);\r\n    cursor: pointer;\r\n  }\r\n  \r\n\r\n  .ukm2-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.3%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#98b14e,#a8c455);\r\n    cursor: pointer;\r\n  }\r\n\r\n  .ukm3-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.4%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#fea24d,#fc9a3e);\r\n    cursor: pointer;\r\n  }\r\n\r\n  .react-tabs__tab--selected {\r\n      /* border-color: #aaa; */\r\n      color: white;\r\n      border-radius: 5px 5px 0 0;\r\n    }\r\n\r\n\r\n/*responsive Mobile*/\r\n\r\n@media(max-width:720px){\r\n     .box{\r\n         width: 94%;\r\n         height: 450px;\r\n     }\r\n\r\n     .boxor{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxsos{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n    \r\n     .penjelasan{\r\n        text-align: center;\r\n        font-size: 12px;\r\n        width: 200px;\r\n    }\r\n\r\n     .model{\r\n         height: 100px; /*Logo*/\r\n         width: 100px;\r\n         margin-top: -10px;\r\n     }\r\n\r\n     .details p{\r\n         font-size: 10px;\r\n         width: 200px;\r\n     }\r\n\r\n     .ukm1-tab-pane{\r\n         font-size: 14px;\r\n         height: 25px;\r\n         display: inline-grid;\r\n     }\r\n\r\n     .ukm2-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n    .ukm3-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n}\r\n\r\n@media(max-width:410px){\r\n    .box{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxor{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxsos{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .penjelasan{\r\n        text-align: center;\r\n        font-size: 12px;\r\n        width: 200px;\r\n    }\r\n\r\n     .model{\r\n         height: 100px; /*Logo*/\r\n         width: 100px;\r\n         margin-top: -10px;\r\n     }\r\n\r\n     .details p{\r\n         font-size: 10px;\r\n         width: 200px;\r\n     }\r\n\r\n     .ukm1-tab-pane{\r\n         font-size: 14px;\r\n         height: 25px;\r\n         display: inline-grid;\r\n     }\r\n\r\n     .ukm2-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n    .ukm3-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n}\r\n\r\n\r\n@media(min-width:1550px){\r\n    .container-ukm{\r\n        background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    }\r\n}\r\n", ""]);
+exports.push([module.i, ".react-tabs__tab-list{\r\n    margin: 0;\r\n}\r\n\r\n.allukm{\r\n    margin-top: 50px;\r\n}\r\n\r\n.body{\r\n    background: rgb(224,235,194);\r\n    background: linear-gradient(180deg, rgba(224,235,194,1) 0%, rgba(255,253,71,1) 48%, rgba(255,255,255,1) 89%);\r\n    /*slider*/\r\n\r\n    /*slider*/\r\n}\r\n\r\n.container-ukm{\r\n    padding-top: 50px;\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/CSI.png */ "./public/assets/CSI.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    background-repeat: no-repeat;\r\n    height: 350px;\r\n}\r\n\r\n.ukm{\r\n    text-align: center;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: xxx-large;\r\n    background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n    -webkit-background-clip: text;\r\n    -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.textatasukm{\r\n    text-align: center;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: large;\r\n}\r\n\r\n/* Line Slider*/\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.a{\r\n    text-decoration: none;\r\n}\r\n\r\n.container-slider-senbud{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #81175a;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.container-slider-sensos{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #98b14e;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.container-slider-olr{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #fea24d;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n/*Senbud*/\r\n.box-senbud{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #a80a79;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.box-senbud:hover{\r\n    background-color: #b43c88;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.box-senbud:hover .senbud{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Sains Sos*/\r\n.boxsos{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #88a52f;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.boxsos:hover{\r\n    background-color: #83f157;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.boxsos:hover .sensos{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Olahraga*/\r\n\r\n.boxor{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #f88c26;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.boxor:hover{\r\n    background-color: #fecf4d;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.boxor:hover .olr{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Details*/\r\n.penjelasan{\r\n    text-align: center;\r\n    color: white;\r\n    font-size: 1.7vh;\r\n}\r\n\r\n\r\n.model{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details p{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 20px;\r\n    font-size: 2vh;\r\n}\r\n\r\n.senbud{\r\n    color: #500033;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n.sensos{\r\n    color: #005038;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n.olr{\r\n    color: #7e4b00;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n/* tabs */\r\n.ukm1-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.3%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#81175a,#a71d74);\r\n    cursor: pointer;\r\n  }\r\n  \r\n\r\n  .ukm2-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.3%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#98b14e,#a8c455);\r\n    cursor: pointer;\r\n  }\r\n\r\n  .ukm3-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.4%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#fea24d,#fc9a3e);\r\n    cursor: pointer;\r\n  }\r\n\r\n  .react-tabs__tab--selected {\r\n      /* border-color: #aaa; */\r\n      color: white;\r\n      border-radius: 5px 5px 0 0;\r\n    }\r\n\r\n\r\n/*responsive Mobile*/\r\n\r\n@media(max-width:680px){\r\n     .box{\r\n         width: 94%;\r\n         height: 450px;\r\n     }\r\n\r\n     .boxor{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxsos{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n    \r\n     .penjelasan{\r\n        text-align: center;\r\n        font-size: 12px;\r\n        width: 200px;\r\n    }\r\n\r\n     .model{\r\n         height: 100px; /*Logo*/\r\n         width: 100px;\r\n         margin-top: -10px;\r\n     }\r\n\r\n     .details p{\r\n         font-size: 10px;\r\n         width: 200px;\r\n     }\r\n\r\n     .ukm1-tab-pane{\r\n         font-size: 14px;\r\n         height: 25px;\r\n         display: inline-grid;\r\n     }\r\n\r\n     .ukm2-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n    .ukm3-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n    .container-ukm{\r\n  \r\n        background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    \r\n    }\r\n}\r\n\r\n@media(max-width:410px){\r\n    .box{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxor{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxsos{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .penjelasan{\r\n        text-align: center;\r\n        font-size: 12px;\r\n        width: 200px;\r\n    }\r\n\r\n     .model{\r\n         height: 100px; /*Logo*/\r\n         width: 100px;\r\n         margin-top: -10px;\r\n     }\r\n\r\n     .details p{\r\n         font-size: 10px;\r\n         width: 200px;\r\n     }\r\n\r\n     .ukm1-tab-pane{\r\n         font-size: 14px;\r\n         height: 25px;\r\n         display: inline-grid;\r\n     }\r\n\r\n     .ukm2-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n    .ukm3-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n    .container-ukm{\r\n        background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    }\r\n}\r\n\r\n\r\n@media(min-width:1550px){\r\n    .container-ukm{\r\n        background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    }\r\n}\r\n", ""]);
 
 // exports
 
@@ -83408,6 +83421,746 @@ var focusableElements = ['a[href]', 'area[href]', 'input:not([disabled]):not([ty
 
 /***/ }),
 
+/***/ "./node_modules/regenerator-runtime/runtime.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/regenerator-runtime/runtime.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+var runtime = (function (exports) {
+  "use strict";
+
+  var Op = Object.prototype;
+  var hasOwn = Op.hasOwnProperty;
+  var undefined; // More compressible than void 0.
+  var $Symbol = typeof Symbol === "function" ? Symbol : {};
+  var iteratorSymbol = $Symbol.iterator || "@@iterator";
+  var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
+  var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
+
+  function wrap(innerFn, outerFn, self, tryLocsList) {
+    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
+    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
+    var generator = Object.create(protoGenerator.prototype);
+    var context = new Context(tryLocsList || []);
+
+    // The ._invoke method unifies the implementations of the .next,
+    // .throw, and .return methods.
+    generator._invoke = makeInvokeMethod(innerFn, self, context);
+
+    return generator;
+  }
+  exports.wrap = wrap;
+
+  // Try/catch helper to minimize deoptimizations. Returns a completion
+  // record like context.tryEntries[i].completion. This interface could
+  // have been (and was previously) designed to take a closure to be
+  // invoked without arguments, but in all the cases we care about we
+  // already have an existing method we want to call, so there's no need
+  // to create a new function object. We can even get away with assuming
+  // the method takes exactly one argument, since that happens to be true
+  // in every case, so we don't have to touch the arguments object. The
+  // only additional allocation required is the completion record, which
+  // has a stable shape and so hopefully should be cheap to allocate.
+  function tryCatch(fn, obj, arg) {
+    try {
+      return { type: "normal", arg: fn.call(obj, arg) };
+    } catch (err) {
+      return { type: "throw", arg: err };
+    }
+  }
+
+  var GenStateSuspendedStart = "suspendedStart";
+  var GenStateSuspendedYield = "suspendedYield";
+  var GenStateExecuting = "executing";
+  var GenStateCompleted = "completed";
+
+  // Returning this object from the innerFn has the same effect as
+  // breaking out of the dispatch switch statement.
+  var ContinueSentinel = {};
+
+  // Dummy constructor functions that we use as the .constructor and
+  // .constructor.prototype properties for functions that return Generator
+  // objects. For full spec compliance, you may wish to configure your
+  // minifier not to mangle the names of these two functions.
+  function Generator() {}
+  function GeneratorFunction() {}
+  function GeneratorFunctionPrototype() {}
+
+  // This is a polyfill for %IteratorPrototype% for environments that
+  // don't natively support it.
+  var IteratorPrototype = {};
+  IteratorPrototype[iteratorSymbol] = function () {
+    return this;
+  };
+
+  var getProto = Object.getPrototypeOf;
+  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
+  if (NativeIteratorPrototype &&
+      NativeIteratorPrototype !== Op &&
+      hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {
+    // This environment has a native %IteratorPrototype%; use it instead
+    // of the polyfill.
+    IteratorPrototype = NativeIteratorPrototype;
+  }
+
+  var Gp = GeneratorFunctionPrototype.prototype =
+    Generator.prototype = Object.create(IteratorPrototype);
+  GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
+  GeneratorFunctionPrototype.constructor = GeneratorFunction;
+  GeneratorFunctionPrototype[toStringTagSymbol] =
+    GeneratorFunction.displayName = "GeneratorFunction";
+
+  // Helper for defining the .next, .throw, and .return methods of the
+  // Iterator interface in terms of a single ._invoke method.
+  function defineIteratorMethods(prototype) {
+    ["next", "throw", "return"].forEach(function(method) {
+      prototype[method] = function(arg) {
+        return this._invoke(method, arg);
+      };
+    });
+  }
+
+  exports.isGeneratorFunction = function(genFun) {
+    var ctor = typeof genFun === "function" && genFun.constructor;
+    return ctor
+      ? ctor === GeneratorFunction ||
+        // For the native GeneratorFunction constructor, the best we can
+        // do is to check its .name property.
+        (ctor.displayName || ctor.name) === "GeneratorFunction"
+      : false;
+  };
+
+  exports.mark = function(genFun) {
+    if (Object.setPrototypeOf) {
+      Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
+    } else {
+      genFun.__proto__ = GeneratorFunctionPrototype;
+      if (!(toStringTagSymbol in genFun)) {
+        genFun[toStringTagSymbol] = "GeneratorFunction";
+      }
+    }
+    genFun.prototype = Object.create(Gp);
+    return genFun;
+  };
+
+  // Within the body of any async function, `await x` is transformed to
+  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
+  // `hasOwn.call(value, "__await")` to determine if the yielded value is
+  // meant to be awaited.
+  exports.awrap = function(arg) {
+    return { __await: arg };
+  };
+
+  function AsyncIterator(generator, PromiseImpl) {
+    function invoke(method, arg, resolve, reject) {
+      var record = tryCatch(generator[method], generator, arg);
+      if (record.type === "throw") {
+        reject(record.arg);
+      } else {
+        var result = record.arg;
+        var value = result.value;
+        if (value &&
+            typeof value === "object" &&
+            hasOwn.call(value, "__await")) {
+          return PromiseImpl.resolve(value.__await).then(function(value) {
+            invoke("next", value, resolve, reject);
+          }, function(err) {
+            invoke("throw", err, resolve, reject);
+          });
+        }
+
+        return PromiseImpl.resolve(value).then(function(unwrapped) {
+          // When a yielded Promise is resolved, its final value becomes
+          // the .value of the Promise<{value,done}> result for the
+          // current iteration.
+          result.value = unwrapped;
+          resolve(result);
+        }, function(error) {
+          // If a rejected Promise was yielded, throw the rejection back
+          // into the async generator function so it can be handled there.
+          return invoke("throw", error, resolve, reject);
+        });
+      }
+    }
+
+    var previousPromise;
+
+    function enqueue(method, arg) {
+      function callInvokeWithMethodAndArg() {
+        return new PromiseImpl(function(resolve, reject) {
+          invoke(method, arg, resolve, reject);
+        });
+      }
+
+      return previousPromise =
+        // If enqueue has been called before, then we want to wait until
+        // all previous Promises have been resolved before calling invoke,
+        // so that results are always delivered in the correct order. If
+        // enqueue has not been called before, then it is important to
+        // call invoke immediately, without waiting on a callback to fire,
+        // so that the async generator function has the opportunity to do
+        // any necessary setup in a predictable way. This predictability
+        // is why the Promise constructor synchronously invokes its
+        // executor callback, and why async functions synchronously
+        // execute code before the first await. Since we implement simple
+        // async functions in terms of async generators, it is especially
+        // important to get this right, even though it requires care.
+        previousPromise ? previousPromise.then(
+          callInvokeWithMethodAndArg,
+          // Avoid propagating failures to Promises returned by later
+          // invocations of the iterator.
+          callInvokeWithMethodAndArg
+        ) : callInvokeWithMethodAndArg();
+    }
+
+    // Define the unified helper method that is used to implement .next,
+    // .throw, and .return (see defineIteratorMethods).
+    this._invoke = enqueue;
+  }
+
+  defineIteratorMethods(AsyncIterator.prototype);
+  AsyncIterator.prototype[asyncIteratorSymbol] = function () {
+    return this;
+  };
+  exports.AsyncIterator = AsyncIterator;
+
+  // Note that simple async functions are implemented on top of
+  // AsyncIterator objects; they just return a Promise for the value of
+  // the final result produced by the iterator.
+  exports.async = function(innerFn, outerFn, self, tryLocsList, PromiseImpl) {
+    if (PromiseImpl === void 0) PromiseImpl = Promise;
+
+    var iter = new AsyncIterator(
+      wrap(innerFn, outerFn, self, tryLocsList),
+      PromiseImpl
+    );
+
+    return exports.isGeneratorFunction(outerFn)
+      ? iter // If outerFn is a generator, return the full iterator.
+      : iter.next().then(function(result) {
+          return result.done ? result.value : iter.next();
+        });
+  };
+
+  function makeInvokeMethod(innerFn, self, context) {
+    var state = GenStateSuspendedStart;
+
+    return function invoke(method, arg) {
+      if (state === GenStateExecuting) {
+        throw new Error("Generator is already running");
+      }
+
+      if (state === GenStateCompleted) {
+        if (method === "throw") {
+          throw arg;
+        }
+
+        // Be forgiving, per 25.3.3.3.3 of the spec:
+        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
+        return doneResult();
+      }
+
+      context.method = method;
+      context.arg = arg;
+
+      while (true) {
+        var delegate = context.delegate;
+        if (delegate) {
+          var delegateResult = maybeInvokeDelegate(delegate, context);
+          if (delegateResult) {
+            if (delegateResult === ContinueSentinel) continue;
+            return delegateResult;
+          }
+        }
+
+        if (context.method === "next") {
+          // Setting context._sent for legacy support of Babel's
+          // function.sent implementation.
+          context.sent = context._sent = context.arg;
+
+        } else if (context.method === "throw") {
+          if (state === GenStateSuspendedStart) {
+            state = GenStateCompleted;
+            throw context.arg;
+          }
+
+          context.dispatchException(context.arg);
+
+        } else if (context.method === "return") {
+          context.abrupt("return", context.arg);
+        }
+
+        state = GenStateExecuting;
+
+        var record = tryCatch(innerFn, self, context);
+        if (record.type === "normal") {
+          // If an exception is thrown from innerFn, we leave state ===
+          // GenStateExecuting and loop back for another invocation.
+          state = context.done
+            ? GenStateCompleted
+            : GenStateSuspendedYield;
+
+          if (record.arg === ContinueSentinel) {
+            continue;
+          }
+
+          return {
+            value: record.arg,
+            done: context.done
+          };
+
+        } else if (record.type === "throw") {
+          state = GenStateCompleted;
+          // Dispatch the exception by looping back around to the
+          // context.dispatchException(context.arg) call above.
+          context.method = "throw";
+          context.arg = record.arg;
+        }
+      }
+    };
+  }
+
+  // Call delegate.iterator[context.method](context.arg) and handle the
+  // result, either by returning a { value, done } result from the
+  // delegate iterator, or by modifying context.method and context.arg,
+  // setting context.delegate to null, and returning the ContinueSentinel.
+  function maybeInvokeDelegate(delegate, context) {
+    var method = delegate.iterator[context.method];
+    if (method === undefined) {
+      // A .throw or .return when the delegate iterator has no .throw
+      // method always terminates the yield* loop.
+      context.delegate = null;
+
+      if (context.method === "throw") {
+        // Note: ["return"] must be used for ES3 parsing compatibility.
+        if (delegate.iterator["return"]) {
+          // If the delegate iterator has a return method, give it a
+          // chance to clean up.
+          context.method = "return";
+          context.arg = undefined;
+          maybeInvokeDelegate(delegate, context);
+
+          if (context.method === "throw") {
+            // If maybeInvokeDelegate(context) changed context.method from
+            // "return" to "throw", let that override the TypeError below.
+            return ContinueSentinel;
+          }
+        }
+
+        context.method = "throw";
+        context.arg = new TypeError(
+          "The iterator does not provide a 'throw' method");
+      }
+
+      return ContinueSentinel;
+    }
+
+    var record = tryCatch(method, delegate.iterator, context.arg);
+
+    if (record.type === "throw") {
+      context.method = "throw";
+      context.arg = record.arg;
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    var info = record.arg;
+
+    if (! info) {
+      context.method = "throw";
+      context.arg = new TypeError("iterator result is not an object");
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    if (info.done) {
+      // Assign the result of the finished delegate to the temporary
+      // variable specified by delegate.resultName (see delegateYield).
+      context[delegate.resultName] = info.value;
+
+      // Resume execution at the desired location (see delegateYield).
+      context.next = delegate.nextLoc;
+
+      // If context.method was "throw" but the delegate handled the
+      // exception, let the outer generator proceed normally. If
+      // context.method was "next", forget context.arg since it has been
+      // "consumed" by the delegate iterator. If context.method was
+      // "return", allow the original .return call to continue in the
+      // outer generator.
+      if (context.method !== "return") {
+        context.method = "next";
+        context.arg = undefined;
+      }
+
+    } else {
+      // Re-yield the result returned by the delegate method.
+      return info;
+    }
+
+    // The delegate iterator is finished, so forget it and continue with
+    // the outer generator.
+    context.delegate = null;
+    return ContinueSentinel;
+  }
+
+  // Define Generator.prototype.{next,throw,return} in terms of the
+  // unified ._invoke helper method.
+  defineIteratorMethods(Gp);
+
+  Gp[toStringTagSymbol] = "Generator";
+
+  // A Generator should always return itself as the iterator object when the
+  // @@iterator function is called on it. Some browsers' implementations of the
+  // iterator prototype chain incorrectly implement this, causing the Generator
+  // object to not be returned from this call. This ensures that doesn't happen.
+  // See https://github.com/facebook/regenerator/issues/274 for more details.
+  Gp[iteratorSymbol] = function() {
+    return this;
+  };
+
+  Gp.toString = function() {
+    return "[object Generator]";
+  };
+
+  function pushTryEntry(locs) {
+    var entry = { tryLoc: locs[0] };
+
+    if (1 in locs) {
+      entry.catchLoc = locs[1];
+    }
+
+    if (2 in locs) {
+      entry.finallyLoc = locs[2];
+      entry.afterLoc = locs[3];
+    }
+
+    this.tryEntries.push(entry);
+  }
+
+  function resetTryEntry(entry) {
+    var record = entry.completion || {};
+    record.type = "normal";
+    delete record.arg;
+    entry.completion = record;
+  }
+
+  function Context(tryLocsList) {
+    // The root entry object (effectively a try statement without a catch
+    // or a finally block) gives us a place to store values thrown from
+    // locations where there is no enclosing try statement.
+    this.tryEntries = [{ tryLoc: "root" }];
+    tryLocsList.forEach(pushTryEntry, this);
+    this.reset(true);
+  }
+
+  exports.keys = function(object) {
+    var keys = [];
+    for (var key in object) {
+      keys.push(key);
+    }
+    keys.reverse();
+
+    // Rather than returning an object with a next method, we keep
+    // things simple and return the next function itself.
+    return function next() {
+      while (keys.length) {
+        var key = keys.pop();
+        if (key in object) {
+          next.value = key;
+          next.done = false;
+          return next;
+        }
+      }
+
+      // To avoid creating an additional object, we just hang the .value
+      // and .done properties off the next function object itself. This
+      // also ensures that the minifier will not anonymize the function.
+      next.done = true;
+      return next;
+    };
+  };
+
+  function values(iterable) {
+    if (iterable) {
+      var iteratorMethod = iterable[iteratorSymbol];
+      if (iteratorMethod) {
+        return iteratorMethod.call(iterable);
+      }
+
+      if (typeof iterable.next === "function") {
+        return iterable;
+      }
+
+      if (!isNaN(iterable.length)) {
+        var i = -1, next = function next() {
+          while (++i < iterable.length) {
+            if (hasOwn.call(iterable, i)) {
+              next.value = iterable[i];
+              next.done = false;
+              return next;
+            }
+          }
+
+          next.value = undefined;
+          next.done = true;
+
+          return next;
+        };
+
+        return next.next = next;
+      }
+    }
+
+    // Return an iterator with no values.
+    return { next: doneResult };
+  }
+  exports.values = values;
+
+  function doneResult() {
+    return { value: undefined, done: true };
+  }
+
+  Context.prototype = {
+    constructor: Context,
+
+    reset: function(skipTempReset) {
+      this.prev = 0;
+      this.next = 0;
+      // Resetting context._sent for legacy support of Babel's
+      // function.sent implementation.
+      this.sent = this._sent = undefined;
+      this.done = false;
+      this.delegate = null;
+
+      this.method = "next";
+      this.arg = undefined;
+
+      this.tryEntries.forEach(resetTryEntry);
+
+      if (!skipTempReset) {
+        for (var name in this) {
+          // Not sure about the optimal order of these conditions:
+          if (name.charAt(0) === "t" &&
+              hasOwn.call(this, name) &&
+              !isNaN(+name.slice(1))) {
+            this[name] = undefined;
+          }
+        }
+      }
+    },
+
+    stop: function() {
+      this.done = true;
+
+      var rootEntry = this.tryEntries[0];
+      var rootRecord = rootEntry.completion;
+      if (rootRecord.type === "throw") {
+        throw rootRecord.arg;
+      }
+
+      return this.rval;
+    },
+
+    dispatchException: function(exception) {
+      if (this.done) {
+        throw exception;
+      }
+
+      var context = this;
+      function handle(loc, caught) {
+        record.type = "throw";
+        record.arg = exception;
+        context.next = loc;
+
+        if (caught) {
+          // If the dispatched exception was caught by a catch block,
+          // then let that catch block handle the exception normally.
+          context.method = "next";
+          context.arg = undefined;
+        }
+
+        return !! caught;
+      }
+
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        var record = entry.completion;
+
+        if (entry.tryLoc === "root") {
+          // Exception thrown outside of any try block that could handle
+          // it, so set the completion value of the entire function to
+          // throw the exception.
+          return handle("end");
+        }
+
+        if (entry.tryLoc <= this.prev) {
+          var hasCatch = hasOwn.call(entry, "catchLoc");
+          var hasFinally = hasOwn.call(entry, "finallyLoc");
+
+          if (hasCatch && hasFinally) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            } else if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else if (hasCatch) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            }
+
+          } else if (hasFinally) {
+            if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else {
+            throw new Error("try statement without catch or finally");
+          }
+        }
+      }
+    },
+
+    abrupt: function(type, arg) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc <= this.prev &&
+            hasOwn.call(entry, "finallyLoc") &&
+            this.prev < entry.finallyLoc) {
+          var finallyEntry = entry;
+          break;
+        }
+      }
+
+      if (finallyEntry &&
+          (type === "break" ||
+           type === "continue") &&
+          finallyEntry.tryLoc <= arg &&
+          arg <= finallyEntry.finallyLoc) {
+        // Ignore the finally entry if control is not jumping to a
+        // location outside the try/catch block.
+        finallyEntry = null;
+      }
+
+      var record = finallyEntry ? finallyEntry.completion : {};
+      record.type = type;
+      record.arg = arg;
+
+      if (finallyEntry) {
+        this.method = "next";
+        this.next = finallyEntry.finallyLoc;
+        return ContinueSentinel;
+      }
+
+      return this.complete(record);
+    },
+
+    complete: function(record, afterLoc) {
+      if (record.type === "throw") {
+        throw record.arg;
+      }
+
+      if (record.type === "break" ||
+          record.type === "continue") {
+        this.next = record.arg;
+      } else if (record.type === "return") {
+        this.rval = this.arg = record.arg;
+        this.method = "return";
+        this.next = "end";
+      } else if (record.type === "normal" && afterLoc) {
+        this.next = afterLoc;
+      }
+
+      return ContinueSentinel;
+    },
+
+    finish: function(finallyLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.finallyLoc === finallyLoc) {
+          this.complete(entry.completion, entry.afterLoc);
+          resetTryEntry(entry);
+          return ContinueSentinel;
+        }
+      }
+    },
+
+    "catch": function(tryLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc === tryLoc) {
+          var record = entry.completion;
+          if (record.type === "throw") {
+            var thrown = record.arg;
+            resetTryEntry(entry);
+          }
+          return thrown;
+        }
+      }
+
+      // The context.catch method must only be called with a location
+      // argument that corresponds to a known catch block.
+      throw new Error("illegal catch attempt");
+    },
+
+    delegateYield: function(iterable, resultName, nextLoc) {
+      this.delegate = {
+        iterator: values(iterable),
+        resultName: resultName,
+        nextLoc: nextLoc
+      };
+
+      if (this.method === "next") {
+        // Deliberately forget the last sent value so that we don't
+        // accidentally pass it on to the delegate.
+        this.arg = undefined;
+      }
+
+      return ContinueSentinel;
+    }
+  };
+
+  // Regardless of whether this script is executing as a CommonJS module
+  // or not, return the runtime object so that we can declare the variable
+  // regeneratorRuntime in the outer scope, which allows this module to be
+  // injected easily by `bin/regenerator --include-runtime script.js`.
+  return exports;
+
+}(
+  // If this script is executing as a CommonJS module, use module.exports
+  // as the regeneratorRuntime namespace. Otherwise create a new empty
+  // object. Either way, the resulting object will be used to initialize
+  // the regeneratorRuntime variable at the top of this file.
+   true ? module.exports : undefined
+));
+
+try {
+  regeneratorRuntime = runtime;
+} catch (accidentalStrictMode) {
+  // This module should not be running in strict mode, so the above
+  // assignment should always work unless something is misconfigured. Just
+  // in case runtime.js accidentally runs in strict mode, we can escape
+  // strict mode using a global Function call. This could conceivably fail
+  // if a Content Security Policy forbids using Function, but in that case
+  // the proper solution is to fix the accidental strict mode problem. If
+  // you've misconfigured your bundler to force strict mode and applied a
+  // CSP to forbid Function, and you're not willing to fix either of those
+  // problems, please detail your unique predicament in a GitHub issue.
+  Function("r", "regeneratorRuntime = r")(runtime);
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/regexp.prototype.flags/implementation.js":
 /*!***************************************************************!*\
   !*** ./node_modules/regexp.prototype.flags/implementation.js ***!
@@ -86889,21 +87642,29 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../css/lightslider.css */ "./resources/css/lightslider.css");
-/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_lightslider_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../slidersukm/Jquery31 */ "./resources/js/slidersukm/Jquery31.js");
-/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../slidersukm/lightslider */ "./resources/js/slidersukm/lightslider.js");
-/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _slidersukm_sliderqueryabout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../slidersukm/sliderqueryabout */ "./resources/js/slidersukm/sliderqueryabout.js");
-/* harmony import */ var _slidersukm_sliderqueryabout__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_sliderqueryabout__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _css_reactabout_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../css/reactabout.css */ "./resources/css/reactabout.css");
-/* harmony import */ var _css_reactabout_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_css_reactabout_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../css/lightslider.css */ "./resources/css/lightslider.css");
+/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_lightslider_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../slidersukm/Jquery31 */ "./resources/js/slidersukm/Jquery31.js");
+/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../slidersukm/lightslider */ "./resources/js/slidersukm/lightslider.js");
+/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _slidersukm_sliderqueryabout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../slidersukm/sliderqueryabout */ "./resources/js/slidersukm/sliderqueryabout.js");
+/* harmony import */ var _slidersukm_sliderqueryabout__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_sliderqueryabout__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _css_reactabout_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../css/reactabout.css */ "./resources/css/reactabout.css");
+/* harmony import */ var _css_reactabout_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_css_reactabout_css__WEBPACK_IMPORTED_MODULE_7__);
+
+
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -86947,126 +87708,117 @@ var AboutUs = /*#__PURE__*/function (_Component) {
 
   var _super = _createSuper(AboutUs);
 
-  function AboutUs() {
+  function AboutUs(props) {
+    var _this;
+
     _classCallCheck(this, AboutUs);
 
-    return _super.apply(this, arguments);
+    _this = _super.call(this, props);
+    _this.state = {
+      items: []
+    };
+    _this._isMounted = true;
+    return _this;
   }
 
   _createClass(AboutUs, [{
+    key: "componentDidMount",
+    value: function () {
+      var _componentDidMount = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var _this2 = this;
+
+        var res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.prev = 0;
+                _context.next = 3;
+                return fetch('http://127.0.0.1:4545/api/generasi', {
+                  header: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'Access-Control-Allow-Credentials': 'true',
+                    'Access-Control-Allow-Origin': 'http://127.0.0.1:4545'
+                  }
+                }).then(function (Response) {
+                  return Response.json();
+                }).then(function (findresponse) {
+                  if (_this2._isMounted) {
+                    console.log(findresponse);
+
+                    _this2.setState({
+                      items: findresponse
+                    });
+                  }
+                });
+
+              case 3:
+                res = _context.sent;
+                _context.next = 9;
+                break;
+
+              case 6:
+                _context.prev = 6;
+                _context.t0 = _context["catch"](0);
+                console.log("error");
+
+              case 9:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, null, [[0, 6]]);
+      }));
+
+      function componentDidMount() {
+        return _componentDidMount.apply(this, arguments);
+      }
+
+      return componentDidMount;
+    }()
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      this._isMounted = false;
+    }
+  }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "fotoatas"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
         className: "fotoabout",
         src: "assets/aboutus/auBEM.png"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-slider-aboutus"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
         id: "autoWidth",
         className: "cs-hidden"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-aboutus"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "penjelasan-aboutus",
-        src: "assets/aboutus/au10.png"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-aboutus"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "penjelasan-aboutus",
-        src: "assets/aboutus/au9.png"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-aboutus"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "penjelasan-aboutus",
-        src: "assets/aboutus/au8.png"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-aboutus"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "penjelasan-aboutus",
-        src: "assets/aboutus/au7.png"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-aboutus"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "penjelasan-aboutus",
-        src: "assets/aboutus/au6.png"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-aboutus"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "penjelasan-aboutus",
-        src: "assets/aboutus/au5.png"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-aboutus"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "penjelasan-aboutus",
-        src: "assets/aboutus/au4.png"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-aboutus"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "penjelasan-aboutus",
-        src: "assets/aboutus/au3.png"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-aboutus"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "penjelasan-aboutus",
-        src: "assets/aboutus/au2.png"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-aboutus"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "penjelasan-aboutus",
-        src: "assets/aboutus/au1.png"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }))))));
+      }, this.state.items.map(function (item, index) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          key: index
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+          className: "item-a"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          className: "box-aboutus"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+          className: "penjelasan-aboutus",
+          src: item.photo
+        }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          className: "details"
+        }))));
+      }))));
     }
   }]);
 
   return AboutUs;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (AboutUs);
 
 if (document.getElementById('AboutUs')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(AboutUs, null), document.getElementById('AboutUs'));
+  react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(AboutUs, null), document.getElementById('AboutUs'));
 }
 
 /***/ }),
@@ -87252,20 +88004,28 @@ if (document.getElementById('himp')) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! slick-carousel/slick/slick.css */ "./node_modules/slick-carousel/slick/slick.css");
-/* harmony import */ var slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! slick-carousel/slick/slick-theme.css */ "./node_modules/slick-carousel/slick/slick-theme.css");
-/* harmony import */ var slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _css_reacthome_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../css/reacthome.css */ "./resources/css/reacthome.css");
-/* harmony import */ var _css_reacthome_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_css_reacthome_css__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! slick-carousel/slick/slick.css */ "./node_modules/slick-carousel/slick/slick.css");
+/* harmony import */ var slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! slick-carousel/slick/slick-theme.css */ "./node_modules/slick-carousel/slick/slick-theme.css");
+/* harmony import */ var slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _css_reacthome_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../css/reacthome.css */ "./resources/css/reacthome.css");
+/* harmony import */ var _css_reacthome_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_css_reacthome_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
+
+
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -87295,29 +88055,89 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
-var photos = [{
-  name: 'Photo 1',
-  url: 'assets/img/img1.jpg'
-}, {
-  name: 'Photo 2',
-  url: 'assets/img/img2.jpg'
-}, {
-  name: 'Photo 3',
-  url: 'assets/img/img3.jpg'
-}];
 
 var Home = /*#__PURE__*/function (_Component) {
   _inherits(Home, _Component);
 
   var _super = _createSuper(Home);
 
-  function Home() {
+  function Home(props) {
+    var _this;
+
     _classCallCheck(this, Home);
 
-    return _super.apply(this, arguments);
+    _this = _super.call(this, props);
+    _this.state = {
+      items: [],
+      isLoaded: false,
+      isLoading: true
+    };
+    _this._isMounted = true;
+    return _this;
   }
 
   _createClass(Home, [{
+    key: "componentDidMount",
+    value: function () {
+      var _componentDidMount = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var _this2 = this;
+
+        var res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.prev = 0;
+                _context.next = 3;
+                return fetch('http://127.0.0.1:4545/api/slideshow', {
+                  header: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'Access-Control-Allow-Credentials': 'true',
+                    'Access-Control-Allow-Origin': 'http://127.0.0.1:4545'
+                  }
+                }).then(function (Response) {
+                  return Response.json();
+                }).then(function (findresponse) {
+                  if (_this2._isMounted) {
+                    // console.log(findresponse);
+                    _this2.setState({
+                      items: findresponse,
+                      isLoading: false,
+                      isLoaded: true
+                    });
+                  }
+                });
+
+              case 3:
+                res = _context.sent;
+                _context.next = 8;
+                break;
+
+              case 6:
+                _context.prev = 6;
+                _context.t0 = _context["catch"](0);
+
+              case 8:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, null, [[0, 6]]);
+      }));
+
+      function componentDidMount() {
+        return _componentDidMount.apply(this, arguments);
+      }
+
+      return componentDidMount;
+    }()
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      this._isMounted = false;
+    }
+  }, {
     key: "render",
     value: function render() {
       var settings = {
@@ -87334,47 +88154,48 @@ var Home = /*#__PURE__*/function (_Component) {
         autoplaySpeed: 2000,
         pauseOnHover: false
       };
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "App"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_slick__WEBPACK_IMPORTED_MODULE_4___default.a, settings, photos.map(function (photo) {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "slides filter"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_slick__WEBPACK_IMPORTED_MODULE_5___default.a, settings, this.state.items.map(function (item, index) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          className: "slides filter",
+          key: index
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
           className: "slides-img",
-          src: photo.url
+          src: item.photo
         }));
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-csi"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-csi-text"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
         className: "CSI-color"
-      }, "Commit. Solid. Integrated."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "qui officia deserunt mollit anim id est laborum."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_6__["Container"], {
+      }, "Commit. Solid. Integrated."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_7__["Container"], {
         className: "themed-container",
         fluid: true
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-2"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-2-text"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Lorem Ipsum Dolor Sit Amet"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "qui officia deserunt mollit anim id est laborum.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_6__["Button"], {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "Lorem Ipsum Dolor Sit Amet"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_7__["Button"], {
         color: "primary",
         className: "buttonsmua"
-      }, "Learn More"), ' ')))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_6__["Container"], {
+      }, "Learn More"), ' ')))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_7__["Container"], {
         className: "themed-container",
         fluid: true
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-dedicate"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_6__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_7__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_7__["Col"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-dedicate-judul"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
         className: "dtc-1"
-      }, "#DedicateToCreate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+      }, "#DedicateToCreate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
         className: "genx-1"
-      }, "GEN X")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_6__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
-        xs: "6"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "GEN X")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_7__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_7__["Col"], {
+        md: "6"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-dedicate-text container-aboutus"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "qui officia deserunt mollit anim id est laborum.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_6__["Button"], {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_7__["Button"], {
         color: "primary",
         className: "buttonsmua"
       }, "About Us"), ' ')))))));
@@ -87382,12 +88203,12 @@ var Home = /*#__PURE__*/function (_Component) {
   }]);
 
   return Home;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
 
 if (document.getElementById('root')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Home, null), document.getElementById('root'));
+  react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Home, null), document.getElementById('root'));
 }
 
 /***/ }),
@@ -87835,24 +88656,32 @@ if (document.getElementById('keg')) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_tabs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-tabs */ "./node_modules/react-tabs/esm/index.js");
-/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../css/lightslider.css */ "./resources/css/lightslider.css");
-/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_lightslider_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../slidersukm/Jquery31 */ "./resources/js/slidersukm/Jquery31.js");
-/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../slidersukm/lightslider */ "./resources/js/slidersukm/lightslider.js");
-/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../slidersukm/sliderquery */ "./resources/js/slidersukm/sliderquery.js");
-/* harmony import */ var _slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-tabs/style/react-tabs.css */ "./node_modules/react-tabs/style/react-tabs.css");
-/* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _css_reactukm_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../css/reactukm.css */ "./resources/css/reactukm.css");
-/* harmony import */ var _css_reactukm_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_css_reactukm_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-tabs */ "./node_modules/react-tabs/esm/index.js");
+/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../css/lightslider.css */ "./resources/css/lightslider.css");
+/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_css_lightslider_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../slidersukm/Jquery31 */ "./resources/js/slidersukm/Jquery31.js");
+/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../slidersukm/lightslider */ "./resources/js/slidersukm/lightslider.js");
+/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../slidersukm/sliderquery */ "./resources/js/slidersukm/sliderquery.js");
+/* harmony import */ var _slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-tabs/style/react-tabs.css */ "./node_modules/react-tabs/style/react-tabs.css");
+/* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _css_reactukm_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../css/reactukm.css */ "./resources/css/reactukm.css");
+/* harmony import */ var _css_reactukm_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_css_reactukm_css__WEBPACK_IMPORTED_MODULE_9__);
+
+
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -87888,9 +88717,7 @@ function slider() {
   $(document).ready(function () {
     $('#autoWidth').lightSlider({
       autoWidth: true,
-      controls: true,
-      prevHtml: '',
-      nextHtml: '',
+      controls: false,
       enableTouch: true,
       enableDrag: true,
       freeMove: true,
@@ -87907,493 +88734,279 @@ var Ukm = /*#__PURE__*/function (_Component) {
 
   var _super = _createSuper(Ukm);
 
-  function Ukm() {
+  function Ukm(props) {
     var _this;
 
     _classCallCheck(this, Ukm);
 
-    _this = _super.call(this);
+    _this = _super.call(this, props);
     _this.state = {
-      tabIndex: 0
+      itemor: [],
+      itemsainsos: [],
+      itemsenbud: [],
+      tabIndex: 0,
+      isLoaded: false,
+      isLoading: true
     };
+    _this._isMounted = true;
     return _this;
   }
 
   _createClass(Ukm, [{
+    key: "componentDidMount",
+    value: function () {
+      var _componentDidMount = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var _this2 = this;
+
+        var res, _res, _res2;
+
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.prev = 0;
+                _context.next = 3;
+                return fetch('http://127.0.0.1:4545/api/ukm-olahraga', {
+                  header: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'Access-Control-Allow-Credentials': 'true',
+                    'Access-Control-Allow-Origin': 'http://127.0.0.1:4545'
+                  }
+                }).then(function (Response) {
+                  return Response.json();
+                }).then(function (findresponse) {
+                  if (_this2._isMounted) {
+                    // console.log(findresponse);
+                    _this2.setState({
+                      itemor: findresponse,
+                      isLoading: false,
+                      isLoaded: true
+                    });
+                  }
+                });
+
+              case 3:
+                res = _context.sent;
+                _context.next = 8;
+                break;
+
+              case 6:
+                _context.prev = 6;
+                _context.t0 = _context["catch"](0);
+
+              case 8:
+                _context.prev = 8;
+                _context.next = 11;
+                return fetch('http://127.0.0.1:4545/api/ukm-sainsos', {
+                  header: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'Access-Control-Allow-Credentials': 'true',
+                    'Access-Control-Allow-Origin': 'http://127.0.0.1:4545'
+                  }
+                }).then(function (Response) {
+                  return Response.json();
+                }).then(function (findresponse) {
+                  if (_this2._isMounted) {
+                    // console.log(findresponse);
+                    _this2.setState({
+                      itemsainsos: findresponse,
+                      isLoading: false,
+                      isLoaded: true
+                    });
+                  }
+                });
+
+              case 11:
+                _res = _context.sent;
+                _context.next = 16;
+                break;
+
+              case 14:
+                _context.prev = 14;
+                _context.t1 = _context["catch"](8);
+
+              case 16:
+                _context.prev = 16;
+                _context.next = 19;
+                return fetch('http://127.0.0.1:4545/api/ukm-senbud', {
+                  header: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'Access-Control-Allow-Credentials': 'true',
+                    'Access-Control-Allow-Origin': 'http://127.0.0.1:4545'
+                  }
+                }).then(function (Response) {
+                  return Response.json();
+                }).then(function (findresponse) {
+                  if (_this2._isMounted) {
+                    // console.log(findresponse);
+                    _this2.setState({
+                      itemsenbud: findresponse,
+                      isLoading: false,
+                      isLoaded: true
+                    });
+                  }
+                });
+
+              case 19:
+                _res2 = _context.sent;
+                _context.next = 24;
+                break;
+
+              case 22:
+                _context.prev = 22;
+                _context.t2 = _context["catch"](16);
+
+              case 24:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, null, [[0, 6], [8, 14], [16, 22]]);
+      }));
+
+      function componentDidMount() {
+        return _componentDidMount.apply(this, arguments);
+      }
+
+      return componentDidMount;
+    }()
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      this._isMounted = false;
+    }
+  }, {
     key: "render",
     value: function render() {
-      var _this2 = this;
+      var _this3 = this;
 
-      var displayTabs = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tabs"], {
+      var displayTabs = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_3__["Tabs"], {
         selectedIndex: this.state.tabIndex,
         onSelect: function onSelect(tabIndex) {
-          return _this2.setState({
+          return _this3.setState({
             tabIndex: tabIndex
           });
         },
         onClick: slider()
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabList"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tab"], {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_3__["TabList"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_3__["Tab"], {
         className: "ukm1-tab-pane"
-      }, "Seni dan Budaya"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tab"], {
+      }, "Seni dan Budaya"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_3__["Tab"], {
         className: "ukm2-tab-pane"
-      }, "Sains dan Sosial"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tab"], {
+      }, "Sains dan Sosial"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_3__["Tab"], {
         className: "ukm3-tab-pane"
-      }, "Olahraga")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Olahraga")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_3__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-awal"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-slider-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
         id: "autoWidth",
         className: "cs-hidden"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Ultima Sonora"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/ulsonbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora merupakan Paduan Suara Mahasiswa Universitas Multimedia Nusantara sejak tahun 2007. Dalam menjaga eksistensinya, Ultima Sonora aktif dalam mengadakan berbagai konser, seperti konser Inagurasi yang diadakan rutin setiap tahunnya"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/UltimaSonora"
-      }, "@UltimaSonora")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Selasa & Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-20.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "#SingWithUS"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Teater KataK"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/katakbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Komunitas Anak Teater Kampus (KataK) didirikan sebagai wadah berseni peran di UMN. KataK berkembang menjadi fasilitator bagi mereka yang ingin belajar ilmu teater.Puluhan produksi sudah diselenggarakan baik di dalam maupun di luar universitas."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/teaterkatak"
-      }, "@teaterkatak")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Selasa, Rabu,& Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "\u201CBerani Melompat Lebih Tinggi ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Melewati Batasan Yang Ada\u201D"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "UMN Symphony Orchestra"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/usobg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "UMN Symphony Orchestra berdiri sejak 2015 dan resmi menjadi ukm pada tahun 2016. Melalui tagline \u2018Viva La Musica\u2019  kami tidak hanya sekedar bermain musik, tetapi juga menghidupkan rasa dalam setiap individu, sehingga seluruh permainan musik yang kami hasilkan dapat tersampaikan dengan baik dan dirasakan"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/umnsymphonyorchestra"
-      }, "@umnsymphonyorchestra")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Selasa & Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-20.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Viva La Musica!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Qorie"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/qoriebg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Qorie merupakan sebuah UKM seni dan budaya yang berfokus pada kebudayaan Korea Selatan. Qorie juga menjadi sarana untuk mempelajari tata bahasa korea serta menjadi tempat bagi mahasiswa/i untuk menunjukan bakat dan minat mereka dalam seni tari dan musik korea."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/qorie_umn"
-      }, "@qorie_umn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Senin s/d Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-20.00 WIB *(disesuaikan perdivisi)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Qorie, Saranghaja!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Jcafe"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/jcafebg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Jcafe adalah Unit Kegiatan Mahasiswa (UKM) yang beranggotakan para penggemar budaya Jepang di UMN. Jcafe memberikan wadah kepada para mahasiswa untuk mengembangkan minat & bakat serta passion mereka terhadap seni dan budaya berbasis jepang."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/jcafe_umn"
-      }, "@jcafe_umn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Senin s/d Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-19.00 WIB *(disesuaikan perdivisi)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Jcafe, Express Your Japanese Passion!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Mufomic"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/mufomicbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Multimedia Face of Music (MUFOMIC) merupakan salah satu Unit Kegiatan Mahasiswa (UKM) di Universitas Multimedia Nusantara yang bergerak di bidang seni dan budaya, yaitu musik dalam format band."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/mufomic"
-      }, "@mufomic")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Selasa", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-22.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Mufomic - ORKES"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Obscura"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/obscurabg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Obscura merupakan Unit Kegiatan Mahasiswa (UKM) yang bergerak di bidang fotografi dibawah naungan UMN.Obscura bertujuan untuk mempertemukan para pecinta fotografi di kalangan mahasiswa UMN. Obscura memegang erat motto \u201CTogether We Learn\u201D karena mengedepankan kebersamaan dalam belajar. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/obscuratwl"
-      }, "@obscuratwl")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Rabu", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-22.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Together We Learn!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Tracce"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/traccebg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Traditional dance atau yang akrab disebut dengan TRACCE merupakan Unit Kegiatan Mahasiswa di Universitas Multimedia Nusantara yang memberi wadah bagi mahasiswa yang ingin menyalurkan bakat dan minatnya dalam seni tradisional yang berasal dari Indonesia."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/tracceumn"
-      }, "@tracceumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Selasa, Rabu,& Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.30-20.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "\"Nari terus, nari terus, nari terus!\""))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Ultima Toys"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/utoysbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Toys adalah Unit Kegiatan Mahasiswa sebagai tempat belajar juga sarana untuk berbagi ide dan kreativitas yang berkaitan dengan fotografi mainan"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/ultimatoys"
-      }, "@ultimatoys")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-19.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Where Toys Come to Life"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Street Dance"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/sdbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Let\u2019s Dance (LDNC) adalah Unit Kegiatan Mahasiswa (UKM) yang berfokus di bidang tari. LDNC sendiri biasa dikenal dengan UKM street dance. Tujuan dibentuknya LDNC adalah menjadi tempat atau wadah untuk mahasiswa UMN yang tertarik dengan dunia tari, ada berbagai macam style yang akan dipelajari seperti: b-boy, locking, hip-hop, ladies, popping, dll"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/streetdanceumn"
-      }, "@streetdanceumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "19.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Dance to Your Own Beat"))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, this.state.itemsenbud.map(function (itemsenbuds, index) {
+        return (
+          /*#__PURE__*/
+
+          /*1*/
+          react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+            className: "item-a",
+            key: index
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+            className: "box-senbud"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+            className: "senbud"
+          }, itemsenbuds.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+            src: itemsenbuds.photo,
+            className: "model"
+          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+            className: "penjelasan"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, itemsenbuds.info), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+            href: itemsenbuds.link
+          }, "@", itemsenbuds.ig)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+            className: "details"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+            className: "logo"
+          }, itemsenbuds.hari, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), itemsenbuds.jam), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", null, itemsenbuds.tagline)))))
+        );
+      }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_3__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-awal"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-slider-sensos"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
         id: "autoWidth",
         "class": "cs-hidden"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxsos"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "sensos"
-      }, "UMN Programming Club"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/sainsos/umnpcbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "UMN PC (UMN Programming Club) adalah UKM yang melatih kemampuan CP (Competitive Programming) dengan tujuan mengasah logika dan daya pikir delchipier. Delchipier melakukan CP bersama-sama setiap minggunya dengan materi yang disusun untuk mengembangkan skill CP secara mendalam. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/umnprogrammingclub"
-      }, "@umnprogrammingclub")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Senin & Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "We Code The Future, Future Starts With Us"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxsos"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "sensos"
-      }, "UESC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/sainsos/uescbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "UESC (UMN English Student Council) sebagai salah satu UKM UMN berbahasa Inggris, ingin mengembangkan kemampuan berbahasa Inggris anggotanya. Dengan keempat divisi UESC yaitu Scrabble, Speech, Spelling Bee, dan Debate, banyak variasi keterampilan yang dapat kita semua asah."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/uesc_umn"
-      }, "@uesc_umn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "So, You Think We ain't Fun?"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxsos"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "sensos"
-      }, "Rencang"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/sainsos/rencangbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Rencang merupakan komunitas sosial yang menjadi wadah bagi mahasiswa/i UMN untuk dapat berdampak bagi masyarakat yang membutuhkan. Banyak program-program yang dilakukan untuk mencapai tujuan tersebut, seperti donor darah, kampanye sosial, berbagi kebahagiaan dengan orang yang membutuhkan, dan berbagai kegiatan yang mengakrabkan sesama anggota."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/rencangaye"
-      }, "@rencangaye")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Selasa", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Unite as a Family to Manifest Love and Sincerity"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxsos"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "sensos"
-      }, "Mapala"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/sainsos/mapalabig.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Mapala UMN merupakan organisasi yang berasaskan kekeluargaan, persaudaraan, persamaan, kemerdekaan, dan gotong royong, yang didasari oleh semangat kemanusiaan yang adil dan beradab. Mapala UMN bertujuan untuk memberikan wadah kepada Mahasiswa UMN yang berminat terhadap kegiatan alam yang keanggotaannya diatur dalam Anggaran Rumah Tangga. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@mapalaumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Salam Lestari!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxsos"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "sensos"
-      }, "GDC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/sainsos/gdcbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Game Development Club adalah UKM yang merangkul mahasiswa yang berminat terhadap game development. Disini, mahasiswa dapat mengisi waktu mereka untuk mempelajari lebih dalam mengenai proses pembuatan game"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/gdcumn"
-      }, "@gdcumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Rabu", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-19.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "We Make Great Games! "))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, this.state.itemsainsos.map(function (itemsainsoss, index) {
+        return (
+          /*#__PURE__*/
+
+          /*1*/
+          react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+            "class": "item-a",
+            key: index
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+            className: "boxsos"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+            className: "sensos"
+          }, itemsainsoss.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+            src: itemsainsoss.photo,
+            className: "model"
+          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+            className: "penjelasan"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, itemsainsoss.info), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+            href: itemsainsoss.link
+          }, "@", itemsainsoss.ig)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+            className: "details"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+            className: "logo"
+          }, itemsainsoss.hari, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), itemsainsoss.jam), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", null, itemsainsoss.tagline)))))
+          /*umnpc*/
+
+        );
+      }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_3__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-awal"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-slider-olr"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
         id: "autoWidth",
         "class": "cs-hidden"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "olr"
-      }, "Lions Basket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/olahraga/basketbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "UMN Lions Basketball merupakan salah satu UKM yang berada di UMN, yang bergerak di bidang olahraga khususnya olahraga bola basket. Lions basketball ini sudah berdiri sejak 2010. Lions basketball ini memiliki tujuan sebagai wadah bagi para mahasiswa dan mahasiswi untuk dapat menunjukan potensi dan bakat mereka dalam bidang olahraga basket."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/umn_lions"
-      }, "@umn_lions")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Senin, Rabu,& Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "UMN Lions Jaya Jaya Luar Biasa"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "olr"
-      }, "Lions Badminton"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/olahraga/badminbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lions badminton merupakan UKM di kampus UMN yang bergerak di bidang olahraga. Lions Badminton juga menjadi wadah bagi setiap mahasiswa/i untuk mengembangkan minat dan bakat mereka khususnya di bidang bulutangkis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/lionsbadmintonumn"
-      }, "@lionsbadmintonumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Rabu & Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "18.00-22.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Lions Badminton!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "olr"
-      }, "Capoeira"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/olahraga/capoeirabg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Di Capoeira UMN kami belajar bersama dan bermain bersama dengan santai.Capoeira UMN menerapkan Mix Method dimana kami belajar capoeira dicampur dengan tricking, yoga, akrobatik dan sebagainya."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/capoeiraumn"
-      }, "@capoeiraumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.30-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "\xC9 vou jogar!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "olr"
-      }, "Fortius e-Sports"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/olahraga/fortiusbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fortius E-Sport merupakan Unit Kegiatan Mahasiswa (UKM) yang ada di UMN yang ditujukan untuk mahasiswa/i dengan cabang olahraga E-Sport. Fortius berasal dari kata latin, dengan memiliki arti Sangat kuat."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/fortiusesports"
-      }, "@fortiusesports")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Senin, Rabu, & Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "19.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Fight.Dominate.Win"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "olr"
-      }, "Lions Futsal"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/olahraga/futsalbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lions Futsal adalah UKM olahraga futsal di UMN yang mewadahi mahasiswa ataupun mahasiswi untuk menyalurkan bakat atau hobi yang dimiliki.  Lions futsal juga aktif mengikuti kompetisi tingkat universitas. Lions Futsal pernah menjuarai beberapa kejuaraan baik internal maupun eksternal."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/lionsfutsal_umn"
-      }, "@lionsfutsal_umn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Senin & Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Lions Futsal UMN, Victory"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "olr"
-      }, "Tenis Meja"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/olahraga/pingpongbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "UKM Tenis Meja adalah UKM yang ditujukan untuk mahasiswa/i yang tertarik untuk mempelajari tenis meja dan mengembangkan kemampuan untuk mengikuti kompetisi."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/ukmtenismeja.umn"
-      }, "@ukmtenismeja.umn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Selasan & Rabu", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-19.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Tenis Meja UMN!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "olr"
-      }, "softball"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/olahraga/softballbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Softball adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang softball"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@softballumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Selasan & Rabu", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.30-20.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Softball UMN!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "olr"
-      }, "Spectre"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/olahraga/spectrebg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Spectre adalah UKM yang berfokus di bidang stunt action untuk dunia perfilman. Tujuan dari UKM ini adalah mengasah ilmu yang dibutuhkan oleh para anggota untuk berperforma di dunia perfilman dengan tingkat standar profesional. Ilmu tersebut terdiri dari teknik gerakan menyerang, jatuhan, aksi reaksi dan gun handling yang dicakup dari berbagai macam beladiri."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/usfxspectre"
-      }, "@usfxspectre")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Rabu & Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "USF ACTION!!!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "olr"
-      }, "Lions Voli"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/olahraga/volibg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lions Volleyball merupakan salah satu UKM yang diselenggarakan oleh Universitas Multimedia Nusantara dalam cabang olahraga bola voli.Lions Volleyball sendiri mempunyai tagline 'Hustle Hit, Never Quit', dapat bisa diartikan dalam permainan ini, setiap pukulan yang didapat harus tetap bersikap rendah tetapi tidak menyerah."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang bola voli"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/umnlionsvolleyball"
-      }, "@umnlionsvolleyball")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Senin & Rabu", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Hustle Hit, Never Quit"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "olr"
-      }, "Taekwondo UMN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/olahraga/taekwonbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Taekwondo UMN merupakan Unit Kegiatan Mahasiswa yang mendukung mahasiswa UMN dalam melakukan bela diri Taekwondo. Taekwondo UMN juga  menghasilkan juara juara bertarung di berbagai tingkatan"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/taekwondo_umn "
-      }, "@taekwondo_umn ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Selasa & Kamiss", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "18.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "If You Worry About How , You Will Never Start"))))))))));
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, this.state.itemor.map(function (itemors, index) {
+        return (
+          /*#__PURE__*/
+
+          /*1*/
+          react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+            "class": "item-a",
+            key: index
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+            className: "boxor"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+            className: "olr"
+          }, itemors.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+            src: itemors.photo,
+            className: "model"
+          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+            className: "penjelasan"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, itemors.info), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+            href: itemors.link
+          }, "@", itemors.ig)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+            className: "details"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+            className: "logo"
+          }, itemors.hari, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), itemors.jam), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", null, itemors.tagline)))))
+          /*Basket*/
+
+        );
+      }))))));
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "allukm"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-ukm"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
         className: "ukm"
-      }, "UNIT KEGIATAN", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " MAHASISWA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }, "UNIT KEGIATAN", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), " MAHASISWA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         className: "textatasukm"
-      }, "Universitas Multimedia Nusantara memiliki berbagai Unit Kegiatan Mahasiswa.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "(UKM) yang beragam. Yang dibagi menjadi 3 kategori yaitu, Seni dan Budaya, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Sains dan Sosial, dan Olahraga. ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Universitas Multimedia Nusantara memiliki berbagai Unit Kegiatan Mahasiswa", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), "(UKM) yang beragam. Yang dibagi menjadi 3 kategori yaitu, Seni dan Budaya, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), "Sains dan Sosial, dan Olahraga. ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-tab"
       }, displayTabs))
       /*End allukm*/
@@ -88402,12 +89015,12 @@ var Ukm = /*#__PURE__*/function (_Component) {
   }]);
 
   return Ukm;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Ukm);
 
 if (document.getElementById('ukm')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Ukm, null), document.getElementById('ukm'));
+  react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Ukm, null), document.getElementById('ukm'));
 }
 
 /***/ }),
@@ -97572,13 +98185,13 @@ if (document.getElementById('ukm')) {
     //'for jquery animation',//
     speed: 400,
     //ms'
-    auto: false,
-    pauseOnHover: false,
-    loop: false,
+    auto: true,
+    pauseOnHover: true,
+    loop: true,
     slideEndAnimation: true,
     pause: 2000,
     keyPress: false,
-    controls: true,
+    controls: false,
     prevHtml: '',
     nextHtml: '',
     rtl: false,

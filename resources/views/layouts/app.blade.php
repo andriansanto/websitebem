@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <link rel="icon" tngype="image/gif/png" href="{{ asset('assets/bem2.png') }}">
+    <title>BEM UMN</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -22,8 +22,9 @@
     <link href="../../css/default.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
     
+    
 </head>
-<body>
+<body >
     <div id="app">
     
         <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm fixed-top">

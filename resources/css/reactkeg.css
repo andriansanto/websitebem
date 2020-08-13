@@ -41,28 +41,29 @@ input[type=radio] {
 .a{
     text-decoration: none;
 }
-/* 
-.lSNext{
+
+/* .lSNext{
     background-image: url(../../public/assets/arrowgreykanan.png);
-    width: 40px;
-    height: 35px;
+    width: 35px;
+    height: 52px;
 }
 
 .lSAction > .lSNext{
-    width: 40px;
-    height: 35px;
+    width: 35px;
+    height: 52px;
 }
 
 .lSPrev{
     background-image: url(../../public/assets/arrowgreykiri.png);
     width: 35px;
-    height: 35px;
+    height: 52px;
 }
 
 .lSAction > .lSPrev{
     width: 35px;
-    height: 35px;
+    height: 52px;
 } */
+
 
 .container-slider-keg{
     width: 100%;

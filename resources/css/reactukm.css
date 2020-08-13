@@ -18,12 +18,14 @@
     padding-top: 50px;
     background-image: url(../../public/assets/CSI.png); /*nanti ganti sama asset yg resolusinya lbh besar*/
     background-repeat: no-repeat;
-    height: 300px;
+    height: 350px;
 }
 
 .ukm{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: xxx-large;
     background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -31,6 +33,9 @@
 
 .textatasukm{
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: large;
 }
 
 /* Line Slider*/
@@ -161,27 +166,6 @@
     font-size: 1.7vh;
 }
 
-.lSNext{
-    background-image: url(../../public/assets/arrowgreykanan.png);
-    width: 35px;
-    height: 52px;
-}
-
-.lSAction > .lSNext{
-    width: 35px;
-    height: 52px;
-}
-
-.lSPrev{
-    background-image: url(../../public/assets/arrowgreykiri.png);
-    width: 35px;
-    height: 52px;
-}
-
-.lSAction > .lSPrev{
-    width: 35px;
-    height: 52px;
-}
 
 .model{
     margin-top: -20px;
@@ -284,7 +268,7 @@
 
 /*responsive Mobile*/
 
-@media(max-width:720px){
+@media(max-width:680px){
      .box{
          width: 94%;
          height: 450px;
@@ -334,7 +318,11 @@
         height: 25px;
         display: inline-grid;
     }
-
+    .container-ukm{
+  
+        background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/
+    
+    }
 }
 
 @media(max-width:410px){
@@ -387,7 +375,9 @@
         height: 25px;
         display: inline-grid;
     }
-
+    .container-ukm{
+        background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/
+    }
 }
 
 

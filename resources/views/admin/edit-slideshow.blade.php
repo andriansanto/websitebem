@@ -29,7 +29,7 @@
                                 @method('patch')
                                 @csrf
                             <div class="form-group row d-flex justify-content-center px-4 pt-3">
-                                <img src="{{ $slideshow->photo }}" class="img-thumbnail" style="width:70%; object-fit: cover;" onclick="triggerClick()" id="display_photo"></img>
+                                <img src="/{{ $slideshow->photo }}" class="img-thumbnail" style="width:70%; object-fit: cover;" onclick="triggerClick()" id="display_photo"></img>
                             <div class="form-group row d-flex justify-content-center px-4">
                                 <label for="photo">{{ __('Foto Slide Show') }}</label>
                                 <div class="input-group mb-3">

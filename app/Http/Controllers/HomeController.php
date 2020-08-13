@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('base')->with(['slideshows' => SlideShow::all()]);
+        return view('base');
     }
 
     public function himpunan()
@@ -45,5 +45,10 @@ class HomeController extends Controller
     public function aboutus()
     {
         return view('aboutus');
+    }
+
+    public function webteam()
+    {
+        return view('webteam');
     }
 }
