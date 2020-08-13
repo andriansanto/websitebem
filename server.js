@@ -49,3 +49,39 @@ app.get('/api/generasi', function(req,res){
         }
     });
 });
+
+app.get('/api/ukm-olahraga', function(req,res){
+    res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:8000');
+    con.query('select * from ukm where bidang = "olahraga"', function(error, rows, fields){
+        if(error) console.log(error);
+
+        else{
+            console.log(rows);
+            res.send(rows);
+        }
+    });
+});
+
+app.get('/api/ukm-sainsos', function(req,res){
+    res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:8000');
+    con.query('select * from ukm where bidang = "sainsos"', function(error, rows, fields){
+        if(error) console.log(error);
+
+        else{
+            console.log(rows);
+            res.send(rows);
+        }
+    });
+});
+
+app.get('/api/ukm-senbud', function(req,res){
+    res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:8000');
+    con.query('select * from ukm where bidang = "senbud"', function(error, rows, fields){
+        if(error) console.log(error);
+
+        else{
+            console.log(rows);
+            res.send(rows);
+        }
+    });
+});

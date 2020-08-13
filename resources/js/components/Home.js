@@ -46,7 +46,7 @@ class Home extends Component{
                 }
                 })
         }catch(e){
-            console.log("error");
+            // console.log("error");
         }
 
     }

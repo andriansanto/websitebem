@@ -7044,12 +7044,13 @@ exports.push([module.i, "/* Slider */\n.slick-slider\n{\n    position: relative;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+var escape = __webpack_require__(/*! ../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, "/*! lightslider - v1.1.3 - 2015-04-14\r\n* https://github.com/sachinchoolur/lightslider\r\n* Copyright (c) 2015 Sachin N; Licensed MIT */\r\n/** /!!! core css Should not edit !!!/**/ \r\n\r\n.lSSlideOuter {\r\n    overflow: hidden;\r\n    -webkit-touch-callout: none;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none\r\n}\r\n.lightSlider:before, .lightSlider:after {\r\n    content: \" \";\r\n    display: table;\r\n}\r\n.lightSlider {\r\n    overflow: hidden;\r\n    margin: 0;\r\n}\r\n.lSSlideWrapper {\r\n    max-width: 100%;\r\n    overflow: hidden;\r\n    position: relative;\r\n}\r\n.lSSlideWrapper > .lightSlider:after {\r\n    clear: both;\r\n}\r\n.lSSlideWrapper .lSSlide {\r\n    transform: translate(0px, 0px);\r\n    -webkit-transition: all 1s;\r\n    transition-property: transform,height;\r\n    transition-duration: inherit !important;\r\n    transition-timing-function: inherit !important;\r\n}\r\n.lSSlideWrapper .lSFade {\r\n    position: relative;\r\n}\r\n.lSSlideWrapper .lSFade > * {\r\n    position: absolute !important;\r\n    top: 0;\r\n    left: 0;\r\n    z-index: 9;\r\n    margin-right: 0;\r\n    width: 100%;\r\n}\r\n.lSSlideWrapper.usingCss .lSFade > * {\r\n    opacity: 0;\r\n    transition-delay: 0s;\r\n    transition-duration: inherit !important;\r\n    transition-property: opacity;\r\n    transition-timing-function: inherit !important;\r\n}\r\n.lSSlideWrapper .lSFade > *.active {\r\n    z-index: 10;\r\n}\r\n.lSSlideWrapper.usingCss .lSFade > *.active {\r\n    opacity: 1;\r\n}\r\n/** /!!! End of core css Should not edit !!!/**/\r\n\r\n/* Pager */\r\n.lSSlideOuter .lSPager.lSpg {\r\n    margin: 10px 0 0;\r\n    padding: 0;\r\n    text-align: center;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li {\r\n    cursor: pointer;\r\n    display: inline-block;\r\n    padding: 0 5px;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li a {\r\n    background-color: #222222;\r\n    border-radius: 30px;\r\n    display: inline-block;\r\n    height: 8px;\r\n    overflow: hidden;\r\n    text-indent: -999em;\r\n    width: 8px;\r\n    position: relative;\r\n    z-index: 99;\r\n    transition: all 0.5s linear 0s;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {\r\n    background-color: #428bca;\r\n}\r\n.lSSlideOuter .media {\r\n    opacity: 0.8;\r\n}\r\n.lSSlideOuter .media.active {\r\n    opacity: 1;\r\n}\r\n/* End of pager */\r\n\r\n/** Gallery */\r\n.lSSlideOuter .lSPager.lSGallery {\r\n    list-style: none outside none;\r\n    padding-left: 0;\r\n    margin: 0;\r\n    overflow: hidden;\r\n    transform: translate3d(0px, 0px, 0px);\r\n    -moz-transform: translate3d(0px, 0px, 0px);\r\n    -ms-transform: translate3d(0px, 0px, 0px);\r\n    -webkit-transform: translate3d(0px, 0px, 0px);\r\n    -o-transform: translate3d(0px, 0px, 0px);\r\n    -webkit-transition-property: -webkit-transform;\r\n    -moz-transition-property: -moz-transform;\r\n    -webkit-touch-callout: none;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery li {\r\n    overflow: hidden;\r\n    transition: border-radius 0.12s linear 0s 0.35s linear 0s;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {\r\n    border-radius: 5px;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery img {\r\n    display: block;\r\n    height: auto;\r\n    max-width: 100%;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery:before, .lSSlideOuter .lSPager.lSGallery:after {\r\n    content: \" \";\r\n    display: table;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery:after {\r\n    clear: both;\r\n}\r\n/* End of Gallery*/\r\n\r\n/* slider actions */\r\n.lSAction > a {\r\n    width: 32px;\r\n    display: block;\r\n    top: 50%;\r\n    height: 32px;\r\n    cursor: pointer;\r\n    position: absolute;\r\n    z-index: 99;\r\n    margin-top: -16px;\r\n    opacity: 0.5;\r\n    transition: opacity 0.35s linear 0s;\r\n}\r\n.lSAction > a:hover {\r\n    opacity: 1;\r\n}\r\n.lSAction > .lSPrev {\r\n    background-position: 0 0;\r\n    left: 10px;\r\n}\r\n.lSAction > .lSNext {\r\n    background-position: 0 0;\r\n    right: 10px;\r\n}\r\n.lSAction > a.disabled {\r\n    pointer-events: none;\r\n}\r\n.cS-hidden {\r\n    height: 1px;\r\n    opacity: 0;\r\n    filter: alpha(opacity=0);\r\n    overflow: hidden;\r\n}\r\n\r\n\r\n/* vertical */\r\n.lSSlideOuter.vertical {\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical.noPager {\r\n    padding-right: 0px !important;\r\n}\r\n.lSSlideOuter.vertical .lSGallery {\r\n    position: absolute !important;\r\n    right: 0;\r\n    top: 0;\r\n}\r\n.lSSlideOuter.vertical .lightSlider > * {\r\n    width: 100% !important;\r\n    max-width: none !important;\r\n}\r\n\r\n/* vertical controlls */\r\n.lSSlideOuter.vertical .lSAction > a {\r\n    left: 50%;\r\n    margin-left: -14px;\r\n    margin-top: 0;\r\n}\r\n.lSSlideOuter.vertical .lSAction > .lSNext {\r\n    background-position: 31px -31px;\r\n    bottom: 10px;\r\n    top: auto;\r\n}\r\n.lSSlideOuter.vertical .lSAction > .lSPrev {\r\n    background-position: 0 -31px;\r\n    bottom: auto;\r\n    top: 10px;\r\n}\r\n/* vertical */\r\n\r\n\r\n/* Rtl */\r\n.lSSlideOuter.lSrtl {\r\n    direction: rtl;\r\n}\r\n.lSSlideOuter .lightSlider, .lSSlideOuter .lSPager {\r\n    padding-left: 0;\r\n    list-style: none outside none;\r\n}\r\n.lSSlideOuter.lSrtl .lightSlider, .lSSlideOuter.lSrtl .lSPager {\r\n    padding-right: 0;\r\n}\r\n.lSSlideOuter .lightSlider > *,  .lSSlideOuter .lSGallery li {\r\n    float: left;\r\n}\r\n.lSSlideOuter.lSrtl .lightSlider > *,  .lSSlideOuter.lSrtl .lSGallery li {\r\n    float: right !important;\r\n}\r\n/* Rtl */\r\n\r\n@-webkit-keyframes rightEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: -15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@keyframes rightEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: -15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@-webkit-keyframes topEnd {\r\n    0% {\r\n        top: 0;\r\n    }\r\n\r\n    50% {\r\n        top: -15px;\r\n    }\r\n\r\n    100% {\r\n        top: 0;\r\n    }\r\n}\r\n@keyframes topEnd {\r\n    0% {\r\n        top: 0;\r\n    }\r\n\r\n    50% {\r\n        top: -15px;\r\n    }\r\n\r\n    100% {\r\n        top: 0;\r\n    }\r\n}\r\n@-webkit-keyframes leftEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: 15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@keyframes leftEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: 15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@-webkit-keyframes bottomEnd {\r\n    0% {\r\n        bottom: 0;\r\n    }\r\n\r\n    50% {\r\n        bottom: -15px;\r\n    }\r\n\r\n    100% {\r\n        bottom: 0;\r\n    }\r\n}\r\n@keyframes bottomEnd {\r\n    0% {\r\n        bottom: 0;\r\n    }\r\n\r\n    50% {\r\n        bottom: -15px;\r\n    }\r\n\r\n    100% {\r\n        bottom: 0;\r\n    }\r\n}\r\n.lSSlideOuter .rightEnd {\r\n    -webkit-animation: rightEnd 0.3s;\r\n    animation: rightEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter .leftEnd {\r\n    -webkit-animation: leftEnd 0.3s;\r\n    animation: leftEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical .rightEnd {\r\n    -webkit-animation: topEnd 0.3s;\r\n    animation: topEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical .leftEnd {\r\n    -webkit-animation: bottomEnd 0.3s;\r\n    animation: bottomEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.lSrtl .rightEnd {\r\n    -webkit-animation: leftEnd 0.3s;\r\n    animation: leftEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.lSrtl .leftEnd {\r\n    -webkit-animation: rightEnd 0.3s;\r\n    animation: rightEnd 0.3s;\r\n    position: relative;\r\n}\r\n/*/  GRab cursor */\r\n.lightSlider.lsGrab > * {\r\n  cursor: -webkit-grab;\r\n  cursor: -o-grab;\r\n  cursor: -ms-grab;\r\n  cursor: grab;\r\n}\r\n.lightSlider.lsGrabbing > * {\r\n  cursor: move;\r\n  cursor: -webkit-grabbing;\r\n  cursor: -o-grabbing;\r\n  cursor: -ms-grabbing;\r\n  cursor: grabbing;\r\n}\r\n", ""]);
+exports.push([module.i, "/*! lightslider - v1.1.3 - 2015-04-14\r\n* https://github.com/sachinchoolur/lightslider\r\n* Copyright (c) 2015 Sachin N; Licensed MIT */\r\n/** /!!! core css Should not edit !!!/**/ \r\n\r\n.lSSlideOuter {\r\n    overflow: hidden;\r\n    -webkit-touch-callout: none;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none\r\n}\r\n.lightSlider:before, .lightSlider:after {\r\n    content: \" \";\r\n    display: table;\r\n}\r\n.lightSlider {\r\n    overflow: hidden;\r\n    margin: 0;\r\n}\r\n.lSSlideWrapper {\r\n    max-width: 100%;\r\n    overflow: hidden;\r\n    position: relative;\r\n}\r\n.lSSlideWrapper > .lightSlider:after {\r\n    clear: both;\r\n}\r\n.lSSlideWrapper .lSSlide {\r\n    transform: translate(0px, 0px);\r\n    -webkit-transition: all 1s;\r\n    transition-property: transform,height;\r\n    transition-duration: inherit !important;\r\n    transition-timing-function: inherit !important;\r\n}\r\n.lSSlideWrapper .lSFade {\r\n    position: relative;\r\n}\r\n.lSSlideWrapper .lSFade > * {\r\n    position: absolute !important;\r\n    top: 0;\r\n    left: 0;\r\n    z-index: 9;\r\n    margin-right: 0;\r\n    width: 100%;\r\n}\r\n.lSSlideWrapper.usingCss .lSFade > * {\r\n    opacity: 0;\r\n    transition-delay: 0s;\r\n    transition-duration: inherit !important;\r\n    transition-property: opacity;\r\n    transition-timing-function: inherit !important;\r\n}\r\n.lSSlideWrapper .lSFade > *.active {\r\n    z-index: 10;\r\n}\r\n.lSSlideWrapper.usingCss .lSFade > *.active {\r\n    opacity: 1;\r\n}\r\n/** /!!! End of core css Should not edit !!!/**/\r\n\r\n/* Pager */\r\n.lSSlideOuter .lSPager.lSpg {\r\n    margin: 10px 0 0;\r\n    padding: 0;\r\n    text-align: center;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li {\r\n    cursor: pointer;\r\n    display: inline-block;\r\n    padding: 0 5px;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li a {\r\n    background-color: #222222;\r\n    border-radius: 30px;\r\n    display: inline-block;\r\n    height: 8px;\r\n    overflow: hidden;\r\n    text-indent: -999em;\r\n    width: 8px;\r\n    position: relative;\r\n    z-index: 99;\r\n    transition: all 0.5s linear 0s;\r\n}\r\n.lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {\r\n    background-color: #428bca;\r\n}\r\n.lSSlideOuter .media {\r\n    opacity: 0.8;\r\n}\r\n.lSSlideOuter .media.active {\r\n    opacity: 1;\r\n}\r\n/* End of pager */\r\n\r\n/** Gallery */\r\n.lSSlideOuter .lSPager.lSGallery {\r\n    list-style: none outside none;\r\n    padding-left: 0;\r\n    margin: 0;\r\n    overflow: hidden;\r\n    transform: translate3d(0px, 0px, 0px);\r\n    -moz-transform: translate3d(0px, 0px, 0px);\r\n    -ms-transform: translate3d(0px, 0px, 0px);\r\n    -webkit-transform: translate3d(0px, 0px, 0px);\r\n    -o-transform: translate3d(0px, 0px, 0px);\r\n    -webkit-transition-property: -webkit-transform;\r\n    -moz-transition-property: -moz-transform;\r\n    -webkit-touch-callout: none;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery li {\r\n    overflow: hidden;\r\n    transition: border-radius 0.12s linear 0s 0.35s linear 0s;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {\r\n    border-radius: 5px;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery img {\r\n    display: block;\r\n    height: auto;\r\n    max-width: 100%;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery:before, .lSSlideOuter .lSPager.lSGallery:after {\r\n    content: \" \";\r\n    display: table;\r\n}\r\n.lSSlideOuter .lSPager.lSGallery:after {\r\n    clear: both;\r\n}\r\n/* End of Gallery*/\r\n\r\n/* slider actions */\r\n.lSAction > a {\r\n    width: 32px;\r\n    display: block;\r\n    top: 50%;\r\n    height: 32px;\r\n    cursor: pointer;\r\n    position: absolute;\r\n    z-index: 99;\r\n    margin-top: -16px;\r\n    opacity: 0.5;\r\n    transition: opacity 0.35s linear 0s;\r\n}\r\n.lSAction > a:hover {\r\n    opacity: 1;\r\n}\r\n.lSAction > .lSPrev {\r\n    background-position: 0 0;\r\n    left: 10px;\r\n}\r\n.lSAction > .lSNext {\r\n    background-position: 0 0;\r\n    right: 10px;\r\n}\r\n.lSAction > a.disabled {\r\n    pointer-events: none;\r\n}\r\n.cS-hidden {\r\n    height: 1px;\r\n    opacity: 0;\r\n    filter: alpha(opacity=0);\r\n    overflow: hidden;\r\n}\r\n\r\n.lSNext{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/arrowgreykanan.png */ "./public/assets/arrowgreykanan.png")) + ");\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/arrowgreykiri.png */ "./public/assets/arrowgreykiri.png")) + ");\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n\r\n/* vertical */\r\n.lSSlideOuter.vertical {\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical.noPager {\r\n    padding-right: 0px !important;\r\n}\r\n.lSSlideOuter.vertical .lSGallery {\r\n    position: absolute !important;\r\n    right: 0;\r\n    top: 0;\r\n}\r\n.lSSlideOuter.vertical .lightSlider > * {\r\n    width: 100% !important;\r\n    max-width: none !important;\r\n}\r\n\r\n/* vertical controlls */\r\n.lSSlideOuter.vertical .lSAction > a {\r\n    left: 50%;\r\n    margin-left: -14px;\r\n    margin-top: 0;\r\n}\r\n.lSSlideOuter.vertical .lSAction > .lSNext {\r\n    background-position: 31px -31px;\r\n    bottom: 10px;\r\n    top: auto;\r\n}\r\n.lSSlideOuter.vertical .lSAction > .lSPrev {\r\n    background-position: 0 -31px;\r\n    bottom: auto;\r\n    top: 10px;\r\n}\r\n/* vertical */\r\n\r\n\r\n/* Rtl */\r\n.lSSlideOuter.lSrtl {\r\n    direction: rtl;\r\n}\r\n.lSSlideOuter .lightSlider, .lSSlideOuter .lSPager {\r\n    padding-left: 0;\r\n    list-style: none outside none;\r\n}\r\n.lSSlideOuter.lSrtl .lightSlider, .lSSlideOuter.lSrtl .lSPager {\r\n    padding-right: 0;\r\n}\r\n.lSSlideOuter .lightSlider > *,  .lSSlideOuter .lSGallery li {\r\n    float: left;\r\n}\r\n.lSSlideOuter.lSrtl .lightSlider > *,  .lSSlideOuter.lSrtl .lSGallery li {\r\n    float: right !important;\r\n}\r\n/* Rtl */\r\n\r\n@-webkit-keyframes rightEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: -15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@keyframes rightEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: -15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@-webkit-keyframes topEnd {\r\n    0% {\r\n        top: 0;\r\n    }\r\n\r\n    50% {\r\n        top: -15px;\r\n    }\r\n\r\n    100% {\r\n        top: 0;\r\n    }\r\n}\r\n@keyframes topEnd {\r\n    0% {\r\n        top: 0;\r\n    }\r\n\r\n    50% {\r\n        top: -15px;\r\n    }\r\n\r\n    100% {\r\n        top: 0;\r\n    }\r\n}\r\n@-webkit-keyframes leftEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: 15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@keyframes leftEnd {\r\n    0% {\r\n        left: 0;\r\n    }\r\n\r\n    50% {\r\n        left: 15px;\r\n    }\r\n\r\n    100% {\r\n        left: 0;\r\n    }\r\n}\r\n@-webkit-keyframes bottomEnd {\r\n    0% {\r\n        bottom: 0;\r\n    }\r\n\r\n    50% {\r\n        bottom: -15px;\r\n    }\r\n\r\n    100% {\r\n        bottom: 0;\r\n    }\r\n}\r\n@keyframes bottomEnd {\r\n    0% {\r\n        bottom: 0;\r\n    }\r\n\r\n    50% {\r\n        bottom: -15px;\r\n    }\r\n\r\n    100% {\r\n        bottom: 0;\r\n    }\r\n}\r\n.lSSlideOuter .rightEnd {\r\n    -webkit-animation: rightEnd 0.3s;\r\n    animation: rightEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter .leftEnd {\r\n    -webkit-animation: leftEnd 0.3s;\r\n    animation: leftEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical .rightEnd {\r\n    -webkit-animation: topEnd 0.3s;\r\n    animation: topEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.vertical .leftEnd {\r\n    -webkit-animation: bottomEnd 0.3s;\r\n    animation: bottomEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.lSrtl .rightEnd {\r\n    -webkit-animation: leftEnd 0.3s;\r\n    animation: leftEnd 0.3s;\r\n    position: relative;\r\n}\r\n.lSSlideOuter.lSrtl .leftEnd {\r\n    -webkit-animation: rightEnd 0.3s;\r\n    animation: rightEnd 0.3s;\r\n    position: relative;\r\n}\r\n/*/  GRab cursor */\r\n.lightSlider.lsGrab > * {\r\n  cursor: -webkit-grab;\r\n  cursor: -o-grab;\r\n  cursor: -ms-grab;\r\n  cursor: grab;\r\n}\r\n.lightSlider.lsGrabbing > * {\r\n  cursor: move;\r\n  cursor: -webkit-grabbing;\r\n  cursor: -o-grabbing;\r\n  cursor: -ms-grabbing;\r\n  cursor: grabbing;\r\n}\r\n", ""]);
 
 // exports
 
@@ -7126,7 +7127,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".container-keg{\r\n    padding-top: 55px;\r\n    text-align: center;\r\n    width: 100%;\r\n    \r\n}\r\n\r\n.text-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: xxx-large;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 50%;\r\n    height: 300px;\r\n    background-image: linear-gradient(#ffb359,#ffffff);\r\n    cursor: pointer;\r\n  }\r\n\r\ninput[type=radio] {\r\n\tposition: absolute;\r\n    transform: scale(58);\r\n    opacity: 0;\r\n}\r\n\r\n\r\n.react-tabs__tab--selected {\r\n    /* border-color: #aaa; */\r\n    color: white;\r\n    border-radius: 5px 5px 0 0;\r\n  }\r\n\r\n\r\n  /* Line Slider*/\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.a{\r\n    text-decoration: none;\r\n}\r\n/* \r\n.lSNext{\r\n    background-image: url(../../public/assets/arrowgreykanan.png);\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSNext{\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(../../public/assets/arrowgreykiri.png);\r\n    width: 35px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSPrev{\r\n    width: 35px;\r\n    height: 35px;\r\n} */\r\n\r\n.container-slider-keg{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: white;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.box-keg{\r\n    width: 1500px;\r\n    height: 500px;\r\n    border-radius: 10px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.info{\r\n    color: black;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 25px;\r\n    text-align: left;\r\n\r\n}\r\n\r\n.info-lso{\r\n    color: black;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 17px;\r\n    text-align: left;\r\n\r\n}\r\n\r\n.model-keg{\r\n    margin-top: -20px;\r\n    height: 400px;\r\n    width: 400px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-lso-box{\r\n    margin-top: 30px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-lso-dunar{\r\n    margin-top: -20px;\r\n    height: 300px;\r\n    width: 400px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-lso-medic{\r\n    margin-top: 50px;\r\n    height: 140px;\r\n    width: 400px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-lso-ustore{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 350px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-lso-komcor{\r\n    margin-top: -20px;\r\n    height: 300px;\r\n    width: 300px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-mrms{\r\n    margin-top: -20px;\r\n    height: 300px;\r\n    width: 100px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details p{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 20px;\r\n}\r\n\r\n.title{\r\n    color: #ffb359;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 50px;\r\n    text-align: left;\r\n}\r\n\r\n.title-lso{\r\n    color: #ade2b2;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 50px;\r\n    text-align: left;\r\n}\r\n\r\n.keg-kiri{\r\n    position: relative;\r\n    float: left;\r\n    top: 800px;\r\n}\r\n\r\n@media (max-width:768px){\r\n    .box{\r\n        width: auto;\r\n        height: auto;\r\n        border-radius: 10px;\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        justify-content: space-between;\r\n        box-sizing: border-box;\r\n        margin: 20px 10px;\r\n    }\r\n\r\n    input[type=radio] {\r\n        position: absolute;\r\n        transform: scale(29);\r\n        margin-left: -8px;\r\n        margin-top: 35px;\r\n        opacity: 0;\r\n    }\r\n    \r\n    \r\n    .info{\r\n        color: black;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 25px;\r\n        text-align: left;\r\n    \r\n    }\r\n    \r\n    .model-keg{\r\n        margin-top: -20px;\r\n        height: 160px;\r\n        width: 160px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n\r\n    }\r\n\r\n    .model-lso-box{\r\n        margin-top: 30px;\r\n        height: 200px;\r\n        width: 200px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-dunar{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-medic{\r\n        margin-top: -20px;\r\n        height: 150px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-ustore{\r\n        margin-top: -20px;\r\n        height: 200px;\r\n        width: 350px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-komcor{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 300px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n    \r\n    .model-mrms{\r\n        margin-top: -20px;\r\n        height: 120px;\r\n        width: 40px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n    }\r\n    \r\n    .details{\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        width: 300px;\r\n    }\r\n    \r\n    .details p{\r\n        font-family: Arial, Helvetica, sans-serif;\r\n        font-weight: bold;\r\n        color: #ffffff;\r\n        text-align: center;\r\n        margin-top: 20px;\r\n    }\r\n    \r\n    .title{\r\n        color: #ffb359;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 20px;\r\n        text-align: left;\r\n    }\r\n\r\n    .title-lso{\r\n        color: #ade2b2;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 20px;\r\n        text-align: left;\r\n    }\r\n}\r\n\r\n@media (max-width:480px){\r\n    .box{\r\n        width: 1500px;\r\n        height: 500px;\r\n        border-radius: 10px;\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        justify-content: space-between;\r\n        box-sizing: border-box;\r\n        margin: 20px 10px;\r\n    }\r\n\r\n    input[type=radio] {\r\n        position: absolute;\r\n        transform: scale(17);\r\n        margin-left: 85px;\r\n        margin-top: 100px;\r\n        opacity: 0;\r\n    }\r\n    \r\n    \r\n    .info{\r\n        color: black;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 25px;\r\n        text-align: left;\r\n    \r\n    }\r\n    \r\n    .model-keg{\r\n        margin-top: -20px;\r\n        height: 180px;\r\n        width: 180px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-box{\r\n        margin-top: 30px;\r\n        height: 200px;\r\n        width: 200px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-dunar{\r\n        margin-top: -20px;\r\n        height: 250px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-medic{\r\n        margin-top: -20px;\r\n        height: 150px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-ustore{\r\n        margin-top: -20px;\r\n        height: 200px;\r\n        width: 350px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-komcor{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 300px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n    \r\n    .model-mrms{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 100px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n    }\r\n    \r\n    .details{\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        width: 300px;\r\n    }\r\n    \r\n    .details p{\r\n        font-family: Arial, Helvetica, sans-serif;\r\n        font-weight: bold;\r\n        color: #ffffff;\r\n        text-align: center;\r\n        margin-top: 20px;\r\n    }\r\n    \r\n    .title{\r\n        color: #ffb359;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 50px;\r\n        text-align: left;\r\n    }\r\n\r\n    .title-lso{\r\n        color: #ade2b2;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 50px;\r\n        text-align: left;\r\n    }\r\n    \r\n    .text-tab-pane{\r\n        display: inline-grid;\r\n        font-size: 19px;\r\n    }\r\n}", ""]);
+exports.push([module.i, ".container-keg{\r\n    padding-top: 55px;\r\n    text-align: center;\r\n    width: 100%;\r\n    \r\n}\r\n\r\n.text-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: xxx-large;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 50%;\r\n    height: 300px;\r\n    background-image: linear-gradient(#ffb359,#ffffff);\r\n    cursor: pointer;\r\n  }\r\n\r\ninput[type=radio] {\r\n\tposition: absolute;\r\n    transform: scale(58);\r\n    opacity: 0;\r\n}\r\n\r\n\r\n.react-tabs__tab--selected {\r\n    /* border-color: #aaa; */\r\n    color: white;\r\n    border-radius: 5px 5px 0 0;\r\n  }\r\n\r\n\r\n  /* Line Slider*/\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.a{\r\n    text-decoration: none;\r\n}\r\n\r\n/* .lSNext{\r\n    background-image: url(../../public/assets/arrowgreykanan.png);\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n.lSAction > .lSNext{\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(../../public/assets/arrowgreykiri.png);\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n.lSAction > .lSPrev{\r\n    width: 35px;\r\n    height: 52px;\r\n} */\r\n\r\n\r\n.container-slider-keg{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: white;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.box-keg{\r\n    width: 1500px;\r\n    height: 500px;\r\n    border-radius: 10px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.info{\r\n    color: black;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 25px;\r\n    text-align: left;\r\n\r\n}\r\n\r\n.info-lso{\r\n    color: black;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 17px;\r\n    text-align: left;\r\n\r\n}\r\n\r\n.model-keg{\r\n    margin-top: -20px;\r\n    height: 400px;\r\n    width: 400px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-lso-box{\r\n    margin-top: 30px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-lso-dunar{\r\n    margin-top: -20px;\r\n    height: 300px;\r\n    width: 400px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-lso-medic{\r\n    margin-top: 50px;\r\n    height: 140px;\r\n    width: 400px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-lso-ustore{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 350px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-lso-komcor{\r\n    margin-top: -20px;\r\n    height: 300px;\r\n    width: 300px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    display: block;\r\n    margin: auto;\r\n}\r\n\r\n.model-mrms{\r\n    margin-top: -20px;\r\n    height: 300px;\r\n    width: 100px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details p{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 20px;\r\n}\r\n\r\n.title{\r\n    color: #ffb359;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 50px;\r\n    text-align: left;\r\n}\r\n\r\n.title-lso{\r\n    color: #ade2b2;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 50px;\r\n    text-align: left;\r\n}\r\n\r\n.keg-kiri{\r\n    position: relative;\r\n    float: left;\r\n    top: 800px;\r\n}\r\n\r\n@media (max-width:768px){\r\n    .box{\r\n        width: auto;\r\n        height: auto;\r\n        border-radius: 10px;\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        justify-content: space-between;\r\n        box-sizing: border-box;\r\n        margin: 20px 10px;\r\n    }\r\n\r\n    input[type=radio] {\r\n        position: absolute;\r\n        transform: scale(29);\r\n        margin-left: -8px;\r\n        margin-top: 35px;\r\n        opacity: 0;\r\n    }\r\n    \r\n    \r\n    .info{\r\n        color: black;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 25px;\r\n        text-align: left;\r\n    \r\n    }\r\n    \r\n    .model-keg{\r\n        margin-top: -20px;\r\n        height: 160px;\r\n        width: 160px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n\r\n    }\r\n\r\n    .model-lso-box{\r\n        margin-top: 30px;\r\n        height: 200px;\r\n        width: 200px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-dunar{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-medic{\r\n        margin-top: -20px;\r\n        height: 150px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-ustore{\r\n        margin-top: -20px;\r\n        height: 200px;\r\n        width: 350px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-komcor{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 300px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n    \r\n    .model-mrms{\r\n        margin-top: -20px;\r\n        height: 120px;\r\n        width: 40px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n    }\r\n    \r\n    .details{\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        width: 300px;\r\n    }\r\n    \r\n    .details p{\r\n        font-family: Arial, Helvetica, sans-serif;\r\n        font-weight: bold;\r\n        color: #ffffff;\r\n        text-align: center;\r\n        margin-top: 20px;\r\n    }\r\n    \r\n    .title{\r\n        color: #ffb359;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 20px;\r\n        text-align: left;\r\n    }\r\n\r\n    .title-lso{\r\n        color: #ade2b2;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 20px;\r\n        text-align: left;\r\n    }\r\n}\r\n\r\n@media (max-width:480px){\r\n    .box{\r\n        width: 1500px;\r\n        height: 500px;\r\n        border-radius: 10px;\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        justify-content: space-between;\r\n        box-sizing: border-box;\r\n        margin: 20px 10px;\r\n    }\r\n\r\n    input[type=radio] {\r\n        position: absolute;\r\n        transform: scale(17);\r\n        margin-left: 85px;\r\n        margin-top: 100px;\r\n        opacity: 0;\r\n    }\r\n    \r\n    \r\n    .info{\r\n        color: black;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 25px;\r\n        text-align: left;\r\n    \r\n    }\r\n    \r\n    .model-keg{\r\n        margin-top: -20px;\r\n        height: 180px;\r\n        width: 180px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-box{\r\n        margin-top: 30px;\r\n        height: 200px;\r\n        width: 200px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-dunar{\r\n        margin-top: -20px;\r\n        height: 250px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-medic{\r\n        margin-top: -20px;\r\n        height: 150px;\r\n        width: 400px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-ustore{\r\n        margin-top: -20px;\r\n        height: 200px;\r\n        width: 350px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n\r\n    .model-lso-komcor{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 300px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n        display: block;\r\n        margin: auto;\r\n    }\r\n    \r\n    .model-mrms{\r\n        margin-top: -20px;\r\n        height: 300px;\r\n        width: 100px;\r\n        max-height: 100%;\r\n        max-width: 100%;\r\n    }\r\n    \r\n    .details{\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        width: 300px;\r\n    }\r\n    \r\n    .details p{\r\n        font-family: Arial, Helvetica, sans-serif;\r\n        font-weight: bold;\r\n        color: #ffffff;\r\n        text-align: center;\r\n        margin-top: 20px;\r\n    }\r\n    \r\n    .title{\r\n        color: #ffb359;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 50px;\r\n        text-align: left;\r\n    }\r\n\r\n    .title-lso{\r\n        color: #ade2b2;\r\n        font-weight: bold;\r\n        letter-spacing: 2px;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-size: 50px;\r\n        text-align: left;\r\n    }\r\n    \r\n    .text-tab-pane{\r\n        display: inline-grid;\r\n        font-size: 19px;\r\n    }\r\n}", ""]);
 
 // exports
 
@@ -7146,7 +7147,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".react-tabs__tab-list{\r\n    margin: 0;\r\n}\r\n\r\n.allukm{\r\n    margin-top: 50px;\r\n}\r\n\r\n.body{\r\n    background: rgb(224,235,194);\r\n    background: linear-gradient(180deg, rgba(224,235,194,1) 0%, rgba(255,253,71,1) 48%, rgba(255,255,255,1) 89%);\r\n    /*slider*/\r\n\r\n    /*slider*/\r\n}\r\n\r\n.container-ukm{\r\n    padding-top: 50px;\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/CSI.png */ "./public/assets/CSI.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    background-repeat: no-repeat;\r\n    height: 300px;\r\n}\r\n\r\n.ukm{\r\n    text-align: center;\r\n    font-family: 'Montserrat', sans-serif;\r\n    background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n    -webkit-background-clip: text;\r\n    -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.textatasukm{\r\n    text-align: center;\r\n}\r\n\r\n/* Line Slider*/\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.a{\r\n    text-decoration: none;\r\n}\r\n\r\n.container-slider-senbud{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #81175a;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.container-slider-sensos{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #98b14e;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.container-slider-olr{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #fea24d;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n/*Senbud*/\r\n.box-senbud{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #a80a79;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.box-senbud:hover{\r\n    background-color: #b43c88;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.box-senbud:hover .senbud{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Sains Sos*/\r\n.boxsos{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #88a52f;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.boxsos:hover{\r\n    background-color: #83f157;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.boxsos:hover .sensos{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Olahraga*/\r\n\r\n.boxor{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #f88c26;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.boxor:hover{\r\n    background-color: #fecf4d;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.boxor:hover .olr{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Details*/\r\n.penjelasan{\r\n    text-align: center;\r\n    color: white;\r\n    font-size: 1.7vh;\r\n}\r\n\r\n.lSNext{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/arrowgreykanan.png */ "./public/assets/arrowgreykanan.png")) + ");\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n.lSAction > .lSNext{\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/arrowgreykiri.png */ "./public/assets/arrowgreykiri.png")) + ");\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n.lSAction > .lSPrev{\r\n    width: 35px;\r\n    height: 52px;\r\n}\r\n\r\n.model{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details p{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 20px;\r\n    font-size: 2vh;\r\n}\r\n\r\n.senbud{\r\n    color: #500033;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n.sensos{\r\n    color: #005038;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n.olr{\r\n    color: #7e4b00;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n/* tabs */\r\n.ukm1-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.3%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#81175a,#a71d74);\r\n    cursor: pointer;\r\n  }\r\n  \r\n\r\n  .ukm2-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.3%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#98b14e,#a8c455);\r\n    cursor: pointer;\r\n  }\r\n\r\n  .ukm3-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.4%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#fea24d,#fc9a3e);\r\n    cursor: pointer;\r\n  }\r\n\r\n  .react-tabs__tab--selected {\r\n      /* border-color: #aaa; */\r\n      color: white;\r\n      border-radius: 5px 5px 0 0;\r\n    }\r\n\r\n\r\n/*responsive Mobile*/\r\n\r\n@media(max-width:680px){\r\n     .box{\r\n         width: 94%;\r\n         height: 450px;\r\n     }\r\n\r\n     .boxor{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxsos{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n    \r\n     .penjelasan{\r\n        text-align: center;\r\n        font-size: 12px;\r\n        width: 200px;\r\n    }\r\n\r\n     .model{\r\n         height: 100px; /*Logo*/\r\n         width: 100px;\r\n         margin-top: -10px;\r\n     }\r\n\r\n     .details p{\r\n         font-size: 10px;\r\n         width: 200px;\r\n     }\r\n\r\n     .ukm1-tab-pane{\r\n         font-size: 14px;\r\n         height: 25px;\r\n         display: inline-grid;\r\n     }\r\n\r\n     .ukm2-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n    .ukm3-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n    .container-ukm{\r\n  \r\n        background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    \r\n    }\r\n}\r\n\r\n@media(max-width:410px){\r\n    .box{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxor{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxsos{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .penjelasan{\r\n        text-align: center;\r\n        font-size: 12px;\r\n        width: 200px;\r\n    }\r\n\r\n     .model{\r\n         height: 100px; /*Logo*/\r\n         width: 100px;\r\n         margin-top: -10px;\r\n     }\r\n\r\n     .details p{\r\n         font-size: 10px;\r\n         width: 200px;\r\n     }\r\n\r\n     .ukm1-tab-pane{\r\n         font-size: 14px;\r\n         height: 25px;\r\n         display: inline-grid;\r\n     }\r\n\r\n     .ukm2-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n    .ukm3-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n    .container-ukm{\r\n        background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    }\r\n}\r\n\r\n\r\n@media(min-width:1550px){\r\n    .container-ukm{\r\n        background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    }\r\n}\r\n", ""]);
+exports.push([module.i, ".react-tabs__tab-list{\r\n    margin: 0;\r\n}\r\n\r\n.allukm{\r\n    margin-top: 50px;\r\n}\r\n\r\n.body{\r\n    background: rgb(224,235,194);\r\n    background: linear-gradient(180deg, rgba(224,235,194,1) 0%, rgba(255,253,71,1) 48%, rgba(255,255,255,1) 89%);\r\n    /*slider*/\r\n\r\n    /*slider*/\r\n}\r\n\r\n.container-ukm{\r\n    padding-top: 50px;\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../public/assets/CSI.png */ "./public/assets/CSI.png")) + "); /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    background-repeat: no-repeat;\r\n    height: 350px;\r\n}\r\n\r\n.ukm{\r\n    text-align: center;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: xxx-large;\r\n    background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n    -webkit-background-clip: text;\r\n    -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.textatasukm{\r\n    text-align: center;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: large;\r\n}\r\n\r\n/* Line Slider*/\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.a{\r\n    text-decoration: none;\r\n}\r\n\r\n.container-slider-senbud{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #81175a;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.container-slider-sensos{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #98b14e;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.container-slider-olr{\r\n    width: 100%;\r\n    height: 100vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #fea24d;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n/*Senbud*/\r\n.box-senbud{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #a80a79;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.box-senbud:hover{\r\n    background-color: #b43c88;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.box-senbud:hover .senbud{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Sains Sos*/\r\n.boxsos{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #88a52f;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.boxsos:hover{\r\n    background-color: #83f157;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.boxsos:hover .sensos{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Olahraga*/\r\n\r\n.boxor{\r\n    width: 350px;\r\n    height: 550px;\r\n    background-color: #f88c26;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    margin: 20px 10px;\r\n}\r\n\r\n.boxor:hover{\r\n    background-color: #fecf4d;\r\n    transform-style: preserve-3d;\r\n    transform: scale(1.02);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.boxor:hover .olr{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n/*Details*/\r\n.penjelasan{\r\n    text-align: center;\r\n    color: white;\r\n    font-size: 1.7vh;\r\n}\r\n\r\n\r\n.model{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details p{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 20px;\r\n    font-size: 2vh;\r\n}\r\n\r\n.senbud{\r\n    color: #500033;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n.sensos{\r\n    color: #005038;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n.olr{\r\n    color: #7e4b00;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n/* tabs */\r\n.ukm1-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.3%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#81175a,#a71d74);\r\n    cursor: pointer;\r\n  }\r\n  \r\n\r\n  .ukm2-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.3%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#98b14e,#a8c455);\r\n    cursor: pointer;\r\n  }\r\n\r\n  .ukm3-tab-pane{\r\n    display: inline-flex;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 32px;\r\n    color: #bcbcbc;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 33.4%;\r\n    height: 50px;\r\n    background-image: linear-gradient(#fea24d,#fc9a3e);\r\n    cursor: pointer;\r\n  }\r\n\r\n  .react-tabs__tab--selected {\r\n      /* border-color: #aaa; */\r\n      color: white;\r\n      border-radius: 5px 5px 0 0;\r\n    }\r\n\r\n\r\n/*responsive Mobile*/\r\n\r\n@media(max-width:680px){\r\n     .box{\r\n         width: 94%;\r\n         height: 450px;\r\n     }\r\n\r\n     .boxor{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxsos{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n    \r\n     .penjelasan{\r\n        text-align: center;\r\n        font-size: 12px;\r\n        width: 200px;\r\n    }\r\n\r\n     .model{\r\n         height: 100px; /*Logo*/\r\n         width: 100px;\r\n         margin-top: -10px;\r\n     }\r\n\r\n     .details p{\r\n         font-size: 10px;\r\n         width: 200px;\r\n     }\r\n\r\n     .ukm1-tab-pane{\r\n         font-size: 14px;\r\n         height: 25px;\r\n         display: inline-grid;\r\n     }\r\n\r\n     .ukm2-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n    .ukm3-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n    .container-ukm{\r\n  \r\n        background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    \r\n    }\r\n}\r\n\r\n@media(max-width:410px){\r\n    .box{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxor{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .boxsos{\r\n        width: 94%;\r\n        height: 450px;\r\n    }\r\n\r\n    .penjelasan{\r\n        text-align: center;\r\n        font-size: 12px;\r\n        width: 200px;\r\n    }\r\n\r\n     .model{\r\n         height: 100px; /*Logo*/\r\n         width: 100px;\r\n         margin-top: -10px;\r\n     }\r\n\r\n     .details p{\r\n         font-size: 10px;\r\n         width: 200px;\r\n     }\r\n\r\n     .ukm1-tab-pane{\r\n         font-size: 14px;\r\n         height: 25px;\r\n         display: inline-grid;\r\n     }\r\n\r\n     .ukm2-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n\r\n    .ukm3-tab-pane{\r\n        font-size: 14px;\r\n        height: 25px;\r\n        display: inline-grid;\r\n    }\r\n    .container-ukm{\r\n        background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    }\r\n}\r\n\r\n\r\n@media(min-width:1550px){\r\n    .container-ukm{\r\n        background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/\r\n    }\r\n}\r\n", ""]);
 
 // exports
 
@@ -88038,15 +88039,14 @@ var Home = /*#__PURE__*/function (_Component) {
 
               case 3:
                 res = _context.sent;
-                _context.next = 9;
+                _context.next = 8;
                 break;
 
               case 6:
                 _context.prev = 6;
                 _context.t0 = _context["catch"](0);
-                console.log("error");
 
-              case 9:
+              case 8:
               case "end":
                 return _context.stop();
             }
@@ -88584,24 +88584,32 @@ if (document.getElementById('keg')) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_tabs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-tabs */ "./node_modules/react-tabs/esm/index.js");
-/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../css/lightslider.css */ "./resources/css/lightslider.css");
-/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_lightslider_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../slidersukm/Jquery31 */ "./resources/js/slidersukm/Jquery31.js");
-/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../slidersukm/lightslider */ "./resources/js/slidersukm/lightslider.js");
-/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../slidersukm/sliderquery */ "./resources/js/slidersukm/sliderquery.js");
-/* harmony import */ var _slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-tabs/style/react-tabs.css */ "./node_modules/react-tabs/style/react-tabs.css");
-/* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _css_reactukm_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../css/reactukm.css */ "./resources/css/reactukm.css");
-/* harmony import */ var _css_reactukm_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_css_reactukm_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-tabs */ "./node_modules/react-tabs/esm/index.js");
+/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../css/lightslider.css */ "./resources/css/lightslider.css");
+/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_css_lightslider_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../slidersukm/Jquery31 */ "./resources/js/slidersukm/Jquery31.js");
+/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../slidersukm/lightslider */ "./resources/js/slidersukm/lightslider.js");
+/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../slidersukm/sliderquery */ "./resources/js/slidersukm/sliderquery.js");
+/* harmony import */ var _slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_sliderquery__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-tabs/style/react-tabs.css */ "./node_modules/react-tabs/style/react-tabs.css");
+/* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _css_reactukm_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../css/reactukm.css */ "./resources/css/reactukm.css");
+/* harmony import */ var _css_reactukm_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_css_reactukm_css__WEBPACK_IMPORTED_MODULE_9__);
+
+
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -88637,9 +88645,7 @@ function slider() {
   $(document).ready(function () {
     $('#autoWidth').lightSlider({
       autoWidth: true,
-      controls: true,
-      prevHtml: '',
-      nextHtml: '',
+      controls: false,
       enableTouch: true,
       enableDrag: true,
       freeMove: true,
@@ -88656,493 +88662,279 @@ var Ukm = /*#__PURE__*/function (_Component) {
 
   var _super = _createSuper(Ukm);
 
-  function Ukm() {
+  function Ukm(props) {
     var _this;
 
     _classCallCheck(this, Ukm);
 
-    _this = _super.call(this);
+    _this = _super.call(this, props);
     _this.state = {
-      tabIndex: 0
+      itemor: [],
+      itemsainsos: [],
+      itemsenbud: [],
+      tabIndex: 0,
+      isLoaded: false,
+      isLoading: true
     };
+    _this._isMounted = true;
     return _this;
   }
 
   _createClass(Ukm, [{
+    key: "componentDidMount",
+    value: function () {
+      var _componentDidMount = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var _this2 = this;
+
+        var res, _res, _res2;
+
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.prev = 0;
+                _context.next = 3;
+                return fetch('http://127.0.0.1:4545/api/ukm-olahraga', {
+                  header: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'Access-Control-Allow-Credentials': 'true',
+                    'Access-Control-Allow-Origin': 'http://127.0.0.1:4545'
+                  }
+                }).then(function (Response) {
+                  return Response.json();
+                }).then(function (findresponse) {
+                  if (_this2._isMounted) {
+                    // console.log(findresponse);
+                    _this2.setState({
+                      itemor: findresponse,
+                      isLoading: false,
+                      isLoaded: true
+                    });
+                  }
+                });
+
+              case 3:
+                res = _context.sent;
+                _context.next = 8;
+                break;
+
+              case 6:
+                _context.prev = 6;
+                _context.t0 = _context["catch"](0);
+
+              case 8:
+                _context.prev = 8;
+                _context.next = 11;
+                return fetch('http://127.0.0.1:4545/api/ukm-sainsos', {
+                  header: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'Access-Control-Allow-Credentials': 'true',
+                    'Access-Control-Allow-Origin': 'http://127.0.0.1:4545'
+                  }
+                }).then(function (Response) {
+                  return Response.json();
+                }).then(function (findresponse) {
+                  if (_this2._isMounted) {
+                    // console.log(findresponse);
+                    _this2.setState({
+                      itemsainsos: findresponse,
+                      isLoading: false,
+                      isLoaded: true
+                    });
+                  }
+                });
+
+              case 11:
+                _res = _context.sent;
+                _context.next = 16;
+                break;
+
+              case 14:
+                _context.prev = 14;
+                _context.t1 = _context["catch"](8);
+
+              case 16:
+                _context.prev = 16;
+                _context.next = 19;
+                return fetch('http://127.0.0.1:4545/api/ukm-senbud', {
+                  header: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'Access-Control-Allow-Credentials': 'true',
+                    'Access-Control-Allow-Origin': 'http://127.0.0.1:4545'
+                  }
+                }).then(function (Response) {
+                  return Response.json();
+                }).then(function (findresponse) {
+                  if (_this2._isMounted) {
+                    // console.log(findresponse);
+                    _this2.setState({
+                      itemsenbud: findresponse,
+                      isLoading: false,
+                      isLoaded: true
+                    });
+                  }
+                });
+
+              case 19:
+                _res2 = _context.sent;
+                _context.next = 24;
+                break;
+
+              case 22:
+                _context.prev = 22;
+                _context.t2 = _context["catch"](16);
+
+              case 24:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, null, [[0, 6], [8, 14], [16, 22]]);
+      }));
+
+      function componentDidMount() {
+        return _componentDidMount.apply(this, arguments);
+      }
+
+      return componentDidMount;
+    }()
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      this._isMounted = false;
+    }
+  }, {
     key: "render",
     value: function render() {
-      var _this2 = this;
+      var _this3 = this;
 
-      var displayTabs = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tabs"], {
+      var displayTabs = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_3__["Tabs"], {
         selectedIndex: this.state.tabIndex,
         onSelect: function onSelect(tabIndex) {
-          return _this2.setState({
+          return _this3.setState({
             tabIndex: tabIndex
           });
         },
         onClick: slider()
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabList"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tab"], {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_3__["TabList"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_3__["Tab"], {
         className: "ukm1-tab-pane"
-      }, "Seni dan Budaya"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tab"], {
+      }, "Seni dan Budaya"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_3__["Tab"], {
         className: "ukm2-tab-pane"
-      }, "Sains dan Sosial"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["Tab"], {
+      }, "Sains dan Sosial"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_3__["Tab"], {
         className: "ukm3-tab-pane"
-      }, "Olahraga")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Olahraga")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_3__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-awal"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-slider-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
         id: "autoWidth",
         className: "cs-hidden"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Ultima Sonora"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/ulsonbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Sonora merupakan Paduan Suara Mahasiswa Universitas Multimedia Nusantara sejak tahun 2007. Dalam menjaga eksistensinya, Ultima Sonora aktif dalam mengadakan berbagai konser, seperti konser Inagurasi yang diadakan rutin setiap tahunnya"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/UltimaSonora"
-      }, "@UltimaSonora")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Selasa & Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-20.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "#SingWithUS"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Teater KataK"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/katakbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Komunitas Anak Teater Kampus (KataK) didirikan sebagai wadah berseni peran di UMN. KataK berkembang menjadi fasilitator bagi mereka yang ingin belajar ilmu teater.Puluhan produksi sudah diselenggarakan baik di dalam maupun di luar universitas."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/teaterkatak"
-      }, "@teaterkatak")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Selasa, Rabu,& Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "\u201CBerani Melompat Lebih Tinggi ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Melewati Batasan Yang Ada\u201D"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "UMN Symphony Orchestra"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/usobg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "UMN Symphony Orchestra berdiri sejak 2015 dan resmi menjadi ukm pada tahun 2016. Melalui tagline \u2018Viva La Musica\u2019  kami tidak hanya sekedar bermain musik, tetapi juga menghidupkan rasa dalam setiap individu, sehingga seluruh permainan musik yang kami hasilkan dapat tersampaikan dengan baik dan dirasakan"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/umnsymphonyorchestra"
-      }, "@umnsymphonyorchestra")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Selasa & Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-20.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Viva La Musica!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Qorie"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/qoriebg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Qorie merupakan sebuah UKM seni dan budaya yang berfokus pada kebudayaan Korea Selatan. Qorie juga menjadi sarana untuk mempelajari tata bahasa korea serta menjadi tempat bagi mahasiswa/i untuk menunjukan bakat dan minat mereka dalam seni tari dan musik korea."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/qorie_umn"
-      }, "@qorie_umn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Senin s/d Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-20.00 WIB *(disesuaikan perdivisi)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Qorie, Saranghaja!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Jcafe"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/jcafebg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Jcafe adalah Unit Kegiatan Mahasiswa (UKM) yang beranggotakan para penggemar budaya Jepang di UMN. Jcafe memberikan wadah kepada para mahasiswa untuk mengembangkan minat & bakat serta passion mereka terhadap seni dan budaya berbasis jepang."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/jcafe_umn"
-      }, "@jcafe_umn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Senin s/d Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-19.00 WIB *(disesuaikan perdivisi)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Jcafe, Express Your Japanese Passion!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Mufomic"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/mufomicbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Multimedia Face of Music (MUFOMIC) merupakan salah satu Unit Kegiatan Mahasiswa (UKM) di Universitas Multimedia Nusantara yang bergerak di bidang seni dan budaya, yaitu musik dalam format band."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/mufomic"
-      }, "@mufomic")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Selasa", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-22.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Mufomic - ORKES"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Obscura"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/obscurabg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Obscura merupakan Unit Kegiatan Mahasiswa (UKM) yang bergerak di bidang fotografi dibawah naungan UMN.Obscura bertujuan untuk mempertemukan para pecinta fotografi di kalangan mahasiswa UMN. Obscura memegang erat motto \u201CTogether We Learn\u201D karena mengedepankan kebersamaan dalam belajar. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/obscuratwl"
-      }, "@obscuratwl")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Rabu", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-22.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Together We Learn!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Tracce"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/traccebg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Traditional dance atau yang akrab disebut dengan TRACCE merupakan Unit Kegiatan Mahasiswa di Universitas Multimedia Nusantara yang memberi wadah bagi mahasiswa yang ingin menyalurkan bakat dan minatnya dalam seni tradisional yang berasal dari Indonesia."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/tracceumn"
-      }, "@tracceumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Selasa, Rabu,& Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.30-20.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "\"Nari terus, nari terus, nari terus!\""))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Ultima Toys"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/utoysbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ultima Toys adalah Unit Kegiatan Mahasiswa sebagai tempat belajar juga sarana untuk berbagi ide dan kreativitas yang berkaitan dengan fotografi mainan"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/ultimatoys"
-      }, "@ultimatoys")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-19.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Where Toys Come to Life"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "box-senbud"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "senbud"
-      }, "Street Dance"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/senbud/sdbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Let\u2019s Dance (LDNC) adalah Unit Kegiatan Mahasiswa (UKM) yang berfokus di bidang tari. LDNC sendiri biasa dikenal dengan UKM street dance. Tujuan dibentuknya LDNC adalah menjadi tempat atau wadah untuk mahasiswa UMN yang tertarik dengan dunia tari, ada berbagai macam style yang akan dipelajari seperti: b-boy, locking, hip-hop, ladies, popping, dll"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/streetdanceumn"
-      }, "@streetdanceumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "19.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Dance to Your Own Beat"))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, this.state.itemsenbud.map(function (itemsenbuds, index) {
+        return (
+          /*#__PURE__*/
+
+          /*1*/
+          react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+            className: "item-a",
+            key: index
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+            className: "box-senbud"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+            className: "senbud"
+          }, itemsenbuds.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+            src: itemsenbuds.photo,
+            className: "model"
+          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+            className: "penjelasan"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, itemsenbuds.info), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+            href: itemsenbuds.link
+          }, "@", itemsenbuds.ig)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+            className: "details"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+            className: "logo"
+          }, itemsenbuds.hari, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), itemsenbuds.jam), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", null, itemsenbuds.tagline)))))
+        );
+      }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_3__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-awal"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-slider-sensos"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
         id: "autoWidth",
         "class": "cs-hidden"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxsos"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "sensos"
-      }, "UMN Programming Club"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/sainsos/umnpcbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "UMN PC (UMN Programming Club) adalah UKM yang melatih kemampuan CP (Competitive Programming) dengan tujuan mengasah logika dan daya pikir delchipier. Delchipier melakukan CP bersama-sama setiap minggunya dengan materi yang disusun untuk mengembangkan skill CP secara mendalam. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/umnprogrammingclub"
-      }, "@umnprogrammingclub")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Senin & Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "We Code The Future, Future Starts With Us"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxsos"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "sensos"
-      }, "UESC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/sainsos/uescbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "UESC (UMN English Student Council) sebagai salah satu UKM UMN berbahasa Inggris, ingin mengembangkan kemampuan berbahasa Inggris anggotanya. Dengan keempat divisi UESC yaitu Scrabble, Speech, Spelling Bee, dan Debate, banyak variasi keterampilan yang dapat kita semua asah."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/uesc_umn"
-      }, "@uesc_umn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "So, You Think We ain't Fun?"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxsos"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "sensos"
-      }, "Rencang"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/sainsos/rencangbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Rencang merupakan komunitas sosial yang menjadi wadah bagi mahasiswa/i UMN untuk dapat berdampak bagi masyarakat yang membutuhkan. Banyak program-program yang dilakukan untuk mencapai tujuan tersebut, seperti donor darah, kampanye sosial, berbagi kebahagiaan dengan orang yang membutuhkan, dan berbagai kegiatan yang mengakrabkan sesama anggota."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/rencangaye"
-      }, "@rencangaye")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Selasa", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Unite as a Family to Manifest Love and Sincerity"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxsos"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "sensos"
-      }, "Mapala"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/sainsos/mapalabig.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Mapala UMN merupakan organisasi yang berasaskan kekeluargaan, persaudaraan, persamaan, kemerdekaan, dan gotong royong, yang didasari oleh semangat kemanusiaan yang adil dan beradab. Mapala UMN bertujuan untuk memberikan wadah kepada Mahasiswa UMN yang berminat terhadap kegiatan alam yang keanggotaannya diatur dalam Anggaran Rumah Tangga. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@mapalaumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Salam Lestari!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxsos"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "sensos"
-      }, "GDC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/sainsos/gdcbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Game Development Club adalah UKM yang merangkul mahasiswa yang berminat terhadap game development. Disini, mahasiswa dapat mengisi waktu mereka untuk mempelajari lebih dalam mengenai proses pembuatan game"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/gdcumn"
-      }, "@gdcumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Rabu", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-19.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "We Make Great Games! "))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_2__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, this.state.itemsainsos.map(function (itemsainsoss, index) {
+        return (
+          /*#__PURE__*/
+
+          /*1*/
+          react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+            "class": "item-a",
+            key: index
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+            className: "boxsos"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+            className: "sensos"
+          }, itemsainsoss.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+            src: itemsainsoss.photo,
+            className: "model"
+          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+            className: "penjelasan"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, itemsainsoss.info), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+            href: itemsainsoss.link
+          }, "@", itemsainsoss.ig)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+            className: "details"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+            className: "logo"
+          }, itemsainsoss.hari, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), itemsainsoss.jam), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", null, itemsainsoss.tagline)))))
+          /*umnpc*/
+
+        );
+      }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_3__["TabPanel"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-awal"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-slider-olr"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
         id: "autoWidth",
         "class": "cs-hidden"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "olr"
-      }, "Lions Basket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/olahraga/basketbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "UMN Lions Basketball merupakan salah satu UKM yang berada di UMN, yang bergerak di bidang olahraga khususnya olahraga bola basket. Lions basketball ini sudah berdiri sejak 2010. Lions basketball ini memiliki tujuan sebagai wadah bagi para mahasiswa dan mahasiswi untuk dapat menunjukan potensi dan bakat mereka dalam bidang olahraga basket."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/umn_lions"
-      }, "@umn_lions")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Senin, Rabu,& Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "UMN Lions Jaya Jaya Luar Biasa"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "olr"
-      }, "Lions Badminton"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/olahraga/badminbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lions badminton merupakan UKM di kampus UMN yang bergerak di bidang olahraga. Lions Badminton juga menjadi wadah bagi setiap mahasiswa/i untuk mengembangkan minat dan bakat mereka khususnya di bidang bulutangkis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/lionsbadmintonumn"
-      }, "@lionsbadmintonumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Rabu & Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "18.00-22.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Lions Badminton!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "olr"
-      }, "Capoeira"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/olahraga/capoeirabg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Di Capoeira UMN kami belajar bersama dan bermain bersama dengan santai.Capoeira UMN menerapkan Mix Method dimana kami belajar capoeira dicampur dengan tricking, yoga, akrobatik dan sebagainya."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/capoeiraumn"
-      }, "@capoeiraumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Kamis", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.30-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "\xC9 vou jogar!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "olr"
-      }, "Fortius e-Sports"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/olahraga/fortiusbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fortius E-Sport merupakan Unit Kegiatan Mahasiswa (UKM) yang ada di UMN yang ditujukan untuk mahasiswa/i dengan cabang olahraga E-Sport. Fortius berasal dari kata latin, dengan memiliki arti Sangat kuat."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/fortiusesports"
-      }, "@fortiusesports")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Senin, Rabu, & Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "19.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Fight.Dominate.Win"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "olr"
-      }, "Lions Futsal"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/olahraga/futsalbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lions Futsal adalah UKM olahraga futsal di UMN yang mewadahi mahasiswa ataupun mahasiswi untuk menyalurkan bakat atau hobi yang dimiliki.  Lions futsal juga aktif mengikuti kompetisi tingkat universitas. Lions Futsal pernah menjuarai beberapa kejuaraan baik internal maupun eksternal."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/lionsfutsal_umn"
-      }, "@lionsfutsal_umn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Senin & Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Lions Futsal UMN, Victory"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "olr"
-      }, "Tenis Meja"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/olahraga/pingpongbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "UKM Tenis Meja adalah UKM yang ditujukan untuk mahasiswa/i yang tertarik untuk mempelajari tenis meja dan mengembangkan kemampuan untuk mengikuti kompetisi."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/ukmtenismeja.umn"
-      }, "@ukmtenismeja.umn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Selasan & Rabu", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-19.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Tenis Meja UMN!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "olr"
-      }, "softball"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/olahraga/softballbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Softball adalah unit kegiatan mahasiswa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang softball"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/bemumn"
-      }, "@softballumn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Selasan & Rabu", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.30-20.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Softball UMN!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "olr"
-      }, "Spectre"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/olahraga/spectrebg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Spectre adalah UKM yang berfokus di bidang stunt action untuk dunia perfilman. Tujuan dari UKM ini adalah mengasah ilmu yang dibutuhkan oleh para anggota untuk berperforma di dunia perfilman dengan tingkat standar profesional. Ilmu tersebut terdiri dari teknik gerakan menyerang, jatuhan, aksi reaksi dan gun handling yang dicakup dari berbagai macam beladiri."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/usfxspectre"
-      }, "@usfxspectre")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Rabu & Jumat", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "USF ACTION!!!"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "olr"
-      }, "Lions Voli"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/olahraga/volibg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lions Volleyball merupakan salah satu UKM yang diselenggarakan oleh Universitas Multimedia Nusantara dalam cabang olahraga bola voli.Lions Volleyball sendiri mempunyai tagline 'Hustle Hit, Never Quit', dapat bisa diartikan dalam permainan ini, setiap pukulan yang didapat harus tetap bersikap rendah tetapi tidak menyerah."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yang bergerak dalam bidang bola voli"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/umnlionsvolleyball"
-      }, "@umnlionsvolleyball")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Senin & Rabu", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "17.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Hustle Hit, Never Quit"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "item-a"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "boxor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "olr"
-      }, "Taekwondo UMN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "assets/ukmnobg/olahraga/taekwonbg.png",
-        className: "model"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "penjelasan"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Taekwondo UMN merupakan Unit Kegiatan Mahasiswa yang mendukung mahasiswa UMN dalam melakukan bela diri Taekwondo. Taekwondo UMN juga  menghasilkan juara juara bertarung di berbagai tingkatan"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "instagram.com/taekwondo_umn "
-      }, "@taekwondo_umn ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "details"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "logo"
-      }, "Selasa & Kamiss", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "18.00-21.00 WIB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "If You Worry About How , You Will Never Start"))))))))));
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, this.state.itemor.map(function (itemors, index) {
+        return (
+          /*#__PURE__*/
+
+          /*1*/
+          react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+            "class": "item-a",
+            key: index
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+            className: "boxor"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+            className: "olr"
+          }, itemors.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+            src: itemors.photo,
+            className: "model"
+          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+            className: "penjelasan"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, itemors.info), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+            href: itemors.link
+          }, "@", itemors.ig)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+            className: "details"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+            className: "logo"
+          }, itemors.hari, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), itemors.jam), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", null, itemors.tagline)))))
+          /*Basket*/
+
+        );
+      }))))));
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "allukm"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-ukm"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
         className: "ukm"
-      }, "UNIT KEGIATAN", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " MAHASISWA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }, "UNIT KEGIATAN", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), " MAHASISWA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         className: "textatasukm"
-      }, "Universitas Multimedia Nusantara memiliki berbagai Unit Kegiatan Mahasiswa.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "(UKM) yang beragam. Yang dibagi menjadi 3 kategori yaitu, Seni dan Budaya, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Sains dan Sosial, dan Olahraga. ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Universitas Multimedia Nusantara memiliki berbagai Unit Kegiatan Mahasiswa", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), "(UKM) yang beragam. Yang dibagi menjadi 3 kategori yaitu, Seni dan Budaya, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), "Sains dan Sosial, dan Olahraga. ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-tab"
       }, displayTabs))
       /*End allukm*/
@@ -89151,12 +88943,12 @@ var Ukm = /*#__PURE__*/function (_Component) {
   }]);
 
   return Ukm;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Ukm);
 
 if (document.getElementById('ukm')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Ukm, null), document.getElementById('ukm'));
+  react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Ukm, null), document.getElementById('ukm'));
 }
 
 /***/ }),
@@ -98321,13 +98113,13 @@ if (document.getElementById('ukm')) {
     //'for jquery animation',//
     speed: 400,
     //ms'
-    auto: false,
-    pauseOnHover: false,
-    loop: false,
+    auto: true,
+    pauseOnHover: true,
+    loop: true,
     slideEndAnimation: true,
     pause: 2000,
     keyPress: false,
-    controls: true,
+    controls: false,
     prevHtml: '',
     nextHtml: '',
     rtl: false,
