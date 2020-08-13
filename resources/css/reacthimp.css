@@ -55,3 +55,58 @@
 .bg {
     background: #08597D;
 }
+
+.himpholder {
+    height: 700px;
+    width: 1138px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    /* background-color: chartreuse; */
+}
+
+.logoholder {
+    left: 6vh;
+    top: 15.5%;
+    height: 400px;
+    width: 400px;
+    padding-top: 3vh;
+    position: relative;
+    /* background-color: red; */
+}
+
+.logo {
+    height: 70%;
+    width: 70%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    /* background-color: yellow; */
+}
+
+.descholder {
+    left: 54vh;
+    top: -41.5%;
+    height: 400px;
+    width: 500px;
+    position: relative;
+    /* background-color:blue; */
+}
+
+.titlebar {
+    height: 30px;
+    width: 80px;
+    left: 2vh;
+    top: 3.5%;
+    position: relative;
+    /* background-color: orange; */
+}
+
+.himpdesc {
+    height: 320px;
+    width: 465px;
+    left: 2vh;
+    top: 6.5%;
+    position: relative;
+    /* background-color: purple; */
+}
