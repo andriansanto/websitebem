@@ -77,7 +77,7 @@
             </div>
             <div class="row justify-content-end px-3">
                 <a href="/admin/kegiatan" class="btn btn-secondary mx-4">Batal</a>
-                <input type="submit" class="btn btn-primary" value="Ubah UKM" />
+                <input type="submit" class="btn btn-primary" value="Ubah Kegiatan" />
                 </form>
             </div>
         </div>

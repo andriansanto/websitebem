@@ -72,7 +72,7 @@
                         <a href="/admin/kegiatan" class="nav-link">Lihat semua kegiatan mahasiswa</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/admin/add-keg" class="nav-link">Tambah kegiatan mahasiswa</a>
+                        <a href="/admin/add_kegiatan" class="nav-link">Tambah kegiatan mahasiswa</a>
                     </li>
                 </ul>
             </li>
@@ -86,7 +86,7 @@
                         <a href="/admin/lso" class="nav-link">Lihat semua LSO</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/admin/add-lso" class="nav-link">Tambah LSO</a>
+                        <a href="/admin/add_lso" class="nav-link">Tambah LSO</a>
                     </li>
                 </ul>
             </li>

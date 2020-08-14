@@ -103,7 +103,7 @@ class AdminController extends Controller
         }
         $slideshow->save();
 
-        return redirect('/admin')->with('status', 'Slide show berhasil ditambahkan !');
+        return redirect('/admin/slideshow')->with('status', 'Slide show berhasil ditambahkan !');
     }
 
     /**ABOUT US GENERASI */
@@ -191,7 +191,7 @@ class AdminController extends Controller
         }
         $generasi->save();
 
-        return redirect('/admin')->with('status', 'Generasi berhasil ditambahkan !');
+        return redirect('/admin/aboutus')->with('status', 'Generasi berhasil ditambahkan !');
     }
 
     /**UKM */
@@ -337,7 +337,7 @@ class AdminController extends Controller
         }
         $ukm->save();
 
-        return redirect('/admin')->with('status', 'UKM berhasil ditambahkan !');
+        return redirect('/admin/ukm')->with('status', 'UKM berhasil ditambahkan !');
     }
 
 
@@ -364,10 +364,7 @@ class AdminController extends Controller
             'name' => 'required|max:255',
             'photo' => 'image|max:1000',
             'info' => 'required',
-            'hari' => 'required|max:255',
-            'waktu' => 'required|max:255',
             'instagram' => 'required|max:255',
-            'tagline' => 'required|max:255'
         ]);
 
         Kegiatan::where('id', $keg->id)
@@ -447,6 +444,6 @@ class AdminController extends Controller
         }
         $keg->save();
 
-        return redirect('/admin')->with('status', 'Kegiatan berhasil ditambahkan !');
+        return redirect('/admin/kegiatan')->with('status', 'Kegiatan berhasil ditambahkan !');
     }
 }
