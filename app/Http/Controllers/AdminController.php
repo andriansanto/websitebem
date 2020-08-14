@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\SlideShow;
 use App\Generasi;
 use App\Ukm;
+use App\Kegiatan;
+use App\Lso;
 
 class AdminController extends Controller
 {
@@ -184,12 +186,12 @@ class AdminController extends Controller
             $file->move($target,$filename);
             $generasi->photo = $filename;
         } else {
-            return redirect('/admin')->with('unstatus', 'Slide show tidak berhasil ditambahkan !');
+            return redirect('/admin')->with('unstatus', 'Generasi tidak berhasil ditambahkan !');
             $generasi->photo = '';
         }
         $generasi->save();
 
-        return redirect('/admin')->with('status', 'Slide show berhasil ditambahkan !');
+        return redirect('/admin')->with('status', 'Generasi berhasil ditambahkan !');
     }
 
     /**UKM */
@@ -272,10 +274,10 @@ class AdminController extends Controller
         
         if(unlink($path)){
             Ukm::destroy($ukm->id);
-            return redirect('/admin/ukm')->with('status', 'Generasi berhasil dihapus !');
+            return redirect('/admin/ukm')->with('status', 'UKM berhasil dihapus !');
         }
         else{
-            return redirect('/admin/ukm')->with('status', 'Generasi gagal dihapus !');
+            return redirect('/admin/ukm')->with('status', 'UKM gagal dihapus !');
         }
 
     }
@@ -330,11 +332,121 @@ class AdminController extends Controller
             $ukm->photo = $filename;
         }
      } else {
-            return redirect('/admin')->with('unstatus', 'Slide show tidak berhasil ditambahkan !');
+            return redirect('/admin')->with('unstatus', 'UKM tidak berhasil ditambahkan !');
             $ukm->photo = '';
         }
         $ukm->save();
 
-        return redirect('/admin')->with('status', 'Slide show berhasil ditambahkan !');
+        return redirect('/admin')->with('status', 'UKM berhasil ditambahkan !');
+    }
+
+
+    /**KEGIATAN MAHASISWA */
+
+    public function kegiatan(){
+        return view('admin.keg')->with(['kegs' => Kegiatan::all()]);
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\hotel  $hotel
+     * @return \Illuminate\Http\Response
+     */
+    public function edit_kegiatan(Kegiatan $keg)
+    {
+        return view('admin.edit-keg', compact('keg'));
+    }
+
+    public function update_kegiatan(Request $request, Kegiatan $keg)
+    {
+        $request->validate([
+            'name' => 'required|max:255',
+            'photo' => 'image|max:1000',
+            'info' => 'required',
+            'hari' => 'required|max:255',
+            'waktu' => 'required|max:255',
+            'instagram' => 'required|max:255',
+            'tagline' => 'required|max:255'
+        ]);
+
+        Kegiatan::where('id', $keg->id)
+        ->update([
+            'name' => $request->name,
+            'info' => $request->info,
+            'ig' => $request->instagram,
+            'link' => "http://www.instagram.com/" . $request->instagram
+        ]);
+        
+        if($request->hasFile('photo')) {
+                $file = $request->file('photo');
+
+                $path = Kegiatan::find($keg->id)->photo;
+        
+                unlink($path);
+
+                $filename = 'assets/kegiatan/'.time() . '.' . $_FILES['photo']['name'];
+                $target = 'assets/kegiatan';
+                $file->move($target,$filename);
+                $keg->photo = $filename;
+        } else {
+            return redirect('/admin/kegiatan')->with('unstatus', 'Kegiatan berhasil diubah dengan gambar yang sama !');
+            $keg->photo = '';
+        }
+        $keg->save();
+
+        return redirect('/admin/kegiatan')->with('status', 'Kegiatan berhasil diubah !');
+    }
+
+    public function destroy_kegiatan(Kegiatan $keg)
+    {
+        $path = Kegiatan::find($keg->id)->photo;
+        
+        if(unlink($path)){
+            Kegiatan::destroy($keg->id);
+            return redirect('/admin/kegiatan')->with('status', 'Kegiatan berhasil dihapus !');
+        }
+        else{
+            return redirect('/admin/kegiatan')->with('status', 'Kegiatan gagal dihapus !');
+        }
+
+    }
+
+    public function create_kegiatan()
+    {
+        return view('/admin/add-keg');
+    }
+
+    public function store_kegiatan(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|max:255',
+            'photo' => 'image|max:1000',
+            'info' => 'required',
+            'instagram' => 'required|max:255'
+        
+        ]);
+
+        $keg = new Kegiatan();
+        $keg->name = $request->name;
+        $keg->info = $request->info;
+        $keg->ig = $request->instagram;
+        $keg->link = "http://www.instagram.com/" . $request->instagram;
+
+        if($request->hasFile('photo')) {
+            $file = $request->file('photo');
+
+            $filename = 'assets/kegiatan/'.time() . '.' . $_FILES['photo']['name'];
+            $target = 'assets/kegiatan';
+            $file->move($target,$filename);
+            $keg->photo = $filename;
+
+     } else {
+            return redirect('/admin')->with('unstatus', 'Kegiatan tidak berhasil ditambahkan !');
+            $keg->photo = '';
+        }
+        $keg->save();
+
+        return redirect('/admin')->with('status', 'Kegiatan berhasil ditambahkan !');
     }
 }
