@@ -85,3 +85,27 @@ app.get('/api/ukm-senbud', function(req,res){
         }
     });
 });
+
+app.get('/api/kegiatan', function(req,res){
+    res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:8000');
+    con.query('select * from kegiatan', function(error, rows, fields){
+        if(error) console.log(error);
+
+        else{
+            console.log(rows);
+            res.send(rows);
+        }
+    });
+});
+
+app.get('/api/lso', function(req,res){
+    res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:8000');
+    con.query('select * from lso', function(error, rows, fields){
+        if(error) console.log(error);
+
+        else{
+            console.log(rows);
+            res.send(rows);
+        }
+    });
+});
