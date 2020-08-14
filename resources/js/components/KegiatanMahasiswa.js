@@ -25,7 +25,7 @@ $(document).ready(function() {
 class KegiatanMahasiswa extends Component{
     constructor() {
         super();
-        this.state = { tabIndex: 0 , radio: "kegiatan", backgroundcolor: "" };
+        this.state = { tabIndex: 0 , radio: "kegiatan", backgroundcolor: "", tabasset: "assets/kegiatan/kegkanan.png" };
 
         this.onCheckRadio = this.onCheckRadio.bind(this)
     }
@@ -36,24 +36,26 @@ class KegiatanMahasiswa extends Component{
         if(e.target.value == "kegiatan"){
             this.setState({
                 [e.target.name]: e.target.value,
-                backgroundcolor: 'linear-gradient(#ffb359,#ffffff)'
+                backgroundcolor: 'linear-gradient(#ffb359,#ffffff)',
+                tabasset: 'assets/kegiatan/kegkanan.png'
             })
         }
         else if(e.target.value == "lso"){
             this.setState({
                 [e.target.name]: e.target.value,
-                backgroundcolor: 'linear-gradient(#ade2b2,#ffffff)'
+                backgroundcolor: 'linear-gradient(#ade2b2,#ffffff)',
+                tabasset: 'assets/kegiatan/lsokanan.png'
             })
         }
     }
 
 
     render(){
-        const { backgroundcolor } = this.state
+        const { backgroundcolor, tabasset } = this.state
         const displayTabs = (
             <Tabs selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({ tabIndex })} onClick={slider()}>
             <TabList>
-                <Tab className="text-tab-pane" style={{backgroundImage: backgroundcolor}}><input type="radio" name="radio" id="keg" value="kegiatan" checked={this.state.radio === "kegiatan"} onChange={this.onCheckRadio}></input>Kegiatan<br></br>Mahasiswa</Tab>
+                <Tab className="text-tab-pane" style={{backgroundImage: backgroundcolor}}><img className="asset-kanan" src={tabasset}></img><input type="radio" name="radio" id="keg" value="kegiatan" checked={this.state.radio === "kegiatan"} onChange={this.onCheckRadio}></input>Kegiatan<br></br>Mahasiswa</Tab>
                 <Tab className="text-tab-pane" style={{backgroundImage: backgroundcolor}}><input type="radio" name="radio" id="lso" value="lso" checked={this.state.radio === "lso"} onChange={this.onCheckRadio}></input>Lembaga<br></br>Semi Otonom</Tab>
             </TabList>
 
@@ -285,6 +287,7 @@ class KegiatanMahasiswa extends Component{
     {/*TAB PAN LSO*/}
 
 <TabPanel>
+<img className="lso-kiri" src="assets/kegiatan/lsokiri.png"></img>
 <div className="container-awal">
 
 <div className="container-slider-keg">
