@@ -323,6 +323,23 @@
         background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/
     
     }
+
+    .ukm{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 45px;
+        background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .textatasukm{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+    }
 }
 
 @media(max-width:410px){
@@ -377,6 +394,23 @@
     }
     .container-ukm{
         background-image: none; /*nanti ganti sama asset yg resolusinya lbh besar*/
+    }
+
+    .ukm{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .textatasukm{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 14px;
     }
 }
 

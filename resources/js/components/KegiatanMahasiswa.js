@@ -146,13 +146,12 @@ class KegiatanMahasiswa extends Component{
                     <div className="col-md-5">
                     <img src={itemkegs.photo} className="model-mrms"></img>
                     </div>
-                    <div className="col">
+                    <div className="col-edit">
                     <p className="title">{itemkegs.name}</p>
 
                     {/*Penjelasan*/}
                     <div className="info">
                     <p>{itemkegs.info}</p>
-
                     <a href={itemkegs.link}><i className="lni lni-instagram-original"></i> {itemkegs.ig}</a>
                     </div>
                     </div>
@@ -182,13 +181,12 @@ class KegiatanMahasiswa extends Component{
                     <div className="col-md-5">
                     <img src={itemkegs.photo} className="model-keg"></img>
                     </div>
-                    <div className="col">
+                    <div className="col-edit">
                     <p className="title">{itemkegs.name}</p>
 
                     {/*Penjelasan*/}
                     <div className="info">
                     <p>{itemkegs.info}</p>
-
                     <a href={itemkegs.link}><i className="lni lni-instagram-original"></i> {itemkegs.ig}</a>
                     </div>
                     </div>
@@ -224,7 +222,7 @@ class KegiatanMahasiswa extends Component{
 <img className="lso-kiri" src="assets/kegiatan/lsokiri.png"></img>
 <div className="container-awal">
 
-<div className="container-slider-keg">
+<div className="container-slider-lso">
     {/*Slider*/}
     
 <ul id="autoWidth" className="cs-hidden">
@@ -241,10 +239,10 @@ class KegiatanMahasiswa extends Component{
         <div className="box-keg">
             {/*model*/}
             <Row>
-                    <div className="col-md-4">
+                    <div className="col-md-5">
                     <img src={itemlsos.photo} className="model-lso-dunar"></img>
                     </div>
-                    <div className="col">
+                    <div className="col-edit-lso">
                     <p className="title-lso">{itemlsos.name}</p>
 
                     {/*Penjelasan*/}
@@ -281,10 +279,10 @@ class KegiatanMahasiswa extends Component{
         <div className="box-keg">
             {/*model*/}
             <Row>
-                    <div className="col-md-4">
+                    <div className="col-md-5">
                     <img src={itemlsos.photo} className="model-lso-medic"></img>
                     </div>
-                    <div className="col">
+                    <div className="col-edit-lso">
                     <p className="title-lso">{itemlsos.name}</p>
 
                     {/*Penjelasan*/}
@@ -321,10 +319,10 @@ class KegiatanMahasiswa extends Component{
         <div className="box-keg">
             {/*model*/}
             <Row>
-                    <div className="col-md-4">
+                    <div className="col-md-5">
                     <img src={itemlsos.photo} className="model-lso-komcor"></img>
                     </div>
-                    <div className="col">
+                    <div className="col-edit-lso">
                     <p className="title-lso">{itemlsos.name}</p>
 
                     {/*Penjelasan*/}
@@ -361,10 +359,10 @@ class KegiatanMahasiswa extends Component{
         <div className="box-keg">
             {/*model*/}
             <Row>
-                    <div className="col-md-4">
+                    <div className="col-md-5">
                     <img src={itemlsos.photo} className="model-lso-ustore"></img>
                     </div>
-                    <div className="col">
+                    <div className="col-edit-lso">
                     <p className="title-lso">{itemlsos.name}</p>
 
                     {/*Penjelasan*/}
@@ -401,10 +399,10 @@ class KegiatanMahasiswa extends Component{
         <div className="box-keg">
             {/*model*/}
             <Row>
-                    <div className="col-md-4">
+                    <div className="col-md-5">
                     <img src={itemlsos.photo} className="model-lso-box"></img>
                     </div>
-                    <div className="col">
+                    <div className="col-edit-lso">
                     <p className="title-lso">{itemlsos.name}</p>
 
                     {/*Penjelasan*/}
