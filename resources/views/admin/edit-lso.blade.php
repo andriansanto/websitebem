@@ -18,20 +18,20 @@
   }
 </script>
 <div class="container my-5 mx-4" style="padding-top:100px;">
-    <h4>Ubah UKM</h4><br>
+    <h4>Ubah LSO</h4><br>
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card mb-4">
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-5">
-                            <form action="/admin/ukm/{{ $ukm->id }}" method="POST" enctype="multipart/form-data">
+                            <form action="/admin/lso/{{ $lso->id }}" method="POST" enctype="multipart/form-data">
                                 @method('patch')
                                 @csrf
                             <div class="form-group row d-flex justify-content-center px-4 pt-3">
                                 <img src="/{{ $ukm->photo }}" class="img-thumbnail" style="width:70%; object-fit: cover;" onclick="triggerClick()" id="display_photo"></img>
                             <div class="form-group row d-flex justify-content-center px-4">
-                                <label for="photo">{{ __('Logo UKM') }}</label>
+                                <label for="photo">{{ __('Logo LSO') }}</label>
                                 <div class="input-group mb-3">
                                     <div class="custom-file">
                                         <input type="file"  onchange="displayImage(this)" name="photo" id="input_photo" class="custom-file-input @error('photo') is-invalid @enderror" value="{{ old('photo') }}">
@@ -47,27 +47,27 @@
 
                         <div class="col pl-4 pr-5 pt-2">
                             <div class="form-group row">
-                                <label for="name">{{ __('Nama UKM') }}</label>
-                                <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Masukkan nama UKM" value="{{ $ukm->name }}" />
+                                <label for="name">{{ __('Nama LSO') }}</label>
+                                <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Masukkan nama UKM" value="{{ $lso->name }}" />
                                 @error('name')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                                 <br></br>
-                                <label for="name">{{ __('Deskripsi') }}</label>
-                                <textarea type="text" name="info" class="form-control @error('info') is-invalid @enderror" placeholder="Masukkan deskripsi UKM">{{ $ukm->info }}</textarea>
-                                @error('info')
+                                <label for="name">{{ __('Deskripsi 1') }}</label>
+                                <textarea type="text" name="info1" class="form-control @error('info1') is-invalid @enderror" placeholder="Masukkan deskripsi UKM">{{ $lso->info1 }}</textarea>
+                                @error('info1')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                                 <br></br>
-                                <label for="name">{{ __('Hari') }}</label>
-                                <input type="text" name="hari" class="form-control @error('hari') is-invalid @enderror" placeholder="Masukkan hari UKM" value="{{ $ukm->hari }}" />
-                                @error('hari')
+                                <label for="name">{{ __('Deskripsi 2') }}</label>
+                                <textarea type="text" name="info2" class="form-control @error('info2') is-invalid @enderror" placeholder="Masukkan deskripsi UKM">{{ $lso->info2 }}</textarea>
+                                @error('info2')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                                 <br></br>
-                                <label for="name">{{ __('Waktu') }}</label>
-                                <input type="text" name="waktu" class="form-control @error('waktu') is-invalid @enderror" placeholder="Masukkan waktu UKM [format: 17.00-20.00 WIB *(disesuaikan perdivisi)]"value="{{ $ukm->jam }}" />
-                                @error('waktu')
+                                <label for="name">{{ __('Deskripsi 3') }}</label>
+                                <textarea type="text" name="info3" class="form-control @error('info3') is-invalid @enderror" placeholder="Masukkan deskripsi UKM">{{ $lso->info3 }}</textarea>
+                                @error('info3')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                                 <br></br>
@@ -76,18 +76,12 @@
                                     <div class="input-group-prepend">
                                     <div class="input-group-text">@</div>
                                     </div>
-                                <input type="text" name="instagram" class="form-control @error('instagram') is-invalid @enderror" placeholder="Masukkan instagram UKM" value="{{ $ukm->ig }}" />
+                                <input type="text" name="instagram" class="form-control @error('instagram') is-invalid @enderror" placeholder="Masukkan instagram UKM" value="{{ $lso->ig }}" />
                                 </div>
                                 @error('instagram')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                                 <br></br>
-                                <label for="name">{{ __('Tagline') }}</label>
-                                <input type="text" name="tagline" class="form-control @error('tagline') is-invalid @enderror" placeholder="Masukkan tagline UKM"value="{{ $ukm->tagline }}" />
-                                @error('tagline')
-                                    <div class="invalid-feedback">{{ $message }}</div>
-                                @enderror
-                                
                             </div>
                         </div>
                     </div>
@@ -102,4 +96,11 @@
     </div>
 </div>
 
+<style>
+input[type=radio] {
+	position: relative;
+    transform: scale(1);
+    opacity: 100%;
+}
+</style>
 @endsection

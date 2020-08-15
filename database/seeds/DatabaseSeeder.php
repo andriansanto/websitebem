@@ -383,5 +383,114 @@ class DatabaseSeeder extends Seeder
         $ukm->tagline = "If You Worry About How , You Will Never Start";
         $ukm->bidang = "olahraga";
         $ukm->save();
+
+        $kegiatan = new App\Kegiatan;
+        $kegiatan->name = "U-FEST";
+        $kegiatan->photo = "assets/kegiatan/logoufestbig.png";
+        $kegiatan->info = "UMN Festival atau U-Fest adalah kegiatan mahasiswa di bawah naungan BEM UMN yang bertujuan untuk meningkatkan ikatan antar seluruh mahasiswa dari setiap jurusan dan angkatan lewat bidang olahraga, sosial, dan seni.";
+        $kegiatan->ig = "umnfestival";
+        $kegiatan->link = "http://www.instagram.com/umnfestival";
+        $kegiatan->save();
+
+        $kegiatan = new App\Kegiatan;
+        $kegiatan->name = "MAXIMA";
+        $kegiatan->photo = "assets/kegiatan/logomaximabig.png";
+        $kegiatan->info = "MAXIMA atau Malam Ekspresi Mahasiswa adalah kegiatan dibawah naungan BEM UMN yang ditujukan untuk meningkatkan kesadaran dan partisipasi aktif mahasiswa serta menjalin hubungan, dikemas dalam wujud pementasan, pameran, uji coba UKM, dan pentas seni.";
+        $kegiatan->ig = "maximaumn";
+        $kegiatan->link = "http://www.instagram.com/maximaumn";
+        $kegiatan->save();
+
+        $kegiatan = new App\Kegiatan;
+        $kegiatan->name = "MR. & MS. UMN";
+        $kegiatan->photo = "assets/kegiatan/logomrmsbig.png";
+        $kegiatan->info = "Mr. & Ms. UMN merupakan kegiatan mahasiswa yang berada dibawah naungan BEM UMN dengan tujuan untuk mencari duta bagi Universitas Multimedia Nusantara.";
+        $kegiatan->ig = "mrmsumn";
+        $kegiatan->link = "http://www.instagram.com/mrmsumn";
+        $kegiatan->save();
+
+        $kegiatan = new App\Kegiatan;
+        $kegiatan->name = "STARLIGHT";
+        $kegiatan->photo = "assets/kegiatan/logostarlightbig.png";
+        $kegiatan->info = "Starlight merupakan salah satu program kerja dari BEM UMN dimana para pelajar baik internal maupun eksternal UMN dapat berkompetisi dengan menunjukkan kebolehannya untuk menampilkan bakat mereka di kegiatan ini.";
+        $kegiatan->ig = "starlightumn";
+        $kegiatan->link = "http://www.instagram.com/starlightumn";
+        $kegiatan->save();
+
+        $kegiatan = new App\Kegiatan;
+        $kegiatan->name = "BANK SAMPAH";
+        $kegiatan->photo = "assets/kegiatan/logobanksampahbig.png";
+        $kegiatan->info = "Bank Sampah adalah kegiatan mahasiswa di bawah naungan BEM UMN yang bertujuan untuk membangun kesadaran mahasiswa akan pentingnya lingkungan yang sehat dan bebas dari sampah.";
+        $kegiatan->ig = "banksampah_umn";
+        $kegiatan->link = "http://www.instagram.com/banksampah_umn";
+        $kegiatan->save();
+
+        $kegiatan = new App\Kegiatan;
+        $kegiatan->name = "OMB UMN";
+        $kegiatan->photo = "assets/kegiatan/logoombbig.png";
+        $kegiatan->info = "Orientasi Mahasiswa Baru Universitas Multimedia Nusantara atau OMB UMN adalah kegiatan mahasiswa dibawah naungan BEM UMN yang bertujuan memberi bekal untuk masa pendidikan mahasiswa baru Universitas Multimedia Nusantara.";
+        $kegiatan->ig = "ombumn";
+        $kegiatan->link = "http://www.instagram.com/ombumn";
+        $kegiatan->save();
+
+        $lso = new App\Lso;
+        $lso->name = "RUMPIN";
+        $lso->photo = "assets/lso/logorumpinbig.png";
+        $lso->info1 = "Rumpin merupakan sebuah LSO yang bergerak pada bidang sosial dan berfokus pada pendidikan. Dengan tagline “Together, Inspire for the Future”, kami percaya bahwa pendidikan dapat membantu mengubah masa depan. Tujuan utama Rumpin saat ini adalah memberikan bantuan untuk anak-anak yang masih belum mendapatkan pengetahuan dan edukasi yang layak. Kami juga mau menjadi wadah bagi mahasiswa Universitas Multimedia Nusantara untuk menyalurkan jiwa social mereka kepada anak-anak yang membutuhkan.";
+        $lso->info2 = "Rumpin juga telah melaksanakan beberapa kegiatan sosial yang melibatkan mahasiswa Universitas Multimedia Nusantara sendiri dan menyalurkan bantuan ke beberapa lembaga, panti asuhan dan sekolah yang membutuhkan.";
+        $lso->info3 = "";
+        $lso->ig = "rumpin_umn";
+        $lso->link = "http://www.instagram.com/rumpin_umn";
+        $lso->save();
+
+        $lso = new App\Lso;
+        $lso->name = "U-BIZ";
+        $lso->photo = "assets/lso/logoubizbig.png";
+        $lso->info1 = "U-BIZ adalah organisasi bisnis dari mahasiswa untuk mahasiswa yang bertujuan meningkatkan jiwa kewirausahaan mahasiswa. Adapun U-BIZ UMN memiliki dua departemen.";
+        $lso->info2 = "Pertama, Departemen U-BIZ Walkneat sebagai salah satu unit bisnis yang dimiliki oleh organisasi Ubiz. Memberikan mahasiswa kesempatan untuk mencoba terjun ke dunia bisnis secara langsung dengan menjalankan bisnis dalam bidang pelayanan cuci sepatu.";      
+        $lso->info3 = "Kedua, Departemen Komunitas sebagai wadah mahasiswa untuk mengembangkan potensi diri dalam dunia bisnis dengan bantuan pengetahuan, sharing dan konsultasi dari Organisasi Ubiz. Membantu mahasiswa dalam merencanakan dan berproses membangun bisnis baik untuk mahasiswa yang telah menjalankan bisnis maupun yang baru ingin menjalankan.";      
+        $lso->ig = "ubizumn";
+        $lso->link = "http://www.instagram.com/ubizumn";
+        $lso->save();
+
+        $lso = new App\Lso;
+        $lso->name = "DUTA ANTI NARKOBA";
+        $lso->photo = "assets/lso/logodunarbig.png";
+        $lso->info1 = "Duta Anti Narkoba atau Dunar merupakan Lembaga Semi Otonom yang berada dibawah naungan Badan Eksekutif Mahasiswa. Dunar dibentuk tahun 2016 dan  berhasil mempertahankan eksistensinya sampai saat ini dengan mewujudkan peraturan kampus yang menentang segala bentuk penyalahgunaan narkoba di lingkungan kampus UMN. Kegiatan internal Dunar berupa Seminar, Anti Narkoba Week, HANI, Awarding Night serta beberapa kegiatan kecil lainnya.";
+        $lso->info2 = "Selain itu, kegiatan eksternal Dunar berupa kerjasama dengan berbagai organisasi luar seperti Fornasmapan dan Artipena. Dunar bertujuan untuk memberikan edukasi, membuat program - program menarik sepanjang tahun serta membagikan pengalaman berkesan bagi mahasiswa/i UMN.";      
+        $lso->info3 = "";      
+        $lso->ig = "dutaantinarkoba.umn";
+        $lso->link = "http://www.instagram.com/dutaantinarkoba.umn";
+        $lso->save();
+
+        $lso = new App\Lso;
+        $lso->name = "UMN MEDIC";
+        $lso->photo = "assets/lso/logomedicbig.png";
+        $lso->info1 = "UMN Medical Center merupakan suatu lembaga semi otonom yang berdiri di bawah pengawasan BEM dan bergerak di bidang kesehatan. Saat ini UMN medical Center sudah memiliki VI generasi yang sekarang dijalankan oleh generasi ke VI.";
+        $lso->info2 = "Dengan tagline “Spread Health through Happiness”, UMN Medical Center mengajak seluruh Civitas akademika UMN untuk menjaga kesehatan dengan memberikan pertolongan pertama dan edukasi kepada civitas akademika UMN mengenai pentingnya menjaga kesehatan dan peduli kepada sesama melalui kampanye - kampanye interaktif serta seminar mengenai kesehatan. Selain itu, UMN Medical Center juga belajar mengenai kekeluargaan melalui berbagai kegiatan yang menyenangkan.";      
+        $lso->info3 = "";      
+        $lso->ig = "umnmedicalcenter";
+        $lso->link = "http://www.instagram.com/umnmedicalcenter";
+        $lso->save();
+
+        $lso = new App\Lso;
+        $lso->name = "KOMPAS CORNER";
+        $lso->photo = "assets/lso/logokomcorbig.png";
+        $lso->info1 = "Kompas Corner merupakan Lembaga Semi Otonom (LSO) yang telah berdiri selama 7 tahun sejak Mei 2013 dan berada di bawah direct supervision dari Harian Kompas. Kegiatan yang dijalankan oleh Kompas Corner antara lain, melakukan media visit, membuat podcast dan webseries, menyelenggarakan event di bawah naungan Harian Kompas serta menjadi media partner.";
+        $lso->info2 = "Kompas Corner juga memiliki ruangan yang dapat diakses setiap hari Senin - Kamis pukul 09.00 - 17.00 dan 09.00 - 15.00 di hari Jumat oleh seluruh mahasiswa Universitas Multimedia Nusantara dan dapat dijadikan wadah untuk berdiskusi, bermain, membaca buku, hingga mengakses Kompas Data.";      
+        $lso->info3 = "";      
+        $lso->ig = "kompascorner";
+        $lso->link = "http://www.instagram.com/kompascorner";
+        $lso->save();
+
+        $lso = new App\Lso;
+        $lso->name = "U-STORE";
+        $lso->photo = "assets/lso/logoustorebig.png";
+        $lso->info1 = "U-Store merupakan koperasi mahasiswa berbadan hukum, beroperasi sejak tahun 2015 dan terletak di Gedung C lantai 1 Universitas Multimedia Nusantara. U-Store menyediakan berbagai kebutuhan untuk menunjang kegiatan perkuliahan dan gaya hidup sehari-hari.";
+        $lso->info2 = "U-Store menjual produk otentik yang berciri khas Universitas Multimedia Nusantara seperti kaos, hoodie, lanyard, pin, dll. U-Store juga menyediakan jasa vendor bagi organisasi ataupun mahasiswa yang membutuhkan. Jasa ini dapat digunakan untuk memproduksi barang-barang keperluan organisasi. Selain itu, U-Store juga menyediakan jasa penyewaan Handie Talkie (HT) bagi organisasi maupun mahasiswa. U-Store selalu membuka kepengurusan baru setiap tahunnya untuk menghadirkan berbagai inovasi di masa yang akan datang.";      
+        $lso->info3 = "";      
+        $lso->ig = "kopmaustore";
+        $lso->link = "http://www.instagram.com/kopmaustore";
+        $lso->save();
+
     }
 }

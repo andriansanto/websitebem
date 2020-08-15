@@ -1,13 +1,11 @@
 .fotoatas{
-   
     top: -50%; 
     left: -50%; 
     width: 100%; 
-    height: 180vh;
+    height: 240vh;
 }
 
 .fotoabout{
-    position: absolute;
     top: 0; 
     left: 0; 
     right: 0; 
@@ -27,17 +25,19 @@
 
 .container-slider-aboutus{
     width: 100%;
-    height: 1500px; /*Tinggi Box luar Logo nya*/
+    height: 140vh; /*Tinggi Box luar Logo nya*/
     background-color: #ffffff;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 
 .box-aboutus{
     width: 1520px;
-    height: 130vh;
+    height: 140vh;
+    position: relative;
     /* background-color: blue; */
     border-radius: 10px;
     box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
@@ -67,7 +67,7 @@
     text-align: center;
     color: white;
     width: 100%;
-    height: 130vh;
+    height: 140vh;
 }
 
 .model-aboutus{

@@ -63,16 +63,32 @@
                 <h6>SUKMA</h6>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/admin/orderList">
-                    <i class="fas fa-th-list mr-2"></i>
+                <a class="nav-link" href="#dropdown1" aria-expanded="false" data-toggle="collapse">
+                    <i class="fas fa-layer-group mr-2"></i>
                     Kegiatan Mahasiswa
                 </a>
+                <ul id="dropdown1" class="collapse nav flex-column px-4">
+                    <li class="nav-item">
+                        <a href="/admin/kegiatan" class="nav-link">Lihat semua kegiatan mahasiswa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/add_kegiatan" class="nav-link">Tambah kegiatan mahasiswa</a>
+                    </li>
+                </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/admin/orderList">
-                    <i class="fas fa-th-list mr-2"></i>
+                <a class="nav-link" href="#dropdown2" aria-expanded="false" data-toggle="collapse">
+                    <i class="fas fa-layer-group mr-2"></i>
                     Lembaga Semi Otonom
                 </a>
+                <ul id="dropdown2" class="collapse nav flex-column px-4">
+                    <li class="nav-item">
+                        <a href="/admin/lso" class="nav-link">Lihat semua LSO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/add_lso" class="nav-link">Tambah LSO</a>
+                    </li>
+                </ul>
             </li>
             <li class="nav-item px-3 pt-4">
                 <h6>About Us</h6>

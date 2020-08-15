@@ -56,6 +56,30 @@ Route::patch('/admin/ukm/{ukm}','AdminController@update_ukm');
 Route::get('/admin/add_ukm','AdminController@create_ukm');
 Route::post('/admin/add_ukm','AdminController@store_ukm')->name('add.ukm');
 
+/**ADMIN PANEL KEGIATAN */
+
+Route::get('/admin/kegiatan','AdminController@kegiatan');
+Route::post('/admin/kegiatan','AdminController@kegiatan');
+
+Route::delete('/admin/kegiatan/{keg}','AdminController@destroy_kegiatan');
+Route::get('/admin/kegiatan/{keg}/edit','AdminController@edit_kegiatan');
+Route::patch('/admin/kegiatan/{keg}','AdminController@update_kegiatan');
+
+Route::get('/admin/add_kegiatan','AdminController@create_kegiatan');
+Route::post('/admin/add_kegiatan','AdminController@store_kegiatan')->name('add.keg');
+
+/**ADMIN PANEL LSO */
+
+Route::get('/admin/lso','AdminController@lso');
+Route::post('/admin/lso','AdminController@lso');
+
+Route::delete('/admin/lso/{lso}','AdminController@destroy_lso');
+Route::get('/admin/lso/{lso}/edit','AdminController@edit_lso');
+Route::patch('/admin/lso/{lso}','AdminController@update_lso');
+
+Route::get('/admin/add_lso','AdminController@create_lso');
+Route::post('/admin/add_lso','AdminController@store_lso')->name('add.lso');
+
 /**PAGES */
 
 Route::get('/himpunan','HomeController@himpunan')->name('himpunan');

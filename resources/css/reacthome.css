@@ -21,6 +21,7 @@
 .App-link {
   color: #09d3ac;
 }
+
  
 body{
   background: #ffffff;
@@ -84,10 +85,11 @@ body{
 }
 
 .container-csi{
-  /*background-image: url(../../public/assets/CSI.png); *//*nanti ganti sama asset yg resolusinya lbh besar*/
+  padding-top: 100px;
+  background-image: url(../../public/assets/CSI.png); /*nanti ganti sama asset yg resolusinya lbh besar*/
   background-repeat: no-repeat;
   background-size: auto;
-  height: 220px;
+  height: 400px;
 }
 
 .container-csi-text{
@@ -117,6 +119,10 @@ body{
   padding-left: 30rem;
   line-height: 20px;
   text-align: right;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+  color: #ffffff;
 }
 
 .container-dedicate{
@@ -144,22 +150,28 @@ body{
 /*Text di Dedicate*/
 .dtc-1{
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-size: 4vw;
+  letter-spacing: 4px;
   background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
   top: 15vw;
-  font-size: 3vw;
 }
 
 .genx-1{
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-size: 2vw;
+  letter-spacing: 4px;
   background: -webkit-linear-gradient(90deg, rgba(255,207,0,0.7243350596910112) 0%, rgba(255,144,12,0.8086047226123596) 48%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
   top: 15vw;
-  font-size: 1.5vw;
 }
 /*text di dedicate*/    
 
@@ -172,10 +184,13 @@ body{
   background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(122,148,186,1)48%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-size: 5vh;
 }
 
 h1{
-  font-size: 34px;
+  font-size: 38px;
 }
 
 .container-aboutus{
@@ -219,6 +234,9 @@ h1{
     line-height: 10px;
     text-align: center;
     font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: #ffffff;
   }
 
   .dtc-1{
@@ -256,6 +274,8 @@ h1{
     line-height: 10px;
     text-align: right;
     font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
   }
   h1{
     font-size: 18px;
@@ -266,6 +286,9 @@ h1{
     padding-left: 20rem;
     line-height: 16px;
     text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: #ffffff;
   }
 
   .container-aboutus{
@@ -295,6 +318,9 @@ h1{
   padding-left: 30rem;
   line-height: 20px;
   text-align: right;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  color: #ffffff;
 }
 
 .container-aboutus{
@@ -317,11 +343,15 @@ h1{
   }
 
   .container-2-text{
-    padding-top: 25px;
+    padding-top: 55px;
     padding-right: 15px;
     padding-left: 30rem;
     line-height: 20px;
     text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    color: #ffffff;
   }
 }
 
@@ -339,11 +369,15 @@ h1{
   }
 
   .container-2-text{
-    padding-top: 25px;
+    padding-top: 55px;
     padding-right: 15px;
     padding-left: 30rem;
     line-height: 20px;
     text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    color: #ffffff;
   }
 }
 
@@ -365,11 +399,15 @@ h1{
   }
 
   .container-2-text{
-    padding-top: 25px;
+    padding-top: 55px;
     padding-right: 15px;
     padding-left: 30rem;
     line-height: 20px;
     text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    color: #ffffff;
   }
 }
 
@@ -391,10 +429,14 @@ h1{
   }
 
   .container-2-text{
-    padding-top: 25px;
+    padding-top: 55px;
     padding-right: 15px;
     padding-left: 30rem;
     line-height: 20px;
     text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    color: #ffffff;
   }
 }
