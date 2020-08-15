@@ -7069,7 +7069,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".fotoatas{\r\n    top: -50%; \r\n    left: -50%; \r\n    width: 100%; \r\n    height: 240vh;\r\n}\r\n\r\n.fotoabout{\r\n    top: 0; \r\n    left: 0; \r\n    right: 0; \r\n    bottom: 0; \r\n    margin-top: 50px;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    margin-bottom: auto; \r\n    min-width: 50%;\r\n    min-height: 50%;\r\n    width: 100%;\r\n}\r\n\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.container-slider-aboutus{\r\n    width: 100%;\r\n    height: 1500px; /*Tinggi Box luar Logo nya*/\r\n    background-color: #ffffff;\r\n    display: block;\r\n    justify-content: center;\r\n    align-items: center;\r\n    position: relative;\r\n}\r\n\r\n\r\n.box-aboutus{\r\n    width: 1520px;\r\n    height: 130vh;\r\n    position: relative;\r\n    background-color: blue;\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n}\r\n\r\n\r\n\r\n.box-aboutus:hover{\r\n    /* background-color: #a82578; */\r\n    transform-style: preserve-3d;\r\n    transform: scale(1);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.box-aboutus:hover .senbud{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n.penjelasan-aboutus{\r\n    text-align: center;\r\n    color: white;\r\n    width: 100%;\r\n    height: 130vh;\r\n}\r\n\r\n.model-aboutus{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details img{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 10px;\r\n}\r\n\r\n.senbud{\r\n    color: #500033;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n\r\n\r\n/* .lSNext{\r\n    background-image: url(../../public/assets/arrowkanan.png);\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSNext{\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(../../public/assets/arrowkiri.png);\r\n    width: 35px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSPrev{\r\n    width: 35px;\r\n    height: 35px;\r\n} */\r\n", ""]);
+exports.push([module.i, ".fotoatas{\r\n    top: -50%; \r\n    left: -50%; \r\n    width: 100%; \r\n    height: 240vh;\r\n}\r\n\r\n.fotoabout{\r\n    top: 0; \r\n    left: 0; \r\n    right: 0; \r\n    bottom: 0; \r\n    margin-top: 50px;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    margin-bottom: auto; \r\n    min-width: 50%;\r\n    min-height: 50%;\r\n    width: 100%;\r\n}\r\n\r\n.ul{\r\n    list-style: none;\r\n}\r\n\r\n.container-slider-aboutus{\r\n    width: 100%;\r\n    height: 140vh; /*Tinggi Box luar Logo nya*/\r\n    background-color: #ffffff;\r\n    display: block;\r\n    justify-content: center;\r\n    align-items: center;\r\n    position: relative;\r\n}\r\n\r\n\r\n.box-aboutus{\r\n    width: 1520px;\r\n    height: 140vh;\r\n    position: relative;\r\n    /* background-color: blue; */\r\n    border-radius: 10px;\r\n    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n}\r\n\r\n\r\n\r\n.box-aboutus:hover{\r\n    /* background-color: #a82578; */\r\n    transform-style: preserve-3d;\r\n    transform: scale(1);\r\n    transition: all ease 0.3s;\r\n}\r\n\r\n.box-aboutus:hover .senbud{\r\n    color: #ffffff;\r\n    transition: all ease 0.5s;\r\n}\r\n\r\n.penjelasan-aboutus{\r\n    text-align: center;\r\n    color: white;\r\n    width: 100%;\r\n    height: 140vh;\r\n}\r\n\r\n.model-aboutus{\r\n    margin-top: -20px;\r\n    height: 200px;\r\n    width: 200px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n}\r\n\r\n.details{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 300px;\r\n}\r\n\r\n.details img{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight: bold;\r\n    color: #ffffff;\r\n    text-align: center;\r\n    margin-top: 10px;\r\n}\r\n\r\n.senbud{\r\n    color: #500033;\r\n    font-weight: bold;\r\n    letter-spacing: 2px;\r\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\r\n    font-size: 18px;\r\n}\r\n\r\n\r\n\r\n/* .lSNext{\r\n    background-image: url(../../public/assets/arrowkanan.png);\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSNext{\r\n    width: 40px;\r\n    height: 35px;\r\n}\r\n\r\n.lSPrev{\r\n    background-image: url(../../public/assets/arrowkiri.png);\r\n    width: 35px;\r\n    height: 35px;\r\n}\r\n\r\n.lSAction > .lSPrev{\r\n    width: 35px;\r\n    height: 35px;\r\n} */\r\n", ""]);
 
 // exports
 
@@ -87593,29 +87593,21 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../css/lightslider.css */ "./resources/css/lightslider.css");
-/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_lightslider_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../slidersukm/Jquery31 */ "./resources/js/slidersukm/Jquery31.js");
-/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../slidersukm/lightslider */ "./resources/js/slidersukm/lightslider.js");
-/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _slidersukm_sliderqueryabout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../slidersukm/sliderqueryabout */ "./resources/js/slidersukm/sliderqueryabout.js");
-/* harmony import */ var _slidersukm_sliderqueryabout__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_sliderqueryabout__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _css_reactabout_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../css/reactabout.css */ "./resources/css/reactabout.css");
-/* harmony import */ var _css_reactabout_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_css_reactabout_css__WEBPACK_IMPORTED_MODULE_7__);
-
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../css/lightslider.css */ "./resources/css/lightslider.css");
+/* harmony import */ var _css_lightslider_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_lightslider_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../slidersukm/Jquery31 */ "./resources/js/slidersukm/Jquery31.js");
+/* harmony import */ var _slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_Jquery31__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../slidersukm/lightslider */ "./resources/js/slidersukm/lightslider.js");
+/* harmony import */ var _slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_lightslider__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _slidersukm_sliderqueryabout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../slidersukm/sliderqueryabout */ "./resources/js/slidersukm/sliderqueryabout.js");
+/* harmony import */ var _slidersukm_sliderqueryabout__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_slidersukm_sliderqueryabout__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _css_reactabout_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../css/reactabout.css */ "./resources/css/reactabout.css");
+/* harmony import */ var _css_reactabout_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_css_reactabout_css__WEBPACK_IMPORTED_MODULE_6__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -87659,117 +87651,159 @@ var AboutUs = /*#__PURE__*/function (_Component) {
 
   var _super = _createSuper(AboutUs);
 
-  function AboutUs(props) {
-    var _this;
-
+  function AboutUs() {
     _classCallCheck(this, AboutUs);
 
-    _this = _super.call(this, props);
-    _this.state = {
-      items: []
-    };
-    _this._isMounted = true;
-    return _this;
+    return _super.apply(this, arguments);
   }
 
   _createClass(AboutUs, [{
-    key: "componentDidMount",
-    value: function () {
-      var _componentDidMount = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var _this2 = this;
-
-        var res;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.prev = 0;
-                _context.next = 3;
-                return fetch('http://127.0.0.1:4545/api/generasi', {
-                  header: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json',
-                    'Access-Control-Allow-Credentials': 'true',
-                    'Access-Control-Allow-Origin': 'http://127.0.0.1:4545'
-                  }
-                }).then(function (Response) {
-                  return Response.json();
-                }).then(function (findresponse) {
-                  if (_this2._isMounted) {
-                    console.log(findresponse);
-
-                    _this2.setState({
-                      items: findresponse
-                    });
-                  }
-                });
-
-              case 3:
-                res = _context.sent;
-                _context.next = 9;
-                break;
-
-              case 6:
-                _context.prev = 6;
-                _context.t0 = _context["catch"](0);
-                console.log("error");
-
-              case 9:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, null, [[0, 6]]);
-      }));
-
-      function componentDidMount() {
-        return _componentDidMount.apply(this, arguments);
-      }
-
-      return componentDidMount;
-    }()
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      this._isMounted = false;
-    }
-  }, {
     key: "render",
+    // constructor(props){
+    //     super(props);
+    //     this.state = {
+    //         items: [],
+    //     }
+    //     this._isMounted = true;
+    // }
+    // async componentDidMount(){
+    //     try{
+    //         const res = await fetch('http://127.0.0.1:4545/api/generasi',{
+    //             header:{
+    //                 'Content-Type': 'application/json',
+    //                 'Accept': 'application/json',
+    //                     'Access-Control-Allow-Credentials':'true',
+    //                     'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
+    //             }
+    //         }).then((Response) => Response.json()).
+    //         then((findresponse) => 
+    //             {   
+    //                 if(this._isMounted){
+    //                 console.log(findresponse);
+    //                 this.setState({
+    //                     items: findresponse
+    //                 })
+    //             }
+    //             })
+    //     }catch(e){
+    //         console.log("error");
+    //     }
+    // }
+    //  componentWillUnmount() {
+    //     this._isMounted = false;
+    //   }
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "fotoatas"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "fotoabout",
         src: "assets/aboutus/auBEM.png"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container-slider-aboutus"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         id: "autoWidth",
         className: "cs-hidden"
-      }, this.state.items.map(function (item, index) {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-          key: index
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-          className: "item-a"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-          className: "box-aboutus"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-          className: "penjelasan-aboutus",
-          src: item.photo
-        }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-          className: "details"
-        }))));
-      }))));
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-aboutus"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "penjelasan-aboutus",
+        src: "assets/aboutus/au10.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-aboutus"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "penjelasan-aboutus",
+        src: "assets/aboutus/au9.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-aboutus"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "penjelasan-aboutus",
+        src: "assets/aboutus/au8.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-aboutus"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "penjelasan-aboutus",
+        src: "assets/aboutus/au7.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-aboutus"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "penjelasan-aboutus",
+        src: "assets/aboutus/au6.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-aboutus"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "penjelasan-aboutus",
+        src: "assets/aboutus/au5.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-aboutus"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "penjelasan-aboutus",
+        src: "assets/aboutus/au4.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-aboutus"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "penjelasan-aboutus",
+        src: "assets/aboutus/au3.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-aboutus"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "penjelasan-aboutus",
+        src: "assets/aboutus/au2.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "item-a"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "box-aboutus"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "penjelasan-aboutus",
+        src: "assets/aboutus/au1.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }))))));
     }
   }]);
 
   return AboutUs;
-}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (AboutUs);
 
 if (document.getElementById('AboutUs')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(AboutUs, null), document.getElementById('AboutUs'));
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(AboutUs, null), document.getElementById('AboutUs'));
 }
 
 /***/ }),
