@@ -58,6 +58,7 @@ class Home extends Component{
     render(){
 
         const settings ={
+            arrows: false,
             dots: true,
             fade: false,
             infinite: true,
