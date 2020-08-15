@@ -58,6 +58,7 @@ class Home extends Component{
     render(){
 
         const settings ={
+            arrows: false,
             dots: true,
             fade: false,
             infinite: true,
@@ -94,11 +95,6 @@ class Home extends Component{
            <h1 className="CSI-color">Commit. Solid. Integrated.</h1>
            <br></br>
            <p>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-           aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-           qui officia deserunt mollit anim id est laborum.
            </p>          
            </div>
        </div>
@@ -107,15 +103,13 @@ class Home extends Component{
         <div className="container-2">
     
         <div className="container-2-text">
-        <h1>Lorem Ipsum Dolor Sit Amet</h1>
+        <h1>Universitas Multimedia Nusantara</h1>
            <br></br>
            <p>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-           aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-           qui officia deserunt mollit anim id est laborum.
-           <br></br><Button color="primary" className="buttonsmua">Learn More</Button>{' '}
+           Universitas Multimedia Nusantara (UMN) adalah universitas yang berbasis Information and Communication Technology (ICT) 
+           berlokasi di Gading Serpong Tangerang. Kampus yang gedungnya unik ini sudah terakreditasi A lho! Nah, 
+           apa saja sih keunggulannya? Yuk, cari tahu!
+           <br></br><Button color="primary" href="https://www.umn.ac.id/" className="buttonsmua">Learn More</Button>{' '}
            </p>              
         </div>
         </div>
@@ -136,12 +130,11 @@ class Home extends Component{
         <Col md="6">
         <div className="container-dedicate-text container-aboutus">
         <p>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-           aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-           qui officia deserunt mollit anim id est laborum.
-           <br></br><Button color="primary" className="buttonsmua">About Us</Button>{' '}
+           Badan Eksekutif Mahasiswa (BEM) Universitas Multimedia Nusantara (UMN) adalah organisasi resmi
+           kemahasiswaan di tingkat universitas yang berperan sebagai lembaga eksekutif tertinggi dibawah
+           naungan Rektorat Bidang kemahasiswaan UMN. Untuk informasi lebih lanjut mengenai kami silahkan 
+           klik tombol dibawah ini.
+           <br></br><Button color="primary" href="about-us" className="buttonsmua">About Us</Button>{' '}
         </p>  
         </div>
         </Col>
