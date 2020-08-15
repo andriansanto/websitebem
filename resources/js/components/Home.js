@@ -109,7 +109,7 @@ class Home extends Component{
            Universitas Multimedia Nusantara (UMN) adalah universitas yang berbasis Information and Communication Technology (ICT) 
            berlokasi di Gading Serpong Tangerang. Kampus yang gedungnya unik ini sudah terakreditasi A lho! Nah, 
            apa saja sih keunggulannya? Yuk, cari tahu!
-           <br></br><Button color="primary" className="buttonsmua">Learn More</Button>{' '}
+           <br></br><Button color="primary" href="https://www.umn.ac.id/" className="buttonsmua">Learn More</Button>{' '}
            </p>              
         </div>
         </div>
@@ -134,7 +134,7 @@ class Home extends Component{
            kemahasiswaan di tingkat universitas yang berperan sebagai lembaga eksekutif tertinggi dibawah
            naungan Rektorat Bidang kemahasiswaan UMN. Untuk informasi lebih lanjut mengenai kami silahkan 
            klik tombol dibawah ini.
-           <br></br><Button color="primary" className="buttonsmua">About Us</Button>{' '}
+           <br></br><Button color="primary" href="about-us" className="buttonsmua">About Us</Button>{' '}
         </p>  
         </div>
         </Col>
