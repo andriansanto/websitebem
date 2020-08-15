@@ -236,7 +236,7 @@ class KegiatanMahasiswa extends Component{
                 <li className="item-a" key={index}>
         
             {/*Slider Box*/}
-        <div className="box-keg">
+        <div className="box-lso">
             {/*model*/}
             <Row>
                     <div className="col-md-5">
@@ -276,7 +276,7 @@ class KegiatanMahasiswa extends Component{
                 <li className="item-a" key={index}>
         
             {/*Slider Box*/}
-        <div className="box-keg">
+        <div className="box-lso">
             {/*model*/}
             <Row>
                     <div className="col-md-5">
@@ -316,7 +316,7 @@ class KegiatanMahasiswa extends Component{
                 <li className="item-a" key={index}>
         
             {/*Slider Box*/}
-        <div className="box-keg">
+        <div className="box-lso">
             {/*model*/}
             <Row>
                     <div className="col-md-5">
@@ -356,7 +356,7 @@ class KegiatanMahasiswa extends Component{
                 <li className="item-a" key={index}>
         
             {/*Slider Box*/}
-        <div className="box-keg">
+        <div className="box-lso">
             {/*model*/}
             <Row>
                     <div className="col-md-5">
@@ -396,7 +396,7 @@ class KegiatanMahasiswa extends Component{
     <li className="item-a" key={index}>
         
             {/*Slider Box*/}
-        <div className="box-keg">
+        <div className="box-lso">
             {/*model*/}
             <Row>
                     <div className="col-md-5">

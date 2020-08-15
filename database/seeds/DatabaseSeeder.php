@@ -447,7 +447,7 @@ class DatabaseSeeder extends Seeder
         $lso->photo = "assets/lso/logoubizbig.png";
         $lso->info1 = "U-BIZ adalah organisasi bisnis dari mahasiswa untuk mahasiswa yang bertujuan meningkatkan jiwa kewirausahaan mahasiswa. Adapun U-BIZ UMN memiliki dua departemen.";
         $lso->info2 = "Pertama, Departemen U-BIZ Walkneat sebagai salah satu unit bisnis yang dimiliki oleh organisasi Ubiz. Memberikan mahasiswa kesempatan untuk mencoba terjun ke dunia bisnis secara langsung dengan menjalankan bisnis dalam bidang pelayanan cuci sepatu.";      
-        $lso->info3 = "Kedua, Departemen Komunitas sebagai wadah mahasiswa untuk mengembangkan potensi diri dalam dunia bisnis dengan bantuan pengetahuan, sharing dan konsultasi dari Organisasi Ubiz. Membantu mahasiswa dalam merencanakan dan berproses membangun bisnis baik untuk mahasiswa yang telah menjalankan bisnis maupun yang baru ingin menjalankan.";      
+        $lso->info3 = "Kedua, Departemen Komunitas sebagai wadah mahasiswa untuk mengembangkan potensi diri dalam dunia bisnis dengan bantuan pengetahuan, sharing dan konsultasi dari Organisasi Ubiz.";      
         $lso->ig = "ubizumn";
         $lso->link = "http://www.instagram.com/ubizumn";
         $lso->save();
