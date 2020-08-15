@@ -103,15 +103,15 @@
                             
                             <h3 class="user-name">Andrian Santo</h3>
                             <h5>Front End & Responsive Developer</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eveniet soluta hic sunt sit reprehenderit.</p>
+                            <p><a style="text-decoration: none; color:#9293BC;" href="http://www.instagram.com/andriansanto_24"><i class="lni lni-instagram-original"></i>andriansanto_24</a></p>
                         </div>
                         
                         <div class="profile">
         <img src="/assets/profile/ask.jpg" class="profile-img">
 
-        <h3 class="user-name">Alvin</h3>
+        <h3 class="user-name">Arsheldy Alvin</h3>
         <h5>Backend Developer</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facilis sint quod.</p>
+        <p><a style="text-decoration: none; color:#9293BC;" href="http://www.instagram.com/arsheldy"><i class="lni lni-instagram-original"></i>arsheldy</a></p>
       </div>
       
       <div class="profile">
@@ -119,7 +119,7 @@
 
         <h3 class="user-name">Steven Johan</h3>
         <h5>Front End Developer</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, eveniet!</p>
+        <p><a style="text-decoration: none; color:#9293BC;" href="http://www.linkedin.com/in/stevenjohan/"><i class="lni lni-linkedin-original"></i></i>Steven Johan</a></p>
       </div>
 
       
