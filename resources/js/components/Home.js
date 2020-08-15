@@ -106,11 +106,12 @@ class Home extends Component{
         <h1>Universitas Multimedia Nusantara</h1>
            <br></br>
            <p>
-           Universitas Multimedia Nusantara (UMN) adalah universitas yang berbasis Information and Communication Technology (ICT) 
-           berlokasi di Gading Serpong Tangerang. Kampus yang gedungnya unik ini sudah terakreditasi A lho! Nah, 
-           apa saja sih keunggulannya? Yuk, cari tahu!
-           <br></br><Button color="primary" href="https://www.umn.ac.id/" className="buttonsmua">Learn More</Button>{' '}
+           Universitas Multimedia Nusantara (UMN) adalah universitas yang berbasis Information and <br></br>Communication Technology (ICT)
+           berlokasi di Gading Serpong Tangerang. <br></br>Kampus yang gedungnya unik ini sudah terakreditasi A lho! <br></br>
+           Nah, apa saja sih keunggulannya? Yuk, cari tahu!
            </p>              
+           <br></br>
+           <Button color="primary" href="https://www.umn.ac.id/" className="buttonsmua">Learn More</Button>{' '}
         </div>
         </div>
         </Container>

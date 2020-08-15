@@ -119,6 +119,10 @@ body{
   padding-left: 30rem;
   line-height: 20px;
   text-align: right;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+  color: #ffffff;
 }
 
 .container-dedicate{
@@ -230,6 +234,9 @@ h1{
     line-height: 10px;
     text-align: center;
     font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: #ffffff;
   }
 
   .dtc-1{
@@ -267,6 +274,8 @@ h1{
     line-height: 10px;
     text-align: right;
     font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
   }
   h1{
     font-size: 18px;
@@ -277,6 +286,9 @@ h1{
     padding-left: 20rem;
     line-height: 16px;
     text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: #ffffff;
   }
 
   .container-aboutus{
@@ -306,6 +318,9 @@ h1{
   padding-left: 30rem;
   line-height: 20px;
   text-align: right;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  color: #ffffff;
 }
 
 .container-aboutus{
@@ -328,11 +343,15 @@ h1{
   }
 
   .container-2-text{
-    padding-top: 25px;
+    padding-top: 55px;
     padding-right: 15px;
     padding-left: 30rem;
     line-height: 20px;
     text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    color: #ffffff;
   }
 }
 
@@ -350,11 +369,15 @@ h1{
   }
 
   .container-2-text{
-    padding-top: 25px;
+    padding-top: 55px;
     padding-right: 15px;
     padding-left: 30rem;
     line-height: 20px;
     text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    color: #ffffff;
   }
 }
 
@@ -376,11 +399,15 @@ h1{
   }
 
   .container-2-text{
-    padding-top: 25px;
+    padding-top: 55px;
     padding-right: 15px;
     padding-left: 30rem;
     line-height: 20px;
     text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    color: #ffffff;
   }
 }
 
@@ -402,10 +429,14 @@ h1{
   }
 
   .container-2-text{
-    padding-top: 25px;
+    padding-top: 55px;
     padding-right: 15px;
     padding-left: 30rem;
     line-height: 20px;
     text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    color: #ffffff;
   }
 }
