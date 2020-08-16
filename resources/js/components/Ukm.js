@@ -42,7 +42,7 @@ class Ukm extends Component{
 
     async componentDidMount(){
         try{
-            const res = await fetch('http://127.0.0.1:8000/api/ukm-or',{
+            const res = await fetch('https://bem.umn.ac.id/api/ukm-or',{
                 headers:{
                     'APP_KEY' : '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ class Ukm extends Component{
         }
 
         try{
-            const res = await fetch('http://127.0.0.1:8000/api/ukm-sainsos',{
+            const res = await fetch('https://bem.umn.ac.id/api/ukm-sainsos',{
                 headers:{
                     'APP_KEY' : '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
@@ -92,7 +92,7 @@ class Ukm extends Component{
         }
 
         try{
-            const res = await fetch('http://127.0.0.1:8000/api/ukm-senbud',{
+            const res = await fetch('https://bem.umn.ac.id/api/ukm-senbud',{
                 headers:{
                     'APP_KEY' : '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',

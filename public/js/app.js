@@ -88664,7 +88664,7 @@ var Home = /*#__PURE__*/function (_Component) {
               case 0:
                 _context.prev = 0;
                 _context.next = 3;
-                return fetch('http://127.0.0.1:8000/api/slideshow', {
+                return fetch('https://bem.umn.ac.id/api/slideshow', {
                   headers: {
                     'APP_KEY': '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
@@ -88914,7 +88914,7 @@ var KegiatanMahasiswa = /*#__PURE__*/function (_Component) {
               case 0:
                 _context.prev = 0;
                 _context.next = 3;
-                return fetch('http://127.0.0.1:8000/api/kegiatan', {
+                return fetch('https://bem.umn.ac.id/api/kegiatan', {
                   headers: {
                     'APP_KEY': '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
@@ -88947,7 +88947,7 @@ var KegiatanMahasiswa = /*#__PURE__*/function (_Component) {
               case 8:
                 _context.prev = 8;
                 _context.next = 11;
-                return fetch('http://127.0.0.1:8000/api/lso', {
+                return fetch('https://bem.umn.ac.id/api/lso', {
                   headers: {
                     'APP_KEY': '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
@@ -89399,7 +89399,7 @@ var Ukm = /*#__PURE__*/function (_Component) {
               case 0:
                 _context.prev = 0;
                 _context.next = 3;
-                return fetch('http://127.0.0.1:8000/api/ukm-or', {
+                return fetch('https://bem.umn.ac.id/api/ukm-or', {
                   headers: {
                     'APP_KEY': '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
@@ -89432,7 +89432,7 @@ var Ukm = /*#__PURE__*/function (_Component) {
               case 8:
                 _context.prev = 8;
                 _context.next = 11;
-                return fetch('http://127.0.0.1:8000/api/ukm-sainsos', {
+                return fetch('https://bem.umn.ac.id/api/ukm-sainsos', {
                   headers: {
                     'APP_KEY': '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
@@ -89465,7 +89465,7 @@ var Ukm = /*#__PURE__*/function (_Component) {
               case 16:
                 _context.prev = 16;
                 _context.next = 19;
-                return fetch('http://127.0.0.1:8000/api/ukm-senbud', {
+                return fetch('https://bem.umn.ac.id/api/ukm-senbud', {
                   headers: {
                     'APP_KEY': '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
