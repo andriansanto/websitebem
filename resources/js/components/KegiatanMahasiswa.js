@@ -42,12 +42,13 @@ class KegiatanMahasiswa extends Component{
 
     async componentDidMount(){
         try{
-            const res = await fetch('http://127.0.0.1:4545/api/kegiatan',{
-                header:{
+            const res = await fetch('http://127.0.0.1:8000/api/kegiatan',{
+                headers:{
+                    'APP_KEY' : '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
                     'Accept': 'application/json',
-                        'Access-Control-Allow-Credentials':'true',
-                        'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
+                    'Access-Control-Allow-Credentials':'true',
+                        // 'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
                 }
             }).then((Response) => Response.json()).
             then((findresponse) => 
@@ -66,12 +67,13 @@ class KegiatanMahasiswa extends Component{
         }
 
         try{
-            const res = await fetch('http://127.0.0.1:4545/api/lso',{
-                header:{
+            const res = await fetch('http://127.0.0.1:8000/api/lso',{
+                headers:{
+                    'APP_KEY' : '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
                     'Accept': 'application/json',
-                        'Access-Control-Allow-Credentials':'true',
-                        'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
+                    'Access-Control-Allow-Credentials':'true',
+                        // 'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
                 }
             }).then((Response) => Response.json()).
             then((findresponse) => 

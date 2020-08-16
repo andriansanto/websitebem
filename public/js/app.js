@@ -88664,12 +88664,13 @@ var Home = /*#__PURE__*/function (_Component) {
               case 0:
                 _context.prev = 0;
                 _context.next = 3;
-                return fetch('http://127.0.0.1:4545/api/slideshow', {
-                  header: {
+                return fetch('http://127.0.0.1:8000/api/slideshow', {
+                  headers: {
+                    'APP_KEY': '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
                     'Accept': 'application/json',
-                    'Access-Control-Allow-Credentials': 'true',
-                    'Access-Control-Allow-Origin': 'http://127.0.0.1:4545'
+                    'Access-Control-Allow-Credentials': 'true' // 'Access-Control-Allow-Origin':'http://127.0.0.1:8000',
+
                   }
                 }).then(function (Response) {
                   return Response.json();
@@ -88913,12 +88914,13 @@ var KegiatanMahasiswa = /*#__PURE__*/function (_Component) {
               case 0:
                 _context.prev = 0;
                 _context.next = 3;
-                return fetch('http://127.0.0.1:4545/api/kegiatan', {
-                  header: {
+                return fetch('http://127.0.0.1:8000/api/kegiatan', {
+                  headers: {
+                    'APP_KEY': '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
                     'Accept': 'application/json',
-                    'Access-Control-Allow-Credentials': 'true',
-                    'Access-Control-Allow-Origin': 'http://127.0.0.1:4545'
+                    'Access-Control-Allow-Credentials': 'true' // 'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
+
                   }
                 }).then(function (Response) {
                   return Response.json();
@@ -88945,12 +88947,13 @@ var KegiatanMahasiswa = /*#__PURE__*/function (_Component) {
               case 8:
                 _context.prev = 8;
                 _context.next = 11;
-                return fetch('http://127.0.0.1:4545/api/lso', {
-                  header: {
+                return fetch('http://127.0.0.1:8000/api/lso', {
+                  headers: {
+                    'APP_KEY': '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
                     'Accept': 'application/json',
-                    'Access-Control-Allow-Credentials': 'true',
-                    'Access-Control-Allow-Origin': 'http://127.0.0.1:4545'
+                    'Access-Control-Allow-Credentials': 'true' // 'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
+
                   }
                 }).then(function (Response) {
                   return Response.json();
@@ -89396,12 +89399,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
               case 0:
                 _context.prev = 0;
                 _context.next = 3;
-                return fetch('http://127.0.0.1:4545/api/ukm-olahraga', {
-                  header: {
+                return fetch('http://127.0.0.1:8000/api/ukm-or', {
+                  headers: {
+                    'APP_KEY': '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
                     'Accept': 'application/json',
-                    'Access-Control-Allow-Credentials': 'true',
-                    'Access-Control-Allow-Origin': 'http://127.0.0.1:4545'
+                    'Access-Control-Allow-Credentials': 'true' // 'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
+
                   }
                 }).then(function (Response) {
                   return Response.json();
@@ -89428,12 +89432,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
               case 8:
                 _context.prev = 8;
                 _context.next = 11;
-                return fetch('http://127.0.0.1:4545/api/ukm-sainsos', {
-                  header: {
+                return fetch('http://127.0.0.1:8000/api/ukm-sainsos', {
+                  headers: {
+                    'APP_KEY': '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
                     'Accept': 'application/json',
-                    'Access-Control-Allow-Credentials': 'true',
-                    'Access-Control-Allow-Origin': 'http://127.0.0.1:4545'
+                    'Access-Control-Allow-Credentials': 'true' // 'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
+
                   }
                 }).then(function (Response) {
                   return Response.json();
@@ -89460,12 +89465,13 @@ var Ukm = /*#__PURE__*/function (_Component) {
               case 16:
                 _context.prev = 16;
                 _context.next = 19;
-                return fetch('http://127.0.0.1:4545/api/ukm-senbud', {
-                  header: {
+                return fetch('http://127.0.0.1:8000/api/ukm-senbud', {
+                  headers: {
+                    'APP_KEY': '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
                     'Accept': 'application/json',
-                    'Access-Control-Allow-Credentials': 'true',
-                    'Access-Control-Allow-Origin': 'http://127.0.0.1:4545'
+                    'Access-Control-Allow-Credentials': 'true' // 'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
+
                   }
                 }).then(function (Response) {
                   return Response.json();
