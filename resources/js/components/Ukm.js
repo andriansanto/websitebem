@@ -42,12 +42,13 @@ class Ukm extends Component{
 
     async componentDidMount(){
         try{
-            const res = await fetch('http://127.0.0.1:4545/api/ukm-olahraga',{
-                header:{
+            const res = await fetch('https://bem.umn.ac.id/api/ukm-or',{
+                headers:{
+                    'APP_KEY' : '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
                     'Accept': 'application/json',
-                        'Access-Control-Allow-Credentials':'true',
-                        'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
+                    'Access-Control-Allow-Credentials':'true',
+                        // 'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
                 }
             }).then((Response) => Response.json()).
             then((findresponse) => 
@@ -66,12 +67,13 @@ class Ukm extends Component{
         }
 
         try{
-            const res = await fetch('http://127.0.0.1:4545/api/ukm-sainsos',{
-                header:{
+            const res = await fetch('https://bem.umn.ac.id/api/ukm-sainsos',{
+                headers:{
+                    'APP_KEY' : '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
                     'Accept': 'application/json',
-                        'Access-Control-Allow-Credentials':'true',
-                        'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
+                    'Access-Control-Allow-Credentials':'true',
+                        // 'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
                 }
             }).then((Response) => Response.json()).
             then((findresponse) => 
@@ -90,12 +92,13 @@ class Ukm extends Component{
         }
 
         try{
-            const res = await fetch('http://127.0.0.1:4545/api/ukm-senbud',{
-                header:{
+            const res = await fetch('http://127.0.0.1:8000/api/ukm-senbud',{
+                headers:{
+                    'APP_KEY' : '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
                     'Accept': 'application/json',
-                        'Access-Control-Allow-Credentials':'true',
-                        'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
+                    'Access-Control-Allow-Credentials':'true',
+                        // 'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
                 }
             }).then((Response) => Response.json()).
             then((findresponse) => 

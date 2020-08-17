@@ -1,72 +1,122 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
-import '../../css/lightslider.css';
-import '../slidersukm/Jquery31';
-import '../slidersukm/lightslider';
-import '../slidersukm/sliderqueryabout';
+import '../slidersukm/slideraboutus';
 import '../../css/reactabout.css';
 
 
 
+    {/* function bawah*/}
+    function timeline(){
     $(document).ready(function() {
-        $('#autoWidth').lightSlider({
-            autoWidth:true,
-            loop:true,
-            onSliderLoad: function() {
-                $('#autoWidth').removeClass('cs-hidden');
-            }
-             
-        });  
-        });
-    
+    (function($) {
+        $.fn.timeline = function() {
+          var selectors = {
+            id: $(this),
+            item: $(this).find(".timeline-item"),
+            activeClass: "timeline-item--active",
+            img: ".timeline__img"
+          };
+          selectors.item.eq(0).addClass(selectors.activeClass);
+          selectors.id.css(
+            "background-image",
+            "url(" +
+              selectors.item
+                .first()
+                .find(selectors.img)
+                .attr("src") +
+              ")"
+          );
+          var itemLength = selectors.item.length;
+          $(window).scroll(function() {
+            var max, min;
+            var pos = $(this).scrollTop();
+            selectors.item.each(function(i) {
+              min = $(this).offset().top;
+              max = $(this).height() + $(this).offset().top;
+              var that = $(this);
+              if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+                selectors.item.removeClass(selectors.activeClass);
+                selectors.id.css(
+                  "background-image",
+                  "url(" +
+                    selectors.item
+                      .last()
+                      .find(selectors.img)
+                      .attr("src") +
+                    ")"
+                );
+                selectors.item.last().addClass(selectors.activeClass);
+              } else if (pos <= max - 40 && pos >= min) {
+                selectors.id.css(
+                  "background-image",
+                  "url(" +
+                    $(this)
+                      .find(selectors.img)
+                      .attr("src") +
+                    ")"
+                );
+                selectors.item.removeClass(selectors.activeClass);
+                $(this).addClass(selectors.activeClass);
+              }
+            });
+          });
+        };
+      })(jQuery);
+      
+      
+      $("#timeline-1").timeline();
+    });
+}
 
 class AboutUs extends Component{
 
-    // constructor(props){
-    //     super(props);
-    //     this.state = {
-    //         items: [],
-    //     }
-    //     this._isMounted = true;
-    // }
+    constructor(props){
+        super(props);
+        this.state = {
+            itemaboutus: [],
+        }
+        this._isMounted = true;
+    }
 
     
 
-    // async componentDidMount(){
-    //     try{
-    //         const res = await fetch('http://127.0.0.1:4545/api/generasi',{
-    //             header:{
-    //                 'Content-Type': 'application/json',
-    //                 'Accept': 'application/json',
-    //                     'Access-Control-Allow-Credentials':'true',
-    //                     'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
-    //             }
-    //         }).then((Response) => Response.json()).
-    //         then((findresponse) => 
-    //             {   
-    //                 if(this._isMounted){
-    //                 console.log(findresponse);
-    //                 this.setState({
-    //                     items: findresponse
-    //                 })
-    //             }
-    //             })
-    //     }catch(e){
-    //         console.log("error");
-    //     }
+    async componentDidMount(){
+        try{
+            const res = await fetch('http://127.0.0.1:8000/api/gen',{
+                headers:{
+                    'APP_KEY' : '$2y$10$pcvhQneM.7eHbKkH5CdPP.fwhn/BV4Jp6zclZB75j68eocwH7lrr.',
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'Access-Control-Allow-Credentials':'true',
+                        // 'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
+                }
+            }).then((Response) => Response.json()).
+            then((findresponse) => 
+                {   
+                    if(this._isMounted){
+                    // console.log(findresponse);
+                    this.setState({
+                        itemaboutus: findresponse,
+                    })
+                    // console.log(itemaboutus);
+                }
+                })
+        }catch(e){
+            // console.log("error");
+        }
 
-    // }
+    }
 
-    //  componentWillUnmount() {
-    //     this._isMounted = false;
-    //   }
+     componentWillUnmount() {
+        this._isMounted = false;
+      }
 
 
     render(){
 
     return(
-            <div >
+        <div >
 
             {/*Foto about bem*/}  
             <div className="fotoatas">
@@ -76,277 +126,37 @@ class AboutUs extends Component{
 
         {/*Foto per Gen*/}  
         {/* <div className="container-awal"> */}
-
-        <div className="container-slider-aboutus" >
-            {/*Slider*/}
-            
-        <ul id="autoWidth" className="cs-hidden">
-
-                    {/*gen10*/}
-                    <li className="item-a">
-                        
-                        {/*Slider Box*/}
-                    <div className="box-aboutus">
-                        {/*model*/}
-
-                        {/*Penjelasan*/}
-                        {/* <div className="penjelasan"> */}
-                        <img className="penjelasan-aboutus" src="assets/aboutus/au10.png"></img>
-                        {/* </div> */}
-
-                        {/*details*/}
-                        
-                        <div className="details"> 
-                        {/*logo char*/}
-                        {/*<img src="#" className="logo" width="100px" style="hieght: auto;"></img>*/}
-                        {/*char details*/}
-                        </div>{/*details*/}
-
-                    </div>{/*Box*/}
-
-                    
-
-                    </li>
-
-                    {/*gen10*/}
-                    <li className="item-a">
-                        
-                        {/*Slider Box*/}
-                    <div className="box-aboutus">
-                        {/*model*/}
-
-                        {/*Penjelasan*/}
-                        {/* <div className="penjelasan"> */}
-                        <img className="penjelasan-aboutus" src="assets/aboutus/au9.png"></img>
-                        {/* </div> */}
-
-                        {/*details*/}
-                        
-                        <div className="details"> 
-                        {/*logo char*/}
-                        {/*<img src="#" className="logo" width="100px" style="hieght: auto;"></img>*/}
-                        {/*char details*/}
-                        </div>{/*details*/}
-
-                    </div>{/*Box*/}
-
-                    
-
-                    </li>
-
-                    {/*gen10*/}
-                    <li className="item-a">
-                        
-                        {/*Slider Box*/}
-                    <div className="box-aboutus">
-                        {/*model*/}
-
-                        {/*Penjelasan*/}
-                        {/* <div className="penjelasan"> */}
-                        <img className="penjelasan-aboutus" src="assets/aboutus/au8.png"></img>
-                        {/* </div> */}
-
-                        {/*details*/}
-                        
-                        <div className="details"> 
-                        {/*logo char*/}
-                        {/*<img src="#" className="logo" width="100px" style="hieght: auto;"></img>*/}
-                        {/*char details*/}
-                        </div>{/*details*/}
-
-                    </div>{/*Box*/}
-
-                    
-
-                    </li>
-
-                    {/*gen10*/}
-                    <li className="item-a">
-                        
-                        {/*Slider Box*/}
-                    <div className="box-aboutus">
-                        {/*model*/}
-
-                        {/*Penjelasan*/}
-                        {/* <div className="penjelasan"> */}
-                        <img className="penjelasan-aboutus" src="assets/aboutus/au7.png"></img>
-                        {/* </div> */}
-
-                        {/*details*/}
-                        
-                        <div className="details"> 
-                        {/*logo char*/}
-                        {/*<img src="#" className="logo" width="100px" style="hieght: auto;"></img>*/}
-                        {/*char details*/}
-                        </div>{/*details*/}
-
-                    </div>{/*Box*/}
-
-                    
-
-                    </li>
-
-                    {/*gen10*/}
-                    <li className="item-a">
-                        
-                        {/*Slider Box*/}
-                    <div className="box-aboutus">
-                        {/*model*/}
-
-                        {/*Penjelasan*/}
-                        {/* <div className="penjelasan"> */}
-                        <img className="penjelasan-aboutus" src="assets/aboutus/au6.png"></img>
-                        {/* </div> */}
-
-                        {/*details*/}
-                        
-                        <div className="details"> 
-                        {/*logo char*/}
-                        {/*<img src="#" className="logo" width="100px" style="hieght: auto;"></img>*/}
-                        {/*char details*/}
-                        </div>{/*details*/}
-
-                    </div>{/*Box*/}
-
-                    
-
-                    </li>
-
-                    {/*gen10*/}
-                    <li className="item-a">
-                        
-                        {/*Slider Box*/}
-                    <div className="box-aboutus">
-                        {/*model*/}
-
-                        {/*Penjelasan*/}
-                        {/* <div className="penjelasan"> */}
-                        <img className="penjelasan-aboutus" src="assets/aboutus/au5.png"></img>
-                        {/* </div> */}
-
-                        {/*details*/}
-                        
-                        <div className="details"> 
-                        {/*logo char*/}
-                        {/*<img src="#" className="logo" width="100px" style="hieght: auto;"></img>*/}
-                        {/*char details*/}
-                        </div>{/*details*/}
-
-                    </div>{/*Box*/}
-
-                    
-
-                    </li>
-
-                    {/*gen10*/}
-                    <li className="item-a">
-                        
-                        {/*Slider Box*/}
-                    <div className="box-aboutus">
-                        {/*model*/}
-
-                        {/*Penjelasan*/}
-                        {/* <div className="penjelasan"> */}
-                        <img className="penjelasan-aboutus" src="assets/aboutus/au4.png"></img>
-                        {/* </div> */}
-
-                        {/*details*/}
-                        
-                        <div className="details"> 
-                        {/*logo char*/}
-                        {/*<img src="#" className="logo" width="100px" style="hieght: auto;"></img>*/}
-                        {/*char details*/}
-                        </div>{/*details*/}
-
-                    </div>{/*Box*/}
-
-                    
-
-                    </li>
-
-                    {/*gen10*/}
-                    <li className="item-a">
-                        
-                        {/*Slider Box*/}
-                    <div className="box-aboutus">
-                        {/*model*/}
-
-                        {/*Penjelasan*/}
-                        {/* <div className="penjelasan"> */}
-                        <img className="penjelasan-aboutus" src="assets/aboutus/au3.png"></img>
-                        {/* </div> */}
-
-                        {/*details*/}
-                        
-                        <div className="details"> 
-                        {/*logo char*/}
-                        {/*<img src="#" className="logo" width="100px" style="hieght: auto;"></img>*/}
-                        {/*char details*/}
-                        </div>{/*details*/}
-
-                    </div>{/*Box*/}
-
-                    
-
-                    </li>
-
-                    {/*gen10*/}
-                    <li className="item-a">
-                        
-                        {/*Slider Box*/}
-                    <div className="box-aboutus">
-                        {/*model*/}
-
-                        {/*Penjelasan*/}
-                        {/* <div className="penjelasan"> */}
-                        <img className="penjelasan-aboutus" src="assets/aboutus/au2.png"></img>
-                        {/* </div> */}
-
-                        {/*details*/}
-                        
-                        <div className="details"> 
-                        {/*logo char*/}
-                        {/*<img src="#" className="logo" width="100px" style="hieght: auto;"></img>*/}
-                        {/*char details*/}
-                        </div>{/*details*/}
-
-                    </div>{/*Box*/}
-
-                    
-
-                    </li>
-
-                    {/*gen10*/}
-                    <li className="item-a">
-                        
-                        {/*Slider Box*/}
-                    <div className="box-aboutus">
-                        {/*model*/}
-
-                        {/*Penjelasan*/}
-                        {/* <div className="penjelasan"> */}
-                        <img className="penjelasan-aboutus" src="assets/aboutus/au1.png"></img>
-                        {/* </div> */}
-
-                        {/*details*/}
-                        
-                        <div className="details"> 
-                        {/*logo char*/}
-                        {/*<img src="#" className="logo" width="100px" style="hieght: auto;"></img>*/}
-                        {/*char details*/}
-                        </div>{/*details*/}
-
-                    </div>{/*Box*/}
-
-                    
-
-                    </li>
-
-            </ul>
-
-            </div>{/*container slider*/}
-
-           {/* </div>Containerawal */}
+        <div className="timeline-container" id="timeline-1">
+
+            <div className="timeline-header">
+                <h2 className="timeline-header__title">Badan Eksekutif Mahasiswa</h2>
+                <h3 className="timeline-header__subtitle">Universitas Multimedia Nusantara</h3>
+            </div>{/*timeline header*/}  
+
+                <div className="timeline">
+                {this.state.itemaboutus.map((itemgen,index)  => {
+                    return(
+                    <div className="timeline-item" data-text="GENERASI" onChange={timeline()}>
+                        <div className="timeline__content"><img className="timeline__img" src={itemgen.photo} />
+                        <h2 className="timeline__content-title">{itemgen.name}</h2>
+                        <p className="timeline__content-desc">Ketua dan Wakil</p>
+                        <p className="timeline__content-desc">{itemgen.ketua} & {itemgen.wakil}</p>
+                        <br></br>
+                        <p className="timeline__content-desc">{itemgen.visi}</p>
+                        <br></br>
+                        <p className="timeline__content-desc">{itemgen.misi}</p>
+                        <br></br>
+                        <p className="timeline__content-desc">{itemgen.tagline}</p>
+                        </div>
+                    </div>
+                    )
+                })}
+
+                </div>{/*timeline*/}  
+        </div>{/*timeline container*/}  
+
+
+        {/* </div>Containerawal */}
 
         </div>
         );

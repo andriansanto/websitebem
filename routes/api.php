@@ -14,6 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+Route::get('slideshow','ApiController@slideshow');
+Route::get('ukm-senbud','ApiController@ukm_senbud');
+Route::get('ukm-or','ApiController@ukm_or');
+Route::get('ukm-sainsos','ApiController@ukm_sainsos');
+Route::get('gen','ApiController@generasi');
+Route::get('himpunan','ApiController@himpunan');
+Route::get('kegiatan','ApiController@kegiatan');
+Route::get('lso','ApiController@lso');
+

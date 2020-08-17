@@ -21,7 +21,7 @@
 .profiles {
   display: flex;
   justify-content: space-around;
-  margin: 20px 80px;
+  margin: 20px 100px;
 }
 
 .profile {
@@ -46,8 +46,9 @@
   font-size: 35px;
 }
 
+
 .profile h5 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 100;
   letter-spacing: 3px;
   color: #ccc;
@@ -95,34 +96,75 @@
 <br><br><br>
             <div class="content">
                 <div class="container">
-                    <h1 class="heading">BEM UMN - Website Team GEN 10</h1>
-                    
+                    <h1 class="heading" style="font-weight: bold;font-family: 'Montserrat', sans-serif;padding-top: 20px;">BEM UMN - Website Team GEN 10</h1>
+
                     <div class="profiles">
+
                         <div class="profile">
-                            <img src="/assets/profile/ask.jpg" class="profile-img">
+                            <img src="/assets/profile/askp.png" class="profile-img">
                             
                             <h3 class="user-name">Andrian Santo</h3>
                             <h5>Front End & Responsive Developer</h5>
-                            <p><a style="text-decoration: none; color:#9293BC;" href="http://www.instagram.com/andriansanto_24"><i class="lni lni-instagram-original"></i>andriansanto_24</a></p>
+                            <p><a style="text-decoration: none; color:#9293BC;" href="http://www.instagram.com/andriansanto_24"><i class="lni lni-instagram-original"></i> andriansanto_24</a></p>
                         </div>
                         
                         <div class="profile">
-        <img src="/assets/profile/ask.jpg" class="profile-img">
+                          <img src="/assets/profile/alvinp.png" class="profile-img">
 
-        <h3 class="user-name">Arsheldy Alvin</h3>
-        <h5>Backend Developer</h5>
-        <p><a style="text-decoration: none; color:#9293BC;" href="http://www.instagram.com/arsheldy"><i class="lni lni-instagram-original"></i>arsheldy</a></p>
-      </div>
+                          <h3 class="user-name">Arsheldy Alvin</h3>
+                          <h5>Backend Developer</h5>
+                          <p><a style="text-decoration: none; color:#9293BC;" href="http://www.instagram.com/arsheldy"><i class="lni lni-instagram-original"></i> arsheldy</a></p>
+                      </div>
       
-      <div class="profile">
-        <img src="/assets/profile/ask.jpg" class="profile-img">
+                      <div class="profile">
+                        <img src="/assets/profile/ajop.png" class="profile-img">
 
-        <h3 class="user-name">Steven Johan</h3>
-        <h5>Front End Developer</h5>
-        <p><a style="text-decoration: none; color:#9293BC;" href="http://www.linkedin.com/in/stevenjohan/"><i class="lni lni-linkedin-original"></i></i>Steven Johan</a></p>
-      </div>
+                        <h3 class="user-name">Steven Johan</h3>
+                        <h5>Front End Developer</h5>
+                        <p><a style="text-decoration: none; color:#9293BC;" href="http://www.linkedin.com/in/stevenjohan/"><i class="lni lni-linkedin-original"></i></i> Steven Johan</a></p>
+                      </div>
 
-      
+                    </div>
+                      
+                    
+                    <div class="profiles">
+                      
+                      <div class="profile">
+                        <img src="/assets/profile/avep.png" class="profile-img">
+
+                        <h3 class="user-name">Aveline Suryanto</h3>
+                        <h5>Web Designer</h5>
+                        <p><a style="text-decoration: none; color:#9293BC;" href="http://www.instagram.com/afutrash"><i class="lni lni-instagram-original"></i></i> afutrash</a></p>
+                      </div>
+
+                      <div class="profile">
+                        <img src="/assets/profile/rachelp.png" class="profile-img">
+
+                        <h3 class="user-name">Rachelle Irene</h3>
+                        <h5>Web Designer</h5>
+                        <p><a style="text-decoration: none; color:#9293BC;" href="http://www.instagram.com/rachelirn"><i class="lni lni-instagram-original"></i></i> rachelirn</a></p>
+                      </div>
+
+                      <div class="profile">
+                        <img src="/assets/profile/amelp.png" class="profile-img">
+
+                        <h3 class="user-name">Amelia Ivanka</h3>
+                        <h5>Web Designer</h5>
+                        <p><a style="text-decoration: none; color:#9293BC;" href="http://www.instagram.com/ameliaivankag"><i class="lni lni-instagram-original"></i></i> ameliaivankag</a></p>
+                      </div>
+
+                    </div>
+
+                    <div class="profiles">
+                        <div class="profile">
+                          <img src="/assets/profile/vivip.png" class="profile-img">
+  
+                          <h3 class="user-name">Maria Viviane</h3>
+                          <h5>Web Designer</h5>
+                          <p><a style="text-decoration: none; color:#9293BC;" href="http://www.instagram.com/viviane309"><i class="lni lni-instagram-original"></i></i> viviane309</a></p>
+                        </div>
+                      </div>
+                    
     </div>
   </div>
 

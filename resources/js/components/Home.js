@@ -9,7 +9,6 @@ import { Button } from 'reactstrap';
 
 
 
-
 class Home extends Component{
     
     constructor(props){
@@ -26,12 +25,14 @@ class Home extends Component{
 
     async componentDidMount(){
         try{
-            const res = await fetch('http://127.0.0.1:4545/api/slideshow',{
-                header:{
+            const res = await fetch('https://bem.umn.ac.id/api/slideshow',{
+
+                headers:{
+                    'APP_KEY' : '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
                     'Accept': 'application/json',
-                        'Access-Control-Allow-Credentials':'true',
-                        'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
+                    'Access-Control-Allow-Credentials':'true',
+                    // 'Access-Control-Allow-Origin':'http://127.0.0.1:8000',
                 }
             }).then((Response) => Response.json()).
             then((findresponse) => 
