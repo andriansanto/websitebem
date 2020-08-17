@@ -17,7 +17,7 @@ class APIKEY
     public function handle($request, Closure $next)
     {
         $token = $request->header('APP_KEY');
-        $key = '$2y$10$898pIbtygVB2.uuU8fJuveEzxekF58bCPRznJY5H2xLx0DMSJrc1G';
+        $key = '$2y$10$pcvhQneM.7eHbKkH5CdPP.fwhn/BV4Jp6zclZB75j68eocwH7lrr.';
         
         if(!Hash::check($token,$key)):
             return response()->json(['message' => 'App Key salah!'],401);
