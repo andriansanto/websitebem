@@ -52,10 +52,9 @@
                         <div class="footer-gallery">
                             <div class="row justify-content-center" style="padding-top: 10px;">
                                 <a href="#" class="footer-logo img-hover-zoom"><img class="mx-auto d-block" src="/assets/logobemwhite.png" alt="BEM Logo" width="100px"></a>
-                                <div class="col-4" style="max-width:50px;">
+                                <!-- <div class="col-4" style="max-width:50px;">
                                     <a href="#"><img src="" alt=""></a>
-                                </div>
-                               
+                                </div> -->
                             </div>
                         </div>
                     </div>

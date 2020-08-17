@@ -42,7 +42,7 @@ class KegiatanMahasiswa extends Component{
 
     async componentDidMount(){
         try{
-            const res = await fetch('https://bem.umn.ac.id/api/kegiatan',{
+            const res = await fetch('http://127.0.0.1:8000/api/kegiatan',{
                 headers:{
                     'APP_KEY' : '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ class KegiatanMahasiswa extends Component{
         }
 
         try{
-            const res = await fetch('https://bem.umn.ac.id/api/lso',{
+            const res = await fetch('http://127.0.0.1:8000/api/lso',{
                 headers:{
                     'APP_KEY' : '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',

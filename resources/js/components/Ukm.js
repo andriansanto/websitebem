@@ -92,7 +92,7 @@ class Ukm extends Component{
         }
 
         try{
-            const res = await fetch('https://bem.umn.ac.id/api/ukm-senbud',{
+            const res = await fetch('http://127.0.0.1:8000/api/ukm-senbud',{
                 headers:{
                     'APP_KEY' : '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',

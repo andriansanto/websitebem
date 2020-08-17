@@ -251,6 +251,7 @@ input[type=radio] {
     flex-grow: 1;
     min-width: 0;
     max-width: 100%;
+    margin-right: 20px;
   }
 
   .col-edit-lso {
@@ -261,7 +262,7 @@ input[type=radio] {
 }
 
 .col-md-5 {
-    flex: 0 0 41.6666666667%;
+    flex: 0 0 38.6666666667%;
     max-width: 41.6666666667%;
     width: 100%;
 }
@@ -576,7 +577,7 @@ input[type=radio] {
         max-width: 100%;
         text-align: center;
         width: 100%;
-        margin-right: 200px;
+        margin-right: 175px;
         margin-left: 0px;
     }
 
