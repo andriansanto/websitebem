@@ -16,7 +16,7 @@ class Generasi extends Model
     protected $table = 'generasi';
 
     protected $fillable = [
-        'name', 'photo'
+        'name', 'photo', 'visi', 'misi', 'ketua', 'wakil' 
     ];
 
 }

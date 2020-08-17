@@ -17,6 +17,10 @@ class CreateGenerasiTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('photo')->nullable();
+            $table->string('visi');
+            $table->string('misi');
+            $table->string('ketua');
+            $table->string('wakil');
             $table->timestamps();
         });
     }

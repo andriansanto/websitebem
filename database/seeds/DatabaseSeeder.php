@@ -37,51 +37,101 @@ class DatabaseSeeder extends Seeder
         $generasi = new App\Generasi;
         $generasi->name = "gen x";
         $generasi->photo = "assets/aboutus/au10.png";
+        $generasi->ketua = "Kemal Roushdy";
+        $generasi->wakil = "Jane Suwanto";
+        $generasi->visi = "Menjadikan BEM UMN sebagai Lembaga yang dapat diandalkan untuk mengembangkan organisasi naungan BEM dengan dedikasi dan inovasi.";
+        $generasi->misi = "Menegaskan dan mengoptimalkan peran BEM dan mengkoordinasikan program kerja organisasi di bawah naungan BEM.";
+        $generasi->tagline = "#DedicateToCreate";
         $generasi->save();
 
         $generasi = new App\Generasi;
         $generasi->name = "gen ix";
         $generasi->photo = "assets/aboutus/au9.png";
+        $generasi->ketua = "Mat";
+        $generasi->wakil = "";
+        $generasi->visi = "";
+        $generasi->misi = "";
+        $generasi->tagline = "#DedicateToCreate";
         $generasi->save();
 
         $generasi = new App\Generasi;
         $generasi->name = "gen viii";
         $generasi->photo = "assets/aboutus/au8.png";
+        $generasi->ketua = "";
+        $generasi->wakil = "";
+        $generasi->visi = "";
+        $generasi->misi = "";
+        $generasi->tagline = "#DedicateToCreate";
         $generasi->save();
 
         $generasi = new App\Generasi;
         $generasi->name = "gen vii";
         $generasi->photo = "assets/aboutus/au7.png";
+        $generasi->ketua = "";
+        $generasi->wakil = "";
+        $generasi->visi = "";
+        $generasi->misi = "";
+        $generasi->tagline = "#DedicateToCreate";
         $generasi->save();
 
         $generasi = new App\Generasi;
         $generasi->name = "gen vi";
         $generasi->photo = "assets/aboutus/au6.png";
+        $generasi->ketua = "";
+        $generasi->wakil = "";
+        $generasi->visi = "";
+        $generasi->misi = "";
+        $generasi->tagline = "#DedicateToCreate";
         $generasi->save();
 
         $generasi = new App\Generasi;
         $generasi->name = "gen v";
         $generasi->photo = "assets/aboutus/au5.png";
+        $generasi->ketua = "";
+        $generasi->wakil = "";
+        $generasi->visi = "";
+        $generasi->misi = "";
+        $generasi->tagline = "#DedicateToCreate";
         $generasi->save();
 
         $generasi = new App\Generasi;
         $generasi->name = "gen iv";
         $generasi->photo = "assets/aboutus/au4.png";
+        $generasi->ketua = "";
+        $generasi->wakil = "";
+        $generasi->visi = "";
+        $generasi->misi = "";
+        $generasi->tagline = "#DedicateToCreate";
         $generasi->save();
 
         $generasi = new App\Generasi;
         $generasi->name = "gen iii";
         $generasi->photo = "assets/aboutus/au3.png";
+        $generasi->ketua = "";
+        $generasi->wakil = "";
+        $generasi->visi = "";
+        $generasi->misi = "";
+        $generasi->tagline = "#DedicateToCreate";
         $generasi->save();
 
         $generasi = new App\Generasi;
         $generasi->name = "gen ii";
         $generasi->photo = "assets/aboutus/au2.png";
+        $generasi->ketua = "";
+        $generasi->wakil = "";
+        $generasi->visi = "";
+        $generasi->misi = "";
+        $generasi->tagline = "#DedicateToCreate";
         $generasi->save();
 
         $generasi = new App\Generasi;
         $generasi->name = "gen i";
         $generasi->photo = "assets/aboutus/au1.png";
+        $generasi->ketua = "";
+        $generasi->wakil = "";
+        $generasi->visi = "";
+        $generasi->misi = "";
+        $generasi->tagline = "#DedicateToCreate";
         $generasi->save();
 
         $ukm = new App\Ukm;

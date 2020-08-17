@@ -7,49 +7,110 @@ import '../../css/reactabout.css';
 
 
     {/* function bawah*/}
-
-    
+    function timeline(){
+    $(document).ready(function() {
+    (function($) {
+        $.fn.timeline = function() {
+          var selectors = {
+            id: $(this),
+            item: $(this).find(".timeline-item"),
+            activeClass: "timeline-item--active",
+            img: ".timeline__img"
+          };
+          selectors.item.eq(0).addClass(selectors.activeClass);
+          selectors.id.css(
+            "background-image",
+            "url(" +
+              selectors.item
+                .first()
+                .find(selectors.img)
+                .attr("src") +
+              ")"
+          );
+          var itemLength = selectors.item.length;
+          $(window).scroll(function() {
+            var max, min;
+            var pos = $(this).scrollTop();
+            selectors.item.each(function(i) {
+              min = $(this).offset().top;
+              max = $(this).height() + $(this).offset().top;
+              var that = $(this);
+              if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+                selectors.item.removeClass(selectors.activeClass);
+                selectors.id.css(
+                  "background-image",
+                  "url(" +
+                    selectors.item
+                      .last()
+                      .find(selectors.img)
+                      .attr("src") +
+                    ")"
+                );
+                selectors.item.last().addClass(selectors.activeClass);
+              } else if (pos <= max - 40 && pos >= min) {
+                selectors.id.css(
+                  "background-image",
+                  "url(" +
+                    $(this)
+                      .find(selectors.img)
+                      .attr("src") +
+                    ")"
+                );
+                selectors.item.removeClass(selectors.activeClass);
+                $(this).addClass(selectors.activeClass);
+              }
+            });
+          });
+        };
+      })(jQuery);
+      
+      
+      $("#timeline-1").timeline();
+    });
+}
 
 class AboutUs extends Component{
 
-    // constructor(props){
-    //     super(props);
-    //     this.state = {
-    //         items: [],
-    //     }
-    //     this._isMounted = true;
-    // }
+    constructor(props){
+        super(props);
+        this.state = {
+            itemaboutus: [],
+        }
+        this._isMounted = true;
+    }
 
     
 
-    // async componentDidMount(){
-    //     try{
-    //         const res = await fetch('http://127.0.0.1:4545/api/generasi',{
-    //             header:{
-    //                 'Content-Type': 'application/json',
-    //                 'Accept': 'application/json',
-    //                     'Access-Control-Allow-Credentials':'true',
-    //                     'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
-    //             }
-    //         }).then((Response) => Response.json()).
-    //         then((findresponse) => 
-    //             {   
-    //                 if(this._isMounted){
-    //                 console.log(findresponse);
-    //                 this.setState({
-    //                     items: findresponse
-    //                 })
-    //             }
-    //             })
-    //     }catch(e){
-    //         console.log("error");
-    //     }
+    async componentDidMount(){
+        try{
+            const res = await fetch('http://127.0.0.1:8000/api/gen',{
+                headers:{
+                    'APP_KEY' : '$2y$10$pcvhQneM.7eHbKkH5CdPP.fwhn/BV4Jp6zclZB75j68eocwH7lrr.',
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'Access-Control-Allow-Credentials':'true',
+                        // 'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
+                }
+            }).then((Response) => Response.json()).
+            then((findresponse) => 
+                {   
+                    if(this._isMounted){
+                    // console.log(findresponse);
+                    this.setState({
+                        itemaboutus: findresponse,
+                    })
+                    // console.log(itemaboutus);
+                }
+                })
+        }catch(e){
+            // console.log("error");
+        }
 
-    // }
+    }
 
-    //  componentWillUnmount() {
-    //     this._isMounted = false;
-    //   }
+     componentWillUnmount() {
+        this._isMounted = false;
+      }
 
 
     render(){
@@ -73,29 +134,17 @@ class AboutUs extends Component{
             </div>{/*timeline header*/}  
 
                 <div className="timeline">
-
-                    <div className="timeline-item" data-text="GENERASI">
-                        <div className="timeline__content"><img className="timeline__img" src="assets/aboutus/au10.png" />
+                {this.state.itemaboutus.map((itemgen,index)  => {
+                    return(
+                    <div className="timeline-item" data-text="GENERASI" onChange={timeline()}>
+                        <div className="timeline__content"><img className="timeline__img" src={itemgen.photo} />
                             <h2 className="timeline__content-title">Gen X</h2>
                             <p className="timeline__content-desc">He was born in 1881 (probably in the spring) in Salonica, then an Ottoman city, now inGreece. His father Ali Riza, a customs official turned lumber merchant, died when Mustafawas still a boy. His mother Zubeyde, adevout and strong-willed
                                 woman, raised him and his sister.</p>
                         </div>
                     </div>
-
-                    <div className="timeline-item" data-text="GENERASI">
-                        <div className="timeline__content"><img className="timeline__img" src="assets/aboutus/au10.png" />
-                            <h2 className="timeline__content-title">GEN IX</h2>
-                            <p className="timeline__content-desc">First enrolled in a traditionalreligious school, he soon switched to a modern school. In 1893, he entered a military highschool where his mathematics teacher gave him the second name Kemal (meaning perfection)in recognition of young Mustafa's
-                                superior achievement.</p>
-                        </div>
-                    </div>
-
-                    <div className="timeline-item" data-text="GENERASI">
-                        <div className="timeline__content"><img className="timeline__img" src="http://www.volpeypir.com/upload/3732.jpg" />
-                            <h2 className="timeline__content-title">GEN VIII</h2>
-                            <p className="timeline__content-desc">In 1905, Mustafa Kemal graduated from the War Academy in Istanbul with the rank of Staff Captain. Posted in Damascus, he started with several colleagues, a clandestinesociety called "Homeland and Freedom" to fight against the Sultan'sdespotism.</p>
-                        </div>
-                    </div>
+                    )
+                })}
 
                 </div>{/*timeline*/}  
         </div>{/*timeline container*/}  
