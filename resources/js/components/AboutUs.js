@@ -138,9 +138,15 @@ class AboutUs extends Component{
                     return(
                     <div className="timeline-item" data-text="GENERASI" onChange={timeline()}>
                         <div className="timeline__content"><img className="timeline__img" src={itemgen.photo} />
-                            <h2 className="timeline__content-title">Gen X</h2>
-                            <p className="timeline__content-desc">He was born in 1881 (probably in the spring) in Salonica, then an Ottoman city, now inGreece. His father Ali Riza, a customs official turned lumber merchant, died when Mustafawas still a boy. His mother Zubeyde, adevout and strong-willed
-                                woman, raised him and his sister.</p>
+                        <h2 className="timeline__content-title">{itemgen.name}</h2>
+                        <p className="timeline__content-desc">Ketua dan Wakil</p>
+                        <p className="timeline__content-desc">{itemgen.ketua} & {itemgen.wakil}</p>
+                        <br></br>
+                        <p className="timeline__content-desc">{itemgen.visi}</p>
+                        <br></br>
+                        <p className="timeline__content-desc">{itemgen.misi}</p>
+                        <br></br>
+                        <p className="timeline__content-desc">{itemgen.tagline}</p>
                         </div>
                     </div>
                     )

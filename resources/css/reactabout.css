@@ -153,8 +153,10 @@
 	 box-sizing: border-box;
 	 color: rgba(255, 255, 255, .7);
 	 font-family: Cardo;
-	 font-weight: normal;
+	 font-weight: bold;
 	 line-height: 25px;
+	 font-family: 'Montserrat', sans-serif;
+
 }
  .timeline:before {
 	 position: absolute;
@@ -165,6 +167,8 @@
 	 content: "";
 	 background: rgba(255, 255, 255, .07);
 }
+
+
  @media only screen and (max-width: 767px) {
 	 .timeline:before {
 		 left: 40px;
@@ -269,17 +273,17 @@
  .timeline-header__title {
 	 color: #fff;
 	 font-size: 46px;
-	 font-family: Cardo;
-	 font-weight: normal;
+	 font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
 	 margin: 0;
 }
  .timeline-header__subtitle {
 	 color: rgba(255, 255, 255, .5);
-	 font-family: 'Pathway Gothic One', sans-serif;
+	 font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
 	 font-size: 16px;
 	 letter-spacing: 5px;
 	 margin: 10px 0 0 0;
-	 font-weight: normal;
 }
  .demo-footer {
 	 padding: 60px 0;
