@@ -96,7 +96,7 @@
 <br><br><br>
             <div class="content">
                 <div class="container">
-                    <h1 class="heading">BEM UMN - Website Team GEN 10</h1>
+                    <h1 class="heading" style="font-weight: bold;font-family: 'Montserrat', sans-serif;padding-top: 20px;">BEM UMN - Website Team GEN 10</h1>
 
                     <div class="profiles">
 

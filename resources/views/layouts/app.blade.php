@@ -119,6 +119,12 @@
 
     }
 
+    .text-footer {
+        color: rgba(255, 255, 255, 0.62);
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+    }
+
     .title-umn {
         color: #233e57;
         font-weight: bold;
