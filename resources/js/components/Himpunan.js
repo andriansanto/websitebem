@@ -61,34 +61,12 @@ $(document).ready(function(){
 });
 
 class Himpunan extends Component{
-    // constructor() {
-    //     super();
-
-    //     this.state = {
-    //         hideToolTip: false
-    //     };
-
-    //     this.handleChange = this.handleChange.bind(this);
-
-    //     this.tooltipInstance = (
-    //     <div onClick={this.handleChange}>
-    //         <Tooltip placement="bottom" className="in" id="tooltip-bottom">
-    //             tooltip bottom
-    //         </Tooltip>
-    //     </div>
-    // );
-    // }
-
-    // handleChange(event) {
-    //     this.setState({hidetoolTip: true});
-    // }
+    
 render(){
-    // const style = this.state.hideToolTip ? {display: 'none'} : {};
+    
 return(
     <div>
-        {/* <div className="App" style={style}>
-            {this.tooltipInstance}
-        </div> */}
+        
         <div className="container-himp">
             <h1 className="himp-maha">HIMPUNAN <br></br> MAHASISWA</h1>
             <br></br>

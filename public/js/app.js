@@ -87921,25 +87921,7 @@ var Himpunan = /*#__PURE__*/function (_Component) {
 
   _createClass(Himpunan, [{
     key: "render",
-    // constructor() {
-    //     super();
-    //     this.state = {
-    //         hideToolTip: false
-    //     };
-    //     this.handleChange = this.handleChange.bind(this);
-    //     this.tooltipInstance = (
-    //     <div onClick={this.handleChange}>
-    //         <Tooltip placement="bottom" className="in" id="tooltip-bottom">
-    //             tooltip bottom
-    //         </Tooltip>
-    //     </div>
-    // );
-    // }
-    // handleChange(event) {
-    //     this.setState({hidetoolTip: true});
-    // }
     value: function render() {
-      // const style = this.state.hideToolTip ? {display: 'none'} : {};
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container-himp"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
