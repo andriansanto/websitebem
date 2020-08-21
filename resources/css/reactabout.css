@@ -230,32 +230,38 @@
 		 align-self: baseline !important;
 		 width: 100%;
 		 padding: 0 30px 150px 80px;
+		}
+		.timeline-item:before {
+			left: 10px !important;
+			padding: 0 !important;
+			top: 50px;
+			text-align: center !important;
+			width: 60px;
+			border: none !important;
+		}
+		.timeline-item:last-child {
+			padding-bottom: 40px;
+		}
+		.fotoatas{
+			top: -50%;
+			left: -50%;
+			width: 100%;
+			height: 65vh;
+		}
 	}
-	 .timeline-item:before {
-		 left: 10px !important;
-		 padding: 0 !important;
-		 top: 50px;
-		 text-align: center !important;
-		 width: 60px;
-		 border: none !important;
-	}
-	 .timeline-item:last-child {
-		 padding-bottom: 40px;
-	}
-}
  .timeline__img {
 	 max-width: 100%;
 	 box-shadow: 0 10px 15px rgba(0, 0, 0, .4);
-}
- .timeline-container {
+	}
+	.timeline-container {
 	 width: 100%;
 	 position: relative;
 	 padding: 80px 0;
 	 transition: 0.3s ease 0s;
 	 background-attachment: fixed;
 	 background-size: cover;
-}
- .timeline-container:before {
+	}
+	.timeline-container:before {
 	 position: absolute;
 	 left: 0;
 	 top: 0;
@@ -294,4 +300,5 @@
 	 display: inline-block;
 	 font-family: Cardo;
 }
+
  
