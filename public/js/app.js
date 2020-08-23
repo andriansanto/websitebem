@@ -2208,9 +2208,9 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
-  * Bootstrap v4.5.2 (https://getbootstrap.com/)
+  * Bootstrap v4.5.0 (https://getbootstrap.com/)
   * Copyright 2011-2020 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 (function (global, factory) {
    true ? factory(exports, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"), __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js")) :
@@ -2236,22 +2236,53 @@ module.exports = {
     return Constructor;
   }
 
-  function _extends() {
-    _extends = Object.assign || function (target) {
-      for (var i = 1; i < arguments.length; i++) {
-        var source = arguments[i];
+  function _defineProperty(obj, key, value) {
+    if (key in obj) {
+      Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+    } else {
+      obj[key] = value;
+    }
 
-        for (var key in source) {
-          if (Object.prototype.hasOwnProperty.call(source, key)) {
-            target[key] = source[key];
-          }
-        }
+    return obj;
+  }
+
+  function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+
+    if (Object.getOwnPropertySymbols) {
+      var symbols = Object.getOwnPropertySymbols(object);
+      if (enumerableOnly) symbols = symbols.filter(function (sym) {
+        return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+      });
+      keys.push.apply(keys, symbols);
+    }
+
+    return keys;
+  }
+
+  function _objectSpread2(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i] != null ? arguments[i] : {};
+
+      if (i % 2) {
+        ownKeys(Object(source), true).forEach(function (key) {
+          _defineProperty(target, key, source[key]);
+        });
+      } else if (Object.getOwnPropertyDescriptors) {
+        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+      } else {
+        ownKeys(Object(source)).forEach(function (key) {
+          Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
       }
+    }
 
-      return target;
-    };
-
-    return _extends.apply(this, arguments);
+    return target;
   }
 
   function _inheritsLoose(subClass, superClass) {
@@ -2262,8 +2293,8 @@ module.exports = {
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.5.2): util.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+   * Bootstrap (v4.5.0): util.js
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
   /**
@@ -2443,7 +2474,7 @@ module.exports = {
    */
 
   var NAME = 'alert';
-  var VERSION = '4.5.2';
+  var VERSION = '4.5.0';
   var DATA_KEY = 'bs.alert';
   var EVENT_KEY = "." + DATA_KEY;
   var DATA_API_KEY = '.data-api';
@@ -2599,7 +2630,7 @@ module.exports = {
    */
 
   var NAME$1 = 'button';
-  var VERSION$1 = '4.5.2';
+  var VERSION$1 = '4.5.0';
   var DATA_KEY$1 = 'bs.button';
   var EVENT_KEY$1 = "." + DATA_KEY$1;
   var DATA_API_KEY$1 = '.data-api';
@@ -2734,9 +2765,11 @@ module.exports = {
         return;
       }
 
-      if (initialButton.tagName !== 'LABEL' || inputBtn && inputBtn.type !== 'checkbox') {
-        Button._jQueryInterface.call($(button), 'toggle');
+      if (initialButton.tagName === 'LABEL' && inputBtn && inputBtn.type === 'checkbox') {
+        event.preventDefault(); // work around event sent to label and input
       }
+
+      Button._jQueryInterface.call($(button), 'toggle');
     }
   }).on(EVENT_FOCUS_BLUR_DATA_API, SELECTOR_DATA_TOGGLE_CARROT, function (event) {
     var button = $(event.target).closest(SELECTOR_BUTTON)[0];
@@ -2792,7 +2825,7 @@ module.exports = {
    */
 
   var NAME$2 = 'carousel';
-  var VERSION$2 = '4.5.2';
+  var VERSION$2 = '4.5.0';
   var DATA_KEY$2 = 'bs.carousel';
   var EVENT_KEY$2 = "." + DATA_KEY$2;
   var DATA_API_KEY$2 = '.data-api';
@@ -2979,7 +3012,7 @@ module.exports = {
     ;
 
     _proto._getConfig = function _getConfig(config) {
-      config = _extends({}, Default, config);
+      config = _objectSpread2(_objectSpread2({}, Default), config);
       Util.typeCheckConfig(NAME$2, config, DefaultType);
       return config;
     };
@@ -3269,10 +3302,10 @@ module.exports = {
       return this.each(function () {
         var data = $(this).data(DATA_KEY$2);
 
-        var _config = _extends({}, Default, $(this).data());
+        var _config = _objectSpread2(_objectSpread2({}, Default), $(this).data());
 
         if (typeof config === 'object') {
-          _config = _extends({}, _config, config);
+          _config = _objectSpread2(_objectSpread2({}, _config), config);
         }
 
         var action = typeof config === 'string' ? config : _config.slide;
@@ -3310,7 +3343,7 @@ module.exports = {
         return;
       }
 
-      var config = _extends({}, $(target).data(), $(this).data());
+      var config = _objectSpread2(_objectSpread2({}, $(target).data()), $(this).data());
 
       var slideIndex = this.getAttribute('data-slide-to');
 
@@ -3379,7 +3412,7 @@ module.exports = {
    */
 
   var NAME$3 = 'collapse';
-  var VERSION$3 = '4.5.2';
+  var VERSION$3 = '4.5.0';
   var DATA_KEY$3 = 'bs.collapse';
   var EVENT_KEY$3 = "." + DATA_KEY$3;
   var DATA_API_KEY$3 = '.data-api';
@@ -3594,7 +3627,7 @@ module.exports = {
     ;
 
     _proto._getConfig = function _getConfig(config) {
-      config = _extends({}, Default$1, config);
+      config = _objectSpread2(_objectSpread2({}, Default$1), config);
       config.toggle = Boolean(config.toggle); // Coerce string values
 
       Util.typeCheckConfig(NAME$3, config, DefaultType$1);
@@ -3648,7 +3681,7 @@ module.exports = {
         var $this = $(this);
         var data = $this.data(DATA_KEY$3);
 
-        var _config = _extends({}, Default$1, $this.data(), typeof config === 'object' && config ? config : {});
+        var _config = _objectSpread2(_objectSpread2(_objectSpread2({}, Default$1), $this.data()), typeof config === 'object' && config ? config : {});
 
         if (!data && _config.toggle && typeof config === 'string' && /show|hide/.test(config)) {
           _config.toggle = false;
@@ -3728,7 +3761,7 @@ module.exports = {
    */
 
   var NAME$4 = 'dropdown';
-  var VERSION$4 = '4.5.2';
+  var VERSION$4 = '4.5.0';
   var DATA_KEY$4 = 'bs.dropdown';
   var EVENT_KEY$4 = "." + DATA_KEY$4;
   var DATA_API_KEY$4 = '.data-api';
@@ -3955,7 +3988,7 @@ module.exports = {
     };
 
     _proto._getConfig = function _getConfig(config) {
-      config = _extends({}, this.constructor.Default, $(this._element).data(), config);
+      config = _objectSpread2(_objectSpread2(_objectSpread2({}, this.constructor.Default), $(this._element).data()), config);
       Util.typeCheckConfig(NAME$4, config, this.constructor.DefaultType);
       return config;
     };
@@ -4000,7 +4033,7 @@ module.exports = {
 
       if (typeof this._config.offset === 'function') {
         offset.fn = function (data) {
-          data.offsets = _extends({}, data.offsets, _this2._config.offset(data.offsets, _this2._element) || {});
+          data.offsets = _objectSpread2(_objectSpread2({}, data.offsets), _this2._config.offset(data.offsets, _this2._element) || {});
           return data;
         };
       } else {
@@ -4030,7 +4063,7 @@ module.exports = {
         };
       }
 
-      return _extends({}, popperConfig, this._config.popperConfig);
+      return _objectSpread2(_objectSpread2({}, popperConfig), this._config.popperConfig);
     } // Static
     ;
 
@@ -4242,7 +4275,7 @@ module.exports = {
    */
 
   var NAME$5 = 'modal';
-  var VERSION$5 = '4.5.2';
+  var VERSION$5 = '4.5.0';
   var DATA_KEY$5 = 'bs.modal';
   var EVENT_KEY$5 = "." + DATA_KEY$5;
   var DATA_API_KEY$5 = '.data-api';
@@ -4434,7 +4467,7 @@ module.exports = {
     ;
 
     _proto._getConfig = function _getConfig(config) {
-      config = _extends({}, Default$3, config);
+      config = _objectSpread2(_objectSpread2({}, Default$3), config);
       Util.typeCheckConfig(NAME$5, config, DefaultType$3);
       return config;
     };
@@ -4450,24 +4483,11 @@ module.exports = {
           return;
         }
 
-        var isModalOverflowing = this._element.scrollHeight > document.documentElement.clientHeight;
-
-        if (!isModalOverflowing) {
-          this._element.style.overflowY = 'hidden';
-        }
-
         this._element.classList.add(CLASS_NAME_STATIC);
 
-        var modalTransitionDuration = Util.getTransitionDurationFromElement(this._dialog);
-        $(this._element).off(Util.TRANSITION_END);
+        var modalTransitionDuration = Util.getTransitionDurationFromElement(this._element);
         $(this._element).one(Util.TRANSITION_END, function () {
           _this3._element.classList.remove(CLASS_NAME_STATIC);
-
-          if (!isModalOverflowing) {
-            $(_this3._element).one(Util.TRANSITION_END, function () {
-              _this3._element.style.overflowY = '';
-            }).emulateTransitionEnd(_this3._element, modalTransitionDuration);
-          }
         }).emulateTransitionEnd(modalTransitionDuration);
 
         this._element.focus();
@@ -4492,8 +4512,6 @@ module.exports = {
       this._element.removeAttribute('aria-hidden');
 
       this._element.setAttribute('aria-modal', true);
-
-      this._element.setAttribute('role', 'dialog');
 
       if ($(this._dialog).hasClass(CLASS_NAME_SCROLLABLE) && modalBody) {
         modalBody.scrollTop = 0;
@@ -4581,8 +4599,6 @@ module.exports = {
       this._element.setAttribute('aria-hidden', true);
 
       this._element.removeAttribute('aria-modal');
-
-      this._element.removeAttribute('role');
 
       this._isTransitioning = false;
 
@@ -4765,7 +4781,7 @@ module.exports = {
       return this.each(function () {
         var data = $(this).data(DATA_KEY$5);
 
-        var _config = _extends({}, Default$3, $(this).data(), typeof config === 'object' && config ? config : {});
+        var _config = _objectSpread2(_objectSpread2(_objectSpread2({}, Default$3), $(this).data()), typeof config === 'object' && config ? config : {});
 
         if (!data) {
           data = new Modal(this, _config);
@@ -4815,7 +4831,7 @@ module.exports = {
       target = document.querySelector(selector);
     }
 
-    var config = $(target).data(DATA_KEY$5) ? 'toggle' : _extends({}, $(target).data(), $(this).data());
+    var config = $(target).data(DATA_KEY$5) ? 'toggle' : _objectSpread2(_objectSpread2({}, $(target).data()), $(this).data());
 
     if (this.tagName === 'A' || this.tagName === 'AREA') {
       event.preventDefault();
@@ -4852,8 +4868,8 @@ module.exports = {
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.5.2): tools/sanitizer.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+   * Bootstrap (v4.5.0): tools/sanitizer.js
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
   var uriAttrs = ['background', 'cite', 'href', 'itemtype', 'longdesc', 'poster', 'src', 'xlink:href'];
@@ -4978,7 +4994,7 @@ module.exports = {
    */
 
   var NAME$6 = 'tooltip';
-  var VERSION$6 = '4.5.2';
+  var VERSION$6 = '4.5.0';
   var DATA_KEY$6 = 'bs.tooltip';
   var EVENT_KEY$6 = "." + DATA_KEY$6;
   var JQUERY_NO_CONFLICT$6 = $.fn[NAME$6];
@@ -5366,7 +5382,7 @@ module.exports = {
           return _this3._handlePopperPlacementChange(data);
         }
       };
-      return _extends({}, defaultBsConfig, this.config.popperConfig);
+      return _objectSpread2(_objectSpread2({}, defaultBsConfig), this.config.popperConfig);
     };
 
     _proto._getOffset = function _getOffset() {
@@ -5376,7 +5392,7 @@ module.exports = {
 
       if (typeof this.config.offset === 'function') {
         offset.fn = function (data) {
-          data.offsets = _extends({}, data.offsets, _this4.config.offset(data.offsets, _this4.element) || {});
+          data.offsets = _objectSpread2(_objectSpread2({}, data.offsets), _this4.config.offset(data.offsets, _this4.element) || {});
           return data;
         };
       } else {
@@ -5431,7 +5447,7 @@ module.exports = {
       $(this.element).closest('.modal').on('hide.bs.modal', this._hideModalHandler);
 
       if (this.config.selector) {
-        this.config = _extends({}, this.config, {
+        this.config = _objectSpread2(_objectSpread2({}, this.config), {}, {
           trigger: 'manual',
           selector: ''
         });
@@ -5531,7 +5547,7 @@ module.exports = {
           delete dataAttributes[dataAttr];
         }
       });
-      config = _extends({}, this.constructor.Default, dataAttributes, typeof config === 'object' && config ? config : {});
+      config = _objectSpread2(_objectSpread2(_objectSpread2({}, this.constructor.Default), dataAttributes), typeof config === 'object' && config ? config : {});
 
       if (typeof config.delay === 'number') {
         config.delay = {
@@ -5690,21 +5706,21 @@ module.exports = {
    */
 
   var NAME$7 = 'popover';
-  var VERSION$7 = '4.5.2';
+  var VERSION$7 = '4.5.0';
   var DATA_KEY$7 = 'bs.popover';
   var EVENT_KEY$7 = "." + DATA_KEY$7;
   var JQUERY_NO_CONFLICT$7 = $.fn[NAME$7];
   var CLASS_PREFIX$1 = 'bs-popover';
   var BSCLS_PREFIX_REGEX$1 = new RegExp("(^|\\s)" + CLASS_PREFIX$1 + "\\S+", 'g');
 
-  var Default$5 = _extends({}, Tooltip.Default, {
+  var Default$5 = _objectSpread2(_objectSpread2({}, Tooltip.Default), {}, {
     placement: 'right',
     trigger: 'click',
     content: '',
     template: '<div class="popover" role="tooltip">' + '<div class="arrow"></div>' + '<h3 class="popover-header"></h3>' + '<div class="popover-body"></div></div>'
   });
 
-  var DefaultType$5 = _extends({}, Tooltip.DefaultType, {
+  var DefaultType$5 = _objectSpread2(_objectSpread2({}, Tooltip.DefaultType), {}, {
     content: '(string|element|function)'
   });
 
@@ -5870,7 +5886,7 @@ module.exports = {
    */
 
   var NAME$8 = 'scrollspy';
-  var VERSION$8 = '4.5.2';
+  var VERSION$8 = '4.5.0';
   var DATA_KEY$8 = 'bs.scrollspy';
   var EVENT_KEY$8 = "." + DATA_KEY$8;
   var DATA_API_KEY$6 = '.data-api';
@@ -5984,7 +6000,7 @@ module.exports = {
     ;
 
     _proto._getConfig = function _getConfig(config) {
-      config = _extends({}, Default$6, typeof config === 'object' && config ? config : {});
+      config = _objectSpread2(_objectSpread2({}, Default$6), typeof config === 'object' && config ? config : {});
 
       if (typeof config.target !== 'string' && Util.isElement(config.target)) {
         var id = $(config.target).attr('id');
@@ -6162,7 +6178,7 @@ module.exports = {
    */
 
   var NAME$9 = 'tab';
-  var VERSION$9 = '4.5.2';
+  var VERSION$9 = '4.5.0';
   var DATA_KEY$9 = 'bs.tab';
   var EVENT_KEY$9 = "." + DATA_KEY$9;
   var DATA_API_KEY$7 = '.data-api';
@@ -6388,7 +6404,7 @@ module.exports = {
    */
 
   var NAME$a = 'toast';
-  var VERSION$a = '4.5.2';
+  var VERSION$a = '4.5.0';
   var DATA_KEY$a = 'bs.toast';
   var EVENT_KEY$a = "." + DATA_KEY$a;
   var JQUERY_NO_CONFLICT$a = $.fn[NAME$a];
@@ -6441,8 +6457,6 @@ module.exports = {
         return;
       }
 
-      this._clearTimeout();
-
       if (this._config.animation) {
         this._element.classList.add(CLASS_NAME_FADE$5);
       }
@@ -6491,7 +6505,8 @@ module.exports = {
     };
 
     _proto.dispose = function dispose() {
-      this._clearTimeout();
+      clearTimeout(this._timeout);
+      this._timeout = null;
 
       if (this._element.classList.contains(CLASS_NAME_SHOW$7)) {
         this._element.classList.remove(CLASS_NAME_SHOW$7);
@@ -6505,7 +6520,7 @@ module.exports = {
     ;
 
     _proto._getConfig = function _getConfig(config) {
-      config = _extends({}, Default$7, $(this._element).data(), typeof config === 'object' && config ? config : {});
+      config = _objectSpread2(_objectSpread2(_objectSpread2({}, Default$7), $(this._element).data()), typeof config === 'object' && config ? config : {});
       Util.typeCheckConfig(NAME$a, config, this.constructor.DefaultType);
       return config;
     };
@@ -6535,11 +6550,6 @@ module.exports = {
       } else {
         complete();
       }
-    };
-
-    _proto._clearTimeout = function _clearTimeout() {
-      clearTimeout(this._timeout);
-      this._timeout = null;
     } // Static
     ;
 
@@ -6981,7 +6991,7 @@ exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base
 
 
 // module
-exports.push([module.i, ".react-tabs {\n  -webkit-tap-highlight-color: transparent;\n}\n\n.react-tabs__tab-list {\n  border-bottom: 0px solid #aaa;\n  margin: 0 0 0px;\n  padding: 0;\n}\n\n.react-tabs__tab {\n  border: 1px solid transparent;\n  border-bottom: none;\n  bottom: -1px;\n  position: relative;\n  list-style: none;\n  padding: 6px 12px;\n  cursor: pointer;\n}\n\n.react-tabs__tab--selected {\n  /* border-color: #aaa; */\n  color: white;\n  border-radius: 5px 5px 0 0;\n}\n\n.react-tabs__tab--disabled {\n  color: GrayText;\n  cursor: default;\n}\n\n.react-tabs__tab:focus {\n  box-shadow: 0 0 5px hsl(208, 99%, 50%);\n  border-color: hsl(208, 99%, 50%);\n  outline: none;\n}\n\n.react-tabs__tab:focus:after {\n  content: \"\";\n  position: absolute;\n  height: 5px;\n  left: -4px;\n  right: -4px;\n  bottom: -5px;\n  background: #fff;\n}\n\n.react-tabs__tab-panel {\n  display: none;\n}\n\n.react-tabs__tab-panel--selected {\n  display: block;\n}\n", ""]);
+exports.push([module.i, ".react-tabs {\n  -webkit-tap-highlight-color: transparent;\n}\n\n.react-tabs__tab-list {\n  border-bottom: 1px solid #aaa;\n  margin: 0 0 10px;\n  padding: 0;\n}\n\n.react-tabs__tab {\n  display: inline-block;\n  border: 1px solid transparent;\n  border-bottom: none;\n  bottom: -1px;\n  position: relative;\n  list-style: none;\n  padding: 6px 12px;\n  cursor: pointer;\n}\n\n.react-tabs__tab--selected {\n  background: #fff;\n  border-color: #aaa;\n  color: black;\n  border-radius: 5px 5px 0 0;\n}\n\n.react-tabs__tab--disabled {\n  color: GrayText;\n  cursor: default;\n}\n\n.react-tabs__tab:focus {\n  box-shadow: 0 0 5px hsl(208, 99%, 50%);\n  border-color: hsl(208, 99%, 50%);\n  outline: none;\n}\n\n.react-tabs__tab:focus:after {\n  content: \"\";\n  position: absolute;\n  height: 5px;\n  left: -4px;\n  right: -4px;\n  bottom: -5px;\n  background: #fff;\n}\n\n.react-tabs__tab-panel {\n  display: none;\n}\n\n.react-tabs__tab-panel--selected {\n  display: block;\n}\n", ""]);
 
 // exports
 
@@ -7020,7 +7030,7 @@ exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base
 
 
 // module
-exports.push([module.i, "/* Slider */\n.slick-slider\n{\n    position: relative;\n\n    display: block;\n    box-sizing: border-box;\n    width: 100%;\n    height: 400px;\n\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    -webkit-touch-callout: none;\n    -khtml-user-select: none;\n    touch-action: pan-y;\n    -webkit-tap-highlight-color: transparent;\n}\n\n.slick-list\n{\n    position: relative;\n\n    display: block;\n    overflow: hidden;\n\n    margin: 0;\n    padding: 0;\n}\n.slick-list:focus\n{\n    outline: none;\n}\n.slick-list.dragging\n{\n    cursor: pointer;\n    cursor: hand;\n}\n\n.slick-slider .slick-track,\n.slick-slider .slick-list\n{\n    transform: translate3d(0, 0, 0);\n}\n\n.slick-track\n{\n    position: relative;\n    top: 0;\n    left: 0;\n\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n.slick-track:before,\n.slick-track:after\n{\n    display: table;\n\n    content: '';\n}\n.slick-track:after\n{\n    clear: both;\n}\n.slick-loading .slick-track\n{\n    visibility: hidden;\n}\n\n.slick-slide\n{\n    display: none;\n    float: left;\n\n    height: 100%;\n    min-height: 1px;\n}\n[dir='rtl'] .slick-slide\n{\n    float: right;\n}\n.slick-slide img\n{\n    display: block;\n}\n.slick-slide.slick-loading img\n{\n    display: none;\n}\n.slick-slide.dragging img\n{\n    pointer-events: none;\n}\n.slick-initialized .slick-slide\n{\n    display: block;\n}\n.slick-loading .slick-slide\n{\n    visibility: hidden;\n}\n.slick-vertical .slick-slide\n{\n    display: block;\n\n    height: auto;\n\n    border: 1px solid transparent;\n}\n.slick-arrow.slick-hidden {\n    display: none;\n}\n", ""]);
+exports.push([module.i, "/* Slider */\n.slick-slider\n{\n    position: relative;\n\n    display: block;\n    box-sizing: border-box;\n\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    -webkit-touch-callout: none;\n    -khtml-user-select: none;\n    touch-action: pan-y;\n    -webkit-tap-highlight-color: transparent;\n}\n\n.slick-list\n{\n    position: relative;\n\n    display: block;\n    overflow: hidden;\n\n    margin: 0;\n    padding: 0;\n}\n.slick-list:focus\n{\n    outline: none;\n}\n.slick-list.dragging\n{\n    cursor: pointer;\n    cursor: hand;\n}\n\n.slick-slider .slick-track,\n.slick-slider .slick-list\n{\n    transform: translate3d(0, 0, 0);\n}\n\n.slick-track\n{\n    position: relative;\n    top: 0;\n    left: 0;\n\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n.slick-track:before,\n.slick-track:after\n{\n    display: table;\n\n    content: '';\n}\n.slick-track:after\n{\n    clear: both;\n}\n.slick-loading .slick-track\n{\n    visibility: hidden;\n}\n\n.slick-slide\n{\n    display: none;\n    float: left;\n\n    height: 100%;\n    min-height: 1px;\n}\n[dir='rtl'] .slick-slide\n{\n    float: right;\n}\n.slick-slide img\n{\n    display: block;\n}\n.slick-slide.slick-loading img\n{\n    display: none;\n}\n.slick-slide.dragging img\n{\n    pointer-events: none;\n}\n.slick-initialized .slick-slide\n{\n    display: block;\n}\n.slick-loading .slick-slide\n{\n    visibility: hidden;\n}\n.slick-vertical .slick-slide\n{\n    display: block;\n\n    height: auto;\n\n    border: 1px solid transparent;\n}\n.slick-arrow.slick-hidden {\n    display: none;\n}\n", ""]);
 
 // exports
 
@@ -7078,7 +7088,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".body {\r\n    background-color: #ffffff;\r\n}\r\n\r\n.container-himp {\r\n    text-align: center;\r\n    padding-top: 120px;\r\n    padding-bottom: 100px;\r\n    background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n    -webkit-background-clip: text;\r\n    -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.himp-maha{\r\n    text-align: center;\r\n}\r\n\r\n.card {\r\n    height: 500px;\r\n    border-radius: 0;\r\n    padding-left: 0px;\r\n    padding-right: 0px;\r\n}\r\n\r\n.fakultas-title {\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    width: 85%;\r\n    transform: translate(-50%, -50%);\r\n    text-align: center;\r\n    color: #fff;\r\n    font-weight: bold;\r\n    text-shadow: 1px 2px 0 #808080;\r\n    font-size: 3vh;\r\n}\r\n\r\n.set {\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\n.heads-title {\r\n    position: absolute;\r\n    top: 20%;\r\n    left: 10%;\r\n    color: #fff;\r\n    font-weight: bold;\r\n    text-shadow: 1px 2px 0 #808080;\r\n    -webkit-text-orientation: upright;\r\n            text-orientation: upright;\r\n    -ms-writing-mode: tb-rl;\r\n        writing-mode: vertical-rl;\r\n}\r\n\r\n.bg {\r\n    background: #08597D;\r\n}\r\n\r\n/* .selectionholder {\r\n    height: 65px;\r\n    width: 1138px;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    padding: 5px;\r\n    position: relative;\r\n    border-radius: 5px;\r\n    border-style: solid;\r\n    /* background-color: red; \r\n}*/\r\n\r\n.himpholder {\r\n    height: 750px;\r\n    width: 1138px;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    position: relative;\r\n    /* background-color: chartreuse; */\r\n}\r\n\r\n.logoholder {\r\n    left: 6vh;\r\n    top: 15.5%;\r\n    height: 400px;\r\n    width: 400px;\r\n    padding-top: 3vh;\r\n    position: relative;\r\n    /* background-color: red; */\r\n}\r\n\r\n.logo {\r\n    height: 70%;\r\n    width: 70%;\r\n    margin: auto;\r\n    position: relative;\r\n    overflow: hidden;\r\n    /* background-color: yellow; */\r\n}\r\n\r\n.descholder {\r\n    left: 54vh;\r\n    top: -41.5%;\r\n    height: 400px;\r\n    width: 500px;\r\n    position: relative;\r\n    /* background-color:blue; */\r\n}\r\n\r\n.titlebar {\r\n    height: 30px;\r\n    width: 80px;\r\n    left: 2vh;\r\n    top: 3.5%;\r\n    position: relative;\r\n    /* background-color: orange; */\r\n}\r\n\r\n.himpdesc {\r\n    height: 320px;\r\n    width: 465px;\r\n    left: 2vh;\r\n    top: 6.5%;\r\n    position: relative;\r\n    /* background-color: purple; */\r\n}\r\n\r\n.himptab {\r\n    height: 60px;\r\n    width: 60px;\r\n    left: 110vh;\r\n    top: 80%;\r\n    /* background-color: red; */\r\n    position: relative;\r\n}\r\n\r\n.tabtitle {\r\n    height: 25px;\r\n    width: 250px;\r\n    right: -69.5%;\r\n    top: 82%;\r\n    position: relative;\r\n    /* background-color: royalblue; */\r\n}\r\n\r\n.backbttn {\r\n    height: 35px;\r\n    width: 35px;\r\n    left: 5vh;\r\n    top: 5vh;\r\n    position: absolute;\r\n    /* background-color: royalblue; */\r\n}\r\n\r\n.sosmed-position {\r\n    height: 35px;\r\n    width: 600px;\r\n    margin-top: 10px;\r\n    margin-bottom: 5px;\r\n    position: relative;\r\n    /* background-color: seagreen; */\r\n\r\n}\r\n\r\n/* bg color ilkom */\r\n.ilkomfilter {\r\n    background: linear-gradient(180deg, #FFE482 0%, #FFEBCD 100%);\r\n  }\r\n\r\n/* bg color hmdkv */\r\n.hmdkvfilter {\r\n    background: linear-gradient(180deg, #FFA441 0%, #FFB058 20.31%, #FFEBCD 100%);\r\n  }\r\n\r\n/* bg color hmftv */\r\n.hmftvfilter {\r\n    background: linear-gradient(0.4deg, rgba(255, 255, 255, 0) -35.32%, #E94D50 58.85%, #7B4895 99.62%);\r\n  }\r\n\r\n/* bg color himars */\r\n.himarsfilter {\r\n    background: linear-gradient(0.4deg, rgba(255, 255, 255, 0) -35.32%, #1E968F 58.85%, #0D3E65 99.62%);\r\n  }\r\n\r\n/* bg color hmif */\r\n.hmiffilter {\r\n    background: linear-gradient(180deg, #FF7F00 0%, rgba(255, 173, 84, 0) 100%);\r\n  }\r\n\r\n/* bg color himfera */\r\n.himferafilter {\r\n    background: linear-gradient(180deg, #4788D3 1.04%, #C5DFFF 100%);\r\n  }\r\n\r\n/* bg color himsi */\r\n.himsifilter {\r\n    background: linear-gradient(180deg, #1354A2 1.04%, #A2CDFF 100%);\r\n  }\r\n\r\n/* bg color aces */\r\n.acesfilter {\r\n    background: linear-gradient(180deg, #FFA441 0%, #FFB058 20.31%, #FFEBCD 100%);\r\n  }\r\n\r\n/* bg color himtara */\r\n.himtarafilter {\r\n    background: linear-gradient(180deg, #2C3987 0%, #CFDCFC 100%);\r\n  }\r\n\r\n  /* bg color himma */\r\n.himmafilter {\r\n    background: linear-gradient(180deg, #D4DEE9 25%, #FFFFFF 100%);\r\n  }\r\n\r\n  /* bg color hmp */\r\n.hmpfilter {\r\n    background: linear-gradient(180.03deg, #70BAFF -27.17%, rgba(255, 255, 255, 0) 99.98%), #0E77A4;\r\n  }\r\n\r\n.logoholder-slick {\r\n    height: 100%;\r\n    width: 100%;\r\n    position: absolute;\r\n}\r\n\r\n.logo-slick {\r\n    height: 100%;\r\n    width: 100%;\r\n    position: absolute;\r\n}\r\n\r\n.bar-slick {\r\n    height: 100%;\r\n    width: 100%;\r\n    position: absolute;\r\n  }\r\n\r\n.tabs {\r\n    height: 100%;\r\n    width: 100%;\r\n    position: relative;\r\n    float: right;\r\n}\r\n\r\n.titles {\r\n    height: 100%;\r\n    position: relative;\r\n    float: right;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n}\r\n\r\n.caption-position {\r\n    position: relative;\r\n    height: auto;\r\n    width: 100%;\r\n    overflow-wrap: break-word;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 12.5px;\r\n    overflow: hidden;\r\n}\r\n\r\n.caption-modif {\r\n    color: black;\r\n}\r\n\r\n.caption-modif-white {\r\n    color: white;\r\n}\r\n\r\n.back {\r\n  position: absolute;\r\n  height: 100%;\r\n  width: 100%;\r\n}\r\n\r\n.sosmed {\r\n  border-radius: 3px;\r\n  border-style: solid;\r\n  padding: 5px;\r\n  margin-right: 10px;\r\n  color: black;\r\n  font-family: 'Montserrat', sans-serif;\r\n  font-weight: bold;\r\n  font-size: 13.5px;\r\n}\r\n\r\n.sosmed-white {\r\n    border-radius: 3px;\r\n    border-style: solid;\r\n    padding: 5px;\r\n    margin-right: 10px;\r\n    color: white;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 13.5px;\r\n}\r\n\r\n.sosmedicon {\r\n  height: 100%;\r\n  weight: 100%;\r\n  position: absolute;\r\n}\r\n\r\n.himp-slider-container {\r\n    width: 100%;\r\n    height: auto; /*Tinggi Box luar Logo nya*/\r\n    background-color: #ffffff;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.himpsliderscss {\r\n    width: 1138px;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}", ""]);
+exports.push([module.i, ".body {\r\n    background-color: #ffffff;\r\n}\r\n\r\n.container-himp {\r\n    text-align: center;\r\n    padding-top: 120px;\r\n    padding-bottom: 100px;\r\n    background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n    -webkit-background-clip: text;\r\n    -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.himp-maha{\r\n    text-align: center;\r\n}\r\n\r\n.card {\r\n    height: 500px;\r\n    border-radius: 0;\r\n    padding-left: 0px;\r\n    padding-right: 0px;\r\n}\r\n\r\n.fakultas-title {\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    width: 85%;\r\n    transform: translate(-50%, -50%);\r\n    text-align: center;\r\n    color: #fff;\r\n    font-weight: bold;\r\n    text-shadow: 1px 2px 0 #808080;\r\n    font-size: 3vh;\r\n}\r\n\r\n.set {\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\n.heads-title {\r\n    position: absolute;\r\n    top: 20%;\r\n    left: 10%;\r\n    color: #fff;\r\n    font-weight: bold;\r\n    text-shadow: 1px 2px 0 #808080;\r\n    -webkit-text-orientation: upright;\r\n            text-orientation: upright;\r\n    -ms-writing-mode: tb-rl;\r\n        writing-mode: vertical-rl;\r\n}\r\n\r\n.bg {\r\n    background: #08597D;\r\n}\r\n\r\n/* .selectionholder {\r\n    height: 65px;\r\n    width: 1138px;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    padding: 5px;\r\n    position: relative;\r\n    border-radius: 5px;\r\n    border-style: solid;\r\n    /* background-color: red; \r\n}*/\r\n\r\n.testrun {\r\n    margin-top: 150px;\r\n}\r\n\r\n.blanket {\r\n    padding: 0;\r\n    margin: 0;\r\n    width: 100%;\r\n    height: 100%;\r\n    border: none;\r\n}\r\n\r\n.himpholder {\r\n    height: 700px;\r\n    width: 1138px;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    position: relative;\r\n    /* background-color: chartreuse; */\r\n}\r\n\r\n.logoholder {\r\n    left: 6vh;\r\n    top: 15.5%;\r\n    height: 400px;\r\n    width: 400px;\r\n    padding-top: 3vh;\r\n    position: relative;\r\n    /* background-color: red; */\r\n}\r\n\r\n.logo {\r\n    height: 70%;\r\n    width: 70%;\r\n    margin: auto;\r\n    position: relative;\r\n    overflow: hidden;\r\n    /* background-color: yellow; */\r\n}\r\n\r\n.descholder {\r\n    left: 54vh;\r\n    top: -41.5%;\r\n    height: 400px;\r\n    width: 500px;\r\n    position: relative;\r\n    /* background-color:blue; */\r\n}\r\n\r\n.titlebar {\r\n    height: 30px;\r\n    width: 80px;\r\n    left: 2vh;\r\n    top: 3.5%;\r\n    position: relative;\r\n    /* background-color: orange; */\r\n}\r\n\r\n.himpdesc {\r\n    height: 320px;\r\n    width: 465px;\r\n    left: 2vh;\r\n    top: 6.5%;\r\n    position: relative;\r\n    /* background-color: purple; */\r\n}\r\n\r\n.himptabs {\r\n    height: 100px;\r\n    width: 400px;\r\n    top: 80%;\r\n    right: 0;\r\n    margin-right: 2%;\r\n    margin-bottom: 15%;\r\n    /* background-color: red; */\r\n    position: absolute;\r\n    padding: 20px;\r\n}\r\n\r\n.himptab {\r\n    height: 60px;\r\n    width: 60px;\r\n    right: 0;\r\n    top: 0;\r\n    margin-left: 3px;\r\n    /* background-color: red; */\r\n    position: relative;\r\n    float: right;\r\n}\r\n\r\n.himptabempty {\r\n    height: 60px;\r\n    width: 60px;\r\n    right: 0;\r\n    top: 0;\r\n    margin: 5px;\r\n    /* background-color: red; */\r\n    position: relative;\r\n    float: right;\r\n    opacity: 0;\r\n}\r\n\r\n.tabs {\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\n\r\n.tabtitle {\r\n    height: 25px;\r\n    width: 250px;\r\n    right: 0;\r\n    position: relative;\r\n    float: right;\r\n    margin-top: 10px;\r\n    /* background-color: royalblue; */\r\n}\r\n\r\n.titles {\r\n    height: 100%;\r\n    position: relative;\r\n    float: right;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n}\r\n\r\n.backbttn {\r\n    height: 35px;\r\n    width: 35px;\r\n    left: 5vh;\r\n    top: 5vh;\r\n    position: absolute;\r\n    /* background-color: royalblue; */\r\n}\r\n\r\n.sosmed-position {\r\n    height: 35px;\r\n    width: 600px;\r\n    margin-top: 10px;\r\n    margin-bottom: 5px;\r\n    position: relative;\r\n    /* background-color: seagreen; */\r\n\r\n}\r\n\r\n/* bg color ilkom */\r\n.ilkomfilter {\r\n    background: linear-gradient(180deg, #FFE482 0%, #FFEBCD 100%);\r\n  }\r\n\r\n/* bg color hmdkv */\r\n.hmdkvfilter {\r\n    background: linear-gradient(180deg, #FFA441 0%, #FFB058 20.31%, #FFEBCD 100%);\r\n  }\r\n\r\n/* bg color hmftv */\r\n.hmftvfilter {\r\n    background: linear-gradient(0.4deg, rgba(255, 255, 255, 0) -35.32%, #E94D50 58.85%, #7B4895 99.62%);\r\n  }\r\n\r\n/* bg color himars */\r\n.himarsfilter {\r\n    background: linear-gradient(0.4deg, rgba(255, 255, 255, 0) -35.32%, #1E968F 58.85%, #0D3E65 99.62%);\r\n  }\r\n\r\n/* bg color hmif */\r\n.hmiffilter {\r\n    background: linear-gradient(180deg, #FF7F00 0%, rgba(255, 173, 84, 0) 100%);\r\n  }\r\n\r\n/* bg color himfera */\r\n.himferafilter {\r\n    background: linear-gradient(180deg, #4788D3 1.04%, #C5DFFF 100%);\r\n  }\r\n\r\n/* bg color himsi */\r\n.himsifilter {\r\n    background: linear-gradient(180deg, #1354A2 1.04%, #A2CDFF 100%);\r\n  }\r\n\r\n/* bg color aces */\r\n.acesfilter {\r\n    background: linear-gradient(180deg, #FFA441 0%, #FFB058 20.31%, #FFEBCD 100%);\r\n  }\r\n\r\n/* bg color himtara */\r\n.himtarafilter {\r\n    background: linear-gradient(180deg, #2C3987 0%, #CFDCFC 100%);\r\n  }\r\n\r\n  /* bg color himma */\r\n.himmafilter {\r\n    background: linear-gradient(180deg, #D4DEE9 25%, #FFFFFF 100%);\r\n  }\r\n\r\n  /* bg color hmp */\r\n.hmpfilter {\r\n    background: linear-gradient(180.03deg, #70BAFF -27.17%, rgba(255, 255, 255, 0) 99.98%), #0E77A4;\r\n  }\r\n\r\n.logoholder-slick {\r\n    height: 100%;\r\n    width: 100%;\r\n    position: absolute;\r\n}\r\n\r\n.logo-slick {\r\n    height: 100%;\r\n    width: 100%;\r\n    position: absolute;\r\n}\r\n\r\n.bar-slick {\r\n    height: 100%;\r\n    width: 100%;\r\n    position: absolute;\r\n  }\r\n\r\n.caption-position {\r\n    position: relative;\r\n    height: auto;\r\n    width: 100%;\r\n    overflow-wrap: break-word;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 12.5px;\r\n    overflow: hidden;\r\n}\r\n\r\n.caption-modif {\r\n    color: black;\r\n}\r\n\r\n.caption-modif-white {\r\n    color: white;\r\n}\r\n\r\n.back {\r\n  position: absolute;\r\n  height: 100%;\r\n  width: 100%;\r\n}\r\n\r\n.sosmed {\r\n  border-radius: 3px;\r\n  border-style: solid;\r\n  padding: 5px;\r\n  margin-right: 10px;\r\n  color: black;\r\n  font-family: 'Montserrat', sans-serif;\r\n  font-weight: bold;\r\n  font-size: 13.5px;\r\n}\r\n\r\n.sosmed-white {\r\n    border-radius: 3px;\r\n    border-style: solid;\r\n    padding: 5px;\r\n    margin-right: 10px;\r\n    color: white;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 13.5px;\r\n}\r\n\r\n.sosmedicon {\r\n  height: 100%;\r\n  weight: 100%;\r\n  position: absolute;\r\n}\r\n\r\n.himp-slider-container {\r\n    width: 100%;\r\n    height: auto; /*Tinggi Box luar Logo nya*/\r\n    background-color: #ffffff;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.himpsliderscss {\r\n    width: 1138px;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}", ""]);
 
 // exports
 
@@ -19804,7 +19814,7 @@ module.exports = debounce;
   var undefined;
 
   /** Used as the semantic version number. */
-  var VERSION = '4.17.20';
+  var VERSION = '4.17.19';
 
   /** Used as the size to enable large array optimizations. */
   var LARGE_ARRAY_SIZE = 200;
@@ -35380,7 +35390,7 @@ module.exports = debounce;
      * // => [{ 'a': 4, 'b': 5, 'c': 6 }]
      *
      * // Checking for several possible values
-     * _.filter(objects, _.overSome([_.matches({ 'a': 1 }), _.matches({ 'a': 4 })]));
+     * _.filter(users, _.overSome([_.matches({ 'a': 1 }), _.matches({ 'a': 4 })]));
      * // => [{ 'a': 1, 'b': 2, 'c': 3 }, { 'a': 4, 'b': 5, 'c': 6 }]
      */
     function matches(source) {
@@ -35417,7 +35427,7 @@ module.exports = debounce;
      * // => { 'a': 4, 'b': 5, 'c': 6 }
      *
      * // Checking for several possible values
-     * _.filter(objects, _.overSome([_.matchesProperty('a', 1), _.matchesProperty('a', 4)]));
+     * _.filter(users, _.overSome([_.matchesProperty('a', 1), _.matchesProperty('a', 4)]));
      * // => [{ 'a': 1, 'b': 2, 'c': 3 }, { 'a': 4, 'b': 5, 'c': 6 }]
      */
     function matchesProperty(path, srcValue) {
@@ -87857,117 +87867,23 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 // import '../../css/reacthome.css';
 
 
-$(document).ready(function () {
-  $("#himpslidersilkom").lightSlider({
-    auto: false,
-    loop: false,
-    autoWidth: true,
-    responsive: [],
-    slideEndAnimation: true,
-    slideMargin: 2
-  });
-});
-$(document).ready(function () {
-  $("#himpslidersfsd").lightSlider({
-    auto: true,
-    loop: true,
-    autoWidth: true,
-    responsive: [],
-    slideEndAnimation: true,
-    slideMargin: 2,
-    pauseOnHover: true,
-    pause: 2200
-  });
-});
-$(document).ready(function () {
-  $("#himpslidersfti").lightSlider({
-    auto: true,
-    loop: true,
-    autoWidth: true,
-    responsive: [],
-    slideEndAnimation: true,
-    slideMargin: 2,
-    pauseOnHover: true,
-    pause: 2200
-  });
-});
-$(document).ready(function () {
-  $("#himpslidersbisnis").lightSlider({
-    auto: true,
-    loop: true,
-    autoWidth: true,
-    responsive: [],
-    slideEndAnimation: true,
-    slideMargin: 2,
-    pauseOnHover: true,
-    pause: 2200
-  });
-});
 
-var Himpunan = /*#__PURE__*/function (_Component) {
-  _inherits(Himpunan, _Component);
+var Ilkom = /*#__PURE__*/function (_React$Component) {
+  _inherits(Ilkom, _React$Component);
 
-  var _super = _createSuper(Himpunan);
+  var _super = _createSuper(Ilkom);
 
-  function Himpunan() {
-    _classCallCheck(this, Himpunan);
+  function Ilkom() {
+    _classCallCheck(this, Ilkom);
 
     return _super.apply(this, arguments);
   }
 
-  _createClass(Himpunan, [{
+  _createClass(Ilkom, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container-himp"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        className: "himp-maha"
-      }, "HIMPUNAN ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " MAHASISWA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Universitas Multimedia Nusantara terbagi menjadi 4 fakultas besar.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Keempat fakultas terbagi menjadi beberapa jurusan dengan dinaungi oleh ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "himpunan jurusan tersebut. Berikut merupakan ke 11 himpunan yang terdapat ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "pada Universitas Multimedia Nusantara")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
-        className: "card"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-        className: "heads-title"
-      }, "FAKULTAS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "set bg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
-        className: "card"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "set"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
-        className: "fakultas-title"
-      }, "ILMU KOMUNIKASI"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "set",
-        src: "assets/himp/ilkom.jpg"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
-        className: "card"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "set",
-        href: "#"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
-        className: "fakultas-title"
-      }, "SENI DAN DESAIN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "set",
-        src: "assets/himp/fsd.jpg"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
-        className: "card"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "set",
-        href: "#"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
-        className: "fakultas-title"
-      }, "TEKNIK INFORMATIKA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "set",
-        src: "assets/himp/fti.jpg"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
-        className: "card"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "set",
-        href: "#"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
-        className: "fakultas-title"
-      }, "BISNIS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "set",
-        src: "assets/himp/bisnis.jpg"
-      }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      /*#__PURE__*/
+      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himpsliderscss"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         id: "himpslidersilkom"
@@ -88021,7 +87937,298 @@ var Himpunan = /*#__PURE__*/function (_Component) {
       }, " LINE | @dmn8577"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed",
         href: "http://www.umn.ac.id"
-      }, " WEB | www.umn.ac.id")))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, " WEB | www.umn.ac.id"))))))));
+    }
+  }]);
+
+  return Ilkom;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+var Himpunan = /*#__PURE__*/function (_Component) {
+  _inherits(Himpunan, _Component);
+
+  var _super2 = _createSuper(Himpunan);
+
+  // constructor() {
+  //     super()
+  //     this.state={
+  //         showIlkom:true
+  //     }
+  // }
+  // operation() {
+  //     this.setState({
+  //         showIlkom:false
+  //     })
+  // }
+  function Himpunan() {
+    var _this;
+
+    _classCallCheck(this, Himpunan);
+
+    _this = _super2.call(this);
+    _this.state = {
+      showHideIlkom: false,
+      showHideFsd: false,
+      showHideFti: false,
+      showHideBisnis: false
+    };
+    _this.hideComponent = _this.hideComponent.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(Himpunan, [{
+    key: "hideComponent",
+    value: function hideComponent(name) {
+      switch (name) {
+        case "showHideIlkom":
+          this.setState({
+            showHideIlkom: !this.state.showHideIlkom
+          });
+          this.setState({
+            showHideFsd: false
+          });
+          this.setState({
+            showHideFti: false
+          });
+          this.setState({
+            showHideBisnis: false
+          });
+          break;
+
+        case "showHideFsd":
+          this.setState({
+            showHideFsd: !this.state.showHideFsd
+          });
+          this.setState({
+            showHideIlkom: false
+          });
+          this.setState({
+            showHideFti: false
+          });
+          this.setState({
+            showHideBisnis: false
+          });
+          break;
+
+        case "showHideFti":
+          this.setState({
+            showHideFti: !this.state.showHideFti
+          });
+          this.setState({
+            showHideIlkom: false
+          });
+          this.setState({
+            showHideFsd: false
+          });
+          this.setState({
+            showHideBisnis: false
+          });
+          break;
+
+        case "showHideBisnis":
+          this.setState({
+            showHideBisnis: !this.state.showHideBisnis
+          });
+          this.setState({
+            showHideIlkom: false
+          });
+          this.setState({
+            showHideFsd: false
+          });
+          this.setState({
+            showHideFti: false
+          });
+          break;
+
+        default:
+          null;
+      }
+
+      $(document).ready(function () {
+        $("#himpslidersilkom").lightSlider({
+          auto: false,
+          loop: false,
+          autoWidth: true,
+          responsive: [],
+          slideEndAnimation: false,
+          slideMargin: 2
+        });
+      });
+      $(document).ready(function () {
+        $("#himpslidersfsd").lightSlider({
+          auto: true,
+          loop: true,
+          autoWidth: true,
+          responsive: [],
+          slideEndAnimation: false,
+          slideMargin: 2,
+          pauseOnHover: true,
+          pause: 2200
+        });
+      });
+      $(document).ready(function () {
+        $("#himpslidersfti").lightSlider({
+          auto: true,
+          loop: true,
+          autoWidth: true,
+          responsive: [],
+          slideEndAnimation: false,
+          slideMargin: 2,
+          pauseOnHover: true,
+          pause: 2200
+        });
+      });
+      $(document).ready(function () {
+        $("#himpslidersbisnis").lightSlider({
+          auto: true,
+          loop: true,
+          autoWidth: true,
+          responsive: [],
+          slideEndAnimation: false,
+          slideMargin: 2,
+          pauseOnHover: true,
+          pause: 2200
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$state = this.state,
+          showHideIlkom = _this$state.showHideIlkom,
+          showHideFsd = _this$state.showHideFsd,
+          showHideFti = _this$state.showHideFti,
+          showHideBisnis = _this$state.showHideBisnis;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container-himp"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "himp-maha"
+      }, "HIMPUNAN ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " MAHASISWA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Universitas Multimedia Nusantara terbagi menjadi 4 fakultas besar.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Keempat fakultas terbagi menjadi beberapa jurusan dengan dinaungi oleh ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "himpunan jurusan tersebut. Berikut merupakan ke 11 himpunan yang terdapat ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "pada Universitas Multimedia Nusantara")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
+        className: "card"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+        className: "heads-title"
+      }, "FAKULTAS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "set bg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
+        className: "card"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "set"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "blanket",
+        onClick: function onClick() {
+          return _this2.hideComponent("showHideIlkom");
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+        className: "fakultas-title"
+      }, "ILMU KOMUNIKASI"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "set",
+        src: "assets/himp/ilkom.jpg"
+      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
+        className: "card"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "set"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "blanket",
+        onClick: function onClick() {
+          return _this2.hideComponent("showHideFsd");
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+        className: "fakultas-title"
+      }, "SENI DAN DESIGN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "set",
+        src: "assets/himp/fsd.jpg"
+      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
+        className: "card"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "set"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "blanket",
+        onClick: function onClick() {
+          return _this2.hideComponent("showHideFti");
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+        className: "fakultas-title"
+      }, "TEKNIK INFORMATIKA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "set",
+        src: "assets/himp/fti.jpg"
+      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
+        className: "card"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "set"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "blanket",
+        onClick: function onClick() {
+          return _this2.hideComponent("showHideBisnis");
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+        className: "fakultas-title"
+      }, "BISNIS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "set",
+        src: "assets/himp/bisnis.jpg"
+      })))))), showHideIlkom && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himpsliderscss"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        id: "himpslidersilkom"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himpholder ilkomfilter"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "backbttn"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "back",
+        src: "assets/himp/back.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptabs"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/imkom.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptabempty"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/imkom.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "tabtitle"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "titles"
+      }, "Fakultas Ilmu Komunikasi"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "logoholder"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "logoholder-slick",
+        src: "assets/himp/logo_holder.svg"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "logo"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "logo-slick",
+        src: "assets/himp/logo/imkom.svg"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "descholder"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "titlebar"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "bar-slick",
+        src: "assets/himp/logo/imkombar.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himpdesc"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "caption-position caption-modif"
+      }, "I\u2019M KOM merupakan himpunan mahasiswa yang berada di bawah naungan Fakultas Ilmu Komunikasi yang secara langsung membawahi dua program studi, Strategic Communication dan Multimedia Journalism, I\u2019M KOM menjadi satu-satunya himpunan mahasiswa di tingkat fakultas. I'M KOM berperan aktif dalam perkuliahan untuk membantu menjadi jembatan penghubung mahasiswa dengan pihak Program Studi."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "caption-position caption-modif"
+      }, "I'M KOM terus memberikan yang terbaik sehingga berdampak nyata dalam kehidupan perkuliahan dengan melaksanakan berbagai macam kegiatan seperti Communication Festival, PRIDE, COMMPRESS, FIKOM NIGHT, OMB Konten Prodi Ilmu Komunikasi, dan lainnya. Dengan rangkaian kegiatan yang diadakan, mahasiswa diharapkan mendapatkan pengalaman dalam berorganisasi yang dibutuhkan dalam dunia kerja."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "sosmed-position"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "sosmed",
+        href: "http://www.instagram.com/bemumn"
+      }, " IG | bemumn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "sosmed",
+        href: "http://line.me/ti/p/~@dmn8577"
+      }, " LINE | @dmn8577"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "sosmed",
+        href: "http://www.umn.ac.id"
+      }, " WEB | www.umn.ac.id")))))))), showHideFsd && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himpsliderscss"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         id: "himpslidersfsd"
@@ -88033,6 +88240,18 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "back",
         src: "assets/himp/back.svg"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptabs"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/himars.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/hmftv.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "tabs",
@@ -88041,7 +88260,7 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "tabtitle"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "titles"
-      }, "Fakultas Seni dan Design")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Fakultas Seni dan Design"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "logoholder"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "logoholder-slick",
@@ -88083,15 +88302,27 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "back",
         src: "assets/himp/back.svg"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptabs"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/himars.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "tabs",
         src: "assets/himp/logo/hmftv.svg"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/hmdkv.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "tabtitle"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "titles"
-      }, "Fakultas Seni dan Design")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Fakultas Seni dan Design"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "logoholder"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "logoholder-slick",
@@ -88133,15 +88364,27 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "back",
         src: "assets/himp/back.svg"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptabs"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "tabs",
         src: "assets/himp/logo/himars.svg"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/hmftv.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/hmdkv.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "tabtitle"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "titles"
-      }, "Fakultas Seni dan Design")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Fakultas Seni dan Design"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "logoholder"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "logoholder-slick",
@@ -88175,7 +88418,7 @@ var Himpunan = /*#__PURE__*/function (_Component) {
       }, " LINE | @dmn8577"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed-white",
         href: "http://www.umn.ac.id"
-      }, " WEB | www.umn.ac.id")))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, " WEB | www.umn.ac.id")))))))), showHideFti && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himpsliderscss"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         id: "himpslidersfti"
@@ -88187,6 +88430,23 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "back",
         src: "assets/himp/back.svg"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptabs"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/himsi.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/aces.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/hmif.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "tabs",
@@ -88195,7 +88455,7 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "tabtitle"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "titles"
-      }, "Fakultas Teknik Informatika")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Fakultas Teknik dan Informatika"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "logoholder"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "logoholder-slick",
@@ -88237,15 +88497,32 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "back",
         src: "assets/himp/back.svg"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptabs"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/himsi.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/aces.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "tabs",
         src: "assets/himp/logo/hmif.svg"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/himfera.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "tabtitle"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "titles"
-      }, "Fakultas Teknik Informatika")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Fakultas Teknik dan Informatika"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "logoholder"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "logoholder-slick",
@@ -88287,15 +88564,32 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "back",
         src: "assets/himp/back.svg"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptabs"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/himsi.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "tabs",
         src: "assets/himp/logo/aces.svg"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/hmif.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/himfera.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "tabtitle"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "titles"
-      }, "Fakultas Teknik Informatika")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Fakultas Teknik dan Informatika"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "logoholder"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "logoholder-slick",
@@ -88337,15 +88631,32 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "back",
         src: "assets/himp/back.svg"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptabs"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "tabs",
         src: "assets/himp/logo/himsi.svg"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/aces.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/hmif.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/himfera.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "tabtitle"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "titles"
-      }, "Fakultas Teknik Informatika")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Fakultas Teknik dan Informatika"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "logoholder"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "logoholder-slick",
@@ -88379,7 +88690,7 @@ var Himpunan = /*#__PURE__*/function (_Component) {
       }, " LINE | @dmn8577"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed-white",
         href: "http://www.umn.ac.id"
-      }, " WEB | www.umn.ac.id")))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, " WEB | www.umn.ac.id")))))))), showHideBisnis && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himpsliderscss"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         id: "himpslidersbisnis"
@@ -88391,6 +88702,18 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "back",
         src: "assets/himp/back.svg"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptabs"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/hmp.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/himtara.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "tabs",
@@ -88399,7 +88722,7 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "tabtitle"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "titles"
-      }, "Fakultas Bisnis")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Fakultas Bisnis"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "logoholder"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "logoholder-slick",
@@ -88441,15 +88764,27 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "back",
         src: "assets/himp/back.svg"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptabs"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/hmp.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "tabs",
         src: "assets/himp/logo/himtara.svg"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/himma.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "tabtitle"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "titles"
-      }, "Fakultas Bisnis")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Fakultas Bisnis"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "logoholder"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "logoholder-slick",
@@ -88491,15 +88826,27 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "back",
         src: "assets/himp/back.svg"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptabs"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "tabs",
         src: "assets/himp/logo/hmp.svg"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/himtara.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "himptab"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "tabs",
+        src: "assets/himp/logo/himma.svg"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "tabtitle"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "titles"
-      }, "Fakultas Bisnis")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Fakultas Bisnis"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "logoholder"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "logoholder-slick",
@@ -100228,8 +100575,8 @@ $("timeline-1").timeline();
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\websitebem\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\websitebem\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! c:\laragon\www\websitebem\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! c:\laragon\www\websitebem\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
