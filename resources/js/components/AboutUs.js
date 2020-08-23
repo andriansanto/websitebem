@@ -85,7 +85,7 @@ class AboutUs extends Component{
         try{
             const res = await fetch('http://127.0.0.1:8000/api/gen',{
                 headers:{
-                    'APP_KEY' : '$2y$10$pcvhQneM.7eHbKkH5CdPP.fwhn/BV4Jp6zclZB75j68eocwH7lrr.',
+                    'APP_KEY' : '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',
                     'Accept': 'application/json',
                     'Access-Control-Allow-Credentials':'true',
