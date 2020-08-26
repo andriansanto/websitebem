@@ -32,7 +32,7 @@
             <a class="navbar-brand d-flex" href="{{ url('/') }}">
                     <div><img src="/assets/bem2.png" style="height: 25px; border-right: 1px solid #333333;" class="pr-3"></div>
                     <div class="pl-3 text-umn">BEM UMN</div>
-            </a>
+            </a>            
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>

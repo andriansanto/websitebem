@@ -183,7 +183,7 @@ return(
         </div>
         <Container>
             <Row>
-                <Col className="card">
+                <Col className="card-fix">
                     <h2 className="heads-title">FAKULTAS</h2>
                     <img className="set bg"></img>
                 </Col>
@@ -227,9 +227,9 @@ return(
             <ul id="himpslidersilkom">
                 <li>
                     <div className="himpholder ilkomfilter" >
-                    <div className="backbttn">
+                    {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
-                    </div>
+                    </div> */}
                     <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/imkom.svg"></img>
@@ -261,9 +261,9 @@ return(
                                 I'M KOM terus memberikan yang terbaik sehingga berdampak nyata dalam kehidupan perkuliahan dengan melaksanakan berbagai macam kegiatan seperti Communication Festival, PRIDE, COMMPRESS, FIKOM NIGHT, OMB Konten Prodi Ilmu Komunikasi, dan lainnya. Dengan rangkaian kegiatan yang diadakan, mahasiswa diharapkan mendapatkan pengalaman dalam berorganisasi yang dibutuhkan dalam dunia kerja.
                             </p>
                             <div className="sosmed-position">
-                            <a className="sosmed" href="http://www.instagram.com/bemumn"> IG | bemumn</a>
-                            <a className="sosmed" href="http://line.me/ti/p/~@dmn8577"> LINE | @dmn8577</a>
-                            <a className="sosmed" href="http://www.umn.ac.id"> WEB | www.umn.ac.id</a>
+                            <a className="sosmed" href="http://www.instagram.com/imkom_umn"> IG | IMKOM UMN</a>
+                            <a className="sosmed" href="http://line.me/ti/p/~@nkj4600e"> LINE | @nkj4600e</a>
+                            <a className="sosmed" href="http://imkom.umn.ac.id"> WEB | www.imkom.umn.ac.id</a>
                             </div>
                         </div>
                     </div>
@@ -278,9 +278,9 @@ return(
             <ul id="himpslidersfsd">
                 <li>
                     <div className="himpholder hmdkvfilter" >
-                    <div className="backbttn">
+                    {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
-                    </div>
+                    </div> */}
                     <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/himars.svg"></img>
@@ -327,9 +327,9 @@ return(
                                 mahasiswa DKV UMN.
                             </p>
                             <div className="sosmed-position">
-                            <a className="sosmed" href="http://www.instagram.com/bemumn"> IG | bemumn</a>
-                            <a className="sosmed" href="http://line.me/ti/p/~@dmn8577"> LINE | @dmn8577</a>
-                            <a className="sosmed" href="http://www.umn.ac.id"> WEB | www.umn.ac.id</a>
+                            <a className="sosmed" href="http://www.instagram.com/hmdkv_umn"> IG | hmdkv_umn</a>
+                            <a className="sosmed" href="http://line.me/ti/p/~@ybc1316s"> LINE | @ybc1316s</a>
+                            <a className="sosmed" href=""> WEB | -</a>
                             </div>
                         </div>
                     </div>
@@ -337,9 +337,9 @@ return(
                 </li>
                 <li>
                     <div className="himpholder hmftvfilter" >
-                    <div className="backbttn">
+                    {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
-                    </div>
+                    </div> */}
                     <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/himars.svg"></img>
@@ -382,9 +382,9 @@ return(
                                 yang menjunjung tanggung jawab dan kebersamaan.
                             </p>
                             <div className="sosmed-position">
-                            <a className="sosmed-white" href="http://www.instagram.com/bemumn"> IG | bemumn</a>
-                            <a className="sosmed-white" href="http://line.me/ti/p/~@dmn8577"> LINE | @dmn8577</a>
-                            <a className="sosmed-white" href="http://www.umn.ac.id"> WEB | www.umn.ac.id</a>
+                            <a className="sosmed-white" href="http://www.instagram.com/hmfilm_umn"> IG | hmfilm_umn</a>
+                            <a className="sosmed-white" href="http://line.me/ti/p/~@msn8043i"> LINE | @msn8043i</a>
+                            <a className="sosmed-white" href=""> WEB | -</a>
                             </div>
                         </div>
                     </div>
@@ -392,9 +392,9 @@ return(
                 </li>
                 <li>
                     <div className="himpholder himarsfilter" >
-                    <div className="backbttn">
+                    {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
-                    </div>
+                    </div> */}
                     <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/himars.svg"></img>
@@ -429,9 +429,9 @@ return(
                                 HIMARS memiliki visi mahasiswa arsitektur UMN dapat proaktif di berbagai bidang dalam lingkup internal dan eksternal kampus serta membangun solidaritas antar sesama mahasiswa. Misi HIMARS adalah sarana yang menyalurkan aspirasi mahasiswa arsitektur UMN, memperluas hubungan baik internal maupun eksternal, serta meningkatkan kemampuan dalam berorganisasi yang dikemas dalam seluruh Program kerja HIMARS.
                             </p>
                             <div className="sosmed-position">
-                            <a className="sosmed-white" href="http://www.instagram.com/bemumn"> IG | bemumn</a>
-                            <a className="sosmed-white" href="http://line.me/ti/p/~@dmn8577"> LINE | @dmn8577</a>
-                            <a className="sosmed-white" href="http://www.umn.ac.id"> WEB | www.umn.ac.id</a>
+                            <a className="sosmed-white" href="http://www.instagram.com/himars_umn"> IG | himars_umn</a>
+                            <a className="sosmed-white" href="http://line.me/ti/p/~@daj7387i"> LINE | @daj7387i</a>
+                            <a className="sosmed-white" href=""> WEB | -</a>
                             </div>
                         </div>
                     </div>
@@ -446,9 +446,9 @@ return(
             <ul id="himpslidersfti">
                 <li>
                     <div className="himpholder himferafilter" >
-                    <div className="backbttn">
+                    {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
-                    </div>
+                    </div> */}
                     <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/himsi.svg"></img>
@@ -486,9 +486,9 @@ return(
                                 HIMFERA Gen 2 terdiri dari Badan Pengurus Harian, Divisi Akademik, Divisi Non Akademik, Divisi Humas, dan Divisi Desain Visual. Setiap divis mengurus program kerja sesuai dengan bidangnya. Program kerja dibuat berdasarkan kebutuhan dan aspirasi mahasiswa Teknik Fisika dan Teknik Elektro.
                             </p>
                             <div className="sosmed-position">
-                            <a className="sosmed" href="http://www.instagram.com/bemumn"> IG | bemumn</a>
-                            <a className="sosmed" href="http://line.me/ti/p/~@dmn8577"> LINE | @dmn8577</a>
-                            <a className="sosmed" href="http://www.umn.ac.id"> WEB | www.umn.ac.id</a>
+                            <a className="sosmed" href="http://www.instagram.com/himfera_umn"> IG | himfera_umn</a>
+                            <a className="sosmed" href="http://line.me/ti/p/~@636jllsn"> LINE | @636jllsn</a>
+                            <a className="sosmed" href=""> WEB | -</a>
                             </div>
                         </div>
                     </div>
@@ -496,9 +496,9 @@ return(
                 </li>
                 <li>
                     <div className="himpholder hmiffilter" >
-                    <div className="backbttn">
+                    {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
-                    </div>
+                    </div> */}
                     <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/himsi.svg"></img>
@@ -536,9 +536,9 @@ return(
                                 HMIF bersifat mandiri, kekeluargaan, adil, aspiratif, partisipatif, representatif, efektif, efisien, beserta transparan. HMIF diselenggarakan berdasarkan prinsip dari, oleh, dan untuk mahasiswa Informatika dengan memberi peranan serta keleluasaan lebih kepada mahasiswa.
                             </p>
                             <div className="sosmed-position">
-                            <a className="sosmed" href="http://www.instagram.com/bemumn"> IG | bemumn</a>
-                            <a className="sosmed" href="http://line.me/ti/p/~@dmn8577"> LINE | @dmn8577</a>
-                            <a className="sosmed" href="http://www.umn.ac.id"> WEB | www.umn.ac.id</a>
+                            <a className="sosmed" href="http://www.instagram.com/hmif.umn"> IG | hmif.umn</a>
+                            <a className="sosmed" href="http://line.me/ti/p/~@hmif.umn"> LINE | @hmif.umn</a>
+                            <a className="sosmed" href=""> WEB | -</a>
                             </div>
                         </div>
                     </div>
@@ -546,9 +546,9 @@ return(
                 </li>
                 <li>
                     <div className="himpholder acesfilter" >
-                    <div className="backbttn">
+                    {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
-                    </div>
+                    </div> */}
                     <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/himsi.svg"></img>
@@ -586,9 +586,9 @@ return(
                                 Pada gen 9, nama ACES berubah dari Himasikom (Himpunan Mahasiswa Sistem Komputer) dengan alasan Himasikom program studi kami juga mengalami perubahan nama dari Sistem Komputer menjadi Teknik Komputer. ACES juga mengadakan beberapa proker yang diharapkan bisa membantu memberikan gambaran mengenai kehidupan perkuliahan di prodi Teknik Komputer.
                             </p>
                             <div className="sosmed-position">
-                            <a className="sosmed" href="http://www.instagram.com/bemumn"> IG | bemumn</a>
-                            <a className="sosmed" href="http://line.me/ti/p/~@dmn8577"> LINE | @dmn8577</a>
-                            <a className="sosmed" href="http://www.umn.ac.id"> WEB | www.umn.ac.id</a>
+                            <a className="sosmed" href="http://www.instagram.com/acesumn"> IG | acesumn</a>
+                            <a className="sosmed" href="http://line.me/ti/p/~@acesumn"> LINE | @acesumn</a>
+                            <a className="sosmed" href=""> WEB | -</a>
                             </div>
                         </div>
                     </div>
@@ -596,9 +596,9 @@ return(
                 </li>
                 <li>
                     <div className="himpholder himsifilter" >
-                    <div className="backbttn">
+                    {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
-                    </div>
+                    </div> */}
                     <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/himsi.svg"></img>
@@ -636,9 +636,9 @@ return(
                                 Pada tahun 2010, DISC mengalami perubahan sebutan menjadi HIMSI. HIMSI Generasi 10 beranggotakan 16 orang orang mahasiswa sistem informasi terpilih untuk bertugas mengabdi kepada keluarga besar mahasiswa sistem informasi berdasarkan asas kekeluargaan.
                             </p>
                             <div className="sosmed-position">
-                            <a className="sosmed-white" href="http://www.instagram.com/bemumn"> IG | bemumn</a>
-                            <a className="sosmed-white" href="http://line.me/ti/p/~@dmn8577"> LINE | @dmn8577</a>
-                            <a className="sosmed-white" href="http://www.umn.ac.id"> WEB | www.umn.ac.id</a>
+                            <a className="sosmed-white" href="http://www.instagram.com/umn_si"> IG | umn_si</a>
+                            <a className="sosmed-white" href="http://line.me/ti/p/~@umn_si"> LINE | @umn_si</a>
+                            <a className="sosmed-white" href=""> WEB | -</a>
                             </div>
                         </div>
                     </div>
@@ -653,9 +653,9 @@ return(
             <ul id="himpslidersbisnis">
                 <li>
                     <div className="himpholder himmafilter" >
-                    <div className="backbttn">
+                    {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
-                    </div>
+                    </div> */}
                     <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/hmp.svg"></img>
@@ -690,9 +690,9 @@ return(
                                 HIMMA selalu berusaha menerima segala bentuk aspirasi dari Mahasiswa Manajemen agar dapat menciptakan kegiatan yang sesuai dengan keinginan dan kebutuhan mahasiswa. HIMMA selalu berusaha untuk menjadi lebih baik dan selalu memperbaiki kekurangan yang ada agar dapat terus memberikan yang terbaik bagi Program Studi Manajemen
                             </p>
                             <div className="sosmed-position">
-                            <a className="sosmed" href="http://www.instagram.com/bemumn"> IG | bemumn</a>
-                            <a className="sosmed" href="http://line.me/ti/p/~@dmn8577"> LINE | @dmn8577</a>
-                            <a className="sosmed" href="http://www.umn.ac.id"> WEB | www.umn.ac.id</a>
+                            <a className="sosmed" href="http://www.instagram.com/himma_umn"> IG | himma_umn</a>
+                            <a className="sosmed" href="http://line.me/ti/p/~@himma_umn"> LINE | @himma_umn</a>
+                            <a className="sosmed" href=""> WEB | -</a>
                             </div>
                         </div>
                     </div>
@@ -700,9 +700,9 @@ return(
                 </li>
                 <li>
                     <div className="himpholder himtarafilter" >
-                    <div className="backbttn">
+                    {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
-                    </div>
+                    </div> */}
                     <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/hmp.svg"></img>
@@ -737,9 +737,9 @@ return(
                                 HIMTARA selaku himpunan akuntasi UMN selalu membuat program kerja yang berlandaskan aspirasi dari para mahasiswa kauntasi sebagai suatu inspirasi bagi kami untuk menjadi lebih baik lagi.
                             </p>
                             <div className="sosmed-position">
-                            <a className="sosmed-white" href="http://www.instagram.com/bemumn"> IG | bemumn</a>
-                            <a className="sosmed-white" href="http://line.me/ti/p/~@dmn8577"> LINE | @dmn8577</a>
-                            <a className="sosmed-white" href="http://www.umn.ac.id"> WEB | www.umn.ac.id</a>
+                            <a className="sosmed-white" href="http://www.instagram.com/himtara"> IG | himtara</a>
+                            <a className="sosmed-white" href="http://line.me/ti/p/~@bkq4939z"> LINE | @bkq4939z</a>
+                            <a className="sosmed-white" href=""> WEB | -</a>
                             </div>
                         </div>
                     </div>
@@ -747,9 +747,9 @@ return(
                 </li>
                 <li>
                     <div className="himpholder hmpfilter" >
-                    <div className="backbttn">
+                    {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
-                    </div>
+                    </div> */}
                     <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/hmp.svg"></img>
@@ -784,9 +784,9 @@ return(
                                 HMP membantu menyalurkan ilmu dan kemampuan yang dimiliki baik dalam cakupan internal maupun eksternal UMN, dengan menyelenggarakan kegiatan yang sesuai. HMP akan terus berkembang agar dapat memberikan kontribusi lebih baik lagi bagi Mahasiswa maupun Prodi D3 Perhotelan UMN.
                             </p>
                             <div className="sosmed-position">
-                            <a className="sosmed-white" href="http://www.instagram.com/bemumn"> IG | bemumn</a>
-                            <a className="sosmed-white" href="http://line.me/ti/p/~@dmn8577"> LINE | @dmn8577</a>
-                            <a className="sosmed-white" href="http://www.umn.ac.id"> WEB | www.umn.ac.id</a>
+                            <a className="sosmed-white" href="http://www.instagram.com/hmp_umn"> IG | hmp_umn</a>
+                            <a className="sosmed-white" href="http://line.me/ti/p/~@iyz7068m"> LINE | @iyz7068m</a>
+                            <a className="sosmed-white" href=""> WEB | -</a>
                             </div>
                         </div>
                     </div>

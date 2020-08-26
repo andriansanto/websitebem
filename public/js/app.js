@@ -7088,7 +7088,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".body {\r\n    background-color: #ffffff;\r\n}\r\n\r\n.container-himp {\r\n    text-align: center;\r\n    padding-top: 120px;\r\n    padding-bottom: 100px;\r\n    background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n    -webkit-background-clip: text;\r\n    -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.himp-maha{\r\n    text-align: center;\r\n}\r\n\r\n.card {\r\n    height: 500px;\r\n    border-radius: 0;\r\n    padding-left: 0px;\r\n    padding-right: 0px;\r\n}\r\n\r\n.fakultas-title {\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    width: 85%;\r\n    transform: translate(-50%, -50%);\r\n    text-align: center;\r\n    color: #fff;\r\n    font-weight: bold;\r\n    text-shadow: 1px 2px 0 #808080;\r\n    font-size: 3vh;\r\n}\r\n\r\n.set {\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\n.heads-title {\r\n    position: absolute;\r\n    top: 20%;\r\n    left: 10%;\r\n    color: #fff;\r\n    font-weight: bold;\r\n    text-shadow: 1px 2px 0 #808080;\r\n    -webkit-text-orientation: upright;\r\n            text-orientation: upright;\r\n    -ms-writing-mode: tb-rl;\r\n        writing-mode: vertical-rl;\r\n}\r\n\r\n.bg {\r\n    background: #08597D;\r\n}\r\n\r\n/* .selectionholder {\r\n    height: 65px;\r\n    width: 1138px;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    padding: 5px;\r\n    position: relative;\r\n    border-radius: 5px;\r\n    border-style: solid;\r\n    /* background-color: red; \r\n}*/\r\n\r\n.testrun {\r\n    margin-top: 150px;\r\n}\r\n\r\n.blanket {\r\n    padding: 0;\r\n    margin: 0;\r\n    width: 100%;\r\n    height: 100%;\r\n    border: none;\r\n}\r\n\r\n.himpholder {\r\n    height: 700px;\r\n    width: 1138px;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    position: relative;\r\n    /* background-color: chartreuse; */\r\n}\r\n\r\n.logoholder {\r\n    left: 6vh;\r\n    top: 15.5%;\r\n    height: 400px;\r\n    width: 400px;\r\n    padding-top: 3vh;\r\n    position: relative;\r\n    /* background-color: red; */\r\n}\r\n\r\n.logo {\r\n    height: 70%;\r\n    width: 70%;\r\n    margin: auto;\r\n    position: relative;\r\n    overflow: hidden;\r\n    /* background-color: yellow; */\r\n}\r\n\r\n.descholder {\r\n    left: 54vh;\r\n    top: -41.5%;\r\n    height: 400px;\r\n    width: 500px;\r\n    position: relative;\r\n    /* background-color:blue; */\r\n}\r\n\r\n.titlebar {\r\n    height: 30px;\r\n    width: 80px;\r\n    left: 2vh;\r\n    top: 3.5%;\r\n    position: relative;\r\n    /* background-color: orange; */\r\n}\r\n\r\n.himpdesc {\r\n    height: 320px;\r\n    width: 465px;\r\n    left: 2vh;\r\n    top: 6.5%;\r\n    position: relative;\r\n    /* background-color: purple; */\r\n}\r\n\r\n.himptabs {\r\n    height: 100px;\r\n    width: 400px;\r\n    top: 80%;\r\n    right: 0;\r\n    margin-right: 2%;\r\n    margin-bottom: 15%;\r\n    /* background-color: red; */\r\n    position: absolute;\r\n    padding: 20px;\r\n}\r\n\r\n.himptab {\r\n    height: 60px;\r\n    width: 60px;\r\n    right: 0;\r\n    top: 0;\r\n    margin-left: 3px;\r\n    /* background-color: red; */\r\n    position: relative;\r\n    float: right;\r\n}\r\n\r\n.himptabempty {\r\n    height: 60px;\r\n    width: 60px;\r\n    right: 0;\r\n    top: 0;\r\n    margin: 5px;\r\n    /* background-color: red; */\r\n    position: relative;\r\n    float: right;\r\n    opacity: 0;\r\n}\r\n\r\n.tabs {\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\n\r\n.tabtitle {\r\n    height: 25px;\r\n    width: 250px;\r\n    right: 0;\r\n    position: relative;\r\n    float: right;\r\n    margin-top: 10px;\r\n    /* background-color: royalblue; */\r\n}\r\n\r\n.titles {\r\n    height: 100%;\r\n    position: relative;\r\n    float: right;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n}\r\n\r\n.backbttn {\r\n    height: 35px;\r\n    width: 35px;\r\n    left: 5vh;\r\n    top: 5vh;\r\n    position: absolute;\r\n    /* background-color: royalblue; */\r\n}\r\n\r\n.sosmed-position {\r\n    height: 35px;\r\n    width: 600px;\r\n    margin-top: 10px;\r\n    margin-bottom: 5px;\r\n    position: relative;\r\n    /* background-color: seagreen; */\r\n\r\n}\r\n\r\n/* bg color ilkom */\r\n.ilkomfilter {\r\n    background: linear-gradient(180deg, #FFE482 0%, #FFEBCD 100%);\r\n  }\r\n\r\n/* bg color hmdkv */\r\n.hmdkvfilter {\r\n    background: linear-gradient(180deg, #FFA441 0%, #FFB058 20.31%, #FFEBCD 100%);\r\n  }\r\n\r\n/* bg color hmftv */\r\n.hmftvfilter {\r\n    background: linear-gradient(0.4deg, rgba(255, 255, 255, 0) -35.32%, #E94D50 58.85%, #7B4895 99.62%);\r\n  }\r\n\r\n/* bg color himars */\r\n.himarsfilter {\r\n    background: linear-gradient(0.4deg, rgba(255, 255, 255, 0) -35.32%, #1E968F 58.85%, #0D3E65 99.62%);\r\n  }\r\n\r\n/* bg color hmif */\r\n.hmiffilter {\r\n    background: linear-gradient(180deg, #FF7F00 0%, rgba(255, 173, 84, 0) 100%);\r\n  }\r\n\r\n/* bg color himfera */\r\n.himferafilter {\r\n    background: linear-gradient(180deg, #4788D3 1.04%, #C5DFFF 100%);\r\n  }\r\n\r\n/* bg color himsi */\r\n.himsifilter {\r\n    background: linear-gradient(180deg, #1354A2 1.04%, #A2CDFF 100%);\r\n  }\r\n\r\n/* bg color aces */\r\n.acesfilter {\r\n    background: linear-gradient(180deg, #FFA441 0%, #FFB058 20.31%, #FFEBCD 100%);\r\n  }\r\n\r\n/* bg color himtara */\r\n.himtarafilter {\r\n    background: linear-gradient(180deg, #2C3987 0%, #CFDCFC 100%);\r\n  }\r\n\r\n  /* bg color himma */\r\n.himmafilter {\r\n    background: linear-gradient(180deg, #D4DEE9 25%, #FFFFFF 100%);\r\n  }\r\n\r\n  /* bg color hmp */\r\n.hmpfilter {\r\n    background: linear-gradient(180.03deg, #70BAFF -27.17%, rgba(255, 255, 255, 0) 99.98%), #0E77A4;\r\n  }\r\n\r\n.logoholder-slick {\r\n    height: 100%;\r\n    width: 100%;\r\n    position: absolute;\r\n}\r\n\r\n.logo-slick {\r\n    height: 100%;\r\n    width: 100%;\r\n    position: absolute;\r\n}\r\n\r\n.bar-slick {\r\n    height: 100%;\r\n    width: 100%;\r\n    position: absolute;\r\n  }\r\n\r\n.caption-position {\r\n    position: relative;\r\n    height: auto;\r\n    width: 100%;\r\n    overflow-wrap: break-word;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 12.5px;\r\n    overflow: hidden;\r\n}\r\n\r\n.caption-modif {\r\n    color: black;\r\n}\r\n\r\n.caption-modif-white {\r\n    color: white;\r\n}\r\n\r\n.back {\r\n  position: absolute;\r\n  height: 100%;\r\n  width: 100%;\r\n}\r\n\r\n.sosmed {\r\n  border-radius: 3px;\r\n  border-style: solid;\r\n  padding: 5px;\r\n  margin-right: 10px;\r\n  color: black;\r\n  font-family: 'Montserrat', sans-serif;\r\n  font-weight: bold;\r\n  font-size: 13.5px;\r\n}\r\n\r\n.sosmed-white {\r\n    border-radius: 3px;\r\n    border-style: solid;\r\n    padding: 5px;\r\n    margin-right: 10px;\r\n    color: white;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 13.5px;\r\n}\r\n\r\n.sosmedicon {\r\n  height: 100%;\r\n  weight: 100%;\r\n  position: absolute;\r\n}\r\n\r\n.himp-slider-container {\r\n    width: 100%;\r\n    height: auto; /*Tinggi Box luar Logo nya*/\r\n    background-color: #ffffff;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.himpsliderscss {\r\n    width: 1138px;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}", ""]);
+exports.push([module.i, ".body {\r\n    background-color: #ffffff;\r\n}\r\n\r\n.container-himp {\r\n    text-align: center;\r\n    padding-top: 120px;\r\n    padding-bottom: 100px;\r\n    background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);\r\n    -webkit-background-clip: text;\r\n    -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.himp-maha{\r\n    text-align: center;\r\n}\r\n\r\n.card-fix {\r\n    height: 500px;\r\n    border-radius: 0;\r\n    padding-left: 0px;\r\n    padding-right: 0px;\r\n    margin-bottom: 30px;\r\n}\r\n\r\n.card {\r\n    height: 500px;\r\n    border-radius: 0;\r\n    padding-left: 0px;\r\n    padding-right: 0px;\r\n    margin-bottom: 30px;\r\n}\r\n\r\n.card:hover {\r\n    transform: scale(1.05);\r\n    transition: all .2s ease-in-out;\r\n    margin: 5px;\r\n}\r\n\r\n.fakultas-title {\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    width: 85%;\r\n    transform: translate(-50%, -50%);\r\n    text-align: center;\r\n    color: #fff;\r\n    font-weight: bold;\r\n    text-shadow: 1px 2px 0 #808080;\r\n    font-size: 3vh;\r\n}\r\n\r\n.set {\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\n.heads-title {\r\n    position: absolute;\r\n    top: 20%;\r\n    left: 10%;\r\n    color: #fff;\r\n    font-weight: bold;\r\n    text-shadow: 1px 2px 0 #808080;\r\n    -webkit-text-orientation: upright;\r\n            text-orientation: upright;\r\n    -ms-writing-mode: tb-rl;\r\n        writing-mode: vertical-rl;\r\n}\r\n\r\n.bg {\r\n    background: #08597D;\r\n}\r\n\r\n/* .selectionholder {\r\n    height: 65px;\r\n    width: 1138px;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    padding: 5px;\r\n    position: relative;\r\n    border-radius: 5px;\r\n    border-style: solid;\r\n    /* background-color: red; \r\n}*/\r\n\r\n.testrun {\r\n    margin-top: 150px;\r\n}\r\n\r\n.blanket {\r\n    padding: 0;\r\n    margin: 0;\r\n    width: 100%;\r\n    height: 100%;\r\n    border: none;\r\n}\r\n\r\n@media screen and (min-width: 1200px) {\r\n    .himpholder {\r\n        height: 700px;\r\n        width: 1138px;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n        position: relative;\r\n        /* background-color: chartreuse; */\r\n    }\r\n        \r\n    .himpsliderscss {\r\n        width: 1138px;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n    }\r\n\r\n    .caption-position {\r\n        position: relative;\r\n        height: auto;\r\n        width: 100%;\r\n        overflow-wrap: break-word;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-weight: bold;\r\n        font-size: 12.5px;\r\n        overflow: hidden;\r\n    }\r\n\r\n    .caption-modif {\r\n        color: black;\r\n    }\r\n    \r\n    .caption-modif-white {\r\n        color: white;\r\n    }\r\n\r\n    .himpdesc {\r\n        height: 320px;\r\n        width: 465px;\r\n        left: 2vh;\r\n        top: 6.5%;\r\n        position: relative;\r\n        /* background-color: purple; */\r\n    }\r\n\r\n    .sosmed-position {\r\n        height: 35px;\r\n        width: 600px;\r\n        margin-top: 10px;\r\n        margin-bottom: 5px;\r\n        position: relative;\r\n        /* background-color: seagreen; */\r\n    \r\n    }\r\n\r\n    .sosmed {\r\n        border-radius: 3px;\r\n        border-style: solid;\r\n        padding: 5px;\r\n        margin-right: 10px;\r\n        color: black;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-weight: bold;\r\n        font-size: 13.5px;\r\n    }\r\n\r\n    .sosmed-white {\r\n        border-radius: 3px;\r\n        border-style: solid;\r\n        padding: 5px;\r\n        margin-right: 10px;\r\n        color: white;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-weight: bold;\r\n        font-size: 13.5px;\r\n    }\r\n\r\n    .logoholder {\r\n        left: 6vh;\r\n        top: 15.5%;\r\n        height: 400px;\r\n        width: 400px;\r\n        padding-top: 3vh;\r\n        position: relative;\r\n        /* background-color: red; */\r\n    }\r\n    \r\n    .logo {\r\n        height: 70%;\r\n        width: 70%;\r\n        margin: auto;\r\n        position: relative;\r\n        overflow: hidden;\r\n        /* background-color: yellow; */\r\n    }\r\n\r\n    .logoholder-slick {\r\n        height: 100%;\r\n        width: 100%;\r\n        position: absolute;\r\n    }\r\n    \r\n    .logo-slick {\r\n        height: 100%;\r\n        width: 100%;\r\n        position: absolute;\r\n    }\r\n    \r\n    .descholder {\r\n        left: 54vh;\r\n        top: -41.5%;\r\n        height: 400px;\r\n        width: 500px;\r\n        position: relative;\r\n        /* background-color:blue; */\r\n    }\r\n    \r\n    .titlebar {\r\n        height: 30px;\r\n        width: 80px;\r\n        left: 2vh;\r\n        top: 3.5%;\r\n        position: relative;\r\n        /* background-color: orange; */\r\n    }\r\n    \r\n    .himptabs {\r\n        height: 100px;\r\n        width: 400px;\r\n        top: 80%;\r\n        right: 0;\r\n        margin-right: 2%;\r\n        margin-bottom: 15%;\r\n        /* background-color: red; */\r\n        position: absolute;\r\n        padding: 20px;\r\n    }\r\n    \r\n    .himptab {\r\n        height: 60px;\r\n        width: 60px;\r\n        right: 0;\r\n        top: 0;\r\n        margin-left: 3px;\r\n        /* background-color: red; */\r\n        position: relative;\r\n        float: right;\r\n    }\r\n    \r\n    .himptabempty {\r\n        height: 60px;\r\n        width: 60px;\r\n        right: 0;\r\n        top: 0;\r\n        margin: 5px;\r\n        /* background-color: red; */\r\n        position: relative;\r\n        float: right;\r\n        opacity: 0;\r\n    }\r\n    \r\n    .tabs {\r\n        height: 100%;\r\n        width: 100%;\r\n    }\r\n    \r\n    .tabtitle {\r\n        height: 25px;\r\n        width: 250px;\r\n        right: 0;\r\n        position: relative;\r\n        float: right;\r\n        margin-top: 10px;\r\n        /* background-color: royalblue; */\r\n    }\r\n    \r\n    .titles {\r\n        height: 100%;\r\n        position: relative;\r\n        float: right;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-weight: bold;\r\n    }\r\n    \r\n    .backbttn {\r\n        height: 35px;\r\n        width: 35px;\r\n        left: 5vh;\r\n        top: 5vh;\r\n        position: absolute;\r\n        /* background-color: royalblue; */\r\n    }\r\n\r\n    .sosmedicon {\r\n        height: 100%;\r\n        weight: 100%;\r\n        position: absolute;\r\n      }\r\n      \r\n    .himp-slider-container {\r\n        width: 100%;\r\n        height: auto; /*Tinggi Box luar Logo nya*/\r\n        background-color: #ffffff;\r\n        display: flex;\r\n        justify-content: center;\r\n        align-items: center;\r\n    }\r\n\r\n    .bar-slick {\r\n        height: 100%;\r\n        width: 100%;\r\n        position: absolute;\r\n      }\r\n}\r\n\r\n@media screen and (min-width: 992px) and (max-width: 1199px) {\r\n    .himpholder {\r\n        height: 700px;\r\n        width: 958px;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n        position: relative;\r\n        /* background-color: chartreuse; */\r\n    }\r\n        \r\n    .himpsliderscss {\r\n        width: 958px;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n    }\r\n\r\n    .caption-position {\r\n        position: relative;\r\n        height: auto;\r\n        width: 100%;\r\n        overflow-wrap: break-word;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-weight: bold;\r\n        font-size: 11px;\r\n        overflow: hidden;\r\n    }\r\n\r\n    .caption-modif {\r\n        color: black;\r\n    }\r\n    \r\n    .caption-modif-white {\r\n        color: white;\r\n    }\r\n\r\n    .himpdesc {\r\n        height: 500px;\r\n        width: 400px;\r\n        left: 2vh;\r\n        top: 6.5%;\r\n        position: relative;\r\n        /* background-color: purple; */\r\n    }\r\n\r\n    .sosmed-position {\r\n        height: 35px;\r\n        width: 400px;\r\n        margin-top: 10px;\r\n        margin-bottom: 5px;\r\n        position: relative;\r\n        /* background-color: seagreen; */\r\n    \r\n    }\r\n\r\n    .sosmed {\r\n        border-radius: 3px;\r\n        border-style: solid;\r\n        padding: 5px;\r\n        margin-right: 10px;\r\n        color: black;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-weight: bold;\r\n        font-size: 11px;\r\n    }\r\n\r\n    .sosmed-white {\r\n        border-radius: 3px;\r\n        border-style: solid;\r\n        padding: 5px;\r\n        margin-right: 10px;\r\n        color: white;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-weight: bold;\r\n        font-size: 11px;\r\n    }\r\n  \r\n    .logoholder {\r\n        left: 6vh;\r\n        top: 15.5%;\r\n        height: 400px;\r\n        width: 400px;\r\n        padding-top: 3vh;\r\n        position: relative;\r\n        /* background-color: red; */\r\n    }\r\n    \r\n    .logo {\r\n        height: 70%;\r\n        width: 70%;\r\n        margin: auto;\r\n        position: relative;\r\n        overflow: hidden;\r\n        /* background-color: yellow; */\r\n    }\r\n\r\n    .logoholder-slick {\r\n        height: 100%;\r\n        width: 100%;\r\n        position: absolute;\r\n    }\r\n    \r\n    .logo-slick {\r\n        height: 100%;\r\n        width: 100%;\r\n        position: absolute;\r\n    }\r\n    \r\n    .descholder {\r\n        left: 54vh;\r\n        top: -41.5%;\r\n        height: 400px;\r\n        width: 500px;\r\n        position: relative;\r\n        /* background-color:blue; */\r\n    }\r\n    \r\n    .titlebar {\r\n        height: 30px;\r\n        width: 80px;\r\n        left: 2vh;\r\n        top: 3.5%;\r\n        position: relative;\r\n        /* background-color: orange; */\r\n    }\r\n    \r\n    .himptabs {\r\n        height: 100px;\r\n        width: 400px;\r\n        top: 80%;\r\n        right: 0;\r\n        margin-right: 2%;\r\n        margin-bottom: 15%;\r\n        /* background-color: red; */\r\n        position: absolute;\r\n        padding: 20px;\r\n    }\r\n    \r\n    .himptab {\r\n        height: 60px;\r\n        width: 60px;\r\n        right: 0;\r\n        top: 0;\r\n        margin-left: 3px;\r\n        /* background-color: red; */\r\n        position: relative;\r\n        float: right;\r\n    }\r\n    \r\n    .himptabempty {\r\n        height: 60px;\r\n        width: 60px;\r\n        right: 0;\r\n        top: 0;\r\n        margin: 5px;\r\n        /* background-color: red; */\r\n        position: relative;\r\n        float: right;\r\n        opacity: 0;\r\n    }\r\n    \r\n    .tabs {\r\n        height: 100%;\r\n        width: 100%;\r\n    }\r\n    \r\n    .tabtitle {\r\n        height: 25px;\r\n        width: 250px;\r\n        right: 0;\r\n        position: relative;\r\n        float: right;\r\n        margin-top: 10px;\r\n        /* background-color: royalblue; */\r\n    }\r\n    \r\n    .titles {\r\n        height: 100%;\r\n        position: relative;\r\n        float: right;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-weight: bold;\r\n    }\r\n    \r\n    .backbttn {\r\n        height: 35px;\r\n        width: 35px;\r\n        left: 5vh;\r\n        top: 5vh;\r\n        position: absolute;\r\n        /* background-color: royalblue; */\r\n    }\r\n\r\n    .sosmedicon {\r\n        height: 100%;\r\n        weight: 100%;\r\n        position: absolute;\r\n      }\r\n      \r\n    .himp-slider-container {\r\n        width: 100%;\r\n        height: auto; /*Tinggi Box luar Logo nya*/\r\n        background-color: #ffffff;\r\n        display: flex;\r\n        justify-content: center;\r\n        align-items: center;\r\n    }\r\n\r\n    .bar-slick {\r\n        height: 100%;\r\n        width: 100%;\r\n        position: absolute;\r\n      }\r\n}\r\n\r\n@media screen and (min-width: 768px) and (max-width: 991px) {\r\n    .himpholder {\r\n        height: 1000px;\r\n        width: 718px;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n        position: relative;\r\n        /* background-color: chartreuse; */\r\n    }\r\n        \r\n    .himpsliderscss {\r\n        width: 718px;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n    }\r\n\r\n    .caption-position {\r\n        position: relative;\r\n        height: auto;\r\n        width: 100%;\r\n        overflow-wrap: break-word;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-weight: bold;\r\n        font-size: 11px;\r\n        overflow: hidden;\r\n        text-align: center;\r\n    }\r\n\r\n    .caption-modif {\r\n        color: black;\r\n    }\r\n    \r\n    .caption-modif-white {\r\n        color: white;\r\n    }\r\n\r\n    .himpdesc {\r\n        height: 500px;\r\n        width: 400px;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n        top: 55vh;\r\n        position: relative;\r\n        /* background-color: purple; */\r\n    }\r\n\r\n    .sosmed-position {\r\n        height: auto;\r\n        width: 400px;\r\n        margin-top: 10px;\r\n        margin-bottom: 5px;\r\n        text-align: center;\r\n        position: relative;\r\n        /* background-color: seagreen; */\r\n    \r\n    }\r\n\r\n    .sosmed {\r\n        border-radius: 3px;\r\n        border-style: solid;\r\n        padding: 5px;\r\n        margin-right: 10px;\r\n        color: black;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-weight: bold;\r\n        font-size: 11px;\r\n    }\r\n\r\n    .sosmed-white {\r\n        border-radius: 3px;\r\n        border-style: solid;\r\n        padding: 5px;\r\n        margin-right: 10px;\r\n        color: white;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-weight: bold;\r\n        font-size: 11px;\r\n    }\r\n    \r\n    .logoholder {\r\n        top: 5%;\r\n        height: 400px;\r\n        width: 400px;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n        padding-top: 3vh;\r\n        position: relative;\r\n        /* background-color: red; */\r\n    }\r\n    \r\n    .logo {\r\n        height: 70%;\r\n        width: 70%;\r\n        margin: auto;\r\n        position: relative;\r\n        overflow: hidden;\r\n        /* background-color: yellow; */\r\n    }\r\n\r\n    .logoholder-slick {\r\n        height: 100%;\r\n        width: 100%;\r\n        position: absolute;\r\n    }\r\n    \r\n    .logo-slick {\r\n        height: 100%;\r\n        width: 100%;\r\n        position: absolute;\r\n    }\r\n    \r\n    .descholder {\r\n        top: -55vh;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n        height: 400px;\r\n        width: 500px;\r\n        position: relative;\r\n        /* background-color:blue; */\r\n    }\r\n    \r\n    .titlebar {\r\n        height: 30px;\r\n        width: 80px;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n        top: 50vh;\r\n        position: relative;\r\n        /* background-color: orange; */\r\n    }\r\n    \r\n    .himptabs {\r\n        height: 100px;\r\n        width: 400px;\r\n        top: 80%;\r\n        right: 0;\r\n        margin-right: 2%;\r\n        margin-bottom: 15%;\r\n        /* background-color: red; */\r\n        position: absolute;\r\n        padding: 20px;\r\n    }\r\n    \r\n    .himptab {\r\n        height: 60px;\r\n        width: 60px;\r\n        right: 0;\r\n        top: 0;\r\n        margin-left: 3px;\r\n        /* background-color: red; */\r\n        position: relative;\r\n        float: right;\r\n    }\r\n    \r\n    .himptabempty {\r\n        height: 60px;\r\n        width: 60px;\r\n        right: 0;\r\n        top: 0;\r\n        margin: 5px;\r\n        /* background-color: red; */\r\n        position: relative;\r\n        float: right;\r\n        opacity: 0;\r\n    }\r\n    \r\n    .tabs {\r\n        height: 100%;\r\n        width: 100%;\r\n    }\r\n    \r\n    .tabtitle {\r\n        height: 25px;\r\n        width: 250px;\r\n        right: 0;\r\n        position: relative;\r\n        float: right;\r\n        margin-top: 10px;\r\n        /* background-color: royalblue; */\r\n    }\r\n    \r\n    .titles {\r\n        height: 100%;\r\n        position: relative;\r\n        float: right;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-weight: bold;\r\n    }\r\n    \r\n    .backbttn {\r\n        height: 35px;\r\n        width: 35px;\r\n        left: 5vh;\r\n        top: 5vh;\r\n        position: absolute;\r\n        /* background-color: royalblue; */\r\n    }\r\n\r\n    .sosmedicon {\r\n        height: 100%;\r\n        weight: 100%;\r\n        position: absolute;\r\n      }\r\n      \r\n    .himp-slider-container {\r\n        width: 100%;\r\n        height: auto; /*Tinggi Box luar Logo nya*/\r\n        background-color: #ffffff;\r\n        display: flex;\r\n        justify-content: center;\r\n        align-items: center;\r\n    }\r\n\r\n    .bar-slick {\r\n        height: 100%;\r\n        width: 100%;\r\n        position: absolute;\r\n      }\r\n}\r\n\r\n@media screen and (min-width: 576px) and (max-width: 767px) {\r\n    .himpholder {\r\n        height: 1000px;\r\n        width: 538px;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n        position: relative;\r\n        /* background-color: chartreuse; */\r\n    }\r\n        \r\n    .himpsliderscss {\r\n        width: 538px;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n    }\r\n\r\n    .caption-position {\r\n        position: relative;\r\n        height: auto;\r\n        width: 100%;\r\n        overflow-wrap: break-word;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-weight: bold;\r\n        font-size: 11px;\r\n        overflow: hidden;\r\n        text-align: center;\r\n    }\r\n\r\n    .caption-modif {\r\n        color: black;\r\n    }\r\n    \r\n    .caption-modif-white {\r\n        color: white;\r\n    }\r\n\r\n    .himpdesc {\r\n        height: 500px;\r\n        width: 400px;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n        top: 55vh;\r\n        position: relative;\r\n        /* background-color: purple; */\r\n    }\r\n\r\n    .sosmed-position {\r\n        height: auto;\r\n        width: 400px;\r\n        margin-top: 10px;\r\n        margin-bottom: 5px;\r\n        text-align: center;\r\n        position: relative;\r\n        /* background-color: seagreen; */\r\n    \r\n    }\r\n\r\n    .sosmed {\r\n        border-radius: 3px;\r\n        border-style: solid;\r\n        padding: 5px;\r\n        margin-right: 10px;\r\n        color: black;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-weight: bold;\r\n        font-size: 11px;\r\n    }\r\n\r\n    .sosmed-white {\r\n        border-radius: 3px;\r\n        border-style: solid;\r\n        padding: 5px;\r\n        margin-right: 10px;\r\n        color: white;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-weight: bold;\r\n        font-size: 11px;\r\n    }\r\n    \r\n    .logoholder {\r\n        top: 5%;\r\n        height: 400px;\r\n        width: 400px;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n        padding-top: 3vh;\r\n        position: relative;\r\n        /* background-color: red; */\r\n    }\r\n    \r\n    .logo {\r\n        height: 70%;\r\n        width: 70%;\r\n        margin: auto;\r\n        position: relative;\r\n        overflow: hidden;\r\n        /* background-color: yellow; */\r\n    }\r\n\r\n    .logoholder-slick {\r\n        height: 100%;\r\n        width: 100%;\r\n        position: absolute;\r\n    }\r\n    \r\n    .logo-slick {\r\n        height: 100%;\r\n        width: 100%;\r\n        position: absolute;\r\n    }\r\n    \r\n    .descholder {\r\n        top: -55vh;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n        height: 400px;\r\n        width: 500px;\r\n        position: relative;\r\n        /* background-color:blue; */\r\n    }\r\n    \r\n    .titlebar {\r\n        height: 30px;\r\n        width: 80px;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n        top: 50vh;\r\n        position: relative;\r\n        /* background-color: orange; */\r\n    }\r\n    \r\n    .himptabs {\r\n        height: 100px;\r\n        width: 400px;\r\n        top: 80%;\r\n        right: 0;\r\n        margin-right: 2%;\r\n        margin-bottom: 15%;\r\n        /* background-color: red; */\r\n        position: absolute;\r\n        padding: 20px;\r\n    }\r\n    \r\n    .himptab {\r\n        height: 60px;\r\n        width: 60px;\r\n        right: 0;\r\n        top: 0;\r\n        margin-left: 3px;\r\n        /* background-color: red; */\r\n        position: relative;\r\n        float: right;\r\n    }\r\n    \r\n    .himptabempty {\r\n        height: 60px;\r\n        width: 60px;\r\n        right: 0;\r\n        top: 0;\r\n        margin: 5px;\r\n        /* background-color: red; */\r\n        position: relative;\r\n        float: right;\r\n        opacity: 0;\r\n    }\r\n    \r\n    .tabs {\r\n        height: 100%;\r\n        width: 100%;\r\n    }\r\n    \r\n    .tabtitle {\r\n        height: 25px;\r\n        width: 250px;\r\n        right: 0;\r\n        position: relative;\r\n        float: right;\r\n        margin-top: 10px;\r\n        /* background-color: royalblue; */\r\n    }\r\n    \r\n    .titles {\r\n        height: 100%;\r\n        position: relative;\r\n        float: right;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-weight: bold;\r\n    }\r\n    \r\n    .backbttn {\r\n        height: 35px;\r\n        width: 35px;\r\n        left: 5vh;\r\n        top: 5vh;\r\n        position: absolute;\r\n        /* background-color: royalblue; */\r\n    }\r\n\r\n    .sosmedicon {\r\n        height: 100%;\r\n        weight: 100%;\r\n        position: absolute;\r\n      }\r\n      \r\n    .himp-slider-container {\r\n        width: 100%;\r\n        height: auto; /*Tinggi Box luar Logo nya*/\r\n        background-color: #ffffff;\r\n        display: flex;\r\n        justify-content: center;\r\n        align-items: center;\r\n    }\r\n\r\n    .bar-slick {\r\n        height: 100%;\r\n        width: 100%;\r\n        position: absolute;\r\n      }\r\n}\r\n\r\n@media screen and (max-width: 575px) {\r\n    .himpholder {\r\n        height: 1000px;\r\n        width: 500px;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n        position: relative;\r\n        /* background-color: chartreuse; */\r\n    }\r\n        \r\n    .himpsliderscss {\r\n        width: 500px;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n    }\r\n\r\n    .caption-position {\r\n        position: relative;\r\n        height: auto;\r\n        width: 100%;\r\n        overflow-wrap: break-word;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-weight: bold;\r\n        font-size: 11px;\r\n        overflow: hidden;\r\n        text-align: center;\r\n    }\r\n\r\n    .caption-modif {\r\n        color: black;\r\n    }\r\n    \r\n    .caption-modif-white {\r\n        color: white;\r\n    }\r\n\r\n    .himpdesc {\r\n        height: 500px;\r\n        width: 400px;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n        top: 55vh;\r\n        position: relative;\r\n        /* background-color: purple; */\r\n    }\r\n\r\n    .sosmed-position {\r\n        height: auto;\r\n        width: 400px;\r\n        margin-top: 10px;\r\n        margin-bottom: 5px;\r\n        text-align: center;\r\n        position: relative;\r\n        /* background-color: seagreen; */\r\n    \r\n    }\r\n\r\n    .sosmed {\r\n        border-radius: 3px;\r\n        border-style: solid;\r\n        padding: 5px;\r\n        margin-right: 10px;\r\n        color: black;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-weight: bold;\r\n        font-size: 11px;\r\n    }\r\n\r\n    .sosmed-white {\r\n        border-radius: 3px;\r\n        border-style: solid;\r\n        padding: 5px;\r\n        margin-right: 10px;\r\n        color: white;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-weight: bold;\r\n        font-size: 11px;\r\n    }\r\n    \r\n    .logoholder {\r\n        top: 5%;\r\n        height: 400px;\r\n        width: 400px;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n        padding-top: 3vh;\r\n        position: relative;\r\n        /* background-color: red; */\r\n    }\r\n    \r\n    .logo {\r\n        height: 70%;\r\n        width: 70%;\r\n        margin: auto;\r\n        position: relative;\r\n        overflow: hidden;\r\n        /* background-color: yellow; */\r\n    }\r\n\r\n    .logoholder-slick {\r\n        height: 100%;\r\n        width: 100%;\r\n        position: absolute;\r\n    }\r\n    \r\n    .logo-slick {\r\n        height: 100%;\r\n        width: 100%;\r\n        position: absolute;\r\n    }\r\n    \r\n    .descholder {\r\n        top: -55vh;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n        height: 400px;\r\n        width: 500px;\r\n        position: relative;\r\n        /* background-color:blue; */\r\n    }\r\n    \r\n    .titlebar {\r\n        height: 30px;\r\n        width: 80px;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n        top: 50vh;\r\n        position: relative;\r\n        /* background-color: orange; */\r\n    }\r\n    \r\n    .himptabs {\r\n        height: 100px;\r\n        width: 400px;\r\n        top: 80%;\r\n        right: 0;\r\n        margin-right: 2%;\r\n        margin-bottom: 15%;\r\n        /* background-color: red; */\r\n        position: absolute;\r\n        padding: 20px;\r\n    }\r\n    \r\n    .himptab {\r\n        height: 60px;\r\n        width: 60px;\r\n        right: 0;\r\n        top: 0;\r\n        margin-left: 3px;\r\n        /* background-color: red; */\r\n        position: relative;\r\n        float: right;\r\n    }\r\n    \r\n    .himptabempty {\r\n        height: 60px;\r\n        width: 60px;\r\n        right: 0;\r\n        top: 0;\r\n        margin: 5px;\r\n        /* background-color: red; */\r\n        position: relative;\r\n        float: right;\r\n        opacity: 0;\r\n    }\r\n    \r\n    .tabs {\r\n        height: 100%;\r\n        width: 100%;\r\n    }\r\n    \r\n    .tabtitle {\r\n        height: 25px;\r\n        width: 250px;\r\n        right: 0;\r\n        position: relative;\r\n        float: right;\r\n        margin-top: 10px;\r\n        /* background-color: royalblue; */\r\n    }\r\n    \r\n    .titles {\r\n        height: 100%;\r\n        position: relative;\r\n        float: right;\r\n        font-family: 'Montserrat', sans-serif;\r\n        font-weight: bold;\r\n    }\r\n    \r\n    .backbttn {\r\n        height: 35px;\r\n        width: 35px;\r\n        left: 5vh;\r\n        top: 5vh;\r\n        position: absolute;\r\n        /* background-color: royalblue; */\r\n    }\r\n\r\n    .sosmedicon {\r\n        height: 100%;\r\n        weight: 100%;\r\n        position: absolute;\r\n      }\r\n      \r\n    .himp-slider-container {\r\n        width: 100%;\r\n        height: auto; /*Tinggi Box luar Logo nya*/\r\n        background-color: #ffffff;\r\n        display: flex;\r\n        justify-content: center;\r\n        align-items: center;\r\n    }\r\n\r\n    .bar-slick {\r\n        height: 100%;\r\n        width: 100%;\r\n        position: absolute;\r\n      }\r\n}\r\n\r\n/* bg color ilkom */\r\n.ilkomfilter {\r\n    background: linear-gradient(180deg, #FFE482 0%, #FFEBCD 100%);\r\n  }\r\n\r\n/* bg color hmdkv */\r\n.hmdkvfilter {\r\n    background: linear-gradient(180deg, #FFA441 0%, #FFB058 20.31%, #FFEBCD 100%);\r\n  }\r\n\r\n/* bg color hmftv */\r\n.hmftvfilter {\r\n    background: linear-gradient(0.4deg, rgba(255, 255, 255, 0) -35.32%, #E94D50 58.85%, #7B4895 99.62%);\r\n  }\r\n\r\n/* bg color himars */\r\n.himarsfilter {\r\n    background: linear-gradient(0.4deg, rgba(255, 255, 255, 0) -35.32%, #1E968F 58.85%, #0D3E65 99.62%);\r\n  }\r\n\r\n/* bg color hmif */\r\n.hmiffilter {\r\n    background: linear-gradient(180deg, #FF7F00 0%, rgba(255, 173, 84, 0) 100%);\r\n  }\r\n\r\n/* bg color himfera */\r\n.himferafilter {\r\n    background: linear-gradient(180deg, #4788D3 1.04%, #C5DFFF 100%);\r\n  }\r\n\r\n/* bg color himsi */\r\n.himsifilter {\r\n    background: linear-gradient(180deg, #1354A2 1.04%, #A2CDFF 100%);\r\n  }\r\n\r\n/* bg color aces */\r\n.acesfilter {\r\n    background: linear-gradient(180deg, #FFA441 0%, #FFB058 20.31%, #FFEBCD 100%);\r\n  }\r\n\r\n/* bg color himtara */\r\n.himtarafilter {\r\n    background: linear-gradient(180deg, #2C3987 0%, #CFDCFC 100%);\r\n  }\r\n\r\n  /* bg color himma */\r\n.himmafilter {\r\n    background: linear-gradient(180deg, #D4DEE9 25%, #FFFFFF 100%);\r\n  }\r\n\r\n  /* bg color hmp */\r\n.hmpfilter {\r\n    background: linear-gradient(180.03deg, #70BAFF -27.17%, rgba(255, 255, 255, 0) 99.98%), #0E77A4;\r\n  }\r\n", ""]);
 
 // exports
 
@@ -88106,7 +88106,7 @@ var Himpunan = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "himp-maha"
       }, "HIMPUNAN ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " MAHASISWA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Universitas Multimedia Nusantara terbagi menjadi 4 fakultas besar.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Keempat fakultas terbagi menjadi beberapa jurusan dengan dinaungi oleh ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "himpunan jurusan tersebut. Berikut merupakan ke 11 himpunan yang terdapat ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "pada Universitas Multimedia Nusantara")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
-        className: "card"
+        className: "card-fix"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
         className: "heads-title"
       }, "FAKULTAS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -88174,11 +88174,6 @@ var Himpunan = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himpholder ilkomfilter"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "backbttn"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "back",
-        src: "assets/himp/back.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptabs"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
@@ -88221,25 +88216,20 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "sosmed-position"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed",
-        href: "http://www.instagram.com/bemumn"
-      }, " IG | bemumn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://www.instagram.com/imkom_umn"
+      }, " IG | IMKOM UMN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed",
-        href: "http://line.me/ti/p/~@dmn8577"
-      }, " LINE | @dmn8577"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://line.me/ti/p/~@nkj4600e"
+      }, " LINE | @nkj4600e"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed",
-        href: "http://www.umn.ac.id"
-      }, " WEB | www.umn.ac.id")))))))), showHideFsd && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        href: "http://imkom.umn.ac.id"
+      }, " WEB | www.imkom.umn.ac.id")))))))), showHideFsd && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himpsliderscss"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         id: "himpslidersfsd"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himpholder hmdkvfilter"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "backbttn"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "back",
-        src: "assets/himp/back.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptabs"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
@@ -88287,21 +88277,16 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "sosmed-position"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed",
-        href: "http://www.instagram.com/bemumn"
-      }, " IG | bemumn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://www.instagram.com/hmdkv_umn"
+      }, " IG | hmdkv_umn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed",
-        href: "http://line.me/ti/p/~@dmn8577"
-      }, " LINE | @dmn8577"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://line.me/ti/p/~@ybc1316s"
+      }, " LINE | @ybc1316s"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed",
-        href: "http://www.umn.ac.id"
-      }, " WEB | www.umn.ac.id")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        href: ""
+      }, " WEB | -")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himpholder hmftvfilter"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "backbttn"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "back",
-        src: "assets/himp/back.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptabs"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
@@ -88349,21 +88334,16 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "sosmed-position"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed-white",
-        href: "http://www.instagram.com/bemumn"
-      }, " IG | bemumn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://www.instagram.com/hmfilm_umn"
+      }, " IG | hmfilm_umn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed-white",
-        href: "http://line.me/ti/p/~@dmn8577"
-      }, " LINE | @dmn8577"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://line.me/ti/p/~@msn8043i"
+      }, " LINE | @msn8043i"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed-white",
-        href: "http://www.umn.ac.id"
-      }, " WEB | www.umn.ac.id")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        href: ""
+      }, " WEB | -")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himpholder himarsfilter"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "backbttn"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "back",
-        src: "assets/himp/back.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptabs"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
@@ -88411,25 +88391,20 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "sosmed-position"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed-white",
-        href: "http://www.instagram.com/bemumn"
-      }, " IG | bemumn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://www.instagram.com/himars_umn"
+      }, " IG | himars_umn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed-white",
-        href: "http://line.me/ti/p/~@dmn8577"
-      }, " LINE | @dmn8577"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://line.me/ti/p/~@daj7387i"
+      }, " LINE | @daj7387i"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed-white",
-        href: "http://www.umn.ac.id"
-      }, " WEB | www.umn.ac.id")))))))), showHideFti && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        href: ""
+      }, " WEB | -")))))))), showHideFti && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himpsliderscss"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         id: "himpslidersfti"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himpholder himferafilter"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "backbttn"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "back",
-        src: "assets/himp/back.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptabs"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
@@ -88482,21 +88457,16 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "sosmed-position"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed",
-        href: "http://www.instagram.com/bemumn"
-      }, " IG | bemumn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://www.instagram.com/himfera_umn"
+      }, " IG | himfera_umn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed",
-        href: "http://line.me/ti/p/~@dmn8577"
-      }, " LINE | @dmn8577"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://line.me/ti/p/~@636jllsn"
+      }, " LINE | @636jllsn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed",
-        href: "http://www.umn.ac.id"
-      }, " WEB | www.umn.ac.id")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        href: ""
+      }, " WEB | -")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himpholder hmiffilter"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "backbttn"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "back",
-        src: "assets/himp/back.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptabs"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
@@ -88549,21 +88519,16 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "sosmed-position"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed",
-        href: "http://www.instagram.com/bemumn"
-      }, " IG | bemumn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://www.instagram.com/hmif.umn"
+      }, " IG | hmif.umn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed",
-        href: "http://line.me/ti/p/~@dmn8577"
-      }, " LINE | @dmn8577"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://line.me/ti/p/~@hmif.umn"
+      }, " LINE | @hmif.umn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed",
-        href: "http://www.umn.ac.id"
-      }, " WEB | www.umn.ac.id")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        href: ""
+      }, " WEB | -")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himpholder acesfilter"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "backbttn"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "back",
-        src: "assets/himp/back.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptabs"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
@@ -88616,21 +88581,16 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "sosmed-position"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed",
-        href: "http://www.instagram.com/bemumn"
-      }, " IG | bemumn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://www.instagram.com/acesumn"
+      }, " IG | acesumn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed",
-        href: "http://line.me/ti/p/~@dmn8577"
-      }, " LINE | @dmn8577"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://line.me/ti/p/~@acesumn"
+      }, " LINE | @acesumn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed",
-        href: "http://www.umn.ac.id"
-      }, " WEB | www.umn.ac.id")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        href: ""
+      }, " WEB | -")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himpholder himsifilter"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "backbttn"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "back",
-        src: "assets/himp/back.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptabs"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
@@ -88683,25 +88643,20 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "sosmed-position"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed-white",
-        href: "http://www.instagram.com/bemumn"
-      }, " IG | bemumn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://www.instagram.com/umn_si"
+      }, " IG | umn_si"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed-white",
-        href: "http://line.me/ti/p/~@dmn8577"
-      }, " LINE | @dmn8577"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://line.me/ti/p/~@umn_si"
+      }, " LINE | @umn_si"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed-white",
-        href: "http://www.umn.ac.id"
-      }, " WEB | www.umn.ac.id")))))))), showHideBisnis && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        href: ""
+      }, " WEB | -")))))))), showHideBisnis && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himpsliderscss"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         id: "himpslidersbisnis"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himpholder himmafilter"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "backbttn"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "back",
-        src: "assets/himp/back.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptabs"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
@@ -88749,21 +88704,16 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "sosmed-position"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed",
-        href: "http://www.instagram.com/bemumn"
-      }, " IG | bemumn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://www.instagram.com/himma_umn"
+      }, " IG | himma_umn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed",
-        href: "http://line.me/ti/p/~@dmn8577"
-      }, " LINE | @dmn8577"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://line.me/ti/p/~@himma_umn"
+      }, " LINE | @himma_umn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed",
-        href: "http://www.umn.ac.id"
-      }, " WEB | www.umn.ac.id")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        href: ""
+      }, " WEB | -")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himpholder himtarafilter"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "backbttn"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "back",
-        src: "assets/himp/back.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptabs"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
@@ -88811,21 +88761,16 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "sosmed-position"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed-white",
-        href: "http://www.instagram.com/bemumn"
-      }, " IG | bemumn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://www.instagram.com/himtara"
+      }, " IG | himtara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed-white",
-        href: "http://line.me/ti/p/~@dmn8577"
-      }, " LINE | @dmn8577"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://line.me/ti/p/~@bkq4939z"
+      }, " LINE | @bkq4939z"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed-white",
-        href: "http://www.umn.ac.id"
-      }, " WEB | www.umn.ac.id")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        href: ""
+      }, " WEB | -")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himpholder hmpfilter"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "backbttn"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "back",
-        src: "assets/himp/back.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptabs"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "himptab"
@@ -88873,14 +88818,14 @@ var Himpunan = /*#__PURE__*/function (_Component) {
         className: "sosmed-position"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed-white",
-        href: "http://www.instagram.com/bemumn"
-      }, " IG | bemumn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://www.instagram.com/hmp_umn"
+      }, " IG | hmp_umn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed-white",
-        href: "http://line.me/ti/p/~@dmn8577"
-      }, " LINE | @dmn8577"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://line.me/ti/p/~@iyz7068m"
+      }, " LINE | @iyz7068m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "sosmed-white",
-        href: "http://www.umn.ac.id"
-      }, " WEB | www.umn.ac.id")))))))));
+        href: ""
+      }, " WEB | -")))))))));
     }
   }]);
 
