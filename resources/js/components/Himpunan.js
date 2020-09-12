@@ -230,7 +230,7 @@ return(
                     {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
                     </div> */}
-                    <div className="himptabs">
+                    {/* <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/imkom.svg"></img>
                         </div>
@@ -242,7 +242,7 @@ return(
                                 Fakultas Ilmu Komunikasi
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="logoholder">
                         <img className="logoholder-slick" src="assets/himp/logo_holder.svg"></img>
                         <div className="logo">
@@ -263,7 +263,7 @@ return(
                             <div className="sosmed-position">
                             <a className="sosmed" href="http://www.instagram.com/imkom_umn"> IG | IMKOM UMN</a>
                             <a className="sosmed" href="http://line.me/ti/p/~@nkj4600e"> LINE | @nkj4600e</a>
-                            <a className="sosmed" href="http://imkom.umn.ac.id"> WEB | www.imkom.umn.ac.id</a>
+                            {/* <a className="sosmed" href="http://imkom.umn.ac.id"> WEB | www.imkom.umn.ac.id</a> */}
                             </div>
                         </div>
                     </div>
@@ -281,7 +281,7 @@ return(
                     {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
                     </div> */}
-                    <div className="himptabs">
+                    {/* <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/himars.svg"></img>
                         </div>
@@ -296,7 +296,7 @@ return(
                                 Fakultas Seni dan Design
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="logoholder">
                         <img className="logoholder-slick" src="assets/himp/logo_holder.svg"></img>
                         <div className="logo">
@@ -329,7 +329,7 @@ return(
                             <div className="sosmed-position">
                             <a className="sosmed" href="http://www.instagram.com/hmdkv_umn"> IG | hmdkv_umn</a>
                             <a className="sosmed" href="http://line.me/ti/p/~@ybc1316s"> LINE | @ybc1316s</a>
-                            <a className="sosmed" href=""> WEB | -</a>
+                            {/* <a className="sosmed" href=""> WEB | -</a> */}
                             </div>
                         </div>
                     </div>
@@ -340,7 +340,7 @@ return(
                     {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
                     </div> */}
-                    <div className="himptabs">
+                    {/* <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/himars.svg"></img>
                         </div>
@@ -355,7 +355,7 @@ return(
                                 Fakultas Seni dan Design
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="logoholder">
                         <img className="logoholder-slick" src="assets/himp/logo_holder.svg"></img>
                         <div className="logo">
@@ -384,7 +384,7 @@ return(
                             <div className="sosmed-position">
                             <a className="sosmed-white" href="http://www.instagram.com/hmfilm_umn"> IG | hmfilm_umn</a>
                             <a className="sosmed-white" href="http://line.me/ti/p/~@msn8043i"> LINE | @msn8043i</a>
-                            <a className="sosmed-white" href=""> WEB | -</a>
+                            {/* <a className="sosmed-white" href=""> WEB | -</a> */}
                             </div>
                         </div>
                     </div>
@@ -395,7 +395,7 @@ return(
                     {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
                     </div> */}
-                    <div className="himptabs">
+                    {/* <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/himars.svg"></img>
                         </div>
@@ -410,7 +410,7 @@ return(
                                 Fakultas Seni dan Design
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="logoholder">
                         <img className="logoholder-slick" src="assets/himp/logo_holder.svg"></img>
                         <div className="logo">
@@ -431,7 +431,7 @@ return(
                             <div className="sosmed-position">
                             <a className="sosmed-white" href="http://www.instagram.com/himars_umn"> IG | himars_umn</a>
                             <a className="sosmed-white" href="http://line.me/ti/p/~@daj7387i"> LINE | @daj7387i</a>
-                            <a className="sosmed-white" href=""> WEB | -</a>
+                            {/* <a className="sosmed-white" href=""> WEB | -</a> */}
                             </div>
                         </div>
                     </div>
@@ -449,7 +449,7 @@ return(
                     {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
                     </div> */}
-                    <div className="himptabs">
+                    {/* <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/himsi.svg"></img>
                         </div>
@@ -467,7 +467,7 @@ return(
                                 Fakultas Teknik dan Informatika
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="logoholder">
                         <img className="logoholder-slick" src="assets/himp/logo_holder.svg"></img>
                         <div className="logo">
@@ -488,7 +488,7 @@ return(
                             <div className="sosmed-position">
                             <a className="sosmed" href="http://www.instagram.com/himfera_umn"> IG | himfera_umn</a>
                             <a className="sosmed" href="http://line.me/ti/p/~@636jllsn"> LINE | @636jllsn</a>
-                            <a className="sosmed" href=""> WEB | -</a>
+                            {/* <a className="sosmed" href=""> WEB | -</a> */}
                             </div>
                         </div>
                     </div>
@@ -499,7 +499,7 @@ return(
                     {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
                     </div> */}
-                    <div className="himptabs">
+                    {/* <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/himsi.svg"></img>
                         </div>
@@ -517,7 +517,7 @@ return(
                                 Fakultas Teknik dan Informatika
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="logoholder">
                         <img className="logoholder-slick" src="assets/himp/logo_holder.svg"></img>
                         <div className="logo">
@@ -538,7 +538,7 @@ return(
                             <div className="sosmed-position">
                             <a className="sosmed" href="http://www.instagram.com/hmif.umn"> IG | hmif.umn</a>
                             <a className="sosmed" href="http://line.me/ti/p/~@hmif.umn"> LINE | @hmif.umn</a>
-                            <a className="sosmed" href=""> WEB | -</a>
+                            {/* <a className="sosmed" href=""> WEB | -</a> */}
                             </div>
                         </div>
                     </div>
@@ -549,7 +549,7 @@ return(
                     {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
                     </div> */}
-                    <div className="himptabs">
+                    {/* <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/himsi.svg"></img>
                         </div>
@@ -567,7 +567,7 @@ return(
                                 Fakultas Teknik dan Informatika
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="logoholder">
                         <img className="logoholder-slick" src="assets/himp/logo_holder.svg"></img>
                         <div className="logo">
@@ -588,7 +588,7 @@ return(
                             <div className="sosmed-position">
                             <a className="sosmed" href="http://www.instagram.com/acesumn"> IG | acesumn</a>
                             <a className="sosmed" href="http://line.me/ti/p/~@acesumn"> LINE | @acesumn</a>
-                            <a className="sosmed" href=""> WEB | -</a>
+                            {/* <a className="sosmed" href=""> WEB | -</a> */}
                             </div>
                         </div>
                     </div>
@@ -599,7 +599,7 @@ return(
                     {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
                     </div> */}
-                    <div className="himptabs">
+                    {/* <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/himsi.svg"></img>
                         </div>
@@ -617,7 +617,7 @@ return(
                                 Fakultas Teknik dan Informatika
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="logoholder">
                         <img className="logoholder-slick" src="assets/himp/logo_holder.svg"></img>
                         <div className="logo">
@@ -638,7 +638,7 @@ return(
                             <div className="sosmed-position">
                             <a className="sosmed-white" href="http://www.instagram.com/umn_si"> IG | umn_si</a>
                             <a className="sosmed-white" href="http://line.me/ti/p/~@umn_si"> LINE | @umn_si</a>
-                            <a className="sosmed-white" href=""> WEB | -</a>
+                            {/* <a className="sosmed-white" href=""> WEB | -</a> */}
                             </div>
                         </div>
                     </div>
@@ -656,7 +656,7 @@ return(
                     {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
                     </div> */}
-                    <div className="himptabs">
+                    {/* <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/hmp.svg"></img>
                         </div>
@@ -671,7 +671,7 @@ return(
                                 Fakultas Bisnis
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="logoholder">
                         <img className="logoholder-slick" src="assets/himp/logo_holder.svg"></img>
                         <div className="logo">
@@ -692,7 +692,7 @@ return(
                             <div className="sosmed-position">
                             <a className="sosmed" href="http://www.instagram.com/himma_umn"> IG | himma_umn</a>
                             <a className="sosmed" href="http://line.me/ti/p/~@himma_umn"> LINE | @himma_umn</a>
-                            <a className="sosmed" href=""> WEB | -</a>
+                            {/* <a className="sosmed" href=""> WEB | -</a> */}
                             </div>
                         </div>
                     </div>
@@ -703,7 +703,7 @@ return(
                     {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
                     </div> */}
-                    <div className="himptabs">
+                    {/* <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/hmp.svg"></img>
                         </div>
@@ -718,7 +718,7 @@ return(
                                 Fakultas Bisnis
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="logoholder">
                         <img className="logoholder-slick" src="assets/himp/logo_holder.svg"></img>
                         <div className="logo">
@@ -739,7 +739,7 @@ return(
                             <div className="sosmed-position">
                             <a className="sosmed-white" href="http://www.instagram.com/himtara"> IG | himtara</a>
                             <a className="sosmed-white" href="http://line.me/ti/p/~@bkq4939z"> LINE | @bkq4939z</a>
-                            <a className="sosmed-white" href=""> WEB | -</a>
+                            {/* <a className="sosmed-white" href=""> WEB | -</a> */}
                             </div>
                         </div>
                     </div>
@@ -750,7 +750,7 @@ return(
                     {/* <div className="backbttn">
                         <img className="back" src="assets/himp/back.svg"></img>
                     </div> */}
-                    <div className="himptabs">
+                    {/* <div className="himptabs">
                         <div className="himptab">
                             <img className="tabs" src="assets/himp/logo/hmp.svg"></img>
                         </div>
@@ -765,7 +765,7 @@ return(
                                 Fakultas Bisnis
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="logoholder">
                         <img className="logoholder-slick" src="assets/himp/logo_holder.svg"></img>
                         <div className="logo">
@@ -786,7 +786,7 @@ return(
                             <div className="sosmed-position">
                             <a className="sosmed-white" href="http://www.instagram.com/hmp_umn"> IG | hmp_umn</a>
                             <a className="sosmed-white" href="http://line.me/ti/p/~@iyz7068m"> LINE | @iyz7068m</a>
-                            <a className="sosmed-white" href=""> WEB | -</a>
+                            {/* <a className="sosmed-white" href=""> WEB | -</a> */}
                             </div>
                         </div>
                     </div>

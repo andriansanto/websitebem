@@ -97,7 +97,7 @@
 
 @media screen and (min-width: 1200px) {
     .himpholder {
-        height: 700px;
+        height: 650px;
         width: 1138px;
         margin-left: auto;
         margin-right: auto;
@@ -311,7 +311,7 @@
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .himpholder {
-        height: 700px;
+        height: 600px;
         width: 958px;
         margin-left: auto;
         margin-right: auto;
@@ -525,7 +525,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .himpholder {
-        height: 1000px;
+        height: 820px;
         width: 718px;
         margin-left: auto;
         margin-right: auto;
@@ -745,7 +745,7 @@
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
     .himpholder {
-        height: 1000px;
+        height: 800px;
         width: 538px;
         margin-left: auto;
         margin-right: auto;
@@ -963,9 +963,9 @@
       }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (min-width: 500px) and (max-width: 575px) {
     .himpholder {
-        height: 1000px;
+        height: 800px;
         width: 500px;
         margin-left: auto;
         margin-right: auto;
@@ -1097,6 +1097,886 @@
     .himptabs {
         height: 100px;
         width: 400px;
+        top: 80%;
+        right: 0;
+        margin-right: 2%;
+        margin-bottom: 15%;
+        /* background-color: red; */
+        position: absolute;
+        padding: 20px;
+    }
+    
+    .himptab {
+        height: 60px;
+        width: 60px;
+        right: 0;
+        top: 0;
+        margin-left: 3px;
+        /* background-color: red; */
+        position: relative;
+        float: right;
+    }
+    
+    .himptabempty {
+        height: 60px;
+        width: 60px;
+        right: 0;
+        top: 0;
+        margin: 5px;
+        /* background-color: red; */
+        position: relative;
+        float: right;
+        opacity: 0;
+    }
+    
+    .tabs {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .tabtitle {
+        height: 25px;
+        width: 250px;
+        right: 0;
+        position: relative;
+        float: right;
+        margin-top: 10px;
+        /* background-color: royalblue; */
+    }
+    
+    .titles {
+        height: 100%;
+        position: relative;
+        float: right;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+    
+    .backbttn {
+        height: 35px;
+        width: 35px;
+        left: 5vh;
+        top: 5vh;
+        position: absolute;
+        /* background-color: royalblue; */
+    }
+
+    .sosmedicon {
+        height: 100%;
+        weight: 100%;
+        position: absolute;
+      }
+      
+    .himp-slider-container {
+        width: 100%;
+        height: auto; /*Tinggi Box luar Logo nya*/
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bar-slick {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+}
+
+@media screen and (min-width: 410px) and (max-width: 499px) {
+    .himpholder {
+        height: 800px;
+        width: 410px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        /* background-color: chartreuse; */
+    }
+        
+    .himpsliderscss {
+        width: 410px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .caption-position {
+        position: relative;
+        height: auto;
+        width: 100%;
+        overflow-wrap: break-word;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .caption-modif {
+        color: black;
+    }
+    
+    .caption-modif-white {
+        color: white;
+    }
+
+    .himpdesc {
+        height: 500px;
+        width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        top: 55vh;
+        position: relative;
+        /* background-color: purple; */
+    }
+
+    .sosmed-position {
+        height: auto;
+        width: 410px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+        position: relative;
+        /* background-color: seagreen; */
+    
+    }
+
+    .sosmed {
+        border-radius: 3px;
+        border-style: solid;
+        padding: 5px;
+        margin-right: 10px;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+    }
+
+    .sosmed-white {
+        border-radius: 3px;
+        border-style: solid;
+        padding: 5px;
+        margin-right: 10px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+    }
+    
+    .logoholder {
+        top: 5%;
+        height: 400px;
+        width: 410px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 3vh;
+        position: relative;
+        /* background-color: red; */
+    }
+    
+    .logo {
+        height: 70%;
+        width: 70%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* background-color: yellow; */
+    }
+
+    .logoholder-slick {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    
+    .logo-slick {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    
+    .descholder {
+        top: -55vh;
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+        width: 380px;
+        position: relative;
+        /* background-color:blue; */
+    }
+    
+    .titlebar {
+        height: 30px;
+        width: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        top: 50vh;
+        position: relative;
+        /* background-color: orange; */
+    }
+    
+    .himptabs {
+        height: 100px;
+        width: 400px;
+        top: 80%;
+        right: 0;
+        margin-right: 2%;
+        margin-bottom: 15%;
+        /* background-color: red; */
+        position: absolute;
+        padding: 20px;
+    }
+    
+    .himptab {
+        height: 60px;
+        width: 60px;
+        right: 0;
+        top: 0;
+        margin-left: 3px;
+        /* background-color: red; */
+        position: relative;
+        float: right;
+    }
+    
+    .himptabempty {
+        height: 60px;
+        width: 60px;
+        right: 0;
+        top: 0;
+        margin: 5px;
+        /* background-color: red; */
+        position: relative;
+        float: right;
+        opacity: 0;
+    }
+    
+    .tabs {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .tabtitle {
+        height: 25px;
+        width: 250px;
+        right: 0;
+        position: relative;
+        float: right;
+        margin-top: 10px;
+        /* background-color: royalblue; */
+    }
+    
+    .titles {
+        height: 100%;
+        position: relative;
+        float: right;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+    
+    .backbttn {
+        height: 35px;
+        width: 35px;
+        left: 5vh;
+        top: 5vh;
+        position: absolute;
+        /* background-color: royalblue; */
+    }
+
+    .sosmedicon {
+        height: 100%;
+        weight: 100%;
+        position: absolute;
+      }
+      
+    .himp-slider-container {
+        width: 100%;
+        height: auto; /*Tinggi Box luar Logo nya*/
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bar-slick {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+}
+
+@media screen and (min-width: 376px) and (max-width: 409px) {
+    .himpholder {
+        height: 800px;
+        width: 376px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        /* background-color: chartreuse; */
+    }
+        
+    .himpsliderscss {
+        width: 376px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .caption-position {
+        position: relative;
+        height: auto;
+        width: 100%;
+        overflow-wrap: break-word;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .caption-modif {
+        color: black;
+    }
+    
+    .caption-modif-white {
+        color: white;
+    }
+
+    .himpdesc {
+        height: 500px;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        top: 55vh;
+        position: relative;
+        /* background-color: purple; */
+    }
+
+    .sosmed-position {
+        height: auto;
+        width: 376px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+        position: relative;
+        /* background-color: seagreen; */
+    
+    }
+
+    .sosmed {
+        border-radius: 3px;
+        border-style: solid;
+        padding: 5px;
+        margin-right: 10px;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+    }
+
+    .sosmed-white {
+        border-radius: 3px;
+        border-style: solid;
+        padding: 5px;
+        margin-right: 10px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+    }
+    
+    .logoholder {
+        top: 5%;
+        height: 400px;
+        width: 376px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 3vh;
+        position: relative;
+        /* background-color: red; */
+    }
+    
+    .logo {
+        height: 70%;
+        width: 70%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* background-color: yellow; */
+    }
+
+    .logoholder-slick {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    
+    .logo-slick {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    
+    .descholder {
+        top: -55vh;
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+        width: 350px;
+        position: relative;
+        /* background-color:blue; */
+    }
+    
+    .titlebar {
+        height: 30px;
+        width: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        top: 50vh;
+        position: relative;
+        /* background-color: orange; */
+    }
+    
+    .himptabs {
+        height: 100px;
+        width: 376px;
+        top: 80%;
+        right: 0;
+        margin-right: 2%;
+        margin-bottom: 15%;
+        /* background-color: red; */
+        position: absolute;
+        padding: 20px;
+    }
+    
+    .himptab {
+        height: 60px;
+        width: 60px;
+        right: 0;
+        top: 0;
+        margin-left: 3px;
+        /* background-color: red; */
+        position: relative;
+        float: right;
+    }
+    
+    .himptabempty {
+        height: 60px;
+        width: 60px;
+        right: 0;
+        top: 0;
+        margin: 5px;
+        /* background-color: red; */
+        position: relative;
+        float: right;
+        opacity: 0;
+    }
+    
+    .tabs {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .tabtitle {
+        height: 25px;
+        width: 250px;
+        right: 0;
+        position: relative;
+        float: right;
+        margin-top: 10px;
+        /* background-color: royalblue; */
+    }
+    
+    .titles {
+        height: 100%;
+        position: relative;
+        float: right;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+    
+    .backbttn {
+        height: 35px;
+        width: 35px;
+        left: 5vh;
+        top: 5vh;
+        position: absolute;
+        /* background-color: royalblue; */
+    }
+
+    .sosmedicon {
+        height: 100%;
+        weight: 100%;
+        position: absolute;
+      }
+      
+    .himp-slider-container {
+        width: 100%;
+        height: auto; /*Tinggi Box luar Logo nya*/
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bar-slick {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+}
+
+@media screen and (min-width: 281px) and (max-width: 375px) {
+    .himpholder {
+        height: 950px;
+        width: 282px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        /* background-color: chartreuse; */
+    }
+        
+    .himpsliderscss {
+        width: 282px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .caption-position {
+        position: relative;
+        height: auto;
+        width: 100%;
+        overflow-wrap: break-word;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .caption-modif {
+        color: black;
+    }
+    
+    .caption-modif-white {
+        color: white;
+    }
+
+    .himpdesc {
+        height: 500px;
+        width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+        top: 55vh;
+        position: relative;
+        /* background-color: purple; */
+    }
+
+    .sosmed-position {
+        height: auto;
+        width: 282px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+        position: relative;
+        /* background-color: seagreen; */
+    
+    }
+
+    .sosmed {
+        border-radius: 3px;
+        border-style: solid;
+        padding: 5px;
+        margin-right: 10px;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+    }
+
+    .sosmed-white {
+        border-radius: 3px;
+        border-style: solid;
+        padding: 5px;
+        margin-right: 10px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+    }
+    
+    .logoholder {
+        top: 5%;
+        height: 400px;
+        width: 282px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 3vh;
+        position: relative;
+        /* background-color: red; */
+    }
+    
+    .logo {
+        height: 70%;
+        width: 70%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* background-color: yellow; */
+    }
+
+    .logoholder-slick {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    
+    .logo-slick {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    
+    .descholder {
+        top: -55vh;
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+        width: 260px;
+        position: relative;
+        /* background-color:blue; */
+    }
+    
+    .titlebar {
+        height: 30px;
+        width: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        top: 50vh;
+        position: relative;
+        /* background-color: orange; */
+    }
+    
+    .himptabs {
+        height: 100px;
+        width: 282px;
+        top: 80%;
+        right: 0;
+        margin-right: 2%;
+        margin-bottom: 15%;
+        /* background-color: red; */
+        position: absolute;
+        padding: 20px;
+    }
+    
+    .himptab {
+        height: 60px;
+        width: 60px;
+        right: 0;
+        top: 0;
+        margin-left: 3px;
+        /* background-color: red; */
+        position: relative;
+        float: right;
+    }
+    
+    .himptabempty {
+        height: 60px;
+        width: 60px;
+        right: 0;
+        top: 0;
+        margin: 5px;
+        /* background-color: red; */
+        position: relative;
+        float: right;
+        opacity: 0;
+    }
+    
+    .tabs {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .tabtitle {
+        height: 25px;
+        width: 250px;
+        right: 0;
+        position: relative;
+        float: right;
+        margin-top: 10px;
+        /* background-color: royalblue; */
+    }
+    
+    .titles {
+        height: 100%;
+        position: relative;
+        float: right;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+    
+    .backbttn {
+        height: 35px;
+        width: 35px;
+        left: 5vh;
+        top: 5vh;
+        position: absolute;
+        /* background-color: royalblue; */
+    }
+
+    .sosmedicon {
+        height: 100%;
+        weight: 100%;
+        position: absolute;
+      }
+      
+    .himp-slider-container {
+        width: 100%;
+        height: auto; /*Tinggi Box luar Logo nya*/
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bar-slick {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+}
+
+@media screen and (max-width: 280px) {
+    .himpholder {
+        height: 800px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        /* background-color: chartreuse; */
+    }
+        
+    .himpsliderscss {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .caption-position {
+        position: relative;
+        height: auto;
+        width: 100%;
+        overflow-wrap: break-word;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .caption-modif {
+        color: black;
+    }
+    
+    .caption-modif-white {
+        color: white;
+    }
+
+    .himpdesc {
+        height: 500px;
+        width: 230px;
+        margin-left: auto;
+        margin-right: auto;
+        top: 55vh;
+        position: relative;
+        /* background-color: purple; */
+    }
+
+    .sosmed-position {
+        height: auto;
+        width: 250px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+        position: relative;
+        /* background-color: seagreen; */
+    
+    }
+
+    .sosmed {
+        border-radius: 3px;
+        border-style: solid;
+        padding: 5px;
+        margin-right: 10px;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+    }
+
+    .sosmed-white {
+        border-radius: 3px;
+        border-style: solid;
+        padding: 5px;
+        margin-right: 10px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+    }
+    
+    .logoholder {
+        top: 5%;
+        height: 250px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 3vh;
+        position: relative;
+        /* background-color: red; */
+    }
+    
+    .logo {
+        height: 70%;
+        width: 70%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* background-color: yellow; */
+    }
+
+    .logoholder-slick {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    
+    .logo-slick {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    
+    .descholder {
+        top: -55vh;
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+        width: 250px;
+        position: relative;
+        /* background-color:blue; */
+    }
+    
+    .titlebar {
+        height: 30px;
+        width: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        top: 50vh;
+        position: relative;
+        /* background-color: orange; */
+    }
+    
+    .himptabs {
+        height: 100px;
+        width: 250px;
         top: 80%;
         right: 0;
         margin-right: 2%;
