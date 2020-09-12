@@ -6,13 +6,20 @@
     text-align: center;
     padding-top: 120px;
     padding-bottom: 100px;
-    background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size:18px;
 }
 
 .himp-maha{
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: xxx-large;
+    background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 .card-fix {
@@ -963,7 +970,33 @@
       }
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 500px) and (max-width: 575px) {
+=======
+@media screen and (max-width: 575px) {
+    
+.container-himp {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size:12px;
+    margin-right: 50px;
+    margin-left: 20px;
+}
+
+.himp-maha{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    background: -webkit-linear-gradient(90deg, rgba(79,117,174,1) 0%, rgba(19,82,175,1) 48%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+>>>>>>> 63f69fee699ad27eeefa482b154bd5f57cf26e7d
     .himpholder {
         height: 800px;
         width: 500px;
