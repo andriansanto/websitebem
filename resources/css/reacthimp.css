@@ -30,7 +30,7 @@
     margin-bottom: 30px;
 }
 
-.card {
+.card-himp {
     height: 500px;
     border-radius: 0;
     padding-left: 0px;
@@ -38,7 +38,7 @@
     margin-bottom: 30px;
 }
 
-.card:hover {
+.card-himp:hover {
     transform: scale(1.05);
     transition: all .2s ease-in-out;
     margin: 5px;
@@ -970,11 +970,7 @@
       }
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 500px) and (max-width: 575px) {
-=======
-@media screen and (max-width: 575px) {
-    
 .container-himp {
     text-align: center;
     padding-top: 120px;
@@ -996,10 +992,6 @@
     -webkit-text-fill-color: transparent;
 
 }
-<<<<<<< HEAD
->>>>>>> 63f69fee699ad27eeefa482b154bd5f57cf26e7d
-=======
->>>>>>> 63f69fee699ad27eeefa482b154bd5f57cf26e7d
     .himpholder {
         height: 800px;
         width: 500px;

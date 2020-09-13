@@ -187,7 +187,7 @@ return(
                     <h2 className="heads-title">FAKULTAS</h2>
                     <img className="set bg"></img>
                 </Col>
-                <Col className="card">
+                <Col className="card-himp">
                     <a className="set">
                         <button className="blanket" onClick={() => this.hideComponent("showHideIlkom")}>
                         <h5 className="fakultas-title">ILMU KOMUNIKASI</h5>
@@ -195,7 +195,7 @@ return(
                         </button>
                     </a>
                 </Col>
-                <Col className="card">
+                <Col className="card-himp">
                     <a className="set">
                         <button className="blanket" onClick={() => this.hideComponent("showHideFsd")}>
                         <h5 className="fakultas-title">SENI DAN DESIGN</h5>
@@ -203,7 +203,7 @@ return(
                         </button>
                     </a>
                 </Col>
-                <Col className="card">
+                <Col className="card-himp">
                     <a className="set">
                         <button className="blanket" onClick={() => this.hideComponent("showHideFti")}>
                         <h5 className="fakultas-title">TEKNIK INFORMATIKA</h5>
@@ -211,7 +211,7 @@ return(
                         </button>
                     </a>
                 </Col>
-                <Col className="card">
+                <Col className="card-himp">
                     <a className="set">    
                         <button className="blanket" onClick={() => this.hideComponent("showHideBisnis")}>
                         <h5 className="fakultas-title">BISNIS</h5>
