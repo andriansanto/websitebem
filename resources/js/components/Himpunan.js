@@ -308,49 +308,7 @@ return(
                 )
 
                 default :
-                return (
-                    <li key={index}>
-                        <div className="himpholder ilkomfilter" >
-                        {/* <div className="backbttn">
-                            <img className="back" src="assets/himp/back.svg"></img>
-                        </div> */}
-                        {/* <div className="himptabs">
-                            <div className="himptab">
-                                <img className="tabs" src="assets/himp/logo/imkom.svg"></img>
-                            </div>
-                            <div className="himptabempty">
-                                <img className="tabs" src="assets/himp/logo/imkom.svg"></img>
-                            </div>
-                            <div className="tabtitle">
-                                <p className="titles">
-                                    Fakultas Ilmu Komunikasi
-                                </p>
-                            </div>
-                        </div> */}
-                        <div className="logoholder">
-                            <img className="logoholder-slick" src="assets/himp/logo_holder.svg"></img>
-                            <div className="logo">
-                                <img className="logo-slick" src={itemhimps.photo}></img>
-                            </div>
-                        </div>
-                        <div className="descholder">
-                            <div className="himpdesc">
-                                <p className="caption-position caption-modif">
-                                    {itemhimps.info1}
-                                </p>
-                                <p className="caption-position caption-modif">
-                                    {itemhimps.info2}
-                                </p>
-                                <div className="sosmed-position">
-                                <a className="sosmed" href={itemhimps.linkig}> IG | @{itemhimps.ig}</a>
-                                <a className="sosmed" href={itemhimps.linkline}> LINE | @{itemhimps.line}</a>
-                                {/* <a className="sosmed" href="http://imkom.umn.ac.id"> WEB | www.imkom.umn.ac.id</a> */}
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </li>
-                    )
+                return null;
             }
 
                 })}
