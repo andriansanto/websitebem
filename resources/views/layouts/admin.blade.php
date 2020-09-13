@@ -39,9 +39,15 @@
                 <h6>SUFAK</h6>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/admin/hotels">
+                <a class="nav-link" href="/admin/himpunan">
                     <i class="fas fa-th-list mr-2"></i>
                     Lihat semua himpunan
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/add_himp">
+                    <i class="fas fa-th-list mr-2"></i>
+                    Tambah himpunan
                 </a>
             </li>
             <li class="nav-item px-3 pt-4">

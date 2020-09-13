@@ -8,6 +8,7 @@ use App\Generasi;
 use App\Ukm;
 use App\Kegiatan;
 use App\Lso;
+use App\Himpunan;
 
 class AdminController extends Controller
 {
@@ -133,6 +134,11 @@ class AdminController extends Controller
         Generasi::where('id', $generasi->id)
         ->update([
             'name' => $request->name,
+            'ketua' => $request->ketua,
+            'wakil' => $request->wakil,
+            'visi' => $request->visi,
+            'misi' => $request->misi,
+            'tagline' => $request->tagline,
         ]);
         
         if($request->hasFile('photo')) {
@@ -173,11 +179,18 @@ class AdminController extends Controller
     {
         $request->validate([
             'name' => 'required|max:255',
+            'ketua' => 'required|max:255',
+            'wakil' => 'required|max:255',
             'photo' => 'required|image|max:1000'
         ]);
 
         $generasi = new Generasi();
         $generasi->name = $request->name;
+        $generasi->ketua = $request->ketua;
+        $generasi->wakil = $request->wakil;
+        $generasi->visi = $request->visi;
+        $generasi->misi = $request->misi;
+        $generasi->tagline = $request->tagline;
 
         if($request->hasFile('photo')) {
             $file = $request->file('photo');
@@ -445,5 +458,231 @@ class AdminController extends Controller
         $keg->save();
 
         return redirect('/admin/kegiatan')->with('status', 'Kegiatan berhasil ditambahkan !');
+    }
+
+
+
+     /**LSO */
+
+     public function lso(){
+        return view('admin.lso')->with(['lsos' => Lso::all()]);
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\hotel  $hotel
+     * @return \Illuminate\Http\Response
+     */
+    public function edit_lso(Lso $lso)
+    {
+        return view('admin.edit-lso', compact('lso'));
+    }
+
+    public function update_lso(Request $request, Lso $lso)
+    {
+        $request->validate([
+            'name' => 'required|max:255',
+            'photo' => 'image|max:1000',
+            'info1' => 'required',
+            'instagram' => 'required|max:255',
+        ]);
+
+        Lso::where('id', $lso->id)
+        ->update([
+            'name' => $request->name,
+            'info1' => $request->info1,
+            'info2' => $request->info2,
+            'info3' => $request->info3,
+            'ig' => $request->instagram,
+            'link' => "http://www.instagram.com/" . $request->instagram
+        ]);
+        
+        if($request->hasFile('photo')) {
+                $file = $request->file('photo');
+
+                $path = Lso::find($lso->id)->photo;
+        
+                unlink($path);
+
+                $filename = 'assets/lso/'.time() . '.' . $_FILES['photo']['name'];
+                $target = 'assets/lso';
+                $file->move($target,$filename);
+                $lso->photo = $filename;
+        } else {
+            return redirect('/admin/lso')->with('unstatus', 'Lso berhasil diubah dengan gambar yang sama !');
+            $lso->photo = '';
+        }
+        $lso->save();
+
+        return redirect('/admin/lso')->with('status', 'Lso berhasil diubah !');
+    }
+
+    public function destroy_lso(Lso $lso)
+    {
+        $path = Lso::find($lso->id)->photo;
+        
+        if(unlink($path)){
+            Lso::destroy($lso->id);
+            return redirect('/admin/lso')->with('status', 'Lso berhasil dihapus !');
+        }
+        else{
+            return redirect('/admin/lso')->with('status', 'Lso gagal dihapus !');
+        }
+
+    }
+
+    public function create_lso()
+    {
+        return view('/admin/add-lso');
+    }
+
+    public function store_lso(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|max:255',
+            'photo' => 'image|max:1000',
+            'info1' => 'required',
+            'instagram' => 'required|max:255'
+        
+        ]);
+
+        $lso = new Lso();
+        $lso->name = $request->name;
+        $lso->info1 = $request->info1;
+        $lso->info2 = $request->info2;
+        $lso->info3 = $request->info3;
+        $lso->ig = $request->instagram;
+        $lso->link = "http://www.instagram.com/" . $request->instagram;
+
+        if($request->hasFile('photo')) {
+            $file = $request->file('photo');
+
+            $filename = 'assets/lso/'.time() . '.' . $_FILES['photo']['name'];
+            $target = 'assets/lso';
+            $file->move($target,$filename);
+            $lso->photo = $filename;
+
+     } else {
+            return redirect('/admin')->with('unstatus', 'Lso tidak berhasil ditambahkan !');
+            $lso->photo = '';
+        }
+        $lso->save();
+
+        return redirect('/admin/lso')->with('status', 'Lso berhasil ditambahkan !');
+    }
+
+    /**HIMPUNAN */
+
+    public function himpunan(){
+        return view('admin.himp')->with(['himps' => Himpunan::all()]);
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\hotel  $hotel
+     * @return \Illuminate\Http\Response
+     */
+    public function edit_himp(Himpunan $himpunan)
+    {
+        return view('admin.edit-himp', compact('himpunan'));
+    }
+
+    public function update_himp(Request $request, Himpunan $himpunan)
+    {
+        $request->validate([
+            'name' => 'required|max:255',
+            'photo' => 'image|max:1000',
+            'info1' => 'required',
+            'fakultas' => 'required|max:255',
+        ]);
+
+        Himpunan::where('id', $himpunan->id)
+        ->update([
+            'name' => $request->name,
+            'info1' => $request->info1,
+            'info2' => $request->info2,
+            'fakultas' => $request->fakultas,
+            'ig' => $request->ig,
+            'linkig' => "http://www.instagram.com/" . $request->ig,
+            'line' => $request->line,
+            'linkline' => "http://line.me/ti/p/~@" . $request->line,
+            
+        ]);
+        
+        if($request->hasFile('photo')) {
+                $file = $request->file('photo');
+
+                $path = Himpunan::find($himpunan->id)->photo;
+        
+                unlink($path);
+
+                $filename = 'assets/himp/logo/'.time() . '.' . $_FILES['photo']['name'];
+                $target = 'assets/himp/logo';
+                $file->move($target,$filename);
+                $himpunan->photo = $filename;
+        } else {
+            return redirect('/admin/himpunan')->with('unstatus', 'Himpunan berhasil diubah dengan gambar yang sama !');
+            $himpunan->photo = '';
+        }
+        $himpunan->save();
+
+        return redirect('/admin/himpunan')->with('status', 'Himpunan berhasil diubah !');
+    }
+
+    public function destroy_himpunan(Himpunan $himpunan)
+    {
+        $path = Himpunan::find($himpunan->id)->photo;
+        
+        if(unlink($path)){
+            Himpunan::destroy($himpunan->id);
+            return redirect('/admin/himpunan')->with('status', 'Himpunan berhasil dihapus !');
+        }
+        else{
+            return redirect('/admin/himpunan')->with('status', 'Himpunan gagal dihapus !');
+        }
+
+    }
+
+    public function create_himp()
+    {
+        return view('/admin/add-himp');
+    }
+
+    public function store_himp(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|max:255',
+            'info1' => 'required',
+            'fakultas' => 'required|max:255',
+        
+        ]);
+
+        $himpunan = new Himpunan();
+        $himpunan->name = $request->name;
+        $himpunan->fakultas = $request->fakultas;
+        $himpunan->info1 = $request->info1;
+        $himpunan->info2 = $request->info2;
+        $himpunan->ig = $request->ig;
+        $himpunan->line = $request->line;
+        $himpunan->linkig = "http://www.instagram.com/" . $request->ig;
+        $himpunan->linkline = "http://line.me/ti/p/~@" . $request->line;
+
+        if($request->hasFile('photo')) {
+            $file = $request->file('photo');
+
+            $filename = 'assets/himp/logo/'.time() . '.' . $_FILES['photo']['name'];
+            $target = 'assets/himp/logo';
+            $file->move($target,$filename);
+            $himpunan->photo = $filename;
+
+     } else {
+            return redirect('/admin')->with('unstatus', 'Himpunan tidak berhasil ditambahkan !');
+            $himpunan->photo = '';
+        }
+        $himpunan->save();
+
+        return redirect('/admin/himpunan')->with('status', 'Himpunan berhasil ditambahkan !');
     }
 }

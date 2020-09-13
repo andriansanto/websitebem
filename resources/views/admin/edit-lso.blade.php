@@ -29,7 +29,7 @@
                                 @method('patch')
                                 @csrf
                             <div class="form-group row d-flex justify-content-center px-4 pt-3">
-                                <img src="/{{ $ukm->photo }}" class="img-thumbnail" style="width:70%; object-fit: cover;" onclick="triggerClick()" id="display_photo"></img>
+                                <img src="/{{ $lso->photo }}" class="img-thumbnail" style="width:70%; object-fit: cover;" onclick="triggerClick()" id="display_photo"></img>
                             <div class="form-group row d-flex justify-content-center px-4">
                                 <label for="photo">{{ __('Logo LSO') }}</label>
                                 <div class="input-group mb-3">
@@ -48,25 +48,25 @@
                         <div class="col pl-4 pr-5 pt-2">
                             <div class="form-group row">
                                 <label for="name">{{ __('Nama LSO') }}</label>
-                                <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Masukkan nama UKM" value="{{ $lso->name }}" />
+                                <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Masukkan nama Lso" value="{{ $lso->name }}" />
                                 @error('name')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                                 <br></br>
                                 <label for="name">{{ __('Deskripsi 1') }}</label>
-                                <textarea type="text" name="info1" class="form-control @error('info1') is-invalid @enderror" placeholder="Masukkan deskripsi UKM">{{ $lso->info1 }}</textarea>
+                                <textarea type="text" name="info1" class="form-control @error('info1') is-invalid @enderror" placeholder="Masukkan deskripsi Lso">{{ $lso->info1 }}</textarea>
                                 @error('info1')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                                 <br></br>
                                 <label for="name">{{ __('Deskripsi 2') }}</label>
-                                <textarea type="text" name="info2" class="form-control @error('info2') is-invalid @enderror" placeholder="Masukkan deskripsi UKM">{{ $lso->info2 }}</textarea>
+                                <textarea type="text" name="info2" class="form-control @error('info2') is-invalid @enderror" placeholder="Masukkan deskripsi Lso">{{ $lso->info2 }}</textarea>
                                 @error('info2')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                                 <br></br>
                                 <label for="name">{{ __('Deskripsi 3') }}</label>
-                                <textarea type="text" name="info3" class="form-control @error('info3') is-invalid @enderror" placeholder="Masukkan deskripsi UKM">{{ $lso->info3 }}</textarea>
+                                <textarea type="text" name="info3" class="form-control @error('info3') is-invalid @enderror" placeholder="Masukkan deskripsi Lso">{{ $lso->info3 }}</textarea>
                                 @error('info3')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
@@ -76,7 +76,7 @@
                                     <div class="input-group-prepend">
                                     <div class="input-group-text">@</div>
                                     </div>
-                                <input type="text" name="instagram" class="form-control @error('instagram') is-invalid @enderror" placeholder="Masukkan instagram UKM" value="{{ $lso->ig }}" />
+                                <input type="text" name="instagram" class="form-control @error('instagram') is-invalid @enderror" placeholder="Masukkan instagram Lso" value="{{ $lso->ig }}" />
                                 </div>
                                 @error('instagram')
                                     <div class="invalid-feedback">{{ $message }}</div>
@@ -88,8 +88,8 @@
                 </div>
             </div>
             <div class="row justify-content-end px-3">
-                <a href="/admin/ukm" class="btn btn-secondary mx-4">Batal</a>
-                <input type="submit" class="btn btn-primary" value="Ubah UKM" />
+                <a href="/admin/lso" class="btn btn-secondary mx-4">Batal</a>
+                <input type="submit" class="btn btn-primary" value="Ubah LSO" />
                 </form>
             </div>
         </div>

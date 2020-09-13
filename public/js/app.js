@@ -87699,7 +87699,7 @@ var AboutUs = /*#__PURE__*/function (_Component) {
               case 0:
                 _context.prev = 0;
                 _context.next = 3;
-                return fetch('http://127.0.0.1:8000/api/gen', {
+                return fetch('https://bem.umn.ac.id/api/gen', {
                   headers: {
                     'APP_KEY': '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',

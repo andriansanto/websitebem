@@ -52,6 +52,41 @@
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
+                            <div class="form-group row">
+                                <label for="name">{{ __('Nama Ketua') }}</label>
+                                <input type="text" name="ketua" class="form-control @error('name') is-invalid @enderror" placeholder="Masukkan nama ketua" value="{{ $generasi->ketua }}" />
+                                @error('name')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group row">
+                                <label for="name">{{ __('Nama Wakil') }}</label>
+                                <input type="text" name="wakil" class="form-control @error('name') is-invalid @enderror" placeholder="Masukkan nama wakil" value="{{ $generasi->wakil }}" />
+                                @error('name')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group row">
+                                <label for="name">{{ __('Visi') }}</label>
+                                <textarea type="text" name="visi" class="form-control @error('name') is-invalid @enderror" placeholder="Masukkan visi"  >{{ $generasi->visi }}</textarea>
+                                @error('name')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group row">
+                                <label for="name">{{ __('Misi') }}</label>
+                                <textarea type="text" name="misi" class="form-control @error('name') is-invalid @enderror" placeholder="Masukkan misi"  >{{ $generasi->misi }}</textarea>
+                                @error('name')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group row">
+                                <label for="name">{{ __('Tagline') }}</label>
+                                <input type="text" name="tagline" class="form-control @error('name') is-invalid @enderror" placeholder="Masukkan tagline" value="{{ $generasi->tagline }}" />
+                                @error('name')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
                         </div>
                     </div>
                 </div>

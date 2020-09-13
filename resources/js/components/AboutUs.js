@@ -83,7 +83,7 @@ class AboutUs extends Component{
 
     async componentDidMount(){
         try{
-            const res = await fetch('http://127.0.0.1:8000/api/gen',{
+            const res = await fetch('https://bem.umn.ac.id/api/gen',{
                 headers:{
                     'APP_KEY' : '@dedicatetocreatebemgenx',
                     'Content-Type': 'application/json',

@@ -47,7 +47,42 @@
                         <div class="col pl-4 pr-5 pt-2">
                             <div class="form-group row">
                                 <label for="name">{{ __('Nama Generasi') }}</label>
-                                <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Masukkan nama slide show" value="{{ old('name') }}" />
+                                <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Masukkan nama generasi" value="{{ old('name') }}" />
+                                @error('name')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group row">
+                                <label for="name">{{ __('Nama Ketua') }}</label>
+                                <input type="text" name="ketua" class="form-control @error('name') is-invalid @enderror" placeholder="Masukkan nama ketua" value="{{ old('name') }}" />
+                                @error('name')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group row">
+                                <label for="name">{{ __('Nama Wakil') }}</label>
+                                <input type="text" name="wakil" class="form-control @error('name') is-invalid @enderror" placeholder="Masukkan nama wakil" value="{{ old('name') }}" />
+                                @error('name')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group row">
+                                <label for="name">{{ __('Visi') }}</label>
+                                <input type="text" name="visi" class="form-control @error('name') is-invalid @enderror" placeholder="Masukkan visi" value="{{ old('name') }}" />
+                                @error('name')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group row">
+                                <label for="name">{{ __('Misi') }}</label>
+                                <input type="text" name="misi" class="form-control @error('name') is-invalid @enderror" placeholder="Masukkan misi" value="{{ old('name') }}" />
+                                @error('name')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group row">
+                                <label for="name">{{ __('Tagline') }}</label>
+                                <input type="text" name="tagline" class="form-control @error('name') is-invalid @enderror" placeholder="Masukkan tagline" value="{{ old('name') }}" />
                                 @error('name')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror

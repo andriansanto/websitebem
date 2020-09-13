@@ -542,5 +542,191 @@ class DatabaseSeeder extends Seeder
         $lso->link = "http://www.instagram.com/kopmaustore";
         $lso->save();
 
+    //     $himp = new App\Himpunan;
+    //     $himp->name = "I'M KOM";
+    //     $himp->photo = "assets/himp/logo/imkom.svg";
+    //     $himp->fakultas = "Ilkom";
+    //     $himp->info1 = "I’M KOM merupakan himpunan mahasiswa yang berada di bawah naungan Fakultas Ilmu Komunikasi yang secara langsung membawahi dua program studi, Strategic Communication dan Multimedia Journalism, I’M KOM menjadi satu-satunya himpunan mahasiswa di tingkat fakultas. I'M KOM berperan aktif dalam perkuliahan untuk membantu menjadi jembatan penghubung mahasiswa dengan pihak Program Studi.";
+    //     $himp->info2 = "I'M KOM terus memberikan yang terbaik sehingga berdampak nyata dalam kehidupan perkuliahan dengan melaksanakan berbagai macam kegiatan seperti Communication Festival, PRIDE, COMMPRESS, FIKOM NIGHT, OMB Konten Prodi Ilmu Komunikasi, dan lainnya. Dengan rangkaian kegiatan yang diadakan, mahasiswa diharapkan mendapatkan pengalaman dalam berorganisasi yang dibutuhkan dalam dunia kerja.";
+    //     $himp->ig = "IMKOM UMN";
+    //     $himp->linkig = "http://www.instagram.com/imkom_umn";
+    //     $himp->line = "@nkj4600e";
+    //     $himp->linkline = "http://line.me/ti/p/~@nkj4600e";
+    //     $himp->web = "imkom.umn.ac.id";
+    //     $himp->save();
+
+    //     $himp = new App\Himpunan;
+    //     $himp->name = "HMDKV";
+    //     $himp->photo = "assets/himp/logo/hmdkv.svg";
+    //     $himp->fakultas = "FSD";
+    //     $himp->info1 = "Himpunan Desain Komunikasi Visual Universitas Multimedia Nusantara
+    //     (HMDKV UMN) merupakan organisasi yang beranggotakan seluruh
+    //     mahasiswa DKV UMN. Asal mula HMDKV berawal dari HMFSD
+    //     (Himpunan Fakultas Seni dan Desain) yang terpecah menjadi 3
+    //     himpunan
+    //     dari masing-masing jurusan pada Fakultas Seni dan Desain pada tahun
+    //     2017, yaitu HMDKV (Desain Komunikasi Visual), HMFILM (Film dan
+    //     Televisi), dan HIMARS (Arsitektur). ";
+    //     $himp->info2 = "HMDKV UMN menjadi wadah untuk
+    //     menghimpun mahasiswa Desain Komunikasi Visual Universitas
+    //     Multimedia Nusantara dan menjadi jembatan dalam pengembangan
+    //     kepentingan akademik dan non akademik yang bertujuan untuk
+    //     meningkatkan prestasi, mendukung ekspresi, serta kesejahteraan
+    //     mahasiswa DKV UMN.";
+    //     $himp->ig = "hmdkv_umn";
+    //     $himp->linkig = "http://www.instagram.com/hmdkv_umn";
+    //     $himp->line = "@ybc1316s";
+    //     $himp->linkline = "http://line.me/ti/p/~@ybc1316s";
+    //     $himp->web = "-";
+    //     $himp->save();
+
+    //     $himp = new App\Himpunan;
+    //     $himp->name = "HMFILM";
+    //     $himp->photo = "assets/himp/logo/hmftv.svg";
+    //     $himp->fakultas = "FSD";
+    //     $himp->info1 = "Himpunan Mahasiswa Film atau akrab disebut dengan HMFilm
+    //     merupakan organisasi yang menjadi penghubung antar mahasiswa, dosen
+    //     program studi dan kemahasiswaan sehingga dapat terjalin hubungan yang baik.
+    //     HMFilm ini terbentuk pada tanggal 5 Desember 2017. Pada tahun 2020, HMFilm
+    //     memasuki generasi kedua sebagai organisasi dalam Prodi Film.";
+    //     $himp->info2 = "Tugas HMFilm adalah menyediakan forum bagi mahasiswa Film dalam
+    //     menuangkan aspirasi dan mengembangkan potensi berdasarkan minat yang
+    //     sama. Selain itu, HMFilm juga berperan dalam mendekatkan hubungan antar
+    //     mahasiswa, memperluas koneksi, dan melaksanakan kegiatan kemahasiswaan
+    //     yang menjunjung tanggung jawab dan kebersamaan.";
+    //     $himp->ig = "hmfilm_umn";
+    //     $himp->linkig = "http://www.instagram.com/hmfilm_umn";
+    //     $himp->line = "@msn8043i";
+    //     $himp->linkline = "http://line.me/ti/p/~@msn8043i";
+    //     $himp->web = "-";
+    //     $himp->save();
+
+    //     $himp = new App\Himpunan;
+    //     $himp->name = "HIMARS";
+    //     $himp->photo = "assets/himp/logo/himars.svg";
+    //     $himp->fakultas = "FSD";
+    //     $himp->info1 = "Himpunan Mahasiswa Arsitektur Universitas Multimedia Nusantara (HIMARS) adalah organisasi kemahasiswaan yang mewadahi dan menggerakkan kreativitas serta aktivitas mahasiswa. HIMARS diresmikan pada 5 Desember 2018. ";
+    //     $himp->info2 = " HIMARS memiliki visi mahasiswa arsitektur UMN dapat proaktif di berbagai bidang dalam lingkup internal dan eksternal kampus serta membangun solidaritas antar sesama mahasiswa. Misi HIMARS adalah sarana yang menyalurkan aspirasi mahasiswa arsitektur UMN, memperluas hubungan baik internal maupun eksternal, serta meningkatkan kemampuan dalam berorganisasi yang dikemas dalam seluruh Program kerja HIMARS.";
+    //     $himp->ig = "himars_umn";
+    //     $himp->linkig = "http://www.instagram.com/himars_umn";
+    //     $himp->line = "@daj7387i";
+    //     $himp->linkline = "http://line.me/ti/p/~@daj7387i";
+    //     $himp->web = "-";
+    //     $himp->save();
+
+    //     $himp = new App\Himpunan;
+    //     $himp->name = "HIMFERA";
+    //     $himp->photo = "assets/himp/logo/himfera.svg";
+    //     $himp->fakultas = "FTI";
+    //     $himp->info1 = "Himpunan Mahasiswa Teknik Fisika dan Teknik Elektro Universitas Multimedia Nusantara (HIMFERA) merupakan organisasi yang menampung aspirasi dan menjalankan program kerja bagi seluruh mahasiswa Teknik Fisika dan Teknik Elektro di UMN. HIMFERA Generasi 0 dibentuk pada 5 Desember 2017. ";
+    //     $himp->info2 = "HIMFERA Gen 2 terdiri dari Badan Pengurus Harian, Divisi Akademik, Divisi Non Akademik, Divisi Humas, dan Divisi Desain Visual. Setiap divis mengurus program kerja sesuai dengan bidangnya. Program kerja dibuat berdasarkan kebutuhan dan aspirasi mahasiswa Teknik Fisika dan Teknik Elektro.";
+    //     $himp->ig = "himfera_umn";
+    //     $himp->linkig = "http://www.instagram.com/himfera_umn";
+    //     $himp->line = "@636jllsn";
+    //     $himp->linkline = "http://line.me/ti/p/~@636jllsn";
+    //     $himp->web = "-";
+    //     $himp->save();
+
+    //     $himp = new App\Himpunan;
+    //     $himp->name = "HMIF";
+    //     $himp->photo = "assets/himp/logo/hmif.svg";
+    //     $himp->fakultas = "FTI";
+    //     $himp->info1 = "Himpunan Mahasiswa Informatika Universitas Multimedia Nusantara (HMIF) merupakan organisasi resmi kemahasiswaan pada tingkat program studi sebagai eksekutor yang bernaung di bawah Wakil Rektor III Bidang kemahasiswaan Universitas Multimedia Nusantara. ";
+    //     $himp->info2 = "HMIF bersifat mandiri, kekeluargaan, adil, aspiratif, partisipatif, representatif, efektif, efisien, beserta transparan. HMIF diselenggarakan berdasarkan prinsip dari, oleh, dan untuk mahasiswa Informatika dengan memberi peranan serta keleluasaan lebih kepada mahasiswa.";
+    //     $himp->ig = "hmif.umn";
+    //     $himp->linkig = "http://www.instagram.com/hmif.umn";
+    //     $himp->line = "@hmif.umn";
+    //     $himp->linkline = "http://line.me/ti/p/~@hmif.umn";
+    //     $himp->save();
+
+    //     $himp = new App\Himpunan;
+    //     $himp->name = "ACES";
+    //     $himp->photo = "assets/himp/logo/aces.svg";
+    //     $himp->fakultas = "FTI";
+    //     $himp->info1 = "ACES (Association of Computer Engineering Students) adalah himpunan mahasiswa Teknik Komputer UMN, dibentuk pada tanggal 8 Desember 2007. Tugas dan Kewajiban ACES adalah melayani dan membantu kendala-kendala yang dimiliki oleh anggota-anggota ACES. ";
+    //     $himp->info2 = "Pada gen 9, nama ACES berubah dari Himasikom (Himpunan Mahasiswa Sistem Komputer) dengan alasan Himasikom program studi kami juga mengalami perubahan nama dari Sistem Komputer menjadi Teknik Komputer. ACES juga mengadakan beberapa proker yang diharapkan bisa membantu memberikan gambaran mengenai kehidupan perkuliahan di prodi Teknik Komputer.";
+    //     $himp->ig = "acesumn";
+    //     $himp->linkig = "http://www.instagram.com/acesumn";
+    //     $himp->line = "@acesumn";
+    //     $himp->linkline = "http://line.me/ti/p/~@acesumn";
+    //     $himp->save();
+
+    //     $himp = new App\Himpunan;
+    //     $himp->name = "HIMSI";
+    //     $himp->photo = "assets/himp/logo/himsi.svg";
+    //     $himp->fakultas = "FTI";
+    //     $himp->info1 = "Himpunan Mahasiswa Sistem Informasi Universitas Multimedia Nusantara (HIMSI) didirikan pada tahun 2007, yaitu pada saat angka pertama mahasiswa Universitas Multimedia Nusantara dengan nama D'Information System Community. DISC merupakan HMJ Sistem Informasi "Generasi Nol".";
+    //     $himp->info2 = "Pada tahun 2010, DISC mengalami perubahan sebutan menjadi HIMSI. HIMSI Generasi 10 beranggotakan 16 orang orang mahasiswa sistem informasi terpilih untuk bertugas mengabdi kepada keluarga besar mahasiswa sistem informasi berdasarkan asas kekeluargaan.";
+    //     $himp->ig = "umn_si";
+    //     $himp->linkig = "http://www.instagram.com/umn_si";
+    //     $himp->line = "@umn_si";
+    //     $himp->linkline = "http://line.me/ti/p/~@umn_si";
+    //     $himp->save();
+
+    //     $himp = new App\Himpunan;
+    //     $himp->name = "";
+    //     $himp->photo = "";
+    //     $himp->fakultas = "";
+    //     $himp->info1 = "";
+    //     $himp->info2 = "";
+    //     $himp->ig = "";
+    //     $himp->linkig = "";
+    //     $himp->line = "";
+    //     $himp->linkline = "";
+    //     $himp->web = "";
+    //     $himp->save();
+
+    //     $himp = new App\Himpunan;
+    //     $himp->name = "";
+    //     $himp->photo = "";
+    //     $himp->fakultas = "";
+    //     $himp->info1 = "";
+    //     $himp->info2 = "";
+    //     $himp->ig = "";
+    //     $himp->linkig = "";
+    //     $himp->line = "";
+    //     $himp->linkline = "";
+    //     $himp->web = "";
+    //     $himp->save();
+
+    //     $himp = new App\Himpunan;
+    //     $himp->name = "";
+    //     $himp->photo = "";
+    //     $himp->fakultas = "";
+    //     $himp->info1 = "";
+    //     $himp->info2 = "";
+    //     $himp->ig = "";
+    //     $himp->linkig = "";
+    //     $himp->line = "";
+    //     $himp->linkline = "";
+    //     $himp->web = "";
+    //     $himp->save();
+
+    //     $himp = new App\Himpunan;
+    //     $himp->name = "";
+    //     $himp->photo = "";
+    //     $himp->fakultas = "";
+    //     $himp->info1 = "";
+    //     $himp->info2 = "";
+    //     $himp->ig = "";
+    //     $himp->linkig = "";
+    //     $himp->line = "";
+    //     $himp->linkline = "";
+    //     $himp->web = "";
+    //     $himp->save();
+
+    //     $himp = new App\Himpunan;
+    //     $himp->name = "";
+    //     $himp->photo = "";
+    //     $himp->fakultas = "";
+    //     $himp->info1 = "";
+    //     $himp->info2 = "";
+    //     $himp->ig = "";
+    //     $himp->linkig = "";
+    //     $himp->line = "";
+    //     $himp->linkline = "";
+    //     $himp->web = "";
+    //     $himp->save();
+
     }
 }

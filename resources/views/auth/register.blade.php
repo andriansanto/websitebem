@@ -3,11 +3,12 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+        <!-- <div class="col-md-8"> -->
+        <h1><b>Halo, Anda memasuki page yang salah!</b></h1>
+            <!-- <div class="card">
+                <div class="card-header">{{ __('Halo, Anda memasuki page yang salah!') }}</div> -->
 
-                <div class="card-body">
+                <!-- <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
@@ -69,9 +70,9 @@
                             </div>
                         </div>
                     </form>
-                </div>
-            </div>
-        </div>
+                </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
     </div>
 </div>
 @endsection

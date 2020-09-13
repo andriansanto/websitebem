@@ -32,6 +32,18 @@ Route::patch('/admin/slideshow/{slideshow}','AdminController@update_slideshow');
 Route::get('/admin/add_slideshow','AdminController@create');
 Route::post('/admin/add_slideshow','AdminController@store')->name('add.slideshow');
 
+/**ADMIN PANEL HIMPUNAN */
+
+Route::get('/admin/himpunan','AdminController@himpunan');
+Route::post('/admin/himpunan','AdminController@himpunan');
+
+Route::delete('/admin/himpunan/{himpunan}','AdminController@destroy_himp');
+Route::get('/admin/himpunan/{himpunan}/edit','AdminController@edit_himp');
+Route::patch('/admin/himpunan/{himpunan}','AdminController@update_himp');
+
+Route::get('/admin/add_himp','AdminController@create_himp');
+Route::post('/admin/add_himp','AdminController@store_himp')->name('add.himp');
+
 /**ADMIN PANEL GENERASI ABOUT US */
 
 Route::get('/admin/aboutus','AdminController@aboutus');
@@ -79,6 +91,7 @@ Route::patch('/admin/lso/{lso}','AdminController@update_lso');
 
 Route::get('/admin/add_lso','AdminController@create_lso');
 Route::post('/admin/add_lso','AdminController@store_lso')->name('add.lso');
+
 
 /**PAGES */
 

@@ -17,6 +17,11 @@
                         <div class="d-flex justify-content-between">
                             <div class="col">
                                 <h3 class="card-title">{{ $gen->name }}</h3>
+                                <p class="card-title">{{ $gen->ketua }}</p>
+                                <p class="card-title">{{ $gen->wakil }}</p>
+                                <p class="card-title">{{ $gen->visi }}</p>
+                                <p class="card-title">{{ $gen->misi }}</p>
+                                <p class="card-title">{{ $gen->tagline }}</p>
                                 
                             </div>
                             <div class="col d-inline-flex justify-content-end">

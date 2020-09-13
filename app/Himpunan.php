@@ -16,7 +16,7 @@ class Himpunan extends Model
     protected $table = 'himpunan';
 
     protected $fillable = [
-        'name', 'photo', 'fakultas', 'info1', 'info2', 'ig', 'linkig', 'line', 'linkline', 'web'
+        'name', 'photo', 'fakultas', 'info1', 'info2', 'ig', 'linkig', 'line', 'linkline'
     ];
 
 }
