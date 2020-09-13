@@ -87813,17 +87813,25 @@ if (document.getElementById('AboutUs')) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _css_reacthimp_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../css/reacthimp.css */ "./resources/css/reacthimp.css");
-/* harmony import */ var _css_reacthimp_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_reacthimp_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! slick-carousel/slick/slick.css */ "./node_modules/slick-carousel/slick/slick.css");
-/* harmony import */ var slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! slick-carousel/slick/slick-theme.css */ "./node_modules/slick-carousel/slick/slick-theme.css");
-/* harmony import */ var slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _css_reacthimp_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../css/reacthimp.css */ "./resources/css/reacthimp.css");
+/* harmony import */ var _css_reacthimp_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_reacthimp_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! slick-carousel/slick/slick.css */ "./node_modules/slick-carousel/slick/slick.css");
+/* harmony import */ var slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! slick-carousel/slick/slick-theme.css */ "./node_modules/slick-carousel/slick/slick-theme.css");
+/* harmony import */ var slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -87873,58 +87881,58 @@ var Ilkom = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       /*#__PURE__*/
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "himpsliderscss"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
         id: "himpslidersilkom"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "himpholder ilkomfilter"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "backbttn"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
         className: "back",
         src: "assets/himp/back.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "himptab"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
         className: "tabs",
         src: "assets/himp/logo/imkom.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "tabtitle"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         className: "titles"
-      }, "Fakultas Ilmu Komunikasi")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Fakultas Ilmu Komunikasi")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "logoholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
         className: "logoholder-slick",
         src: "assets/himp/logo_holder.svg"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "logo"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
         className: "logo-slick",
         src: "assets/himp/logo/imkom.svg"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "descholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "titlebar"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
         className: "bar-slick",
         src: "assets/himp/logo/imkombar.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "himpdesc"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         className: "caption-position caption-modif"
-      }, "I\u2019M KOM merupakan himpunan mahasiswa yang berada di bawah naungan Fakultas Ilmu Komunikasi yang secara langsung membawahi dua program studi, Strategic Communication dan Multimedia Journalism, I\u2019M KOM menjadi satu-satunya himpunan mahasiswa di tingkat fakultas. I'M KOM berperan aktif dalam perkuliahan untuk membantu menjadi jembatan penghubung mahasiswa dengan pihak Program Studi."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }, "I\u2019M KOM merupakan himpunan mahasiswa yang berada di bawah naungan Fakultas Ilmu Komunikasi yang secara langsung membawahi dua program studi, Strategic Communication dan Multimedia Journalism, I\u2019M KOM menjadi satu-satunya himpunan mahasiswa di tingkat fakultas. I'M KOM berperan aktif dalam perkuliahan untuk membantu menjadi jembatan penghubung mahasiswa dengan pihak Program Studi."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         className: "caption-position caption-modif"
-      }, "I'M KOM terus memberikan yang terbaik sehingga berdampak nyata dalam kehidupan perkuliahan dengan melaksanakan berbagai macam kegiatan seperti Communication Festival, PRIDE, COMMPRESS, FIKOM NIGHT, OMB Konten Prodi Ilmu Komunikasi, dan lainnya. Dengan rangkaian kegiatan yang diadakan, mahasiswa diharapkan mendapatkan pengalaman dalam berorganisasi yang dibutuhkan dalam dunia kerja."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "I'M KOM terus memberikan yang terbaik sehingga berdampak nyata dalam kehidupan perkuliahan dengan melaksanakan berbagai macam kegiatan seperti Communication Festival, PRIDE, COMMPRESS, FIKOM NIGHT, OMB Konten Prodi Ilmu Komunikasi, dan lainnya. Dengan rangkaian kegiatan yang diadakan, mahasiswa diharapkan mendapatkan pengalaman dalam berorganisasi yang dibutuhkan dalam dunia kerja."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "sosmed-position"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
         className: "sosmed",
         href: "http://www.instagram.com/bemumn"
-      }, " IG | bemumn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, " IG | bemumn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
         className: "sosmed",
         href: "http://line.me/ti/p/~@dmn8577"
-      }, " LINE | @dmn8577"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, " LINE | @dmn8577"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
         className: "sosmed",
         href: "http://www.umn.ac.id"
       }, " WEB | www.umn.ac.id"))))))));
@@ -87932,7 +87940,7 @@ var Ilkom = /*#__PURE__*/function (_React$Component) {
   }]);
 
   return Ilkom;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_1___default.a.Component);
 
 var Himpunan = /*#__PURE__*/function (_Component) {
   _inherits(Himpunan, _Component);
@@ -87960,13 +87968,78 @@ var Himpunan = /*#__PURE__*/function (_Component) {
       showHideIlkom: false,
       showHideFsd: false,
       showHideFti: false,
-      showHideBisnis: false
+      showHideBisnis: false,
+      itemhimp: [],
+      isLoaded: false,
+      isLoading: true
     };
     _this.hideComponent = _this.hideComponent.bind(_assertThisInitialized(_this));
     return _this;
   }
 
   _createClass(Himpunan, [{
+    key: "componentDidMount",
+    value: function () {
+      var _componentDidMount = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var _this2 = this;
+
+        var res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.prev = 0;
+                _context.next = 3;
+                return fetch('http://127.0.0.1:8000/api/himpunan', {
+                  headers: {
+                    'APP_KEY': '@dedicatetocreatebemgenx',
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'Access-Control-Allow-Credentials': 'true' // 'Access-Control-Allow-Origin':'http://127.0.0.1:4545'
+
+                  }
+                }).then(function (Response) {
+                  return Response.json();
+                }).then(function (findresponse) {
+                  if (_this2._isMounted) {
+                    // console.log(findresponse);
+                    _this2.setState({
+                      itemhimp: findresponse,
+                      isLoading: false,
+                      isLoaded: true
+                    });
+                  }
+                });
+
+              case 3:
+                res = _context.sent;
+                _context.next = 8;
+                break;
+
+              case 6:
+                _context.prev = 6;
+                _context.t0 = _context["catch"](0);
+
+              case 8:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, null, [[0, 6]]);
+      }));
+
+      function componentDidMount() {
+        return _componentDidMount.apply(this, arguments);
+      }
+
+      return componentDidMount;
+    }()
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      this._isMounted = false;
+    }
+  }, {
     key: "hideComponent",
     value: function hideComponent(name) {
       switch (name) {
@@ -88084,469 +88157,293 @@ var Himpunan = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this2 = this;
+      var _this3 = this;
 
       var _this$state = this.state,
           showHideIlkom = _this$state.showHideIlkom,
           showHideFsd = _this$state.showHideFsd,
           showHideFti = _this$state.showHideFti,
           showHideBisnis = _this$state.showHideBisnis;
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container-himp"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
         className: "himp-maha"
-      }, "HIMPUNAN ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " MAHASISWA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Universitas Multimedia Nusantara terbagi menjadi 4 fakultas besar.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Keempat fakultas terbagi menjadi beberapa jurusan dengan dinaungi oleh ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "himpunan jurusan tersebut. Berikut merupakan ke 11 himpunan yang terdapat ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "pada Universitas Multimedia Nusantara")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
+      }, "HIMPUNAN ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), " MAHASISWA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Universitas Multimedia Nusantara terbagi menjadi 4 fakultas besar.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), "Keempat fakultas terbagi menjadi beberapa jurusan dengan dinaungi oleh ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), "himpunan jurusan tersebut. Berikut merupakan ke 11 himpunan yang terdapat ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), "pada Universitas Multimedia Nusantara")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_6__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_6__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
         className: "card-fix"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
         className: "heads-title"
-      }, "FAKULTAS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, "FAKULTAS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
         className: "set bg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
         className: "card-himp"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
         className: "set"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
         className: "blanket",
         onClick: function onClick() {
-          return _this2.hideComponent("showHideIlkom");
+          return _this3.hideComponent("showHideIlkom");
         }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", {
         className: "fakultas-title"
-      }, "ILMU KOMUNIKASI"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, "ILMU KOMUNIKASI"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
         className: "set",
         src: "assets/himp/ilkom.jpg"
-      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
+      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
         className: "card-himp"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
         className: "set"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
         className: "blanket",
         onClick: function onClick() {
-          return _this2.hideComponent("showHideFsd");
+          return _this3.hideComponent("showHideFsd");
         }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", {
         className: "fakultas-title"
-      }, "SENI DAN DESIGN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, "SENI DAN DESIGN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
         className: "set",
         src: "assets/himp/fsd.jpg"
-      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
+      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
         className: "card-himp"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
         className: "set"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
         className: "blanket",
         onClick: function onClick() {
-          return _this2.hideComponent("showHideFti");
+          return _this3.hideComponent("showHideFti");
         }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", {
         className: "fakultas-title"
-      }, "TEKNIK INFORMATIKA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, "TEKNIK INFORMATIKA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
         className: "set",
         src: "assets/himp/fti.jpg"
-      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
+      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
         className: "card-himp"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
         className: "set"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
         className: "blanket",
         onClick: function onClick() {
-          return _this2.hideComponent("showHideBisnis");
+          return _this3.hideComponent("showHideBisnis");
         }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", {
         className: "fakultas-title"
-      }, "BISNIS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, "BISNIS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
         className: "set",
         src: "assets/himp/bisnis.jpg"
-      })))))), showHideIlkom && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      })))))), showHideIlkom && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "himpsliderscss"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
         id: "himpslidersilkom"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpholder ilkomfilter"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logoholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logoholder-slick",
-        src: "assets/himp/logo_holder.svg"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logo"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logo-slick",
-        src: "assets/himp/logo/imkom.svg"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "descholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "titlebar"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "bar-slick",
-        src: "assets/himp/logo/imkombar.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpdesc"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif"
-      }, "I\u2019M KOM merupakan himpunan mahasiswa yang berada di bawah naungan Fakultas Ilmu Komunikasi yang secara langsung membawahi dua program studi, Strategic Communication dan Multimedia Journalism, I\u2019M KOM menjadi satu-satunya himpunan mahasiswa di tingkat fakultas. I'M KOM berperan aktif dalam perkuliahan untuk membantu menjadi jembatan penghubung mahasiswa dengan pihak Program Studi."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif"
-      }, "I'M KOM terus memberikan yang terbaik sehingga berdampak nyata dalam kehidupan perkuliahan dengan melaksanakan berbagai macam kegiatan seperti Communication Festival, PRIDE, COMMPRESS, FIKOM NIGHT, OMB Konten Prodi Ilmu Komunikasi, dan lainnya. Dengan rangkaian kegiatan yang diadakan, mahasiswa diharapkan mendapatkan pengalaman dalam berorganisasi yang dibutuhkan dalam dunia kerja."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "sosmed-position"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed",
-        href: "http://www.instagram.com/imkom_umn"
-      }, " IG | IMKOM UMN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed",
-        href: "http://line.me/ti/p/~@nkj4600e"
-      }, " LINE | @nkj4600e")))))))), showHideFsd && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, this.state.itemhimp.map(function (itemhimps, index) {
+        switch (itemhimps.fakultas) {
+          case "ILKOM":
+            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+              key: index
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "himpholder ilkomfilter"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "logoholder"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+              className: "logoholder-slick",
+              src: "assets/himp/logo_holder.svg"
+            }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "logo"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+              className: "logo-slick",
+              src: itemhimps.photo
+            }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "descholder"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "himpdesc"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+              className: "caption-position caption-modif"
+            }, itemhimps.info1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+              className: "caption-position caption-modif"
+            }, itemhimps.info2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "sosmed-position"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+              className: "sosmed",
+              href: itemhimps.linkig
+            }, " IG | @", itemhimps.ig), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+              className: "sosmed",
+              href: itemhimps.linkline
+            }, " LINE | @", itemhimps.line))))));
+
+          default:
+            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+              key: index
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "himpholder ilkomfilter"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "logoholder"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+              className: "logoholder-slick",
+              src: "assets/himp/logo_holder.svg"
+            }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "logo"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+              className: "logo-slick",
+              src: itemhimps.photo
+            }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "descholder"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "himpdesc"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+              className: "caption-position caption-modif"
+            }, itemhimps.info1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+              className: "caption-position caption-modif"
+            }, itemhimps.info2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "sosmed-position"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+              className: "sosmed",
+              href: itemhimps.linkig
+            }, " IG | @", itemhimps.ig), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+              className: "sosmed",
+              href: itemhimps.linkline
+            }, " LINE | @", itemhimps.line))))));
+        }
+      }))), showHideFsd && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "himpsliderscss"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
         id: "himpslidersfsd"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpholder hmdkvfilter"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logoholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logoholder-slick",
-        src: "assets/himp/logo_holder.svg"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logo"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logo-slick",
-        src: "assets/himp/logo/hmdkv.svg"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "descholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "titlebar"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "bar-slick",
-        src: "assets/himp/logo/hmdkvbar.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpdesc"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif"
-      }, "Himpunan Desain Komunikasi Visual Universitas Multimedia Nusantara (HMDKV UMN) merupakan organisasi yang beranggotakan seluruh mahasiswa DKV UMN. Asal mula HMDKV berawal dari HMFSD (Himpunan Fakultas Seni dan Desain) yang terpecah menjadi 3 himpunan dari masing-masing jurusan pada Fakultas Seni dan Desain pada tahun 2017, yaitu HMDKV (Desain Komunikasi Visual), HMFILM (Film dan Televisi), dan HIMARS (Arsitektur)."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif"
-      }, "HMDKV UMN menjadi wadah untuk menghimpun mahasiswa Desain Komunikasi Visual Universitas Multimedia Nusantara dan menjadi jembatan dalam pengembangan kepentingan akademik dan non akademik yang bertujuan untuk meningkatkan prestasi, mendukung ekspresi, serta kesejahteraan mahasiswa DKV UMN."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "sosmed-position"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed",
-        href: "http://www.instagram.com/hmdkv_umn"
-      }, " IG | hmdkv_umn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed",
-        href: "http://line.me/ti/p/~@ybc1316s"
-      }, " LINE | @ybc1316s")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpholder hmftvfilter"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logoholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logoholder-slick",
-        src: "assets/himp/logo_holder.svg"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logo"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logo-slick",
-        src: "assets/himp/logo/hmftv.svg"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "descholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "titlebar"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "bar-slick",
-        src: "assets/himp/logo/hmftvbar.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpdesc"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif-white"
-      }, "Himpunan Mahasiswa Film atau akrab disebut dengan HMFilm merupakan organisasi yang menjadi penghubung antar mahasiswa, dosen program studi dan kemahasiswaan sehingga dapat terjalin hubungan yang baik. HMFilm ini terbentuk pada tanggal 5 Desember 2017. Pada tahun 2020, HMFilm memasuki generasi kedua sebagai organisasi dalam Prodi Film."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif-white"
-      }, "Tugas HMFilm adalah menyediakan forum bagi mahasiswa Film dalam menuangkan aspirasi dan mengembangkan potensi berdasarkan minat yang sama. Selain itu, HMFilm juga berperan dalam mendekatkan hubungan antar mahasiswa, memperluas koneksi, dan melaksanakan kegiatan kemahasiswaan yang menjunjung tanggung jawab dan kebersamaan."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "sosmed-position"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed-white",
-        href: "http://www.instagram.com/hmfilm_umn"
-      }, " IG | hmfilm_umn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed-white",
-        href: "http://line.me/ti/p/~@msn8043i"
-      }, " LINE | @msn8043i")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpholder himarsfilter"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logoholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logoholder-slick",
-        src: "assets/himp/logo_holder.svg"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logo"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logo-slick",
-        src: "assets/himp/logo/himars.svg"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "descholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "titlebar"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "bar-slick",
-        src: "assets/himp/logo/himarsbar.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpdesc"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif-white"
-      }, "Himpunan Mahasiswa Arsitektur Universitas Multimedia Nusantara (HIMARS) adalah organisasi kemahasiswaan yang mewadahi dan menggerakkan kreativitas serta aktivitas mahasiswa. HIMARS diresmikan pada 5 Desember 2018."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif-white"
-      }, "HIMARS memiliki visi mahasiswa arsitektur UMN dapat proaktif di berbagai bidang dalam lingkup internal dan eksternal kampus serta membangun solidaritas antar sesama mahasiswa. Misi HIMARS adalah sarana yang menyalurkan aspirasi mahasiswa arsitektur UMN, memperluas hubungan baik internal maupun eksternal, serta meningkatkan kemampuan dalam berorganisasi yang dikemas dalam seluruh Program kerja HIMARS."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "sosmed-position"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed-white",
-        href: "http://www.instagram.com/himars_umn"
-      }, " IG | himars_umn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed-white",
-        href: "http://line.me/ti/p/~@daj7387i"
-      }, " LINE | @daj7387i")))))))), showHideFti && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, this.state.itemhimp.map(function (itemhimps, index) {
+        switch (itemhimps.fakultas) {
+          case "FSD":
+            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+              key: index
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "himpholder hmdkvfilter"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "logoholder"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+              className: "logoholder-slick",
+              src: "assets/himp/logo_holder.svg"
+            }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "logo"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+              className: "logo-slick",
+              src: itemhimps.photo
+            }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "descholder"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "himpdesc"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+              className: "caption-position caption-modif"
+            }, itemhimps.info1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+              className: "caption-position caption-modif"
+            }, itemhimps.info2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "sosmed-position"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+              className: "sosmed",
+              href: itemhimps.linkig
+            }, " IG | @", itemhimps.ig), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+              className: "sosmed",
+              href: itemhimps.linkline
+            }, " LINE | @", itemhimps.line))))));
+
+          default:
+            return null;
+        }
+      }))), showHideFti && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "himpsliderscss"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
         id: "himpslidersfti"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpholder himferafilter"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logoholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logoholder-slick",
-        src: "assets/himp/logo_holder.svg"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logo"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logo-slick",
-        src: "assets/himp/logo/himfera.svg"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "descholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "titlebar"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "bar-slick",
-        src: "assets/himp/logo/himferabar.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpdesc"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif"
-      }, "Himpunan Mahasiswa Teknik Fisika dan Teknik Elektro Universitas Multimedia Nusantara (HIMFERA) merupakan organisasi yang menampung aspirasi dan menjalankan program kerja bagi seluruh mahasiswa Teknik Fisika dan Teknik Elektro di UMN. HIMFERA Generasi 0 dibentuk pada 5 Desember 2017."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif"
-      }, "HIMFERA Gen 2 terdiri dari Badan Pengurus Harian, Divisi Akademik, Divisi Non Akademik, Divisi Humas, dan Divisi Desain Visual. Setiap divis mengurus program kerja sesuai dengan bidangnya. Program kerja dibuat berdasarkan kebutuhan dan aspirasi mahasiswa Teknik Fisika dan Teknik Elektro."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "sosmed-position"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed",
-        href: "http://www.instagram.com/himfera_umn"
-      }, " IG | himfera_umn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed",
-        href: "http://line.me/ti/p/~@636jllsn"
-      }, " LINE | @636jllsn")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpholder hmiffilter"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logoholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logoholder-slick",
-        src: "assets/himp/logo_holder.svg"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logo"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logo-slick",
-        src: "assets/himp/logo/hmif.svg"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "descholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "titlebar"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "bar-slick",
-        src: "assets/himp/logo/hmifbar.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpdesc"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif"
-      }, "Himpunan Mahasiswa Informatika Universitas Multimedia Nusantara (HMIF) merupakan organisasi resmi kemahasiswaan pada tingkat program studi sebagai eksekutor yang bernaung di bawah Wakil Rektor III Bidang kemahasiswaan Universitas Multimedia Nusantara."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif"
-      }, "HMIF bersifat mandiri, kekeluargaan, adil, aspiratif, partisipatif, representatif, efektif, efisien, beserta transparan. HMIF diselenggarakan berdasarkan prinsip dari, oleh, dan untuk mahasiswa Informatika dengan memberi peranan serta keleluasaan lebih kepada mahasiswa."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "sosmed-position"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed",
-        href: "http://www.instagram.com/hmif.umn"
-      }, " IG | hmif.umn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed",
-        href: "http://line.me/ti/p/~@hmif.umn"
-      }, " LINE | @hmif.umn")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpholder acesfilter"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logoholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logoholder-slick",
-        src: "assets/himp/logo_holder.svg"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logo"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logo-slick",
-        src: "assets/himp/logo/aces.svg"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "descholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "titlebar"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "bar-slick",
-        src: "assets/himp/logo/acesbar.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpdesc"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif"
-      }, "ACEs (Association of Computer Engineering Students) adalah himpunan mahasiswa Teknik Komputer UMN, dibentuk pada tanggal 8 Desember 2007. Tugas dan Kewajiban ACES adalah melayani dan membantu kendala-kendala yang dimiliki oleh anggota-anggota ACES."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif"
-      }, "Pada gen 9, nama ACES berubah dari Himasikom (Himpunan Mahasiswa Sistem Komputer) dengan alasan Himasikom program studi kami juga mengalami perubahan nama dari Sistem Komputer menjadi Teknik Komputer. ACES juga mengadakan beberapa proker yang diharapkan bisa membantu memberikan gambaran mengenai kehidupan perkuliahan di prodi Teknik Komputer."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "sosmed-position"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed",
-        href: "http://www.instagram.com/acesumn"
-      }, " IG | acesumn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed",
-        href: "http://line.me/ti/p/~@acesumn"
-      }, " LINE | @acesumn")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpholder himsifilter"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logoholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logoholder-slick",
-        src: "assets/himp/logo_holder.svg"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logo"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logo-slick",
-        src: "assets/himp/logo/himsi.svg"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "descholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "titlebar"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "bar-slick",
-        src: "assets/himp/logo/himsibar.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpdesc"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif-white"
-      }, "Himpunan Mahasiswa Sistem Informasi Universitas Multimedia Nusantara (HIMSI) didirikan pada tahun 2007, yaitu pada saat angka pertama mahasiswa Universitas Multimedia Nusantara dengan nama D'Information System Community. DISC merupakan HMJ Sistem Informasi \"Generasi Nol\"."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif-white"
-      }, "Pada tahun 2010, DISC mengalami perubahan sebutan menjadi HIMSI. HIMSI Generasi 10 beranggotakan 16 orang orang mahasiswa sistem informasi terpilih untuk bertugas mengabdi kepada keluarga besar mahasiswa sistem informasi berdasarkan asas kekeluargaan."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "sosmed-position"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed-white",
-        href: "http://www.instagram.com/umn_si"
-      }, " IG | umn_si"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed-white",
-        href: "http://line.me/ti/p/~@umn_si"
-      }, " LINE | @umn_si")))))))), showHideBisnis && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, this.state.itemhimp.map(function (itemhimps, index) {
+        switch (itemhimps.fakultas) {
+          case "FTI":
+            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+              key: index
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "himpholder himferafilter"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "logoholder"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+              className: "logoholder-slick",
+              src: "assets/himp/logo_holder.svg"
+            }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "logo"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+              className: "logo-slick",
+              src: itemhimps.photo
+            }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "descholder"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "himpdesc"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+              className: "caption-position caption-modif"
+            }, itemhimps.info1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+              className: "caption-position caption-modif"
+            }, itemhimps.info2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "sosmed-position"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+              className: "sosmed",
+              href: itemhimps.linkig
+            }, " IG | @", itemhimps.ig), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+              className: "sosmed",
+              href: itemhimps.linkline
+            }, " LINE | @", itemhimps.line))))));
+
+          default:
+            return null;
+        }
+      }))), showHideBisnis && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "himpsliderscss"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
         id: "himpslidersbisnis"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpholder himmafilter"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logoholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logoholder-slick",
-        src: "assets/himp/logo_holder.svg"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logo"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logo-slick",
-        src: "assets/himp/logo/himma.svg"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "descholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "titlebar"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "bar-slick",
-        src: "assets/himp/logo/himmabar.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpdesc"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif"
-      }, "Himpunan Mahasiswa Manajemen Universitas Multimedia Nusantara (HIMMA) merupakan salah satu himpunan yang telah berdiri sejak 28 November 2010. Dari awal terbentuk, HIMMA selalu menanamkan nilai-nilai kekeluargaan kepada para anggotanya dan kepada para mahasiswa diluar organisasi."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif"
-      }, "HIMMA selalu berusaha menerima segala bentuk aspirasi dari Mahasiswa Manajemen agar dapat menciptakan kegiatan yang sesuai dengan keinginan dan kebutuhan mahasiswa. HIMMA selalu berusaha untuk menjadi lebih baik dan selalu memperbaiki kekurangan yang ada agar dapat terus memberikan yang terbaik bagi Program Studi Manajemen"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "sosmed-position"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed",
-        href: "http://www.instagram.com/himma_umn"
-      }, " IG | himma_umn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed",
-        href: "http://line.me/ti/p/~@himma_umn"
-      }, " LINE | @himma_umn")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpholder himtarafilter"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logoholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logoholder-slick",
-        src: "assets/himp/logo_holder.svg"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logo"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logo-slick",
-        src: "assets/himp/logo/himtara.svg"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "descholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "titlebar"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "bar-slick",
-        src: "assets/himp/logo/himtarabar.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpdesc"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif-white"
-      }, "Himpunan Akuntansi Universitas Multimedia Nusantara (HIMTARA) yang telah berdiri atau terbentuk mulai dari 16 November 2020. HIMTARA didirikan bertujuan untuk menggali dan mengembangkan potensi mahasiswa akuntasi Universitas Multimedia Nusantara dalam bidang akademik maupun non-akademik dengan berlandaskan semangat kejujuran, kekeluargaan, dan professionalism."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif-white"
-      }, "HIMTARA selaku himpunan akuntasi UMN selalu membuat program kerja yang berlandaskan aspirasi dari para mahasiswa kauntasi sebagai suatu inspirasi bagi kami untuk menjadi lebih baik lagi."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "sosmed-position"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed-white",
-        href: "http://www.instagram.com/himtara"
-      }, " IG | himtara"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed-white",
-        href: "http://line.me/ti/p/~@bkq4939z"
-      }, " LINE | @bkq4939z")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpholder hmpfilter"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logoholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logoholder-slick",
-        src: "assets/himp/logo_holder.svg"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "logo"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "logo-slick",
-        src: "assets/himp/logo/hmp.svg"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "descholder"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "titlebar"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "bar-slick",
-        src: "assets/himp/logo/hmpbar.svg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "himpdesc"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif-white"
-      }, "Himpunan Mahasiswa Perhotelan Universitas Multimedia Nusantara (HMP) terbentuk bersamaan dengan hadirnya jurusan baru yaitu D3 Perhotelan di tahun 2017. HMP terbentuk dan hadir untuk menjadi penyalur aspirasi Mahasiswa D3 Perhotelan UMN dan untuk menaungi serta menyediakan sarana bagi Mahasiswa Perhotelan."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "caption-position caption-modif-white"
-      }, "HMP membantu menyalurkan ilmu dan kemampuan yang dimiliki baik dalam cakupan internal maupun eksternal UMN, dengan menyelenggarakan kegiatan yang sesuai. HMP akan terus berkembang agar dapat memberikan kontribusi lebih baik lagi bagi Mahasiswa maupun Prodi D3 Perhotelan UMN."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "sosmed-position"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed-white",
-        href: "http://www.instagram.com/hmp_umn"
-      }, " IG | hmp_umn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "sosmed-white",
-        href: "http://line.me/ti/p/~@iyz7068m"
-      }, " LINE | @iyz7068m")))))))));
+      }, this.state.itemhimp.map(function (itemhimps, index) {
+        switch (itemhimps.fakultas) {
+          case "BISNIS":
+            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+              key: index
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "himpholder himmafilter"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "logoholder"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+              className: "logoholder-slick",
+              src: "assets/himp/logo_holder.svg"
+            }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "logo"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+              className: "logo-slick",
+              src: "assets/himp/logo/himma.svg"
+            }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "descholder"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "titlebar"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+              className: "bar-slick",
+              src: "assets/himp/logo/himmabar.svg"
+            })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "himpdesc"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+              className: "caption-position caption-modif"
+            }, itemhimps.info1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+              className: "caption-position caption-modif"
+            }, itemhimps.info2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+              className: "sosmed-position"
+            }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+              className: "sosmed",
+              href: itemhimps.linkig
+            }, " IG | @", itemhimps.ig), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+              className: "sosmed",
+              href: itemhimps.linkline
+            }, " LINE | @", itemhimps.line))))));
+
+          default:
+            return null;
+        }
+      }))));
     }
   }]);
 
   return Himpunan;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Himpunan);
 
 if (document.getElementById('himp')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Himpunan, null), document.getElementById('himp'));
+  react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Himpunan, null), document.getElementById('himp'));
 }
 
 /***/ }),
