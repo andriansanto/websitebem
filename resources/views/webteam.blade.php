@@ -106,6 +106,7 @@
                             <h3 class="user-name">Andrian Santo</h3>
                             <h5>Front End & Responsive Developer</h5>
                             <p><a style="text-decoration: none; color:#9293BC;" href="http://www.instagram.com/andriansanto_24"><i class="lni lni-instagram-original"></i> andriansanto_24</a></p>
+                            <p><a style="text-decoration: none; color:#9293BC;" href="http://www.linkedin.com/in/andriansanto/"><i class="lni lni-linkedin-original"></i></i> Andrian Santo</a></p>
                         </div>
                         
                         <div class="profile">

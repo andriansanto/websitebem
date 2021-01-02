@@ -123,8 +123,8 @@ class Home extends Component{
             <Row>
              <Col>
             <div className="container-dedicate-judul">
-               <h1 className="dtc-1">#DedicateToCreate</h1>    
-               <h2 className="genx-1">GEN X</h2>
+               <h1 className="dtc-1">#SatuTujuan</h1>    
+               <h2 className="genx-1">GEN XI</h2>
             </div>
              </Col>  
             </Row>
