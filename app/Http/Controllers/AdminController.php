@@ -19,7 +19,7 @@ class AdminController extends Controller
     // }
 
     public function dashboard(){
-        return view('admin.dashboard');
+        return view('admin.dashboard')->with(['contacts' => Contact::all()]);;
     }
 
     public function slideshow(){

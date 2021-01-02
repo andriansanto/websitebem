@@ -30,26 +30,26 @@ class HomeController extends Controller
 
     public function himpunan()
     {
-        return view('himp');
+        return view('himp')->with(['contacts' => Contact::all()]);;
     }
 
     public function ukm()
     {
-        return view('ukm');
+        return view('ukm')->with(['contacts' => Contact::all()]);;
     }
 
     public function kegiatanMahasiswa()
     {
-        return view('kegiatanMahasiswa');
+        return view('kegiatanMahasiswa')->with(['contacts' => Contact::all()]);;
     }
 
     public function aboutus()
     {
-        return view('aboutus');
+        return view('aboutus')->with(['contacts' => Contact::all()]);;
     }
 
     public function webteam()
     {
-        return view('webteam');
+        return view('webteam')->with(['contacts' => Contact::all()]);;
     }
 }
