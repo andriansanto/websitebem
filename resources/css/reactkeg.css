@@ -110,15 +110,16 @@ input[type=radio] {
 .info{
     color: black;
     font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    text-align: left;
+    font-size: calc(1vw + 1vh);
+    text-align: justify;
+    padding-right: 40px;
 
 }
 
 .info-lso{
     color: black;
     font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
+    font-size: calc(0.8vw + 0.8vh);
     text-align: left;
     padding-right: 30px;
     margin-left: -88px;
@@ -213,7 +214,7 @@ input[type=radio] {
     font-weight: bold;
     letter-spacing: 2px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
+    font-size: calc(2vw + 2vh);
     text-align: left;
 }
 
@@ -222,7 +223,7 @@ input[type=radio] {
     font-weight: bold;
     letter-spacing: 2px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
+    font-size: calc(2vw + 2vh);
     text-align: left;
     margin-left: -88px;
 }
@@ -267,7 +268,351 @@ input[type=radio] {
     width: 100%;
 }
 
-@media (max-width:768px){
+@media (max-width:1480px){
+    input[type=radio] {
+        position: absolute;
+        transform: scale(45);
+        margin-left: -8px;
+        margin-top: 35px;
+        opacity: 0;
+    }
+
+    .box-keg {
+        width: 1500px;
+        height: 500px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin: 20px 10px;
+    }
+
+    .box-lso {
+        width: 1500px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 2px 10px;
+    }
+    
+    
+    .info{
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        text-align: justify;
+        padding-right: 150px;
+    
+    }
+
+    .info-lso{
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        text-align: justify;
+        padding-right: 150px;
+        margin-left: -88px;
+    
+    }
+    
+    .model-keg{
+        margin-top: -20px;
+        height: 400px;
+        width: 400px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .model-lso-box{
+        margin-top: 30px;
+        height: 200px;
+        width: 200px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .model-lso-dunar{
+        margin-top: -20px;
+        height: 300px;
+        width: 400px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .model-lso-medic{
+        margin-top: 50px;
+        height: 140px;
+        width: 400px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .model-lso-ustore{
+        margin-top: -20px;
+        height: 200px;
+        width: 350px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .model-lso-komcor{
+        margin-top: -20px;
+        height: 300px;
+        width: 300px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .model-mrms{
+        margin-top: -20px;
+        height: 300px;
+        width: 100px;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+    .details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
+    
+    .details p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .title{
+        color: #ffb359;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+    }
+
+    .title-lso{
+        color: #ade2b2;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+    }
+
+    .col-edit {
+        flex-basis: 0;
+        flex-grow: 1;
+        min-width: 0;
+        max-width: 100%;
+        margin-right: 20px;
+    }
+
+    .col-md-5 {
+        flex: 0 0 38.6666666667%;
+        max-width: 41.6666666667%;
+        width: 100%;
+    }
+
+      .container-slider-keg{
+        width: 100%;
+        height: 100vh;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .col-edit-lso {
+        flex-basis: 0;
+        flex-grow: 1;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .container-slider-lso {
+        width: 100%;
+        height: 100vh; /*Tinggi Box luar Logo nya*/
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+@media (max-width:1370px){
+    .info{
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        text-align: justify;
+        padding-right: 300px;
+
+    }
+
+    .info-lso{
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        text-align: justify;
+        padding-right: 300px;
+        margin-left: -88px;
+    
+    }
+
+    .asset-kanan{
+        position: absolute;
+        right: -45px;
+        top: 40px;
+        transform: scale(0.8)
+    }
+    
+
+}
+
+@media (max-width:1230px){
+    .info{
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        text-align: justify;
+        padding-right: 400px;
+
+    }
+
+    .info-lso{
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        text-align: justify;
+        padding-right: 400px;
+        margin-left: -88px;
+    
+    }
+
+    .asset-kanan{
+        position: absolute;
+        right: -90px;
+        top: 15px;
+        transform: scale(0.6);
+    }
+
+    .keg-kiri {
+        position: absolute;
+        left: -56px;
+        top: 650px;
+        transform: scale(0.6);
+    }
+
+    .lso-kiri{
+        position: absolute;
+        left: -56px;
+        top: 600px;
+        transform: scale(0.6);
+    }
+
+}
+
+@media (max-width:1160px){
+    input[type=radio] {
+        position: absolute;
+        transform: scale(40);
+        margin-left: -8px;
+        margin-top: 35px;
+        opacity: 0;
+    }
+
+    .info{
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        text-align: justify;
+        padding-right: 500px;
+
+    }
+
+    .info-lso{
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        text-align: justify;
+        padding-right: 500px;
+        margin-left: -88px;
+    
+    }
+
+}
+
+@media (max-width:1000px){
+    input[type=radio] {
+        position: absolute;
+        transform: scale(35);
+        margin-left: -8px;
+        margin-top: 35px;
+        opacity: 0;
+    }
+    
+    .info{
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        text-align: justify;
+        padding-right: 600px;
+    }
+
+    .info-lso{
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        text-align: justify;
+        padding-right: 600px;
+        margin-left: -88px;
+    
+    }
+}
+
+@media (max-width:870px){
+    input[type=radio] {
+        position: absolute;
+        transform: scale(30);
+        margin-left: -8px;
+        margin-top: 35px;
+        opacity: 0;
+    }
+
+    .asset-kanan {
+        position: absolute;
+        right: -88px;
+        top: 20px;
+        transform: scale(0.6);
+    }
+
+}
+
+@media (max-width:740px){
+    input[type=radio] {
+        position: absolute;
+        transform: scale(25);
+        margin-left: -8px;
+        margin-top: 35px;
+        opacity: 0;
+    }
+
+}
+
+@media (max-width:680px){
     .box-keg {
         width: 1500px;
         height: 50vh;
@@ -294,7 +639,7 @@ input[type=radio] {
 
     input[type=radio] {
         position: absolute;
-        transform: scale(29);
+        transform: scale(20);
         margin-left: -8px;
         margin-top: 35px;
         opacity: 0;
@@ -321,69 +666,68 @@ input[type=radio] {
     
     .model-keg{
         margin-top: -20px;
-        height: 210px;
-        width: 210px;
+        height: 400px;
+        width: 400px;
         max-height: 100%;
         max-width: 100%;
         display: block;
         margin: auto;
-
     }
-
+    
     .model-lso-box{
-        margin-top: 10px;
-    height: 140px;
-    width: 140px;
-    max-height: 100%;
-    max-width: 100%;
-    display: block;
-    margin-left: 80px;
+        margin-top: 30px;
+        height: 200px;
+        width: 200px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        margin: auto;
     }
-
+    
     .model-lso-dunar{
         margin-top: -20px;
-        height: 160px;
-        width: 220px;
+        height: 300px;
+        width: 400px;
         max-height: 100%;
         max-width: 100%;
         display: block;
-        margin-left: 23px;
+        margin: auto;
     }
-
+    
     .model-lso-medic{
-        margin-top: 11px;
-        height: 85px;
-        width: 250px;
+        margin-top: 50px;
+        height: 140px;
+        width: 400px;
         max-height: 100%;
         max-width: 100%;
         display: block;
-        margin-left: 20px;
+        margin: auto;
     }
-
+    
     .model-lso-ustore{
         margin-top: -20px;
-        height: 150px;
-        width: 250px;
+        height: 200px;
+        width: 350px;
         max-height: 100%;
         max-width: 100%;
         display: block;
-        margin-left: 30px;
+        margin: auto;
     }
-
+    
     .model-lso-komcor{
         margin-top: -20px;
-    height: 220px;
-    width: 220px;
-    max-height: 100%;
-    max-width: 100%;
-    display: block;
-    margin-left: 65px;
+        height: 300px;
+        width: 300px;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        margin: auto;
     }
     
     .model-mrms{
         margin-top: -20px;
-        height: 160px;
-        width: 60px;
+        height: 300px;
+        width: 100px;
         max-height: 100%;
         max-width: 100%;
     }
@@ -445,11 +789,12 @@ input[type=radio] {
         transform: scale(0.5);
     }
     
-    .asset-kanan{
+    .asset-kanan{ 
         position: absolute;
-        top: 0px;
-        transform: scale(0.55);
-        right: -100px;
+        top: -13px;
+        transform: scale(0.45);
+        right: -123px;
+
     }
     
     .lso-kiri{
@@ -496,7 +841,7 @@ input[type=radio] {
 
 }
 
-@media (max-width:480px){
+@media (max-width:500px){
     .box{
         width: 1500px;
         height: 500px;
@@ -546,8 +891,8 @@ input[type=radio] {
         color: black;
         font-family: 'Montserrat', sans-serif;
         font-size: 12px;
-        text-align: left;
-        margin-right: 970px;
+        text-align: justify;
+        margin-right: 880px;
         padding-right: 15px;
         padding-left: 30px;
     
@@ -557,8 +902,8 @@ input[type=radio] {
         color: black;
         font-family: 'Montserrat', sans-serif;
         font-size: 11px;
-        text-align: left;
-        margin-right: 970px;
+        text-align: justify;
+        margin-right: 830px;
         padding-right: 15px;
         padding-left: 0;
     
