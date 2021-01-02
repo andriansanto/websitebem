@@ -77,7 +77,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('kegiatan-mahasiswa') }}">
                                     <div class="text-umn">
-                                        KEGIATAN MAHASISWA
+                                        KEGIATAN MAHASISWA & LSO
                                     </div>
                                 </a>
                             </li>

@@ -90,7 +90,7 @@ class Home extends Component{
            </Slider>
            </div>
     <br></br>
-       <div className="container-csi">
+       {/* <div className="container-csi">
            <div className="container-csi-text">
 
            <h1 className="CSI-color">Commit. Solid. Integrated.</h1>
@@ -98,7 +98,7 @@ class Home extends Component{
            <p>
            </p>          
            </div>
-       </div>
+       </div> */}
 
        <Container className="themed-container" fluid={true}>
         <div className="container-2">
@@ -123,8 +123,8 @@ class Home extends Component{
             <Row>
              <Col>
             <div className="container-dedicate-judul">
-               <h1 className="dtc-1">#DedicateToCreate</h1>    
-               <h2 className="genx-1">GEN X</h2>
+               <h1 className="dtc-1">Commit.Solid.Integrated</h1>    
+               <h2 className="genx-1">Badan Eksekutif Mahasiswa<br></br>Universitas Multimedia Nusantara</h2>
             </div>
              </Col>  
             </Row>
