@@ -9,6 +9,7 @@ use App\Ukm;
 use App\Kegiatan;
 use App\Lso;
 use App\Himpunan;
+use App\Contact;
 
 class AdminController extends Controller
 {
@@ -205,6 +206,11 @@ class AdminController extends Controller
         $generasi->save();
 
         return redirect('/admin/aboutus')->with('status', 'Generasi berhasil ditambahkan !');
+    }
+
+    public function edit_contact()
+    {
+        return view('admin.edit-contact', compact('contact'));
     }
 
     /**UKM */
