@@ -32,15 +32,11 @@
                     <div class="single-footer-widget mb-60 wow bounceInUp">
                         <!-- Contact Area -->
                         <div class="text-footer">
-                            <p style="text-decoration: none; color:#9293BC; font-size: 15px;" class="lni lni-phone"> Leoni Angela Widiana
-                                08999838085
+                            @foreach($contacts as $contact)
+                            <p style="text-decoration: none; color:#9293BC; font-size: 15px;" class="lni lni-phone"> {{ $contact->name }}
+                                {{ $contact->phone }}
                             </p>
-                            <p style="text-decoration: none; color:#9293BC; font-size: 15px;" class="lni lni-phone"> Aveline Suryanto
-                                087738792445
-                            </p>
-                            <p style="text-decoration: none; color:#9293BC; font-size: 15px;" class="lni lni-phone"> Helwen Liony
-                                081258851200
-                            </p>
+                            @endforeach
                         </div>
                     </div>
                 </div>

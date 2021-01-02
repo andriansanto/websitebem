@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\SlideShow;
+use App\Contact;
 
 class HomeController extends Controller
 {
@@ -24,7 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('base');
+        return view('base')->with(['contacts' => Contact::all()]);;
     }
 
     public function himpunan()

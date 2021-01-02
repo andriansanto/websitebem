@@ -100,6 +100,20 @@
                 <h6>About Us</h6>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="/admin/add_contact">
+                    <i class="fas fa-chart-bar mr-2"></i>
+                    Tambah Contact
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/contact">
+                    <i class="fas fa-chart-bar mr-2"></i>
+                    Edit Contact
+                </a>
+            </li>
+
+            <li class="nav-item">
                 <a class="nav-link" href="/admin/add_gen">
                     <i class="fas fa-chart-bar mr-2"></i>
                     Tambah Generasi

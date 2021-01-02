@@ -93,7 +93,7 @@
             </div>
             <div class="row justify-content-end px-3">
                 <a href="/admin" class="btn btn-secondary mx-4">Batal</a>
-                <input type="submit"  class="btn btn-primary" value="Tambahkan Slide Show" />     
+                <input type="submit"  class="btn btn-primary" value="Tambahkan Generasi" />     
                 </form>
             </div>
         </div>

@@ -208,10 +208,65 @@ class AdminController extends Controller
         return redirect('/admin/aboutus')->with('status', 'Generasi berhasil ditambahkan !');
     }
 
-    public function edit_contact()
+    public function contact(){
+        return view('admin.contact')->with(['contacts' => Contact::all()]);
+    }
+
+    public function edit_contact(Contact $contact)
     {
         return view('admin.edit-contact', compact('contact'));
     }
+
+    public function destroy_contact(Contact $contact)
+    {
+        
+        Contact::destroy($contact->id);
+        return redirect('/admin/contact')->with('status', 'Contact berhasil dihapus !');
+
+    }
+
+    public function update_contact(Request $request, Contact $contact)
+    {
+        $request->validate([
+            'name' => 'required|max:255',
+            'phone' => 'required|max:13'
+        ]);
+
+        Contact::where('id', $contact->id)
+        ->update([
+            'name' => $request->name,
+            'phone' => $request->phone,
+        ]);
+        
+        
+        $contact->save();
+
+        return redirect('/admin/contact')->with('status', 'Contact berhasil diubah !');
+    }
+
+    public function create_contact()
+    {
+        return view('/admin/add-contact');
+    }
+
+    public function store_contact(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|max:255',
+            'phone' => 'required|max:13',
+        ]);
+
+        $contact = new Contact();
+        $contact->name = $request->name;
+        $contact->phone = $request->phone;
+
+        
+        $contact->save();
+
+        return redirect('/admin/contact')->with('status', 'Contact berhasil ditambahkan !');
+    }
+
+
 
     /**UKM */
 
