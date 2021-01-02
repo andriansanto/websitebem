@@ -56,6 +56,9 @@ Route::patch('/admin/aboutus/{generasi}','AdminController@update_gen');
 Route::get('/admin/add_gen','AdminController@create_gen');
 Route::post('/admin/add_gen','AdminController@store_gen')->name('add.gen');
 
+Route::get('/admin/contact','AdminController@edit_contact');
+Route::patch('/admin/contact','AdminController@update_contact');
+
 /**ADMIN PANEL UKM */
 
 Route::get('/admin/ukm','AdminController@ukm');

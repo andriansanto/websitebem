@@ -542,6 +542,16 @@ class DatabaseSeeder extends Seeder
         $lso->link = "http://www.instagram.com/kopmaustore";
         $lso->save();
 
+        $contact = new App\Contact;
+        $contact->name = "Herlan Apriyano";
+        $contact->phone = "081316000414";
+        $contact->save();
+
+        $contact = new App\Contact;
+        $contact->name = "Hanna Christine K";
+        $contact->phone = "082192369813";
+        $contact->save();
+
     //     $himp = new App\Himpunan;
     //     $himp->name = "I'M KOM";
     //     $himp->photo = "assets/himp/logo/imkom.svg";
